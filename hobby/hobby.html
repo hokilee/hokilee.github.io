@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoki Lee - Hobby</title>
+    <link rel="stylesheet" href="hobby-style.css" />
+  </head>
+  <body>
+    <div class="back-button-container">
+      <a href="../main/index.html" class="back-button">← 메인으로 돌아가기</a>
+    </div>
+    <header>
+      <h1 class="title">Baseball</h1>
+    </header>
+
+    <main class="gallery">
+      <div class="image-card">
+        <img src="baseball2.jpg" alt="야구 이미지 1" class="zoomable" />
+        <p>
+          2020년 3월에 팀 동계 훈련을 위해 실내구장을 빌려 팀원의 T 배팅 연습
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="baseball3.jpg" alt="야구 이미지 2" class="zoomable" />
+        <p>2020년 3월 팀원들의 내야 연습을 위한 토스 배팅.</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball4.jpg" alt="야구 이미지 4" class="zoomable" />
+        <p>
+          2020년 3월 비록 나이가 있어 직접 같이 뛰지는 못하지만 팀원들이 모두
+          즐거웠으면 합니다.
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="baseball5.jpg" alt="야구 이미지 5" class="zoomable" />
+        <p>
+          2017년 10월 고척 스카이돔에서 거행된 스트라이존 야구대회
+          결승전(팀원들).
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="baseball6.jpg" alt="야구 이미지 6" class="zoomable" />
+        <p>2015년 12월 김성근 감독님 강의 후 함께 쵤영.</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball8.jpg" alt="야구 이미지 8" class="zoomable" />
+        <p>2015년 11월 팀원들과 함께</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball9.jpg" alt="야구 이미지 9" class="zoomable" />
+        <p>2015년 11월 팀원들과 저녁 식사 후</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball10.jpg" alt="야구 이미지 10" class="zoomable" />
+        <p>2015년 10월 리그 우승 후 팀원들과 함께</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball11.jpg" alt="야구 이미지 11" class="zoomable" />
+        <p>2015년 9월 경기 운영~~</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball12.jpg" alt="야구 이미지 12" class="zoomable" />
+        <p>2015년 6월 부산구덕야구장에서 동성모터스 야구팀과 친선대회</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball13.jpg" alt="야구 이미지 13" class="zoomable" />
+        <p>2015년 6월 부산구덕야구장에서 동성모터스 야구팀과 단체사진</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball14.jpg" alt="야구 이미지 14" class="zoomable" />
+        <p>2015년 6월 동성모터스와 친선 야구대회전 토스배딩 연습</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball15.jpg" alt="야구 이미지 15" class="zoomable" />
+        <p>2015년 6월 동성모터스와 친선 야구대회전 수비연습</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball16.jpg" alt="야구 이미지 16" class="zoomable" />
+        <p>2015년 6월 동성모터스와 친선 야구대회후 단체사진</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball17.jpg" alt="야구 이미지 17" class="zoomable" />
+        <p>투수(중견수) 박현석</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball18.jpg" alt="야구 이미지 18" class="zoomable" />
+        <p>투수(1루수) 김태상</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball19.jpg" alt="야구 이미지 19" class="zoomable" />
+        <p>투수(유격수) 이재연</p>
+      </div>
+      <div class="image-card">
+        <img src="baseball20.jpg" alt="야구 이미지 20" class="zoomable" />
+        <p>유격수(선출) 이재훈</p>
+      </div>
+    </main>
+
+    <script>
+      const images = document.querySelectorAll('.zoomable');
+      images.forEach((img) => {
+        img.addEventListener('click', () => {
+          img.classList.add('fullscreen');
+        });
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.fullscreen').forEach((img) => {
+            img.classList.remove('fullscreen');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
