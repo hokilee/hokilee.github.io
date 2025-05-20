@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoki Lee - ohjin</title>
+    <link rel="stylesheet" href="ohjin-style.css" />
+  </head>
+  <body>
+    <div class="back-button-container">
+      <a href="../index.html" class="back-button">← 메인으로 돌아가기</a>
+    </div>
+    <header>
+      <h1 class="title">오진양행</h1>
+    </header>
+
+    <main class="gallery">
+      <div class="image-card">
+        <img src="training1.jpeg" alt="오진양향 이미지 1" class="zoomable" />
+        <p>
+          2022년 7월 Welbilt Frymaster 제조사에서 Trainer의 방문으로 Frymaster
+          기술교육진행
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="workshop.jpeg" alt="오진양행 이미지 2" class="zoomable" />
+        <p>
+          2024년 3월 오진양행 소속 Team Leader 및 지역장들을 부산 교육장으로
+          소집하여 Workshop 진행 후 촬영.
+        </p>
+      </div>
+    </main>
+
+    <script>
+      const images = document.querySelectorAll('.zoomable');
+      images.forEach((img) => {
+        img.addEventListener('click', () => {
+          img.classList.add('fullscreen');
+        });
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.fullscreen').forEach((img) => {
+            img.classList.remove('fullscreen');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
