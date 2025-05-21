@@ -25,10 +25,14 @@
       gtag('config', 'G-20K158C0EN');
     </script>
     <script>
-      // 로컬 카운터 예시 (정식 방문자수 추적은 서버나 Google Analytics 사용 필요)
-      const count = localStorage.getItem('visitorCount') || 1;
+      let count = localStorage.getItem('visitorCount');
+      if (!count) {
+        count = 1;
+      } else {
+        count = parseInt(count) + 1;
+      }
+      localStorage.setItem('visitorCount', count);
       document.getElementById('visitor-count').textContent = count;
-      localStorage.setItem('visitorCount', parseInt(count) + 1);
     </script>
   </head>
   <body>
