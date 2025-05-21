@@ -73,3 +73,17 @@ body {
   color: #222;
   line-height: 1.6;
 }
+
+.visitor-label {
+  font-size: 1.2em;
+  margin-left: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+#visitor-count {
+  font-size: 1.2em;
+  color: yellow;
+  margin-left: 8px;
+  font-weight: bold;
+}
