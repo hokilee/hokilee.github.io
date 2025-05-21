@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoki Lee - deutsch</title>
+    <link rel="stylesheet" href="deutsch-style.css" />
+  </head>
+  <body>
+    <div class="back-button-container">
+      <a href="../index.html" class="back-button">← 메인으로 돌아가기</a>
+    </div>
+    <header>
+      <h1 class="title">도이치모터스</h1>
+    </header>
+
+    <main class="gallery">
+      <div class="image-card">
+        <img src="test1.jpg" alt="도이치모터스 이미지 1" class="zoomable" />
+        <p>
+          2018년 11월 BMW Workshop에서 차량을 진단할 때 사용하는
+          진단장비(ISTA)를 배경으로 도이치 Master Lab 직원들의 쵤영.
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="part1.jpg" alt="도이치모터스 이미지 2" class="zoomable" />
+        <p>2018년 11월 BMW 도이치모터스 Part 불출 직원.</p>
+      </div>
+      <div class="image-card">
+        <img src="workshop1.jpg" alt="도이치모터스 이미지 3" class="zoomable" />
+        <p>2018년 11월 BMW 도이치모터스 Workshop에서 차량 진단전 촬영.</p>
+      </div>
+      <div class="image-card">
+        <img src="workshop2.jpg" alt="도이치모터스 이미지 4" class="zoomable" />
+        <p>2018년 11월 BMW 도이치모터스 Workshop에서 엔진 탈착후 촬영.</p>
+      </div>
+      <div class="image-card">
+        <img src="workshop3.jpg" alt="도이치모터스 이미지 5" class="zoomable" />
+        <p>2018년 11월 BMW 도이치모터스 Workshop에서 자동차 진단 전에 촬영.</p>
+      </div>
+      <div class="image-card">
+        <img src="workshop4.jpg" alt="도이치모터스 이미지 6" class="zoomable" />
+        <p>
+          2018년 11월 BMW 도이치모터스 Workshop(동대문지점)에서 일반정비
+          직원들의 단체 사진.
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="workshop5.jpg" alt="도이치모터스 이미지 7" class="zoomable" />
+        <p>
+          2018년 11월 BMW 도이치모터스 Workshop(미사지점)에서 일반정비 직원들의
+          단체 사진.
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="workshop6.jpg" alt="도이치모터스 이미지 8" class="zoomable" />
+        <p>
+          2018년 11월 BMW 도이치모터스 Workshop(미사지점)에서 서비스어드바이저
+          직원들의 아침 조회시간.
+        </p>
+      </div>
+      <div class="image-card">
+        <img src="workshop7.jpg" alt="도이치모터스 이미지 9" class="zoomable" />
+        <p>
+          2018년 11월 BMW 도이치모터스 Workshop(동대문지점)에서 Workshop 아침
+          조회시간.
+        </p>
+      </div>
+    </main>
+
+    <script>
+      const images = document.querySelectorAll('.zoomable');
+      images.forEach((img) => {
+        img.addEventListener('click', () => {
+          img.classList.add('fullscreen');
+        });
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.fullscreen').forEach((img) => {
+            img.classList.remove('fullscreen');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
