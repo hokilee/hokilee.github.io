@@ -102,6 +102,34 @@
         <img src="baseball20.jpg" alt="야구 이미지 20" class="zoomable" />
         <p>유격수(선출) 이재훈</p>
       </div>
+      <!-- 이미지 확대용 모달 -->
+      <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">✕</span>
+        <img id="modalImg" class="modal-content" src="" alt="확대 이미지" />
+      </div>
+
+      <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        const zoomableImages = document.querySelectorAll('.zoomable');
+
+        zoomableImages.forEach((img) => {
+          img.addEventListener('click', () => {
+            modalImg.src = img.src;
+            modal.style.display = 'flex';
+          });
+        });
+
+        function closeModal() {
+          modal.style.display = 'none';
+        }
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            closeModal();
+          }
+        });
+      </script>
     </main>
 
     <script>
