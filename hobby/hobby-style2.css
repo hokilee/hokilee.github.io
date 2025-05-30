@@ -75,7 +75,7 @@ header {
   color: #444;
 }
 
-.fullscreen {
+/* .fullscreen {
   position: fixed;
   top: 0;
   left: 0;
@@ -86,7 +86,7 @@ header {
   z-index: 9999;
   margin: 0;
   padding: 0;
-}
+} */
 
 .summary-info {
   background-color: #fafafa;
