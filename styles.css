@@ -90,7 +90,7 @@ body {
 
 /* Resume 전체 박스 */
 .resume-box {
-  max-width: 420px; /* 콘텐츠의 좌우 끝에 맞추기 위한 너비 (원하는 값으로 조정 가능) */
+  max-width: 380px; /* 콘텐츠의 좌우 끝에 맞추기 위한 너비 (원하는 값으로 조정 가능) */
   margin: 0 auto;
   padding: 24px;
   background-color: #f8f9fa;
