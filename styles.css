@@ -49,6 +49,14 @@ body {
   text-align: center;
 }
 
+.menu-icon {
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
 .menu-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
