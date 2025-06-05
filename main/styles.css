@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  background: url('right-image.jpg') no-repeat center center fixed;
+  background: url('../main-image/right-image.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
 }
@@ -22,6 +22,7 @@ body {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .main-content p {
@@ -29,6 +30,7 @@ body {
   line-height: 1.8;
   margin-bottom: 40px;
   color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .menu-grid {
@@ -44,7 +46,8 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
@@ -87,6 +90,7 @@ body {
   margin-left: 20px;
   color: white;
   font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 #busuanzi_value_site_uv {
@@ -94,19 +98,19 @@ body {
   color: yellow;
   margin-left: 8px;
   font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* Resume 전체 박스 */
+/* Resume 박스 */
 .resume-box {
-  max-width: 380px; /* 콘텐츠의 좌우 끝에 맞추기 위한 너비 (원하는 값으로 조정 가능) */
-  margin: 0 auto;
+  max-width: 380px;
+  margin: 0 auto 48px auto;
   padding: 24px;
   background-color: #f8f9fa;
   border: 1px solid #ddd;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
-  margin-bottom: 48px;
 }
 
 .resume-box .title {
