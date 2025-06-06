@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025 직장인 관심사 Top 5</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .content {
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 24px;
+        background-color: rgba(255, 255, 255, 0.96);
+        border-radius: 16px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .content h1 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        border-bottom: 4px solid #005bbb;
+        padding-bottom: 12px;
+        display: inline-block;
+        width: 100%;
+      }
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+      .interest-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s;
+        text-decoration: none;
+        color: inherit;
+      }
+      .interest-card:hover {
+        transform: translateY(-5px);
+      }
+      .interest-card img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 12px;
+      }
+      .interest-card h3 {
+        font-size: 1.2rem;
+        color: #005bbb;
+        margin-bottom: 10px;
+      }
+      .interest-card p {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.6;
+      }
+      .back-button-container {
+        margin-top: 40px;
+      }
+      .back-button {
+        text-decoration: none;
+        background-color: #005bbb;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+      .back-button:hover {
+        background-color: #004080;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>2025년 직장인의 최대 관심사 Top 5</h1>
+
+      <div class="interest-grid">
+        <a href="insight/work-life.html" class="interest-card">
+          <img src="main-image/work-life.png" alt="워라밸 아이콘" />
+          <h3>일과 삶의 균형</h3>
+          <p>
+            주 4일제, 유연근무제, 재택근무 등 근무방식의 유연성이 가장 중요한
+            관심사로 떠오르고 있습니다.
+          </p>
+        </a>
+        <a href="insight/pay.html" class="interest-card">
+          <img src="main-image/pay.png" alt="연봉 아이콘" />
+          <h3>공정한 보상과 연봉 인상</h3>
+          <p>
+            성과에 기반한 인센티브와 투명한 평가, 그리고 현실적인 연봉 인상은
+            이직 여부를 결정짓는 핵심 요인입니다.
+          </p>
+        </a>
+        <a href="insight/growth.html" class="interest-card">
+          <img src="main-image/growth.png" alt="자기계발 아이콘" />
+          <h3>커리어 성장과 자기계발</h3>
+          <p>
+            데이터 역량, 자격증, MBA 등 미래 대비와 이직 경쟁력을 위한
+            자기계발은 필수가 되었습니다.
+          </p>
+        </a>
+        <a href="insight/culture.html" class="interest-card">
+          <img src="main-image/culture.png" alt="조직문화 아이콘" />
+          <h3>조직문화와 정신 건강</h3>
+          <p>
+            수평적 소통, 심리적 안정감, 그리고 건강한 조직문화에 대한 요구가
+            커지고 있습니다.
+          </p>
+        </a>
+        <a href="insight/fire.html" class="interest-card">
+          <img src="main-image/fire.png" alt="파이어족 아이콘" />
+          <h3>퇴사 이후의 삶과 파이어족</h3>
+          <p>
+            퇴사를 꿈꾸며 부업, 자산 형성, 창업 등 파이어족(FIRE) 준비에 관심을
+            갖는 이들이 많아졌습니다.
+          </p>
+        </a>
+      </div>
+
+      <div class="back-button-container">
+        <a href="index.html" class="back-button">← 메인으로 돌아가기</a>
+      </div>
+    </div>
+  </body>
+</html>
