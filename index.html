@@ -6,23 +6,8 @@
     <title>Hoki Lee - Personal Website</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" defer></script>
-    <title>Hoki Lee - Personal Website</title>
-
-    <!-- Google Analytics 삽입 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-20K158C0EN"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-20K158C0EN');
-    </script>
   </head>
+
   <body>
     <main class="main-content">
       <section>
@@ -197,11 +182,12 @@
       </section>
     </main>
     <footer class="footer">
-      <p>&copy; 2025 Hoki Lee. All rights reserved.</p>
+      <p>Copyright ⓒ <span id="year"></span> Hoki Lee.</p>
     </footer>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <!-- 방문자 수 스크립트 (필수) -->
     <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <!-- 사용자 스크립트 -->
+    <script src="scripts.js" defer></script>
   </body>
 </html>

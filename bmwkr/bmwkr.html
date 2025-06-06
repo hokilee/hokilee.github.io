@@ -159,47 +159,7 @@
       <span class="close-btn" onclick="closeModal()">✕</span>
       <img id="modalImg" class="modal-content" src="" alt="확대 이미지" />
     </div>
-
-    <script>
-      const modal = document.getElementById('imageModal');
-      const modalImg = document.getElementById('modalImg');
-      const zoomableImages = document.querySelectorAll('.zoomable');
-
-      zoomableImages.forEach((img) => {
-        img.addEventListener('click', () => {
-          modalImg.src = img.src;
-          modal.style.display = 'flex';
-          modalImg.classList.remove('fullscreen');
-        });
-      });
-
-      function closeModal() {
-        modal.style.display = 'none';
-        modalImg.src = '';
-      }
-
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          closeModal();
-        }
-      });
-    </script>
   </main>
-
-  <script>
-    const images = document.querySelectorAll('.zoomable');
-    images.forEach((img) => {
-      img.addEventListener('click', () => {
-        img.classList.add('fullscreen');
-      });
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.fullscreen').forEach((img) => {
-          img.classList.remove('fullscreen');
-        });
-      }
-    });
-  </script>
+  <script src="bmwkr-script.js" defer></script>
   </body>
 </html>

@@ -71,20 +71,12 @@
     </script>
   </main>
 
-  <script>
-    const images = document.querySelectorAll('.zoomable');
-    images.forEach((img) => {
-      img.addEventListener('click', () => {
-        img.classList.add('fullscreen');
-      });
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.fullscreen').forEach((img) => {
-          img.classList.remove('fullscreen');
-        });
-      }
-    });
-  </script>
-  </body>
+  <!-- 이미지 확대용 모달 -->
+  <div id="imageModal" class="modal">
+    <span class="close-btn" onclick="closeModal()">✕</span>
+    <img id="modalImg" class="modal-content" src="" alt="확대 이미지" />
+  </div>
+  <script src="bavarian-script.js" defer></script>
+</body>
 </html>
+
