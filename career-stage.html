@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연령/경력별 직장인 관심사</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .content {
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 24px;
+        background-color: rgba(255, 255, 255, 0.96);
+        border-radius: 16px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .content h1 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        border-bottom: 4px solid #005bbb;
+        padding-bottom: 12px;
+        display: inline-block;
+        width: 100%;
+      }
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+      .interest-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s;
+        text-decoration: none;
+        color: inherit;
+      }
+      .interest-card:hover {
+        transform: translateY(-5px);
+      }
+      .interest-card img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 12px;
+      }
+      .interest-card h3 {
+        font-size: 1.2rem;
+        color: #005bbb;
+        margin-bottom: 10px;
+      }
+      .interest-card p {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.6;
+      }
+      .back-button-container {
+        margin-top: 40px;
+      }
+      .back-button {
+        text-decoration: none;
+        background-color: #005bbb;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+      .back-button:hover {
+        background-color: #004080;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>연령/경력별 직장인 관심사</h1>
+
+      <div class="interest-grid">
+        <a href="insight/stage-entry.html" class="interest-card">
+          <img src="main-image/entry.png" alt="신입 아이콘" />
+          <h3>🧑 신입</h3>
+          <p>조직 적응과 첫 성장을 고민하는 초년생</p>
+        </a>
+        <a href="insight/stage-manager.html" class="interest-card">
+          <img src="main-image/manager.png" alt="중간관리자 아이콘" />
+          <h3>🧑‍💼 중간관리자</h3>
+          <p>성과 부담과 리더십 스트레스의 중심</p>
+        </a>
+        <a href="insight/stage-career.html" class="interest-card">
+          <img src="main-image/career.png" alt="경력직 아이콘" />
+          <h3>🧔 경력직</h3>
+          <p>이직과 워라밸 사이에서 균형을 찾는 시기</p>
+        </a>
+        <a href="insight/stage-senior.html" class="interest-card">
+          <img src="main-image/senior.png" alt="시니어 아이콘" />
+          <h3>🧓 50대 이상</h3>
+          <p>퇴직 이후를 준비하며 삶의 전환을 고민하는 시기</p>
+        </a>
+      </div>
+
+      <div class="back-button-container">
+        <a href="index.html" class="back-button">← 메인으로 돌아가기</a>
+      </div>
+    </div>
+  </body>
+</html>

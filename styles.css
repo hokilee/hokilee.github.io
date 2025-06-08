@@ -51,11 +51,22 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+/* 상단 Resume / 관심사 / 연령별 관심사 메뉴 컨테이너 */
+#resume {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
 /* Resume 박스 및 Career Insight 박스 */
 .resume-box {
-  max-width: 380px;
-  margin: 0 auto 48px auto;
-  padding: 24px;
+  flex: 1 1 260px;
+  max-width: 280px;
+  padding: 16px;
   background-color: #f8f9fa;
   border: 1px solid #ddd;
   border-radius: 16px;
@@ -63,35 +74,48 @@ body {
   text-align: center;
 }
 
+.resume-box h2 a {
+  border-bottom: 2px solid #005bbb;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.resume-box h2 a:hover {
+  border-bottom-color: #003f8c;
+}
+
+/* resume 박스 제목 */
 .resume-box .title {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
+/* resume 박스 설명 */
 .resume-box .description {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 /* 버튼 그룹 */
 .resume-buttons {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 /* 버튼 스타일 */
 .resume-buttons a.button {
-  padding: 8px 16px;
-  font-size: 14px;
+  padding: 6px 12px;
+  font-size: 13px;
   font-weight: 500;
   text-decoration: none;
   background-color: #005bbb;
   color: white;
-  border-radius: 12px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -104,8 +128,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   margin-top: 40px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
 }
 
 .menu-item {
