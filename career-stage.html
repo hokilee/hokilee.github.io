@@ -3,50 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>경력직 관심사</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>연령/경력별 직장인 관심사 차이</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      .detail-container {
-        max-width: 800px;
+      .content {
+        max-width: 1000px;
         margin: 60px auto;
         padding: 24px;
         background-color: rgba(255, 255, 255, 0.96);
         border-radius: 16px;
         box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+        text-align: center;
       }
-      .detail-container h2 {
-        font-size: 1.8rem;
-        margin-bottom: 8px;
-        color: #005bbb;
-      }
-      .divider {
-        width: 100%;
-        height: 2px;
-        background-color: #ccc;
-        margin-bottom: 24px;
-      }
-      .detail-container h3 {
-        margin-top: 32px;
-        font-size: 1.2rem;
-        color: #333;
-      }
-      .detail-container p {
-        font-size: 1rem;
-        line-height: 1.7;
-        color: #333;
+
+      .content h1 {
+        font-size: 2rem;
         margin-bottom: 16px;
+        border-bottom: 4px solid #005bbb;
+        padding-bottom: 12px;
       }
-      .detail-container ul {
-        padding-left: 20px;
-        margin-bottom: 24px;
+
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+        margin-top: 32px;
       }
-      .detail-container li {
-        margin-bottom: 8px;
+
+      .interest-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .interest-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .interest-card img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 12px;
+      }
+
+      .interest-card h3 {
+        font-size: 1.2rem;
+        color: #005bbb;
+        margin-bottom: 10px;
+      }
+
+      .interest-card p {
+        font-size: 0.95rem;
+        color: #333;
         line-height: 1.6;
       }
+
+      .back-button-container {
+        margin-top: 40px;
+      }
+
       .back-button {
-        display: inline-block;
-        margin-top: 24px;
         text-decoration: none;
         background-color: #005bbb;
         color: white;
@@ -54,69 +74,43 @@
         border-radius: 12px;
         font-weight: bold;
       }
+
       .back-button:hover {
         background-color: #004080;
       }
     </style>
   </head>
+
   <body>
-    <div class="detail-container">
-      <h2>🧔 경력직 관심사</h2>
-      <div class="divider"></div>
+    <div class="content">
+      <h1>연령/경력별 직장인 관심사 차이</h1>
 
-      <p>
-        10년 이상의 실무 경험을 가진 경력자들은 외형적으로 안정돼 보이지만,
-        내부적으로는 커리어 유지와 미래 전환에 대한 고민이 깊어지는 시기입니다.
-        특히 연봉 정체, 이직 한계, 그리고 워라밸 유지 여부가 주요한 관심사로
-        나타납니다.
-      </p>
+      <div class="interest-grid">
+        <a href="insight/stage-entry.html" class="interest-card">
+          <img src="main-image/entry.png" alt="신입 아이콘" />
+          <h3>신입 직장인</h3>
+          <p>첫 사회생활을 시작한 20대~30대 초반, 워라밸과 조직문화에 민감</p>
+        </a>
+        <a href="insight/stage-manager.html" class="interest-card">
+          <img src="main-image/manager.png" alt="중간 관리자 아이콘" />
+          <h3>중간 관리자</h3>
+          <p>실무·관리 사이 고민하는 과장~차장급, 갈등 조율과 평가 스트레스</p>
+        </a>
+        <a href="insight/stage-career.html" class="interest-card">
+          <img src="main-image/career.png" alt="경력직 아이콘" />
+          <h3>경력직</h3>
+          <p>이직·전직을 고려하는 30대 후반~40대 중심, 커리어 방향이 핵심</p>
+        </a>
+        <a href="insight/stage-senior.html" class="interest-card">
+          <img src="main-image/senior.png" alt="50대 이상 아이콘" />
+          <h3>50대 이상</h3>
+          <p>정년·퇴직 이후 삶 고민, 건강과 역할 축소에 대한 불안감 존재</p>
+        </a>
+      </div>
 
-      <h3>1. 조사 배경</h3>
-      <p>
-        잡코리아·사람인·링크드인 설문과 기업 인사담당자 인터뷰를 기반으로, 10년
-        이상 경력직 종사자 2,300명을 대상으로 2025년 1월~3월 사이 데이터 분석을
-        진행하였습니다.
-      </p>
-
-      <h3>2. 연령대</h3>
-      <p>
-        주로 35세~47세의 경력 10~20년차의 대리~차장급 실무자, 혹은 파트 리더층을
-        중심으로 조사하였으며, 응답자의 61%가 “경력 피로감” 또는 “커리어의
-        끝단에 도달한 느낌”을 호소했습니다.
-      </p>
-
-      <h3>3. 주요 관심사</h3>
-      <ul>
-        <li>
-          <strong>① 안정성과 워라밸 유지</strong><br />
-          - 이직보다 '잔류'를 선택하는 비율 증가 (2022년 46% → 2025년 63%)<br />
-          - 유연근무, 가족 돌봄 휴가, 건강검진 등 복지 중심으로 관심 이동<br />
-          - 일보다 삶의 무게가 커지는 단계
-        </li>
-
-        <li>
-          <strong>② 연봉 피크와 보상 기대의 현실</strong><br />
-          - 연봉 협상이 거의 불가능한 포지션, 실적 대비 보상 격차 인식<br />
-          - “10년 일했지만 대졸 신입과 1.5배 차이밖에 안 난다”는 불만 반복<br />
-          - 사내 이동 또는 직무재설계를 통해 소득 재설계 필요성 인식
-        </li>
-
-        <li>
-          <strong>③ 경력 전환 가능성과 한계</strong><br />
-          - 응답자 54%가 “같은 회사에서 다른 업무로 바꾸고 싶다”고 응답<br />
-          - 하지만 직무 변경 제도 자체가 없는 기업도 40%에 달함<br />
-          - 학위·자격증·외부 인증 준비 등 셀프 성장 시도 증가
-        </li>
-
-        <li>
-          <strong>④ 자존감 회복과 커리어 불안감</strong><br />
-          - “나는 더 이상 성장하지 않는다는 불안감”이 40대에 급증<br />
-          - 후배들에게 자리 내어줘야 할지, 새로운 분야로 나아가야 할지 고민<br />
-          - 코칭·멘토링 제도 도입 기업에서 이직률 12%p 감소 효과
-        </li>
-      </ul>
-
-      <a href="../career-stage.html" class="back-button">← 목록으로 돌아가기</a>
+      <div class="back-button-container">
+        <a href="index.html" class="back-button">← 메인으로 돌아가기</a>
+      </div>
     </div>
   </body>
 </html>
