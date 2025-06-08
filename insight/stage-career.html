@@ -6,6 +6,19 @@
     <title>경력직 관심사</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 32px;
+      }
+
+      @media (max-width: 600px) {
+        .interest-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
       .detail-container {
         max-width: 800px;
         margin: 60px auto;
@@ -97,9 +110,26 @@
         <li>
           <strong>② 연봉 피크와 보상 기대의 현실</strong><br />
           - 연봉 협상이 거의 불가능한 포지션, 실적 대비 보상 격차 인식<br />
-          - “10년 일했지만 대졸 신입과 1.5배 차이밖
+          - “10년 일했지만 대졸 신입과 1.5배 차이밖에 안 난다”는 불만 반복<br />
+          - 사내 이동 또는 직무재설계를 통해 소득 재설계 필요성 인식
+        </li>
+
+        <li>
+          <strong>③ 경력 전환 가능성과 한계</strong><br />
+          - 응답자 54%가 “같은 회사에서 다른 업무로 바꾸고 싶다”고 응답<br />
+          - 하지만 직무 변경 제도 자체가 없는 기업도 40%에 달함<br />
+          - 학위·자격증·외부 인증 준비 등 셀프 성장 시도 증가
+        </li>
+
+        <li>
+          <strong>④ 자존감 회복과 커리어 불안감</strong><br />
+          - “나는 더 이상 성장하지 않는다는 불안감”이 40대에 급증<br />
+          - 후배들에게 자리 내어줘야 할지, 새로운 분야로 나아가야 할지 고민<br />
+          - 코칭·멘토링 제도 도입 기업에서 이직률 12%p 감소 효과
         </li>
       </ul>
+
+      <a href="../career-stage.html" class="back-button">← 목록으로 돌아가기</a>
     </div>
   </body>
 </html>

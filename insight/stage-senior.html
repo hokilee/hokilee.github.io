@@ -6,6 +6,19 @@
     <title>50대 이상 직장인 관심사</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 32px;
+      }
+
+      @media (max-width: 600px) {
+        .interest-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
       .detail-container {
         max-width: 800px;
         margin: 60px auto;
