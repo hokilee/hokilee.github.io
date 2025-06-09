@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>직장인 커리어 트렌드 2025</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .content {
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 24px;
+        background-color: rgba(255, 255, 255, 0.96);
+        border-radius: 16px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .content h1 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        border-bottom: 4px solid #005bbb;
+        padding-bottom: 12px;
+      }
+
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 32px;
+      }
+
+      @media (max-width: 600px) {
+        .interest-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .interest-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .interest-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .interest-card img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 12px;
+      }
+
+      .interest-card h3 {
+        font-size: 1.2rem;
+        color: #005bbb;
+        margin-bottom: 10px;
+      }
+
+      .interest-card p {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .back-button-container {
+        margin-top: 40px;
+      }
+
+      .back-button {
+        text-decoration: none;
+        background-color: #005bbb;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+
+      .back-button:hover {
+        background-color: #004080;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <h1>직장인 커리어 트렌드 2025</h1>
+      <p>
+        요즘 직장인들은 단순한 이직을 넘어 새로운 커리어를 설계하고 있습니다.<br />
+        아래 항목을 통해 커리어 전환과 재정비, 재도약의 흐름을 확인해보세요.
+      </p>
+
+      <div class="interest-grid">
+        <a href="insight/trend-age.html" class="interest-card">
+          <img src="main-image/age.png" alt="연령대별 이직 사유" />
+          <h3>연령대별 이직 사유</h3>
+          <p>세대별로 다른 이직의 이유, 어떤 차이가 있을까요?</p>
+        </a>
+        <a href="insight/trend-nonmajor.html" class="interest-card">
+          <img src="main-image/nonmajor.png" alt="비전공자의 커리어 전환" />
+          <h3>비전공자의 커리어 전환</h3>
+          <p>내 전공과 상관없는 일, 도전은 어떻게 시작될까요?</p>
+        </a>
+        <a href="insight/trend-reposition.html" class="interest-card">
+          <img src="main-image/reposition.png" alt="리포지셔닝 전략" />
+          <h3>리포지셔닝 전략</h3>
+          <p>커리어의 방향을 재정의하고 재설계하는 전략을 소개합니다.</p>
+        </a>
+        <a href="insight/trend-slashcareer.html" class="interest-card">
+          <img src="main-image/sidejob.png" alt="슬래시 캐리어" />
+          <h3>슬래시 캐리어 / 사이드잡</h3>
+          <p>본업 외 나만의 ‘부캐’는 커리어를 확장하는 힘이 됩니다.</p>
+        </a>
+        <a href="insight/trend-reeducation.html" class="interest-card">
+          <img src="main-image/reeducation.png" alt="재교육 프로그램" />
+          <h3>재교육 프로그램</h3>
+          <p>새로운 도약을 위한 학습과 교육, 어디서 어떻게 시작할까요?</p>
+        </a>
+      </div>
+
+      <div class="back-button-container">
+        <a href="index.html" class="back-button">← 메인으로 돌아가기</a>
+      </div>
+    </div>
+  </body>
+</html>
