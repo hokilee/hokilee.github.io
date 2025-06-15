@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하루 한 생각 - 내가 바랐던 삶의 모양일까?</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script scr="../scripts.js" defer></script>
+    <style>
+      .detail-box {
+        background-color: rgba(255, 255, 255, 0.95);
+        max-width: 800px;
+        margin: 80px auto;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        line-height: 1.8;
+        font-size: 1.1em;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 6px;
+        color: #333;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        width: 100%;
+        max-width: 680px;
+        margin: 6px auto 30px auto;
+      }
+
+      p strong {
+        color: #1a73e8;
+      }
+
+      .back-button {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .back-button a {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+
+      .back-button a:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="detail-box">
+      <h1>지금 내가 하고 있는 일은, 내가 바랐던 삶의 모양일까?</h1>
+      <hr />
+
+      <p>
+        우리는 어릴 적, 미래를 상상하곤 했습니다.<br />
+        좋아하는 일을 하면서 자유롭게 살아가는 모습, 아침 햇살이 기분 좋게
+        스며드는 창가에서 책을 읽는 삶, 혹은 무언가를 창조하거나 사람을 도우며
+        의미 있게 살아가는 모습들.
+      </p>
+
+      <p>
+        그런데 지금의 나는 어떤 모습일까요?<br />
+        해야 해서 하는 일, 견뎌야 하니까 버티는 하루, 타인의 기대를 채우기 위해
+        사는 삶 속에서
+        <strong>내가 정말 원했던 삶의 모양</strong>은 어디쯤 놓여 있는 걸까요?
+      </p>
+
+      <p>
+        완벽하게 이상적인 삶을 살 수는 없지만,
+        <strong>내가 바랐던 방향으로 반 발짝만이라도 움직이고 있는가</strong>를
+        묻는 것, 그 질문 하나만으로도 우리는 삶을 스스로의 것으로 되돌릴 수
+        있습니다.
+      </p>
+
+      <p>
+        오늘 내가 하는 일이,
+        <em>내가 되고 싶은 사람에게 한 걸음 다가가게 해주는 일인지</em> 생각해
+        보세요.
+      </p>
+    </div>
+    <div class="button-row">
+      <button class="like" onclick="likePost()">
+        ❤️ 공감했어요 (<span id="likeCount">0</span>)
+      </button>
+      <a href="../thought-board.html" class="back">← 목록으로 돌아가기</a>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const pageKey = window.location.pathname;
+        const likeSpan = document.getElementById('likeCount');
+
+        const savedLikes = localStorage.getItem('like-' + pageKey);
+        if (savedLikes && likeSpan) {
+          likeSpan.innerText = savedLikes;
+        }
+
+        window.likePost = function () {
+          let currentLikes = parseInt(likeSpan.innerText);
+          currentLikes += 1;
+          likeSpan.innerText = currentLikes;
+          localStorage.setItem('like-' + pageKey, currentLikes);
+        };
+      });
+    </script>
+  </body>
+</html>

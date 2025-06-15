@@ -9,6 +9,31 @@ body {
   color: #333;
 }
 
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.button-row .like,
+.button-row .back {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-row .like:hover,
+.button-row .back:hover {
+  background-color: #555;
+}
+
 .main-content {
   padding: 60px 40px;
   text-align: center;

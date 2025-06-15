@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하루 한 생각 - 나 자신을 이해하려고 해본 순간</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script scr="../scripts.js" defer></script>
+  <style>
+    .detail-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #ccc;
+      width: 100%;
+      max-width: 680px;
+      margin: 6px auto 30px auto;
+    }
+
+    p strong {
+      color: #1a73e8;
+    }
+
+    .back-button {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .back-button a {
+      text-decoration: none;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .back-button a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="detail-box">
+    <h1>오늘 하루, 진심으로 나 자신을 이해하려고 해본 순간이 있었을까?</h1>
+    <hr />
+
+    <p>
+      우리는 하루에도 수십 번 다른 사람의 감정과 의도를 파악하려 애씁니다.<br />
+      눈치를 보고, 표정을 살피고, 말끝을 조심하며 ‘상대가 어떻게 느낄까’를 끊임없이 계산하죠.
+    </p>
+
+    <p>
+      그런데, 그만큼 <strong>나 자신에게는 얼마나 관심을 기울이고 있을까요?</strong><br />
+      오늘 내가 왜 불안했는지, 왜 그 말에 상처받았는지, 왜 마음이 허전했는지를  
+      스스로에게 물어본 순간이 있었는지요?
+    </p>
+
+    <p>
+      자주 참는 사람일수록, 자주 웃는 사람일수록, 사실 더 깊은 내면의 소리를 외면하고 있는 경우가 많습니다.  
+      <strong>자기 이해는 자기 위로의 시작</strong이며, 타인을 이해하는 힘의 뿌리이기도 합니다.
+    </p>
+
+    <p>
+      오늘 하루 중 단 1분이라도,  
+      나의 감정에 진심으로 귀 기울이는 시간을 가져보세요.<br />
+      그 짧은 순간이 당신을 더 단단하게 만들어줄 겁니다.
+    </p>
+
+    <div class="button-row">
+      <button class="like" onclick="likePost()">❤️ 공감했어요 (<span id="likeCount">0</span>)</button>
+      <a href="../thought-board.html" class="back">← 목록으로 돌아가기</a>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const pageKey = window.location.pathname;
+        const likeSpan = document.getElementById('likeCount');
+
+        const savedLikes = localStorage.getItem('like-' + pageKey);
+        if (savedLikes && likeSpan) {
+          likeSpan.innerText = savedLikes;
+        }
+
+        window.likePost = function () {
+          let currentLikes = parseInt(likeSpan.innerText);
+          currentLikes += 1;
+          likeSpan.innerText = currentLikes;
+          localStorage.setItem('like-' + pageKey, currentLikes);
+        };
+      });
+    </script>
+  </div>
+</body>
+</html>
