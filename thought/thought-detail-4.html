@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하루 한 생각 - 나는 무엇을 놓치고 있는 걸까?</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../scripts.js" defer></script>
+    <style>
+      .detail-box {
+        background-color: rgba(255, 255, 255, 0.95);
+        max-width: 800px;
+        margin: 80px auto;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        line-height: 1.8;
+        font-size: 1.1em;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 6px;
+        color: #333;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        width: 100%;
+        max-width: 680px;
+        margin: 6px auto 30px auto;
+      }
+
+      p strong {
+        color: #1a73e8;
+      }
+
+      .back-button {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .back-button a {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+
+      .back-button a:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="detail-box">
+      <h1>나는 무엇을 놓치고 있는 걸까?</h1>
+      <hr />
+
+      <p>
+        어떤 결정을 내릴 때마다 늘 따라오는 감정이 있습니다.<br />
+        “잘 선택한 걸까?”, “혹시 더 나은 길을 놓친 건 아닐까?” 하는,
+        <strong>작은 불안과 아쉬움</strong>이죠.
+      </p>
+
+      <p>
+        그 감정은 지극히 자연스럽습니다. 우리는 미래를 알 수 없기 때문에,
+        **무수한 가능성들 중 하나를 고를 수밖에 없고**, 그 선택에는 늘 '놓친
+        것들'이 생깁니다.
+      </p>
+
+      <p>
+        하지만 어느 순간, 이런 생각이 들었습니다.<br />
+        <em>“나는 놓친 것에 너무 많은 시간을 쓰고 있었던 건 아닐까?”</em><br />
+        돌아보면, 나를 웃게 했던 순간들, 소중한 사람들과의 대화, 작지만 확실한
+        위로들은<br />
+        내가 '놓치지 않은 것들' 속에 담겨 있었습니다.
+      </p>
+
+      <p>
+        어쩌면 인생은 모든 가능성을 품는 것이 아니라, **내가 품은 것을 소중히
+        여기는 법을 배워가는 과정**인지도 모릅니다.
+      </p>
+
+      <p>
+        오늘 하루를 마무리하며 스스로에게 물어보세요.<br />
+        “지금 내 손 안에 있는 것들, 그 가치는 충분히 들여다봤을까?”
+      </p>
+
+      <p>
+        놓친 것보다 더 중요한 것은, 지금 내가 걸어가고 있는 이 한 걸음이라는
+        사실을 잊지 않기를 바랍니다.
+      </p>
+
+      <div class="button-row">
+        <button class="like" onclick="likePost()">
+          ❤️ 공감했어요 (<span id="likeCount">0</span>)
+        </button>
+        <a href="../thought-board.html" class="back">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const pageKey = window.location.pathname;
+        const likeSpan = document.getElementById('likeCount');
+
+        const savedLikes = localStorage.getItem('like-' + pageKey);
+        if (savedLikes && likeSpan) {
+          likeSpan.innerText = savedLikes;
+        }
+
+        window.likePost = function () {
+          let currentLikes = parseInt(likeSpan.innerText);
+          currentLikes += 1;
+          likeSpan.innerText = currentLikes;
+          localStorage.setItem('like-' + pageKey, currentLikes);
+        };
+      });
+    </script>
+  </body>
+</html>
