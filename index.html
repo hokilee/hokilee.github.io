@@ -19,8 +19,14 @@
   </head>
   <body>
     <main class="main-content">
-      <section>
-        <h1>이호기의 작은 공간에 오신 걸 환영합니다!</h1>
+      <section class="header-section">
+        <div class="header-container">
+          <h1 class="site-title">이호기의 작은 공간에 오신 걸 환영합니다!</h1>
+          <button id="musicButton" class="music-toggle" onclick="toggleMusic()">
+            🎵 음악 켜기
+          </button>
+        </div>
+
         <span class="visitor-label">누적 방문자수:</span>
         <span id="busuanzi_value_site_uv">0</span>
         <p>
@@ -32,6 +38,13 @@
           사진이 부족하더라도 귀엽게 봐주세요~~)
         </p>
       </section>
+      <audio id="bgm" loop>
+        <source
+          src="main-image/Wind-Up Mountains - Schwartzy.mp3"
+          type="audio/mpeg"
+        />
+        브라우저가 오디오를 지원하지 않습니다.
+      </audio>
 
       <!-- 콘텐츠 섹션 제목 -->
       <div class="section-header" style="margin: 20px auto 10px auto">

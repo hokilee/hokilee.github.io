@@ -25,3 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('like-' + pageKey, currentLikes);
   };
 });
+function toggleMusic() {
+  const audio = document.getElementById('bgm');
+  const button = document.getElementById('musicButton');
+
+  if (audio.paused) {
+    audio.play();
+    button.textContent = '⏸ 음악 끄기';
+  } else {
+    audio.pause();
+    button.textContent = '🎵 음악 켜기';
+  }
+}
