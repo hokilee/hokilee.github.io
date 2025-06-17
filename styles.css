@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* 기본 설정 */
 body {
   margin: 0;
@@ -7,31 +5,6 @@ body {
   background: url('main-image/right-image.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
-}
-
-.button-row {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 40px;
-}
-
-.button-row .like,
-.button-row .back {
-  font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  text-decoration: none;
-  color: #fff;
-  background-color: #333;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button-row .like:hover,
-.button-row .back:hover {
-  background-color: #555;
 }
 
 .main-content {
@@ -76,18 +49,16 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* 상단 Resume / 관심사 / 연령별 관심사 메뉴 컨테이너 */
-#resume {
+/* 콘텐츠 메뉴 (상단 6개 박스) */
+#content-menus.content-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   max-width: 960px;
-  margin: 0 auto;
-  padding: 20px 0 0 0;
+  margin: 0 auto 40px auto;
 }
 
-/* Resume 박스 및 Career Insight 박스 */
 .resume-box {
   flex: 1 1 260px;
   max-width: 280px;
@@ -97,6 +68,12 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
+}
+
+.resume-box .title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .resume-box h2 a {
@@ -110,55 +87,23 @@ body {
   border-bottom-color: #003f8c;
 }
 
-/* resume 박스 제목 */
-.resume-box .title {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 4px;
+/* 메뉴 아이콘 */
+.menu-icon {
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  margin-right: 8px;
+  object-fit: contain;
 }
 
-/* resume 박스 설명 */
-.resume-box .description {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* 버튼 그룹 */
-.resume-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-/* 버튼 스타일 */
-.resume-buttons a.button {
-  padding: 6px 12px;
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: #005bbb;
-  color: white;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.resume-buttons a.button:hover {
-  background-color: #003f8c;
-}
-
-/* 메뉴 그리드 */
+/* 하단 커리어 메뉴 */
 .menu-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  margin-top: 40px;
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 40px;
+  max-width: 960px;
+  margin: 0 auto 40px auto;
 }
 
 .menu-item {
@@ -170,14 +115,6 @@ body {
   max-width: 280px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-}
-
-.menu-icon {
-  width: 34px;
-  height: 34px;
-  vertical-align: middle;
-  margin-right: 8px;
-  object-fit: contain;
 }
 
 .menu-item:hover {
@@ -196,13 +133,54 @@ body {
   margin: 0 auto 15px auto;
   height: 0;
   width: 100%;
-  max-width: 100%;
 }
 
 .menu-item p {
   font-size: 1em;
   color: #222;
   line-height: 1.6;
+}
+
+/* 제목 + 부제 (상단/하단 공통) */
+.section-header {
+  text-align: center;
+  margin: 60px auto 30px auto;
+  padding: 20px;
+  max-width: 960px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #111;
+  margin: 10px 0 0 0;
+}
+
+.section-subtitle {
+  font-size: 1em;
+  color: #005bbb;
+  margin-bottom: 8px;
+}
+
+/* 반응형 설정 */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.6em;
+  }
+  .section-subtitle {
+    font-size: 0.9em;
+  }
+}
+
+/* 구분선 */
+.divider {
+  border: none;
+  border-top: 2px dashed #ccc;
+  width: 80%;
+  margin: 60px auto;
 }
 
 /* 푸터 */
