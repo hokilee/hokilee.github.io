@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>하루 한 생각 - 내가 바랐던 삶의 모양일까?</title>
+    <title>하루 한 생각 - 내가 가장 오래 붙잡고 있었던 감정은?</title>
     <link rel="stylesheet" href="../styles.css" />
-    <script scr="../scripts.js" defer></script>
+    <script src="../scripts.js" defer></script>
     <style>
       .detail-box {
         background-color: rgba(255, 255, 255, 0.95);
@@ -59,46 +59,51 @@
   <body>
     <div class="detail-box">
       <h1>
-        지금 내가 하고 있는 일은, 내가 바랐던 삶의 모양일까?<span
-          class="new-badge"
-          >"New"</span
-        >
+        내가 가장 오래 붙잡고 있었던 감정은 무엇이었을까?
+        <span class="new-badge">"New"</span>
       </h1>
       <hr />
 
       <p>
-        우리는 어릴 적, 미래를 상상하곤 했습니다.<br />
-        좋아하는 일을 하면서 자유롭게 살아가는 모습, 아침 햇살이 기분 좋게
-        스며드는 창가에서 책을 읽는 삶, 혹은 무언가를 창조하거나 사람을 도우며
-        의미 있게 살아가는 모습들.
+        우리는 매일 새로운 감정을 경험하지만,
+        <strong>오래 머무는 감정</strong>은 따로 있습니다.<br />
+        시간이 지나도 사라지지 않고 마음속 깊이 자리를 잡은 감정 말이죠.
       </p>
 
       <p>
-        그런데 지금의 나는 어떤 모습일까요?<br />
-        해야 해서 하는 일, 견뎌야 하니까 버티는 하루, 타인의 기대를 채우기 위해
-        사는 삶 속에서
-        <strong>내가 정말 원했던 삶의 모양</strong>은 어디쯤 놓여 있는 걸까요?
+        그 감정은 때로는 <strong>기억보다 더 오래 나를 붙잡고</strong>,
+        관계에서의 나를 바꾸고, 결정 앞에서 주저하게 만들기도 합니다.
       </p>
 
       <p>
-        완벽하게 이상적인 삶을 살 수는 없지만,
-        <strong>내가 바랐던 방향으로 반 발짝만이라도 움직이고 있는가</strong>를
-        묻는 것, 그 질문 하나만으로도 우리는 삶을 스스로의 것으로 되돌릴 수
-        있습니다.
+        내가 자주 화를 낸다면, 어쩌면 오래된 서운함이 원인일 수도 있습니다.<br />
+        쉽게 슬퍼진다면, 위로받지 못했던 외로움이 아직 남아 있는 걸지도 모르죠.
       </p>
 
       <p>
-        오늘 내가 하는 일이,
-        <em>내가 되고 싶은 사람에게 한 걸음 다가가게 해주는 일인지</em> 생각해
-        보세요.
+        심리학자들은 이런 감정을 ‘<strong>정서적 잔류물</strong>’이라고
+        부릅니다. 표현되지 못한 감정이 내면에 쌓여, 오랜 시간 영향을 미치는
+        것이죠.
       </p>
+
+      <p>
+        오늘, 스스로에게 조용히 물어보세요.<br />
+        <em>“나는 어떤 감정을 가장 오래 붙잡고 있었을까?”</em>
+      </p>
+
+      <p>
+        그 감정을 알아차리는 순간, <strong>비로소 놓아줄 수 있는 준비</strong>가
+        시작됩니다.
+      </p>
+
+      <div class="button-row">
+        <button class="like" onclick="likePost()">
+          ❤️ 공감했어요 (<span id="likeCount">0</span>)
+        </button>
+        <a href="../thought-board.html" class="back">← 목록으로 돌아가기</a>
+      </div>
     </div>
-    <div class="button-row">
-      <button class="like" onclick="likePost()">
-        ❤️ 공감했어요 (<span id="likeCount">0</span>)
-      </button>
-      <a href="../thought-board.html" class="back">← 목록으로 돌아가기</a>
-    </div>
+
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const pageKey = window.location.pathname;
