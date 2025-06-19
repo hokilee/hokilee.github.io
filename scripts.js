@@ -21,9 +21,48 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('like-' + pageKey, currentLikes);
     };
   }
+
+  // ✅ 음악 선택 드롭다운 기능 (자동 생성 + 선택 시 재생)
+  const musicList = [
+    'cozycoffeehouse.mp3',
+    'dawnofchange.mp3',
+    'firesidechat.mp3',
+    'hearty.mp3',
+    'moonlightdrive.mp3',
+    'prism.mp3',
+    'slowlife.mp3',
+    'yesterday.mp3',
+  ];
+
+  const selector = document.getElementById('musicSelector');
+  const player = document.getElementById('audioPlayer');
+  const source = document.getElementById('audioSource');
+
+  if (selector && player && source) {
+    // 드롭다운 옵션 자동 생성
+    musicList.forEach((filename) => {
+      const option = document.createElement('option');
+      option.value = filename;
+      option.textContent = filename.replace('.mp3', '').replace(/[-_]/g, ' ');
+      selector.appendChild(option);
+    });
+
+    // 기본 첫 곡 설정 및 재생
+    source.src = `music/${musicList[0]}`;
+    player.load();
+    player.play();
+
+    // 선택 시 음악 재생
+    selector.addEventListener('change', () => {
+      const selected = selector.value;
+      source.src = `music/${selected}`;
+      player.load();
+      player.play();
+    });
+  }
 });
 
-// 음악 토글 버튼
+// 음악 토글 버튼 (예전 bgm 재생용 기능, 필요 없으면 제거해도 무방)
 function toggleMusic() {
   const audio = document.getElementById('bgm');
   const button = document.getElementById('musicButton');
@@ -74,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  // trivia-link / thought-link는 index.html에서 각 메뉴에 id 부여해야 함
   checkNewContent('trivia-board.html', 'trivia-link');
   checkNewContent('thought-board.html', 'thought-link');
 

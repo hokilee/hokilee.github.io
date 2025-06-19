@@ -194,39 +194,55 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+/* ✨ 헤더 관련 수정 */
 .header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .site-title {
-  font-size: 32px;
+  font-size: 2.5em;
   font-weight: bold;
-  color: #333;
+  color: white;
   margin: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* 🎵 음악 박스 중앙 정렬 */
+.music-center-box {
+  margin: 30px auto;
   text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.music-toggle {
-  background-color: #ffffff;
+.music-button-box {
+  text-align: center;
+  margin-bottom: 24px; /* 👈 간격 추가 */
+}
+
+#audioPlayer {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#musicSelector {
+  padding: 10px 14px;
+  font-size: 1em;
+  border-radius: 8px;
+  background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 20px;
-  padding: 6px 14px;
-  font-size: 14px;
-  font-weight: bold;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
 }
 
-.music-toggle:hover {
-  background-color: #f2f2f2;
-}
-
+/* "New" 배지 */
 .new-badge {
   color: red;
   font-weight: bold;
@@ -234,6 +250,7 @@ body {
   margin-left: 6px;
 }
 
+/* 페이지 네비게이션 */
 .pagination {
   text-align: center;
   margin-top: 40px;
@@ -253,6 +270,7 @@ body {
   background-color: #004999;
 }
 
+/* 버튼 줄 (좋아요 등) */
 .button-row {
   margin-top: 40px;
   display: flex;
