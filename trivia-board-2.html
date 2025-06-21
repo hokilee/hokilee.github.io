@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 한줄 지식/잡학</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .overlay-box {
+        background-color: rgba(255, 255, 255, 0.92);
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 14px;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      th {
+        background-color: #f0f0f0;
+        color: #222;
+      }
+
+      td.title a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+      }
+
+      td.title a:hover {
+        color: #007acc;
+        text-decoration: underline;
+      }
+
+      .back-button {
+        text-align: center;
+      }
+
+      .back-button a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      .back-button a:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay-box">
+      <h1>💡 오늘의 한줄 지식/잡학</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11</td>
+            <td class="title">
+              <a href="trivia/trivia-detail-11.html"
+                >인간은 실제로 키보다 자신을 더 크게 본다</a
+              >
+            </td>
+            <td class="date">2025-06-21</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="back-button">
+        <a href="index.html">← 메인화면으로 돌아가기</a>
+      </div>
+    </div>
+    <script src="../scripts.js" defer></script>
+    <div class="pagination">
+      <a href="trivia-board.html">1</a>
+      <a href="trivia-board-2.html" class="current">2</a>
+    </div>
+  </body>
+  <script src="scripts.js" defer></script>
+</html>

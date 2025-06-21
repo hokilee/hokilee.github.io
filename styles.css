@@ -244,10 +244,12 @@ body {
 
 /* "New" 배지 */
 .new-badge {
-  color: red;
-  font-weight: bold;
-  font-size: 1em;
-  margin-left: 6px;
+  background-color: #e91e63;
+  color: white;
+  font-size: 0.65em;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 8px;
 }
 
 /* 페이지 네비게이션 */
@@ -303,4 +305,38 @@ body {
 
 .back:hover {
   background-color: #555;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.pagination a.current {
+  background-color: #1a73e8;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+.new {
+  background-color: #e91e63;
+  color: white;
+  font-size: 0.7em;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 8px;
 }

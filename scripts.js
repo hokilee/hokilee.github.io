@@ -83,16 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const todayStr = today.toISOString().slice(0, 10);
 
   // ✅ 상세 페이지: 제목 옆에 "New"
-  const dateElement = document.querySelector('.date');
-  const titleElement = document.querySelector('h1');
+  if (
+    window.location.href.includes('trivia-detail') ||
+    window.location.href.includes('thought-detail')
+  ) {
+    const dateElement = document.querySelector('.date');
+    const titleElement = document.querySelector('h1');
 
-  if (dateElement && titleElement) {
-    const postDate = dateElement.textContent.trim();
-    if (postDate === todayStr) {
-      const badge = document.createElement('span');
-      badge.className = 'new-badge';
-      badge.textContent = ' "New"';
-      titleElement.appendChild(badge);
+    if (dateElement && titleElement) {
+      const postDate = dateElement.textContent.trim();
+      if (postDate === todayStr) {
+        const badge = document.createElement('span');
+        badge.className = 'new-badge';
+        badge.textContent = ' "New"';
+        titleElement.appendChild(badge);
+      }
     }
   }
 
@@ -132,8 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (
-    window.location.href.includes('trivia-board.html') ||
-    window.location.href.includes('thought-board.html')
+    window.location.href.includes('trivia-board') ||
+    window.location.href.includes('thought-board')
   ) {
     markNewInTable();
   }
