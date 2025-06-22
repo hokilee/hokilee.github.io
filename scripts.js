@@ -172,57 +172,31 @@ function markNewInBoardList() {
 function markNewInMainPage() {
   const today = getTodayDate();
 
-  // trivia와 thought 링크에 "New" 배지 추가
-  const contentTypes = [
-    {
-      urls: ['trivia-board.html', 'trivia-board-2.html'],
-      linkId: 'trivia-link',
-    },
-    {
-      urls: ['thought-board.html', 'thought-board-2.html'],
-      linkId: 'thought-link',
-    },
-  ];
+  fetch('latest_posts.json')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('네트워크 응답이 올바르지 않습니다.');
+      }
+      return response.json();
+    })
+    .then((latestPosts) => {
+      // "오늘의 한줄 지식/잡학" (trivia) 확인
+      const triviaLink = document.getElementById('trivia-link');
+      if (triviaLink && latestPosts.trivia === today) {
+        const newBadge = createNewBadge();
+        triviaLink.parentNode.appendChild(newBadge);
+      }
 
-  contentTypes.forEach(({ urls, linkId }) => {
-    let hasNewContent = false;
-    let checkedCount = 0;
-
-    urls.forEach((url) => {
-      fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-          // 더 정확한 날짜 확인: <td class="date">2025-06-22</td> 형태 찾기
-          const datePattern = new RegExp(`<td class="date">${today}</td>`, 'g');
-          if (datePattern.test(html)) {
-            hasNewContent = true;
-          }
-
-          checkedCount++;
-          if (checkedCount === urls.length) {
-            // 모든 페이지 확인 완료 후 배지 추가
-            if (hasNewContent) {
-              const link = document.getElementById(linkId);
-              if (link) {
-                const newBadge = createNewBadge();
-                link.parentNode.appendChild(newBadge);
-              }
-            }
-          }
-        })
-        .catch((error) => {
-          console.log(`${url} 확인 실패:`, error);
-          checkedCount++;
-          if (checkedCount === urls.length && hasNewContent) {
-            const link = document.getElementById(linkId);
-            if (link) {
-              const newBadge = createNewBadge();
-              link.parentNode.appendChild(newBadge);
-            }
-          }
-        });
+      // "이호기의 하루 한생각" (thought) 확인
+      const thoughtLink = document.getElementById('thought-link');
+      if (thoughtLink && latestPosts.thought === today) {
+        const newBadge = createNewBadge();
+        thoughtLink.parentNode.appendChild(newBadge);
+      }
+    })
+    .catch((error) => {
+      console.error('최신 게시물 정보를 불러오는 데 실패했습니다:', error);
     });
-  });
 }
 
 // ===== 연도 표시 =====
