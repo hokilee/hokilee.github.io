@@ -20,12 +20,10 @@
   <body>
     <main class="main-content">
       <section class="header-section">
-        <!-- 중앙 정렬을 위한 별도 container 제거 -->
         <div class="header-title-box">
           <h1 class="site-title">이호기의 작은 공간에 오신 걸 환영합니다!</h1>
         </div>
 
-        <!-- 음악 버튼은 아래에 따로 -->
         <div class="music-button-box">
           <button
             onclick="window.open('music-player.html', 'musicWindow', 'width=360,height=220')"
@@ -34,9 +32,12 @@
           </button>
         </div>
 
-        <span class="visitor-label">누적 방문자수:</span>
-        <span id="busuanzi_value_site_uv">0</span>
-        <p>
+        <div class="visitor-info">
+          <span class="visitor-label">누적 방문자수:</span>
+          <span id="busuanzi_value_site_uv">0</span>
+        </div>
+
+        <p class="welcome-text">
           이곳은 제 개인 홈페이지입니다. 아래 메뉴를 통해 제 이력과 경력, 취미,
           그리고 각 회사에서의 활동을 시각적으로 확인하실 수 있습니다.<br />
           (단, 삼성자동차에서 사진을 많이 찍었다고 생각하는데 찾을 수가
@@ -53,27 +54,20 @@
         브라우저가 오디오를 지원하지 않습니다.
       </audio>
 
-      <!-- 콘텐츠 섹션 제목 -->
-      <div class="section-header" style="margin: 20px auto 10px auto">
-        <p
-          class="section-subtitle"
-          style="color: #005bbb; margin-bottom: 0.05em"
-        >
+      <div class="section-header">
+        <p class="section-subtitle">
           직장인의 관심과 이호기의 생각을 담은 콘텐츠 모음입니다
         </p>
         <h2 class="section-title">📌 인사이트 & 콘텐츠</h2>
       </div>
 
-      <!-- 콘텐츠 메뉴 영역 -->
       <div id="content-menus" class="content-grid">
         <div class="resume-box">
           <h2 class="title">
             📄 Download My Resume
-            <span style="font-size: 0.9em; font-weight: 400">
-              (
-              <a href="resume/Hoki_Lee_Resume_EN.pdf" download>EN</a>,
-              <a href="resume_kr/Hoki_Lee_Resume_KR.pdf" download>한글</a>
-              )
+            <span class="language-links">
+              (<a href="resume/Hoki_Lee_Resume_EN.pdf" download>EN</a>,
+              <a href="resume_kr/Hoki_Lee_Resume_KR.pdf" download>한글</a>)
             </span>
           </h2>
         </div>
@@ -116,20 +110,14 @@
 
       <hr class="divider" />
 
-      <!-- 커리어 섹션 제목 -->
-      <div class="section-header" style="margin: 20px auto 10px auto">
-        <p
-          class="section-subtitle"
-          style="color: #005bbb; margin-bottom: 0.05em"
-        >
+      <div class="section-header">
+        <p class="section-subtitle">
           이호기의 커리어와 활동을 한눈에 볼 수 있어요
         </p>
         <h2 class="section-title">🧑‍💼 경력 이야기</h2>
       </div>
 
-      <!-- 커리어 메뉴 영역 -->
       <section class="menu-grid">
-        <!-- 각 메뉴 항목 -->
         <div class="menu-item">
           <a href="resume/resume.html">
             <h2>

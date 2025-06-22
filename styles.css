@@ -32,7 +32,11 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* 방문자 수 */
+/* 방문자 정보 */
+.visitor-info {
+  margin: 20px 0;
+}
+
 .visitor-label {
   font-size: 1.2em;
   margin-left: 20px;
@@ -47,6 +51,46 @@ body {
   margin-left: 8px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* 환영 텍스트 */
+.welcome-text {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* 언어 링크 */
+.language-links {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+/* "New" 배지 스타일 */
+.new-badge {
+  background-color: #ff4757;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 8px;
+  animation: pulse 2s infinite;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* 콘텐츠 메뉴 (상단 6개 박스) */
@@ -152,17 +196,30 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.section-header p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.section-header h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
 .section-title {
   font-size: 2.2em;
   font-weight: bold;
   color: #111;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0 !important;
+  line-height: 1.2 !important;
 }
 
 .section-subtitle {
   font-size: 1em;
-  color: #005bbb;
-  margin-bottom: 8px;
+  color: #333 !important;
+  margin: 0 0 4px 0 !important;
+  font-weight: 500;
+  line-height: 1.2 !important;
 }
 
 /* 반응형 설정 */
@@ -172,6 +229,10 @@ body {
   }
   .section-subtitle {
     font-size: 0.9em;
+  }
+  .new-badge {
+    font-size: 0.7em;
+    padding: 1px 4px;
   }
 }
 
@@ -240,16 +301,6 @@ body {
   width: 100%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-}
-
-/* "New" 배지 */
-.new-badge {
-  background-color: #e91e63;
-  color: white;
-  font-size: 0.65em;
-  padding: 2px 6px;
-  border-radius: 8px;
-  margin-left: 8px;
 }
 
 /* 페이지 네비게이션 */

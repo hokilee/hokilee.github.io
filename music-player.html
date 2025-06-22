@@ -31,43 +31,16 @@
     <p><strong>🎵 배경 음악이 재생 중입니다</strong></p>
 
     <audio id="audioPlayer" controls autoplay loop>
-      <source id="audioSource" src="music/calm.mp3" type="audio/mp3" />
+      <source
+        id="audioSource"
+        src="music/cozycoffeehouse.mp3"
+        type="audio/mp3"
+      />
       브라우저가 오디오를 지원하지 않습니다.
     </audio>
 
     <select id="musicSelector"></select>
 
-    <script>
-      const musicList = [
-        'cozycoffeehouse.mp3',
-        'dawnofchange.mp3',
-        'firesidechat.mp3',
-        'hearty.mp3',
-        'moonlightdrive.mp3',
-        'prism.mp3',
-        'slowlife.mp3',
-        'yesterday.mp3',
-      ];
-
-      const selector = document.getElementById('musicSelector');
-      const player = document.getElementById('audioPlayer');
-      const source = document.getElementById('audioSource');
-
-      // 드롭다운 자동 생성
-      musicList.forEach((filename) => {
-        const option = document.createElement('option');
-        option.value = filename;
-        option.textContent = filename.replace('.mp3', '').replace(/[-_]/g, ' ');
-        selector.appendChild(option);
-      });
-
-      // 선택 시 재생
-      selector.addEventListener('change', () => {
-        const selected = selector.value;
-        source.src = `music/${selected}`;
-        player.load();
-        player.play();
-      });
-    </script>
+    <script src="scripts.js" defer></script>
   </body>
 </html>
