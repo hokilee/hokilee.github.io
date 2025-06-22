@@ -34,11 +34,21 @@ function isToday(dateString) {
 }
 
 /**
- * "New" 배지를 생성하는 함수
+ * "New" 배지를 생성하는 함수 (박스 스타일)
  */
 function createNewBadge() {
   const badge = document.createElement('span');
   badge.className = 'new-badge';
+  badge.textContent = ' "New"';
+  return badge;
+}
+
+/**
+ * "New" 배지를 생성하는 함수 (게시판 목록용 텍스트 스타일)
+ */
+function createNewBadgeForBoard() {
+  const badge = document.createElement('span');
+  badge.className = 'new-badge-text';
   badge.textContent = ' "New"';
   return badge;
 }
@@ -133,7 +143,7 @@ function markNewInDetailPage() {
 
   const postDate = dateElement.textContent.trim();
   if (isToday(postDate)) {
-    const badge = createNewBadge();
+    const badge = createNewBadgeForBoard();
     titleElement.appendChild(badge);
   }
 }
@@ -150,7 +160,7 @@ function markNewInBoardList() {
     const titleCell = row.querySelector('td.title a');
 
     if (dateCell && titleCell && dateCell.textContent.trim() === today) {
-      const badge = createNewBadge();
+      const badge = createNewBadgeForBoard();
       titleCell.parentNode.appendChild(badge);
     }
   });
