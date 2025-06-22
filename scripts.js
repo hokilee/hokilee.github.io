@@ -164,23 +164,54 @@ function markNewInMainPage() {
 
   // trivia와 thought 링크에 "New" 배지 추가
   const contentTypes = [
-    { url: 'trivia-board.html', linkId: 'trivia-link' },
-    { url: 'thought-board.html', linkId: 'thought-link' },
+    {
+      urls: ['trivia-board.html', 'trivia-board-2.html'],
+      linkId: 'trivia-link',
+    },
+    {
+      urls: ['thought-board.html', 'thought-board-2.html'],
+      linkId: 'thought-link',
+    },
   ];
 
-  contentTypes.forEach(({ url, linkId }) => {
-    fetch(url)
-      .then((response) => response.text())
-      .then((html) => {
-        if (html.includes(today)) {
-          const link = document.getElementById(linkId);
-          if (link) {
-            const newBadge = createNewBadge();
-            link.parentNode.appendChild(newBadge);
+  contentTypes.forEach(({ urls, linkId }) => {
+    let hasNewContent = false;
+    let checkedCount = 0;
+
+    urls.forEach((url) => {
+      fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+          // 더 정확한 날짜 확인: <td class="date">2025-06-22</td> 형태 찾기
+          const datePattern = new RegExp(`<td class="date">${today}</td>`, 'g');
+          if (datePattern.test(html)) {
+            hasNewContent = true;
           }
-        }
-      })
-      .catch((error) => console.log(`${url} 확인 실패:`, error));
+
+          checkedCount++;
+          if (checkedCount === urls.length) {
+            // 모든 페이지 확인 완료 후 배지 추가
+            if (hasNewContent) {
+              const link = document.getElementById(linkId);
+              if (link) {
+                const newBadge = createNewBadge();
+                link.parentNode.appendChild(newBadge);
+              }
+            }
+          }
+        })
+        .catch((error) => {
+          console.log(`${url} 확인 실패:`, error);
+          checkedCount++;
+          if (checkedCount === urls.length && hasNewContent) {
+            const link = document.getElementById(linkId);
+            if (link) {
+              const newBadge = createNewBadge();
+              link.parentNode.appendChild(newBadge);
+            }
+          }
+        });
+    });
   });
 }
 

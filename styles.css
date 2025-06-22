@@ -64,7 +64,7 @@ body {
 
 /* 언어 링크 */
 .language-links {
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-weight: 400;
 }
 
@@ -212,6 +212,17 @@ body {
   color: #111;
   margin: 8px 0 0 0 !important;
   line-height: 1.2 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.section-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .section-subtitle {
