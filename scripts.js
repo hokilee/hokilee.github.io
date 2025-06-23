@@ -214,6 +214,48 @@ function updateFooterYear() {
 // ===== 페이지별 초기화 =====
 
 /**
+ * 메인 페이지의 실시간 정보(날짜/시간) 초기화
+ */
+function initializeRealtimeInfo() {
+  const datetimeElement = document.getElementById('datetime-info');
+  if (!datetimeElement) return;
+
+  // 1. 날짜 및 시간 표시
+  const updateDateTime = () => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1;
+    const date = now.getDate();
+    const day = ['일', '월', '화', '수', '목', '금', '토'][now.getDay()];
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    datetimeElement.textContent = `${year}년 ${month}월 ${date}일 (${day}) ${hours}:${minutes}:${seconds}`;
+  };
+
+  updateDateTime();
+  setInterval(updateDateTime, 1000);
+}
+
+/**
+ * 메인 페이지의 Sticky 제목 기능 초기화
+ */
+function initializeStickyTitle() {
+  const titleBox = document.querySelector('.header-title-box');
+  if (!titleBox) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      // isIntersecting이 false이면, titleBox가 뷰포트 상단으로 사라졌다는 의미
+      titleBox.classList.toggle('is-sticky', !entry.isIntersecting);
+    },
+    { threshold: 1.0 } // titleBox가 100% 보일 때와 아닐 때를 감지
+  );
+
+  observer.observe(titleBox);
+}
+
+/**
  * 현재 페이지에 따른 기능 초기화
  */
 function initializePageFeatures() {
@@ -247,6 +289,8 @@ function initializePageFeatures() {
   // 메인 페이지
   if (currentPath.endsWith('index.html') || currentPath.endsWith('/')) {
     markNewInMainPage();
+    initializeRealtimeInfo();
+    initializeStickyTitle(); // 메인 페이지에 Sticky 제목 기능 추가
   }
 }
 
