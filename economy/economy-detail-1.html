@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 경제 상식 - 인플레이션이란 무엇일까?</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .overlay-box {
+        background-color: rgba(255, 255, 255, 0.92);
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .date {
+        text-align: center;
+        color: #666;
+        font-size: 1.1em;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .back-button {
+        text-align: center;
+      }
+
+      .back-button a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      .back-button a:hover {
+        background-color: #555;
+      }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay-box">
+      <h1>
+        <img
+          src="../main-image/economy.png"
+          alt="economy icon"
+          style="
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 10px;
+          "
+        />
+        인플레이션이란 무엇일까?
+      </h1>
+      <div class="date">2025-06-24</div>
+
+      <div class="content">
+        <p>
+          인플레이션은 물가가 지속적으로 상승하는 현상을 말합니다. 쉽게 말해서
+          같은 돈으로 살 수 있는 물건의 양이 줄어드는 것을 의미합니다.
+        </p>
+
+        <p>
+          <strong>인플레이션의 원인</strong><br />
+          1. <strong>수요 인플레이션</strong>: 소비자들의 구매력이 증가하여
+          물건을 더 많이 사려고 할 때<br />
+          2. <strong>공급 인플레이션</strong>: 원자재 가격 상승이나 생산 비용
+          증가로 물건을 만드는 비용이 올라갈 때<br />
+          3. <strong>통화 인플레이션</strong>: 시중에 돈이 너무 많이 풀려서 돈의
+          가치가 떨어질 때
+        </p>
+
+        <p>
+          <strong>인플레이션이 우리에게 미치는 영향</strong><br />
+          • <strong>저축자</strong>: 돈의 가치가 떨어져서 손해<br />
+          • <strong>부채자</strong>: 빚의 실질 가치가 줄어들어서 이득<br />
+          • <strong>고정소득자</strong>: 임금이 물가 상승을 따라가지 못하면 실질
+          소득 감소<br />
+          • <strong>투자자</strong>: 부동산이나 주식 등 실물 자산 가치 상승
+        </p>
+
+        <p>
+          <strong>인플레이션 대응 방법</strong><br />
+          • <strong>투자</strong>: 현금보다는 실물 자산에 투자<br />
+          • <strong>다양화</strong>: 포트폴리오를 다양하게 구성<br />
+          • <strong>지속적 학습</strong>: 새로운 기술과 능력을 키워서 수입 증대
+        </p>
+
+        <p>
+          <strong>적정 인플레이션</strong><br />
+          완전히 인플레이션이 없는 것도 좋지 않습니다. 연 2-3% 정도의 적정한
+          인플레이션은 경제 성장에 도움이 되며, 이는 중앙은행이 목표로 하는
+          수준입니다.
+        </p>
+
+        <p>
+          인플레이션을 이해하면 경제 뉴스를 더 잘 이해할 수 있고, 개인의 재무
+          계획도 더 현명하게 세울 수 있습니다.
+        </p>
+      </div>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
+
+      <div class="back-button">
+        <a href="../economy-board.html">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+  </body>
+</html>

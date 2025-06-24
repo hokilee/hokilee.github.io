@@ -8,7 +8,7 @@
     <style>
       .overlay-box {
         background-color: rgba(255, 255, 255, 0.92);
-        max-width: 1000px;
+        max-width: 800px;
         margin: 60px auto;
         padding: 40px;
         border-radius: 20px;
@@ -17,43 +17,90 @@
 
       h1 {
         text-align: center;
-        font-size: 2em;
-        margin-bottom: 30px;
+        font-size: 2.5em;
+        margin-bottom: 40px;
         color: #333;
       }
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 30px;
+      .board-list {
+        list-style: none;
+        padding: 0;
       }
 
-      th,
-      td {
-        border: 1px solid #ccc;
-        padding: 14px;
-        text-align: center;
-        font-size: 1rem;
+      .board-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
       }
 
-      th {
-        background-color: #f0f0f0;
-        color: #222;
+      .board-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
 
-      td.title a {
+      .board-item a {
         text-decoration: none;
         color: #333;
-        font-weight: 600;
+        display: block;
       }
 
-      td.title a:hover {
-        color: #007acc;
-        text-decoration: underline;
+      .board-item h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.3em;
+        color: #333;
+      }
+
+      .board-item .date {
+        color: #666;
+        font-size: 0.9em;
+      }
+
+      .board-item .number {
+        color: #999;
+        font-size: 0.8em;
+        margin-bottom: 5px;
+      }
+
+      .new-badge {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 0.8em;
+        margin-left: 10px;
+        display: inline-block;
+      }
+
+      .pagination {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .pagination a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        margin: 0 5px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: background-color 0.3s;
+      }
+
+      .pagination a:hover {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      .pagination .current {
+        background-color: #333;
+        color: white;
       }
 
       .back-button {
         text-align: center;
+        margin-top: 30px;
       }
 
       .back-button a {
@@ -78,120 +125,98 @@
           src="main-image/bulb.png"
           alt="bulb icon"
           style="
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
             vertical-align: middle;
-            margin-right: 10px;
+            margin-right: 15px;
           "
         />
         오늘의 한줄 지식/잡학
       </h1>
-      <table>
-        <thead>
-          <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>날짜</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>10</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-10.html"
-                >고양이는 집으로 돌아가는 GPS가 없다</a
-              >
-            </td>
-            <td>2025-06-21</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-9.html"
-                >색맹 테스트는 철강회사에서 시작되었다</a
-              >
-            </td>
-            <td>2025-06-21</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-8.html"
-                >전자레인지는 우연히 발견되었다</a
-              >
-            </td>
-            <td>2025-06-20</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-7.html"
-                >포스트잇은 실수에서 탄생했다</a
-              >
-            </td>
-            <td>2025-06-19</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-6.html">악어는 혀를 내밀 수 없다</a>
-            </td>
-            <td>2025-06-18</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-5.html"
-                >디젤 엔진은 불꽃 없이 시동이 걸린다</a
-              >
-            </td>
-            <td>2025-06-17</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-4.html">빛은 얼마나 빠를까?</a>
-            </td>
-            <td>2025-06-16</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-3.html"
-                >지구에서 가장 무거운 동물은?</a
-              >
-            </td>
-            <td>2025-06-13</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-2.html"
-                >커피보다 더 마시는 음료는?</a
-              >
-            </td>
-            <td>2025-06-12</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="title">
-              <a href="trivia/trivia-detail-1.html"
-                >사람은 하루에 평균 몇 번 웃을까?</a
-              >
-            </td>
-            <td>2025-06-11</td>
-          </tr>
-        </tbody>
-      </table>
+
+      <ul class="board-list">
+        <li class="board-item">
+          <a href="trivia/trivia-detail-10.html">
+            <div class="number">#10</div>
+            <h3>고양이는 집으로 돌아가는 GPS가 없다</h3>
+            <div class="date">2025-06-21</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-9.html">
+            <div class="number">#9</div>
+            <h3>색맹 테스트는 철강회사에서 시작되었다</h3>
+            <div class="date">2025-06-21</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-8.html">
+            <div class="number">#8</div>
+            <h3>전자레인지는 우연히 발견되었다</h3>
+            <div class="date">2025-06-20</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-7.html">
+            <div class="number">#7</div>
+            <h3>포스트잇은 실수에서 탄생했다</h3>
+            <div class="date">2025-06-19</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-6.html">
+            <div class="number">#6</div>
+            <h3>악어는 혀를 내밀 수 없다</h3>
+            <div class="date">2025-06-18</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-5.html">
+            <div class="number">#5</div>
+            <h3>디젤 엔진은 불꽃 없이 시동이 걸린다</h3>
+            <div class="date">2025-06-17</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-4.html">
+            <div class="number">#4</div>
+            <h3>빛은 얼마나 빠를까?</h3>
+            <div class="date">2025-06-16</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-3.html">
+            <div class="number">#3</div>
+            <h3>지구에서 가장 무거운 동물은?</h3>
+            <div class="date">2025-06-13</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-2.html">
+            <div class="number">#2</div>
+            <h3>커피보다 더 마시는 음료는?</h3>
+            <div class="date">2025-06-12</div>
+          </a>
+        </li>
+        <li class="board-item">
+          <a href="trivia/trivia-detail-1.html">
+            <div class="number">#1</div>
+            <h3>사람은 하루에 평균 몇 번 웃을까?</h3>
+            <div class="date">2025-06-11</div>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <a href="trivia-board-2.html">2</a>
+        <a href="trivia-board.html" class="current">1</a>
+      </div>
 
       <div class="back-button">
         <a href="index.html">← 메인화면으로 돌아가기</a>
       </div>
     </div>
-    <script src="../scripts.js" defer></script>
-    <div class="pagination">
-      <a href="trivia-board-2.html">2</a>
-      <a href="trivia-board.html" class="current">1</a>
-    </div>
+
+    <script src="scripts.js" defer></script>
   </body>
 </html>

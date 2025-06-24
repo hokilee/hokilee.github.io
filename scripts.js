@@ -193,6 +193,33 @@ function markNewInMainPage() {
         const newBadge = createNewBadge();
         thoughtLink.parentNode.appendChild(newBadge);
       }
+
+      // "오늘의 기술 팁" 확인
+      const techTipsLink = document.querySelector(
+        'a[href="tech-tips-board.html"]'
+      );
+      if (techTipsLink && latestPosts.techTips === today) {
+        const newBadge = createNewBadge();
+        techTipsLink.parentNode.appendChild(newBadge);
+      }
+
+      // "오늘의 경제 상식" 확인
+      const economyLink = document.querySelector(
+        'a[href="economy-board.html"]'
+      );
+      if (economyLink && latestPosts.economy === today) {
+        const newBadge = createNewBadge();
+        economyLink.parentNode.appendChild(newBadge);
+      }
+
+      // "오늘의 자기계발" 확인
+      const selfImprovementLink = document.querySelector(
+        'a[href="self-improvement-board.html"]'
+      );
+      if (selfImprovementLink && latestPosts.selfImprovement === today) {
+        const newBadge = createNewBadge();
+        selfImprovementLink.parentNode.appendChild(newBadge);
+      }
     })
     .catch((error) => {
       console.error('최신 게시물 정보를 불러오는 데 실패했습니다:', error);

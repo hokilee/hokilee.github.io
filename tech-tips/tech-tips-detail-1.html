@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 기술 팁 - Excel 단축키로 업무 효율성 높이기</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .overlay-box {
+        background-color: rgba(255, 255, 255, 0.92);
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .date {
+        text-align: center;
+        color: #666;
+        font-size: 1.1em;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .back-button {
+        text-align: center;
+      }
+
+      .back-button a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      .back-button a:hover {
+        background-color: #555;
+      }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay-box">
+      <h1>
+        <img
+          src="../main-image/target.png"
+          alt="tech icon"
+          style="
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 10px;
+          "
+        />
+        Excel 단축키로 업무 효율성 높이기
+      </h1>
+      <div class="date">2025-06-24</div>
+
+      <div class="content">
+        <p>
+          Excel을 사용하는 직장인이라면 단축키를 활용해 업무 효율성을 크게 높일
+          수 있습니다. 오늘은 가장 유용한 Excel 단축키들을 소개해드리겠습니다.
+        </p>
+
+        <p>
+          <strong>1. 기본 편집 단축키</strong><br />
+          • Ctrl + C: 복사<br />
+          • Ctrl + V: 붙여넣기<br />
+          • Ctrl + X: 잘라내기<br />
+          • Ctrl + Z: 실행 취소<br />
+          • Ctrl + Y: 다시 실행
+        </p>
+
+        <p>
+          <strong>2. 셀 이동 단축키</strong><br />
+          • Ctrl + 방향키: 데이터가 있는 마지막 셀로 이동<br />
+          • Ctrl + Home: A1 셀로 이동<br />
+          • Ctrl + End: 사용된 범위의 마지막 셀로 이동<br />
+          • Page Up/Down: 화면 단위로 이동
+        </p>
+
+        <p>
+          <strong>3. 선택 단축키</strong><br />
+          • Ctrl + A: 전체 선택<br />
+          • Shift + 방향키: 셀 범위 선택<br />
+          • Ctrl + Shift + 방향키: 데이터가 있는 범위까지 선택
+        </p>
+
+        <p>
+          <strong>4. 서식 단축키</strong><br />
+          • Ctrl + B: 굵게<br />
+          • Ctrl + I: 기울임꼴<br />
+          • Ctrl + U: 밑줄<br />
+          • Ctrl + 1: 셀 서식 대화상자
+        </p>
+
+        <p>
+          <strong>5. 수식 단축키</strong><br />
+          • F2: 셀 편집 모드<br />
+          • Ctrl + Enter: 배열 수식 입력<br />
+          • F4: 절대 참조 전환
+        </p>
+
+        <p>
+          이 단축키들을 매일 조금씩 연습하다 보면, 어느새 마우스 없이도 빠르게
+          작업할 수 있게 됩니다. 특히 반복적인 작업이 많은 분들에게 큰 도움이 될
+          것입니다.
+        </p>
+      </div>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
+
+      <div class="back-button">
+        <a href="../tech-tips-board.html">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+  </body>
+</html>
