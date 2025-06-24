@@ -473,9 +473,27 @@ body {
 /* ===== 반응형 디자인 ===== */
 @media (max-width: 768px) {
   body {
-    background-attachment: scroll !important;
+    background: none !important;
   }
-
+  .mobile-bg {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('main-image/right-image.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  .main-content,
+  .overlay-box,
+  .content-grid,
+  .menu-grid {
+    position: relative;
+    z-index: 1;
+  }
   .main-content {
     padding: 20px;
   }
