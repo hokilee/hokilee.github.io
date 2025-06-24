@@ -17,15 +17,18 @@
         text-align: left;
         line-height: 1.8;
         font-size: 1.1em;
+        color: #333;
       }
-
+      h1,
+      p,
+      .like-count {
+        color: #333;
+      }
       h1 {
         text-align: center;
         font-size: 1.8em;
         margin-bottom: 6px;
-        color: #333;
       }
-
       hr {
         border: none;
         border-top: 2px solid #ccc;
@@ -33,16 +36,20 @@
         max-width: 680px;
         margin: 6px auto 30px auto;
       }
-
       p strong {
         color: #1a73e8;
       }
-
+      blockquote {
+        font-style: italic;
+        color: #555;
+        border-left: 4px solid #ccc;
+        padding-left: 16px;
+        margin: 30px 0;
+      }
       .back-button {
         margin-top: 40px;
         text-align: center;
       }
-
       .back-button a {
         text-decoration: none;
         background-color: #333;
@@ -50,9 +57,77 @@
         padding: 10px 20px;
         border-radius: 8px;
       }
-
       .back-button a:hover {
         background-color: #555;
+      }
+      .button-row {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .like {
+        background-color: #e91e63;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .like:hover {
+        background-color: #c2185b;
+      }
+      .back {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+      .back:hover {
+        background-color: #555;
+      }
+      .detail-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 28px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 18px;
+      }
+      .detail-text {
+        flex: 2 1 0;
+      }
+      .detail-image {
+        flex: 0 0 120px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .detail-image img {
+        max-width: 120px;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: #f8f8f8;
+        margin-top: 8px;
+      }
+      @media (max-width: 700px) {
+        .detail-flex {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .detail-image {
+          justify-content: flex-start;
+          margin-bottom: 8px;
+        }
+        .detail-image img {
+          max-width: 80px;
+          margin-top: 0;
+        }
       }
     </style>
   </head>
@@ -64,7 +139,7 @@
 
       <p>
         어떤 결정을 내릴 때마다 늘 따라오는 감정이 있습니다.<br />
-        “잘 선택한 걸까?”, “혹시 더 나은 길을 놓친 건 아닐까?” 하는,
+        "잘 선택한 걸까?", "혹시 더 나은 길을 놓친 건 아닐까?" 하는,
         <strong>작은 불안과 아쉬움</strong>이죠.
       </p>
 
@@ -76,7 +151,7 @@
 
       <p>
         하지만 어느 순간, 이런 생각이 들었습니다.<br />
-        <em>“나는 놓친 것에 너무 많은 시간을 쓰고 있었던 건 아닐까?”</em><br />
+        <em>"나는 놓친 것에 너무 많은 시간을 쓰고 있었던 건 아닐까?"</em><br />
         돌아보면, 나를 웃게 했던 순간들, 소중한 사람들과의 대화, 작지만 확실한
         위로들은<br />
         내가 '놓치지 않은 것들' 속에 담겨 있었습니다.
@@ -89,7 +164,7 @@
 
       <p>
         오늘 하루를 마무리하며 스스로에게 물어보세요.<br />
-        “지금 내 손 안에 있는 것들, 그 가치는 충분히 들여다봤을까?”
+        "지금 내 손 안에 있는 것들, 그 가치는 충분히 들여다봤을까?"
       </p>
 
       <p>
