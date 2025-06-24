@@ -432,28 +432,8 @@ body {
 }
 
 .header-title-box {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: all 0.3s ease-in-out;
-  max-width: 960px; /* "인사이트 & 콘텐츠" 박스와 너비 통일 */
-  margin-left: auto; /* 중앙 정렬 */
-  margin-right: auto; /* 중앙 정렬 */
-  border-radius: 16px; /* 모서리를 둥글게 하여 통일감 부여 */
-}
-
-.header-title-box.is-sticky {
-  padding: 35px 0; /* 상하 여백을 더 늘려 박스 크기 키움 */
-  background-color: rgba(28, 42, 71, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.header-title-box.is-sticky .site-title {
-  font-size: 1.8em; /* 스크롤 시 약간 작게 */
-  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* ===== 반응형 디자인 ===== */
