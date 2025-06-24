@@ -44,24 +44,36 @@
       .board-item a {
         text-decoration: none;
         color: #333;
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .board-item .left-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
       }
 
       .board-item h3 {
-        margin: 0 0 10px 0;
+        margin: 0;
         font-size: 1.3em;
         color: #333;
+        text-align: left;
       }
 
       .board-item .date {
         color: #666;
         font-size: 0.9em;
+        text-align: right;
+        min-width: 100px;
       }
 
       .board-item .number {
         color: #999;
         font-size: 0.8em;
-        margin-bottom: 5px;
+        margin-right: 15px;
+        min-width: 30px;
       }
 
       .new-badge {
@@ -136,12 +148,26 @@
 
       <ul class="board-list">
         <li class="board-item">
+          <a href="self-improvement/self-improvement-detail-2.html">
+            <div class="left-content">
+              <div class="number">#1</div>
+              <h3>
+                아침 루틴 만들기: 하루를 여는 10분 습관
+                <span class="new-badge">New</span>
+              </h3>
+            </div>
+            <div class="date">2025-06-24</div>
+          </a>
+        </li>
+        <li class="board-item">
           <a href="self-improvement/self-improvement-detail-1.html">
-            <div class="number">#1</div>
-            <h3>
-              시간 관리의 핵심 원칙
-              <span class="new-badge">New</span>
-            </h3>
+            <div class="left-content">
+              <div class="number">#2</div>
+              <h3>
+                시간 관리의 핵심 원칙
+                <span class="new-badge">New</span>
+              </h3>
+            </div>
             <div class="date">2025-06-24</div>
           </a>
         </li>

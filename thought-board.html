@@ -44,24 +44,36 @@
       .board-item a {
         text-decoration: none;
         color: #333;
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .board-item .left-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
       }
 
       .board-item h3 {
-        margin: 0 0 10px 0;
+        margin: 0;
         font-size: 1.3em;
         color: #333;
+        text-align: left;
       }
 
       .board-item .date {
         color: #666;
         font-size: 0.9em;
+        text-align: right;
+        min-width: 100px;
       }
 
       .board-item .number {
         color: #999;
         font-size: 0.8em;
-        margin-bottom: 5px;
+        margin-right: 15px;
+        min-width: 30px;
       }
 
       .new-badge {
@@ -137,75 +149,95 @@
       <ul class="board-list">
         <li class="board-item">
           <a href="thought/thought-detail-10.html">
-            <div class="number">#10</div>
-            <h3>지금, 바로 시작하라</h3>
+            <div class="left-content">
+              <div class="number">#10</div>
+              <h3>지금, 바로 시작하라</h3>
+            </div>
             <div class="date">2025-06-20</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-9.html">
-            <div class="number">#9</div>
-            <h3>할머니의 손</h3>
+            <div class="left-content">
+              <div class="number">#9</div>
+              <h3>할머니의 손</h3>
+            </div>
             <div class="date">2025-06-20</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-8.html">
-            <div class="number">#8</div>
-            <h3>나는 무엇에 대해 너무 오래 고민하고 있었을까?</h3>
+            <div class="left-content">
+              <div class="number">#8</div>
+              <h3>나는 무엇에 대해 너무 오래 고민하고 있었을까?</h3>
+            </div>
             <div class="date">2025-06-19</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-7.html">
-            <div class="number">#7</div>
-            <h3>내가 가장 오래 붙잡고 있었던 감정은 무엇이었을까?</h3>
+            <div class="left-content">
+              <div class="number">#7</div>
+              <h3>내가 가장 오래 붙잡고 있었던 감정은 무엇이었을까?</h3>
+            </div>
             <div class="date">2025-06-18</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-6.html">
-            <div class="number">#6</div>
-            <h3>내가 가장 많이 들여다본 것은?</h3>
+            <div class="left-content">
+              <div class="number">#6</div>
+              <h3>내가 가장 많이 들여다본 것은?</h3>
+            </div>
             <div class="date">2025-06-17</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-5.html">
-            <div class="number">#5</div>
-            <h3>나는 무엇을 놓치고 있는 걸까?</h3>
+            <div class="left-content">
+              <div class="number">#5</div>
+              <h3>나는 무엇을 놓치고 있는 걸까?</h3>
+            </div>
             <div class="date">2025-06-16</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-4.html">
-            <div class="number">#4</div>
-            <h3>
-              누군가를 부러워했던 그 순간, 나는 나를 얼마나 사랑하고 있었을까?
-            </h3>
+            <div class="left-content">
+              <div class="number">#4</div>
+              <h3>
+                누군가를 부러워했던 그 순간, 나는 나를 얼마나 사랑하고 있었을까?
+              </h3>
+            </div>
             <div class="date">2025-06-13</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-3.html">
-            <div class="number">#3</div>
-            <h3>
-              오늘 하루, 진심으로 나 자신을 이해하려고 해본 순간이 있었을까?
-            </h3>
+            <div class="left-content">
+              <div class="number">#3</div>
+              <h3>
+                오늘 하루, 진심으로 나 자신을 이해하려고 해본 순간이 있었을까?
+              </h3>
+            </div>
             <div class="date">2025-06-14</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-2.html">
-            <div class="number">#2</div>
-            <h3>지금 내가 하고 있는 일은, 내가 바랐던 삶의 모양일까?</h3>
+            <div class="left-content">
+              <div class="number">#2</div>
+              <h3>지금 내가 하고 있는 일은, 내가 바랐던 삶의 모양일까?</h3>
+            </div>
             <div class="date">2025-06-15</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-1.html">
-            <div class="number">#1</div>
-            <h3>지금 내가 하고 있는 일은, 내가 바랐던 삶의 모양일까?</h3>
+            <div class="left-content">
+              <div class="number">#1</div>
+              <h3>지금 내가 하고 있는 일은, 내가 바랐던 삶의 모양일까?</h3>
+            </div>
             <div class="date">2025-06-15</div>
           </a>
         </li>

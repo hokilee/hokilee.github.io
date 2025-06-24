@@ -44,24 +44,36 @@
       .board-item a {
         text-decoration: none;
         color: #333;
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .board-item .left-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
       }
 
       .board-item h3 {
-        margin: 0 0 10px 0;
+        margin: 0;
         font-size: 1.3em;
         color: #333;
+        text-align: left;
       }
 
       .board-item .date {
         color: #666;
         font-size: 0.9em;
+        text-align: right;
+        min-width: 100px;
       }
 
       .board-item .number {
         color: #999;
         font-size: 0.8em;
-        margin-bottom: 5px;
+        margin-right: 15px;
+        min-width: 30px;
       }
 
       .new-badge {
@@ -137,39 +149,51 @@
       <ul class="board-list">
         <li class="board-item">
           <a href="thought/thought-detail-15.html">
-            <div class="number">#15</div>
-            <h3>
-              진주에도 상처가 있다
-              <span class="new-badge">New</span>
-            </h3>
+            <div class="left-content">
+              <div class="number">#15</div>
+              <h3>
+                진주에도 상처가 있다
+                <span class="new-badge">New</span>
+              </h3>
+            </div>
             <div class="date">2025-06-24</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-14.html">
-            <div class="number">#14</div>
-            <h3>낙타가 쓰러지는 건 깃털같이 가벼운 마지막 짐 하나 때문이다</h3>
+            <div class="left-content">
+              <div class="number">#14</div>
+              <h3>
+                낙타가 쓰러지는 건 깃털같이 가벼운 마지막 짐 하나 때문이다
+              </h3>
+            </div>
             <div class="date">2025-06-23</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-13.html">
-            <div class="number">#13</div>
-            <h3>분명한 목표</h3>
+            <div class="left-content">
+              <div class="number">#13</div>
+              <h3>분명한 목표</h3>
+            </div>
             <div class="date">2025-06-22</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-12.html">
-            <div class="number">#12</div>
-            <h3>딸을 위한 기도</h3>
+            <div class="left-content">
+              <div class="number">#12</div>
+              <h3>딸을 위한 기도</h3>
+            </div>
             <div class="date">2025-06-22</div>
           </a>
         </li>
         <li class="board-item">
           <a href="thought/thought-detail-11.html">
-            <div class="number">#11</div>
-            <h3>마음은 가장 귀중한 자산이다</h3>
+            <div class="left-content">
+              <div class="number">#11</div>
+              <h3>마음은 가장 귀중한 자산이다</h3>
+            </div>
             <div class="date">2025-06-21</div>
           </a>
         </li>

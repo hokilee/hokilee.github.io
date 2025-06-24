@@ -44,24 +44,36 @@
       .board-item a {
         text-decoration: none;
         color: #333;
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .board-item .left-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
       }
 
       .board-item h3 {
-        margin: 0 0 10px 0;
+        margin: 0;
         font-size: 1.3em;
         color: #333;
+        text-align: left;
       }
 
       .board-item .date {
         color: #666;
         font-size: 0.9em;
+        text-align: right;
+        min-width: 100px;
       }
 
       .board-item .number {
         color: #999;
         font-size: 0.8em;
-        margin-bottom: 5px;
+        margin-right: 15px;
+        min-width: 30px;
       }
 
       .new-badge {
@@ -137,71 +149,91 @@
       <ul class="board-list">
         <li class="board-item">
           <a href="trivia/trivia-detail-10.html">
-            <div class="number">#10</div>
-            <h3>고양이는 집으로 돌아가는 GPS가 없다</h3>
+            <div class="left-content">
+              <div class="number">#10</div>
+              <h3>고양이는 집으로 돌아가는 GPS가 없다</h3>
+            </div>
             <div class="date">2025-06-21</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-9.html">
-            <div class="number">#9</div>
-            <h3>색맹 테스트는 철강회사에서 시작되었다</h3>
+            <div class="left-content">
+              <div class="number">#9</div>
+              <h3>색맹 테스트는 철강회사에서 시작되었다</h3>
+            </div>
             <div class="date">2025-06-21</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-8.html">
-            <div class="number">#8</div>
-            <h3>전자레인지는 우연히 발견되었다</h3>
+            <div class="left-content">
+              <div class="number">#8</div>
+              <h3>전자레인지는 우연히 발견되었다</h3>
+            </div>
             <div class="date">2025-06-20</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-7.html">
-            <div class="number">#7</div>
-            <h3>포스트잇은 실수에서 탄생했다</h3>
+            <div class="left-content">
+              <div class="number">#7</div>
+              <h3>포스트잇은 실수에서 탄생했다</h3>
+            </div>
             <div class="date">2025-06-19</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-6.html">
-            <div class="number">#6</div>
-            <h3>악어는 혀를 내밀 수 없다</h3>
+            <div class="left-content">
+              <div class="number">#6</div>
+              <h3>악어는 혀를 내밀 수 없다</h3>
+            </div>
             <div class="date">2025-06-18</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-5.html">
-            <div class="number">#5</div>
-            <h3>디젤 엔진은 불꽃 없이 시동이 걸린다</h3>
+            <div class="left-content">
+              <div class="number">#5</div>
+              <h3>디젤 엔진은 불꽃 없이 시동이 걸린다</h3>
+            </div>
             <div class="date">2025-06-17</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-4.html">
-            <div class="number">#4</div>
-            <h3>빛은 얼마나 빠를까?</h3>
+            <div class="left-content">
+              <div class="number">#4</div>
+              <h3>빛은 얼마나 빠를까?</h3>
+            </div>
             <div class="date">2025-06-16</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-3.html">
-            <div class="number">#3</div>
-            <h3>지구에서 가장 무거운 동물은?</h3>
+            <div class="left-content">
+              <div class="number">#3</div>
+              <h3>지구에서 가장 무거운 동물은?</h3>
+            </div>
             <div class="date">2025-06-13</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-2.html">
-            <div class="number">#2</div>
-            <h3>커피보다 더 마시는 음료는?</h3>
+            <div class="left-content">
+              <div class="number">#2</div>
+              <h3>커피보다 더 마시는 음료는?</h3>
+            </div>
             <div class="date">2025-06-12</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-1.html">
-            <div class="number">#1</div>
-            <h3>사람은 하루에 평균 몇 번 웃을까?</h3>
+            <div class="left-content">
+              <div class="number">#1</div>
+              <h3>사람은 하루에 평균 몇 번 웃을까?</h3>
+            </div>
             <div class="date">2025-06-11</div>
           </a>
         </li>

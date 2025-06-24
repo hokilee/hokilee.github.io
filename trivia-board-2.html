@@ -44,24 +44,36 @@
       .board-item a {
         text-decoration: none;
         color: #333;
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .board-item .left-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
       }
 
       .board-item h3 {
-        margin: 0 0 10px 0;
+        margin: 0;
         font-size: 1.3em;
         color: #333;
+        text-align: left;
       }
 
       .board-item .date {
         color: #666;
         font-size: 0.9em;
+        text-align: right;
+        min-width: 100px;
       }
 
       .board-item .number {
         color: #999;
         font-size: 0.8em;
-        margin-bottom: 5px;
+        margin-right: 15px;
+        min-width: 30px;
       }
 
       .new-badge {
@@ -137,32 +149,40 @@
       <ul class="board-list">
         <li class="board-item">
           <a href="trivia/trivia-detail-14.html">
-            <div class="number">#14</div>
-            <h3>
-              왜 하품은 전염될까?
-              <span class="new-badge">New</span>
-            </h3>
+            <div class="left-content">
+              <div class="number">#14</div>
+              <h3>
+                왜 하품은 전염될까?
+                <span class="new-badge">New</span>
+              </h3>
+            </div>
             <div class="date">2025-06-24</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-13.html">
-            <div class="number">#13</div>
-            <h3>인간의 뇌는 왜 잠을 자야 할까?</h3>
+            <div class="left-content">
+              <div class="number">#13</div>
+              <h3>인간의 뇌는 왜 잠을 자야 할까?</h3>
+            </div>
             <div class="date">2025-06-23</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-12.html">
-            <div class="number">#12</div>
-            <h3>커피는 원래 약이었다</h3>
+            <div class="left-content">
+              <div class="number">#12</div>
+              <h3>커피는 원래 약이었다</h3>
+            </div>
             <div class="date">2025-06-22</div>
           </a>
         </li>
         <li class="board-item">
           <a href="trivia/trivia-detail-11.html">
-            <div class="number">#11</div>
-            <h3>인간은 실제로 키보다 자신을 더 크게 본다</h3>
+            <div class="left-content">
+              <div class="number">#11</div>
+              <h3>인간은 실제로 키보다 자신을 더 크게 본다</h3>
+            </div>
             <div class="date">2025-06-21</div>
           </a>
         </li>
