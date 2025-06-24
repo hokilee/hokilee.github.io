@@ -470,6 +470,10 @@ body {
 
 /* ===== 반응형 디자인 ===== */
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll !important;
+  }
+
   .main-content {
     padding: 20px;
   }
@@ -498,14 +502,15 @@ body {
 
   .menu-item {
     padding: 20px;
+    background: #111 !important;
+    color: #fff !important;
   }
-
-  .menu-item h2 {
-    font-size: 1.3em;
-  }
-
+  .menu-item h2,
   .menu-item p {
-    font-size: 0.9em;
+    color: #fff !important;
+  }
+  .menu-item:hover {
+    background: #222 !important;
   }
 
   .overlay-box {
