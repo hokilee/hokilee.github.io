@@ -53,6 +53,35 @@
       .back-button a:hover {
         background-color: #555;
       }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
     </style>
   </head>
   <body>
@@ -84,13 +113,13 @@
 
       <p>
         <strong>빛은 우주에서 가장 빠른 존재</strong>입니다. 물리학자
-        아인슈타인은 이 빛의 속도를 ‘절대적 기준’으로 삼아 상대성 이론을
+        아인슈타인은 이 빛의 속도를 '절대적 기준'으로 삼아 상대성 이론을
         완성했죠.<br />
         그 이론에 따르면, 어떤 정보나 물질도 빛보다 빠르게 움직일 수 없습니다.
       </p>
 
       <p>
-        우리가 흔히 접하는 ‘빛’이라는 존재는 단순한 밝음이나 시야의 도구가
+        우리가 흔히 접하는 '빛'이라는 존재는 단순한 밝음이나 시야의 도구가
         아니라,
         <em>우주와 시간, 그리고 인류 지식의 경계를 설명해주는 열쇠</em>이기도
         합니다.
@@ -110,9 +139,16 @@
         <em>천천히 눈여겨보는 하루</em>가 되었으면 좋겠습니다.
       </p>
 
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
+
       <div class="back-button">
         <a href="../trivia-board.html">← 목록으로 돌아가기</a>
       </div>
     </div>
+
+    <script src="../scripts.js" defer></script>
   </body>
 </html>

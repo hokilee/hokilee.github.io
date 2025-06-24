@@ -54,6 +54,35 @@
       .back-button a:hover {
         background-color: #555;
       }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
     </style>
   </head>
   <body>
@@ -93,8 +122,13 @@
           >무심코 지나친 현상도, 호기심으로 바라보면 세상을 바꾸는 단서가 될 수
           있다</strong
         >는 것.<br />
-        오늘 여러분 주변에도 우연처럼 다가온 ‘발견의 순간’이 있을지도 모릅니다.
+        오늘 여러분 주변에도 우연처럼 다가온 '발견의 순간'이 있을지도 모릅니다.
       </p>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
 
       <div class="back-button">
         <a href="../trivia-board.html">← 목록으로 돌아가기</a>

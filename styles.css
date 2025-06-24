@@ -467,3 +467,252 @@ body {
   font-size: 1.8em; /* 스크롤 시 약간 작게 */
   margin-bottom: 0;
 }
+
+/* ===== 반응형 디자인 ===== */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+
+  .header-title-box {
+    margin-bottom: 30px;
+  }
+
+  .site-title {
+    font-size: 1.8em;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .menu-item {
+    padding: 20px;
+  }
+
+  .menu-item h2 {
+    font-size: 1.3em;
+  }
+
+  .menu-item p {
+    font-size: 0.9em;
+  }
+
+  .overlay-box {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .overlay-box h1 {
+    font-size: 1.5em;
+  }
+
+  .overlay-box p {
+    font-size: 0.9em;
+  }
+
+  .back-button a {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .pagination {
+    margin-top: 20px;
+  }
+
+  .pagination a {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+
+  .music-button-box {
+    margin-bottom: 15px;
+  }
+
+  .music-button-box button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .visitor-info {
+    margin-bottom: 10px;
+  }
+
+  .realtime-info {
+    margin-bottom: 15px;
+  }
+
+  .welcome-text {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  .section-subtitle {
+    font-size: 0.85em;
+  }
+
+  .divider {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .site-title {
+    font-size: 1.5em;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+  }
+
+  .menu-item {
+    padding: 15px;
+  }
+
+  .menu-item h2 {
+    font-size: 1.2em;
+  }
+
+  .overlay-box {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .overlay-box h1 {
+    font-size: 1.3em;
+  }
+
+  .music-button-box button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}
+
+/* ===== 다크 모드 지원 ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  .overlay-box {
+    background-color: rgba(40, 40, 40, 0.95);
+    color: #e0e0e0;
+  }
+
+  .menu-item {
+    background-color: rgba(40, 40, 40, 0.9);
+    color: #e0e0e0;
+  }
+
+  .menu-item:hover {
+    background-color: rgba(60, 60, 60, 0.9);
+  }
+
+  .resume-box {
+    background-color: rgba(40, 40, 40, 0.9);
+    color: #e0e0e0;
+  }
+
+  .resume-box:hover {
+    background-color: rgba(60, 60, 60, 0.9);
+  }
+
+  .back-button a {
+    background-color: #555;
+    color: #e0e0e0;
+  }
+
+  .back-button a:hover {
+    background-color: #777;
+  }
+
+  .pagination a {
+    background-color: #555;
+    color: #e0e0e0;
+  }
+
+  .pagination a:hover,
+  .pagination a.current {
+    background-color: #777;
+  }
+
+  th {
+    background-color: #555;
+    color: #e0e0e0;
+  }
+
+  td {
+    border-color: #666;
+  }
+
+  .divider {
+    border-color: #666;
+  }
+}
+
+/* ===== 접근성 개선 ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== 고대비 모드 지원 ===== */
+@media (prefers-contrast: high) {
+  .menu-item,
+  .resume-box {
+    border: 2px solid #000;
+  }
+
+  .back-button a {
+    border: 2px solid #000;
+  }
+
+  .pagination a {
+    border: 2px solid #000;
+  }
+}
+
+/* ===== 인쇄 스타일 ===== */
+@media print {
+  .music-button-box,
+  .visitor-info,
+  .realtime-info,
+  .back-button,
+  .pagination {
+    display: none;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .overlay-box {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+
+  .menu-item,
+  .resume-box {
+    box-shadow: none;
+    border: 1px solid #000;
+    break-inside: avoid;
+  }
+}

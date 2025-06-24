@@ -53,6 +53,35 @@
       .back-button a:hover {
         background-color: #555;
       }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
     </style>
   </head>
   <body>
@@ -86,14 +115,21 @@
       </p>
 
       <p>
-        우리는 흔히 ‘작고 빠른 것’을 효율로 여깁니다. 하지만
+        우리는 흔히 '작고 빠른 것'을 효율로 여깁니다. 하지만
         <strong>가장 거대한 생물조차 유연하고 섬세하게 살아간다</strong>는 점,
         그 자체로 경외의 대상 아닐까요?
       </p>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
 
       <div class="back-button">
         <a href="../trivia-board.html">← 목록으로 돌아가기</a>
       </div>
     </div>
+
+    <script src="../scripts.js" defer></script>
   </body>
 </html>

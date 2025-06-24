@@ -53,6 +53,35 @@
       .back-button a:hover {
         background-color: #555;
       }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
     </style>
   </head>
   <body>
@@ -76,7 +105,7 @@
       <p>
         하지만 <strong>겨울철에는 시동이 어렵다는 단점</strong>이 있습니다.
         온도가 낮아 공기 압축으로 만들어지는 열이 부족해 시동이 잘 걸리지 않기
-        때문입니다. 이때 ‘예열 플러그’가 필수적으로 작동해야 하죠.
+        때문입니다. 이때 '예열 플러그'가 필수적으로 작동해야 하죠.
       </p>
 
       <p>
@@ -94,12 +123,19 @@
       <p>
         단점도 있지만 구조를 이해하면, 계절별 관리나 연비 운전에도 도움이 될 수
         있습니다.
-        <em>“디젤은 힘과 효율의 균형을 고민한 기술”</em>이라고도 말할 수 있겠죠.
+        <em>"디젤은 힘과 효율의 균형을 고민한 기술"</em>이라고도 말할 수 있겠죠.
       </p>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
 
       <div class="back-button">
         <a href="../trivia-board.html">← 목록으로 돌아가기</a>
       </div>
     </div>
+
+    <script src="../scripts.js" defer></script>
   </body>
 </html>

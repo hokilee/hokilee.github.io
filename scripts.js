@@ -256,7 +256,7 @@ function initializeStickyTitle() {
 }
 
 /**
- * 현재 페이지에 따른 기능 초기화
+ * 페이지별 기능 초기화
  */
 function initializePageFeatures() {
   const currentPath = window.location.pathname;
