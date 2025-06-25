@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 경제 상식 - 필립스 곡선(Phillips Curve)</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .overlay-box {
+        background-color: rgba(255, 255, 255, 0.92);
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .date {
+        text-align: center;
+        color: #666;
+        font-size: 1.1em;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .back-button {
+        text-align: center;
+      }
+
+      .back-button a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      .back-button a:hover {
+        background-color: #555;
+      }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .example-box {
+        background-color: #f8f9fa;
+        border-left: 4px solid #007bff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .warning-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .solution-box {
+        background-color: #d1ecf1;
+        border-left: 4px solid #17a2b8;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .concept-box {
+        background-color: #e8f5e8;
+        border-left: 4px solid #28a745;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .image-container {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+      }
+
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-caption {
+        margin-top: 15px;
+        font-size: 0.9em;
+        color: #666;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay-box">
+      <h1>
+        <img
+          src="../main-image/economy.png"
+          alt="economy icon"
+          style="
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 10px;
+          "
+        />
+        필립스 곡선(Phillips Curve)
+      </h1>
+      <div class="date">2025-06-25</div>
+
+      <div class="content">
+        <p>
+          필립스 곡선은 영국의 통계학자 A.W. 필립스가 1958년에 제시한 경제학의
+          중요한 개념입니다. 이 곡선은 실업률과 물가상승률(또는 임금상승률) 간의
+          관계를 보여주며, 경제 정책 수립에 있어 핵심적인 역할을 합니다.
+        </p>
+
+        <div class="concept-box">
+          <h3>📊 필립스 곡선의 기본 개념</h3>
+          <p>
+            <strong>핵심 원리:</strong> 실업률과 물가상승률은 서로 반비례 관계에
+            있습니다. 즉, 실업률이 낮아지면 물가상승률이 높아지고, 실업률이
+            높아지면 물가상승률이 낮아집니다.
+          </p>
+          <p>
+            <strong>경제적 의미:</strong> 이는 완전고용(낮은 실업률)과
+            물가안정(낮은 물가상승률)을 동시에 달성하기 어렵다는 것을
+            의미합니다.
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img src="../main-image/phillips-curve.png" alt="필립스 곡선" />
+          <div class="image-caption">
+            필립스 곡선: 실업률과 물가상승률의 반비례 관계를 보여주는 곡선
+          </div>
+        </div>
+
+        <div class="example-box">
+          <h3>📈 필립스 곡선의 작동 원리</h3>
+          <p>
+            <strong>경기 호황기:</strong><br />
+            • 실업률 ↓ → 노동력 부족 → 임금 상승 → 물가 상승<br />
+            • 예: 실업률 3% → 물가상승률 8%
+          </p>
+          <p>
+            <strong>경기 침체기:</strong><br />
+            • 실업률 ↑ → 노동력 과잉 → 임금 하락 → 물가 하락<br />
+            • 예: 실업률 8% → 물가상승률 2%
+          </p>
+          <p>
+            <strong>정책적 딜레마:</strong><br />
+            • 실업률을 낮추려면 물가상승을 감수해야 함<br />
+            • 물가안정을 추구하면 실업률 상승을 감수해야 함
+          </p>
+        </div>
+
+        <div class="warning-box">
+          <h3>⚠️ 필립스 곡선의 한계와 비판</h3>
+          <p>
+            <strong>1. 스태그플레이션 현상</strong><br />
+            • 1970년대 오일쇼크 이후 실업률과 물가상승률이 동시에 상승<br />
+            • 필립스 곡선의 단순한 반비례 관계가 깨짐
+          </p>
+          <p>
+            <strong>2. 기대 인플레이션의 영향</strong><br />
+            • 사람들의 인플레이션 기대가 실제 물가에 영향<br />
+            • 단기적 관계는 성립하지만 장기적으로는 성립하지 않음
+          </p>
+          <p>
+            <strong>3. 구조적 실업의 증가</strong><br />
+            • 기술 변화, 산업 구조 변화로 인한 구조적 실업<br />
+            • 단순한 수요 관리 정책으로 해결 어려움
+          </p>
+        </div>
+
+        <div class="solution-box">
+          <h3>🛠️ 현대 경제학에서의 해석</h3>
+          <p>
+            <strong>1. 단기 vs 장기 필립스 곡선</strong><br />
+            • 단기: 반비례 관계 성립 (정책 효과 있음)<br />
+            • 장기: 수직선 (자연실업률에서 균형)
+          </p>
+          <p>
+            <strong>2. 적응적 기대 vs 합리적 기대</strong><br />
+            • 적응적 기대: 과거 경험을 바탕으로 한 기대<br />
+            • 합리적 기대: 모든 정보를 활용한 최적 기대
+          </p>
+          <p>
+            <strong>3. 공급 측면의 중요성</strong><br />
+            • 노동시장 유연성, 교육훈련, 기술혁신<br />
+            • 자연실업률 자체를 낮추는 정책 필요
+          </p>
+        </div>
+
+        <div class="concept-box">
+          <h3>🎯 정책적 시사점</h3>
+          <p>
+            <strong>1. 통화정책의 딜레마</strong><br />
+            • 금리 인하: 실업률 감소 but 물가상승 압력<br />
+            • 금리 인상: 물가안정 but 실업률 증가
+          </p>
+          <p>
+            <strong>2. 재정정책의 균형</strong><br />
+            • 확장적 재정정책: 경기 활성화 but 인플레이션<br />
+            • 긴축적 재정정책: 물가안정 but 경기 위축
+          </p>
+          <p>
+            <strong>3. 구조적 정책의 중요성</strong><br />
+            • 자연실업률 자체를 낮추는 정책<br />
+            • 생산성 향상, 노동시장 개혁, 교육투자
+          </p>
+        </div>
+
+        <p>
+          <strong>현실적 적용</strong><br />
+          필립스 곡선은 여전히 경제 정책 수립에 중요한 지침이 되고 있습니다.
+          하지만 단순한 반비례 관계가 아닌, 더 복잡한 경제 현실을 반영한 정책이
+          필요합니다. 특히 코로나19 이후의 경제 상황에서는 전통적인 필립스
+          곡선의 한계가 더욱 명확해졌습니다.
+        </p>
+
+        <p>
+          <strong>결론</strong><br />
+          필립스 곡선은 경제학의 핵심 개념 중 하나로, 실업률과 물가상승률의
+          관계를 이해하는 데 중요한 도구입니다. 하지만 현대 경제에서는 이 관계가
+          더욱 복잡해졌으므로, 다양한 요인을 종합적으로 고려한 정책 수립이
+          필요합니다.
+        </p>
+      </div>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
+
+      <div class="back-button">
+        <a href="../economy-board.html">← 목록으로 돌아가기</a>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+  </body>
+</html>
