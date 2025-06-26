@@ -253,10 +253,82 @@ function markNewInMainPage() {
         const newBadge = createNewBadge();
         selfImprovementLink.parentNode.appendChild(newBadge);
       }
+
+      // 미리보기 내용 업데이트
+      updateAllPreviews(latestPosts, today);
     })
     .catch((error) => {
       console.error('최신 게시물 정보를 불러오는 데 실패했습니다:', error);
     });
+}
+
+/**
+ * 모든 미리보기 내용을 업데이트
+ */
+function updateAllPreviews(latestPosts, today) {
+  // 각 카테고리별로 미리보기 업데이트
+  updatePreviewForCategory('trivia', latestPosts.trivia, today);
+  updatePreviewForCategory('thought', latestPosts.thought, today);
+  updatePreviewForCategory('tech', latestPosts.techTips, today);
+  updatePreviewForCategory('economy', latestPosts.economy, today);
+  updatePreviewForCategory(
+    'self-improvement',
+    latestPosts.selfImprovement,
+    today
+  );
+}
+
+/**
+ * 특정 카테고리의 미리보기 업데이트
+ */
+function updatePreviewForCategory(category, latestDate, today) {
+  const previewElement = document.getElementById(`${category}-preview`);
+  if (!previewElement) return;
+
+  // 오늘 날짜와 비교
+  if (latestDate === today) {
+    // 오늘 업데이트된 경우 - 최신 게시물 표시
+    const latestPost = getLatestPostForCategory(category);
+    if (latestPost) {
+      previewElement.innerHTML = `
+        <div class="preview-item">
+          <span class="preview-number">#${latestPost.number}</span>
+          <span class="preview-title">${latestPost.title}</span>
+          <span class="preview-date">(${today})</span>
+        </div>
+      `;
+    } else {
+      // 게시물 정보를 찾을 수 없는 경우
+      previewElement.innerHTML = `
+        <div class="preview-item">
+          <span class="preview-title">오늘 새로운 게시물이 업데이트되었습니다</span>
+          <span class="preview-date">(${today})</span>
+        </div>
+      `;
+    }
+  } else {
+    // 오늘 업데이트되지 않은 경우 - "없음" 표시
+    previewElement.innerHTML = `
+      <div class="preview-item">
+        <span class="preview-title">없음</span>
+      </div>
+    `;
+  }
+}
+
+/**
+ * 카테고리별 최신 게시물 정보 반환
+ */
+function getLatestPostForCategory(category) {
+  const latestPosts = {
+    trivia: { number: '17', title: '기린은 30분도 안자고 하루를 버틴다' },
+    thought: { number: '18', title: '기회는 스스로 만드는 것' },
+    tech: { number: '6', title: '무료 클라우드 서비스 활용팁' },
+    economy: { number: '6', title: '드롭/래플(Drop/Raffle)' },
+    'self-improvement': { number: '6', title: '작심 삼일깨는 가장 쉬운 방법' },
+  };
+
+  return latestPosts[category] || null;
 }
 
 // ===== 연도 표시 =====
