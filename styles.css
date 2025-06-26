@@ -173,6 +173,66 @@ body {
   object-fit: contain;
 }
 
+/* 최신 포스트 미리보기 박스 */
+.latest-posts-preview {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: rgba(55, 71, 79, 0.9);
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.preview-item {
+  margin-bottom: 6px;
+  font-size: 0.85em;
+  line-height: 1.4;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preview-item:last-child {
+  margin-bottom: 0;
+}
+
+.preview-number {
+  color: #cccccc;
+  font-size: 0.8em;
+  font-weight: 500;
+  min-width: 25px;
+}
+
+.preview-title {
+  font-weight: 500;
+  color: #ffffff;
+  flex: 1;
+}
+
+.preview-date {
+  color: #ffffff;
+  font-size: 0.9em;
+  margin-left: 4px;
+}
+
+.preview-subtitle {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.update-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
 /* 하단 커리어 메뉴 */
 .menu-grid {
   display: flex;
@@ -546,6 +606,22 @@ body {
   .divider {
     margin: 30px 0;
   }
+
+  /* 모바일에서 최신 포스트 미리보기 조정 */
+  .latest-posts-preview {
+    margin-top: 8px;
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+
+  .preview-item {
+    margin-bottom: 4px;
+    font-size: 0.8em;
+  }
+
+  .preview-date {
+    font-size: 0.85em;
+  }
 }
 
 @media (max-width: 480px) {
@@ -580,6 +656,21 @@ body {
 
   .music-button-box button {
     padding: 6px 12px;
+    font-size: 0.8em;
+  }
+
+  /* 작은 화면에서 최신 포스트 미리보기 조정 */
+  .latest-posts-preview {
+    margin-top: 6px;
+    padding: 5px 8px;
+  }
+
+  .preview-item {
+    font-size: 0.75em;
+    margin-bottom: 3px;
+  }
+
+  .preview-date {
     font-size: 0.8em;
   }
 }

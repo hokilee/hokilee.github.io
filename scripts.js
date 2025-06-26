@@ -149,7 +149,7 @@ function markNewInDetailPage() {
 }
 
 /**
- * 게시판 목록에서 "New" 배지 표시
+ * 게시판 목록에서 "New" 배지 표시 (테이블 형식)
  */
 function markNewInBoardList() {
   const rows = document.querySelectorAll('tbody tr');
@@ -162,6 +162,39 @@ function markNewInBoardList() {
     if (dateCell && titleCell && dateCell.textContent.trim() === today) {
       const badge = createNewBadgeForBoard();
       titleCell.parentNode.appendChild(badge);
+    }
+  });
+}
+
+/**
+ * 게시판 목록에서 "New" 배지 자동 관리 (리스트 형식)
+ */
+function autoManageNewBadges() {
+  const boardItems = document.querySelectorAll('.board-item');
+  const today = getTodayDate();
+
+  boardItems.forEach((item) => {
+    const dateElement = item.querySelector('.date');
+    const titleElement = item.querySelector('h3');
+
+    if (!dateElement || !titleElement) return;
+
+    const postDate = dateElement.textContent.trim();
+    const existingBadge = titleElement.querySelector('.new-badge');
+
+    if (isToday(postDate)) {
+      // 오늘 날짜인데 배지가 없으면 추가
+      if (!existingBadge) {
+        const badge = document.createElement('span');
+        badge.className = 'new-badge';
+        badge.textContent = 'New';
+        titleElement.appendChild(badge);
+      }
+    } else {
+      // 오늘 날짜가 아닌데 배지가 있으면 제거
+      if (existingBadge) {
+        existingBadge.remove();
+      }
     }
   });
 }
@@ -308,9 +341,13 @@ function initializePageFeatures() {
   // 게시판 페이지 (trivia-board 또는 thought-board)
   if (
     currentPath.includes('trivia-board') ||
-    currentPath.includes('thought-board')
+    currentPath.includes('thought-board') ||
+    currentPath.includes('economy-board') ||
+    currentPath.includes('tech-tips-board') ||
+    currentPath.includes('self-improvement-board')
   ) {
     markNewInBoardList();
+    autoManageNewBadges();
   }
 
   // 메인 페이지
