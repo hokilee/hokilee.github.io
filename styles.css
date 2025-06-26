@@ -244,7 +244,7 @@ body {
 }
 
 .menu-item {
-  background-color: rgba(30, 40, 60, 0.92);
+  background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -252,7 +252,7 @@ body {
   max-width: 280px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  color: #fff;
+  color: #222;
 }
 
 .menu-item:hover {
@@ -262,7 +262,7 @@ body {
 
 .menu-item h2,
 .menu-item p {
-  color: #fff;
+  color: #222;
 }
 
 .menu-item h2 {
@@ -692,12 +692,12 @@ body {
   }
 
   .menu-item {
-    background-color: rgba(40, 40, 40, 0.9);
-    color: #e0e0e0;
+    background-color: #fff !important;
+    color: #222 !important;
   }
-
-  .menu-item:hover {
-    background-color: rgba(60, 60, 60, 0.9);
+  .menu-item h2,
+  .menu-item p {
+    color: #222 !important;
   }
 
   .resume-box {
