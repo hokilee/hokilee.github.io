@@ -740,6 +740,10 @@ body {
   .divider {
     border-color: #666;
   }
+
+  .preview-subtitle {
+    color: #fff;
+  }
 }
 
 /* ===== 접근성 개선 ===== */
