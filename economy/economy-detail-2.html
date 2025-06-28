@@ -5,122 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>오늘의 경제 상식 - 갭 투자란 무엇일까?</title>
     <link rel="stylesheet" href="../styles.css" />
-    <style>
-      .overlay-box {
-        background-color: rgba(255, 255, 255, 0.92);
-        max-width: 800px;
-        margin: 60px auto;
-        padding: 40px;
-        border-radius: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      }
-
-      h1 {
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 30px;
-        color: #333;
-      }
-
-      .date {
-        text-align: center;
-        color: #666;
-        font-size: 1.1em;
-        margin-bottom: 30px;
-      }
-
-      .content {
-        line-height: 1.8;
-        font-size: 1.1em;
-        color: #333;
-        margin-bottom: 30px;
-      }
-
-      .back-button {
-        text-align: center;
-      }
-
-      .back-button a {
-        text-decoration: none;
-        color: #fff;
-        background-color: #333;
-        padding: 10px 20px;
-        border-radius: 8px;
-        font-size: 1rem;
-      }
-
-      .back-button a:hover {
-        background-color: #555;
-      }
-
-      .like-section {
-        text-align: center;
-        margin: 30px 0;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.05);
-        border-radius: 10px;
-      }
-
-      .like-button {
-        background-color: #ff6b6b;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background-color 0.3s;
-      }
-
-      .like-button:hover {
-        background-color: #ff5252;
-      }
-
-      .like-count {
-        margin-left: 10px;
-        font-weight: bold;
-        color: #333;
-      }
-
-      .example-box {
-        background-color: #f8f9fa;
-        border-left: 4px solid #007bff;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 5px;
-      }
-
-      .warning-box {
-        background-color: #fff3cd;
-        border-left: 4px solid #ffc107;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 5px;
-      }
-
-      .solution-box {
-        background-color: #d1ecf1;
-        border-left: 4px solid #17a2b8;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="economy-detail-style.css" />
   </head>
 
   <body>
     <div class="overlay-box">
       <h1>
-        <img
-          src="../main-image/economy.png"
-          alt="economy icon"
-          style="
-            width: 32px;
-            height: 32px;
-            vertical-align: middle;
-            margin-right: 10px;
-          "
-        />
+        <img src="../main-image/economy.png" alt="economy icon" />
         갭 투자란 무엇일까?
       </h1>
       <div class="date">2025-06-24</div>
@@ -221,9 +112,13 @@
 
       <div class="back-button">
         <a href="../economy-board.html">← 목록으로 돌아가기</a>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
       </div>
     </div>
 
     <script src="../scripts.js" defer></script>
+    <script src="economy-detail-script.js" defer></script>
   </body>
 </html>

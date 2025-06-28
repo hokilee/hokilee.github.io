@@ -5,131 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>하루 한 생각 - 나는 무엇에 대해 너무 오래 고민하고 있었을까?</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="thought-detail-style.css" />
     <script src="../scripts.js" defer></script>
-    <style>
-      .detail-box {
-        background-color: rgba(255, 255, 255, 0.95);
-        max-width: 800px;
-        margin: 80px auto;
-        padding: 40px;
-        border-radius: 16px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        text-align: left;
-        line-height: 1.8;
-        font-size: 1.1em;
-        color: #333;
-      }
-      h1,
-      p,
-      .like-count {
-        color: #333;
-      }
-      h1 {
-        text-align: center;
-        font-size: 1.8em;
-        margin-bottom: 6px;
-      }
-      hr {
-        border: none;
-        border-top: 2px solid #ccc;
-        width: 100%;
-        max-width: 680px;
-        margin: 6px auto 30px auto;
-      }
-      p strong {
-        color: #1a73e8;
-      }
-      blockquote {
-        font-style: italic;
-        color: #555;
-        border-left: 4px solid #ccc;
-        padding-left: 16px;
-        margin: 30px 0;
-      }
-      .back-button {
-        margin-top: 40px;
-        text-align: center;
-      }
-      .back-button a {
-        text-decoration: none;
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 8px;
-      }
-      .back-button a:hover {
-        background-color: #555;
-      }
-      .button-row {
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .like {
-        background-color: #e91e63;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 1em;
-      }
-      .like:hover {
-        background-color: #c2185b;
-      }
-      .back {
-        text-decoration: none;
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 8px;
-      }
-      .back:hover {
-        background-color: #555;
-      }
-      .detail-flex {
-        display: flex;
-        flex-direction: row;
-        gap: 28px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-bottom: 18px;
-      }
-      .detail-text {
-        flex: 2 1 0;
-      }
-      .detail-image {
-        flex: 0 0 120px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-      }
-      .detail-image img {
-        max-width: 120px;
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        background: #f8f8f8;
-        margin-top: 8px;
-      }
-      @media (max-width: 700px) {
-        .detail-flex {
-          flex-direction: column;
-          gap: 12px;
-        }
-        .detail-image {
-          justify-content: flex-start;
-          margin-bottom: 8px;
-        }
-        .detail-image img {
-          max-width: 80px;
-          margin-top: 0;
-        }
-      }
-    </style>
+    <script src="thought-detail-script.js" defer></script>
   </head>
   <body>
     <div class="detail-box">
@@ -188,23 +66,5 @@
         </footer>
       </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const pageKey = window.location.pathname;
-        const likeSpan = document.getElementById('likeCount');
-
-        const savedLikes = localStorage.getItem('like-' + pageKey);
-        if (savedLikes && likeSpan) {
-          likeSpan.innerText = savedLikes;
-        }
-
-        window.likePost = function () {
-          let currentLikes = parseInt(likeSpan.innerText);
-          currentLikes += 1;
-          likeSpan.innerText = currentLikes;
-          localStorage.setItem('like-' + pageKey, currentLikes);
-        };
-      });
-    </script>
   </body>
 </html>
