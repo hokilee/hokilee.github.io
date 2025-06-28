@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "number": "1",
+      "title": "효과적인 목표 설정법",
+      "date": "2025-06-15",
+      "filename": "self-improvement-detail-1.html"
+    },
+    {
+      "number": "2",
+      "title": "습관 형성의 과학",
+      "date": "2025-06-16",
+      "filename": "self-improvement-detail-2.html"
+    },
+    {
+      "number": "3",
+      "title": "집중력 향상 방법",
+      "date": "2025-06-17",
+      "filename": "self-improvement-detail-3.html"
+    },
+    {
+      "number": "4",
+      "title": "스트레스 관리 기법",
+      "date": "2025-06-18",
+      "filename": "self-improvement-detail-4.html"
+    },
+    {
+      "number": "5",
+      "title": "효율적인 학습법",
+      "date": "2025-06-19",
+      "filename": "self-improvement-detail-5.html"
+    },
+    {
+      "number": "6",
+      "title": "시간 관리의 기술",
+      "date": "2025-06-20",
+      "filename": "self-improvement-detail-6.html"
+    },
+    {
+      "number": "7",
+      "title": "시간을 아끼는 이메일 정리법",
+      "date": "2025-06-28",
+      "filename": "self-improvement-detail-7.html"
+    },
+    {
+      "number": "8",
+      "title": "회의 시간을 절반으로 줄이는 비결",
+      "date": "2025-06-29",
+      "filename": "self-improvement-detail-8.html"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "number": "1",
+      "title": "키보드 단축키로 생산성 높이기",
+      "date": "2025-06-15",
+      "filename": "tech-tips-detail-1.html"
+    },
+    {
+      "number": "2",
+      "title": "브라우저 탭 관리 팁",
+      "date": "2025-06-16",
+      "filename": "tech-tips-detail-2.html"
+    },
+    {
+      "number": "3",
+      "title": "파일 정리와 백업 방법",
+      "date": "2025-06-17",
+      "filename": "tech-tips-detail-3.html"
+    },
+    {
+      "number": "4",
+      "title": "이메일 필터링 설정하기",
+      "date": "2025-06-18",
+      "filename": "tech-tips-detail-4.html"
+    },
+    {
+      "number": "5",
+      "title": "클라우드 스토리지 활용법",
+      "date": "2025-06-19",
+      "filename": "tech-tips-detail-5.html"
+    },
+    {
+      "number": "6",
+      "title": "스마트폰 배터리 절약 팁",
+      "date": "2025-06-20",
+      "filename": "tech-tips-detail-6.html"
+    },
+    {
+      "number": "7",
+      "title": "강력한 비밀번호 만드는 방법",
+      "date": "2025-06-28",
+      "filename": "tech-tips-detail-7.html"
+    },
+    {
+      "number": "8",
+      "title": "2단계 인증 설정하기",
+      "date": "2025-06-29",
+      "filename": "tech-tips-detail-8.html"
+    }
+  ]
+}

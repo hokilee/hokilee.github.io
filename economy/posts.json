@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "number": "1",
+      "title": "인플레이션과 디플레이션의 차이",
+      "date": "2025-06-15",
+      "filename": "economy-detail-1.html"
+    },
+    {
+      "number": "2",
+      "title": "복리 효과의 마법",
+      "date": "2025-06-16",
+      "filename": "economy-detail-2.html"
+    },
+    {
+      "number": "3",
+      "title": "기회비용의 개념",
+      "date": "2025-06-17",
+      "filename": "economy-detail-3.html"
+    },
+    {
+      "number": "4",
+      "title": "수요와 공급의 법칙",
+      "date": "2025-06-18",
+      "filename": "economy-detail-4.html"
+    },
+    {
+      "number": "5",
+      "title": "GDP와 GNP의 차이",
+      "date": "2025-06-19",
+      "filename": "economy-detail-5.html"
+    },
+    {
+      "number": "6",
+      "title": "이자율과 경제의 관계",
+      "date": "2025-06-20",
+      "filename": "economy-detail-6.html"
+    },
+    {
+      "number": "7",
+      "title": "프로토콜 경제(Protocol Economy)",
+      "date": "2025-06-28",
+      "filename": "economy-detail-7.html"
+    },
+    {
+      "number": "8",
+      "title": "그레이섬의 법칙(Gresham's Law)",
+      "date": "2025-06-29",
+      "filename": "economy-detail-8.html"
+    }
+  ]
+}

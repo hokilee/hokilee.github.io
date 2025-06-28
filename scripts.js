@@ -202,93 +202,109 @@ function autoManageNewBadges() {
 /**
  * 메인 페이지에서 콘텐츠 링크에 "New" 배지 표시
  */
-function markNewInMainPage() {
+async function markNewInMainPage() {
   const today = getTodayDate();
 
-  fetch('latest_posts.json')
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('네트워크 응답이 올바르지 않습니다.');
-      }
-      return response.json();
-    })
-    .then((latestPosts) => {
-      // "오늘의 한줄 지식/잡학" (trivia) 확인
-      const triviaLink = document.getElementById('trivia-link');
-      if (triviaLink && latestPosts.trivia === today) {
-        const newBadge = createNewBadge();
-        triviaLink.parentNode.appendChild(newBadge);
-      }
+  try {
+    const response = await fetch('latest_posts.json');
+    if (!response.ok) {
+      throw new Error('네트워크 응답이 올바르지 않습니다.');
+    }
+    const latestPosts = await response.json();
 
-      // "이호기의 하루 한생각" (thought) 확인
-      const thoughtLink = document.getElementById('thought-link');
-      if (thoughtLink && latestPosts.thought === today) {
-        const newBadge = createNewBadge();
-        thoughtLink.parentNode.appendChild(newBadge);
-      }
+    // "오늘의 한줄 지식/잡학" (trivia) 확인
+    const triviaLink = document.getElementById('trivia-link');
+    if (triviaLink && latestPosts.trivia === today) {
+      const newBadge = createNewBadge();
+      triviaLink.parentNode.appendChild(newBadge);
+    }
 
-      // "오늘의 기술 팁" 확인
-      const techTipsLink = document.querySelector(
-        'a[href="tech-tips-board.html"]'
-      );
-      if (techTipsLink && latestPosts.techTips === today) {
-        const newBadge = createNewBadge();
-        techTipsLink.parentNode.appendChild(newBadge);
-      }
+    // "이호기의 하루 한생각" (thought) 확인
+    const thoughtLink = document.getElementById('thought-link');
+    if (thoughtLink && latestPosts.thought === today) {
+      const newBadge = createNewBadge();
+      thoughtLink.parentNode.appendChild(newBadge);
+    }
 
-      // "오늘의 경제 상식" 확인
-      const economyLink = document.querySelector(
-        'a[href="economy-board.html"]'
-      );
-      if (economyLink && latestPosts.economy === today) {
-        const newBadge = createNewBadge();
-        economyLink.parentNode.appendChild(newBadge);
-      }
+    // "오늘의 기술 팁" 확인
+    const techTipsLink = document.querySelector(
+      'a[href="tech-tips-board.html"]'
+    );
+    if (techTipsLink && latestPosts.techTips === today) {
+      const newBadge = createNewBadge();
+      techTipsLink.parentNode.appendChild(newBadge);
+    }
 
-      // "오늘의 자기계발" 확인
-      const selfImprovementLink = document.querySelector(
-        'a[href="self-improvement-board.html"]'
-      );
-      if (selfImprovementLink && latestPosts.selfImprovement === today) {
-        const newBadge = createNewBadge();
-        selfImprovementLink.parentNode.appendChild(newBadge);
-      }
+    // "오늘의 경제 상식" 확인
+    const economyLink = document.querySelector('a[href="economy-board.html"]');
+    if (economyLink && latestPosts.economy === today) {
+      const newBadge = createNewBadge();
+      economyLink.parentNode.appendChild(newBadge);
+    }
 
-      // 미리보기 내용 업데이트
-      updateAllPreviews(latestPosts, today);
-    })
-    .catch((error) => {
-      console.error('최신 게시물 정보를 불러오는 데 실패했습니다:', error);
+    // "오늘의 자기계발" 확인
+    const selfImprovementLink = document.querySelector(
+      'a[href="self-improvement-board.html"]'
+    );
+    if (selfImprovementLink && latestPosts.selfImprovement === today) {
+      const newBadge = createNewBadge();
+      selfImprovementLink.parentNode.appendChild(newBadge);
+    }
+
+    // 미리보기 내용 업데이트 (비동기 처리)
+    await updateAllPreviews(latestPosts, today);
+  } catch (error) {
+    console.error('최신 게시물 정보를 불러오는 데 실패했습니다:', error);
+  }
+}
+
+/**
+ * 카테고리별 최신 게시물 정보 반환 (JSON 파일에서 동적 로드)
+ */
+async function getLatestPostForCategory(category) {
+  const categoryMap = {
+    trivia: 'trivia/posts.json',
+    thought: 'thought/posts.json',
+    tech: 'tech-tips/posts.json',
+    economy: 'economy/posts.json',
+    'self-improvement': 'self-improvement/posts.json',
+  };
+
+  const jsonPath = categoryMap[category];
+  if (!jsonPath) return null;
+
+  try {
+    const response = await fetch(jsonPath);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+
+    // 가장 최신 게시물 찾기 (번호 기준 - 가장 큰 번호가 최신)
+    const latestPost = data.posts.reduce((latest, current) => {
+      return parseInt(current.number) > parseInt(latest.number)
+        ? current
+        : latest;
     });
+
+    return latestPost;
+  } catch (error) {
+    console.error(`${category} 게시물 정보를 불러오는 데 실패했습니다:`, error);
+    return null;
+  }
 }
 
 /**
- * 모든 미리보기 내용을 업데이트
+ * 특정 카테고리의 미리보기 업데이트 (비동기 처리)
  */
-function updateAllPreviews(latestPosts, today) {
-  // 각 카테고리별로 미리보기 업데이트
-  updatePreviewForCategory('trivia', latestPosts.trivia, today);
-  updatePreviewForCategory('thought', latestPosts.thought, today);
-  updatePreviewForCategory('tech', latestPosts.techTips, today);
-  updatePreviewForCategory('economy', latestPosts.economy, today);
-  updatePreviewForCategory(
-    'self-improvement',
-    latestPosts.selfImprovement,
-    today
-  );
-}
-
-/**
- * 특정 카테고리의 미리보기 업데이트
- */
-function updatePreviewForCategory(category, latestDate, today) {
+async function updatePreviewForCategory(category, latestDate, today) {
   const previewElement = document.getElementById(`${category}-preview`);
   if (!previewElement) return;
 
   // 오늘 날짜와 비교
   if (latestDate === today) {
     // 오늘 업데이트된 경우 - 최신 게시물 표시
-    const latestPost = getLatestPostForCategory(category);
+    const latestPost = await getLatestPostForCategory(category);
     if (latestPost) {
       previewElement.innerHTML = `
         <div class="preview-item">
@@ -317,18 +333,21 @@ function updatePreviewForCategory(category, latestDate, today) {
 }
 
 /**
- * 카테고리별 최신 게시물 정보 반환
+ * 모든 미리보기 내용을 업데이트 (비동기 처리)
  */
-function getLatestPostForCategory(category) {
-  const latestPosts = {
-    trivia: { number: '18', title: '코카콜라는 처음엔 약이었다' },
-    thought: { number: '19', title: '한 번에 하나씩' },
-    tech: { number: '7', title: '강력한 비밀번호 만드는 방법' },
-    economy: { number: '7', title: '프로토콜 경제(Protocol Economy)' },
-    'self-improvement': { number: '7', title: '시간을 아끼는 이메일 정리법' },
-  };
-
-  return latestPosts[category] || null;
+async function updateAllPreviews(latestPosts, today) {
+  // 각 카테고리별로 미리보기 업데이트 (병렬 처리)
+  await Promise.all([
+    updatePreviewForCategory('trivia', latestPosts.trivia, today),
+    updatePreviewForCategory('thought', latestPosts.thought, today),
+    updatePreviewForCategory('tech', latestPosts.techTips, today),
+    updatePreviewForCategory('economy', latestPosts.economy, today),
+    updatePreviewForCategory(
+      'self-improvement',
+      latestPosts.selfImprovement,
+      today
+    ),
+  ]);
 }
 
 // ===== 연도 표시 =====

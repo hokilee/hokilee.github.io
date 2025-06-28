@@ -1,0 +1,124 @@
+{
+  "posts": [
+    {
+      "number": "1",
+      "title": "작은 변화의 힘",
+      "date": "2025-06-15",
+      "filename": "thought-detail-1.html"
+    },
+    {
+      "number": "2",
+      "title": "완벽함보다 완성함",
+      "date": "2025-06-16",
+      "filename": "thought-detail-2.html"
+    },
+    {
+      "number": "3",
+      "title": "실패는 성공의 어머니",
+      "date": "2025-06-17",
+      "filename": "thought-detail-3.html"
+    },
+    {
+      "number": "4",
+      "title": "시간의 가치",
+      "date": "2025-06-18",
+      "filename": "thought-detail-4.html"
+    },
+    {
+      "number": "5",
+      "title": "학습의 즐거움",
+      "date": "2025-06-19",
+      "filename": "thought-detail-5.html"
+    },
+    {
+      "number": "6",
+      "title": "인간관계의 중요성",
+      "date": "2025-06-20",
+      "filename": "thought-detail-6.html"
+    },
+    {
+      "number": "7",
+      "title": "건강의 소중함",
+      "date": "2025-06-21",
+      "filename": "thought-detail-7.html"
+    },
+    {
+      "number": "8",
+      "title": "꿈과 현실의 균형",
+      "date": "2025-06-22",
+      "filename": "thought-detail-8.html"
+    },
+    {
+      "number": "9",
+      "title": "감사하는 마음",
+      "date": "2025-06-23",
+      "filename": "thought-detail-9.html"
+    },
+    {
+      "number": "10",
+      "title": "도전의 의미",
+      "date": "2025-06-24",
+      "filename": "thought-detail-10.html"
+    },
+    {
+      "number": "11",
+      "title": "성장의 과정",
+      "date": "2025-06-25",
+      "filename": "thought-detail-11.html"
+    },
+    {
+      "number": "12",
+      "title": "집중의 힘",
+      "date": "2025-06-26",
+      "filename": "thought-detail-12.html"
+    },
+    {
+      "number": "13",
+      "title": "인내의 미덕",
+      "date": "2025-06-27",
+      "filename": "thought-detail-13.html"
+    },
+    {
+      "number": "14",
+      "title": "창의성의 소중함",
+      "date": "2025-06-28",
+      "filename": "thought-detail-14.html"
+    },
+    {
+      "number": "15",
+      "title": "협력의 가치",
+      "date": "2025-06-28",
+      "filename": "thought-detail-15.html"
+    },
+    {
+      "number": "16",
+      "title": "자기계발의 중요성",
+      "date": "2025-06-30",
+      "filename": "thought-detail-16.html"
+    },
+    {
+      "number": "17",
+      "title": "균형잡힌 삶",
+      "date": "2025-07-01",
+      "filename": "thought-detail-17.html"
+    },
+    {
+      "number": "18",
+      "title": "긍정적 사고의 힘",
+      "date": "2025-07-02",
+      "filename": "thought-detail-18.html"
+    },
+    {
+      "number": "19",
+      "title": "한 번에 하나씩",
+      "date": "2025-06-28",
+      "filename": "thought-detail-19.html"
+    },
+    {
+      "number": "20",
+      "title": "창조적인 사고",
+      "date": "2025-06-29",
+      "filename": "thought-detail-20.html"
+    }
+  ]
+}

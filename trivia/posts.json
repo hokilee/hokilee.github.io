@@ -1,0 +1,118 @@
+{
+  "posts": [
+    {
+      "number": "1",
+      "title": "세계에서 가장 긴 지명",
+      "date": "2025-06-15",
+      "filename": "trivia-detail-1.html"
+    },
+    {
+      "number": "2",
+      "title": "고래는 왜 바다로 돌아갔을까",
+      "date": "2025-06-16",
+      "filename": "trivia-detail-2.html"
+    },
+    {
+      "number": "3",
+      "title": "인간의 뇌는 얼마나 많은 정보를 저장할 수 있을까",
+      "date": "2025-06-17",
+      "filename": "trivia-detail-3.html"
+    },
+    {
+      "number": "4",
+      "title": "왜 하늘은 파란색일까",
+      "date": "2025-06-18",
+      "filename": "trivia-detail-4.html"
+    },
+    {
+      "number": "5",
+      "title": "세계에서 가장 작은 나라는 어디일까",
+      "date": "2025-06-19",
+      "filename": "trivia-detail-5.html"
+    },
+    {
+      "number": "6",
+      "title": "왜 새는 V자 모양으로 날까",
+      "date": "2025-06-20",
+      "filename": "trivia-detail-6.html"
+    },
+    {
+      "number": "7",
+      "title": "세계에서 가장 오래된 나무는 몇 살일까",
+      "date": "2025-06-21",
+      "filename": "trivia-detail-7.html"
+    },
+    {
+      "number": "8",
+      "title": "왜 바다는 짜고 강물은 달까",
+      "date": "2025-06-22",
+      "filename": "trivia-detail-8.html"
+    },
+    {
+      "number": "9",
+      "title": "세계에서 가장 빠른 동물은 무엇일까",
+      "date": "2025-06-23",
+      "filename": "trivia-detail-9.html"
+    },
+    {
+      "number": "10",
+      "title": "왜 구름은 흰색일까",
+      "date": "2025-06-24",
+      "filename": "trivia-detail-10.html"
+    },
+    {
+      "number": "11",
+      "title": "세계에서 가장 큰 동물은 무엇일까",
+      "date": "2025-06-25",
+      "filename": "trivia-detail-11.html"
+    },
+    {
+      "number": "12",
+      "title": "왜 무지개는 7가지 색깔일까",
+      "date": "2025-06-26",
+      "filename": "trivia-detail-12.html"
+    },
+    {
+      "number": "13",
+      "title": "세계에서 가장 깊은 바다는 어디일까",
+      "date": "2025-06-27",
+      "filename": "trivia-detail-13.html"
+    },
+    {
+      "number": "14",
+      "title": "왜 달은 모양이 변할까",
+      "date": "2025-06-28",
+      "filename": "trivia-detail-14.html"
+    },
+    {
+      "number": "15",
+      "title": "세계에서 가장 긴 강은 무엇일까",
+      "date": "2025-06-25",
+      "filename": "trivia-detail-15.html"
+    },
+    {
+      "number": "16",
+      "title": "왜 번개는 번쩍이고 천둥은 울릴까",
+      "date": "2025-06-26",
+      "filename": "trivia-detail-16.html"
+    },
+    {
+      "number": "17",
+      "title": "세계에서 가장 높은 산은 무엇일까",
+      "date": "2025-06-27",
+      "filename": "trivia-detail-17.html"
+    },
+    {
+      "number": "18",
+      "title": "코카콜라는 처음엔 약이었다",
+      "date": "2025-06-28",
+      "filename": "trivia-detail-18.html"
+    },
+    {
+      "number": "19",
+      "title": "펭귄은 무릎이있다",
+      "date": "2025-06-29",
+      "filename": "trivia-detail-19.html"
+    }
+  ]
+}
