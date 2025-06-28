@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강력한 비밀번호 만드는 방법 - 디지털 보안의 첫걸음</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .overlay-box {
+        background-color: rgba(255, 255, 255, 0.92);
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .date {
+        text-align: center;
+        color: #666;
+        font-size: 1.1em;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .back-button {
+        text-align: center;
+      }
+
+      .back-button a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      .back-button a:hover {
+        background-color: #555;
+      }
+
+      .like-section {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+
+      .like-button {
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      .like-button:hover {
+        background-color: #ff5252;
+      }
+
+      .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .tip-box {
+        background-color: #e8f5e8;
+        border-left: 4px solid #4caf50;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .warning-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .info-box {
+        background-color: #e3f2fd;
+        border-left: 4px solid #2196f3;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .step-box {
+        background-color: #f3e5f5;
+        border-left: 4px solid #9c27b0;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+      }
+
+      .benefit-box {
+        background-color: #fff8e1;
+        border-left: 4px solid #ff9800;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .service-box {
+        background-color: #f1f8e9;
+        border-left: 4px solid #8bc34a;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      .feature-highlight {
+        background-color: #e0f2f1;
+        border: 2px solid #26a69a;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-weight: bold;
+        color: #2e7d32;
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .password-example {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+        font-family: monospace;
+        font-size: 1.1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay-box">
+      <h1>
+        <img
+          src="../main-image/tech.png"
+          alt="tech icon"
+          style="
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 10px;
+          "
+        />
+        강력한 비밀번호 만드는 방법
+      </h1>
+      <div class="date">2025-06-28</div>
+
+      <div class="content">
+        <p>
+          디지털 시대에서 비밀번호는 우리의 디지털 자산을 보호하는 첫 번째
+          방어선입니다. 하지만 여전히 많은 사람들이 "123456"이나 "password"와
+          같은 약한 비밀번호를 사용하고 있습니다. 오늘은 강력하면서도 기억하기
+          쉬운 비밀번호를 만드는 방법과 비밀번호 관리 도구들을 소개해드리겠습니다.
+        </p>
+
+        <div class="info-box">
+          <h3>🔐 비밀번호 보안의 중요성</h3>
+          <p>
+            해킹 시도의 80% 이상이 약한 비밀번호를 통해 이루어진다고 합니다.
+            강력한 비밀번호는 단순히 복잡한 문자 조합이 아니라, 예측하기 어렵고
+            각 서비스마다 고유한 비밀번호를 사용하는 것이 핵심입니다. 또한
+            정기적인 비밀번호 변경과 2단계 인증 활성화도 필수적입니다.
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <h3>💡 강력한 비밀번호 만들기 5단계</h3>
+          <div class="step-box">
+            <h4>📋 단계별 가이드</h4>
+            <p>
+              <strong>1단계: 기본 규칙 준수</strong><br />
+              • 최소 12자 이상 (16자 권장)<br />
+              • 대문자, 소문자, 숫자, 특수문자 포함<br />
+              • 연속된 문자나 숫자 피하기<br />
+              • 개인정보 관련 내용 제외
+            </p>
+            <p>
+              <strong>2단계: 기억하기 쉬운 패턴 선택</strong><br />
+              • 좋아하는 문장이나 가사 활용<br />
+              • 의미 있는 약어 만들기<br />
+              • 키보드 패턴 활용<br />
+              • 숫자와 문자 교체 규칙 적용
+            </p>
+            <p>
+              <strong>3단계: 서비스별 차별화</strong><br />
+              • 각 서비스명을 비밀번호에 포함<br />
+              • 서비스별 고유 접미사 추가<br />
+              • 위치에 따른 문자 변경<br />
+              • 색상이나 테마 활용
+            </p>
+            <p>
+              <strong>4단계: 정기적 업데이트</strong><br />
+              • 3-6개월마다 비밀번호 변경<br />
+              • 보안 사고 발생 시 즉시 변경<br />
+              • 계절별 테마로 변경<br />
+              • 생일이나 기념일 기준으로 변경
+            </p>
+            <p>
+              <strong>5단계: 보안 강화</strong><br />
+              • 2단계 인증 활성화<br />
+              • 비밀번호 힌트 설정<br />
+              • 로그인 시도 제한<br />
+              • 보안 질문 설정
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <h3>🎯 비밀번호 생성 방법별 예시</h3>
+          <div class="step-box">
+            <h4>📝 다양한 생성 방법</h4>
+            <p>
+              <strong>1. 문장 기반 방법</strong><br />
+              문장: "나는 매일 아침 7시에 운동을 합니다"<br />
+              <div class="password-example">나는매일아침7시에운동을합니다 → Nmam7sEydh!</div>
+              • 첫 글자만 추출하고 숫자와 특수문자 추가
+            </p>
+            <p>
+              <strong>2. 약어 기반 방법</strong><br />
+              문장: "My favorite color is blue and I love coffee"<br />
+              <div class="password-example">MfciB&Ilc2025!</div>
+              • 각 단어의 첫 글자 + 특수문자 + 연도
+            </p>
+            <p>
+              <strong>3. 키보드 패턴 방법</strong><br />
+              <div class="password-example">Qw3rty!@#2025</div>
+              • 키보드 패턴 + 특수문자 + 연도
+            </p>
+            <p>
+              <strong>4. 서비스별 차별화</strong><br />
+              기본: MyF@v0r1teP@ssw0rd<br />
+              Gmail: MyF@v0r1teP@ssw0rd_Gm<br />
+              Facebook: MyF@v0r1teP@ssw0rd_Fb<br />
+              • 서비스명 약자를 접미사로 추가
+            </p>
+          </div>
+        </div>
+
+        <div class="warning-box">
+          <h3>⚠️ 피해야 할 비밀번호 패턴</h3>
+          <p>
+            <strong>1. 개인정보 기반</strong><br />
+            • 생년월일, 전화번호, 주민번호<br />
+            • 가족 이름, 반려동물 이름<br />
+            • 주소, 학교명, 회사명<br />
+            • SNS에서 쉽게 찾을 수 있는 정보
+          </p>
+          <p>
+            <strong>2. 단순한 패턴</strong><br />
+            • 123456, qwerty, password<br />
+            • 연속된 문자: aaaa, 1111<br />
+            • 키보드 순서: asdf, zxcv<br />
+            • 반복 패턴: ababab, 121212
+          </p>
+          <p>
+            <strong>3. 예측 가능한 조합</strong><br />
+            • 계절 + 연도: spring2025<br />
+            • 월 + 연도: january2025<br />
+            • 단순한 단어 + 숫자: love123<br />
+            • 서비스명 + 123: gmail123
+          </p>
+        </div>
+
+        <div class="benefit-box">
+          <h3>🔒 비밀번호 관리 도구</h3>
+          <div class="step-box">
+            <h4>📱 추천 비밀번호 관리자</h4>
+            <p>
+              <strong>• 1Password</strong><br />
+              <span class="feature-highlight">강력한 암호화</span><br />
+              <span class="feature-highlight">크로스 플랫폼 지원</span><br />
+              • 가족 공유 기능 제공<br />
+              • 보안 감사 및 알림 기능
+            </p>
+            <p>
+              <strong>• LastPass</strong><br />
+              <span class="feature-highlight">무료 플랜 제공</span><br />
+              <span class="feature-highlight">자동 채우기 기능</span><br />
+              • 다중 인증 지원<br />
+              • 비밀번호 생성기 내장
+            </p>
+            <p>
+              <strong>• Bitwarden</strong><br />
+              <span class="feature-highlight">오픈소스</span><br />
+              <span class="feature-highlight">완전 무료</span><br />
+              • 자체 호스팅 가능<br />
+              • 강력한 보안 기능
+            </p>
+            <p>
+              <strong>• KeePass</strong><br />
+              <span class="feature-highlight">오프라인 저장</span><br />
+              <span class="feature-highlight">완전 무료</span><br />
+              • 로컬 파일 기반<br />
+              • 플러그인 확장 가능
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <h3>🚀 비밀번호 보안 강화 팁</h3>
+          <div class="step-box">
+            <h4>⚡ 실전 적용 방법</h4>
+            <p>
+              <strong>1. 2단계 인증 활성화</strong><br />
+              • SMS, 이메일, 앱 기반 인증<br />
+              • 하드웨어 보안 키 사용<br />
+              • 백업 코드 안전 보관<br />
+              • 모든 중요 계정에 적용
+            </p>
+            <p>
+              <strong>2. 정기적인 보안 점검</strong><br />
+              • 비밀번호 강도 확인<br />
+              • 중복 비밀번호 사용 여부<br />
+              • 오래된 비밀번호 업데이트<br />
+              • 보안 사고 모니터링
+            </p>
+            <p>
+              <strong>3. 안전한 비밀번호 공유</strong><br />
+              • 비밀번호 관리자 활용<br />
+              • 임시 비밀번호 사용<br />
+              • 공유 후 즉시 변경<br />
+              • 안전한 채널로만 공유
+            </p>
+            <p>
+              <strong>4. 비상 상황 대비</strong><br />
+              • 복구 이메일 설정<br />
+              • 보안 질문 답변 기록<br />
+              • 백업 코드 보관<br />
+              • 신뢰할 수 있는 연락처 등록
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <h3>📊 비밀번호 보안 체크리스트</h3>
+          <p>
+            <strong>기본 보안</strong><br />
+            □ 12자 이상의 비밀번호 사용<br />
+            □ 대문자, 소문자, 숫자, 특수문자 포함<br />
+            □ 개인정보 관련 내용 제외<br />
+            □ 각 서비스마다 다른 비밀번호 사용
+          </p>
+          <p>
+            <strong>관리 도구</strong><br />
+            □ 비밀번호 관리자 설치<br />
+            □ 모든 비밀번호 등록<br />
+            □ 정기적인 백업<br />
+            □ 2단계 인증 설정
+          </p>
+          <p>
+            <strong>정기 점검</strong><br />
+            □ 3-6개월마다 비밀번호 변경<br />
+            □ 보안 강도 확인<br />
+            □ 중복 사용 여부 점검<br />
+            □ 보안 사고 모니터링
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <h3>🎯 비밀번호 생성 도구</h3>
+          <div class="step-box">
+            <h4>🛠️ 온라인 도구들</h4>
+            <p>
+              <strong>• LastPass Password Generator</strong><br />
+              • 길이, 복잡도, 특수문자 옵션 설정<br />
+              • 발음 가능한 비밀번호 생성<br />
+              • PIN, 패스프레이즈 생성
+            </p>
+            <p>
+              <strong>• 1Password Strong Password Generator</strong><br />
+              • 다양한 옵션 제공<br />
+              • 보안 강도 표시<br />
+              • 즉시 저장 기능
+            </p>
+            <p>
+              <strong>• Bitwarden Password Generator</strong><br />
+              • 오픈소스 기반<br />
+              • 완전 무료 사용<br />
+              • 다양한 생성 옵션
+            </p>
+            <p>
+              <strong>• KeePass Password Generator</strong><br />
+              • 오프라인에서 사용 가능<br />
+              • 고급 옵션 제공<br />
+              • 완전한 프라이버시 보장
+            </p>
+          </div>
+        </div>
+
+        <p>
+          <strong>시작하기</strong><br />
+          오늘부터 강력한 비밀번호 만들기를 시작해보세요. 처음에는 어려울 수
+          있지만, 비밀번호 관리자를 활용하면 훨씬 쉽게 관리할 수 있습니다.
+          작은 변화가 큰 보안을 만들어냅니다!
+        </p>
+
+        <p>
+          <strong>기억하세요</strong><br />
+          비밀번호는 단순한 문자 조합이 아니라, 당신의 디지털 자산을 보호하는
+          중요한 열쇠입니다. 강력한 비밀번호와 함께 2단계 인증을 활성화하여
+          이중 보안을 구축하세요. 안전한 디지털 라이프를 위한 첫걸음을
+          시작해보세요!
+        </p>
+      </div>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
+
+      <div class="back-button">
+        <a href="../tech-tips-board.html">← 목록으로 돌아가기</a>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+  </body>
+</html> 

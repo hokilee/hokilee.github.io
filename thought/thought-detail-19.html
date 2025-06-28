@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하루 한 생각 - 한 번에 하나씩</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../scripts.js" defer></script>
+    <style>
+      .detail-box {
+        background-color: rgba(255, 255, 255, 0.95);
+        max-width: 800px;
+        margin: 80px auto;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #333;
+      }
+      h1,
+      p,
+      .like-count {
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 6px;
+      }
+      hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        width: 100%;
+        max-width: 680px;
+        margin: 6px auto 30px auto;
+      }
+      p strong {
+        color: #1a73e8;
+      }
+      blockquote {
+        font-style: italic;
+        color: #555;
+        border-left: 4px solid #ccc;
+        padding-left: 16px;
+        margin: 30px 0;
+      }
+      .back-button {
+        margin-top: 40px;
+        text-align: center;
+      }
+      .back-button a {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+      .back-button a:hover {
+        background-color: #555;
+      }
+      .button-row {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .like {
+        background-color: #e91e63;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .like:hover {
+        background-color: #c2185b;
+      }
+      .back {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+      .back:hover {
+        background-color: #555;
+      }
+      .detail-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 28px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 18px;
+      }
+      .detail-text {
+        flex: 2 1 0;
+      }
+      .detail-image {
+        flex: 0 0 120px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .detail-image img {
+        max-width: 120px;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: #f8f8f8;
+        margin-top: 8px;
+      }
+      @media (max-width: 700px) {
+        .detail-flex {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .detail-image {
+          justify-content: flex-start;
+          margin-bottom: 8px;
+        }
+        .detail-image img {
+          max-width: 80px;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="detail-box">
+      <h1>한 번에 하나씩</h1>
+      <hr />
+      <p class="date">2025-06-28</p>
+
+      <blockquote>
+        "꼭 해야 할 일부터 시작하라. 그 다음은 할 수 있는 일을 하라. 그러다 보면
+        어느 순간 자신이 불가능하다고 생각했던 일을 해내고 있음을 알게 될
+        것이다."<br />
+        – 아사시의 성 프란체스코
+      </blockquote>
+
+      <p>
+        우리는
+        <strong>한 번에 한 가지 일을 처리할 수 있을 뿐</strong>입니다.<br />
+        그러나 이처럼 한 번에 한 가지씩 일을 처리하는 것만으로도<br />
+        <strong>충분히 알차게 살 수 있다</strong>는 것을 우리는 종종 잊고
+        있습니다.
+      </p>
+
+      <p>
+        누구에게나 매일 해야 할 일이 있습니다.<br />
+        출근, 아이 돌보기, 식사 준비 등등.<br />
+        자원봉사에 참여하고, 친구들과 모임에 가고, 화단을 가꾸기도 합니다.<br />
+        이처럼 우리는 우리가 <strong>꼭 해야 할 일</strong>, 그리고<br />
+        <strong>남을 기쁘게 해 주는 일</strong>을 하며 하루를 분주하게 보냅니다.
+      </p>
+
+      <p>
+        그 일들에 지쳐 <strong>숨 쉴 틈이 없을 수도</strong> 있습니다.<br />
+        마치 모든 일을 동시에 해내야 한다는 압박감에<br />
+        우리는 종종 <strong>무엇부터 시작해야 할지 모르는 상황</strong>에
+        빠집니다.
+      </p>
+
+      <p>
+        하지만 <strong>성 프란체스코의 말씀</strong>을 기억해보세요.<br />
+        <strong>"꼭 해야 할 일부터 시작하라"</strong><br />
+        이것이 바로 우리가 따라야 할 첫 번째 원칙입니다.
+      </p>
+
+      <p>
+        우리는 종종
+        <strong>모든 일을 완벽하게 해내려고</strong> 노력하면서<br />
+        오히려 아무것도 제대로 하지 못하는 경우가 많습니다.<br />
+        하지만 <strong>하나씩 해 나가다 보면</strong><br />
+        기대했던 것보다 더 많은 것을 해내고,<br />
+        <strong>더 많은 것을 해낼 수 있다</strong>는 것을 깨닫게 됩니다.
+      </p>
+
+      <p>
+        <strong>우선순위를 정하는 것</strong>이 중요합니다.<br />
+        가장 중요한 일, 가장 시급한 일부터 시작하여<br />
+        하나씩 차근차근 해나가는 것이<br />
+        <strong>효율적이고 만족스러운 삶</strong>을 만드는 비결입니다.
+      </p>
+
+      <p>
+        우리는 종종 <strong>멀티태스킹</strong>을 자랑스러워하지만,<br />
+        실제로는 한 번에 여러 일을 하면서<br />
+        <strong>모든 일을 제대로 하지 못하는 경우</strong>가 많습니다.<br />
+        오히려 <strong>한 번에 하나씩 집중</strong>하는 것이<br />
+        더 나은 결과를 만들어냅니다.
+      </p>
+
+      <p>
+        <strong>지금 당장 해야 할 일</strong>이 무엇인지 생각해보세요.<br />
+        그것이 가장 중요하고 시급한 일이라면,<br />
+        다른 모든 것을 잠시 미뤄두고<br />
+        <strong>그 일에만 온전히 집중</strong>해보세요.
+      </p>
+
+      <p>
+        하나의 일을 완료하면<br />
+        <strong>다음 우선순위</strong>로 넘어가면 됩니다.<br />
+        이렇게 하나씩 해나가다 보면<br />
+        어느 순간 <strong>불가능하다고 생각했던 일</strong>도<br />
+        해내고 있음을 발견하게 될 것입니다.
+      </p>
+
+      <p>
+        <strong>성 프란체스코의 지혜</strong>는<br />
+        우리에게 단순하지만 강력한 메시지를 전합니다.<br />
+        복잡하게 생각하지 말고,<br />
+        <strong>지금 할 수 있는 일부터 시작</strong>하라는 것입니다.
+      </p>
+
+      <p>
+        우리의 하루는 <strong>무한하지 않습니다</strong>.<br />
+        하지만 우리가 <strong>한 번에 하나씩</strong> 집중한다면,<br />
+        그 하루는 <strong>무한한 가치</strong>를 가질 수 있습니다.<br />
+        작은 진전이라도<br />
+        <strong>하루하루 쌓여 큰 변화</strong>를 만들어냅니다.
+      </p>
+
+      <p>
+        오늘부터 <strong>한 번에 하나씩</strong> 시작해보세요.<br />
+        꼭 해야 할 일부터,<br />
+        그 다음 할 수 있는 일을,<br />
+        그리고 어느 순간<br />
+        <strong>불가능하다고 생각했던 일</strong>까지<br />
+        해내고 있는 자신을 발견하게 될 것입니다.
+      </p>
+
+      <p>
+        <strong>한 번에 하나씩</strong>.<br />
+        이것이 바로 <strong>진정한 성공의 비결</strong>입니다.
+      </p>
+
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../thought-board-2.html" class="back">← 목록으로 돌아가기</a>
+        </div>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const pageKey = window.location.pathname;
+        const likeSpan = document.getElementById('likeCount');
+
+        const savedLikes = localStorage.getItem('like-' + pageKey);
+        if (savedLikes && likeSpan) {
+          likeSpan.innerText = savedLikes;
+        }
+
+        window.likePost = function () {
+          let currentLikes = parseInt(likeSpan.innerText);
+          currentLikes += 1;
+          likeSpan.innerText = currentLikes;
+          localStorage.setItem('like-' + pageKey, currentLikes);
+        };
+      });
+    </script>
+  </body>
+</html>

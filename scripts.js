@@ -321,11 +321,11 @@ function updatePreviewForCategory(category, latestDate, today) {
  */
 function getLatestPostForCategory(category) {
   const latestPosts = {
-    trivia: { number: '17', title: '기린은 30분도 안자고 하루를 버틴다' },
-    thought: { number: '18', title: '기회는 스스로 만드는 것' },
-    tech: { number: '6', title: '무료 클라우드 서비스 활용팁' },
-    economy: { number: '6', title: '드롭/래플(Drop/Raffle)' },
-    'self-improvement': { number: '6', title: '작심 삼일깨는 가장 쉬운 방법' },
+    trivia: { number: '18', title: '코카콜라는 처음엔 약이었다' },
+    thought: { number: '19', title: '한 번에 하나씩' },
+    tech: { number: '7', title: '강력한 비밀번호 만드는 방법' },
+    economy: { number: '7', title: '프로토콜 경제(Protocol Economy)' },
+    'self-improvement': { number: '7', title: '시간을 아끼는 이메일 정리법' },
   };
 
   return latestPosts[category] || null;
