@@ -816,14 +816,20 @@ body {
   text-align: left;
 }
 .notice-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #1976d2;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  text-align: left;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #2176ff;
+  margin-bottom: 10px;
 }
+
+.notice-title img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 .notice-list {
   list-style: none;
   padding: 0;
@@ -870,4 +876,12 @@ body {
   color: #d32f2f;
   font-weight: 900;
   text-shadow: none !important;
+}
+
+.notice-divider {
+  border: none;
+  border-top: 2px solid #64aef7;
+  margin: 10px 0 18px 0;
+  width: 100%;
+  border-radius: 2px;
 }
