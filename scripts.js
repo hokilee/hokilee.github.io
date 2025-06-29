@@ -462,3 +462,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 기존 호환성을 위한 전역 함수들
 window.toggleMusic = toggleBackgroundMusic;
+
+function updateNoticeVisitorCount() {
+  const mainCount = document.getElementById('visitor-count');
+  const noticeCount = document.getElementById('notice-visitor-count');
+  if (mainCount && noticeCount) {
+    noticeCount.textContent = mainCount.textContent;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  updateNoticeVisitorCount();
+  // 기존 초기화 함수가 있다면 여기에 추가
+});
