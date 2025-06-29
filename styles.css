@@ -50,7 +50,7 @@ body {
 .visitor-label {
   font-size: 1.2em;
   margin-left: 20px;
-  color: white;
+  color: #111;
   font-weight: 500;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
@@ -847,4 +847,27 @@ body {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.notice-box .visitor-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 8px;
+  text-shadow: none !important;
+  font-weight: 700;
+  padding-left: 0;
+}
+.notice-box .notice-list {
+  padding-left: 8px;
+}
+.notice-box .visitor-label {
+  text-shadow: none !important;
+  font-weight: 700;
+}
+.notice-box #busuanzi_value_site_uv {
+  color: #d32f2f;
+  font-weight: 900;
+  text-shadow: none !important;
 }
