@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "9",
+      "title": "기펜의 역설(Giffen's Paradox)",
+      "date": "2025-06-30",
+      "filename": "economy-detail-9.html"
+    },
+    {
       "number": "1",
       "title": "인플레이션과 디플레이션의 차이",
       "date": "2025-06-15",

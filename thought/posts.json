@@ -1,8 +1,14 @@
 {
   "posts": [
     {
+      "number": "21",
+      "title": "자신을 사랑하는 마음",
+      "date": "2025-06-30",
+      "filename": "thought-detail-21.html"
+    },
+    {
       "number": "1",
-      "title": "작은 변화의 힘",
+      "title": "내가 바랐던 삶의 모양일까?",
       "date": "2025-06-15",
       "filename": "thought-detail-1.html"
     },

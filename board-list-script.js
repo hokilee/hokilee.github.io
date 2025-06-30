@@ -34,13 +34,6 @@ class BoardListGenerator {
   getCurrentPage() {
     const urlParams = new URLSearchParams(window.location.search);
     let page = parseInt(urlParams.get('page')) || 1;
-
-    // 생각 게시판의 경우 기본 페이지를 2페이지로 설정
-    const currentPath = window.location.pathname;
-    if (currentPath.includes('thought-board') && !urlParams.get('page')) {
-      page = 2;
-    }
-
     return page;
   }
 
@@ -71,20 +64,16 @@ class BoardListGenerator {
     // 기존 내용 제거
     boardList.innerHTML = '';
 
-    // New 배지 기준 날짜 (정확히 2025-06-29)
-    const newBadgeDate = '2025-06-29';
+    // New 배지 기준 날짜 (정확히 2025-06-30)
+    const newBadgeDate = '2025-06-30';
 
     // 번호 역순 정렬 (최신 번호가 맨 위로)
     const sortedPosts = posts.sort((a, b) => {
-      return parseInt(b.number) - parseInt(a.number); // 번호 역순 정렬 (내림차순)
+      return parseInt(b.number) - parseInt(a.number);
     });
 
-    // 페이지 번호를 역순으로 매핑 (2페이지가 첫 번째로 표시)
-    const totalPages = Math.ceil(sortedPosts.length / this.postsPerPage);
-    const actualPage = totalPages - this.currentPage + 1; // 역순 매핑
-
     // 페이지네이션을 위한 게시글 슬라이싱
-    const startIndex = (actualPage - 1) * this.postsPerPage;
+    const startIndex = (this.currentPage - 1) * this.postsPerPage;
     const endIndex = startIndex + this.postsPerPage;
     const currentPagePosts = sortedPosts.slice(startIndex, endIndex);
 
@@ -109,21 +98,15 @@ class BoardListGenerator {
     pagination.style.display = 'block';
     pagination.innerHTML = '';
 
-    // 페이지 순서를 역순으로 표시 (2페이지가 첫 번째로)
-    const pageNumbers = [];
-    for (let i = totalPages; i >= 1; i--) {
-      pageNumbers.push(i);
-    }
-
-    // 이전 페이지 버튼 (더 높은 페이지 번호로)
-    if (this.currentPage < totalPages) {
+    // 이전 페이지 버튼
+    if (this.currentPage > 1) {
       const prevLink = document.createElement('a');
-      prevLink.href = `?page=${this.currentPage + 1}`;
+      prevLink.href = `?page=${this.currentPage - 1}`;
       prevLink.textContent = '←';
       pagination.appendChild(prevLink);
     }
 
-    // 페이지 번호들 (역순으로 표시)
+    // 페이지 번호들
     const maxVisiblePages = 5;
     let startPage = Math.max(
       1,
@@ -135,8 +118,7 @@ class BoardListGenerator {
       startPage = Math.max(1, endPage - maxVisiblePages + 1);
     }
 
-    // 역순으로 페이지 번호 표시
-    for (let i = endPage; i >= startPage; i--) {
+    for (let i = startPage; i <= endPage; i++) {
       const pageLink = document.createElement('a');
       pageLink.href = `?page=${i}`;
       pageLink.textContent = i;
@@ -148,10 +130,10 @@ class BoardListGenerator {
       pagination.appendChild(pageLink);
     }
 
-    // 다음 페이지 버튼 (더 낮은 페이지 번호로)
-    if (this.currentPage > 1) {
+    // 다음 페이지 버튼
+    if (this.currentPage < totalPages) {
       const nextLink = document.createElement('a');
-      nextLink.href = `?page=${this.currentPage - 1}`;
+      nextLink.href = `?page=${this.currentPage + 1}`;
       nextLink.textContent = '→';
       pagination.appendChild(nextLink);
     }
