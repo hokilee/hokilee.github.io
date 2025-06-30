@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "10",
+      "title": "프로젝트 관리 도구 소개",
+      "date": "2025-07-01",
+      "filename": "tech-tips-detail-10.html"
+    },
+    {
       "number": "9",
       "title": "온라인 회의 도구 활용법",
       "date": "2025-06-30",

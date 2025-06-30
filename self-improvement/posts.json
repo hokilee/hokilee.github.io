@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "10",
+      "title": "한번 더 생각하는 습관의 힘",
+      "date": "2025-07-01",
+      "filename": "self-improvement-detail-10.html"
+    },
+    {
       "number": "9",
       "title": "나의 성장을 돕는 독서법 3가지",
       "date": "2025-06-30",

@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "10",
+      "title": "피셔 효과(Fisher Effect)",
+      "date": "2025-07-01",
+      "filename": "economy-detail-10.html"
+    },
+    {
       "number": "9",
       "title": "기펜의 역설(Giffen's Paradox)",
       "date": "2025-06-30",
