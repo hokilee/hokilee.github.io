@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "11",
+      "title": "PDF를 이미지로 변환하는 가장 쉬운 방법",
+      "date": "2025-07-02",
+      "filename": "tech-tips-detail-11.html"
+    },
+    {
       "number": "10",
       "title": "프로젝트 관리 도구 소개",
       "date": "2025-07-01",

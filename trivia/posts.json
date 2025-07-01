@@ -2,6 +2,12 @@
   "posts": [
     {
       "number": "21",
+      "title": "지문이 언제 생길까?",
+      "date": "2025-07-02",
+      "filename": "trivia-detail-22.html"
+    },
+    {
+      "number": "21",
       "title": "알람소리보다 '기상후 햇빛'이 더 효과적이다",
       "date": "2025-07-01",
       "filename": "trivia-detail-21.html"

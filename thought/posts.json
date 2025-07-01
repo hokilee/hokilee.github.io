@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "23",
+      "title": "넘어졌다면, 괜찮아",
+      "date": "2025-07-02",
+      "filename": "thought-detail-23.html"
+    },
+    {
       "number": "22",
       "title": "대패질하는 시간보다 대팻날을 가는 시간이 더 길 수도 있다",
       "date": "2025-07-01",

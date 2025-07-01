@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "11",
+      "title": "유동성 함정(Liquidity Trap)",
+      "date": "2025-07-02",
+      "filename": "economy-detail-11.html"
+    },
+    {
       "number": "10",
       "title": "피셔 효과(Fisher Effect)",
       "date": "2025-07-01",
