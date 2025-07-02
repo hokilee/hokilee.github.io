@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "12",
+      "title": "이메일에 타이머 걸기 (예약 발송)",
+      "date": "2025-07-03",
+      "filename": "tech-tips-detail-12.html"
+    },
+    {
       "number": "11",
       "title": "PDF를 이미지로 변환하는 가장 쉬운 방법",
       "date": "2025-07-02",

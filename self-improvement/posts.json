@@ -1,10 +1,16 @@
 {
   "posts": [
     {
+      "number": "12",
+      "title": "퇴근 후 30분, 나를 위한 공부 시간 확보하기",
+      "date": "2025-07-03",
+      "filename": "self-improvement-detail-12.html"
+    },
+    {
       "number": "11",
       "title": "실패를 성공의 밑거름으로 만드는 법",
       "date": "2025-07-02",
-      "filename": "self-improvement-detail-12.html"
+      "filename": "self-improvement-detail-11.html"
     },
     {
       "number": "10",

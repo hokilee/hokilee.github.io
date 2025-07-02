@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "24",
+      "title": "오늘은 나, 내일은 너",
+      "date": "2025-07-03",
+      "filename": "thought-detail-24.html"
+    },
+    {
       "number": "23",
       "title": "넘어졌다면, 괜찮아",
       "date": "2025-07-02",

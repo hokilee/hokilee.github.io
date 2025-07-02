@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "12",
+      "title": "최소성의 원칙",
+      "date": "2025-07-03",
+      "filename": "economy-detail-12.html"
+    },
+    {
       "number": "11",
       "title": "유동성 함정(Liquidity Trap)",
       "date": "2025-07-02",
