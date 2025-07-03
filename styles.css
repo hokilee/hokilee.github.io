@@ -524,8 +524,8 @@ body {
   }
 
   .fixed-background {
-    background-size: 100% auto !important;
-    background-position: center top !important;
+    background-size: cover !important;
+    background-position: center center !important;
   }
 
   .mobile-bg {
