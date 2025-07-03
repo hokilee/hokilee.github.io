@@ -511,7 +511,8 @@ body {
 /* ===== 반응형 디자인 ===== */
 @media (max-width: 768px) {
   body {
-    background: none !important;
+    background: url('main-image/background-image-3.jpg') no-repeat center top !important;
+    background-size: 100% auto !important;
   }
   .mobile-bg {
     display: none !important;
