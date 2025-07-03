@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "23",
+      "title": "바나나는 열매가 아니라 무엇일까??",
+      "date": "2025-07-04",
+      "filename": "trivia-detail-24.html"
+    },
+    {
       "number": "22",
       "title": "고대 로마인들은 칫솔 대신 뭘 썼을까?",
       "date": "2025-07-03",

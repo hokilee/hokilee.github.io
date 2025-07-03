@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "25",
+      "title": "곡선으로 직선을 그려라",
+      "date": "2025-07-04",
+      "filename": "thought-detail-25.html"
+    },
+    {
       "number": "24",
       "title": "오늘은 나, 내일은 너",
       "date": "2025-07-03",

@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "13",
+      "title": "할 일보다 하지 않을 일을 먼저 정해라",
+      "date": "2025-07-04",
+      "filename": "self-improvement-detail-13.html"
+    },
+    {
       "number": "12",
       "title": "퇴근 후 30분, 나를 위한 공부 시간 확보하기",
       "date": "2025-07-03",

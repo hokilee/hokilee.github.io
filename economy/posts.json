@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "13",
+      "title": "카페라테 효과(caffe Latte Effect)",
+      "date": "2025-07-04",
+      "filename": "economy-detail-13.html"
+    },
+    {
       "number": "12",
       "title": "최소성의 원칙",
       "date": "2025-07-03",
