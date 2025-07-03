@@ -513,6 +513,7 @@ body {
   body {
     background: url('main-image/background-image-3.jpg') no-repeat center top !important;
     background-size: 100% auto !important;
+    background-attachment: scroll !important;
   }
   .mobile-bg {
     display: none !important;
