@@ -532,7 +532,10 @@ body {
     display: none !important;
   }
   .main-content,
-  .overlay-box,
+  .overlay-box {
+    margin: 10vw 4vw;
+    padding: 6vw 4vw;
+  }
   .content-grid,
   .menu-grid {
     position: relative;
@@ -673,8 +676,8 @@ body {
   }
 
   .overlay-box {
-    margin: 10px;
-    padding: 15px;
+    margin: 12vw 2vw;
+    padding: 6vw 2vw;
   }
 
   .overlay-box h1 {
