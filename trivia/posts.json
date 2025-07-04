@@ -1,8 +1,14 @@
 {
   "posts": [
     {
+      "number": "24",
+      "title": "왜 비행기 창문은 둥글까?",
+      "date": "2025-07-05",
+      "filename": "trivia-detail-25.html"
+    },
+    {
       "number": "23",
-      "title": "바나나는 열매가 아니라 무엇일까??",
+      "title": "바나나는 열매가 아니라 무엇일까?",
       "date": "2025-07-04",
       "filename": "trivia-detail-24.html"
     },

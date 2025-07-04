@@ -65,7 +65,7 @@ class BoardListGenerator {
     boardList.innerHTML = '';
 
     // New 배지 기준 날짜 (정확히 2025-06-30)
-    const newBadgeDate = '2025-07-04';
+    const newBadgeDate = '2025-07-05';
 
     // 번호 역순 정렬 (최신 번호가 맨 위로)
     const sortedPosts = posts.sort((a, b) => {
@@ -146,8 +146,16 @@ class BoardListGenerator {
     // 오늘 날짜와 정확히 일치하는 경우에만 New 표시
     const isNew = post.date === todayString;
 
+    // trivia 게시판은 filename 필드를 직접 사용, 그 외는 기존 방식
+    let detailLink = '';
+    if (this.boardType === 'trivia') {
+      detailLink = `trivia/${post.filename}`;
+    } else {
+      detailLink = `${this.detailPath}${post.number}.html`;
+    }
+
     li.innerHTML = `
-      <a href="${this.detailPath}${post.number}.html">
+      <a href="${detailLink}">
         <div class="left-content">
           <div class="number">#${post.number}</div>
           <h3>

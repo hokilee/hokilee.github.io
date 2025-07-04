@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "26",
+      "title": "바닥에 대하여",
+      "date": "2025-07-05",
+      "filename": "thought-detail-26.html"
+    },
+    {
       "number": "25",
       "title": "곡선으로 직선을 그려라",
       "date": "2025-07-04",
