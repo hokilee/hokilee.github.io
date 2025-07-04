@@ -533,8 +533,10 @@ body {
   }
   .main-content,
   .overlay-box {
-    margin: 10vw 4vw;
-    padding: 6vw 4vw;
+    margin: 18vw 4vw;
+    padding: 3vw 2vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 92%;
   }
   .content-grid,
   .menu-grid {
@@ -676,8 +678,10 @@ body {
   }
 
   .overlay-box {
-    margin: 12vw 2vw;
-    padding: 6vw 2vw;
+    margin: 22vw 2vw;
+    padding: 2vw 1vw;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 96%;
   }
 
   .overlay-box h1 {
