@@ -6,6 +6,14 @@
     <title>오늘의 한줄 지식/잡학</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      body {
+        background: url('main-image/onboard-image-4.jpg') no-repeat center
+          center fixed;
+        background-size: cover;
+        margin: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #333;
+      }
       .overlay-box {
         background-color: rgba(255, 255, 255, 0.92);
         max-width: 800px;
@@ -126,6 +134,33 @@
 
       .back-button a:hover {
         background-color: #555;
+      }
+      @media (max-width: 768px) {
+        body {
+          background: url('main-image/onboard-image.jpg') no-repeat center
+            center fixed;
+          background-size: cover;
+        }
+
+        .overlay-box {
+          margin: 20px;
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 1.8em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .overlay-box {
+          margin: 10px;
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
       }
     </style>
   </head>
