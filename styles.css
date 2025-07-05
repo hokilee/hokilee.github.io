@@ -712,6 +712,12 @@ body {
     color: #fff !important;
   }
 
+  .menu-item:hover {
+    background: transparent !important;
+    transform: none;
+    box-shadow: none;
+  }
+
   .overlay-box {
     margin: 22vw 2vw;
     padding: 2vw 1vw;
