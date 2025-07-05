@@ -578,19 +578,19 @@ body {
   /* 모바일에서 메뉴 아이템 배경과 테두리 제거 */
   .menu-item {
     padding: 20px;
-    background: rgba(128, 128, 128, 0.6) !important;
-    color: #fff !important;
-    border: none;
+    background: #f8f9fa !important;
+    color: #222 !important;
+    border: 1px solid #ddd;
     box-shadow: none;
   }
 
   .menu-item h2,
   .menu-item p {
-    color: #fff !important;
+    color: #222 !important;
   }
 
   .menu-item:hover {
-    background: rgba(128, 128, 128, 0.7) !important;
+    background: #f8f9fa !important;
     transform: none;
   }
 
