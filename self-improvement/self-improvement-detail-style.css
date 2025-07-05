@@ -1,5 +1,35 @@
 /* Self-Improvement Detail Page Common Styles */
 
+/* 배경화면 추가 */
+body {
+  background: url('../main-image/onboard-image-6.jpg') no-repeat center center
+    fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+}
+
+/* 모바일 배경화면 */
+@media (max-width: 768px) {
+  body {
+    background: url('../main-image/onboard-image-6.jpg') no-repeat center center
+      fixed;
+    background-size: cover;
+  }
+}
+
+/* 개별 게시물 컨테이너 스타일 */
+.detail-box {
+  background-color: rgba(255, 255, 255, 0.92);
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 게시판 목록용 컨테이너 스타일 */
 .overlay-box {
   background-color: rgba(255, 255, 255, 0.92);
   max-width: 800px;
@@ -123,4 +153,29 @@ h1 img {
   height: 32px;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+/* 모바일 반응형 스타일 */
+@media (max-width: 768px) {
+  .detail-box,
+  .overlay-box {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-box,
+  .overlay-box {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
 }
