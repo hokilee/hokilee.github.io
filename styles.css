@@ -696,10 +696,19 @@ body {
 
   .menu-item {
     padding: 15px;
+    background: #f8f9fa !important;
+    color: #222 !important;
+    border: 1px solid #ddd;
+    box-shadow: none;
   }
 
   .menu-item h2 {
     font-size: 1.2em;
+    color: #222 !important;
+  }
+
+  .menu-item p {
+    color: #222 !important;
   }
 
   .overlay-box {
