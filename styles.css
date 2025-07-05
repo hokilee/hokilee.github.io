@@ -535,15 +535,11 @@ body {
   /* 모바일에서 메인 컨테이너 배경과 테두리 제거 */
   .main-content,
   .overlay-box {
-    margin: 0 auto;
+    margin: 18vw 4vw;
     padding: 3vw 2vw;
     background-color: transparent !important;
     width: 92%;
     border: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .content-grid,
@@ -706,15 +702,11 @@ body {
   }
 
   .overlay-box {
-    margin: 0 auto;
+    margin: 22vw 2vw;
     padding: 2vw 1vw;
     background-color: transparent !important;
     width: 96%;
     border: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .overlay-box h1 {
