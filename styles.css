@@ -578,19 +578,19 @@ body {
   /* 모바일에서 메뉴 아이템 배경과 테두리 제거 */
   .menu-item {
     padding: 20px;
-    background: #f8f9fa !important;
-    color: #222 !important;
-    border: 1px solid #ddd;
+    background: transparent !important;
+    color: #fff !important;
+    border: none;
     box-shadow: none;
   }
 
   .menu-item h2,
   .menu-item p {
-    color: #222 !important;
+    color: #fff !important;
   }
 
   .menu-item:hover {
-    background: #f8f9fa !important;
+    background: transparent !important;
     transform: none;
   }
 
@@ -696,19 +696,19 @@ body {
 
   .menu-item {
     padding: 15px;
-    background: #f8f9fa !important;
-    color: #222 !important;
-    border: 1px solid #ddd;
+    background: transparent !important;
+    color: #fff !important;
+    border: none;
     box-shadow: none;
   }
 
   .menu-item h2 {
     font-size: 1.2em;
-    color: #222 !important;
+    color: #fff !important;
   }
 
   .menu-item p {
-    color: #222 !important;
+    color: #fff !important;
   }
 
   .overlay-box {
