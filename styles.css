@@ -254,16 +254,16 @@ body {
 }
 
 .menu-item {
-  padding: 15px;
-  background: rgba(128, 128, 128, 0.6) !important;
-  color: #fff !important;
-  border: none;
+  background-color: #f8f9fa;
+  border-radius: 12px;
   box-shadow: none;
+  padding: 20px;
   width: 100%;
   max-width: 280px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  border-radius: 12px;
+  color: #222;
+  border: 1px solid #ddd;
 }
 
 .menu-item:hover {
@@ -273,11 +273,11 @@ body {
 
 .menu-item h2,
 .menu-item p {
-  color: #fff !important;
+  color: #222;
 }
 
 .menu-item h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
@@ -834,6 +834,14 @@ body {
       transform: none;
       box-shadow: none;
     }
+    .preview-item {
+      font-size: 0.85em;
+    }
+    .notice-box {
+      background: rgba(128, 128, 128, 0.9) !important;
+      border: none;
+      box-shadow: none;
+    }
   }
 
   @media (max-width: 480px) {
@@ -850,6 +858,14 @@ body {
     .menu-item:hover {
       background: rgba(128, 128, 128, 0.7) !important;
       transform: none;
+      box-shadow: none;
+    }
+    .preview-date {
+      font-size: 0.8em;
+    }
+    .notice-box {
+      background: rgba(128, 128, 128, 0.9) !important;
+      border: none;
       box-shadow: none;
     }
   }
@@ -908,10 +924,10 @@ body {
 }
 
 .notice-box {
-  background: #fff;
-  border: 2px solid #1976d2;
+  background: rgba(128, 128, 128, 0.9) !important;
+  border: none;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  box-shadow: none;
   padding: 20px 24px;
   margin: 32px auto 0 auto;
   max-width: 960px;
@@ -919,9 +935,9 @@ body {
 }
 .notice-title {
   text-align: center;
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 700;
-  color: #2176ff;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -941,16 +957,16 @@ body {
 .notice-list li {
   margin-bottom: 8px;
   font-size: 1em;
-  color: #222;
+  color: #fff;
   text-align: left;
 }
 .notice-list li strong {
-  color: #1976d2;
+  color: #fff;
 }
 .notice-visitor {
   margin-top: 4px;
   font-size: 1.05em;
-  color: #333;
+  color: #fff;
   text-align: left;
   max-width: 600px;
   margin-left: auto;
@@ -973,9 +989,10 @@ body {
 .notice-box .visitor-label {
   text-shadow: none !important;
   font-weight: 700;
+  color: #fff;
 }
 .notice-box #busuanzi_value_site_uv {
-  color: #d32f2f;
+  color: #fff;
   font-weight: 900;
   text-shadow: none !important;
 }
