@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "25",
+      "title": "우유는 왜 흰색일까??",
+      "date": "2025-07-06",
+      "filename": "trivia-detail-26.html"
+    },
+    {
       "number": "24",
       "title": "왜 비행기 창문은 둥글까?",
       "date": "2025-07-05",

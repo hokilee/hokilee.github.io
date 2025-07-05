@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "15",
+      "title": "하이인컴트랩(High-income Trap)",
+      "date": "2025-07-06",
+      "filename": "economy-detail-15.html"
+    },
+    {
       "number": "14",
       "title": "낙수효과 (Trickle Down Effect)",
       "date": "2025-07-05",
