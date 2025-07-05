@@ -816,6 +816,43 @@ body {
   .preview-subtitle {
     color: #fff;
   }
+
+  /* 다크 모드에서도 모바일에서는 투명하게 */
+  @media (max-width: 768px) {
+    .menu-item {
+      background: transparent !important;
+      color: #fff !important;
+      border: none;
+      box-shadow: none;
+    }
+    .menu-item h2,
+    .menu-item p {
+      color: #fff !important;
+    }
+    .menu-item:hover {
+      background: transparent !important;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .menu-item {
+      background: transparent !important;
+      color: #fff !important;
+      border: none;
+      box-shadow: none;
+    }
+    .menu-item h2,
+    .menu-item p {
+      color: #fff !important;
+    }
+    .menu-item:hover {
+      background: transparent !important;
+      transform: none;
+      box-shadow: none;
+    }
+  }
 }
 
 /* ===== 접근성 개선 ===== */
