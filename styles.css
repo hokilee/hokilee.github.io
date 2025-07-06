@@ -33,7 +33,6 @@ body {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .site-title {
@@ -41,7 +40,6 @@ body {
   font-weight: bold;
   color: #ffffff !important;
   margin: 0;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .main-content p {
@@ -49,7 +47,6 @@ body {
   line-height: 1.8;
   margin-bottom: 40px;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* 방문자 정보 */
@@ -62,7 +59,6 @@ body {
   margin-left: 20px;
   color: #111;
   font-weight: 500;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 #busuanzi_value_site_uv {
@@ -70,7 +66,6 @@ body {
   color: yellow;
   margin-left: 8px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 /* 실시간 정보 */
@@ -79,7 +74,6 @@ body {
   color: yellow;
   font-weight: bold;
   font-size: 1.3em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 #datetime-info {
@@ -92,7 +86,6 @@ body {
   line-height: 1.8;
   margin-bottom: 40px;
   color: white !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* 언어 링크 */
@@ -254,7 +247,7 @@ body {
 }
 
 .menu-item {
-  background-color: rgba(128, 128, 128, 0.8); /* ← 투명한 회색으로 변경 */
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 12px;
   box-shadow: none;
   padding: 20px;
@@ -273,7 +266,7 @@ body {
 
 .menu-item h2,
 .menu-item p {
-  color: #ffffff; /* ← 진한 흰색으로 변경 */
+  color: #000000; /* ← 검정색으로 변경 */
 }
 
 .menu-item h2 {
@@ -373,7 +366,6 @@ body {
   color: white;
   background-color: transparent;
   margin-top: 60px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* ✨ 헤더 관련 수정 */
