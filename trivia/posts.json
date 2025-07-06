@@ -1,8 +1,14 @@
 {
   "posts": [
     {
+      "number": "26",
+      "title": "벌은 날면서도 계산을 한다",
+      "date": "2025-07-07",
+      "filename": "trivia-detail-27.html"
+    },
+    {
       "number": "25",
-      "title": "우유는 왜 흰색일까??",
+      "title": "우유는 왜 흰색일까?",
       "date": "2025-07-06",
       "filename": "trivia-detail-26.html"
     },
