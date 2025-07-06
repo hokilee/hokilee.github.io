@@ -150,7 +150,7 @@ body {
   flex: 1 1 260px;
   max-width: 280px;
   padding: 16px;
-  background-color: #f8f9fa;
+  background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #ddd;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -254,7 +254,7 @@ body {
 }
 
 .menu-item {
-  background-color: #f8f9fa;
+  background-color: rgba(128, 128, 128, 0.8); /* ← 투명한 회색으로 변경 */
   border-radius: 12px;
   box-shadow: none;
   padding: 20px;
@@ -273,7 +273,7 @@ body {
 
 .menu-item h2,
 .menu-item p {
-  color: #222;
+  color: #ffffff; /* ← 진한 흰색으로 변경 */
 }
 
 .menu-item h2 {
