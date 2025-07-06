@@ -137,23 +137,18 @@
       .back-button a:hover {
         background-color: #555;
       }
-      @media (max-width: 768px) and (orientation: portrait) {
+      @media (max-width: 768px) {
         body {
-          background: url('main-image/onboard-image-6.jpg') no-repeat center
+          background: url('main-image/onboard-image.jpg') no-repeat center
             center fixed;
           background-size: cover;
         }
 
         .overlay-box {
-          background-color: rgba(255, 255, 255, 0.25) !important;
-          max-width: 800px;
+          background-color: rgba(255, 255, 255, 0.25);
           margin: 20px;
           padding: 20px;
-          border-radius: 20px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
           backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         h1 {
@@ -161,42 +156,12 @@
         }
       }
 
-      @media (max-width: 768px) and (orientation: landscape) {
-        body {
-          background: url('main-image/onboard-image-6.jpg') no-repeat center
-            center fixed;
-          background-size: cover;
-        }
-
+      @media (max-width: 480px) {
         .overlay-box {
-          background-color: rgba(255, 255, 255, 0.25) !important;
-          max-width: 800px;
-          margin: 20px;
-          padding: 20px;
-          border-radius: 20px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        h1 {
-          font-size: 1.8em;
-        }
-      }
-
-      /* 작은 모바일용 스타일 (480px 이하) */
-      @media (max-width: 480px) and (orientation: portrait) {
-        .overlay-box {
-          background-color: rgba(255, 255, 255, 0.2) !important;
-          max-width: 800px;
+          background-color: rgba(255, 255, 255, 0.2);
           margin: 10px;
           padding: 15px;
-          border-radius: 20px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
           backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         h1 {
