@@ -247,7 +247,7 @@ body {
 }
 
 .menu-item {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 12px;
   box-shadow: none;
   padding: 20px;
@@ -256,12 +256,15 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
   color: #222;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .menu-item:hover {
   transform: translateY(-5px);
   box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .menu-item h2,
@@ -760,8 +763,10 @@ body {
   }
 
   .menu-item {
-    background-color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
     color: #222 !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   }
   .menu-item h2,
   .menu-item p {
