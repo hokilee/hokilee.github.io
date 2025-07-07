@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI로 문서 자동 요약하기 - 핵심만 쏙쏙 뽑아내는 기술</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="tech-tips-detail-style.css" />
+  </head>
+
+  <body>
+    <div class="overlay-box">
+      <h1>
+        <img src="../main-image/tech.png" alt="tech icon" />
+        AI로 문서 자동 요약하기
+      </h1>
+      <div class="date">2024-07-08</div>
+
+      <div class="content">
+        <p>
+          최근 AI 기술의 발전으로 긴 문서, 뉴스, 리포트 등을 자동으로 요약해주는
+          서비스가 많아졌습니다. 대표적으로 ChatGPT, Google Gemini, 네이버의
+          '요약봇' 등이 있습니다.
+        </p>
+
+        <div class="info-box">
+          <h3>🤖 AI 요약 기술의 원리</h3>
+          <p>
+            <strong>1. 추출 요약(Extractive Summarization)</strong><br />
+            • 원문에서 중요한 문장만 뽑아 요약<br />
+            • 빠르고 간단하지만, 자연스러운 흐름은 부족할 수 있음<br />
+            • 예: 뉴스 기사 요약
+          </p>
+          <p>
+            <strong>2. 생성 요약(Abstractive Summarization)</strong><br />
+            • AI가 내용을 이해하고 새롭게 문장을 만들어 요약<br />
+            • 더 자연스럽고 핵심을 잘 전달함<br />
+            • 예: ChatGPT, Gemini의 요약 기능
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <h3>💡 AI 요약 서비스 활용 팁</h3>
+          <p>
+            <strong>1. ChatGPT 활용</strong><br />
+            • 긴 글을 붙여넣고 "요약해줘"라고 입력<br />
+            • 원하는 분량(3줄, 5줄 등) 지정 가능<br />
+            • 외국어 문서도 번역+요약 동시 활용
+          </p>
+          <p>
+            <strong>2. Google Gemini</strong><br />
+            • 구글 문서, 이메일 등에서 AI 요약 기능 제공<br />
+            • 업무 협업 시 회의록, 리포트 요약에 유용
+          </p>
+          <p>
+            <strong>3. 네이버 요약봇</strong><br />
+            • 뉴스, 블로그 글을 자동으로 요약<br />
+            • 모바일에서도 간편하게 사용 가능
+          </p>
+        </div>
+
+        <div class="warning-box">
+          <h3>⚠️ 주의사항</h3>
+          <p>
+            • AI 요약은 100% 완벽하지 않으니, 중요한 내용은 원문도 꼭
+            확인하세요.<br />
+            • 개인정보, 민감한 정보는 입력하지 않기<br />
+            • 요약 결과가 부정확할 수 있으니, 항상 검토 필요
+          </p>
+        </div>
+
+        <div class="benefit-box">
+          <h3>✅ AI 요약 활용의 장점</h3>
+          <p>
+            • 시간 절약: 긴 글을 빠르게 파악<br />
+            • 핵심 파악: 중요한 내용만 한눈에<br />
+            • 다양한 자료 요약: 논문, 기사, 회의록 등<br />
+            • 외국어 자료도 쉽게 요약
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>🔧 실전 활용법</h3>
+          <p>
+            <strong>1. 업무/학습</strong><br />
+            • 회의록, 논문, 리포트 요약<br />
+            • 강의노트, 교재 요약 정리
+          </p>
+          <p>
+            <strong>2. 일상생활</strong><br />
+            • 뉴스, 블로그, SNS 글 요약<br />
+            • 관심 분야의 정보 빠르게 습득
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <h3>🚀 고급 활용 전략</h3>
+          <p>
+            <strong>1. 요약 스타일 지정</strong><br />
+            • "3줄 요약", "한 문장 요약" 등 원하는 방식으로 요청<br />
+            • 표, 리스트 형태로 요약 요청도 가능
+          </p>
+          <p>
+            <strong>2. 비교 요약</strong><br />
+            • 여러 문서/기사의 요약을 비교해 핵심만 정리<br />
+            • 다양한 관점 파악에 유용
+          </p>
+        </div>
+
+        <p>
+          AI 요약 기능을 잘 활용하면 정보의 홍수 속에서도 핵심만 빠르게 파악할
+          수 있습니다. 앞으로 더 많은 서비스에 AI 요약이 탑재될 예정이니, 미리
+          익혀두면 큰 도움이 될 거예요!
+        </p>
+      </div>
+
+      <div class="like-section">
+        <button class="like-button" onclick="likePost()">👍 좋아요</button>
+        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
+      </div>
+
+      <div class="back-button">
+        <a href="../tech-tips-board.html">← 목록으로 돌아가기</a>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+    <script src="tech-tips-detail-script.js" defer></script>
+  </body>
+</html>

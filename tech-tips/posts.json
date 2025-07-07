@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "17",
+      "title": "AI로 문서 자동 요약하기",
+      "date": "2025-07-08",
+      "filename": "tech-tips-detail-17.html"
+    },
+    {
       "number": "16",
       "title": "AI 추천 시스템 활용하기",
       "date": "2025-07-07",

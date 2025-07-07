@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "27",
+      "title": "눈깜박임",
+      "date": "2025-07-08",
+      "filename": "trivia-detail-28.html"
+    },
+    {
       "number": "26",
       "title": "벌은 날면서도 계산을 한다",
       "date": "2025-07-07",
