@@ -570,10 +570,12 @@ body {
   /* 모바일에서 메뉴 아이템 배경과 테두리 제거 */
   .menu-item {
     padding: 20px;
-    background: rgba(128, 128, 128, 0.6) !important;
+    background: rgba(255, 255, 255, 0.3) !important;
     color: #fff !important;
     border: none;
     box-shadow: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   }
 
   .menu-item h2,
@@ -582,7 +584,7 @@ body {
   }
 
   .menu-item:hover {
-    background: rgba(128, 128, 128, 0.7) !important;
+    background: rgba(255, 255, 255, 0.4) !important;
     transform: none;
     box-shadow: none;
   }
@@ -689,10 +691,12 @@ body {
 
   .menu-item {
     padding: 15px;
-    background: rgba(128, 128, 128, 0.6) !important;
+    background: rgba(255, 255, 255, 0.3) !important;
     color: #fff !important;
     border: none;
     box-shadow: none;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   }
 
   .menu-item h2 {
@@ -705,7 +709,7 @@ body {
   }
 
   .menu-item:hover {
-    background: rgba(128, 128, 128, 0.7) !important;
+    background: rgba(255, 255, 255, 0.4) !important;
     transform: none;
     box-shadow: none;
   }
@@ -812,17 +816,19 @@ body {
   /* 다크 모드에서도 모바일에서는 투명하게 */
   @media (max-width: 768px) {
     .menu-item {
-      background: rgba(128, 128, 128, 0.6) !important;
+      background: rgba(255, 255, 255, 0.3) !important;
       color: #fff !important;
       border: none;
       box-shadow: none;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
     }
     .menu-item h2,
     .menu-item p {
       color: #fff !important;
     }
     .menu-item:hover {
-      background: rgba(128, 128, 128, 0.7) !important;
+      background: rgba(255, 255, 255, 0.4) !important;
       transform: none;
       box-shadow: none;
     }
@@ -838,17 +844,19 @@ body {
 
   @media (max-width: 480px) {
     .menu-item {
-      background: rgba(128, 128, 128, 0.6) !important;
+      background: rgba(255, 255, 255, 0.3) !important;
       color: #fff !important;
       border: none;
       box-shadow: none;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
     }
     .menu-item h2,
     .menu-item p {
       color: #fff !important;
     }
     .menu-item:hover {
-      background: rgba(128, 128, 128, 0.7) !important;
+      background: rgba(255, 255, 255, 0.4) !important;
       transform: none;
       box-shadow: none;
     }
