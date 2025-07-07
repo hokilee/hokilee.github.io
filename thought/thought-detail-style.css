@@ -1,21 +1,71 @@
 /* Thought Detail Page Common Styles */
 
-/* 배경화면 추가 */
+/* 배경화면 추가 - 더 강력한 고정 설정 */
 body {
   background: url('../main-image/onboard-image-3.jpg') no-repeat center center
     fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
   color: #333;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-/* 모바일 배경화면 */
+/* HTML 요소에도 고정 배경 설정 */
+html {
+  background: url('../main-image/onboard-image-3.jpg') no-repeat center center
+    fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* 모바일 배경화면 - 태블릿 포함 */
+@media (max-width: 1024px) {
+  body {
+    background: url('../main-image/onboard-image-3.jpg') no-repeat center center
+      fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+  }
+
+  html {
+    background: url('../main-image/onboard-image-3.jpg') no-repeat center center
+      fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     background: url('../main-image/onboard-image-3.jpg') no-repeat center center
       fixed;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+  }
+
+  html {
+    background: url('../main-image/onboard-image-3.jpg') no-repeat center center
+      fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
   }
 }
 
@@ -31,6 +81,8 @@ body {
   line-height: 1.8;
   font-size: 1.1em;
   color: #333;
+  position: relative;
+  z-index: 1;
 }
 
 /* 게시판 목록용 컨테이너 스타일 */
@@ -41,6 +93,8 @@ body {
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
 }
 
 h1,
@@ -193,5 +247,20 @@ blockquote {
   .detail-image img {
     max-width: 80px;
     margin-top: 0;
+  }
+}
+
+/* 태블릿 특화 스타일 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-attachment: fixed !important;
+    -webkit-background-attachment: fixed !important;
+    -moz-background-attachment: fixed !important;
+  }
+
+  html {
+    background-attachment: fixed !important;
+    -webkit-background-attachment: fixed !important;
+    -moz-background-attachment: fixed !important;
   }
 }
