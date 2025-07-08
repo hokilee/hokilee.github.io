@@ -24,6 +24,12 @@ html {
   min-height: 100vh;
 }
 
+.illustration-image {
+  height: 250px; /* 또는 원하는 단위 */
+  vertical-align: middle;
+  margin-bottom: 0.5em;
+}
+
 /* 모바일 배경화면 - 태블릿 포함 */
 @media (max-width: 1024px) {
   body {
