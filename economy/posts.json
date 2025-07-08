@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "18",
+      "title": "로렌츠곡선(Lorenz Curve)",
+      "date": "2025-07-09",
+      "filename": "economy-detail-18.html"
+    },
+    {
       "number": "17",
       "title": "가처분소득(Disposable income)",
       "date": "2025-07-08",
