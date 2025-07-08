@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "30",
+      "title": "바람이 오면",
+      "date": "2025-07-09",
+      "filename": "thought-detail-30.html"
+    },
+    {
       "number": "29",
       "title": "단풍 드는 날",
       "date": "2025-07-08",

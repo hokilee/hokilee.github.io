@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "18",
+      "title": "캡처 툴 추천 – LightShot (Windows, Mac)",
+      "date": "2025-07-09",
+      "filename": "tech-tips-detail-18.html"
+    },
+    {
       "number": "17",
       "title": "AI로 문서 자동 요약하기",
       "date": "2025-07-08",
