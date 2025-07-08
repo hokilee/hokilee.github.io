@@ -9,11 +9,9 @@
   </head>
 
   <body>
-    <div class="overlay-box">
-      <h1>
-        <img src="../main-image/growth.png" alt="growth icon" />
-        시간 관리의 핵심 원칙
-      </h1>
+    <div class="detail-box">
+      <h1>시간 관리의 핵심 원칙</h1>
+      <hr />
       <div class="date">2025-06-24</div>
 
       <div class="content">
@@ -72,13 +70,15 @@
         </p>
       </div>
 
-      <div class="like-section">
-        <button class="like-button" onclick="likePost()">👍 좋아요</button>
-        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
-      </div>
-
-      <div class="back-button">
-        <a href="../self-improvement-board.html">← 목록으로 돌아가기</a>
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../self-improvement-board.html" class="back"
+            >← 목록으로 돌아가기</a
+          >
+        </div>
         <footer class="footer">
           Copyright ⓒ <span id="year"></span> Hoki Lee.
         </footer>

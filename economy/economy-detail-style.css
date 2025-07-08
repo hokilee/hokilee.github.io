@@ -277,3 +277,7 @@ h1 img {
     -moz-background-attachment: fixed !important;
   }
 }
+
+.date {
+  text-align: center;
+}

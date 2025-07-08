@@ -49,13 +49,13 @@
         <em>"디젤은 힘과 효율의 균형을 고민한 기술"</em>이라고도 말할 수 있겠죠.
       </p>
 
-      <div class="like-section">
-        <button class="like-button" onclick="likePost()">👍 좋아요</button>
-        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
-      </div>
-
-      <div class="back-button">
-        <a href="../trivia-board.html">← 목록으로 돌아가기</a>
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../trivia-board-2.html" class="back">← 목록으로 돌아가기</a>
+        </div>
         <footer class="footer">
           Copyright ⓒ <span id="year"></span> Hoki Lee.
         </footer>

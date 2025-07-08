@@ -9,18 +9,8 @@
   </head>
 
   <body>
-    <div class="overlay-box">
+    <div class="detail-box">
       <h1>
-        <img
-          src="../main-image/tech.png"
-          alt="tech icon"
-          style="
-            width: 32px;
-            height: 32px;
-            vertical-align: middle;
-            margin-right: 10px;
-          "
-        />
         윈도우 단축키로 업무 효율성 2배 높이기
       </h1>
       <div class="date">2025-06-26</div>
@@ -269,18 +259,17 @@
         </p>
       </div>
 
-      <div class="like-section">
-        <button class="like-button" onclick="likePost()">👍 좋아요</button>
-        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
-      </div>
-
-      <div class="back-button">
-        <a href="../trivia-board.html">← 목록으로 돌아가기</a>
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../tech-tips-board.html" class="back">← 목록으로 돌아가기</a>
+        </div>
         <footer class="footer">
           Copyright ⓒ <span id="year"></span> Hoki Lee.
         </footer>
       </div>
-    </div>
 
     <script src="../scripts.js" defer></script>
     <script src="tech-tips-detail-script.js" defer></script>

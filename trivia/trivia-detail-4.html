@@ -10,8 +10,8 @@
   <body>
     <div class="detail-box">
       <h1>빛은 얼마나 빠를까?</h1>
-      <p class="date">2025-06-16</p>
       <hr />
+      <p class="date">2025-06-16</p>
 
       <p>
         우리가 매일 자연스럽게 보고 있는 햇빛, 스마트폰에서 반짝이는 화면의
@@ -62,13 +62,13 @@
         <em>천천히 눈여겨보는 하루</em>가 되었으면 좋겠습니다.
       </p>
 
-      <div class="like-section">
-        <button class="like-button" onclick="likePost()">👍 좋아요</button>
-        <span class="like-count"> 좋아요 <span id="likeCount">0</span>개 </span>
-      </div>
-
-      <div class="back-button">
-        <a href="../trivia-board.html">← 목록으로 돌아가기</a>
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../trivia-board-2.html" class="back">← 목록으로 돌아가기</a>
+        </div>
         <footer class="footer">
           Copyright ⓒ <span id="year"></span> Hoki Lee.
         </footer>
