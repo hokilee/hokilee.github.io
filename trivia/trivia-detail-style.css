@@ -238,6 +238,7 @@ blockquote {
   .overlay-box {
     margin: 20px;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* 또는 0.92 */
   }
 
   h1 {
@@ -250,6 +251,7 @@ blockquote {
   .overlay-box {
     margin: 10px;
     padding: 15px;
+    background-color: rgba(255, 255, 255, 0.95); /* 또는 0.92 */
   }
 
   h1 {
