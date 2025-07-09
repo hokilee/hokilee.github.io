@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "19",
+      "title": "이메일 회신 시, 인라인 답변법 사용하기",
+      "date": "2025-07-10",
+      "filename": "tech-tips-detail-19.html"
+    },
+    {
       "number": "18",
       "title": "캡처 툴 추천 – LightShot (Windows, Mac)",
       "date": "2025-07-09",
