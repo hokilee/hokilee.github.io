@@ -70,7 +70,7 @@ html {
 
 /* 개별 게시물 컨테이너 스타일 */
 .detail-box {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.8);
   max-width: 800px;
   margin: 60px auto;
   padding: 40px;
@@ -82,7 +82,7 @@ html {
 
 /* 게시판 목록용 컨테이너 스타일 */
 .overlay-box {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.8);
   max-width: 800px;
   margin: 60px auto;
   padding: 40px;
@@ -245,6 +245,7 @@ h1 img {
   .overlay-box {
     margin: 20px;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 또는 0.92 */
   }
   .illustration-image {
     max-width: 100%;
@@ -264,6 +265,7 @@ h1 img {
   .overlay-box {
     margin: 10px;
     padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* 또는 0.92 */
   }
 
   h1 {
