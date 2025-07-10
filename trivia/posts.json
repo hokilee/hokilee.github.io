@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "30",
+      "title": "기네스북의 시작",
+      "date": "2025-07-11",
+      "filename": "trivia-detail-31.html"
+    },
+    {
       "number": "29",
       "title": "벌은 하늘색을 못 본다",
       "date": "2025-07-10",

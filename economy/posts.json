@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "20",
+      "title": "잠재성장률",
+      "date": "2025-07-11",
+      "filename": "economy-detail-20.html"
+    },
+    {
       "number": "19",
       "title": "명목임금(Nominal wages) / 실질임금(Real wage)",
       "date": "2025-07-10",
