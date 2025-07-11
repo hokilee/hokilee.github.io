@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "21",
+      "title": "경기동향지수",
+      "date": "2025-07-12",
+      "filename": "economy-detail-21.html"
+    },
+    {
       "number": "20",
       "title": "잠재성장률",
       "date": "2025-07-11",
