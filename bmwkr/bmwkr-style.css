@@ -390,13 +390,15 @@ header {
   }
 
   .timeline-container {
-    padding: 20px 20px;
+    padding: 10px 0;
     justify-content: center;
   }
 
   .timeline-item {
-    flex: 0 0 450px; /* 모바일에서 아이템 너비 더 확장 */
-    margin: 0 10px; /* 아이템 간격 조정 */
+    flex: 0 0 95vw; /* 모바일에서 한 화면에 꽉 차게 */
+    max-width: 98vw;
+    margin: 10px 0;
+    padding: 18px;
   }
 
   .modal-content-story {
