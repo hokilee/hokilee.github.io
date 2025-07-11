@@ -72,12 +72,6 @@ header {
   transform: scale(1.02);
 }
 
-.image-card p {
-  padding: 10px;
-  font-size: 0.95em;
-  color: #444;
-}
-
 /* .fullscreen {
   position: fixed;
   top: 0;
@@ -147,10 +141,19 @@ header {
   font-weight: bold;
   z-index: 10000;
   transition: transform 0.2s;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .close-btn:hover {
   transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* 확대된 이미지 (전체화면 효과) */
@@ -163,4 +166,249 @@ header {
 /* 썸네일 확대 커서 */
 .zoomable {
   cursor: zoom-in;
+}
+
+/* -------------------- 타임라인 섹션 스타일 시작 -------------------- */
+
+.horizontal-timeline-section {
+  padding: 60px 0;
+  background-color: #eef2f7;
+  text-align: center;
+}
+
+.horizontal-timeline-section h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.horizontal-timeline-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 4px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  flex-wrap: wrap; /* 필요시 줄바꿈 */
+  gap: 40px; /* 아이템 간 간격 */
+  margin: 0 auto 50px auto; /* 상하 여백과 중앙 정렬 */
+  max-width: 1400px; /* 최대 너비 확장 */
+  padding: 20px; /* 패딩 */
+}
+
+/* 웹킷 기반 브라우저 (Chrome, Safari) 스크롤바 스타일 */
+.timeline-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+  background: #c8d8e7;
+  border-radius: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 10px;
+  border: 2px solid #c8d8e7;
+}
+
+.timeline-item {
+  flex: 0 0 450px; /* 아이템 너비 더 확장 */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  overflow: hidden; /* Ensure content stays within bounds */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-year {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 8px 15px 8px 25px;
+  background-color: #e74c3c;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.timeline-year::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px #e74c3c;
+}
+
+.timeline-content h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.timeline-thumb {
+  max-width: 100%;
+  height: 200px; /* 고정 높이 */
+  object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block; /* 이미지 아래 공간 제거 */
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* 특별 이벤트 (10년 근속상) 스타일 */
+.timeline-item.special-event {
+  border-color: #e74c3c;
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.2);
+}
+
+.timeline-item.special-event .timeline-year {
+  color: #ffffff;
+  background-color: #e74c3c;
+}
+
+.timeline-item.special-event .timeline-year::before {
+  background-color: #e74c3c;
+  box-shadow: 0 0 0 2px #e74c3c;
+}
+
+.timeline-item.special-event .read-more {
+  background-color: #e74c3c;
+}
+
+.timeline-item.special-event .read-more:hover {
+  background-color: #c0392b;
+}
+
+/* 스토리 모달 스타일 */
+.modal-story {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* 살짝 투명도를 높여 뒤 배경이 덜 보이게 */
+  z-index: 10000; /* 일반 모달보다 더 위로 */
+}
+
+.modal-content-story {
+  background-color: #fff;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%; /* 모달 너비 조정 */
+  max-width: 700px; /* 최대 너비 설정 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  max-height: 90vh; /* 최대 높이 설정 */
+  overflow-y: auto; /* 내용이 길어지면 스크롤바 생성 */
+  animation: fadeIn 0.3s ease-out; /* 부드러운 등장 애니메이션 */
+}
+
+.modal-content-story h2 {
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.modal-content-story p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.modal-content-story img {
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .horizontal-timeline-section h2 {
+    font-size: 2em;
+  }
+
+  .timeline-container {
+    padding: 20px 20px;
+    justify-content: center;
+  }
+
+  .timeline-item {
+    flex: 0 0 450px; /* 모바일에서 아이템 너비 더 확장 */
+    margin: 0 10px; /* 아이템 간격 조정 */
+  }
+
+  .modal-content-story {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .modal-content-story h2 {
+    font-size: 1.6em;
+  }
+
+  .modal-content-story p {
+    font-size: 0.95em;
+  }
 }
