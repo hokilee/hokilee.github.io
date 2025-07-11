@@ -395,10 +395,10 @@ header {
   }
 
   .timeline-item {
-    flex: 0 0 95vw; /* 모바일에서 한 화면에 꽉 차게 */
-    max-width: 98vw;
-    margin: 10px 0;
-    padding: 18px;
+    flex: 0 0 88vw;
+    max-width: 90vw;
+    margin: 14px auto;
+    padding: 14px;
   }
 
   .modal-content-story {
