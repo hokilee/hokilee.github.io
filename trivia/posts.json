@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "32",
+      "title": "기린은 기침을 하지 않는다",
+      "date": "2025-07-13",
+      "filename": "trivia-detail-33.html"
+    },
+    {
       "number": "31",
       "title": "지문처럼 유일한 혀 자국",
       "date": "2025-07-12",

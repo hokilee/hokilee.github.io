@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "22",
+      "title": "디폴트(default, 채무불이행)",
+      "date": "2025-07-13",
+      "filename": "economy-detail-22.html"
+    },
+    {
       "number": "21",
       "title": "경기동향지수",
       "date": "2025-07-12",
