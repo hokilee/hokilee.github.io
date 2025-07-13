@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "33",
+      "title": "문어는 세 개의 심장을 가진다",
+      "date": "2025-07-14",
+      "filename": "trivia-detail-34.html"
+    },
+    {
       "number": "32",
       "title": "기린은 기침을 하지 않는다",
       "date": "2025-07-13",

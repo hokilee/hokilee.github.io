@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "23",
+      "title": "에어컨 필터는 냉방효율보다 전기세와 직결된다",
+      "date": "2025-07-14",
+      "filename": "tech-tips-detail-23.html"
+    },
+    {
       "number": "22",
       "title": "냉장고 냄새는 '숯 또는 커피 찌꺼기'로 잡는다",
       "date": "2025-07-13",

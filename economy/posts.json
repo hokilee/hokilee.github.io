@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "23",
+      "title": "개인워크아웃 (Individual workout)",
+      "date": "2025-07-14",
+      "filename": "economy-detail-23.html"
+    },
+    {
       "number": "22",
       "title": "디폴트(default, 채무불이행)",
       "date": "2025-07-13",
