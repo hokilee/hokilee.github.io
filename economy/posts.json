@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "24",
+      "title": "공개시장정책",
+      "date": "2025-07-15",
+      "filename": "economy-detail-24.html"
+    },
+    {
       "number": "23",
       "title": "개인워크아웃 (Individual workout)",
       "date": "2025-07-14",
