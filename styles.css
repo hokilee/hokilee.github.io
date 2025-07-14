@@ -48,12 +48,23 @@ body {
 
 /* 방문자 정보 */
 .visitor-info {
-  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-left: 20px; /* 좌측 공간 추가 */
 }
 
 .visitor-label {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+#visitor-count {
+  color: #ffeb3b; /* 더 밝은 노랑색 */
+  font-weight: bold;
   font-size: 1.2em;
-  margin-left: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 #busuanzi_value_site_uv {
