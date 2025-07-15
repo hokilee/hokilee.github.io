@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "25",
+      "title": "지급준비율정책",
+      "date": "2025-07-16",
+      "filename": "economy-detail-25.html"
+    },
+    {
       "number": "24",
       "title": "공개시장정책",
       "date": "2025-07-15",
