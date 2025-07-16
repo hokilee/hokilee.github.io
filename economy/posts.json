@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "26",
+      "title": "콜(Call) / 콜금리(Call rate)",
+      "date": "2025-07-17",
+      "filename": "economy-detail-26.html"
+    },
+    {
       "number": "25",
       "title": "지급준비율정책",
       "date": "2025-07-16",
