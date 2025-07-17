@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "27",
+      "title": "최초의 펭귄",
+      "date": "2025-07-18",
+      "filename": "self-improvement-detail-27.html"
+    },
+    {
       "number": "26",
       "title": "브레인 포그(Brain fog) – 머릿속이 멍한 그 느낌의 정체",
       "date": "2025-07-17",

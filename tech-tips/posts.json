@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "27",
+      "title": "와이파이 신호가 약할 때 해결법",
+      "date": "2025-07-18",
+      "filename": "tech-tips-detail-27.html"
+    },
+    {
       "number": "26",
       "title": "USB가 인식되지 않을 때 해결법",
       "date": "2025-07-17",

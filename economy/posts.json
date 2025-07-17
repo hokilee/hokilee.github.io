@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "27",
+      "title": "캐시 카우(Cash Cow)",
+      "date": "2025-07-18",
+      "filename": "economy-detail-27.html"
+    },
+    {
       "number": "26",
       "title": "콜(Call) / 콜금리(Call rate)",
       "date": "2025-07-17",
