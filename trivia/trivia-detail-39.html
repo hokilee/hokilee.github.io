@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 한줄 지식/잡학 - 텔로미어</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="trivia-detail-style.css" />
+  </head>
+
+  <body>
+    <div class="detail-box">
+      <h1>텔로미어</h1>
+      <hr />
+      <div class="date">2024-07-19</div>
+      <img
+        src="../main-image/cell.png"
+        alt="텔로미어 이미지"
+        style="height: 300px; vertical-align: middle; margin-bottom: 0.5em"
+      />
+
+      <div class="content">
+        <p>
+          <strong>텔로미어(Telomere)</strong>는 세포의 수명을 결정하는 염색체 끝
+          부분의 유전자 조각입니다.
+        </p>
+        <p>
+          일반적으로 세포분열이 반복될수록 텔로미어가 점점 짧아지며, 텔로미어가
+          너무 짧아지면 세포는 더 이상 분열하지 못하고 노화 또는 사멸하게
+          됩니다.
+        </p>
+        <p>
+          하지만 <strong>생식세포</strong>와 <strong>암세포</strong>는
+          텔로미어가 짧아지지 않아 무제한으로 증식할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../trivia-board-2.html" class="back">← 목록으로 돌아가기</a>
+        </div>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+    <script src="trivia-detail-script.js" defer></script>
+  </body>
+</html>

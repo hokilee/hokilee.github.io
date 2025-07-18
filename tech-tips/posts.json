@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "28",
+      "title": "웹3.0",
+      "date": "2025-07-19",
+      "filename": "tech-tips-detail-28.html"
+    },
+    {
       "number": "27",
       "title": "와이파이 신호가 약할 때 해결법",
       "date": "2025-07-18",
