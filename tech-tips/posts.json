@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "29",
+      "title": "CDMA(Code Division Multiple Access)",
+      "date": "2025-07-21",
+      "filename": "tech-tips-detail-29.html"
+    },
+    {
       "number": "28",
       "title": "웹3.0",
       "date": "2025-07-19",
