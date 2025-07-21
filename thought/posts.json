@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "42",
+      "title": "인생의 황금률",
+      "date": "2025-07-22",
+      "filename": "thought-detail-42.html"
+    },
+    {
       "number": "41",
       "title": "지금 알고 있는 걸 그 때도 알았더라면",
       "date": "2025-07-21",

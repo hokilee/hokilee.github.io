@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "30",
+      "title": "마이크로웨이브(Microwave) 오븐의 원리",
+      "date": "2025-07-22",
+      "filename": "tech-tips-detail-30.html"
+    },
+    {
       "number": "29",
       "title": "CDMA(Code Division Multiple Access)",
       "date": "2025-07-21",

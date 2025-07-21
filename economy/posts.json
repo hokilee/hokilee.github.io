@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "30",
+      "title": "J-커브 효과(J-Curve Effect)",
+      "date": "2025-07-22",
+      "filename": "economy-detail-30.html"
+    },
+    {
       "number": "29",
       "title": "슬라이딩 관세",
       "date": "2025-07-21",
