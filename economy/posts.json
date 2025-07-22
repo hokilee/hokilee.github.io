@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "31",
+      "title": "인플레이션 타겟팅",
+      "date": "2025-07-23",
+      "filename": "economy-detail-31.html"
+    },
+    {
       "number": "30",
       "title": "J-커브 효과(J-Curve Effect)",
       "date": "2025-07-22",

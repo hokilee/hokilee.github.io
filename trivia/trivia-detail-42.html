@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 한줄 지식/잡학 - 카페인 내성</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="trivia-detail-style.css" />
+  </head>
+
+  <body>
+    <div class="detail-box">
+      <h1>카페인 내성</h1>
+      <hr />
+      <div class="date">2024-07-23</div>
+      <img
+        src="../main-image/caffeine.jpg"
+        alt="카페인 내성 이미지"
+        style="height: 300px; vertical-align: middle; margin-bottom: 0.5em"
+      />
+
+      <div class="content">
+        <p>
+          <strong>카페인 내성(Caffeine Tolerance)</strong>이란, 반복적으로
+          카페인을 섭취할수록 신체가 점차 그 효과에 익숙해져, 같은 양의
+          카페인으로는 이전만큼 각성 효과나 집중력 향상을 느끼지 못하는 현상을
+          말합니다.
+        </p>
+        <p>
+          카페인은 뇌에서 아데노신 수용체를 차단해 피로감을 줄이고 각성 상태를
+          유도합니다. 하지만 꾸준히 카페인을 섭취하면 뇌는 아데노신 수용체의
+          수를 늘려 카페인의 효과를 상쇄하려고 합니다. 이로 인해 점점 더 많은
+          카페인을 섭취해야 같은 효과를 느끼게 됩니다.
+        </p>
+        <p>
+          카페인 내성은 개인차가 크며, 내성이 생긴 후 카페인 섭취를 줄이거나
+          중단하면 일시적으로 두통, 피로, 집중력 저하 등 금단 증상이 나타날 수
+          있습니다. 하지만 보통 며칠~2주 이내에 신체가 다시 정상으로 돌아옵니다.
+        </p>
+        <p>
+          카페인의 효과를 오래 유지하려면, 주기적으로 카페인 섭취를 줄이거나
+          카페인 없는 날을 만들어 신체의 민감도를 회복시키는 것이 도움이 됩니다.
+        </p>
+      </div>
+
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../trivia-board-2.html" class="back">← 목록으로 돌아가기</a>
+        </div>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+    <script src="trivia-detail-script.js" defer></script>
+  </body>
+</html>

@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "41",
+      "title": "카페인 내성",
+      "date": "2025-07-23",
+      "filename": "trivia-detail-42.html"
+    },
+    {
       "number": "40",
       "title": "플라시보 효과",
       "date": "2025-07-22",
