@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "42",
+      "title": "파블로프의 개 실험",
+      "date": "2025-07-24",
+      "filename": "trivia-detail-43.html"
+    },
+    {
       "number": "41",
       "title": "카페인 내성",
       "date": "2025-07-23",

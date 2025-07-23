@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "32",
+      "title": "구매력 평가(PPP, Purchasing Power Parity)",
+      "date": "2025-07-24",
+      "filename": "economy-detail-32.html"
+    },
+    {
       "number": "31",
       "title": "인플레이션 타겟팅",
       "date": "2025-07-23",
