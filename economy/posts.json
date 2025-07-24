@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "33",
+      "title": "기저효과(Base Effect)",
+      "date": "2025-07-25",
+      "filename": "economy-detail-33.html"
+    },
+    {
       "number": "32",
       "title": "구매력 평가(PPP, Purchasing Power Parity)",
       "date": "2025-07-24",

@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "33",
+      "title": "이중 인증(2FA)의 원리와 필요성",
+      "date": "2025-07-25",
+      "filename": "tech-tips-detail-33.html"
+    },
+    {
       "number": "32",
       "title": "QR코드의 원리와 활용",
       "date": "2025-07-24",

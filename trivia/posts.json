@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "43",
+      "title": "골든타임(Golden Time)",
+      "date": "2025-07-25",
+      "filename": "trivia-detail-44.html"
+    },
+    {
       "number": "42",
       "title": "파블로프의 개 실험",
       "date": "2025-07-24",
