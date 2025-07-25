@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "34",
+      "title": "네트워크 효과(Network Effect)",
+      "date": "2025-07-26",
+      "filename": "economy-detail-34.html"
+    },
+    {
       "number": "33",
       "title": "기저효과(Base Effect)",
       "date": "2025-07-25",

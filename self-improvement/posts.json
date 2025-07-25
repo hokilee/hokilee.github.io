@@ -1,8 +1,14 @@
 {
   "posts": [
     {
+      "number": "34",
+      "title": "몰입(Flow)의 힘",
+      "date": "2025-07-26",
+      "filename": "self-improvement-detail-34.html"
+    },
+    {
       "number": "33",
-      "title": "성장 마인드셋(Growth Mindset)",
+      "title": "자기효능감(Self-Efficacy)",
       "date": "2025-07-25",
       "filename": "self-improvement-detail-33.html"
     },
