@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "35",
+      "title": "통화 스왑(Currency Swap)",
+      "date": "2025-07-28",
+      "filename": "economy-detail-35.html"
+    },
+    {
       "number": "34",
       "title": "네트워크 효과(Network Effect)",
       "date": "2025-07-26",
