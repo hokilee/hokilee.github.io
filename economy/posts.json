@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "36",
+      "title": "BSI 지수(Business Survey Index 기업경기실사지수)",
+      "date": "2025-07-29",
+      "filename": "economy-detail-36.html"
+    },
+    {
       "number": "35",
       "title": "통화 스왑(Currency Swap)",
       "date": "2025-07-28",

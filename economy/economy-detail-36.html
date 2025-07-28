@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      오늘의 경제 상식 - BSI 지수(Business Survey Index 기업경기실사지수)
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="economy-detail-style.css" />
+  </head>
+
+  <body>
+    <div class="detail-box">
+      <h1>BSI 지수(Business Survey Index 기업경기실사지수)</h1>
+      <hr />
+      <div class="date">2024-07-29</div>
+      <img
+        src="../main-image/chart.png"
+        alt="BSI 지수 이미지"
+        style="height: 300px; vertical-align: middle; margin-bottom: 0.5em"
+      />
+
+      <div class="content">
+        <p>
+          <strong>BSI 지수(Business Survey Index, 기업경기실사지수)</strong>는
+          기업들이 체감하는 경기 상황을 수치로 나타낸 지표입니다. 기업의
+          경영자나 실무자를 대상으로 설문조사를 실시해, 향후 경기 전망이나 현재
+          경영 환경에 대한 의견을 집계합니다.
+        </p>
+
+        <p>
+          <strong>주요 개념</strong><br />
+          • BSI는 100을 기준으로, 100 이상이면 경기가 긍정적으로 전망된다는
+          의미이고, 100 미만이면 부정적으로 본다는 뜻입니다.<br />
+          • 생산, 매출, 투자, 고용 등 다양한 항목에 대해 조사하며,
+          업종별·규모별로도 발표됩니다.<br />
+          • 한국은행, 대한상공회의소 등에서 정기적으로 발표합니다.
+        </p>
+
+        <p>
+          <strong>활용 예시</strong><br />
+          • 기업의 체감 경기를 빠르게 파악할 수 있어, 정부 정책이나 기업 경영
+          전략 수립에 참고 자료로 활용됩니다.<br />
+          • BSI가 낮아지면 경기 침체 우려가 커지고, 높아지면 경기 회복 기대감이
+          반영됩니다.<br />
+          • 주식시장, 금융시장 등에서도 경기 선행지표로 자주 인용됩니다.
+        </p>
+
+        <p>
+          <strong>장점과 한계</strong><br />
+          • 실제 경제지표(생산, 소비 등)보다 빠르게 경기 변화를 감지할 수
+          있습니다.<br />
+          • 주관적 응답이므로 일시적 심리 변화에 영향을 받을 수 있습니다.<br />
+          • 표본 기업의 대표성, 설문 시점의 이슈 등에 따라 결과가 달라질 수
+          있습니다.
+        </p>
+
+        <p>
+          <strong>요약</strong><br />
+          BSI 지수는 기업 현장의 목소리를 반영한 경기 체감 지표로, 경제 동향을
+          신속하게 파악하는 데 유용합니다. 단, 해석 시 한계점도 함께 고려해야
+          합니다.
+        </p>
+      </div>
+
+      <div class="button-row">
+        <div class="button-center-group">
+          <button class="like" onclick="likePost()">
+            ❤️ 공감했어요 (<span id="likeCount">0</span>)
+          </button>
+          <a href="../economy-board.html" class="back">← 목록으로 돌아가기</a>
+        </div>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+    <script src="economy-detail-script.js" defer></script>
+  </body>
+</html>
