@@ -96,6 +96,14 @@ body {
   text-align: center;
 }
 
+.thank-text {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: white !important;
+  text-align: center;
+}
+
 /* 언어 링크 */
 .language-links {
   font-size: 0.7em;
