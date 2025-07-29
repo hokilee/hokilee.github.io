@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "37",
+      "title": "공공 와이파이 안전하게 사용하는 법",
+      "date": "2025-07-30",
+      "filename": "tech-tips-detail-37.html"
+    },
+    {
       "number": "36",
       "title": "모니터 주사율(Hz)의 의미와 설정 팁",
       "date": "2025-07-29",

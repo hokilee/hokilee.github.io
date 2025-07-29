@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "37",
+      "title": "트릴레마(trilemma)",
+      "date": "2025-07-30",
+      "filename": "economy-detail-37.html"
+    },
+    {
       "number": "36",
       "title": "BSI 지수(Business Survey Index 기업경기실사지수)",
       "date": "2025-07-29",
