@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "39",
+      "title": "기축통화(Key currency)",
+      "date": "2025-08-01",
+      "filename": "economy-detail-39.html"
+    },
+    {
       "number": "38",
       "title": "리쇼어링(Reshoring)",
       "date": "2025-07-31",

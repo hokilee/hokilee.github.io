@@ -1,169 +1,175 @@
 {
   "posts": [
     {
-      "number": "48",
+      "number": "50",
+      "title": "왜 비가 오면 냄새가 날까?",
+      "date": "2025-08-01",
+      "filename": "trivia-detail-50.html"
+    },
+    {
+      "number": "49",
       "title": "개미는 왜 줄을 지어 다닐까?",
       "date": "2025-07-31",
       "filename": "trivia-detail-49.html"
     },
     {
-      "number": "47",
+      "number": "48",
       "title": "달의 뒷면은 어떻게 생겼을까?",
       "date": "2025-07-30",
       "filename": "trivia-detail-48.html"
     },
     {
-      "number": "46",
+      "number": "47",
       "title": "바나나가 휘는 이유",
       "date": "2025-07-29",
       "filename": "trivia-detail-47.html"
     },
     {
-      "number": "45",
+      "number": "46",
       "title": "문어의 놀라운 지능",
       "date": "2025-07-28",
       "filename": "trivia-detail-46.html"
     },
     {
-      "number": "44",
+      "number": "45",
       "title": "파레토 법칙(80/20 법칙)",
       "date": "2025-07-26",
       "filename": "trivia-detail-45.html"
     },
     {
-      "number": "43",
+      "number": "44",
       "title": "골든타임(Golden Time)",
       "date": "2025-07-25",
       "filename": "trivia-detail-44.html"
     },
     {
-      "number": "42",
+      "number": "43",
       "title": "파블로프의 개 실험",
       "date": "2025-07-24",
       "filename": "trivia-detail-43.html"
     },
     {
-      "number": "41",
+      "number": "42",
       "title": "카페인 내성",
       "date": "2025-07-23",
       "filename": "trivia-detail-42.html"
     },
     {
-      "number": "40",
+      "number": "41",
       "title": "플라시보 효과",
       "date": "2025-07-22",
       "filename": "trivia-detail-41.html"
     },
     {
-      "number": "39",
+      "number": "40",
       "title": "가르시아 효과",
       "date": "2025-07-21",
       "filename": "trivia-detail-40.html"
     },
     {
-      "number": "38",
+      "number": "39",
       "title": "텔로미어",
       "date": "2025-07-19",
       "filename": "trivia-detail-39.html"
     },
     {
-      "number": "37",
+      "number": "38",
       "title": "NFT(Non-Fungible Token)",
       "date": "2025-07-18",
       "filename": "trivia-detail-38.html"
     },
     {
-      "number": "36",
+      "number": "37",
       "title": "테스(TESS, Transiting Exoplanet Survey Satellite)",
       "date": "2025-07-17",
       "filename": "trivia-detail-37.html"
     },
     {
-      "number": "35",
+      "number": "36",
       "title": "우주에서는 소리가 들리지 않는다",
       "date": "2025-07-16",
       "filename": "trivia-detail-36.html"
     },
     {
-      "number": "34",
+      "number": "35",
       "title": "카카오 나무 한 그루",
       "date": "2025-07-15",
       "filename": "trivia-detail-35.html"
     },
     {
-      "number": "33",
+      "number": "34",
       "title": "문어는 세 개의 심장을 가진다",
       "date": "2025-07-14",
       "filename": "trivia-detail-34.html"
     },
     {
-      "number": "32",
+      "number": "33",
       "title": "기린은 기침을 하지 않는다",
       "date": "2025-07-13",
       "filename": "trivia-detail-33.html"
     },
     {
-      "number": "31",
+      "number": "32",
       "title": "지문처럼 유일한 혀 자국",
       "date": "2025-07-12",
       "filename": "trivia-detail-32.html"
     },
     {
-      "number": "30",
+      "number": "31",
       "title": "기네스북의 시작",
       "date": "2025-07-11",
       "filename": "trivia-detail-31.html"
     },
     {
-      "number": "29",
+      "number": "30",
       "title": "벌은 하늘색을 못 본다",
       "date": "2025-07-10",
       "filename": "trivia-detail-30.html"
     },
     {
-      "number": "28",
+      "number": "29",
       "title": "달의 냄새",
       "date": "2025-07-09",
       "filename": "trivia-detail-29.html"
     },
     {
-      "number": "27",
+      "number": "28",
       "title": "눈깜박임",
       "date": "2025-07-08",
       "filename": "trivia-detail-28.html"
     },
     {
-      "number": "26",
+      "number": "27",
       "title": "벌은 날면서도 계산을 한다",
       "date": "2025-07-07",
       "filename": "trivia-detail-27.html"
     },
     {
-      "number": "25",
+      "number": "26",
       "title": "우유는 왜 흰색일까?",
       "date": "2025-07-06",
       "filename": "trivia-detail-26.html"
     },
     {
-      "number": "24",
+      "number": "25",
       "title": "왜 비행기 창문은 둥글까?",
       "date": "2025-07-05",
       "filename": "trivia-detail-25.html"
     },
     {
-      "number": "23",
+      "number": "24",
       "title": "바나나는 열매가 아니라 무엇일까?",
       "date": "2025-07-04",
       "filename": "trivia-detail-24.html"
     },
     {
-      "number": "22",
+      "number": "23",
       "title": "고대 로마인들은 칫솔 대신 뭘 썼을까?",
       "date": "2025-07-03",
       "filename": "trivia-detail-23.html"
     },
     {
-      "number": "21",
+      "number": "22",
       "title": "지문이 언제 생길까?",
       "date": "2025-07-02",
       "filename": "trivia-detail-22.html"

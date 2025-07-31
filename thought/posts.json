@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "50",
+      "title": "아름다운 얼굴",
+      "date": "2025-08-01",
+      "filename": "thought-detail-50.html"
+    },
+    {
       "number": "49",
       "title": "세상에서 가장 아름다운 단어",
       "date": "2025-07-31",
