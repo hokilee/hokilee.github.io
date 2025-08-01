@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "40",
+      "title": "APEC (Asia-Pacific Economic Cooperation)",
+      "date": "2025-08-02",
+      "filename": "economy-detail-40.html"
+    },
+    {
       "number": "39",
       "title": "기축통화(Key currency)",
       "date": "2025-08-01",
