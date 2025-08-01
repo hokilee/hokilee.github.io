@@ -446,6 +446,7 @@ function initializePageFeatures() {
     markNewInMainPage();
     initializeRealtimeInfo();
     initializeStickyTitle(); // 메인 페이지에 Sticky 제목 기능 추가
+    initializeVideoAutoplay(); // 비디오 자동 재생 초기화
   }
 }
 
@@ -462,6 +463,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 기존 호환성을 위한 전역 함수들
 window.toggleMusic = toggleBackgroundMusic;
+
+/**
+ * 비디오 자동 재생 초기화 (모바일 호환)
+ */
+function initializeVideoAutoplay() {
+  const video = document.getElementById('thank-video');
+  if (!video) return;
+
+  // 데스크톱에서는 기존 autoplay 속성으로 작동
+  // 모바일에서는 사용자 상호작용 후 재생 시도
+  const playVideo = () => {
+    video.play().catch((error) => {
+      console.log('비디오 자동 재생 실패:', error);
+      // 모바일에서 자동 재생이 실패하면 사용자 상호작용 시 재생 시도
+      const handleUserInteraction = () => {
+        video
+          .play()
+          .catch((e) => console.log('사용자 상호작용 후 재생 실패:', e));
+        document.removeEventListener('touchstart', handleUserInteraction);
+        document.removeEventListener('click', handleUserInteraction);
+      };
+      document.addEventListener('touchstart', handleUserInteraction, {
+        once: true,
+      });
+      document.addEventListener('click', handleUserInteraction, { once: true });
+    });
+  };
+
+  // 페이지 로드 시 재생 시도
+  playVideo();
+
+  // 비디오가 일시정지되면 다시 재생 시도
+  video.addEventListener('pause', () => {
+    if (!video.ended) {
+      setTimeout(playVideo, 100);
+    }
+  });
+}
 
 function updateNoticeVisitorCount() {
   const mainCount = document.getElementById('visitor-count');
