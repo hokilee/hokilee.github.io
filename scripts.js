@@ -514,3 +514,50 @@ document.addEventListener('DOMContentLoaded', function () {
   updateNoticeVisitorCount();
   // 기존 초기화 함수가 있다면 여기에 추가
 });
+
+// ===== PDF 보안 기능 =====
+
+/**
+ * PDF 파일을 안전하게 열기 (복사 방지 시도)
+ */
+function openPdfSecurely(pdfUrl) {
+  // 새 창에서 PDF 열기
+  const newWindow = window.open(
+    pdfUrl,
+    '_blank',
+    'width=800,height=600,scrollbars=yes,resizable=yes'
+  );
+
+  if (newWindow) {
+    // 새 창이 열린 후 복사 방지 시도
+    newWindow.addEventListener('load', function () {
+      try {
+        // JavaScript를 통해 복사 방지 시도 (브라우저 제한으로 완전한 방지는 어려움)
+        newWindow.document.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+          return false;
+        });
+
+        // 키보드 단축키 방지 시도
+        newWindow.document.addEventListener('keydown', function (e) {
+          // Ctrl+C, Ctrl+A, Ctrl+S 등 방지
+          if (
+            (e.ctrlKey || e.metaKey) &&
+            (e.key === 'c' || e.key === 'a' || e.key === 's' || e.key === 'p')
+          ) {
+            e.preventDefault();
+            return false;
+          }
+        });
+
+        // 선택 방지 시도
+        newWindow.document.addEventListener('selectstart', function (e) {
+          e.preventDefault();
+          return false;
+        });
+      } catch (error) {
+        console.log('PDF 보안 설정 실패:', error);
+      }
+    });
+  }
+}
