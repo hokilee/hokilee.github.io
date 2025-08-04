@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "42",
+      "title": "그린라운드 (Green Round)",
+      "date": "2025-08-05",
+      "filename": "economy-detail-42.html"
+    },
+    {
       "number": "41",
       "title": "블루라운드 (Blue Round)",
       "date": "2024-08-04",

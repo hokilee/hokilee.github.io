@@ -1,9 +1,15 @@
 {
   "posts": [
     {
+      "number": "42",
+      "title": "효과적인 대화법과 소통 기술",
+      "date": "2025-08-05",
+      "filename": "self-improvement-detail-42.html"
+    },
+    {
       "number": "41",
       "title": "효과적인 의사결정 방법",
-      "date": "2024-08-04",
+      "date": "2025-08-04",
       "filename": "self-improvement-detail-41.html"
     },
     {

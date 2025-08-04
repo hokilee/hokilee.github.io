@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "42",
+      "title": "인공지능(AI) 도구 활용법 완벽 가이드",
+      "date": "2025-08-05",
+      "filename": "tech-tips-detail-42.html"
+    },
+    {
       "number": "41",
       "title": "Wi-Fi 6 기술과 장점 완벽 가이드",
       "date": "2024-08-04",

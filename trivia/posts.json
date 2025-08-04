@@ -1,9 +1,15 @@
 {
   "posts": [
     {
+      "number": "53",
+      "title": "왜 사람은 꿈을 꿀까?",
+      "date": "2025-08-05",
+      "filename": "trivia-detail-53.html"
+    },
+    {
       "number": "52",
       "title": "왜 꿀벌은 육각형 집을 만들까?",
-      "date": "2024-08-04",
+      "date": "2025-08-04",
       "filename": "trivia-detail-52.html"
     },
     {
