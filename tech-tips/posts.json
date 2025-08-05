@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "43",
+      "title": "블록체인 기술과 암호화폐 이해하기",
+      "date": "2025-08-06",
+      "filename": "tech-tips-detail-43.html"
+    },
+    {
       "number": "42",
       "title": "인공지능(AI) 도구 활용법 완벽 가이드",
       "date": "2025-08-05",
