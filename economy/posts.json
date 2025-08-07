@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "45",
+      "title": "미국통상법 301조",
+      "date": "2025-08-08",
+      "filename": "economy-detail-45.html"
+    },
+    {
       "number": "44",
       "title": "패스포팅 (Passporting)",
       "date": "2025-08-07",
