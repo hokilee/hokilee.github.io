@@ -764,6 +764,14 @@ body {
   .preview-date {
     font-size: 0.8em;
   }
+
+  .notice-box {
+    height: 200px;
+  }
+
+  .tech-box {
+    height: 200px;
+  }
 }
 
 /* ===== 다크 모드 지원 ===== */
@@ -860,11 +868,13 @@ body {
       background: rgba(128, 128, 128, 0.9) !important;
       border: none;
       box-shadow: none;
+      height: 250px;
     }
     .tech-box {
       background: rgba(128, 128, 128, 0.9) !important;
       border: none;
       box-shadow: none;
+      height: 250px;
     }
   }
 
@@ -962,6 +972,11 @@ body {
   padding: 20px 24px;
   margin: 32px auto 0 auto;
   max-width: 960px;
+  /* 고정 높이와 스크롤 추가 */
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .tech-box {
   background: rgba(128, 128, 128, 0.9) !important;
@@ -971,6 +986,11 @@ body {
   padding: 20px 24px;
   margin: 32px auto 0 auto;
   max-width: 960px;
+  /* 고정 높이와 스크롤 추가 */
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .notice-title {
   text-align: center;
@@ -1049,8 +1069,49 @@ body {
   margin-top: 8px;
   padding-left: 0;
 }
+.notice-box .notice-title {
+  flex-shrink: 0;
+}
+
+.notice-box hr {
+  flex-shrink: 0;
+}
+
+.notice-box .visitor-info {
+  flex-shrink: 0;
+}
+
 .notice-box .notice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
   padding-left: 8px;
+  /* 스크롤 영역 설정 */
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* 스크롤바 스타일링 */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* 웹킷 브라우저용 스크롤바 스타일 */
+.notice-box .notice-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notice-box .notice-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.notice-box .notice-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.notice-box .notice-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 .notice-box .visitor-label {
   text-shadow: none !important;
@@ -1062,8 +1123,45 @@ body {
   font-weight: 900;
   text-shadow: none !important;
 }
+.tech-box .tech-title {
+  flex-shrink: 0;
+}
+
+.tech-box hr {
+  flex-shrink: 0;
+}
+
 .tech-box .tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
   padding-left: 8px;
+  /* 스크롤 영역 설정 */
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* 스크롤바 스타일링 */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* 웹킷 브라우저용 스크롤바 스타일 */
+.tech-box .tech-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tech-box .tech-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tech-box .tech-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.tech-box .tech-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 .tech-box #busuanzi_value_site_uv {
   color: #fff;
