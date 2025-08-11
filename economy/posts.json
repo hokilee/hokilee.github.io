@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "47",
+      "title": "디폴트(Default)",
+      "date": "2025-08-12",
+      "filename": "economy-detail-47.html"
+    },
+    {
       "number": "46",
       "title": "슬라이딩 관세(Sliding tariff)",
       "date": "2025-08-09",
