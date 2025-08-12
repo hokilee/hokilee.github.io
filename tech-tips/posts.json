@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "48",
+      "title": "웹 개발과 반응형 디자인 최적화 가이드",
+      "date": "2025-08-13",
+      "filename": "tech-tips-detail-48.html"
+    },
+    {
       "number": "47",
       "title": "모바일 앱 개발과 사용자 경험 최적화 가이드",
       "date": "2025-08-12",
