@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "49",
+      "title": "Git과 버전 관리 시스템 완벽 가이드",
+      "date": "2025-08-14",
+      "filename": "tech-tips-detail-49.html"
+    },
+    {
       "number": "48",
       "title": "웹 개발과 반응형 디자인 최적화 가이드",
       "date": "2025-08-13",
