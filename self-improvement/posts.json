@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "50",
+      "title": "빛은 여러 가지 현상",
+      "date": "2025-08-15",
+      "filename": "self-improvement-detail-50.html"
+    },
+    {
       "number": "49",
       "title": "음펨바 효과",
       "date": "2025-08-14",
