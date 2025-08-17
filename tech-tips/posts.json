@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "52",
+      "title": "5G 네트워크 최적화와 속도 향상 팁",
+      "date": "2025-08-18",
+      "filename": "tech-tips-detail-52.html"
+    },
+    {
       "number": "51",
       "title": "스마트홈 IoT 기기 보안 설정 방법",
       "date": "2025-08-16",
