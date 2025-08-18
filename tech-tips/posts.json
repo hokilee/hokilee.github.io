@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "53",
+      "title": "인공지능 챗봇과 효과적인 프롬프트 작성법",
+      "date": "2025-08-19",
+      "filename": "tech-tips-detail-53.html"
+    },
+    {
       "number": "52",
       "title": "5G 네트워크 최적화와 속도 향상 팁",
       "date": "2025-08-18",

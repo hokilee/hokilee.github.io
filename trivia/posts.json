@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "64",
+      "title": "왜 사람은 비밀을 지키지 못할까?",
+      "date": "2025-08-19",
+      "filename": "trivia-detail-64.html"
+    },
+    {
       "number": "63",
       "title": "왜 사람은 거짓말을 할 때 눈을 마주치지 못할까?",
       "date": "2025-08-18",
