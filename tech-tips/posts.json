@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "54",
+      "title": "클라우드 스토리지 최적화와 동기화 전략",
+      "date": "2025-08-20",
+      "filename": "tech-tips-detail-54.html"
+    },
+    {
       "number": "53",
       "title": "인공지능 챗봇과 효과적인 프롬프트 작성법",
       "date": "2025-08-19",

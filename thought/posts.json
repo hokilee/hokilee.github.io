@@ -2,9 +2,15 @@
   "posts": [
     {
       "number": "65",
+      "title": "이것은 무슨 바구니인가?",
+      "date": "2025-08-20",
+      "filename": "thought-detail-65.html"
+    },
+    {
+      "number": "64",
       "title": "왜 가장 원하지 않는 일에 인생을 낭비하는가",
       "date": "2025-08-19",
-      "filename": "thought-detail-65.html"
+      "filename": "thought-detail-64.html"
     },
     {
       "number": "63",

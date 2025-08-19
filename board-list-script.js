@@ -65,7 +65,7 @@ class BoardListGenerator {
     boardList.innerHTML = '';
 
     // New 배지 기준 날짜 (정확히 2025-06-30)
-    const newBadgeDate = '2025-08-19';
+    const newBadgeDate = '2025-08-20';
 
     // 번호 역순 정렬 (최신 번호가 맨 위로)
     const sortedPosts = posts.sort((a, b) => {
