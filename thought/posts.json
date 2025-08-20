@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "66",
+      "title": "1초의 시간",
+      "date": "2025-08-21",
+      "filename": "thought-detail-66.html"
+    },
+    {
       "number": "65",
       "title": "이것은 무슨 바구니인가?",
       "date": "2025-08-20",

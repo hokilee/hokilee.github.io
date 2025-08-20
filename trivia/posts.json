@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "66",
+      "title": "세계에서 가장 작은 동물은 무엇일까?",
+      "date": "2025-08-21",
+      "filename": "trivia-detail-66.html"
+    },
+    {
       "number": "65",
       "title": "왜 사람은 감정에 따라 음식을 선택할까?",
       "date": "2025-08-20",

@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "55",
+      "title": "가상현실(VR)과 증강현실(AR) 활용 가이드",
+      "date": "2025-08-21",
+      "filename": "tech-tips-detail-55.html"
+    },
+    {
       "number": "54",
       "title": "클라우드 스토리지 최적화와 동기화 전략",
       "date": "2025-08-20",
