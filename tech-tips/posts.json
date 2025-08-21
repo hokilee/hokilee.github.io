@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "56",
+      "title": "사이버 보안과 개인정보 보호 완벽 가이드",
+      "date": "2025-08-22",
+      "filename": "tech-tips-detail-56.html"
+    },
+    {
       "number": "55",
       "title": "가상현실(VR)과 증강현실(AR) 활용 가이드",
       "date": "2025-08-21",

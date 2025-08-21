@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "67",
+      "title": "세계에서 가장 깊은 바다는 어디일까?",
+      "date": "2025-08-22",
+      "filename": "trivia-detail-67.html"
+    },
+    {
       "number": "66",
       "title": "세계에서 가장 작은 동물은 무엇일까?",
       "date": "2025-08-21",

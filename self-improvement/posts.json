@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "56",
+      "title": "반성유전",
+      "date": "2025-08-22",
+      "filename": "self-improvement-detail-56.html"
+    },
+    {
       "number": "55",
       "title": "디버깅과 디버거",
       "date": "2025-08-21",
