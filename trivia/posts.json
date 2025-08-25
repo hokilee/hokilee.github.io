@@ -2,12 +2,18 @@
   "posts": [
     {
       "number": "70",
+      "title": "왜 자동차 타이어는 검은색일까?",
+      "date": "2025-08-26",
+      "filename": "trivia-detail-70.html"
+    },
+    {
+      "number": "69",
       "title": "왜 비행기는 구름 위를 날까?",
       "date": "2025-08-25",
       "filename": "trivia-detail-69.html"
     },
     {
-      "number": "69",
+      "number": "68",
       "title": "왜 사람은 음악을 들으면 감정이 변할까?",
       "date": "2025-08-23",
       "filename": "trivia-detail-68.html"
