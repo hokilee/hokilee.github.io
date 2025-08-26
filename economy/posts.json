@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "60",
+      "title": "레몬마켓",
+      "date": "2025-08-27",
+      "filename": "economy-detail-60.html"
+    },
+    {
       "number": "59",
       "title": "골드크로스와 데드크로스",
       "date": "2025-08-26",

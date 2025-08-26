@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "60",
+      "title": "스마트시티 IoT 기술과 도시 인프라 혁신 가이드",
+      "date": "2025-08-27",
+      "filename": "tech-tips-detail-60.html"
+    },
+    {
       "number": "59",
       "title": "6G 네트워크 기술과 초고속 통신의 미래 가이드",
       "date": "2025-08-26",
