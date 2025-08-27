@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "number": "61",
+      "title": "디지털 트윈 기술과 실시간 시뮬레이션 가이드",
+      "date": "2025-08-28",
+      "filename": "tech-tips-detail-61.html"
+    },
+    {
       "number": "60",
       "title": "스마트시티 IoT 기술과 도시 인프라 혁신 가이드",
       "date": "2025-08-27",
