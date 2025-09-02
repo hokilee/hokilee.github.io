@@ -61,8 +61,10 @@
           </a>
         </div>
         <div class="nav-item">
-          <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
-          <span>연락처</span>
+          <a href="contact-board.html">
+            <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
+            <span>연락처</span>
+          </a>
         </div>
         <div class="nav-item">
           <a href="index.html">
@@ -101,20 +103,9 @@
               />
               <button class="search-btn">🔍</button>
             </div>
-            <div class="filter-group">
-              <select id="category-filter" class="category-filter">
-                <option value="">전체 카테고리</option>
-                <option value="자기소개">자기소개</option>
-                <option value="이력서">이력서</option>
-                <option value="경험담">경험담</option>
-                <option value="기타">기타</option>
-              </select>
-              <select id="author-filter" class="author-filter">
-                <option value="">전체 작성자</option>
-                <option value="이호기">이호기</option>
-              </select>
-              <button id="reset-filters" class="reset-btn">필터 초기화</button>
-            </div>
+            <button class="write-btn" onclick="openWriteModal()">
+              <span>✏️</span> 글쓰기
+            </button>
           </div>
           <div class="result-info">
             <span id="result-count">총 3건</span>
@@ -144,12 +135,7 @@
             <!-- 페이지네이션은 JavaScript로 동적 생성됩니다 -->
           </div>
 
-          <!-- 액션 버튼 -->
-          <div class="board-actions">
-            <button class="write-btn" onclick="openWriteModal()">
-              <span>✏️</span> 글쓰기
-            </button>
-          </div>
+
         </div>
       </div>
 
@@ -263,8 +249,6 @@
       // 검색 및 필터 변수
       let filteredData = [...boardData];
       let searchTerm = '';
-      let selectedCategory = '';
-      let selectedAuthor = '';
 
       // 7일 이내 게시글인지 자동 판단하는 함수
       function isNewPost(postDate) {
@@ -310,15 +294,7 @@
             (item.content &&
               item.content.toLowerCase().includes(searchTerm.toLowerCase()));
 
-          // 카테고리 필터링
-          const matchesCategory =
-            selectedCategory === '' || item.category === selectedCategory;
-
-          // 작성자 필터링
-          const matchesAuthor =
-            selectedAuthor === '' || item.author === selectedAuthor;
-
-          return matchesSearch && matchesCategory && matchesAuthor;
+          return matchesSearch;
         });
 
         // 필터링 후 첫 페이지로 이동
@@ -331,32 +307,6 @@
       // 검색어 변경 처리
       function handleSearchChange(event) {
         searchTerm = event.target.value;
-        filterBoardData();
-      }
-
-      // 카테고리 필터 변경 처리
-      function handleCategoryFilter(event) {
-        selectedCategory = event.target.value;
-        filterBoardData();
-      }
-
-      // 작성자 필터 변경 처리
-      function handleAuthorFilter(event) {
-        selectedAuthor = event.target.value;
-        filterBoardData();
-      }
-
-      // 필터 초기화
-      function resetFilters() {
-        searchTerm = '';
-        selectedCategory = '';
-        selectedAuthor = '';
-
-        // 입력 필드 초기화
-        document.getElementById('search-input').value = '';
-        document.getElementById('category-filter').value = '';
-        document.getElementById('author-filter').value = '';
-
         filterBoardData();
       }
 
@@ -468,21 +418,9 @@
       // 검색 및 필터 이벤트 리스너 설정
       function setupSearchAndFilter() {
         const searchInput = document.getElementById('search-input');
-        const categoryFilter = document.getElementById('category-filter');
-        const authorFilter = document.getElementById('author-filter');
-        const resetBtn = document.getElementById('reset-filters');
 
         if (searchInput) {
           searchInput.addEventListener('input', handleSearchChange);
-        }
-        if (categoryFilter) {
-          categoryFilter.addEventListener('change', handleCategoryFilter);
-        }
-        if (authorFilter) {
-          authorFilter.addEventListener('change', handleAuthorFilter);
-        }
-        if (resetBtn) {
-          resetBtn.addEventListener('click', resetFilters);
         }
       }
 
