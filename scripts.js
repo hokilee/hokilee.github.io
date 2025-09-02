@@ -1,563 +1,327 @@
-/**
- * Hoki Lee Personal Website - Main JavaScript
- * 주요 기능: 음악 플레이어, 좋아요 시스템, "New" 배지 표시
- */
+// DOM이 로드된 후 실행
+document.addEventListener('DOMContentLoaded', function () {
+  // 슬라이더 기능 - 슬라이드 요소가 존재하는 경우에만 실행
+  const slides = document.querySelectorAll('.hero-slide');
+  const indicators = document.querySelectorAll('.indicator');
+  
+  if (slides.length > 0 && indicators.length > 0) {
+    let currentSlideIndex = 0;
+    let slideInterval;
 
-// ===== 전역 변수 및 설정 =====
-const MUSIC_LIST = [
-  'cozycoffeehouse.mp3',
-  'dawnofchange.mp3',
-  'firesidechat.mp3',
-  'hearty.mp3',
-  'moonlightdrive.mp3',
-  'prism.mp3',
-  'slowlife.mp3',
-  'yesterday.mp3',
-];
+    // 슬라이드 표시 함수
+    function showSlide(index) {
+      // 모든 슬라이드와 인디케이터 비활성화
+      slides.forEach((slide) => slide.classList.remove('active'));
+      indicators.forEach((indicator) => indicator.classList.remove('active'));
 
-// ===== 유틸리티 함수 =====
-
-/**
- * 한국 시간 기준 오늘 날짜를 YYYY-MM-DD 형식으로 반환
- */
-function getTodayDate() {
-  const today = new Date();
-  today.setHours(today.getHours() + 9); // UTC+9 (한국 시간)
-  return today.toISOString().slice(0, 10);
-}
-
-/**
- * 날짜 문자열이 오늘 날짜와 같은지 확인
- */
-function isToday(dateString) {
-  return dateString === getTodayDate();
-}
-
-/**
- * "New" 배지를 생성하는 함수 (박스 스타일)
- */
-function createNewBadge() {
-  const badge = document.createElement('span');
-  badge.className = 'new-badge';
-  badge.textContent = ' "New"';
-  return badge;
-}
-
-/**
- * "New" 배지를 생성하는 함수 (게시판 목록용 텍스트 스타일)
- */
-function createNewBadgeForBoard() {
-  const badge = document.createElement('span');
-  badge.className = 'new-badge-text';
-  badge.textContent = ' "New"';
-  return badge;
-}
-
-// ===== 음악 플레이어 기능 =====
-
-/**
- * 음악 플레이어 초기화
- */
-function initializeMusicPlayer() {
-  const selector = document.getElementById('musicSelector');
-  const player = document.getElementById('audioPlayer');
-  const source = document.getElementById('audioSource');
-
-  if (!selector || !player || !source) return;
-
-  // 드롭다운 옵션 생성
-  MUSIC_LIST.forEach((filename) => {
-    const option = document.createElement('option');
-    option.value = filename;
-    option.textContent = filename.replace('.mp3', '').replace(/[-_]/g, ' ');
-    selector.appendChild(option);
-  });
-
-  // 기본 첫 곡 설정 및 재생
-  source.src = `music/${MUSIC_LIST[0]}`;
-  player.load();
-  player.play().catch((e) => console.log('자동 재생 실패:', e));
-
-  // 선택 시 음악 재생
-  selector.addEventListener('change', () => {
-    const selected = selector.value;
-    source.src = `music/${selected}`;
-    player.load();
-    player.play().catch((e) => console.log('음악 재생 실패:', e));
-  });
-}
-
-/**
- * 배경 음악 토글 (기존 bgm용)
- */
-function toggleBackgroundMusic() {
-  const audio = document.getElementById('bgm');
-  const button = document.getElementById('musicButton');
-
-  if (!audio || !button) return;
-
-  if (audio.paused) {
-    audio.play().catch((e) => console.log('배경음악 재생 실패:', e));
-    button.textContent = '⏸ 음악 끄기';
-  } else {
-    audio.pause();
-    button.textContent = '🎵 음악 켜기';
-  }
-}
-
-// ===== 좋아요 시스템 =====
-
-/**
- * 좋아요 기능 초기화
- */
-function initializeLikeSystem() {
-  const likeSpan = document.getElementById('likeCount');
-  if (!likeSpan) return;
-
-  const pageKey = window.location.pathname;
-  const savedLikes = localStorage.getItem(`like-${pageKey}`);
-
-  if (savedLikes) {
-    likeSpan.innerText = savedLikes;
-  }
-
-  // 전역 함수로 등록
-  window.likePost = function () {
-    let currentLikes = parseInt(likeSpan.innerText, 10) || 0;
-    currentLikes += 1;
-    likeSpan.innerText = currentLikes;
-    localStorage.setItem(`like-${pageKey}`, currentLikes);
-  };
-}
-
-// ===== "New" 배지 시스템 =====
-
-/**
- * 상세 페이지에서 "New" 배지 표시
- */
-function markNewInDetailPage() {
-  const dateElement = document.querySelector('.date');
-  const titleElement = document.querySelector('h1');
-
-  if (!dateElement || !titleElement) return;
-
-  const postDate = dateElement.textContent.trim();
-  if (isToday(postDate)) {
-    const badge = createNewBadgeForBoard();
-    titleElement.appendChild(badge);
-  }
-}
-
-/**
- * 게시판 목록에서 "New" 배지 표시 (테이블 형식)
- */
-function markNewInBoardList() {
-  const rows = document.querySelectorAll('tbody tr');
-  const today = getTodayDate();
-
-  rows.forEach((row) => {
-    const dateCell = row.querySelector('td:last-child');
-    const titleCell = row.querySelector('td.title a');
-
-    if (dateCell && titleCell && dateCell.textContent.trim() === today) {
-      const badge = createNewBadgeForBoard();
-      titleCell.parentNode.appendChild(badge);
+      // 현재 슬라이드와 인디케이터 활성화
+      slides[index].classList.add('active');
+      indicators[index].classList.add('active');
     }
-  });
-}
 
-/**
- * 게시판 목록에서 "New" 배지 자동 관리 (리스트 형식)
- */
-function autoManageNewBadges() {
-  const boardItems = document.querySelectorAll('.board-item');
-  const today = getTodayDate();
+  // 슬라이드 변경 함수
+  function changeSlide(direction) {
+    currentSlideIndex =
+      (currentSlideIndex + direction + slides.length) % slides.length;
+    showSlide(currentSlideIndex);
+    resetSlideInterval();
+  }
 
-  boardItems.forEach((item) => {
-    const dateElement = item.querySelector('.date');
-    const titleElement = item.querySelector('h3');
+  // 특정 슬라이드로 이동
+  function currentSlide(index) {
+    currentSlideIndex = index - 1;
+    showSlide(currentSlideIndex);
+    resetSlideInterval();
+  }
 
-    if (!dateElement || !titleElement) return;
+  // 자동 슬라이드 간격 재설정
+  function resetSlideInterval() {
+    clearInterval(slideInterval);
+    startAutoSlide();
+  }
 
-    const postDate = dateElement.textContent.trim();
-    const existingBadge = titleElement.querySelector('.new-badge');
+  // 자동 슬라이드 시작
+  function startAutoSlide() {
+    slideInterval = setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+  }
 
-    if (isToday(postDate)) {
-      // 오늘 날짜인데 배지가 없으면 추가
-      if (!existingBadge) {
-        const badge = document.createElement('span');
-        badge.className = 'new-badge';
-        badge.textContent = 'New';
-        titleElement.appendChild(badge);
-      }
-    } else {
-      // 오늘 날짜가 아닌데 배지가 있으면 제거
-      if (existingBadge) {
-        existingBadge.remove();
+      // 자동 슬라이드 시작
+    startAutoSlide();
+
+    // 마우스 호버 시 자동 슬라이드 일시정지
+    const heroBanner = document.querySelector('.hero-banner');
+    if (heroBanner) {
+      heroBanner.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+      });
+
+      heroBanner.addEventListener('mouseleave', () => {
+        startAutoSlide();
+      });
+    }
+
+    // 터치 이벤트 지원 (모바일)
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    if (heroBanner) {
+      heroBanner.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      heroBanner.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+    }
+
+    // 스와이프 제스처 처리
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          // 왼쪽으로 스와이프 - 다음 슬라이드
+          changeSlide(1);
+        } else {
+          // 오른쪽으로 스와이프 - 이전 슬라이드
+          changeSlide(-1);
+        }
       }
     }
-  });
-}
 
-/**
- * 메인 페이지에서 콘텐츠 링크에 "New" 배지 표시
- */
-async function markNewInMainPage() {
-  const today = getTodayDate();
-
-  try {
-    const response = await fetch('latest_posts.json');
-    if (!response.ok) {
-      throw new Error('네트워크 응답이 올바르지 않습니다.');
-    }
-    const latestPosts = await response.json();
-
-    // "오늘의 한줄 지식/잡학" (trivia) 확인
-    const triviaLink = document.getElementById('trivia-link');
-    if (triviaLink && latestPosts.trivia === today) {
-      const newBadge = createNewBadge();
-      triviaLink.parentNode.appendChild(newBadge);
-    }
-
-    // "이호기의 하루 한생각" (thought) 확인
-    const thoughtLink = document.getElementById('thought-link');
-    if (thoughtLink && latestPosts.thought === today) {
-      const newBadge = createNewBadge();
-      thoughtLink.parentNode.appendChild(newBadge);
-    }
-
-    // "오늘의 기술 팁" 확인
-    const techTipsLink = document.querySelector(
-      'a[href="tech-tips-board.html"]'
-    );
-    if (techTipsLink && latestPosts.techTips === today) {
-      const newBadge = createNewBadge();
-      techTipsLink.parentNode.appendChild(newBadge);
-    }
-
-    // "오늘의 경제 상식" 확인
-    const economyLink = document.querySelector('a[href="economy-board.html"]');
-    if (economyLink && latestPosts.economy === today) {
-      const newBadge = createNewBadge();
-      economyLink.parentNode.appendChild(newBadge);
-    }
-
-    // "오늘의 자기계발" 확인
-    const selfImprovementLink = document.querySelector(
-      'a[href="self-improvement-board.html"]'
-    );
-    if (selfImprovementLink && latestPosts.selfImprovement === today) {
-      const newBadge = createNewBadge();
-      selfImprovementLink.parentNode.appendChild(newBadge);
-    }
-
-    // 미리보기 내용 업데이트 (비동기 처리)
-    await updateAllPreviews(latestPosts, today);
-  } catch (error) {
-    console.error('최신 게시물 정보를 불러오는 데 실패했습니다:', error);
-  }
-}
-
-/**
- * 카테고리별 최신 게시물 정보 반환 (JSON 파일에서 동적 로드)
- */
-async function getLatestPostForCategory(category) {
-  const categoryMap = {
-    trivia: 'trivia/posts.json',
-    thought: 'thought/posts.json',
-    tech: 'tech-tips/posts.json',
-    economy: 'economy/posts.json',
-    'self-improvement': 'self-improvement/posts.json',
-  };
-
-  const jsonPath = categoryMap[category];
-  if (!jsonPath) return null;
-
-  try {
-    const response = await fetch(jsonPath);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-
-    // 가장 최신 게시물 찾기 (번호 기준 - 가장 큰 번호가 최신)
-    const latestPost = data.posts.reduce((latest, current) => {
-      return parseInt(current.number) > parseInt(latest.number)
-        ? current
-        : latest;
+    // 키보드 이벤트 지원
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        changeSlide(-1);
+      } else if (e.key === 'ArrowRight') {
+        changeSlide(1);
+      }
     });
+  } // 슬라이드 기능 종료
 
-    return latestPost;
-  } catch (error) {
-    console.error(`${category} 게시물 정보를 불러오는 데 실패했습니다:`, error);
+  // 네비게이션 아이템 클릭 이벤트
+  const navItems = document.querySelectorAll('.nav-item');
+  navItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      // 여기에 각 메뉴에 대한 동작을 추가할 수 있습니다
+      console.log(`메뉴 ${index + 1} 클릭됨`);
+
+      // 예시: 스크롤 애니메이션
+      const targetSection = getTargetSection(index);
+      if (targetSection) {
+        smoothScrollTo(targetSection);
+      }
+    });
+  });
+
+  // 타겟 섹션 찾기
+  function getTargetSection(index) {
+    const sections = [
+      'about-me-section',
+      'career-section',
+      'insight-section',
+      'tech-section',
+      'activity-section',
+      'contact-section',
+    ];
+
+    if (sections[index]) {
+      return (
+        document.getElementById(sections[index]) ||
+        document.querySelector(`[data-section="${sections[index]}"]`)
+      );
+    }
     return null;
   }
-}
 
-/**
- * 특정 카테고리의 미리보기 업데이트 (비동기 처리)
- */
-async function updatePreviewForCategory(category, latestDate, today) {
-  const previewElement = document.getElementById(`${category}-preview`);
-  if (!previewElement) return;
-
-  // 오늘 날짜와 비교
-  if (latestDate === today) {
-    // 오늘 업데이트된 경우 - 최신 게시물 표시
-    const latestPost = await getLatestPostForCategory(category);
-    if (latestPost) {
-      previewElement.innerHTML = `
-        <div class="preview-item">
-          <span class="preview-number">#${latestPost.number}</span>
-          <span class="preview-title">${latestPost.title}</span>
-          <span class="preview-date">(${today})</span>
-        </div>
-      `;
-    } else {
-      // 게시물 정보를 찾을 수 없는 경우
-      previewElement.innerHTML = `
-        <div class="preview-item">
-          <span class="preview-title">오늘 새로운 게시물이 업데이트되었습니다</span>
-          <span class="preview-date">(${today})</span>
-        </div>
-      `;
+  // 부드러운 스크롤 함수
+  function smoothScrollTo(element) {
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
     }
-  } else {
-    // 오늘 업데이트되지 않은 경우 - "없음" 표시
-    previewElement.innerHTML = `
-      <div class="preview-item">
-        <span class="preview-title">없음</span>
-      </div>
-    `;
   }
-}
 
-/**
- * 모든 미리보기 내용을 업데이트 (비동기 처리)
- */
-async function updateAllPreviews(latestPosts, today) {
-  // 각 카테고리별로 미리보기 업데이트 (병렬 처리)
-  await Promise.all([
-    updatePreviewForCategory('trivia', latestPosts.trivia, today),
-    updatePreviewForCategory('thought', latestPosts.thought, today),
-    updatePreviewForCategory('tech', latestPosts.techTips, today),
-    updatePreviewForCategory('economy', latestPosts.economy, today),
-    updatePreviewForCategory(
-      'self-improvement',
-      latestPosts.selfImprovement,
-      today
-    ),
-  ]);
-}
+  // 스크롤 시 네비게이션 바 스타일 변경
+  let lastScrollTop = 0;
+  const navigation = document.querySelector('.main-navigation');
 
-// ===== 연도 표시 =====
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-/**
- * 푸터에 현재 연도 표시
- */
-function updateFooterYear() {
+    if (scrollTop > 100) {
+      navigation.style.background =
+        'linear-gradient(135deg, rgba(101, 67, 33, 0.95) 0%, rgba(139, 69, 19, 0.95) 50%, rgba(101, 67, 33, 0.95) 100%)';
+      navigation.style.backdropFilter = 'blur(10px)';
+    } else {
+      navigation.style.background =
+        'linear-gradient(135deg, #654321 0%, #8b4513 50%, #654321 100%)';
+      navigation.style.backdropFilter = 'none';
+    }
+
+    lastScrollTop = scrollTop;
+  });
+
+  // 콘텐츠 카드 호버 효과
+  const contentCards = document.querySelectorAll('.content-card, .career-card');
+  contentCards.forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-5px)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+    });
+  });
+
+  // 이미지 로딩 최적화
+  const images = document.querySelectorAll('img');
+  images.forEach((img) => {
+    img.addEventListener('load', () => {
+      img.style.opacity = '1';
+    });
+
+    img.addEventListener('error', () => {
+      img.style.opacity = '0.5';
+      img.alt = '이미지를 불러올 수 없습니다';
+    });
+  });
+
+  // 연도 표시
   const yearElement = document.getElementById('year');
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
-}
 
-// ===== 페이지별 초기화 =====
+  // 페이지 로딩 완료 후 애니메이션 시작
+  window.addEventListener('load', () => {
+    // 히어로 섹션 페이드인 효과
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent) {
+      heroContent.style.opacity = '0';
+      heroContent.style.transform = 'translateY(20px)';
 
-/**
- * 메인 페이지의 실시간 정보(날짜/시간) 초기화
- */
-function initializeRealtimeInfo() {
-  const datetimeElement = document.getElementById('datetime-info');
-  if (!datetimeElement) return;
-
-  // 1. 날짜 및 시간 표시
-  const updateDateTime = () => {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = now.getMonth() + 1;
-    const date = now.getDate();
-    const day = ['일', '월', '화', '수', '목', '금', '토'][now.getDay()];
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    datetimeElement.textContent = `${year}년 ${month}월 ${date}일 (${day}) ${hours}:${minutes}:${seconds}`;
-  };
-
-  updateDateTime();
-  setInterval(updateDateTime, 1000);
-}
-
-/**
- * 메인 페이지의 Sticky 제목 기능 초기화
- */
-function initializeStickyTitle() {
-  const titleBox = document.querySelector('.header-title-box');
-  if (!titleBox) return;
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      // isIntersecting이 false이면, titleBox가 뷰포트 상단으로 사라졌다는 의미
-      titleBox.classList.toggle('is-sticky', !entry.isIntersecting);
-    },
-    { threshold: 1.0 } // titleBox가 100% 보일 때와 아닐 때를 감지
-  );
-
-  observer.observe(titleBox);
-}
-
-/**
- * 페이지별 기능 초기화
- */
-function initializePageFeatures() {
-  const currentPath = window.location.pathname;
-
-  // 공통 기능
-  updateFooterYear();
-  initializeLikeSystem();
-
-  // 음악 플레이어 페이지
-  if (currentPath.includes('music-player.html')) {
-    initializeMusicPlayer();
-  }
-
-  // 상세 페이지 (trivia-detail 또는 thought-detail)
-  if (
-    currentPath.includes('trivia-detail') ||
-    currentPath.includes('thought-detail')
-  ) {
-    markNewInDetailPage();
-  }
-
-  // 게시판 페이지 (trivia-board 또는 thought-board)
-  if (
-    currentPath.includes('trivia-board') ||
-    currentPath.includes('thought-board') ||
-    currentPath.includes('economy-board') ||
-    currentPath.includes('tech-tips-board') ||
-    currentPath.includes('self-improvement-board')
-  ) {
-    markNewInBoardList();
-    autoManageNewBadges();
-  }
-
-  // 메인 페이지
-  if (currentPath.endsWith('index.html') || currentPath.endsWith('/')) {
-    markNewInMainPage();
-    initializeRealtimeInfo();
-    initializeStickyTitle(); // 메인 페이지에 Sticky 제목 기능 추가
-    initializeVideoAutoplay(); // 비디오 자동 재생 초기화
-  }
-}
-
-// ===== 이벤트 리스너 =====
-
-/**
- * DOM 로드 완료 시 초기화
- */
-document.addEventListener('DOMContentLoaded', () => {
-  initializePageFeatures();
-});
-
-// ===== 전역 함수 등록 =====
-
-// 기존 호환성을 위한 전역 함수들
-window.toggleMusic = toggleBackgroundMusic;
-
-/**
- * 비디오 자동 재생 초기화 (모바일 호환)
- */
-function initializeVideoAutoplay() {
-  const video = document.getElementById('thank-video');
-  if (!video) return;
-
-  // 데스크톱에서는 기존 autoplay 속성으로 작동
-  // 모바일에서는 사용자 상호작용 후 재생 시도
-  const playVideo = () => {
-    video.play().catch((error) => {
-      console.log('비디오 자동 재생 실패:', error);
-      // 모바일에서 자동 재생이 실패하면 사용자 상호작용 시 재생 시도
-      const handleUserInteraction = () => {
-        video
-          .play()
-          .catch((e) => console.log('사용자 상호작용 후 재생 실패:', e));
-        document.removeEventListener('touchstart', handleUserInteraction);
-        document.removeEventListener('click', handleUserInteraction);
-      };
-      document.addEventListener('touchstart', handleUserInteraction, {
-        once: true,
-      });
-      document.addEventListener('click', handleUserInteraction, { once: true });
-    });
-  };
-
-  // 페이지 로드 시 재생 시도
-  playVideo();
-
-  // 비디오가 일시정지되면 다시 재생 시도
-  video.addEventListener('pause', () => {
-    if (!video.ended) {
-      setTimeout(playVideo, 100);
+      setTimeout(() => {
+        heroContent.style.transition = 'opacity 1s ease, transform 1s ease';
+        heroContent.style.opacity = '1';
+        heroContent.style.transform = 'translateY(0)';
+      }, 300);
     }
-  });
-}
 
-function updateNoticeVisitorCount() {
-  const mainCount = document.getElementById('visitor-count');
-  const noticeCount = document.getElementById('notice-visitor-count');
-  if (mainCount && noticeCount) {
-    noticeCount.textContent = mainCount.textContent;
+    // 콘텐츠 카드들 순차적으로 나타나기
+    const cards = document.querySelectorAll('.content-card, .career-card');
+    cards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+
+      setTimeout(() => {
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, 500 + index * 100);
+    });
+  });
+
+  // 성능 최적화: Intersection Observer 사용
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // 관찰할 요소들
+    const observeElements = document.querySelectorAll(
+      '.content-card, .career-card, .notice-section, .news-section'
+    );
+    observeElements.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  }
+});
+
+// 전역 함수들 (HTML에서 직접 호출) - 슬라이드 요소가 존재하는 경우에만 실행
+function changeSlide(direction) {
+  const slides = document.querySelectorAll('.hero-slide');
+  const indicators = document.querySelectorAll('.indicator');
+  
+  if (slides.length > 0 && indicators.length > 0) {
+    // 이벤트 위임을 위해 이벤트 객체를 전달
+    const event = new Event('slideChange');
+    event.direction = direction;
+    document.dispatchEvent(event);
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  updateNoticeVisitorCount();
-  // 기존 초기화 함수가 있다면 여기에 추가
+function currentSlide(index) {
+  const slides = document.querySelectorAll('.hero-slide');
+  const indicators = document.querySelectorAll('.indicator');
+  
+  if (slides.length > 0 && indicators.length > 0) {
+    const event = new Event('slideChange');
+    event.index = index;
+    document.dispatchEvent(event);
+  }
+}
+
+// 전역 이벤트 리스너
+document.addEventListener('slideChange', (e) => {
+  const slides = document.querySelectorAll('.hero-slide');
+  const indicators = document.querySelectorAll('.indicator');
+  
+  if (slides.length > 0 && indicators.length > 0) {
+    if (e.direction !== undefined) {
+      // changeSlide 함수 호출
+      let currentSlideIndex = 0;
+
+      // 현재 활성 슬라이드 찾기
+      slides.forEach((slide, index) => {
+        if (slide.classList.contains('active')) {
+          currentSlideIndex = index;
+        }
+      });
+
+      // 슬라이드 변경
+      const newIndex =
+        (currentSlideIndex + e.direction + slides.length) % slides.length;
+      showSlide(newIndex);
+    } else if (e.index !== undefined) {
+      // currentSlide 함수 호출
+      slides.forEach((slide) => slide.classList.remove('active'));
+      indicators.forEach((indicator) => indicator.classList.remove('active'));
+
+      slides[e.index - 1].classList.add('active');
+      indicators[e.index - 1].classList.add('active');
+    }
+  }
 });
 
-// ===== PDF 보안 기능 =====
+function showSlide(index) {
+  const slides = document.querySelectorAll('.hero-slide');
+  const indicators = document.querySelectorAll('.indicator');
 
-/**
- * PDF 파일을 안전하게 열기 (복사 방지 시도)
- */
-function openPdfSecurely(pdfUrl) {
-  // 새 창에서 PDF 열기
-  const newWindow = window.open(
-    pdfUrl,
-    '_blank',
-    'width=800,height=600,scrollbars=yes,resizable=yes'
-  );
+  if (slides.length > 0 && indicators.length > 0) {
+    slides.forEach((slide) => slide.classList.remove('active'));
+    indicators.forEach((indicator) => indicator.classList.remove('active'));
 
-  if (newWindow) {
-    // 새 창이 열린 후 복사 방지 시도
-    newWindow.addEventListener('load', function () {
-      try {
-        // JavaScript를 통해 복사 방지 시도 (브라우저 제한으로 완전한 방지는 어려움)
-        newWindow.document.addEventListener('contextmenu', function (e) {
-          e.preventDefault();
-          return false;
-        });
-
-        // 키보드 단축키 방지 시도
-        newWindow.document.addEventListener('keydown', function (e) {
-          // Ctrl+C, Ctrl+A, Ctrl+S 등 방지
-          if (
-            (e.ctrlKey || e.metaKey) &&
-            (e.key === 'c' || e.key === 'a' || e.key === 's' || e.key === 'p')
-          ) {
-            e.preventDefault();
-            return false;
-          }
-        });
-
-        // 선택 방지 시도
-        newWindow.document.addEventListener('selectstart', function (e) {
-          e.preventDefault();
-          return false;
-        });
-      } catch (error) {
-        console.log('PDF 보안 설정 실패:', error);
-      }
-    });
+    slides[index].classList.add('active');
+    indicators[index].classList.add('active');
   }
 }

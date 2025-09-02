@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="이호기 연락처 - 자동차 기술 전문가와의 소통을 위한 연락처 정보입니다"
+    />
+    <meta name="author" content="Hoki Lee" />
+    <title>연락처 - 이호기</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="board-styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- 히어로 배너 섹션 -->
+    <section
+      class="hero-banner today-hero"
+      id="heroBanner"
+      style="max-width: 1200px; margin: 0 auto"
+    >
+      <div class="hero-image">
+        <img src="web-image/contect-point.jpg" alt="연락처 배경" />
+      </div>
+      <div class="hero-content">
+        <h1 id="heroTitle">연락처</h1>
+        <p id="heroDescription">
+          자동차 기술 전문가와의 소통을 위한 연락처 정보입니다
+        </p>
+      </div>
+    </section>
+
+    <!-- 네비게이션 바 -->
+    <nav class="main-navigation">
+      <div class="nav-container">
+        <div class="nav-item">
+          <a href="about-me-board.html">
+            <img
+              src="web-image/about-me-icon.png"
+              alt="About Me"
+              class="nav-icon"
+            />
+            <span>About Me</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="career-board.html">
+            <img
+              src="web-image/career-icon.png"
+              alt="경력 이야기"
+              class="nav-icon"
+            />
+            <span>경력 이야기</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="today-content-board.html">
+            <img
+              src="web-image/information-icon.png"
+              alt="오늘의 콘텐츠"
+              class="nav-icon"
+            />
+            <span>오늘의 콘텐츠</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="latest-content-board.html">
+            <img
+              src="web-image/books-icon.png"
+              alt="기술자료"
+              class="nav-icon"
+            />
+            <span>기술자료</span>
+          </a>
+        </div>
+        <div class="nav-item active">
+          <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
+          <span>연락처</span>
+        </div>
+        <div class="nav-item">
+          <a href="index.html">
+            <img
+              src="web-image/return-icon.png"
+              alt="초기화면"
+              class="nav-icon"
+            />
+            <span>초기화면</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <main class="main-content">
+      <div class="content-grid">
+        <section class="career-grid">
+          <div class="career-card">
+            <a href="mailto:modic_kr@naver.com">
+              <h3>
+                <i class="career-icon">📧</i>
+                이메일
+              </h3>
+            </a>
+            <p>modic_kr@naver.com</p>
+          </div>
+
+          <div class="career-card">
+            <a href="tel:+82-10-6374-0530">
+              <h3>
+                <i class="career-icon">📞</i>
+                전화번호
+              </h3>
+            </a>
+            <p>+82-10-6374-0530</p>
+          </div>
+
+          <div class="career-card">
+            <a
+              href="https://www.linkedin.com/in/hoki-lee-0352ab204"
+              target="_blank"
+            >
+              <h3>
+                <i class="career-icon">💼</i>
+                LinkedIn
+              </h3>
+            </a>
+            <p>
+              경험으로 길을 만들고, 서비스로 가치를 창출하며, 글로벌 경험과
+              혁신으로 연결되는 커리어 스토리를 확인해 주세요 -
+              www.linkedin.com/in/hoki-lee-0352ab204
+            </p>
+          </div>
+
+          <div class="career-card">
+            <a href="https://leehoki.com" target="_blank">
+              <h3>
+                <i class="career-icon">💻</i>
+                개인 홈페이지 주소
+              </h3>
+            </a>
+            <p>
+              제 개인 홈페이지에서 저의 경험을 기록하고, 새로운 길을 설계하는
+              모습을 확인하세요 - https://leehoki.com
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Copyright ⓒ <span id="year"></span> Hoki Lee.</p>
+    </footer>
+
+    <script>
+      // 연도 표시
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

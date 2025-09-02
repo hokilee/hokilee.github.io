@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="이호기의 오늘의 콘텐츠 게시판 - 자동차 기술과 서비스 관리 경험을 바탕으로 한 최신 콘텐츠와 정보를 제공합니다"
+    />
+    <meta name="author" content="Hoki Lee" />
+    <title>오늘의 콘텐츠 - 이호기</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="board-styles.css" />
+    <script src="scripts.js" defer></script>
+    <!-- 외부 데이터 파일들 -->
+    <script src="daily-thoughts/daily-thoughts-data.js"></script>
+    <script src="one-line-knowledge/one-line-knowledge-data.js"></script>
+  </head>
+  <body>
+    <!-- 히어로 배너 섹션 -->
+    <section class="hero-banner today-hero">
+      <div class="hero-content">
+        <h1>오늘의 콘텐츠</h1>
+        <p>
+          자동차 기술과 서비스 관리 경험을 바탕으로 한 최신 콘텐츠와 정보를
+          제공합니다
+        </p>
+      </div>
+      <div class="slider-nav prev">❮</div>
+      <div class="slider-nav next">❯</div>
+    </section>
+
+    <!-- 네비게이션 바 -->
+    <nav class="main-navigation">
+      <div class="nav-container">
+        <div class="nav-item">
+          <a href="about-me-board.html">
+            <img
+              src="web-image/about-me-icon.png"
+              alt="About Me"
+              class="nav-icon"
+            />
+            <span>About Me</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <img
+            src="web-image/career-icon.png"
+            alt="경력 이야기"
+            class="nav-icon"
+          />
+          <span>경력 이야기</span>
+        </div>
+        <div class="nav-item active">
+          <img
+            src="web-image/information-icon.png"
+            alt="오늘의 콘텐츠"
+            class="nav-icon"
+          />
+          <span>오늘의 콘텐츠</span>
+        </div>
+        <div class="nav-item">
+          <a href="latest-content-board.html">
+            <img
+              src="web-image/books-icon.png"
+              alt="기술자료"
+              class="nav-icon"
+            />
+            <span>기술자료</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
+          <span>연락처</span>
+        </div>
+        <div class="nav-item">
+          <a href="index.html">
+            <img
+              src="web-image/return-icon.png"
+              alt="초기화면"
+              class="nav-icon"
+            />
+            <span>초기화면</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <main class="main-content today-content-board">
+      <div class="board-container">
+        <!-- 왼쪽 네비게이션 바 -->
+        <div class="left-navigation">
+          <div class="nav-section">
+            <h3 class="nav-title">콘텐츠 카테고리</h3>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#today-knowledge" class="nav-link"> 한줄 지식/잡학 </a>
+              </li>
+              <hr class="nav-divider" />
+              <li class="nav-item">
+                <a href="#daily-thought" class="nav-link"> 하루 한생각 </a>
+              </li>
+              <hr class="nav-divider" />
+              <li class="nav-item">
+                <a href="#tech-tip" class="nav-link"> 기술 팁 </a>
+              </li>
+              <hr class="nav-divider" />
+              <li class="nav-item">
+                <a href="#economy" class="nav-link"> 경제 상식 </a>
+              </li>
+              <hr class="nav-divider" />
+              <li class="nav-item">
+                <a href="#science" class="nav-link"> 과학적 상식 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 메인 콘텐츠 -->
+        <div class="board-main">
+          <div class="board-header">
+            <h1>오늘의 콘텐츠 게시판</h1>
+            <p>
+              자동차 기술과 서비스 관리 경험을 바탕으로 한 최신 콘텐츠와 정보를
+              제공합니다
+            </p>
+          </div>
+
+          <!-- 검색 및 필터 바 -->
+          <div class="search-filter-bar">
+            <div class="search-group">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="콘텐츠 제목 또는 내용으로 검색..."
+                class="search-input"
+              />
+              <button class="search-btn">🔍</button>
+            </div>
+            <div class="filter-group">
+              <select id="category-filter" class="category-filter">
+                <option value="">전체 카테고리</option>
+                <option value="한줄 지식/잡학">한줄 지식/잡학</option>
+                <option value="하루 한생각">하루 한생각</option>
+                <option value="기술 팁">기술 팁</option>
+                <option value="경제 상식">경제 상식</option>
+                <option value="과학적 상식">과학적 상식</option>
+              </select>
+              <select id="author-filter" class="author-filter">
+                <option value="">전체 작성자</option>
+                <option value="이호기">이호기</option>
+              </select>
+              <button id="reset-filters" class="reset-btn">필터 초기화</button>
+            </div>
+          </div>
+          <div class="result-info">
+            <span id="result-count">총 4건</span>
+          </div>
+
+          <!-- 게시판 테이블 -->
+          <div class="board-table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="col-number">번호</th>
+                  <th class="col-title">제목</th>
+                  <th class="col-category">카테고리</th>
+                  <th class="col-author">작성자</th>
+                  <th class="col-date">등록일</th>
+                  <th class="col-views">조회수</th>
+                </tr>
+              </thead>
+              <tbody id="board-tbody">
+                <!-- 데이터는 JavaScript로 동적 생성됩니다 -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 페이지네이션 -->
+          <div class="pagination" id="pagination">
+            <!-- 페이지네이션은 JavaScript로 동적 생성됩니다 -->
+          </div>
+
+          <!-- 액션 버튼 -->
+          <div class="board-actions">
+            <button class="write-btn" onclick="openWriteModal()">
+              <span>✏️</span> 글쓰기
+            </button>
+            <button
+              onclick="testModal()"
+              style="
+                margin-left: 10px;
+                padding: 8px 16px;
+                background: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              "
+            >
+              테스트
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 글쓰기 모달 -->
+      <div id="writeModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>새 글 작성</h2>
+            <span class="close">&times;</span>
+          </div>
+          <form id="writeForm">
+            <div class="form-group">
+              <label for="title">제목 *</label>
+              <input type="text" id="title" name="title" required />
+            </div>
+            <div class="form-group">
+              <label for="category">카테고리 *</label>
+              <select id="category" name="category" required>
+                <option value="">카테고리 선택</option>
+                <option value="한줄 지식/잡학">한줄 지식/잡학</option>
+                <option value="하루 한생각">하루 한생각</option>
+                <option value="기술 팁">기술 팁</option>
+                <option value="경제 상식">경제 상식</option>
+                <option value="과학적 상식">과학적 상식</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="content">내용</label>
+              <textarea
+                id="content"
+                name="content"
+                rows="6"
+                placeholder="글 내용을 입력하세요..."
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="file">파일 첨부</label>
+              <input
+                type="file"
+                id="file"
+                name="file"
+                accept=".pdf,.doc,.docx,.txt"
+              />
+              <small>PDF, Word, 텍스트 파일만 업로드 가능합니다.</small>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn-cancel">취소</button>
+              <button type="submit" class="btn-submit">등록</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <p>Copyright ⓒ <span id="year">2024</span> Hoki Lee.</p>
+    </footer>
+
+    <script>
+      // 연도 표시 (안전하게)
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+
+      // 게시판 데이터 (외부 파일에서 불러옴)
+      const boardData = [
+        ...dailyThoughtsData,
+        ...oneLineKnowledgeData
+      ];
+
+      // 페이지네이션 설정
+          link: 'one-line-knowledge/trivia-detail-58.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-08',
+          views: 0,
+        },
+        {
+          id: 57,
+          title: '세계에서 가장 빠른 절지동물은?',
+          link: 'one-line-knowledge/trivia-detail-57.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-07',
+          views: 0,
+        },
+        {
+          id: 56,
+          title: '인간의 시신경은 하루에 몇 개의 신호를 전달할까?',
+          link: 'one-line-knowledge/trivia-detail-56.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-06',
+          views: 0,
+        },
+        {
+          id: 55,
+          title: '세계에서 가장 큰 절지동물은?',
+          link: 'one-line-knowledge/trivia-detail-55.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-05',
+          views: 0,
+        },
+        {
+          id: 54,
+          title:
+            '인간의 시상하부는 하루에 몇 마이크로그램의 호르몬을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-54.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-04',
+          views: 0,
+        },
+        {
+          id: 53,
+          title: '세계에서 가장 빠른 조류는?',
+          link: 'one-line-knowledge/trivia-detail-53.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-03',
+          views: 0,
+        },
+        {
+          id: 52,
+          title:
+            '인간의 송과체는 하루에 몇 마이크로그램의 멜라토닌을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-52.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-02',
+          views: 0,
+        },
+        {
+          id: 51,
+          title: '세계에서 가장 큰 조류는?',
+          link: 'one-line-knowledge/trivia-detail-51.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-01',
+          views: 0,
+        },
+        {
+          id: 50,
+          title:
+            '인간의 뇌하수체는 하루에 몇 마이크로그램의 성장호르몬을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-50.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-30',
+          views: 0,
+        },
+        {
+          id: 49,
+          title: '세계에서 가장 빠른 어류는?',
+          link: 'one-line-knowledge/trivia-detail-49.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-29',
+          views: 0,
+        },
+        {
+          id: 48,
+          title: '인간의 부신은 하루에 몇 마이크로그램의 코르티솔을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-48.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-28',
+          views: 0,
+        },
+        {
+          id: 47,
+          title: '세계에서 가장 큰 어류는?',
+          link: 'one-line-knowledge/trivia-detail-47.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-27',
+          views: 0,
+        },
+        {
+          id: 46,
+          title: '인간의 갑상선은 하루에 몇 마이크로그램의 호르몬을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-46.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-26',
+          views: 0,
+        },
+        {
+          id: 45,
+          title: '세계에서 가장 빠른 양서류는?',
+          link: 'one-line-knowledge/trivia-detail-45.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-25',
+          views: 0,
+        },
+        {
+          id: 44,
+          title: '인간의 흉선은 하루에 몇 개의 T세포를 생성할까?',
+          link: 'one-line-knowledge/trivia-detail-44.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-24',
+          views: 0,
+        },
+        {
+          id: 43,
+          title: '세계에서 가장 큰 양서류는?',
+          link: 'one-line-knowledge/trivia-detail-43.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-23',
+          views: 0,
+        },
+        {
+          id: 42,
+          title: '인간의 비장은 하루에 몇 개의 적혈구를 재생할까?',
+          link: 'one-line-knowledge/trivia-detail-42.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-22',
+          views: 0,
+        },
+        {
+          id: 41,
+          title: '세계에서 가장 빠른 파충류는?',
+          link: 'one-line-knowledge/trivia-detail-41.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-21',
+          views: 0,
+        },
+        {
+          id: 40,
+          title: '인간의 담낭은 하루에 몇 리터의 담즙을 저장할까?',
+          link: 'one-line-knowledge/trivia-detail-40.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-20',
+          views: 0,
+        },
+        {
+          id: 39,
+          title: '세계에서 가장 큰 파충류는?',
+          link: 'one-line-knowledge/trivia-detail-39.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-19',
+          views: 0,
+        },
+        {
+          id: 38,
+          title: '인간의 췌장은 하루에 몇 리터의 소화액을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-38.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-18',
+          views: 0,
+        },
+        {
+          id: 37,
+          title: '세계에서 가장 빠른 곤충은?',
+          link: 'one-line-knowledge/trivia-detail-37.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-17',
+          views: 0,
+        },
+        {
+          id: 36,
+          title: '인간의 위는 하루에 몇 리터의 음식을 소화할까?',
+          link: 'one-line-knowledge/trivia-detail-36.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-16',
+          views: 0,
+        },
+        {
+          id: 35,
+          title: '세계에서 가장 큰 포유류는?',
+          link: 'one-line-knowledge/trivia-detail-35.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-15',
+          views: 0,
+        },
+        {
+          id: 34,
+          title: '인간의 신장은 하루에 몇 리터의 소변을 생성할까?',
+          link: 'one-line-knowledge/trivia-detail-34.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-14',
+          views: 0,
+        },
+        {
+          id: 33,
+          title: '세계에서 가장 빠른 육상 동물은?',
+          link: 'one-line-knowledge/trivia-detail-33.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-13',
+          views: 0,
+        },
+        {
+          id: 32,
+          title: '인간의 폐는 하루에 몇 번 숨을 쉴까?',
+          link: 'one-line-knowledge/trivia-detail-32.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-12',
+          views: 0,
+        },
+        {
+          id: 31,
+          title: '세계에서 가장 큰 곤충은?',
+          link: 'one-line-knowledge/trivia-detail-31.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-11',
+          views: 0,
+        },
+        {
+          id: 42,
+          title: '인간의 비장은 하루에 몇 개의 적혈구를 재생할까?',
+          link: 'one-line-knowledge/trivia-detail-42.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-22',
+          views: 0,
+        },
+        {
+          id: 43,
+          title: '세계에서 가장 큰 양서류는?',
+          link: 'one-line-knowledge/trivia-detail-43.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-23',
+          views: 0,
+        },
+        {
+          id: 44,
+          title: '인간의 흉선은 하루에 몇 개의 T세포를 생성할까?',
+          link: 'one-line-knowledge/trivia-detail-44.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-24',
+          views: 0,
+        },
+        {
+          id: 45,
+          title: '세계에서 가장 빠른 양서류는?',
+          link: 'one-line-knowledge/trivia-detail-45.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-25',
+          views: 0,
+        },
+        {
+          id: 46,
+          title: '인간의 갑상선은 하루에 몇 마이크로그램의 호르몬을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-46.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-26',
+          views: 0,
+        },
+        {
+          id: 47,
+          title: '세계에서 가장 큰 어류는?',
+          link: 'one-line-knowledge/trivia-detail-47.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-27',
+          views: 0,
+        },
+        {
+          id: 48,
+          title: '인간의 부신은 하루에 몇 마이크로그램의 코르티솔을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-48.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-28',
+          views: 0,
+        },
+        {
+          id: 49,
+          title: '세계에서 가장 빠른 어류는?',
+          link: 'one-line-knowledge/trivia-detail-49.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-29',
+          views: 0,
+        },
+        {
+          id: 50,
+          title:
+            '인간의 뇌하수체는 하루에 몇 마이크로그램의 성장호르몬을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-50.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '07-30',
+          views: 0,
+        },
+        {
+          id: 51,
+          title: '세계에서 가장 큰 조류는?',
+          link: 'one-line-knowledge/trivia-detail-51.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-01',
+          views: 0,
+        },
+        {
+          id: 52,
+          title:
+            '인간의 송과체는 하루에 몇 마이크로그램의 멜라토닌을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-52.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-02',
+          views: 0,
+        },
+        {
+          id: 53,
+          title: '세계에서 가장 빠른 조류는?',
+          link: 'one-line-knowledge/trivia-detail-53.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-03',
+          views: 0,
+        },
+        {
+          id: 54,
+          title:
+            '인간의 시상하부는 하루에 몇 마이크로그램의 호르몬을 분비할까?',
+          link: 'one-line-knowledge/trivia-detail-54.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-04',
+          views: 0,
+        },
+        {
+          id: 55,
+          title: '세계에서 가장 큰 절지동물은?',
+          link: 'one-line-knowledge/trivia-detail-55.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-05',
+          views: 0,
+        },
+        {
+          id: 56,
+          title: '인간의 시신경은 하루에 몇 개의 신호를 전달할까?',
+          link: 'one-line-knowledge/trivia-detail-56.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-06',
+          views: 0,
+        },
+        {
+          id: 57,
+          title: '세계에서 가장 빠른 절지동물은?',
+          link: 'one-line-knowledge/trivia-detail-57.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-07',
+          views: 0,
+        },
+        {
+          id: 58,
+          title: '인간의 청신경은 하루에 몇 개의 소리를 인식할까?',
+          link: 'one-line-knowledge/trivia-detail-58.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-08',
+          views: 0,
+        },
+        {
+          id: 59,
+          title: '세계에서 가장 큰 연체동물은?',
+          link: 'one-line-knowledge/trivia-detail-59.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-09',
+          views: 0,
+        },
+        {
+          id: 60,
+          title: '인간의 미각신경은 하루에 몇 가지 맛을 구분할까?',
+          link: 'one-line-knowledge/trivia-detail-60.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-10',
+          views: 0,
+        },
+        {
+          id: 61,
+          title: '세계에서 가장 빠른 연체동물은?',
+          link: 'one-line-knowledge/trivia-detail-61.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-11',
+          views: 0,
+        },
+        {
+          id: 62,
+          title: '인간의 후각신경은 하루에 몇 가지 냄새를 구분할까?',
+          link: 'one-line-knowledge/trivia-detail-62.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-12',
+          views: 0,
+        },
+        {
+          id: 63,
+          title: '세계에서 가장 큰 환형동물은?',
+          link: 'one-line-knowledge/trivia-detail-63.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-13',
+          views: 0,
+        },
+        {
+          id: 64,
+          title: '인간의 촉각신경은 하루에 몇 가지 감각을 인식할까?',
+          link: 'one-line-knowledge/trivia-detail-64.html',
+          category: '한줄 지식/잡학',
+          author: '이호기',
+          date: '08-14',
+          views: 0,
+        },
+      ];
+
+      // 페이지네이션 설정
+      const itemsPerPage = 10;
+      let currentPage = 1;
+
+      // 검색 및 필터 변수
+      let filteredData = [...boardData];
+      let searchTerm = '';
+      let selectedCategory = '';
+      let selectedAuthor = '';
+
+      // 7일 이내 게시글인지 자동 판단하는 함수
+      function isNewPost(postDate) {
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const postDateObj = new Date(`${currentYear}-${postDate}`);
+
+        // 올해가 아닌 경우 작년으로 계산
+        if (postDateObj > today) {
+          postDateObj.setFullYear(currentYear - 1);
+        }
+
+        const diffTime = today - postDateObj;
+        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+
+        return diffDays <= 7;
+      }
+
+      // 조회수 관리 함수들
+      function getViews(id) {
+        return parseInt(localStorage.getItem(`today_views_${id}`)) || 0;
+      }
+
+      function increaseViews(id) {
+        const currentViews = getViews(id);
+        const newViews = currentViews + 1;
+        localStorage.setItem(`today_views_${id}`, newViews);
+        return newViews;
+      }
+
+      function updateViewsDisplay(id, viewsElement) {
+        const views = getViews(id);
+        viewsElement.textContent = views;
+      }
+
+      // 검색 및 필터링 함수
+      function filterBoardData() {
+        filteredData = boardData.filter((item) => {
+          // 검색어 필터링 (제목과 내용에서 검색)
+          const matchesSearch =
+            searchTerm === '' ||
+            item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            (item.content &&
+              item.content.toLowerCase().includes(searchTerm.toLowerCase()));
+
+          // 카테고리 필터링
+          const matchesCategory =
+            selectedCategory === '' || item.category === selectedCategory;
+
+          // 작성자 필터링
+          const matchesAuthor =
+            selectedAuthor === '' || item.author === selectedAuthor;
+
+          return matchesSearch && matchesCategory && matchesAuthor;
+        });
+
+        // 필터링 후 첫 페이지로 이동
+        currentPage = 1;
+        renderBoardTable(currentPage);
+        renderPagination();
+        updateResultCount();
+      }
+
+      // 게시판 테이블 렌더링
+      function renderBoardTable(page) {
+        const tbody = document.getElementById('board-tbody');
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const pageData = filteredData.slice(startIndex, endIndex);
+
+        tbody.innerHTML = '';
+
+        pageData.forEach((item) => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td class="col-number">${item.id}</td>
+            <td class="col-title">
+              <a href="${item.link}" ${
+            item.link !== '#' ? 'target="_blank"' : ''
+          } onclick="handleLinkClick(${item.id}, '${item.link}')">${
+            item.title
+          }</a>
+              ${
+                isNewPost(item.date) ? '<span class="new-badge">NEW</span>' : ''
+              }
+            </td>
+            <td class="col-category">${item.category}</td>
+            <td class="col-author">${item.author}</td>
+            <td class="col-date">${item.date}</td>
+            <td class="col-views" id="views_${item.id}">0</td>
+          `;
+          tbody.appendChild(row);
+
+          // 조회수 표시 업데이트
+          updateViewsDisplay(
+            item.id,
+            document.getElementById(`views_${item.id}`)
+          );
+        });
+      }
+
+      // 페이지네이션 렌더링
+      function renderPagination() {
+        const pagination = document.getElementById('pagination');
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+        let paginationHTML = '';
+
+        if (totalPages > 1) {
+          // 이전 페이지 버튼
+          if (currentPage > 1) {
+            paginationHTML += `<button onclick="changePage(${
+              currentPage - 1
+            })" class="page-btn">이전</button>`;
+          }
+
+          // 페이지 번호들
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === currentPage) {
+              paginationHTML += `<button class="page-btn active">${i}</button>`;
+            } else {
+              paginationHTML += `<button onclick="changePage(${i})" class="page-btn">${i}</button>`;
+            }
+          }
+
+          // 다음 페이지 버튼
+          if (currentPage < totalPages) {
+            paginationHTML += `<button onclick="changePage(${
+              currentPage + 1
+            })" class="page-btn">다음</button>`;
+          }
+        }
+
+        pagination.innerHTML = paginationHTML;
+      }
+
+      // 페이지 변경
+      function changePage(page) {
+        currentPage = page;
+        renderBoardTable(currentPage);
+        renderPagination();
+      }
+
+      // 링크 클릭 처리 (조회수 증가)
+      function handleLinkClick(id, link) {
+        if (link !== '#') {
+          // 조회수 증가
+          const newViews = increaseViews(id);
+
+          // 화면에 즉시 반영
+          const viewsElement = document.getElementById(`views_${id}`);
+          if (viewsElement) {
+            viewsElement.textContent = newViews;
+          }
+
+          // 새 탭에서 링크 열기
+          window.open(link, '_blank');
+        }
+      }
+
+      // 왼쪽 네비게이션 메뉴 필터링 기능
+      function setupLeftNavigationFilter() {
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach((link) => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // 모든 네비게이션 링크에서 active 클래스 제거
+            navLinks.forEach((navLink) => {
+              navLink.classList.remove('active');
+            });
+
+            // 클릭된 링크에 active 클래스 추가
+            this.classList.add('active');
+
+            // 해당 카테고리에 맞는 데이터 필터링
+            const targetId = this.getAttribute('href').substring(1);
+            filterDataByLeftNav(targetId);
+          });
+        });
+      }
+
+      // 왼쪽 네비게이션에 따른 데이터 필터링
+      function filterDataByLeftNav(category) {
+        let filteredData = [];
+
+        switch (category) {
+          case 'today-knowledge':
+            // 한줄 지식/잡학 카테고리 데이터
+            filteredData = boardData.filter(
+              (item) => item.category === '한줄 지식/잡학'
+            );
+            break;
+          case 'daily-thought':
+            // 하루 한생각 카테고리 데이터
+            filteredData = boardData.filter(
+              (item) => item.category === '하루 한생각'
+            );
+            break;
+          case 'tech-tip':
+            // 기술 팁 카테고리 데이터
+            filteredData = boardData.filter(
+              (item) => item.category === '기술 팁'
+            );
+            break;
+          case 'economy':
+            // 경제 상식 카테고리 데이터
+            filteredData = boardData.filter(
+              (item) => item.category === '경제 상식'
+            );
+            break;
+          case 'science':
+            // 과학적 상식 카테고리 데이터
+            filteredData = boardData.filter(
+              (item) => item.category === '과학적 상식'
+            );
+            break;
+          default:
+            // 전체 데이터
+            filteredData = boardData;
+            break;
+        }
+
+        // 필터링된 데이터로 게시판 테이블 업데이트
+        renderFilteredBoardTable(filteredData);
+        updateResultCount(filteredData.length);
+      }
+
+      // 필터링된 데이터로 게시판 테이블 렌더링
+      function renderFilteredBoardTable(data) {
+        const tbody = document.getElementById('board-tbody');
+        tbody.innerHTML = '';
+
+        data.forEach((item) => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td class="col-number">${item.id}</td>
+            <td class="col-title">
+              <a href="${item.link}" ${
+            item.link !== '#' ? 'target="_blank"' : ''
+          } onclick="handleLinkClick(${item.id}, '${item.link}')">${
+            item.title
+          }</a>
+              ${
+                isNewPost(item.date) ? '<span class="new-badge">NEW</span>' : ''
+              }
+            </td>
+            <td class="col-category">${item.category}</td>
+            <td class="col-author">${item.author}</td>
+            <td class="col-date">${item.date}</td>
+            <td class="col-views" id="views_${item.id}">0</td>
+          `;
+          tbody.appendChild(row);
+
+          // 조회수 표시 업데이트
+          updateViewsDisplay(
+            item.id,
+            document.getElementById(`views_${item.id}`)
+          );
+        });
+      }
+
+      // 검색 및 필터 이벤트 리스너 설정
+      function setupSearchAndFilter() {
+        const searchInput = document.getElementById('search-input');
+        const categoryFilter = document.getElementById('category-filter');
+        const authorFilter = document.getElementById('author-filter');
+        const resetBtn = document.getElementById('reset-filters');
+
+        if (searchInput) {
+          searchInput.addEventListener('input', handleSearchChange);
+        }
+        if (categoryFilter) {
+          categoryFilter.addEventListener('change', handleCategoryFilter);
+        }
+        if (authorFilter) {
+          authorFilter.addEventListener('change', handleAuthorFilter);
+        }
+        if (resetBtn) {
+          resetBtn.addEventListener('click', resetFilters);
+        }
+      }
+
+      // 검색어 변경 처리
+      function handleSearchChange(e) {
+        searchTerm = e.target.value;
+        filterBoardData();
+      }
+
+      // 카테고리 필터 변경 처리
+      function handleCategoryFilter(e) {
+        selectedCategory = e.target.value;
+        filterBoardData();
+      }
+
+      // 작성자 필터 변경 처리
+      function handleAuthorFilter(e) {
+        selectedAuthor = e.target.value;
+        filterBoardData();
+      }
+
+      // 필터 초기화
+      function resetFilters() {
+        searchTerm = '';
+        selectedCategory = '';
+        selectedAuthor = '';
+
+        // 입력 필드 초기화
+        const searchInput = document.getElementById('search-input');
+        const categoryFilter = document.getElementById('category-filter');
+        const authorFilter = document.getElementById('author-filter');
+
+        if (searchInput) searchInput.value = '';
+        if (categoryFilter) categoryFilter.value = '';
+        if (authorFilter) authorFilter.value = '';
+
+        filterBoardData();
+      }
+
+      // 결과 개수 업데이트
+      function updateResultCount() {
+        const resultCount = document.getElementById('result-count');
+        if (resultCount) {
+          resultCount.textContent = `총 ${filteredData.length}건`;
+        }
+      }
+
+      // 간단한 모달 함수들
+      function openWriteModal() {
+        console.log('openWriteModal 호출됨');
+        const modal = document.getElementById('writeModal');
+        if (modal) {
+          modal.style.display = 'block';
+          console.log('모달 열림');
+        } else {
+          console.log('모달을 찾을 수 없음');
+        }
+      }
+
+      function closeWriteModal() {
+        console.log('closeWriteModal 호출됨');
+        const modal = document.getElementById('writeModal');
+        if (modal) {
+          modal.style.display = 'none';
+          console.log('모달 닫힘');
+        } else {
+          console.log('모달을 찾을 수 없음');
+        }
+      }
+
+      // 간단한 모달 설정
+      function setupWriteModal() {
+        console.log('=== 모달 설정 시작 ===');
+
+        // 닫기 버튼 이벤트
+        const closeBtn = document.querySelector('.close');
+        if (closeBtn) {
+          console.log('닫기 버튼 찾음, 이벤트 추가');
+          closeBtn.onclick = closeWriteModal;
+        } else {
+          console.log('닫기 버튼을 찾을 수 없음');
+        }
+
+        // 취소 버튼 이벤트
+        const cancelBtn = document.querySelector('.btn-cancel');
+        if (cancelBtn) {
+          console.log('취소 버튼 찾음, 이벤트 추가');
+          cancelBtn.onclick = closeWriteModal;
+        } else {
+          console.log('취소 버튼을 찾을 수 없음');
+        }
+
+        console.log('=== 모달 설정 완료 ===');
+      }
+
+      // 초기화 및 이벤트 리스너 설정
+      function initializeBoard() {
+        // 초기 렌더링
+        renderBoardTable(1);
+        renderPagination();
+        updateResultCount();
+        setupSearchAndFilter();
+        setupLeftNavigationFilter();
+        setupWriteModal();
+
+        // 페이지 로드 시 "한줄 지식/잡학" 카테고리 자동 선택
+        setTimeout(() => {
+          const knowledgeLink = document.querySelector(
+            'a[href="#today-knowledge"]'
+          );
+          if (knowledgeLink) {
+            knowledgeLink.classList.add('active');
+            filterDataByLeftNav('today-knowledge');
+          }
+        }, 100);
+      }
+
+      // 간단한 테스트 함수
+      function testModal() {
+        console.log('=== 테스트 시작 ===');
+
+        // 모달 열기
+        openWriteModal();
+
+        // 버튼들 확인
+        const closeBtn = document.querySelector('.close');
+        const cancelBtn = document.querySelector('.btn-cancel');
+
+        console.log('닫기 버튼:', closeBtn);
+        console.log('취소 버튼:', cancelBtn);
+
+        // 직접 이벤트 추가
+        if (closeBtn) {
+          closeBtn.onclick = function () {
+            console.log('닫기 버튼 클릭됨!');
+            closeWriteModal();
+          };
+        }
+
+        if (cancelBtn) {
+          cancelBtn.onclick = function () {
+            console.log('취소 버튼 클릭됨!');
+            closeWriteModal();
+          };
+        }
+
+        console.log('=== 테스트 완료 ===');
+      }
+
+      // 이 함수는 더 이상 사용되지 않습니다 (setupWriteModal로 대체됨)
+
+      // 페이지 로드 시 초기화
+      document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM이 로드되었습니다. 초기화를 시작합니다.');
+
+        // 모달 요소들 확인
+        const modal = document.getElementById('writeModal');
+        const writeBtn = document.querySelector('.write-btn');
+        const closeBtn = document.querySelector('.close');
+        const cancelBtn = document.querySelector('.btn-cancel');
+        const writeForm = document.getElementById('writeForm');
+
+        console.log('=== 모달 요소 확인 ===');
+        console.log('모달:', modal);
+        console.log('글쓰기 버튼:', writeBtn);
+        console.log('닫기 버튼:', closeBtn);
+        console.log('취소 버튼:', cancelBtn);
+        console.log('폼:', writeForm);
+        console.log('========================');
+
+        initializeBoard();
+      });
+    </script>
+  </body>
+</html>

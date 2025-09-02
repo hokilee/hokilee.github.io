@@ -1,0 +1,264 @@
+/* 과학적 상식 Detail 페이지 스타일 */
+
+body {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.detail-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail-box h1 {
+  background: linear-gradient(135deg, #2196f3 0%, #00bcd4 100%);
+  color: white;
+  padding: 40px 30px;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.date {
+  background: #f8f9fa;
+  color: #6c757d;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px solid #e9ecef;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 40px 3px;
+  background: white;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.content strong {
+  color: #1565c0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  border-left: 4px solid #1565c0;
+  padding-left: 15px;
+}
+
+/* 정보 박스 */
+.info-box {
+  background: linear-gradient(135deg, #e8f4fd 0%, #d4edda 100%);
+  border-left: 5px solid #2196f3;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.1);
+}
+
+.info-box h3 {
+  color: #1565c0;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info-box p {
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* 팁 박스 */
+.tip-box {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+  border-left: 5px solid #00bcd4;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.1);
+}
+
+.tip-box h3 {
+  color: #008ba3;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.tip-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.tip-box li {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* 실험 박스 */
+.reflection-box {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  border-left: 5px solid #009688;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 150, 136, 0.1);
+}
+
+.reflection-box h3 {
+  color: #00695c;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.reflection-box p {
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* 버튼 영역 */
+.button-row {
+  background: #f8f9fa;
+  padding: 30px;
+  border-top: 1px solid #e9ecef;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.button-center-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.back {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+}
+
+/* 푸터 */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #495057;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(33, 150, 243, 0.2);
+  margin-top: 20px;
+  background: rgba(33, 150, 243, 0.1);
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .detail-box {
+    padding: 25px;
+    margin: 0;
+  }
+
+  .detail-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .info-box,
+  .tip-box,
+  .reflection-box {
+    padding: 20px;
+  }
+
+  .button-center-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* 애니메이션 효과 */
+.detail-box {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-box,
+.tip-box,
+.reflection-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover,
+.tip-box:hover,
+.reflection-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.15);
+}

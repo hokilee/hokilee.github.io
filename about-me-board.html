@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이력서 & 자기소개서 - 이호기</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="board-styles.css" />
+  </head>
+  <body>
+    <!-- 히어로 배너 -->
+    <section class="hero-banner about-me-hero">
+      <div class="hero-content">
+        <h1>About Me</h1>
+        <p>
+          자동차 기술과 서비스 관리 경험을 바탕으로 한 저의 경험과 전문성을
+          확인하세요
+        </p>
+      </div>
+    </section>
+
+    <!-- 메인 네비게이션 -->
+    <nav class="main-navigation">
+      <div class="nav-container">
+        <div class="nav-item active">
+          <img
+            src="web-image/about-me-icon.png"
+            alt="About Me"
+            class="nav-icon"
+          />
+          <span>About Me</span>
+        </div>
+        <div class="nav-item">
+          <a href="career-board.html">
+            <img
+              src="web-image/career-icon.png"
+              alt="경력 이야기"
+              class="nav-icon"
+            />
+            <span>경력 이야기</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="today-content-board.html">
+            <img
+              src="web-image/information-icon.png"
+              alt="오늘의 콘텐츠"
+              class="nav-icon"
+            />
+            <span>오늘의 콘텐츠</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="latest-content-board.html">
+            <img
+              src="web-image/books-icon.png"
+              alt="기술자료"
+              class="nav-icon"
+            />
+            <span>기술자료</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
+          <span>연락처</span>
+        </div>
+        <div class="nav-item">
+          <a href="index.html">
+            <img
+              src="web-image/return-icon.png"
+              alt="초기화면"
+              class="nav-icon"
+            />
+            <span>초기화면</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <main class="main-content about-me-content">
+      <div class="board-container">
+        <!-- 메인 콘텐츠 -->
+        <div class="board-main">
+          <div class="board-header">
+            <h1>About Me 소개</h1>
+            <p>
+              자동차 기술과 서비스 관리 경험을 바탕으로 한 이력서와 자기소개서를
+              통해 나의 경험을 공유합니다
+            </p>
+          </div>
+
+          <!-- 검색 및 필터 바 -->
+          <div class="search-filter-bar">
+            <div class="search-group">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="이력서 또는 자기소개서 검색..."
+                class="search-input"
+              />
+              <button class="search-btn">🔍</button>
+            </div>
+            <div class="filter-group">
+              <select id="category-filter" class="category-filter">
+                <option value="">전체 카테고리</option>
+                <option value="자기소개">자기소개</option>
+                <option value="이력서">이력서</option>
+                <option value="경험담">경험담</option>
+                <option value="기타">기타</option>
+              </select>
+              <select id="author-filter" class="author-filter">
+                <option value="">전체 작성자</option>
+                <option value="이호기">이호기</option>
+              </select>
+              <button id="reset-filters" class="reset-btn">필터 초기화</button>
+            </div>
+          </div>
+          <div class="result-info">
+            <span id="result-count">총 3건</span>
+          </div>
+
+          <!-- 게시판 테이블 -->
+          <div class="board-table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="col-number">번호</th>
+                  <th class="col-title">제목</th>
+                  <th class="col-category">카테고리</th>
+                  <th class="col-author">작성자</th>
+                  <th class="col-date">등록일</th>
+                  <th class="col-views">조회수</th>
+                </tr>
+              </thead>
+              <tbody id="board-tbody">
+                <!-- 데이터는 JavaScript로 동적 생성됩니다 -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 페이지네이션 -->
+          <div class="pagination" id="pagination">
+            <!-- 페이지네이션은 JavaScript로 동적 생성됩니다 -->
+          </div>
+
+          <!-- 액션 버튼 -->
+          <div class="board-actions">
+            <button class="write-btn" onclick="openWriteModal()">
+              <span>✏️</span> 글쓰기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 글쓰기 모달 -->
+      <div id="writeModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>새 글 작성</h2>
+            <span class="close">&times;</span>
+          </div>
+          <form id="writeForm">
+            <div class="form-group">
+              <label for="title">제목 *</label>
+              <input type="text" id="title" name="title" required />
+            </div>
+            <div class="form-group">
+              <label for="category">카테고리 *</label>
+              <select id="category" name="category" required>
+                <option value="">카테고리 선택</option>
+                <option value="자기소개">자기소개</option>
+                <option value="이력서">이력서</option>
+                <option value="경험담">경험담</option>
+                <option value="기타">기타</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="content">내용</label>
+              <textarea
+                id="content"
+                name="content"
+                rows="6"
+                placeholder="글 내용을 입력하세요..."
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="file">파일 첨부</label>
+              <input
+                type="file"
+                id="file"
+                name="file"
+                accept=".pdf,.doc,.docx,.txt"
+              />
+              <small>PDF, Word, 텍스트 파일만 업로드 가능합니다.</small>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn-cancel">취소</button>
+              <button type="submit" class="btn-submit">등록</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 이호기. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+      // 게시판 데이터
+      const boardData = [
+        {
+          id: 4,
+          title: '이호기의 영문 자기소개서',
+          link: 'resume/Hoki_Lee_Cover_Letter_EN.pdf',
+          category: '자기소개',
+          author: '이호기',
+          date: '06-01',
+          views: 0,
+          content: '영문으로 작성된 이호기의 자기소개서입니다.',
+        },
+        {
+          id: 3,
+          title: '이호기의 한글 자기소개서',
+          link: 'resume/Hoki_Lee_Cover_Letter_KR.pdf',
+          category: '자기소개',
+          author: '이호기',
+          date: '06-01',
+          views: 0,
+          content: '한글로 작성된 이호기의 자기소개서입니다.',
+        },
+        {
+          id: 2,
+          title: '이호기의 영문 이력서',
+          link: 'resume/Hoki_Lee_Resume_EN.pdf',
+          category: '이력서',
+          author: '이호기',
+          date: '06-01',
+          views: 0,
+          content: '영문으로 작성된 이호기의 이력서입니다.',
+        },
+        {
+          id: 1,
+          title: '이호기의 한글 이력서',
+          link: 'resume/Hoki_Lee_Resume_KR.pdf',
+          category: '이력서',
+          author: '이호기',
+          date: '06-01',
+          views: 0,
+          content: '한글로 작성된 이호기의 이력서입니다.',
+        },
+      ];
+
+      // 페이지네이션 설정
+      const itemsPerPage = 10;
+      let currentPage = 1;
+
+      // 검색 및 필터 변수
+      let filteredData = [...boardData];
+      let searchTerm = '';
+      let selectedCategory = '';
+      let selectedAuthor = '';
+
+      // 7일 이내 게시글인지 자동 판단하는 함수
+      function isNewPost(postDate) {
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const postDateObj = new Date(`${currentYear}-${postDate}`);
+
+        // 올해가 아닌 경우 작년으로 계산
+        if (postDateObj > today) {
+          postDateObj.setFullYear(currentYear - 1);
+        }
+
+        const diffTime = today - postDateObj;
+        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+
+        return diffDays <= 7;
+      }
+
+      // 조회수 관리 함수들
+      function getViews(id) {
+        return parseInt(localStorage.getItem(`about_views_${id}`)) || 0;
+      }
+
+      function increaseViews(id) {
+        const currentViews = getViews(id);
+        const newViews = currentViews + 1;
+        localStorage.setItem(`about_views_${id}`, newViews);
+        return newViews;
+      }
+
+      function updateViewsDisplay(id, viewsElement) {
+        const views = getViews(id);
+        viewsElement.textContent = views;
+      }
+
+      // 검색 및 필터링 함수
+      function filterBoardData() {
+        filteredData = boardData.filter((item) => {
+          // 검색어 필터링 (제목과 내용에서 검색)
+          const matchesSearch =
+            searchTerm === '' ||
+            item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            (item.content &&
+              item.content.toLowerCase().includes(searchTerm.toLowerCase()));
+
+          // 카테고리 필터링
+          const matchesCategory =
+            selectedCategory === '' || item.category === selectedCategory;
+
+          // 작성자 필터링
+          const matchesAuthor =
+            selectedAuthor === '' || item.author === selectedAuthor;
+
+          return matchesSearch && matchesCategory && matchesAuthor;
+        });
+
+        // 필터링 후 첫 페이지로 이동
+        currentPage = 1;
+        renderBoardTable(currentPage);
+        renderPagination();
+        updateResultCount();
+      }
+
+      // 검색어 변경 처리
+      function handleSearchChange(event) {
+        searchTerm = event.target.value;
+        filterBoardData();
+      }
+
+      // 카테고리 필터 변경 처리
+      function handleCategoryFilter(event) {
+        selectedCategory = event.target.value;
+        filterBoardData();
+      }
+
+      // 작성자 필터 변경 처리
+      function handleAuthorFilter(event) {
+        selectedAuthor = event.target.value;
+        filterBoardData();
+      }
+
+      // 필터 초기화
+      function resetFilters() {
+        searchTerm = '';
+        selectedCategory = '';
+        selectedAuthor = '';
+
+        // 입력 필드 초기화
+        document.getElementById('search-input').value = '';
+        document.getElementById('category-filter').value = '';
+        document.getElementById('author-filter').value = '';
+
+        filterBoardData();
+      }
+
+      // 결과 개수 업데이트
+      function updateResultCount() {
+        const resultCount = document.getElementById('result-count');
+        if (resultCount) {
+          resultCount.textContent = `총 ${filteredData.length}건`;
+        }
+      }
+
+      // 게시판 테이블 렌더링
+      function renderBoardTable(page = 1) {
+        const tbody = document.getElementById('board-tbody');
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const pageData = filteredData.slice(startIndex, endIndex);
+
+        tbody.innerHTML = '';
+
+        pageData.forEach((item) => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td class="col-number">${item.id}</td>
+            <td class="col-title">
+              <a href="${item.link}" ${
+            item.link !== '#' ? 'target="_blank"' : ''
+          } onclick="handleLinkClick(${item.id}, '${item.link}')">${
+            item.title
+          }</a>
+              ${
+                isNewPost(item.date) ? '<span class="new-badge">NEW</span>' : ''
+              }
+            </td>
+            <td class="col-category">${item.category}</td>
+            <td class="col-author">${item.author}</td>
+            <td class="col-date">${item.date}</td>
+            <td class="col-views" id="views_${item.id}">0</td>
+          `;
+          tbody.appendChild(row);
+
+          // 조회수 표시 업데이트
+          updateViewsDisplay(
+            item.id,
+            document.getElementById(`views_${item.id}`)
+          );
+        });
+      }
+
+      // 페이지네이션 렌더링
+      function renderPagination() {
+        const pagination = document.getElementById('pagination');
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+        let paginationHTML = '';
+
+        if (totalPages > 1) {
+          // 이전 페이지 버튼
+          if (currentPage > 1) {
+            paginationHTML += `<button onclick="changePage(${
+              currentPage - 1
+            })" class="page-btn">이전</button>`;
+          }
+
+          // 페이지 번호들
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === currentPage) {
+              paginationHTML += `<button class="page-btn active">${i}</button>`;
+            } else {
+              paginationHTML += `<button onclick="changePage(${i})" class="page-btn">${i}</button>`;
+            }
+          }
+
+          // 다음 페이지 버튼
+          if (currentPage < totalPages) {
+            paginationHTML += `<button onclick="changePage(${
+              currentPage + 1
+            })" class="page-btn">다음</button>`;
+          }
+        }
+
+        pagination.innerHTML = paginationHTML;
+      }
+
+      // 페이지 변경
+      function changePage(page) {
+        currentPage = page;
+        renderBoardTable(currentPage);
+        renderPagination();
+      }
+
+      // 링크 클릭 처리 (조회수 증가)
+      function handleLinkClick(id, link) {
+        if (link !== '#') {
+          // 조회수 증가
+          const newViews = increaseViews(id);
+
+          // 화면에 즉시 반영
+          const viewsElement = document.getElementById(`views_${id}`);
+          if (viewsElement) {
+            viewsElement.textContent = newViews;
+          }
+
+          // 새 탭에서 링크 열기
+          window.open(link, '_blank');
+        }
+      }
+
+      // 검색 및 필터 이벤트 리스너 설정
+      function setupSearchAndFilter() {
+        const searchInput = document.getElementById('search-input');
+        const categoryFilter = document.getElementById('category-filter');
+        const authorFilter = document.getElementById('author-filter');
+        const resetBtn = document.getElementById('reset-filters');
+
+        if (searchInput) {
+          searchInput.addEventListener('input', handleSearchChange);
+        }
+        if (categoryFilter) {
+          categoryFilter.addEventListener('change', handleCategoryFilter);
+        }
+        if (authorFilter) {
+          authorFilter.addEventListener('change', handleAuthorFilter);
+        }
+        if (resetBtn) {
+          resetBtn.addEventListener('click', resetFilters);
+        }
+      }
+
+      // 글쓰기 모달 설정
+      function setupWriteModal() {
+        const modal = document.getElementById('writeModal');
+        const writeBtn = document.querySelector('.write-btn');
+        const closeBtn = document.querySelector('.close');
+        const cancelBtn = document.querySelector('.btn-cancel');
+        const writeForm = document.getElementById('writeForm');
+
+        // 글쓰기 버튼 클릭
+        writeBtn.addEventListener('click', openWriteModal);
+
+        // 닫기 버튼 클릭
+        closeBtn.addEventListener('click', closeWriteModal);
+
+        // 취소 버튼 클릭
+        cancelBtn.addEventListener('click', closeWriteModal);
+
+        // 모달 외부 클릭 시 닫기
+        window.addEventListener('click', function (event) {
+          if (event.target === modal) {
+            closeWriteModal();
+          }
+        });
+
+        // 폼 제출
+        writeForm.addEventListener('submit', handleWriteSubmit);
+      }
+
+      // 글쓰기 모달 열기
+      function openWriteModal() {
+        const modal = document.getElementById('writeModal');
+        modal.style.display = 'block';
+        document.getElementById('title').focus();
+      }
+
+      // 글쓰기 모달 닫기
+      function closeWriteModal() {
+        const modal = document.getElementById('writeModal');
+        modal.style.display = 'none';
+        document.getElementById('writeForm').reset();
+      }
+
+      // 글쓰기 폼 제출 처리
+      function handleWriteSubmit(event) {
+        event.preventDefault();
+
+        const title = document.getElementById('title').value;
+        const category = document.getElementById('category').value;
+        const content = document.getElementById('content').value;
+        const file = document.getElementById('file').files[0];
+
+        if (!title || !category) {
+          alert('제목과 카테고리는 필수 입력 항목입니다.');
+          return;
+        }
+
+        // 새 글 데이터 생성
+        const newPost = {
+          id: boardData.length + 1,
+          title: title,
+          link: '#', // 임시 링크
+          category: category,
+          author: '이호기',
+          date: getCurrentDate(),
+          views: 0,
+          isNew: true,
+          content: content,
+        };
+
+        // 게시판 데이터에 추가
+        boardData.unshift(newPost);
+
+        // 필터링된 데이터도 업데이트
+        filterBoardData();
+
+        // 모달 닫기
+        closeWriteModal();
+
+        // 성공 메시지
+        alert('글이 성공적으로 등록되었습니다!');
+      }
+
+      // 현재 날짜 가져오기 (MM-DD 형식)
+      function getCurrentDate() {
+        const now = new Date();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        return `${month}-${day}`;
+      }
+
+      // 초기 로드
+      document.addEventListener('DOMContentLoaded', function () {
+        renderBoardTable(currentPage);
+        renderPagination();
+        setupWriteModal();
+        setupSearchAndFilter();
+        updateResultCount();
+      });
+    </script>
+  </body>
+</html>

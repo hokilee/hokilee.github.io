@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="이호기의 오늘의 콘텐츠 게시판 - 자동차 기술과 서비스 관리 경험을 바탕으로 한 최신 콘텐츠와 정보를 제공합니다"
+    />
+    <meta name="author" content="Hoki Lee" />
+    <title>오늘의 콘텐츠 - 이호기</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="board-styles.css" />
+    <!-- 외부 데이터 파일들 -->
+    <script src="daily-thoughts/daily-thoughts-data.js"></script>
+    <script src="one-line-knowledge/one-line-knowledge-data.js"></script>
+    <script src="economics/economics-data.js"></script>
+    <script src="science/science-data.js"></script>
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- 히어로 배너 섹션 -->
+    <section
+      class="hero-banner today-hero"
+      id="heroBanner"
+      style="max-width: 1200px; margin: 0 auto"
+    >
+      <div class="hero-content">
+        <h1 id="heroTitle">오늘의 콘텐츠</h1>
+        <p id="heroDescription">
+          자동차 기술과 서비스 관리 경험을 바탕으로 한 최신 콘텐츠와 정보를
+          제공합니다
+        </p>
+      </div>
+    </section>
+
+    <!-- 네비게이션 바 -->
+    <nav class="main-navigation">
+      <div class="nav-container">
+        <div class="nav-item">
+          <a href="about-me-board.html">
+            <img
+              src="web-image/about-me-icon.png"
+              alt="About Me"
+              class="nav-icon"
+            />
+            <span>About Me</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="career-board.html">
+            <img
+              src="web-image/career-icon.png"
+              alt="경력 이야기"
+              class="nav-icon"
+            />
+            <span>경력 이야기</span>
+          </a>
+        </div>
+        <div class="nav-item active">
+          <img
+            src="web-image/information-icon.png"
+            alt="오늘의 콘텐츠"
+            class="nav-icon"
+          />
+          <span>오늘의 콘텐츠</span>
+        </div>
+        <div class="nav-item">
+          <a href="latest-content-board.html">
+            <img
+              src="web-image/books-icon.png"
+              alt="기술자료"
+              class="nav-icon"
+            />
+            <span>기술자료</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
+          <span>연락처</span>
+        </div>
+        <div class="nav-item">
+          <a href="index.html">
+            <img
+              src="web-image/return-icon.png"
+              alt="초기화면"
+              class="nav-icon"
+            />
+            <span>초기화면</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <main class="main-content today-content-board">
+      <div
+        class="board-container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 20px"
+      >
+        <!-- 왼쪽 네비게이션 바 -->
+        <div class="left-navigation">
+          <div class="nav-section">
+            <h3 class="nav-title">콘텐츠 카테고리</h3>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#today-knowledge" class="nav-link"> 한줄 지식/잡학 </a>
+              </li>
+              <hr class="nav-divider" />
+              <li class="nav-item">
+                <a href="#daily-thought" class="nav-link"> 하루 한생각 </a>
+              </li>
+              <hr class="nav-divider" />
+              <li class="nav-item">
+                <a href="#economics" class="nav-link"> 경제 상식 </a>
+              </li>
+              <hr class="nav-divider" />
+              <li class="nav-item">
+                <a href="#science" class="nav-link"> 과학적 상식 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 메인 게시판 영역 -->
+        <div class="board-main">
+          <!-- 게시판 헤더 -->
+          <div class="board-header">
+            <div class="board-title">
+              <h2>오늘의 콘텐츠</h2>
+              <span class="result-count">총 0개의 게시글</span>
+            </div>
+            <div class="board-actions">
+              <div class="search-filter-group">
+                <span style="margin-right: 10px; font-size: 1rem; color: #333"
+                  >제목 검색</span
+                >
+                <div class="search-box">
+                  <input
+                    type="text"
+                    id="searchInput"
+                    placeholder=""
+                    style="
+                      width: 350px;
+                      height: 38px;
+                      font-size: 1rem;
+                      padding: 6px 12px;
+                    "
+                  />
+                  <button type="button" id="searchBtn">
+                    <span>🔍</span>
+                  </button>
+                </div>
+              </div>
+              <button class="write-btn" onclick="openWriteModal()">
+                <span>✏️</span>
+                글쓰기
+              </button>
+            </div>
+          </div>
+
+          <!-- 게시판 테이블 -->
+          <div class="board-table-container">
+            <table class="board-table">
+              <thead>
+                <tr>
+                  <th class="col-number">번호</th>
+                  <th class="col-title">제목</th>
+                  <th class="col-author">작성자</th>
+                  <th class="col-date">등록일</th>
+                  <th class="col-views">조회수</th>
+                </tr>
+              </thead>
+              <tbody id="boardTableBody">
+                <!-- 동적으로 생성되는 게시글 목록 -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 페이지네이션 -->
+          <div class="pagination-container">
+            <div class="pagination" id="pagination">
+              <!-- 동적으로 생성되는 페이지네이션 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 글쓰기 모달 -->
+    <div id="writeModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>새 글 작성</h3>
+          <span class="close">&times;</span>
+        </div>
+        <form id="writeForm">
+          <div class="form-group">
+            <label for="writeTitle">제목</label>
+            <input
+              type="text"
+              id="writeTitle"
+              name="title"
+              required
+              placeholder="제목을 입력하세요"
+            />
+          </div>
+          <div class="form-group">
+            <label for="writeCategory">카테고리</label>
+            <select id="writeCategory" name="category" required>
+              <option value="">카테고리를 선택하세요</option>
+              <option value="한줄 지식/잡학">한줄 지식/잡학</option>
+              <option value="하루 한생각">하루 한생각</option>
+              <option value="경제 상식">경제 상식</option>
+              <option value="과학적 상식">과학적 상식</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="writeContent">내용</label>
+            <textarea
+              id="writeContent"
+              name="content"
+              required
+              placeholder="내용을 입력하세요"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn-cancel">취소</button>
+            <button type="submit" class="btn-submit">등록</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // 전역 변수
+      let currentPage = 1;
+      let itemsPerPage = 10;
+      let filteredData = [];
+      let currentFilter = '';
+
+      // 게시판 데이터 (외부 파일에서 불러옴)
+      let boardData = [];
+      let totalPages = 0;
+
+      // 데이터 로드 함수
+      function loadBoardData() {
+        try {
+          // 외부 데이터가 로드되었는지 확인
+          if (
+            typeof dailyThoughtsData !== 'undefined' &&
+            typeof oneLineKnowledgeData !== 'undefined' &&
+            typeof economicsData !== 'undefined' &&
+            typeof scienceData !== 'undefined'
+          ) {
+            boardData = [
+              ...dailyThoughtsData,
+              ...oneLineKnowledgeData,
+              ...economicsData,
+              ...scienceData,
+            ];
+
+            totalPages = Math.ceil(boardData.length / itemsPerPage);
+            console.log('데이터 로드 완료:', boardData.length);
+
+            // 초기화 실행
+            initializeBoard();
+          } else {
+            console.log('외부 데이터가 아직 로드되지 않음. 재시도...');
+            setTimeout(loadBoardData, 100);
+          }
+        } catch (error) {
+          console.error('데이터 로드 중 오류:', error);
+          setTimeout(loadBoardData, 100);
+        }
+      }
+
+      // 게시판 테이블 렌더링
+      function renderBoardTable(page) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const pageData = boardData.slice(startIndex, endIndex);
+
+        const tbody = document.getElementById('boardTableBody');
+        tbody.innerHTML = '';
+
+        pageData.forEach((item) => {
+          const row = document.createElement('tr');
+          row.className = 'board-row';
+
+          // NEW 배지 표시 (7일 이내)
+          const isNew = isWithinDays(item.date, 7);
+          const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
+
+          row.innerHTML = `
+            <td class="col-number">${item.id}</td>
+            <td class="col-title">
+              <a href="javascript:void(0)" onclick="handleLinkClick(${
+                item.id
+              }, '${item.link}')">${item.title}</a>
+              ${newBadge}
+            </td>
+            <td class="col-author">${item.author}</td>
+            <td class="col-date">${item.date}</td>
+            <td class="col-views">${getViewCount(item.id, item.views)}</td>
+          `;
+
+          tbody.appendChild(row);
+        });
+      }
+
+      // 필터링된 게시판 테이블 렌더링
+      function renderFilteredBoardTable(page) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const pageData = filteredData.slice(startIndex, endIndex);
+
+        const tbody = document.getElementById('boardTableBody');
+        tbody.innerHTML = '';
+
+        pageData.forEach((item) => {
+          const row = document.createElement('tr');
+          row.className = 'board-row';
+
+          // NEW 배지 표시 (7일 이내)
+          const isNew = isWithinDays(item.date, 7);
+          const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
+
+          row.innerHTML = `
+            <td class="col-number">${item.id}</td>
+            <td class="col-title">
+              <a href="javascript:void(0)" onclick="handleLinkClick(${
+                item.id
+              }, '${item.link}')">${item.title}</a>
+              ${newBadge}
+            </td>
+            <td class="col-author">${item.author}</td>
+            <td class="col-date">${item.date}</td>
+            <td class="col-views">${getViewCount(item.id, item.views)}</td>
+          `;
+
+          tbody.appendChild(row);
+        });
+      }
+
+      // 페이지네이션 렌더링
+      function renderPagination() {
+        const pagination = document.getElementById('pagination');
+        const dataLength = currentFilter
+          ? filteredData.length
+          : boardData.length;
+        const totalPages = Math.ceil(dataLength / itemsPerPage);
+
+        pagination.innerHTML = '';
+
+        // 이전 페이지 버튼
+        if (currentPage > 1) {
+          const prevBtn = document.createElement('button');
+          prevBtn.textContent = '◀';
+          prevBtn.onclick = () => changePage(currentPage - 1);
+          pagination.appendChild(prevBtn);
+        }
+
+        // 페이지 번호 버튼들
+        const startPage = Math.max(1, currentPage - 2);
+        const endPage = Math.min(totalPages, currentPage + 2);
+
+        for (let i = startPage; i <= endPage; i++) {
+          const pageBtn = document.createElement('button');
+          pageBtn.textContent = i;
+          pageBtn.className = i === currentPage ? 'active' : '';
+          pageBtn.onclick = () => changePage(i);
+          pagination.appendChild(pageBtn);
+        }
+
+        // 다음 페이지 버튼
+        if (currentPage < totalPages) {
+          const nextBtn = document.createElement('button');
+          nextBtn.textContent = '▶';
+          nextBtn.onclick = () => changePage(currentPage + 1);
+          pagination.appendChild(nextBtn);
+        }
+      }
+
+      // 페이지 변경
+      function changePage(page) {
+        currentPage = page;
+        if (currentFilter) {
+          renderFilteredBoardTable(page);
+        } else {
+          renderBoardTable(page);
+        }
+        renderPagination();
+        updateResultCount();
+      }
+
+      // 검색 및 필터링 설정
+      function setupSearchAndFilter() {
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+
+        console.log('검색 요소들:', { searchInput, searchBtn });
+
+        // 검색 버튼 클릭 이벤트
+        if (searchBtn) {
+          searchBtn.addEventListener('click', function () {
+            console.log('검색 버튼 클릭됨');
+            performSearch();
+          });
+        }
+
+        // 엔터 키 이벤트
+        if (searchInput) {
+          searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+              console.log('엔터 키 입력됨');
+              performSearch();
+            }
+          });
+        }
+      }
+
+      // 검색 실행
+      function performSearch() {
+        console.log('검색 실행 시작');
+        console.log(
+          'boardData 길이:',
+          boardData ? boardData.length : 'undefined'
+        );
+
+        const searchTerm = document
+          .getElementById('searchInput')
+          .value.toLowerCase();
+
+        console.log('검색어:', searchTerm);
+
+        if (!boardData || boardData.length === 0) {
+          console.error('boardData가 로드되지 않았습니다.');
+          return;
+        }
+
+        filteredData = boardData.filter((item) => {
+          const matchesSearch =
+            item.title.toLowerCase().includes(searchTerm) ||
+            (item.summary && item.summary.toLowerCase().includes(searchTerm));
+
+          return matchesSearch;
+        });
+
+        console.log('필터링된 결과:', filteredData.length);
+
+        currentFilter = 'search';
+        currentPage = 1;
+        renderFilteredBoardTable(currentPage);
+        renderPagination();
+        updateResultCount();
+      }
+
+      // 왼쪽 네비게이션 필터 설정
+      function setupLeftNavigationFilter() {
+        const knowledgeLink = document.querySelector(
+          'a[href="#today-knowledge"]'
+        );
+        const thoughtLink = document.querySelector('a[href="#daily-thought"]');
+        const economicsLink = document.querySelector('a[href="#economics"]');
+        const scienceLink = document.querySelector('a[href="#science"]');
+
+        if (knowledgeLink) {
+          knowledgeLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            setActiveNavLink(this);
+            filterDataByLeftNav('today-knowledge');
+          });
+        }
+
+        if (thoughtLink) {
+          thoughtLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            setActiveNavLink(this);
+            filterDataByLeftNav('daily-thought');
+          });
+        }
+
+        if (economicsLink) {
+          economicsLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            setActiveNavLink(this);
+            filterDataByLeftNav('economics');
+          });
+        }
+
+        if (scienceLink) {
+          scienceLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            setActiveNavLink(this);
+            filterDataByLeftNav('science');
+          });
+        }
+      }
+
+      // 왼쪽 네비게이션 활성 링크 설정
+      function setActiveNavLink(activeLink) {
+        const allLinks = document.querySelectorAll('.nav-link');
+        allLinks.forEach((link) => link.classList.remove('active'));
+        activeLink.classList.add('active');
+      }
+
+      // 히어로 배너 변경
+      function updateHeroBanner(category) {
+        const heroTitle = document.getElementById('heroTitle');
+        const heroDescription = document.getElementById('heroDescription');
+        const heroBanner = document.getElementById('heroBanner');
+
+        const bannerConfig = {
+          'today-knowledge': {
+            title: '한줄 지식/잡학',
+            description:
+              '일상에서 발견하는 흥미로운 지식과 재미있는 잡학사전을 공유합니다',
+            class: 'today-hero knowledge-hero',
+          },
+          'daily-thought': {
+            title: '하루 한생각',
+            description:
+              '매일의 깊이 있는 생각과 인생의 소소한 깨달음을 담아냅니다',
+            class: 'today-hero thought-hero',
+          },
+          economics: {
+            title: '경제 상식',
+            description:
+              '현대 사회에서 꼭 알아야 할 경제 지식과 투자 상식을 제공합니다',
+            class: 'today-hero economics-hero',
+          },
+          science: {
+            title: '과학적 상식',
+            description:
+              '과학의 원리와 현상을 쉽게 이해할 수 있는 상식을 전달합니다',
+            class: 'today-hero science-hero',
+          },
+        };
+
+        const config = bannerConfig[category];
+        if (config) {
+          heroTitle.textContent = config.title;
+          heroDescription.textContent = config.description;
+          heroBanner.className = `hero-banner ${config.class}`;
+        }
+      }
+
+      // 왼쪽 네비게이션으로 데이터 필터링
+      function filterDataByLeftNav(category) {
+        const categoryMap = {
+          'today-knowledge': '한줄 지식/잡학',
+          'daily-thought': '하루 한생각',
+          economics: '경제 상식',
+          science: '과학적 상식',
+        };
+
+        const targetCategory = categoryMap[category];
+        if (!targetCategory) return;
+
+        // 히어로 배너 변경
+        updateHeroBanner(category);
+
+        filteredData = boardData.filter(
+          (item) => item.category === targetCategory
+        );
+        currentFilter = 'nav';
+        currentPage = 1;
+        renderFilteredBoardTable(currentPage);
+        renderPagination();
+        updateResultCount();
+
+        // 필터 박스도 업데이트
+        document.getElementById('categoryFilter').value = targetCategory;
+      }
+
+      // 결과 개수 업데이트
+      function updateResultCount() {
+        const resultCount = document.querySelector('.result-count');
+        const dataLength = currentFilter
+          ? filteredData.length
+          : boardData.length;
+
+        console.log('결과 개수 업데이트:', {
+          currentFilter,
+          filteredDataLength: filteredData.length,
+          boardDataLength: boardData ? boardData.length : 'undefined',
+          finalLength: dataLength,
+        });
+
+        if (resultCount) {
+          resultCount.textContent = `총 ${dataLength}개의 게시글`;
+        } else {
+          console.error('result-count 요소를 찾을 수 없습니다.');
+        }
+      }
+
+      // 날짜가 지정된 일수 이내인지 확인
+      function isWithinDays(dateStr, days) {
+        const today = new Date();
+        const itemDate = parseDate(dateStr);
+        const diffTime = Math.abs(today - itemDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        return diffDays <= days;
+      }
+
+      // 날짜 문자열을 Date 객체로 변환
+      function parseDate(dateStr) {
+        const [month, day] = dateStr.split('-').map(Number);
+        const currentYear = new Date().getFullYear();
+        return new Date(currentYear, month - 1, day);
+      }
+
+      // 링크 클릭 처리
+      function handleLinkClick(id, link) {
+        // 조회수 증가 (로컬 스토리지 사용)
+        incrementViewCount(id);
+
+        // 새 탭에서 링크 열기
+        if (link && link !== '#') {
+          window.open(link, '_blank');
+        }
+      }
+
+      // 조회수 증가
+      function incrementViewCount(id) {
+        const viewCounts = JSON.parse(
+          localStorage.getItem('viewCounts') || '{}'
+        );
+        viewCounts[id] = (viewCounts[id] || 0) + 1;
+        localStorage.setItem('viewCounts', JSON.stringify(viewCounts));
+
+        // 현재 표시된 테이블의 조회수 업데이트
+        updateViewCountDisplay(id, viewCounts[id]);
+      }
+
+      // 조회수 가져오기 (로컬 스토리지에서)
+      function getViewCount(itemId, defaultViews) {
+        const viewCounts = JSON.parse(
+          localStorage.getItem('viewCounts') || '{}'
+        );
+        return viewCounts[itemId] || defaultViews || 0;
+      }
+
+      // 조회수 표시 업데이트
+      function updateViewCountDisplay(id, count) {
+        const rows = document.querySelectorAll('.board-row');
+        rows.forEach((row) => {
+          const idCell = row.querySelector('.col-number');
+          if (idCell && parseInt(idCell.textContent) === id) {
+            const viewCell = row.querySelector('.col-views');
+            if (viewCell) {
+              viewCell.textContent = count;
+            }
+          }
+        });
+      }
+
+      // 모달 열기
+      function openWriteModal() {
+        const modal = document.getElementById('writeModal');
+        modal.style.display = 'block';
+      }
+
+      // 모달 닫기
+      function closeWriteModal() {
+        const modal = document.getElementById('writeModal');
+        modal.style.display = 'none';
+
+        // 폼 초기화
+        document.getElementById('writeForm').reset();
+      }
+
+      // 모달 설정
+      function setupWriteModal() {
+        const closeBtn = document.querySelector('.close');
+        const cancelBtn = document.querySelector('.btn-cancel');
+        const writeForm = document.getElementById('writeForm');
+
+        if (closeBtn) {
+          closeBtn.onclick = closeWriteModal;
+        }
+
+        if (cancelBtn) {
+          cancelBtn.onclick = closeWriteModal;
+        }
+
+        if (writeForm) {
+          writeForm.onsubmit = function (e) {
+            e.preventDefault();
+
+            // 폼 데이터 수집
+            const formData = new FormData(writeForm);
+            const title = formData.get('title');
+            const category = formData.get('category');
+            const content = formData.get('content');
+
+            // 여기에 글쓰기 로직 추가
+            console.log('새 글 작성:', { title, category, content });
+
+            // 모달 닫기
+            closeWriteModal();
+          };
+        }
+      }
+
+      // 초기화 및 이벤트 리스너 설정
+      function initializeBoard() {
+        console.log('게시판 초기화 시작');
+        console.log('boardData 확인:', boardData.length);
+
+        // 초기 렌더링
+        renderBoardTable(1);
+        renderPagination();
+        updateResultCount();
+        setupSearchAndFilter();
+        setupLeftNavigationFilter();
+        setupWriteModal();
+
+        // 페이지 로드 시 "한줄 지식/잡학" 카테고리 자동 선택 및 히어로 배너 설정
+        setTimeout(() => {
+          const knowledgeLink = document.querySelector(
+            'a[href="#today-knowledge"]'
+          );
+          if (knowledgeLink) {
+            knowledgeLink.classList.add('active');
+            filterDataByLeftNav('today-knowledge');
+          }
+        }, 100);
+      }
+
+      // 페이지 로드 시 초기화
+      document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM이 로드되었습니다. 데이터 로드를 시작합니다.');
+        loadBoardData();
+      });
+
+      // 연도 표시
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <footer class="footer">
+      <p>Copyright ⓒ <span id="year"></span> Hoki Lee.</p>
+    </footer>
+  </body>
+</html>
