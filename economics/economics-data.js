@@ -1,6 +1,17 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 60,
+    title: '할로윈 효과(Halloween Effect)',
+    link: 'economics/economy-detail-60.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '09-03',
+    views: 0,
+    summary:
+      '할로윈 효과(Halloween Effect)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 59,
     title: "슈바베의 법칙(Schwabe's law)",
     link: 'economics/economy-detail-59.html',

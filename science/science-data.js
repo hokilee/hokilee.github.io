@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 16,
+    title: '플라즈마(Plasma)',
+    link: 'science/science-detail-16.html',
+    category: '과학적 상식',
+    author: '이호기',
+    date: '09-03',
+    views: 0,
+    summary: '플라즈마의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 15,
     title: '밀도(Density)',
     link: 'science/science-detail-15.html',
