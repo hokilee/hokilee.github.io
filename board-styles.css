@@ -477,6 +477,9 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  border-radius: 10px !important;
 }
 
 /* 기술자료 게시판 제목 스타일 */
@@ -814,6 +817,113 @@
   .col-views {
     display: none;
   }
+
+  /* About Me 게시판 모바일 최적화 */
+  .about-me-content .board-main {
+    padding: 15px 20px !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .about-me-hero {
+    height: 200px !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .about-me-hero .hero-content h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .about-me-hero .hero-content p {
+    font-size: 1rem !important;
+    padding: 10px 15px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  .about-me-content .search-filter-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 15px !important;
+    gap: 10px !important;
+  }
+
+  .about-me-content .search-group {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .about-me-content .search-input {
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 1.1rem !important;
+    min-width: auto !important;
+  }
+
+  .about-me-content .search-btn {
+    height: 50px !important;
+    font-size: 1.1rem !important;
+    min-width: 60px !important;
+  }
+
+  .about-me-content .write-btn {
+    width: 100% !important;
+    height: 45px !important;
+    font-size: 1rem !important;
+    justify-content: center !important;
+  }
+
+  .about-me-content .board-table {
+    font-size: 0.9rem !important;
+    overflow-x: auto !important;
+  }
+
+  .about-me-content .board-table th,
+  .about-me-content .board-table td {
+    padding: 8px 6px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .about-me-content .col-category,
+  .about-me-content .col-author,
+  .about-me-content .col-views {
+    display: none !important;
+  }
+
+  .about-me-content .col-title {
+    width: 70% !important;
+  }
+
+  .about-me-content .col-number {
+    width: 15% !important;
+  }
+
+  .about-me-content .col-date {
+    width: 15% !important;
+  }
+
+  .about-me-content .board-header h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .about-me-content .board-header p {
+    font-size: 1rem !important;
+    padding: 0 10px !important;
+  }
+
+  .about-me-content .pagination {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .about-me-content .page-btn {
+    padding: 8px 12px !important;
+    font-size: 0.9rem !important;
+    min-width: 40px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -876,6 +986,65 @@
   .btn-submit {
     width: 100%;
   }
+
+  /* About Me 게시판 초소형 화면 최적화 */
+  .about-me-content .board-main {
+    padding: 10px 15px !important;
+    margin: 5px !important;
+  }
+
+  .about-me-hero {
+    height: 150px !important;
+    margin: 5px !important;
+  }
+
+  .about-me-hero .hero-content h1 {
+    font-size: 2rem !important;
+  }
+
+  .about-me-hero .hero-content p {
+    font-size: 0.9rem !important;
+    padding: 8px 12px !important;
+  }
+
+  .about-me-content .search-filter-bar {
+    padding: 10px !important;
+  }
+
+  .about-me-content .search-input {
+    height: 45px !important;
+    font-size: 1rem !important;
+  }
+
+  .about-me-content .search-btn {
+    height: 45px !important;
+    font-size: 1rem !important;
+  }
+
+  .about-me-content .write-btn {
+    height: 40px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .about-me-content .board-table th,
+  .about-me-content .board-table td {
+    padding: 6px 4px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .about-me-content .board-header h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .about-me-content .board-header p {
+    font-size: 0.9rem !important;
+  }
+
+  .about-me-content .page-btn {
+    padding: 6px 10px !important;
+    font-size: 0.8rem !important;
+    min-width: 35px !important;
+  }
 }
 
 /* About Me 게시판 전용 스타일 */
@@ -891,6 +1060,38 @@
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 30px 40px;
+}
+
+/* About Me 게시판 테이블 모바일 최적화 */
+@media (max-width: 768px) {
+  .about-me-content .board-table {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .about-me-content .board-table table {
+    min-width: 600px !important;
+  }
+
+  .about-me-content .col-title a {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .about-me-content .new-badge {
+    font-size: 0.6rem !important;
+    padding: 1px 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-content .board-table table {
+    min-width: 500px !important;
+  }
+
+  .about-me-content .col-title a {
+    font-size: 0.8rem !important;
+  }
 }
 
 /* 카테고리별 히어로 배너 스타일 */
