@@ -500,14 +500,12 @@
   text-align: center !important;
 }
 
-/* 오늘의 콘텐츠 게시판 왼쪽 네비게이션 바 */
+/* 오늘의 콘텐츠 게시판 About Me와 동일한 구조 */
 .today-content-board .board-container {
-  display: grid !important;
-  grid-template-columns: 250px 1fr !important;
-  gap: 30px !important;
+  display: block !important;
   max-width: 1200px !important;
   margin: 0 auto !important;
-  padding: 0 20px !important;
+  padding: 0 !important;
 }
 
 .left-navigation {
@@ -630,6 +628,9 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  border-radius: 10px !important;
 }
 
 .tech-hero .hero-content {
@@ -924,6 +925,220 @@
     font-size: 0.9rem !important;
     min-width: 40px !important;
   }
+
+  /* 기술자료 게시판 모바일 최적화 (About Me와 동일한 스타일) */
+  .latest-content-board .board-main {
+    padding: 15px 20px !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .tech-hero {
+    height: 200px !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .tech-hero .hero-content h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .tech-hero .hero-content p {
+    font-size: 1rem !important;
+    padding: 10px 15px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  .latest-content-board .search-filter-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 15px !important;
+    gap: 10px !important;
+  }
+
+  .latest-content-board .search-group {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .latest-content-board .search-input {
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 1.1rem !important;
+    min-width: auto !important;
+  }
+
+  .latest-content-board .search-btn {
+    height: 50px !important;
+    font-size: 1.1rem !important;
+    min-width: 60px !important;
+  }
+
+  .latest-content-board .write-btn {
+    width: 100% !important;
+    height: 45px !important;
+    font-size: 1rem !important;
+    justify-content: center !important;
+  }
+
+  .latest-content-board .board-table {
+    font-size: 0.9rem !important;
+    overflow-x: auto !important;
+  }
+
+  .latest-content-board .board-table th,
+  .latest-content-board .board-table td {
+    padding: 8px 6px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .latest-content-board .col-category,
+  .latest-content-board .col-author,
+  .latest-content-board .col-views {
+    display: none !important;
+  }
+
+  .latest-content-board .col-title {
+    width: 70% !important;
+  }
+
+  .latest-content-board .col-number {
+    width: 15% !important;
+  }
+
+  .latest-content-board .col-date {
+    width: 15% !important;
+  }
+
+  .latest-content-board .board-header h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .latest-content-board .board-header p {
+    font-size: 1rem !important;
+    padding: 0 10px !important;
+  }
+
+  .latest-content-board .pagination {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .latest-content-board .page-btn {
+    padding: 8px 12px !important;
+    font-size: 0.9rem !important;
+    min-width: 40px !important;
+  }
+
+  /* 오늘의 콘텐츠 게시판 모바일 최적화 (About Me와 동일한 스타일) */
+  .today-content-board .board-main {
+    padding: 15px 20px !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .today-hero {
+    height: 200px !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .today-hero .hero-content h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .today-hero .hero-content p {
+    font-size: 1rem !important;
+    padding: 10px 15px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  .today-content-board .search-filter-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 15px !important;
+    gap: 10px !important;
+  }
+
+  .today-content-board .search-group {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .today-content-board .search-input {
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 1.1rem !important;
+    min-width: auto !important;
+  }
+
+  .today-content-board .search-btn {
+    height: 50px !important;
+    font-size: 1.1rem !important;
+    min-width: 60px !important;
+  }
+
+  .today-content-board .write-btn {
+    width: 100% !important;
+    height: 45px !important;
+    font-size: 1rem !important;
+    justify-content: center !important;
+  }
+
+  .today-content-board .board-table {
+    font-size: 0.9rem !important;
+    overflow-x: auto !important;
+  }
+
+  .today-content-board .board-table th,
+  .today-content-board .board-table td {
+    padding: 8px 6px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .today-content-board .col-category,
+  .today-content-board .col-author,
+  .today-content-board .col-views {
+    display: none !important;
+  }
+
+  .today-content-board .col-title {
+    width: 70% !important;
+  }
+
+  .today-content-board .col-number {
+    width: 15% !important;
+  }
+
+  .today-content-board .col-date {
+    width: 15% !important;
+  }
+
+  .today-content-board .board-header h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .today-content-board .board-header p {
+    font-size: 1rem !important;
+    padding: 0 10px !important;
+  }
+
+  .today-content-board .pagination {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .today-content-board .page-btn {
+    padding: 8px 12px !important;
+    font-size: 0.9rem !important;
+    min-width: 40px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1045,6 +1260,124 @@
     font-size: 0.8rem !important;
     min-width: 35px !important;
   }
+
+  /* 기술자료 게시판 초소형 화면 최적화 (About Me와 동일한 스타일) */
+  .latest-content-board .board-main {
+    padding: 10px 15px !important;
+    margin: 5px !important;
+  }
+
+  .tech-hero {
+    height: 150px !important;
+    margin: 5px !important;
+  }
+
+  .tech-hero .hero-content h1 {
+    font-size: 2rem !important;
+  }
+
+  .tech-hero .hero-content p {
+    font-size: 0.9rem !important;
+    padding: 8px 12px !important;
+  }
+
+  .latest-content-board .search-filter-bar {
+    padding: 10px !important;
+  }
+
+  .latest-content-board .search-input {
+    height: 45px !important;
+    font-size: 1rem !important;
+  }
+
+  .latest-content-board .search-btn {
+    height: 45px !important;
+    font-size: 1rem !important;
+  }
+
+  .latest-content-board .write-btn {
+    height: 40px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .latest-content-board .board-table th,
+  .latest-content-board .board-table td {
+    padding: 6px 4px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .latest-content-board .board-header h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .latest-content-board .board-header p {
+    font-size: 0.9rem !important;
+  }
+
+  .latest-content-board .page-btn {
+    padding: 6px 10px !important;
+    font-size: 0.8rem !important;
+    min-width: 35px !important;
+  }
+
+  /* 오늘의 콘텐츠 게시판 초소형 화면 최적화 (About Me와 동일한 스타일) */
+  .today-content-board .board-main {
+    padding: 10px 15px !important;
+    margin: 5px !important;
+  }
+
+  .today-hero {
+    height: 150px !important;
+    margin: 5px !important;
+  }
+
+  .today-hero .hero-content h1 {
+    font-size: 2rem !important;
+  }
+
+  .today-hero .hero-content p {
+    font-size: 0.9rem !important;
+    padding: 8px 12px !important;
+  }
+
+  .today-content-board .search-filter-bar {
+    padding: 10px !important;
+  }
+
+  .today-content-board .search-input {
+    height: 45px !important;
+    font-size: 1rem !important;
+  }
+
+  .today-content-board .search-btn {
+    height: 45px !important;
+    font-size: 1rem !important;
+  }
+
+  .today-content-board .write-btn {
+    height: 40px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .today-content-board .board-table th,
+  .today-content-board .board-table td {
+    padding: 6px 4px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .today-content-board .board-header h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .today-content-board .board-header p {
+    font-size: 0.9rem !important;
+  }
+
+  .today-content-board .page-btn {
+    padding: 6px 10px !important;
+    font-size: 0.8rem !important;
+    min-width: 35px !important;
+  }
 }
 
 /* About Me 게시판 전용 스타일 */
@@ -1090,6 +1423,70 @@
   }
 
   .about-me-content .col-title a {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* 기술자료 게시판 테이블 모바일 최적화 (About Me와 동일한 스타일) */
+@media (max-width: 768px) {
+  .latest-content-board .board-table {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .latest-content-board .board-table table {
+    min-width: 600px !important;
+  }
+
+  .latest-content-board .col-title a {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .latest-content-board .new-badge {
+    font-size: 0.6rem !important;
+    padding: 1px 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .latest-content-board .board-table table {
+    min-width: 500px !important;
+  }
+
+  .latest-content-board .col-title a {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* 오늘의 콘텐츠 게시판 테이블 모바일 최적화 (About Me와 동일한 스타일) */
+@media (max-width: 768px) {
+  .today-content-board .board-table {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .today-content-board .board-table table {
+    min-width: 600px !important;
+  }
+
+  .today-content-board .col-title a {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .today-content-board .new-badge {
+    font-size: 0.6rem !important;
+    padding: 1px 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .today-content-board .board-table table {
+    min-width: 500px !important;
+  }
+
+  .today-content-board .col-title a {
     font-size: 0.8rem !important;
   }
 }

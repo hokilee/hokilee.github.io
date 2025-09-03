@@ -94,78 +94,44 @@
 
     <!-- 메인 콘텐츠 섹션 -->
     <main class="main-content today-content-board">
-      <div
-        class="board-container"
-        style="max-width: 1200px; margin: 0 auto; padding: 0 20px"
-      >
-        <!-- 왼쪽 네비게이션 바 -->
-        <div class="left-navigation">
-          <div class="nav-section">
-            <h3 class="nav-title">콘텐츠 카테고리</h3>
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="#today-knowledge" class="nav-link"> 한줄 지식/잡학 </a>
-              </li>
-              <hr class="nav-divider" />
-              <li class="nav-item">
-                <a href="#daily-thought" class="nav-link"> 하루 한생각 </a>
-              </li>
-              <hr class="nav-divider" />
-              <li class="nav-item">
-                <a href="#economics" class="nav-link"> 경제 상식 </a>
-              </li>
-              <hr class="nav-divider" />
-              <li class="nav-item">
-                <a href="#science" class="nav-link"> 과학적 상식 </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
+      <div class="board-container">
         <!-- 메인 게시판 영역 -->
         <div class="board-main">
-          <!-- 게시판 헤더 -->
           <div class="board-header">
-            <div class="board-title">
-              <h2>오늘의 콘텐츠</h2>
-              <span class="result-count">총 0개의 게시글</span>
+            <h1>오늘의 콘텐츠</h1>
+            <p>
+              자동차 기술과 서비스 관리 경험을 바탕으로 한 최신 콘텐츠와 정보를
+              제공합니다
+            </p>
+          </div>
+
+          <!-- 검색 및 필터 바 -->
+          <div class="search-filter-bar">
+            <div class="search-group">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="제목 검색..."
+                class="search-input"
+              />
+              <button id="searchBtn" class="search-btn">🔍</button>
             </div>
-            <div class="board-actions">
-              <div class="search-filter-group">
-                <span style="margin-right: 10px; font-size: 1rem; color: #333"
-                  >제목 검색</span
-                >
-                <div class="search-box">
-                  <input
-                    type="text"
-                    id="searchInput"
-                    placeholder=""
-                    style="
-                      width: 350px;
-                      height: 38px;
-                      font-size: 1rem;
-                      padding: 6px 12px;
-                    "
-                  />
-                  <button type="button" id="searchBtn">
-                    <span>🔍</span>
-                  </button>
-                </div>
-              </div>
-              <button class="write-btn" onclick="openWriteModal()">
-                <span>✏️</span>
-                글쓰기
-              </button>
-            </div>
+            <button class="write-btn" onclick="openWriteModal()">
+              <span>✏️</span> 글쓰기
+            </button>
+          </div>
+          <div class="result-info">
+            <span id="result-count">총 0건</span>
           </div>
 
           <!-- 게시판 테이블 -->
-          <div class="board-table-container">
-            <table class="board-table">
+          <div class="board-table">
+            <table>
               <thead>
                 <tr>
                   <th class="col-number">번호</th>
                   <th class="col-title">제목</th>
+                  <th class="col-category">카테고리</th>
                   <th class="col-author">작성자</th>
                   <th class="col-date">등록일</th>
                   <th class="col-views">조회수</th>
@@ -178,10 +144,8 @@
           </div>
 
           <!-- 페이지네이션 -->
-          <div class="pagination-container">
-            <div class="pagination" id="pagination">
-              <!-- 동적으로 생성되는 페이지네이션 -->
-            </div>
+          <div class="pagination" id="pagination">
+            <!-- 동적으로 생성되는 페이지네이션 -->
           </div>
         </div>
       </div>
