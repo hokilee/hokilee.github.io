@@ -895,7 +895,7 @@
   }
 
   .about-me-content .col-title {
-    width: 70% !important;
+    width: 45% !important;
   }
 
   .about-me-content .col-number {
@@ -903,7 +903,7 @@
   }
 
   .about-me-content .col-date {
-    width: 15% !important;
+    width: 40% !important;
   }
 
   .about-me-content .board-header h1 {
@@ -1002,7 +1002,7 @@
   }
 
   .latest-content-board .col-title {
-    width: 70% !important;
+    width: 45% !important;
   }
 
   .latest-content-board .col-number {
@@ -1010,7 +1010,7 @@
   }
 
   .latest-content-board .col-date {
-    width: 15% !important;
+    width: 40% !important;
   }
 
   .latest-content-board .board-header h1 {
