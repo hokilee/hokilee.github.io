@@ -1589,7 +1589,7 @@
   }
 
   .today-content-board .board-table table {
-    min-width: 600px !important;
+    min-width: 400px !important;
   }
 
   .today-content-board .col-title a {
@@ -1605,7 +1605,7 @@
 
 @media (max-width: 480px) {
   .today-content-board .board-table table {
-    min-width: 500px !important;
+    min-width: 350px !important;
   }
 
   .today-content-board .col-title a {
