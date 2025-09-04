@@ -1525,7 +1525,7 @@
   }
 
   .about-me-content .board-table table {
-    min-width: 600px !important;
+    min-width: 400px !important;
   }
 
   .about-me-content .col-title a {
@@ -1541,7 +1541,7 @@
 
 @media (max-width: 480px) {
   .about-me-content .board-table table {
-    min-width: 500px !important;
+    min-width: 350px !important;
   }
 
   .about-me-content .col-title a {
@@ -1557,7 +1557,7 @@
   }
 
   .latest-content-board .board-table table {
-    min-width: 600px !important;
+    min-width: 400px !important;
   }
 
   .latest-content-board .col-title a {
@@ -1573,7 +1573,7 @@
 
 @media (max-width: 480px) {
   .latest-content-board .board-table table {
-    min-width: 500px !important;
+    min-width: 350px !important;
   }
 
   .latest-content-board .col-title a {
