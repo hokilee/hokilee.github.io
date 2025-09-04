@@ -1,6 +1,16 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 71,
+    title: '세상에서 가장 아름다운 모습.',
+    link: 'daily-thoughts/thought-detail-71.html',
+    category: '하루 한생각',
+    author: '이호기',
+    date: '09-04',
+    views: 0,
+    summary: '자식이 생각하는 부모님의 진정한 모습에 대한 생각',
+  },
+  {
     id: 70,
     title: '빛바랜 사진 한장.',
     link: 'daily-thoughts/thought-detail-70.html',

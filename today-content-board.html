@@ -295,6 +295,7 @@
               }, '${item.link}')">${item.title}</a>
               ${newBadge}
             </td>
+            <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
             <td class="col-views">${getViewCount(item.id, item.views)}</td>
@@ -329,6 +330,7 @@
               }, '${item.link}')">${item.title}</a>
               ${newBadge}
             </td>
+            <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
             <td class="col-views">${getViewCount(item.id, item.views)}</td>
@@ -495,7 +497,7 @@
 
       // 왼쪽 네비게이션 활성 링크 설정
       function setActiveNavLink(activeLink) {
-        const allLinks = document.querySelectorAll('.nav-link');
+        const allLinks = document.querySelectorAll('.category-link');
         allLinks.forEach((link) => link.classList.remove('active'));
         activeLink.classList.add('active');
       }

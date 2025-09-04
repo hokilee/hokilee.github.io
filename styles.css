@@ -284,6 +284,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
+  border-top: 3px solid #8b4513;
 }
 
 .main-navigation .nav-container {

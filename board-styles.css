@@ -694,7 +694,7 @@
   color: white !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
   margin-bottom: 20px !important;
-  font-size: 2.5rem !important;
+  font-size: 3rem !important;
   font-weight: 700 !important;
 }
 
@@ -702,7 +702,7 @@
   color: white !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
   font-weight: 600 !important;
-  font-size: 1.3rem !important;
+  font-size: 1.5rem !important;
   text-align: center !important;
   margin: 0 !important;
   max-width: 800px !important;
@@ -1442,7 +1442,7 @@
   border-bottom: 1px solid #e9ecef;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 .category-container {
@@ -1486,7 +1486,7 @@
 }
 
 .category-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 5px;
 }
 
