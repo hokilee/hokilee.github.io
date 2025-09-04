@@ -417,6 +417,23 @@ body {
   border-bottom: none;
 }
 
+.notice-list p {
+  padding: 20px 0;
+  border-bottom: 2px solid #e9ecef;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.notice-list p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.notice-list p strong {
+  color: #007bff;
+  font-weight: 700;
+}
+
 .contact-info {
   background: #f8f9fa;
   padding: 20px;
