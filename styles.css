@@ -739,11 +739,17 @@ body {
   }
 
   .nav-container {
-    gap: 20px;
+    gap: 15px;
+    padding: 0 20px;
   }
 
   .nav-item span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .nav-icon {
+    width: 2rem;
+    height: 2rem;
   }
 
   .main-content {
@@ -770,11 +776,17 @@ body {
   }
 
   .nav-container {
-    gap: 15px;
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  .nav-item span {
+    font-size: 0.6rem;
   }
 
   .nav-icon {
-    font-size: 1.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
   /* 연락처 게시판 초소형 화면 최적화 */
