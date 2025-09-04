@@ -294,8 +294,8 @@ body {
 .nav-container {
   display: flex;
   justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
+  gap: 25px;
+  flex-wrap: nowrap;
 }
 
 .nav-item {

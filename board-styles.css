@@ -673,7 +673,7 @@
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  height: 350px !important;
+  height: 280px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -694,7 +694,7 @@
   color: white !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
   margin-bottom: 20px !important;
-  font-size: 3rem !important;
+  font-size: 2rem !important;
   font-weight: 700 !important;
 }
 
@@ -702,7 +702,7 @@
   color: white !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
   font-weight: 600 !important;
-  font-size: 1.5rem !important;
+  font-size: 1.1rem !important;
   text-align: center !important;
   margin: 0 !important;
   max-width: 800px !important;
@@ -1457,7 +1457,7 @@
 
 .category-link {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 15px 20px;
@@ -1467,6 +1467,10 @@
   border-right: 1px solid #e9ecef;
   flex: 1;
   min-height: 80px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #e9ecef;
+  gap: 8px;
 }
 
 .category-link:last-child {
@@ -1486,12 +1490,13 @@
 }
 
 .category-icon {
-  font-size: 2rem;
-  margin-bottom: 5px;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
 }
 
 .category-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
   line-height: 1.2;
@@ -1610,37 +1615,85 @@
 
 /* 카테고리별 히어로 배너 스타일 */
 .knowledge-hero {
-  background: linear-gradient(
-    135deg,
-    rgba(52, 152, 219, 0.8) 0%,
-    rgba(41, 128, 185, 0.8) 50%,
-    rgba(31, 97, 141, 0.8) 100%
-  ) !important;
+  background-image: url('../web-image/books-image.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.knowledge-hero .hero-content h1 {
+  color: white !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+}
+
+.knowledge-hero .hero-content p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
 }
 
 .thought-hero {
-  background: linear-gradient(
-    135deg,
-    rgba(155, 89, 182, 0.8) 0%,
-    rgba(142, 68, 173, 0.8) 50%,
-    rgba(125, 60, 152, 0.8) 100%
-  ) !important;
+  background-image: url('../web-image/think-image.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.thought-hero .hero-content h1 {
+  color: white !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+}
+
+.thought-hero .hero-content p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
 }
 
 .economics-hero {
-  background: linear-gradient(
-    135deg,
-    rgba(46, 204, 113, 0.8) 0%,
-    rgba(39, 174, 96, 0.8) 50%,
-    rgba(34, 139, 34, 0.8) 100%
-  ) !important;
+  background-image: url('../web-image/economics-image.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.economics-hero .hero-content h1 {
+  color: white !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+}
+
+.economics-hero .hero-content p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
 }
 
 .science-hero {
-  background: linear-gradient(
-    135deg,
-    rgba(231, 76, 60, 0.8) 0%,
-    rgba(192, 57, 43, 0.8) 50%,
-    rgba(169, 68, 66, 0.8) 100%
-  ) !important;
+  background-image: url('../web-image/science-image.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.science-hero .hero-content h1 {
+  color: white !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+}
+
+.science-hero .hero-content p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
 }
