@@ -1109,7 +1109,7 @@
   }
 
   .today-content-board .col-title {
-    width: 70% !important;
+    width: 55% !important;
   }
 
   .today-content-board .col-number {
@@ -1117,7 +1117,7 @@
   }
 
   .today-content-board .col-date {
-    width: 15% !important;
+    width: 30% !important;
   }
 
   .today-content-board .board-header h1 {
