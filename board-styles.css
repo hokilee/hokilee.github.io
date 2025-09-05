@@ -673,7 +673,7 @@
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  height: 280px !important;
+  height: 250px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1678,7 +1678,7 @@
 }
 
 .science-hero {
-  background-image: url('../web-image/science-image.jpg') !important;
+  background-image: url('../web-image/common-image.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
