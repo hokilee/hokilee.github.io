@@ -1,6 +1,16 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 72,
+    title: '할머니의 철학.',
+    link: 'daily-thoughts/thought-detail-72.html',
+    category: '하루 한생각',
+    author: '이호기',
+    date: '09-06',
+    views: 0,
+    summary: '할머니의 철학에 대한 생각',
+  },
+  {
     id: 71,
     title: '세상에서 가장 아름다운 모습.',
     link: 'daily-thoughts/thought-detail-71.html',

@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 74,
+    title: '루퍼트 머독',
+    link: 'one-line-knowledge/trivia-detail-74.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '09-06',
+    views: 0,
+  },
+  {
     id: 73,
     title: '미디어 효과이론',
     link: 'one-line-knowledge/trivia-detail-73.html',

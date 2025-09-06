@@ -171,22 +171,10 @@
           </div>
 
           <!-- 구분선 -->
-          <hr
-            style="
-              margin: 30px 0;
-              border: none;
-              height: 2px;
-              background: linear-gradient(
-                90deg,
-                transparent,
-                #007bff,
-                transparent
-              );
-            "
-          />
+          <hr class="notice-divider" />
 
           <h3
-            class="section-title"
+            class="section-title notice-title"
             style="
               display: flex;
               align-items: center;
@@ -197,35 +185,58 @@
             <img
               src="web-image/notice-data.png"
               alt="공지사항"
-              class="section-icon"
+              class="section-icon notice-pulse-icon"
               style="width: 48px; height: 48px; margin-right: 18px"
             />
             공지사항
           </h3>
-          <ul class="notice-list">
-            <p>
-              <strong>2025-09-05</strong> - 안녕하십니까? 오늘 콘텐츠 게시판에,
-              경제상식(리세션), 일반상식(가이야 이론)에 대한 내용을
-              추가했습니다.<br />
-            </p>
-            <p>
-              <strong>2025-09-04</strong> - 안녕하십니까? 오늘 콘텐츠 게시판에,
-              한줄 지식/잡학(미디어 효과이론), 하루 한생각(세상에서 가장
-              아름다운 모습)에 대한 내용을 추가했습니다.<br />
-            </p>
-            <p>
-              <strong>2025-09-03</strong> - 안녕하십니까? 경제상식 게시판에
-              할로윈 효과(Halloween Effect)와 과학적 상식 게시판에
-              플라즈마(Plasma)를 추가했습니다. 많은 관심 부탁드립니다.<br />
-            </p>
-            <p>
-              <strong>2025-09-02</strong> - 안녕하십니까? 여러분, 그 동안
-              개인홈페이지를 아껴주신 여러분들께 감사드립니다. 한동안 이전
-              자료를 검토하고 수정하여 오늘 홈페이지를 새롭게 만들었습니다.
-              이전과 같이 유용한 자료를 만들어 올리도록 하겠으니 많은 관심
-              부탁드립니다.<br />
-            </p>
-          </ul>
+          <div class="notice-container notice-glow-container">
+            <ul class="notice-list">
+              <p class="notice-item" data-date="2025-09-06">
+                <strong>2025-09-06</strong> - 안녕하십니까? 오늘 콘텐츠
+                게시판에, 한줄 지식/잡학(루퍼트 머독), 하루 한생각(할머니의
+                철학)에 대한 내용을 추가했습니다.<span
+                  class="new-badge"
+                  style="display: none"
+                  >NEW</span
+                ><br />
+              </p>
+              <p class="notice-item" data-date="2025-09-05">
+                <strong>2025-09-05</strong> - 안녕하십니까? 오늘 콘텐츠
+                게시판에, 경제상식(리세션), 일반상식(가이야 이론)에 대한 내용을
+                추가했습니다.<span class="new-badge" style="display: none"
+                  >NEW</span
+                ><br />
+              </p>
+              <p class="notice-item" data-date="2025-09-04">
+                <strong>2025-09-04</strong> - 안녕하십니까? 오늘 콘텐츠
+                게시판에, 한줄 지식/잡학(미디어 효과이론), 하루 한생각(세상에서
+                가장 아름다운 모습)에 대한 내용을 추가했습니다.<span
+                  class="new-badge"
+                  style="display: none"
+                  >NEW</span
+                ><br />
+              </p>
+              <p class="notice-item" data-date="2025-09-03">
+                <strong>2025-09-03</strong> - 안녕하십니까? 경제상식 게시판에
+                할로윈 효과(Halloween Effect)와 과학적 상식 게시판에
+                플라즈마(Plasma)를 추가했습니다. 많은 관심 부탁드립니다.<span
+                  class="new-badge"
+                  style="display: none"
+                  >NEW</span
+                ><br />
+              </p>
+              <p class="notice-item" data-date="2025-09-02">
+                <strong>2025-09-02</strong> - 안녕하십니까? 여러분, 그 동안
+                개인홈페이지를 아껴주신 여러분들께 감사드립니다. 한동안 이전
+                자료를 검토하고 수정하여 오늘 홈페이지를 새롭게 만들었습니다.
+                이전과 같이 유용한 자료를 만들어 올리도록 하겠으니 많은 관심
+                부탁드립니다.<span class="new-badge" style="display: none"
+                  >NEW</span
+                ><br />
+              </p>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
@@ -266,6 +277,197 @@
 
       // 연도 표시
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // NEW 배지 표시 함수 (현재부터 2일 전까지)
+      function updateNewBadges() {
+        const today = new Date();
+        const twoDaysAgo = new Date(today);
+        twoDaysAgo.setDate(today.getDate() - 2);
+
+        const noticeItems = document.querySelectorAll(
+          '.notice-item[data-date]'
+        );
+
+        noticeItems.forEach((item) => {
+          const noticeDate = new Date(item.getAttribute('data-date'));
+          const newBadge = item.querySelector('.new-badge');
+
+          // 현재 날짜부터 2일 전까지의 공지사항에만 NEW 배지 표시
+          if (noticeDate >= twoDaysAgo && noticeDate <= today) {
+            newBadge.style.display = 'inline-block';
+          } else {
+            newBadge.style.display = 'none';
+          }
+        });
+      }
+
+      // 페이지 로드 시 NEW 배지 업데이트
+      updateNewBadges();
     </script>
+
+    <!-- 공지사항 애니메이션 CSS -->
+    <style>
+      /* 1. 공지사항 아이콘 펄스 애니메이션 */
+      .notice-pulse-icon {
+        animation: noticePulse 2.5s ease-in-out infinite;
+      }
+
+      @keyframes noticePulse {
+        0% {
+          transform: scale(1);
+          filter: brightness(1);
+        }
+        50% {
+          transform: scale(1.08);
+          filter: brightness(1.2);
+        }
+        100% {
+          transform: scale(1);
+          filter: brightness(1);
+        }
+      }
+
+      /* 2. NEW 배지 애니메이션 */
+      .new-badge {
+        display: inline-block;
+        background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 2px 6px;
+        border-radius: 10px;
+        margin-left: 8px;
+        animation: newBadgeBounce 2s ease-in-out infinite;
+        box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+        vertical-align: middle;
+      }
+
+      @keyframes newBadgeBounce {
+        0%,
+        100% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(-2px) scale(1.05);
+        }
+      }
+
+      /* 3. 공지사항 컨테이너 호버 글로우 효과 */
+      .notice-glow-container {
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        padding: 15px;
+        margin: 10px 0;
+        max-height: 300px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #007bff #f1f1f1;
+      }
+
+      /* 스크롤바 스타일링 (웹킷 브라우저용) */
+      .notice-glow-container::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .notice-glow-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+      }
+
+      .notice-glow-container::-webkit-scrollbar-thumb {
+        background: #007bff;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+      }
+
+      .notice-glow-container::-webkit-scrollbar-thumb:hover {
+        background: #0056b3;
+      }
+
+      .notice-glow-container:hover {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 123, 255, 0.05),
+          rgba(0, 123, 255, 0.1)
+        );
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.3),
+          0 0 40px rgba(0, 123, 255, 0.1);
+        transform: translateY(-2px);
+      }
+
+      /* 공지사항 항목 스타일링 */
+      .notice-item {
+        margin-bottom: 15px;
+        transition: all 0.2s ease;
+      }
+
+      .notice-item:hover {
+        color: #007bff;
+        transform: translateX(5px);
+      }
+
+      /* 추가적인 시각적 강조 */
+      .notice-title {
+        position: relative;
+      }
+
+      .notice-title::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #007bff, transparent);
+        border-radius: 2px;
+        animation: underlineGlow 3s ease-in-out infinite;
+      }
+
+      @keyframes underlineGlow {
+        0%,
+        100% {
+          opacity: 0.6;
+          width: 200px;
+        }
+        50% {
+          opacity: 1;
+          width: 240px;
+        }
+      }
+
+      /* 공지사항 섹션 외부 박스 여백 */
+      .notice-section {
+        padding: 30px 0;
+        margin: 25px 0;
+      }
+
+      /* 누적 방문자 수와 공지사항 사이 구분선 */
+      .notice-divider {
+        margin: 30px 0;
+        border: none;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #007bff, transparent);
+        border-radius: 2px;
+        box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+      }
+
+      /* 반응형 디자인 */
+      @media (max-width: 768px) {
+        .new-badge {
+          font-size: 9px;
+          padding: 1px 4px;
+        }
+
+        .notice-glow-container:hover {
+          transform: none;
+        }
+
+        .notice-section {
+          padding: 20px 0;
+          margin: 15px 0;
+        }
+      }
+    </style>
   </body>
 </html>
