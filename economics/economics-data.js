@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 62,
+    title: 'GNI (Gross National Income)',
+    link: 'economics/economy-detail-62.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '09-07',
+    views: 0,
+    summary: 'GNI (Gross National Income)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 61,
     title: '리세션 (Recession)',
     link: 'economics/economy-detail-61.html',

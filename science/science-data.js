@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 18,
+    title: '대륙붕 (Continental Shelf)',
+    link: 'science/science-detail-18.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-07',
+    views: 0,
+    summary: '대륙붕 (Continental Shelf)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 17,
     title: '가이야 이론 (Gaia theory)',
     link: 'science/science-detail-17.html',
