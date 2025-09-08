@@ -162,9 +162,6 @@
               />
               <button id="searchBtn" class="search-btn">🔍</button>
             </div>
-            <button class="write-btn" onclick="openWriteModal()">
-              <span>✏️</span> 글쓰기
-            </button>
           </div>
           <div class="result-info">
             <span id="result-count">총 0건</span>
@@ -197,52 +194,6 @@
       </div>
     </main>
 
-    <!-- 글쓰기 모달 -->
-    <div id="writeModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3>새 글 작성</h3>
-          <span class="close">&times;</span>
-        </div>
-        <form id="writeForm">
-          <div class="form-group">
-            <label for="writeTitle">제목</label>
-            <input
-              type="text"
-              id="writeTitle"
-              name="title"
-              required
-              placeholder="제목을 입력하세요"
-            />
-          </div>
-          <div class="form-group">
-            <label for="writeCategory">카테고리</label>
-            <select id="writeCategory" name="category" required>
-              <option value="">카테고리를 선택하세요</option>
-              <option value="한줄 지식/잡학">한줄 지식/잡학</option>
-              <option value="하루 한생각">하루 한생각</option>
-              <option value="경제 상식">경제 상식</option>
-              <option value="일반상식">일반상식</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="writeContent">내용</label>
-            <textarea
-              id="writeContent"
-              name="content"
-              required
-              placeholder="내용을 입력하세요"
-              rows="10"
-            ></textarea>
-          </div>
-          <div class="form-actions">
-            <button type="button" class="btn-cancel">취소</button>
-            <button type="submit" class="btn-submit">등록</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
     <script>
       // 전역 변수
       let currentPage = 1;
@@ -257,6 +208,12 @@
       // 데이터 로드 함수
       function loadBoardData() {
         try {
+          console.log('loadBoardData 실행 중...');
+          console.log('dailyThoughtsData:', typeof dailyThoughtsData);
+          console.log('oneLineKnowledgeData:', typeof oneLineKnowledgeData);
+          console.log('economicsData:', typeof economicsData);
+          console.log('scienceData:', typeof scienceData);
+
           // 외부 데이터가 로드되었는지 확인
           if (
             typeof dailyThoughtsData !== 'undefined' &&
@@ -273,11 +230,28 @@
 
             totalPages = Math.ceil(boardData.length / itemsPerPage);
             console.log('데이터 로드 완료:', boardData.length);
+            console.log('boardData 샘플:', boardData.slice(0, 3));
 
             // 초기화 실행
             initializeBoard();
           } else {
             console.log('외부 데이터가 아직 로드되지 않음. 재시도...');
+            console.log(
+              'dailyThoughtsData 길이:',
+              dailyThoughtsData ? dailyThoughtsData.length : 'undefined'
+            );
+            console.log(
+              'oneLineKnowledgeData 길이:',
+              oneLineKnowledgeData ? oneLineKnowledgeData.length : 'undefined'
+            );
+            console.log(
+              'economicsData 길이:',
+              economicsData ? economicsData.length : 'undefined'
+            );
+            console.log(
+              'scienceData 길이:',
+              scienceData ? scienceData.length : 'undefined'
+            );
             setTimeout(loadBoardData, 100);
           }
         } catch (error) {
@@ -584,12 +558,15 @@
         updateResultCount();
 
         // 필터 박스도 업데이트
-        document.getElementById('categoryFilter').value = targetCategory;
+        const categoryFilter = document.getElementById('categoryFilter');
+        if (categoryFilter) {
+          categoryFilter.value = targetCategory;
+        }
       }
 
       // 결과 개수 업데이트
       function updateResultCount() {
-        const resultCount = document.querySelector('.result-count');
+        const resultCount = document.getElementById('result-count');
         const dataLength = currentFilter
           ? filteredData.length
           : boardData.length;
@@ -669,54 +646,6 @@
         });
       }
 
-      // 모달 열기
-      function openWriteModal() {
-        const modal = document.getElementById('writeModal');
-        modal.style.display = 'block';
-      }
-
-      // 모달 닫기
-      function closeWriteModal() {
-        const modal = document.getElementById('writeModal');
-        modal.style.display = 'none';
-
-        // 폼 초기화
-        document.getElementById('writeForm').reset();
-      }
-
-      // 모달 설정
-      function setupWriteModal() {
-        const closeBtn = document.querySelector('.close');
-        const cancelBtn = document.querySelector('.btn-cancel');
-        const writeForm = document.getElementById('writeForm');
-
-        if (closeBtn) {
-          closeBtn.onclick = closeWriteModal;
-        }
-
-        if (cancelBtn) {
-          cancelBtn.onclick = closeWriteModal;
-        }
-
-        if (writeForm) {
-          writeForm.onsubmit = function (e) {
-            e.preventDefault();
-
-            // 폼 데이터 수집
-            const formData = new FormData(writeForm);
-            const title = formData.get('title');
-            const category = formData.get('category');
-            const content = formData.get('content');
-
-            // 여기에 글쓰기 로직 추가
-            console.log('새 글 작성:', { title, category, content });
-
-            // 모달 닫기
-            closeWriteModal();
-          };
-        }
-      }
-
       // 초기화 및 이벤트 리스너 설정
       function initializeBoard() {
         console.log('게시판 초기화 시작');
@@ -728,7 +657,6 @@
         updateResultCount();
         setupSearchAndFilter();
         setupLeftNavigationFilter();
-        setupWriteModal();
 
         // 페이지 로드 시 "한줄 지식/잡학" 카테고리 자동 선택 및 히어로 배너 설정
         setTimeout(() => {
@@ -749,7 +677,10 @@
       });
 
       // 연도 표시
-      document.getElementById('year').textContent = new Date().getFullYear();
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
     </script>
 
     <footer class="footer">

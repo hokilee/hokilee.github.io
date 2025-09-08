@@ -899,7 +899,9 @@
 
       function updateViewsDisplay(id, viewsElement) {
         const views = getViews(id);
-        viewsElement.textContent = views;
+        if (viewsElement) {
+          viewsElement.textContent = views;
+        }
       }
 
       // 게시판 테이블 렌더링

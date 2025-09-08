@@ -62,7 +62,11 @@
         </div>
         <div class="nav-item">
           <a href="contact-board.html">
-            <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
+            <img
+              src="web-image/contect-icon.png"
+              alt="연락처"
+              class="nav-icon"
+            />
             <span>연락처</span>
           </a>
         </div>
@@ -103,9 +107,6 @@
               />
               <button class="search-btn">🔍</button>
             </div>
-            <button class="write-btn" onclick="openWriteModal()">
-              <span>✏️</span> 글쓰기
-            </button>
           </div>
           <div class="result-info">
             <span id="result-count">총 3건</span>
@@ -134,57 +135,6 @@
           <div class="pagination" id="pagination">
             <!-- 페이지네이션은 JavaScript로 동적 생성됩니다 -->
           </div>
-
-
-        </div>
-      </div>
-
-      <!-- 글쓰기 모달 -->
-      <div id="writeModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2>새 글 작성</h2>
-            <span class="close">&times;</span>
-          </div>
-          <form id="writeForm">
-            <div class="form-group">
-              <label for="title">제목 *</label>
-              <input type="text" id="title" name="title" required />
-            </div>
-            <div class="form-group">
-              <label for="category">카테고리 *</label>
-              <select id="category" name="category" required>
-                <option value="">카테고리 선택</option>
-                <option value="자기소개">자기소개</option>
-                <option value="이력서">이력서</option>
-                <option value="경험담">경험담</option>
-                <option value="기타">기타</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="content">내용</label>
-              <textarea
-                id="content"
-                name="content"
-                rows="6"
-                placeholder="글 내용을 입력하세요..."
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <label for="file">파일 첨부</label>
-              <input
-                type="file"
-                id="file"
-                name="file"
-                accept=".pdf,.doc,.docx,.txt"
-              />
-              <small>PDF, Word, 텍스트 파일만 업로드 가능합니다.</small>
-            </div>
-            <div class="form-actions">
-              <button type="button" class="btn-cancel">취소</button>
-              <button type="submit" class="btn-submit">등록</button>
-            </div>
-          </form>
         </div>
       </div>
     </main>
@@ -424,88 +374,6 @@
         }
       }
 
-      // 글쓰기 모달 설정
-      function setupWriteModal() {
-        const modal = document.getElementById('writeModal');
-        const writeBtn = document.querySelector('.write-btn');
-        const closeBtn = document.querySelector('.close');
-        const cancelBtn = document.querySelector('.btn-cancel');
-        const writeForm = document.getElementById('writeForm');
-
-        // 글쓰기 버튼 클릭
-        writeBtn.addEventListener('click', openWriteModal);
-
-        // 닫기 버튼 클릭
-        closeBtn.addEventListener('click', closeWriteModal);
-
-        // 취소 버튼 클릭
-        cancelBtn.addEventListener('click', closeWriteModal);
-
-        // 모달 외부 클릭 시 닫기
-        window.addEventListener('click', function (event) {
-          if (event.target === modal) {
-            closeWriteModal();
-          }
-        });
-
-        // 폼 제출
-        writeForm.addEventListener('submit', handleWriteSubmit);
-      }
-
-      // 글쓰기 모달 열기
-      function openWriteModal() {
-        const modal = document.getElementById('writeModal');
-        modal.style.display = 'block';
-        document.getElementById('title').focus();
-      }
-
-      // 글쓰기 모달 닫기
-      function closeWriteModal() {
-        const modal = document.getElementById('writeModal');
-        modal.style.display = 'none';
-        document.getElementById('writeForm').reset();
-      }
-
-      // 글쓰기 폼 제출 처리
-      function handleWriteSubmit(event) {
-        event.preventDefault();
-
-        const title = document.getElementById('title').value;
-        const category = document.getElementById('category').value;
-        const content = document.getElementById('content').value;
-        const file = document.getElementById('file').files[0];
-
-        if (!title || !category) {
-          alert('제목과 카테고리는 필수 입력 항목입니다.');
-          return;
-        }
-
-        // 새 글 데이터 생성
-        const newPost = {
-          id: boardData.length + 1,
-          title: title,
-          link: '#', // 임시 링크
-          category: category,
-          author: '이호기',
-          date: getCurrentDate(),
-          views: 0,
-          isNew: true,
-          content: content,
-        };
-
-        // 게시판 데이터에 추가
-        boardData.unshift(newPost);
-
-        // 필터링된 데이터도 업데이트
-        filterBoardData();
-
-        // 모달 닫기
-        closeWriteModal();
-
-        // 성공 메시지
-        alert('글이 성공적으로 등록되었습니다!');
-      }
-
       // 현재 날짜 가져오기 (MM-DD 형식)
       function getCurrentDate() {
         const now = new Date();
@@ -518,7 +386,6 @@
       document.addEventListener('DOMContentLoaded', function () {
         renderBoardTable(currentPage);
         renderPagination();
-        setupWriteModal();
         setupSearchAndFilter();
         updateResultCount();
       });
