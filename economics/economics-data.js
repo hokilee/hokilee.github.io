@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 63,
+    title: '스태그플레이션(Stagflation)',
+    link: 'economics/economy-detail-63.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '09-09',
+    views: 0,
+    summary: '스태그플레이션(Stagflation)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 62,
     title: 'GNI (Gross National Income)',
     link: 'economics/economy-detail-62.html',

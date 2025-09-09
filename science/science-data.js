@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 19,
+    title: '지구온난화와 온실효과',
+    link: 'science/science-detail-19.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-09',
+    views: 0,
+    summary: '지구온난화와 온실효과의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 18,
     title: '대륙붕 (Continental Shelf)',
     link: 'science/science-detail-18.html',
