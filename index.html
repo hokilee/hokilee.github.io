@@ -137,6 +137,17 @@
         </div>
 
         <div class="nav-item">
+          <a href="tech-trend-board.html">
+            <img
+              src="web-image/news_icon.png"
+              alt="기술 트렌드/뉴스"
+              class="nav-icon"
+            />
+            <span>기술 트렌드/뉴스</span>
+          </a>
+        </div>
+
+        <div class="nav-item">
           <a href="contact-board.html">
             <img
               src="web-image/contect-icon.png"
@@ -192,8 +203,26 @@
           </h3>
           <div class="notice-container notice-glow-container">
             <ul class="notice-list">
+              <p class="notice-item" data-date="2025-09-11">
+                <strong>2025-09-11</strong> - 안녕하십니까? 기술 트렌드/뉴스
+                게시판에, 자동차 산업의 최신 동향과 기술 트렌드를 주간별로
+                정리하여 제공합니다.<span
+                  class="new-badge"
+                  style="display: none"
+                  >NEW</span
+                ><br />
+              </p>
+              <p class="notice-item" data-date="2025-09-11">
+                <strong>2025-09-11</strong> - 안녕하십니까? 오늘의 콘텐츠
+                게시판에, 경제상식(중앙은행 디지털화폐), 일반상식(바로크미술)에
+                대한 내용을 추가했습니다.<span
+                  class="new-badge"
+                  style="display: none"
+                  >NEW</span
+                ><br />
+              </p>
               <p class="notice-item" data-date="2025-09-10">
-                <strong>2025-09-10</strong> - 안녕하십니까? 오늘 콘텐츠
+                <strong>2025-09-10</strong> - 안녕하십니까? 오늘의 콘텐츠
                 게시판에, 한줄 지식/잡학(인공지능의 한계), 하루 한생각(작은
                 기쁨의 발견)에 대한 내용을 추가했습니다.<span
                   class="new-badge"
@@ -202,18 +231,9 @@
                 ><br />
               </p>
               <p class="notice-item" data-date="2025-09-09">
-                <strong>2025-09-09</strong> - 안녕하십니까? 오늘 콘텐츠
+                <strong>2025-09-09</strong> - 안녕하십니까? 오늘의 콘텐츠
                 게시판에, 경제상식(스태그플레이션), 일반상식(지구온난화와
                 온실효과)에 대한 내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
-              </p>
-              <p class="notice-item" data-date="2025-09-08">
-                <strong>2025-09-08</strong> - 안녕하십니까? 오늘 콘텐츠
-                게시판에, 한줄 지식/잡학(유비커트스), 하루 한생각(고맙다 예쁜
-                학생)에 대한 내용을 추가했습니다.<span
                   class="new-badge"
                   style="display: none"
                   >NEW</span
@@ -280,11 +300,11 @@
       // 연도 표시
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // NEW 배지 표시 함수 (현재부터 2일 전까지)
+      // NEW 배지 표시 함수 (최근 2일간)
       function updateNewBadges() {
         const today = new Date();
-        const twoDaysAgo = new Date(today);
-        twoDaysAgo.setDate(today.getDate() - 2);
+        const yesterday = new Date(today);
+        yesterday.setDate(today.getDate() - 1);
 
         const noticeItems = document.querySelectorAll(
           '.notice-item[data-date]'
@@ -294,8 +314,8 @@
           const noticeDate = new Date(item.getAttribute('data-date'));
           const newBadge = item.querySelector('.new-badge');
 
-          // 현재 날짜부터 2일 전까지의 공지사항에만 NEW 배지 표시
-          if (noticeDate >= twoDaysAgo && noticeDate <= today) {
+          // 오늘과 어제의 공지사항에만 NEW 배지 표시
+          if (noticeDate >= yesterday) {
             newBadge.style.display = 'inline-block';
           } else {
             newBadge.style.display = 'none';

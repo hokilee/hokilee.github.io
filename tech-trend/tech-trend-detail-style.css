@@ -1,0 +1,153 @@
+/* 기술 트렌드/뉴스 상세 페이지 스타일 */
+.detail-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.detail-box h1 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #00d4ff;
+  padding-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.date {
+  color: #b3d9ff;
+  font-size: 16px;
+  margin-bottom: 25px;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  line-height: 1.8;
+  color: #f0f8ff;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.content h3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin: 35px 0 20px 0;
+  padding: 15px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 0.2) 0%,
+    rgba(0, 212, 255, 0.05) 100%
+  );
+  border-left: 5px solid #00d4ff;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 212, 255, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+  margin-bottom: 18px;
+  padding: 10px 0;
+}
+
+.content strong {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button-row {
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.button-center-group {
+  display: inline-block;
+}
+
+.back {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #00d4ff 0%, #0099cc 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.back:hover {
+  background: linear-gradient(45deg, #0099cc 0%, #00d4ff 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+}
+
+.footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #b3d9ff;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .detail-box {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .detail-box h1 {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+    padding: 12px 15px;
+  }
+
+  .back {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}

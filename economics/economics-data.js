@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 64,
+    title: '중앙은행 디지털화폐(CBDC)',
+    link: 'economics/economy-detail-64.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '09-11',
+    views: 0,
+    summary: '중앙은행 디지털화폐(CBDC)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 63,
     title: '스태그플레이션(Stagflation)',
     link: 'economics/economy-detail-63.html',

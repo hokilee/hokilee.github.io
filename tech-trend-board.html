@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="이호기의 기술자료 게시판 - 자동차 기술 전문가로서의 경험과 전문성을 담은 기술 자료와 가이드"
+      content="이호기의 기술 트렌드/뉴스 게시판 - 자동차 산업의 최신 동향과 기술 트렌드를 주간별로 정리하여 제공"
     />
     <meta name="author" content="Hoki Lee" />
-    <title>기술자료 게시판 - 이호기</title>
+    <title>기술 트렌드/뉴스 게시판 - 이호기</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
     <script src="scripts.js" defer></script>
@@ -168,11 +168,13 @@
   <body>
     <!-- 히어로 배너 섹션 -->
     <section class="hero-banner tech-hero">
+      <div class="hero-image">
+        <img src="web-image/technology-news-image.jpg" alt="기술 트렌드/뉴스" />
+      </div>
       <div class="hero-content">
-        <h1>기술자료</h1>
+        <h1>기술 트렌드/뉴스</h1>
         <p>
-          자동차 기술과 서비스 관리 경험을 바탕으로 한 전문성과 경험을 담은 기술
-          자료를 제공합니다
+          자동차 산업의 최신 동향과 기술 트렌드를 주간별로 정리하여 제공합니다
         </p>
       </div>
     </section>
@@ -210,19 +212,23 @@
             <span>오늘의 콘텐츠</span>
           </a>
         </div>
-        <div class="nav-item active">
-          <img src="web-image/books-icon.png" alt="기술자료" class="nav-icon" />
-          <span>기술자료</span>
-        </div>
         <div class="nav-item">
-          <a href="tech-trend-board.html">
+          <a href="latest-content-board.html">
             <img
-              src="web-image/news_icon.png"
-              alt="기술 트렌드/뉴스"
+              src="web-image/books-icon.png"
+              alt="기술자료"
               class="nav-icon"
             />
-            <span>기술 트렌드/뉴스</span>
+            <span>기술자료</span>
           </a>
+        </div>
+        <div class="nav-item active">
+          <img
+            src="web-image/news_icon.png"
+            alt="기술 트렌드/뉴스"
+            class="nav-icon"
+          />
+          <span>기술 트렌드/뉴스</span>
         </div>
         <div class="nav-item">
           <a href="contact-board.html">
@@ -253,10 +259,10 @@
         <!-- 메인 콘텐츠 -->
         <div class="board-main">
           <div class="board-header">
-            <h1>기술자료 게시판</h1>
+            <h1>기술 트렌드/뉴스 게시판</h1>
             <p>
-              자동차 기술과 서비스 관리 경험을 바탕으로 한 전문성과 경험을 담은
-              기술 자료를 제공합니다
+              자동차 산업의 최신 동향과 기술 트렌드를 주간별로 정리하여
+              제공합니다
             </p>
           </div>
 
@@ -266,14 +272,14 @@
               <input
                 type="text"
                 id="search-input"
-                placeholder="기술 자료 제목 또는 내용으로 검색..."
+                placeholder="뉴스 제목 또는 내용으로 검색..."
                 class="search-input"
               />
               <button class="search-btn">🔍</button>
             </div>
           </div>
           <div class="result-info">
-            <span id="result-count">총 4건</span>
+            <span id="result-count">총 1건</span>
           </div>
 
           <!-- 게시판 테이블 -->
@@ -314,48 +320,12 @@
       // 게시판 데이터
       const boardData = [
         {
-          id: 5,
-          title: '차체구조',
-          link: 'tech-book/차체구조-1.pdf',
-          category: '자동차',
-          author: '이호기',
-          date: '09-7',
-          views: 0,
-        },
-        {
-          id: 4,
-          title: '가솔린 엔진 점화장치',
-          link: 'tech-book/basic-engine-mechanicals.pdf',
-          category: '자동차',
-          author: '이호기',
-          date: '08-22',
-          views: 0,
-        },
-        {
-          id: 3,
-          title: '가솔린 엔진 점화장치',
-          link: 'tech-book/basic-engine-gas.pdf',
-          category: '자동차',
-          author: '이호기',
-          date: '08-09',
-          views: 0,
-        },
-        {
-          id: 2,
-          title: '기본 전기 이론',
-          link: 'tech-book/Basic_Elt_book_V1.pdf',
-          category: '자동차',
-          author: '이호기',
-          date: '08-06',
-          views: 0,
-        },
-        {
           id: 1,
-          title: 'K-3000 Controller 사용법',
-          link: 'tech-book/k3000 controller.pdf',
-          category: '주방기기',
+          title: '2025년 9월 2주차 기술 트렌드/뉴스',
+          link: 'tech-trend/tech-trend-detail-1.html',
+          category: '기술 트렌드/뉴스',
           author: '이호기',
-          date: '08-15',
+          date: '09-11',
           views: 0,
         },
       ];
@@ -445,6 +415,18 @@
 
         tbody.innerHTML = '';
 
+        if (pageData.length === 0) {
+          tbody.innerHTML = `
+            <tr>
+              <td colspan="6" style="text-align: center; padding: 40px; color: #666;">
+                아직 등록된 뉴스가 없습니다.<br>
+                매주 월요일에 최신 기술 트렌드와 뉴스를 업데이트합니다.
+              </td>
+            </tr>
+          `;
+          return;
+        }
+
         pageData.forEach((item) => {
           const row = document.createElement('tr');
 
@@ -500,6 +482,8 @@
         const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
         pagination.innerHTML = '';
+
+        if (totalPages <= 1) return;
 
         // 이전 버튼
         if (currentPage > 1) {

@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 20,
+    title: '바로크미술',
+    link: 'science/science-detail-20.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-11',
+    views: 0,
+    summary: '바로크미술의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 19,
     title: '지구온난화와 온실효과',
     link: 'science/science-detail-19.html',
