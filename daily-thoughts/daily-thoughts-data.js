@@ -1,6 +1,16 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 74,
+    title: '작은 기쁨의 발견',
+    link: 'daily-thoughts/thought-detail-74.html',
+    category: '하루 한생각',
+    author: '이호기',
+    date: '09-10',
+    views: 0,
+    summary: '일상에서 발견하는 작은 기쁨들',
+  },
+  {
     id: 73,
     title: '고맙다 예쁜 학생.',
     link: 'daily-thoughts/thought-detail-73.html',

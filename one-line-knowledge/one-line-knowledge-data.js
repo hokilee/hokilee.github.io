@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 76,
+    title: '인공지능의 한계',
+    link: 'one-line-knowledge/trivia-detail-76.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '09-10',
+    views: 0,
+  },
+  {
     id: 75,
     title: '유비커트스',
     link: 'one-line-knowledge/trivia-detail-75.html',
