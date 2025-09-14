@@ -163,6 +163,128 @@
           font-size: 14px;
         }
       }
+
+      /* 다운로드 확인 다이얼로그 스타일 추가 */
+      .download-confirm-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1001;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .download-confirm-container {
+        background: white;
+        border-radius: 12px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        animation: slideIn 0.3s ease-out;
+      }
+
+      .download-confirm-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 24px 16px 24px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .download-confirm-header h3 {
+        margin: 0;
+        color: #333;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .download-confirm-close {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #666;
+        cursor: pointer;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 0.2s;
+      }
+
+      .download-confirm-close:hover {
+        background-color: #f0f0f0;
+      }
+
+      .download-confirm-content {
+        padding: 24px;
+      }
+
+      .download-confirm-content p {
+        margin: 0 0 24px 0;
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+      }
+
+      .download-confirm-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+      }
+
+      .btn-download-yes,
+      .btn-download-no {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        min-width: 120px;
+      }
+
+      .btn-download-yes {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .btn-download-yes:hover {
+        background-color: #0056b3;
+      }
+
+      .btn-download-no {
+        background-color: #6c757d;
+        color: white;
+      }
+
+      .btn-download-no:hover {
+        background-color: #545b62;
+      }
+
+      /* 모바일 반응형 */
+      @media (max-width: 768px) {
+        .download-confirm-container {
+          margin: 10px;
+        }
+
+        .download-confirm-actions {
+          flex-direction: column;
+        }
+
+        .btn-download-yes,
+        .btn-download-no {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -572,8 +694,13 @@
             viewsElement.textContent = newViews;
           }
 
-          // 새 탭에서 링크 열기
-          window.open(link, '_blank');
+          // PDF 파일인 경우 다운로드 확인 다이얼로그 표시
+          if (link.toLowerCase().endsWith('.pdf')) {
+            showDownloadConfirmDialog(id, link);
+          } else {
+            // 다른 파일 타입은 새 탭에서 열기
+            window.open(link, '_blank');
+          }
         } else {
           // 새로 작성된 글의 경우 detail 페이지로 이동
           showDetailPage(id);
@@ -674,6 +801,62 @@
         const month = String(now.getMonth() + 1).padStart(2, '0');
         const day = String(now.getDate()).padStart(2, '0');
         return `${month}-${day}`;
+      }
+
+      // 다운로드 확인 다이얼로그 표시
+      function showDownloadConfirmDialog(id, link) {
+        const fileName = link.split('/').pop();
+
+        // 다운로드 확인 다이얼로그 HTML 생성
+        const confirmHTML = `
+          <div class="download-confirm-overlay" id="downloadConfirmOverlay">
+            <div class="download-confirm-container">
+              <div class="download-confirm-header">
+                <h3>파일 다운로드</h3>
+                <button class="download-confirm-close" onclick="closeDownloadConfirm()">&times;</button>
+              </div>
+              <div class="download-confirm-content">
+                <p><strong>"${fileName}"</strong> 파일을 다운로드하시겠습니까?</p>
+                <div class="download-confirm-actions">
+                  <button class="btn-download-yes" onclick="downloadFile('${link}'); closeDownloadConfirm();">예, 다운로드</button>
+                  <button class="btn-download-no" onclick="closeDownloadConfirm();">아니오, 목록으로</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // 기존 다이얼로그가 있다면 제거
+        const existingDialog = document.getElementById(
+          'downloadConfirmOverlay'
+        );
+        if (existingDialog) {
+          existingDialog.remove();
+        }
+
+        // 다이얼로그 추가
+        document.body.insertAdjacentHTML('beforeend', confirmHTML);
+      }
+
+      // 파일 다운로드 실행
+      function downloadFile(link) {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = link;
+        downloadLink.download = link.split('/').pop();
+        downloadLink.style.display = 'none';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+      }
+
+      // 다운로드 확인 다이얼로그 닫기
+      function closeDownloadConfirm() {
+        const confirmOverlay = document.getElementById(
+          'downloadConfirmOverlay'
+        );
+        if (confirmOverlay) {
+          confirmOverlay.remove();
+        }
       }
     </script>
   </body>
