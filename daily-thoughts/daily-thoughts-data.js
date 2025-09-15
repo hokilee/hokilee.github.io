@@ -1,6 +1,16 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 76,
+    title: '가을의 속삭임',
+    link: 'daily-thoughts/thought-detail-76.html',
+    category: '하루 한생각',
+    author: '이호기',
+    date: '09-16',
+    views: 0,
+    summary: '가을의 속삭임에 대한 생각',
+  },
+  {
     id: 75,
     title: '잊혀진 순간의 소중함',
     link: 'daily-thoughts/thought-detail-75.html',

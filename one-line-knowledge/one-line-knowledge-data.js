@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 78,
+    title: 'ChatGPT와 Gemini의 기본 특징 비교',
+    link: 'one-line-knowledge/trivia-detail-78.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '09-16',
+    views: 0,
+  },
+  {
     id: 74,
     title: '왜 새들은 전선에 앉아도 감전되지 않을까?',
     link: 'one-line-knowledge/trivia-detail-77.html',
