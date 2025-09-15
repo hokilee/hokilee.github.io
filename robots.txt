@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hokilee.github.io/sitemap.txt
+Sitemap: https://hokilee.github.io/sitemap.xml
