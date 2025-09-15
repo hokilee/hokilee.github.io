@@ -1,0 +1,11 @@
+# 사이트 기본 설정
+title: Hoki Lee의 블로그
+email: 당신의 이메일 주소
+description: '자동차 정비와 관련된 개인 홈페이지입니다.'
+baseurl: ""
+url: "https://hokilee.github.io"
+
+# Jekyll 빌드 설정
+timezone: Asia/Seoul
+markdown: kramdown
+theme: jekyll-theme-minimal
