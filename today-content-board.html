@@ -11,6 +11,20 @@
     <title>오늘의 콘텐츠 - 이호기</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
+    <style>
+      /* 현재 페이지 정보 스타일 */
+      .page-info {
+        text-align: center;
+        margin: 20px 0 10px 0;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .page-info strong {
+        color: #dc3545;
+        font-weight: 600;
+      }
+    </style>
     <!-- 외부 데이터 파일들 -->
     <script src="daily-thoughts/daily-thoughts-data.js"></script>
     <script src="one-line-knowledge/one-line-knowledge-data.js"></script>
@@ -196,6 +210,13 @@
             </table>
           </div>
 
+          <!-- 현재 페이지 정보 -->
+          <div class="page-info">
+            <span id="current-page-info"
+              >현재 페이지: <strong>1</strong> / 1 페이지</span
+            >
+          </div>
+
           <!-- 페이지네이션 -->
           <div class="pagination" id="pagination">
             <!-- 동적으로 생성되는 페이지네이션 -->
@@ -358,9 +379,29 @@
           pagination.appendChild(prevBtn);
         }
 
-        // 페이지 번호 버튼들
-        const startPage = Math.max(1, currentPage - 2);
-        const endPage = Math.min(totalPages, currentPage + 2);
+        // 페이지 번호 버튼들 - 5개 페이지를 기본으로 표시
+        let startPage, endPage;
+
+        if (totalPages <= 5) {
+          // 전체 페이지가 5개 이하면 1페이지부터 전체 페이지까지
+          startPage = 1;
+          endPage = totalPages;
+        } else {
+          // 전체 페이지가 5개 초과인 경우
+          if (currentPage <= 3) {
+            // 1-3페이지: 1페이지부터 5페이지까지
+            startPage = 1;
+            endPage = 5;
+          } else if (currentPage >= totalPages - 2) {
+            // 마지막 3페이지: 마지막 5개 페이지부터 끝까지
+            startPage = totalPages - 4;
+            endPage = totalPages;
+          } else {
+            // 중간 페이지: 현재 페이지 중심으로 앞뒤 2페이지씩 (총 5개)
+            startPage = currentPage - 2;
+            endPage = currentPage + 2;
+          }
+        }
 
         for (let i = startPage; i <= endPage; i++) {
           const pageBtn = document.createElement('button');
@@ -389,6 +430,7 @@
         }
         renderPagination();
         updateResultCount();
+        updateCurrentPageInfo();
       }
 
       // 검색 및 필터링 설정
@@ -451,6 +493,7 @@
         renderFilteredBoardTable(currentPage);
         renderPagination();
         updateResultCount();
+        updateCurrentPageInfo();
       }
 
       // 왼쪽 네비게이션 필터 설정
@@ -566,6 +609,7 @@
         renderFilteredBoardTable(currentPage);
         renderPagination();
         updateResultCount();
+        updateCurrentPageInfo();
 
         // 필터 박스도 업데이트
         const categoryFilter = document.getElementById('categoryFilter');
@@ -592,6 +636,19 @@
           resultCount.textContent = `총 ${dataLength}개의 게시글`;
         } else {
           console.error('result-count 요소를 찾을 수 없습니다.');
+        }
+      }
+
+      // 현재 페이지 정보 업데이트
+      function updateCurrentPageInfo() {
+        const currentPageInfo = document.getElementById('current-page-info');
+        const dataLength = currentFilter
+          ? filteredData.length
+          : boardData.length;
+        const totalPages = Math.ceil(dataLength / itemsPerPage);
+
+        if (currentPageInfo) {
+          currentPageInfo.innerHTML = `현재 페이지: <strong>${currentPage}</strong> / ${totalPages} 페이지`;
         }
       }
 
@@ -665,6 +722,7 @@
         renderBoardTable(1);
         renderPagination();
         updateResultCount();
+        updateCurrentPageInfo();
         setupSearchAndFilter();
         setupLeftNavigationFilter();
 

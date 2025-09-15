@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 21,
+    title: '자동차 엔진 오일 교체 주기는 어떻게 정할까?',
+    link: 'science/science-detail-21.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-15',
+    views: 0,
+    summary: '자동차 엔진 오일 교체 주기 결정 방법과 관리 요령에 대한 설명',
+  },
+  {
     id: 20,
     title: '바로크미술',
     link: 'science/science-detail-20.html',

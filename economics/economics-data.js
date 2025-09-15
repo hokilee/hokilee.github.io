@@ -2,13 +2,13 @@
 const economicsData = [
   {
     id: 64,
-    title: '중앙은행 디지털화폐(CBDC)',
+    title: '중국 경제 둔화가 한국에 미치는 영향',
     link: 'economics/economy-detail-64.html',
     category: '경제 상식',
     author: '이호기',
-    date: '09-11',
+    date: '09-15',
     views: 0,
-    summary: '중앙은행 디지털화폐(CBDC)의 개념, 특징, 비교 분석에 대한 설명',
+    summary: '중국 경제 둔화가 한국에 미치는 영향',
   },
   {
     id: 63,
@@ -73,13 +73,13 @@ const economicsData = [
   },
   {
     id: 57,
-    title: '기술적 분석 차트',
+    title: '골드크로스와 데드크로스',
     link: 'economics/economy-detail-57.html',
     category: '경제 상식',
     author: '이호기',
     date: '08-26',
     views: 0,
-    summary: '기술적 분석 차트의 개념, 특징, 비교 분석에 대한 설명',
+    summary: '골드크로스와 데드크로스의 개념, 특징, 비교 분석에 대한 설명',
   },
   {
     id: 56,
