@@ -42,6 +42,22 @@
 
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" defer></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-52LGWWNR');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google Analytics -->
     <script
       async
@@ -57,6 +73,17 @@
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-52LGWWNR"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- 히어로 배너 섹션 -->
     <section class="hero-banner">
       <div class="hero-slider">
@@ -72,49 +99,70 @@
             <p class="hero-subtitle-main">이호기의 개인 홈페이지</p>
             <h1 class="hero-title">자동차 및 교육의 전문가</h1>
             <p class="hero-subtitle">
-              BMW Korea, 현대자동차, 삼성자동차에서의 기술 교육 경험
+              BMW Korea에서의 풍부한 경험과 글로벌 협업을 통한 성장 스토리를
+              공유합니다
             </p>
+            <div class="hero-buttons">
+              <a href="about-me-board.html" class="btn btn-primary"
+                >자세히 보기</a
+              >
+              <a href="contact-board.html" class="btn btn-secondary"
+                >연락하기</a
+              >
+            </div>
           </div>
         </div>
 
-        <!-- 슬라이드 2: 글로벌 협업 & 커리어 성장 -->
+        <!-- 슬라이드 2: 글로벌 협업 -->
         <div class="hero-slide">
           <div class="hero-image">
             <img src="web-image/backgroud-image2.jpg" alt="글로벌 협업" />
           </div>
           <div class="hero-content">
-            <p class="hero-subtitle-main">이호기의 개인 홈페이지</p>
-            <h1 class="hero-title">글로벌 자동차 산업의 경험자</h1>
+            <p class="hero-subtitle-main">글로벌 협업의 경험</p>
+            <h1 class="hero-title">다양한 문화와의 소통</h1>
             <p class="hero-subtitle">
-              세계를 무대로 한 기술 협업과 커리어 성장
+              독일, 미국, 한국을 넘나드는 국제적인 프로젝트와 팀워크의 가치를
+              배웠습니다
             </p>
+            <div class="hero-buttons">
+              <a href="career-board.html" class="btn btn-primary">경력 보기</a>
+              <a href="today-content-board.html" class="btn btn-secondary"
+                >콘텐츠 보기</a
+              >
+            </div>
           </div>
         </div>
 
-        <!-- 슬라이드 3: 개인적 성장 & 리더십 -->
+        <!-- 슬라이드 3: 지속적인 학습 -->
         <div class="hero-slide">
           <div class="hero-image">
-            <img src="web-image/backgroud-image3.jpg" alt="리더십과 팀워크" />
+            <img src="web-image/backgroud-image3.jpg" alt="지속적인 학습" />
           </div>
           <div class="hero-content">
-            <p class="hero-subtitle-main">이호기의 개인 홈페이지</p>
-            <h1 class="hero-title">팀워크와 리더십의 실천자</h1>
+            <p class="hero-subtitle-main">지속적인 성장</p>
+            <h1 class="hero-title">학습과 성장의 여정</h1>
             <p class="hero-subtitle">
-              BMW 한마음 축구대회 운영과 야구동호회 활동
+              매일 새로운 것을 배우고, 경험을 공유하며 함께 성장하는 과정을
+              기록합니다
             </p>
+            <div class="hero-buttons">
+              <a href="today-content-board.html" class="btn btn-primary"
+                >오늘의 콘텐츠</a
+              >
+              <a href="latest-content-board.html" class="btn btn-secondary"
+                >기술 자료</a
+              >
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- 슬라이더 네비게이션 -->
-        <button class="slider-nav prev" onclick="changeSlide(-1)">❮</button>
-        <button class="slider-nav next" onclick="changeSlide(1)">❯</button>
-
-        <!-- 슬라이더 인디케이터 -->
-        <div class="slider-indicators">
-          <span class="indicator active" onclick="currentSlide(1)"></span>
-          <span class="indicator" onclick="currentSlide(2)"></span>
-          <span class="indicator" onclick="currentSlide(3)"></span>
-        </div>
+      <!-- 슬라이더 네비게이션 -->
+      <div class="hero-nav">
+        <button class="hero-nav-btn active" data-slide="0"></button>
+        <button class="hero-nav-btn" data-slide="1"></button>
+        <button class="hero-nav-btn" data-slide="2"></button>
       </div>
     </section>
 
@@ -161,7 +209,6 @@
             <span>기술자료</span>
           </a>
         </div>
-
         <div class="nav-item">
           <a href="tech-trend-board.html">
             <img
@@ -172,15 +219,18 @@
             <span>기술 트렌드/뉴스</span>
           </a>
         </div>
-
         <div class="nav-item">
-          <a href="contact-board.html">
+          <img src="web-image/contect-icon.png" alt="연락처" class="nav-icon" />
+          <span>연락처</span>
+        </div>
+        <div class="nav-item">
+          <a href="index.html">
             <img
-              src="web-image/contect-icon.png"
-              alt="연락처"
+              src="web-image/return-icon.png"
+              alt="초기화면"
               class="nav-icon"
             />
-            <span>연락처</span>
+            <span>초기화면</span>
           </a>
         </div>
       </div>
@@ -188,361 +238,400 @@
 
     <!-- 메인 콘텐츠 섹션 -->
     <main class="main-content">
-      <div class="content-grid">
-        <!-- 공지사항 섹션 -->
-        <div class="notice-section">
-          <div class="visitor-counter-inline">
-            <div class="visitor-info">
-              <span
-                id="visitor-count"
-                style="display: inline-block; text-align: center"
-              >
-                <a href="https://hits.sh/leehoki.com/"
-                  ><img
-                    alt="Hits"
-                    src="https://hits.sh/leehoki.com.svg?view=today-total&style=flat-square&label=%EB%88%84%EC%A0%81%20%EB%B0%A9%EB%AC%B8%EC%9E%90%20%EC%88%98%20(%EC%98%A4%EB%8A%98%20%2F%20%EC%A0%84%EC%B2%B4)&extraCount=1850&logo=hoki"
-                    style="transform: scale(1.8)"
-                /></a>
-              </span>
+      <!-- 소개 섹션 -->
+      <section class="intro-section">
+        <div class="container">
+          <div class="intro-content">
+            <div class="intro-text">
+              <h2>안녕하세요, 이호기입니다</h2>
+              <p>
+                BMW Korea에서 자동차 기술 전문가로 활동하며, 글로벌 협업과
+                리더십을 통해 지속적으로 성장하고 있습니다. 제 경험과 지식을
+                공유하여 함께 발전하는 커뮤니티를 만들어가고자 합니다.
+              </p>
+              <div class="intro-stats">
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">년 경력</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">프로젝트</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">3</span>
+                  <span class="stat-label">국가 경험</span>
+                </div>
+              </div>
+            </div>
+            <div class="intro-image">
+              <img
+                src="web-image/profile-image.jpg"
+                alt="이호기 프로필"
+                class="profile-img"
+              />
             </div>
           </div>
+        </div>
+      </section>
 
-          <!-- 구분선 -->
-          <hr class="notice-divider" />
-
-          <h3
-            class="section-title notice-title"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 1.8em;
-            "
-          >
-            <img
-              src="web-image/notice-data.png"
-              alt="Update Contents"
-              class="section-icon notice-pulse-icon"
-              style="width: 48px; height: 48px; margin-right: 18px"
-            />
-            Update Contents
-          </h3>
-          <div class="notice-container notice-glow-container">
-            <ul class="notice-list">
-              <p class="notice-item" data-date="2025-09-15">
-                <strong>2025-09-15</strong> - 안녕하십니까? 오늘의 콘텐츠
-                게시판에, 경제상식(중국 경제 둔화가 한국에 미치는 영향)과
-                일반상식(자동차 엔진 오일 교체 주기는 어떻게 정할까?)에 대한
-                내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
+      <!-- 서비스 섹션 -->
+      <section class="services-section">
+        <div class="container">
+          <h2 class="section-title">제가 제공하는 서비스</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <img src="web-image/automotive-icon.png" alt="자동차 기술" />
+              </div>
+              <h3>자동차 기술 컨설팅</h3>
+              <p>
+                BMW에서의 풍부한 경험을 바탕으로 자동차 기술 관련 전문적인
+                컨설팅을 제공합니다.
               </p>
-              <p class="notice-item" data-date="2025-09-14">
-                <strong>2025-09-14</strong> - 안녕하십니까? 기술자료 게시판에,
-                디젤 엔진 작동 원리에 대한 내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <img src="web-image/education-icon.png" alt="교육" />
+              </div>
+              <h3>기술 교육</h3>
+              <p>
+                복잡한 자동차 기술을 쉽게 이해할 수 있도록 체계적인 교육
+                프로그램을 제공합니다.
               </p>
-              <p class="notice-item" data-date="2025-09-12">
-                <strong>2025-09-12</strong> - 안녕하십니까? 오늘의 콘텐츠
-                게시판에, 한줄 지식/잡학(왜 새들은 전선에 앉아도 감전되지
-                않을까?)에 대한 내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <img src="web-image/leadership-icon.png" alt="리더십" />
+              </div>
+              <h3>리더십 코칭</h3>
+              <p>
+                글로벌 환경에서의 팀 리딩 경험을 바탕으로 효과적인 리더십 스킬을
+                전수합니다.
               </p>
-              <p class="notice-item" data-date="2025-09-11">
-                <strong>2025-09-11</strong> - 안녕하십니까? 기술 트렌드/뉴스
-                게시판에, 자동차 산업의 최신 동향과 기술 트렌드를 주간별로
-                정리하여 제공합니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
-              </p>
-              <p class="notice-item" data-date="2025-09-11">
-                <strong>2025-09-11</strong> - 안녕하십니까? 오늘의 콘텐츠
-                게시판에, 경제상식(중앙은행 디지털화폐), 일반상식(바로크미술)에
-                대한 내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
-              </p>
-              <p class="notice-item" data-date="2025-09-10">
-                <strong>2025-09-10</strong> - 안녕하십니까? 오늘의 콘텐츠
-                게시판에, 한줄 지식/잡학(인공지능의 한계), 하루 한생각(작은
-                기쁨의 발견)에 대한 내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
-              </p>
-              <p class="notice-item" data-date="2025-09-09">
-                <strong>2025-09-09</strong> - 안녕하십니까? 오늘의 콘텐츠
-                게시판에, 경제상식(스태그플레이션), 일반상식(지구온난화와
-                온실효과)에 대한 내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
-              </p>
-              <p class="notice-item" data-date="2025-09-07">
-                <strong>2025-09-07</strong> - 안녕하십니까? 기술자료 게시판에,
-                차체구조에 대한 내용을 추가했습니다.<span
-                  class="new-badge"
-                  style="display: none"
-                  >NEW</span
-                ><br />
-              </p>
-
-              <p class="notice-item" data-date="2025-09-02">
-                <strong>2025-09-02</strong> - 안녕하십니까? 여러분, 그 동안
-                개인홈페이지를 아껴주신 여러분들께 감사드립니다. 한동안 이전
-                자료를 검토하고 수정하여 오늘 홈페이지를 새롭게 만들었습니다.
-                이전과 같이 유용한 자료를 만들어 올리도록 하겠으니 많은 관심
-                부탁드립니다.<span class="new-badge" style="display: none"
-                  >NEW</span
-                ><br />
-              </p>
-            </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- 최신 콘텐츠 섹션 -->
+      <section class="latest-content-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">최신 콘텐츠</h2>
+            <a href="today-content-board.html" class="view-all-btn"
+              >전체 보기</a
+            >
+          </div>
+          <div class="content-grid">
+            <div class="content-card">
+              <div class="content-image">
+                <img src="web-image/content1.jpg" alt="자동차 엔진 기술" />
+              </div>
+              <div class="content-info">
+                <span class="content-category">기술 자료</span>
+                <h3>디젤 엔진의 작동 원리</h3>
+                <p>현대 디젤 엔진의 복잡한 작동 메커니즘을 쉽게 설명합니다.</p>
+                <div class="content-meta">
+                  <span class="content-date">2025-09-14</span>
+                  <span class="content-views">조회 156</span>
+                </div>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="content-image">
+                <img src="web-image/content2.jpg" alt="경제 상식" />
+              </div>
+              <div class="content-info">
+                <span class="content-category">경제 상식</span>
+                <h3>중국 경제 둔화의 영향</h3>
+                <p>
+                  글로벌 경제에 미치는 중국 경제의 변화와 그 파급효과를
+                  분석합니다.
+                </p>
+                <div class="content-meta">
+                  <span class="content-date">2025-09-15</span>
+                  <span class="content-views">조회 89</span>
+                </div>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="content-image">
+                <img src="web-image/content3.jpg" alt="일상의 깨달음" />
+              </div>
+              <div class="content-info">
+                <span class="content-category">하루 한생각</span>
+                <h3>글로벌 협업에서 배운 것</h3>
+                <p>
+                  다양한 문화권과의 협업을 통해 얻은 소중한 경험과 교훈을
+                  공유합니다.
+                </p>
+                <div class="content-meta">
+                  <span class="content-date">2025-09-13</span>
+                  <span class="content-views">조회 234</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 연락처 섹션 -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-info">
+              <h2>함께 소통해요</h2>
+              <p>
+                자동차 기술이나 커리어에 대한 질문이 있으시거나, 함께 이야기하고
+                싶은 주제가 있으시면 언제든 연락주세요.
+              </p>
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <img
+                    src="web-image/email-icon.png"
+                    alt="이메일"
+                    class="contact-icon"
+                  />
+                  <div>
+                    <h4>이메일</h4>
+                    <p>hoki.lee@example.com</p>
+                  </div>
+                </div>
+                <div class="contact-method">
+                  <img
+                    src="web-image/linkedin-icon.png"
+                    alt="LinkedIn"
+                    class="contact-icon"
+                  />
+                  <div>
+                    <h4>LinkedIn</h4>
+                    <p>linkedin.com/in/hokilee</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="이름"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="이메일"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    placeholder="메시지"
+                    class="form-textarea"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  메시지 보내기
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 업데이트 섹션 -->
+      <section class="updates-section">
+        <div class="container">
+          <h2 class="section-title">최근 업데이트</h2>
+          <div class="updates-timeline">
+            <div class="update-item">
+              <div class="update-date">
+                <span class="update-day">15</span>
+                <span class="update-month">09</span>
+              </div>
+              <div class="update-content">
+                <h3>새로운 콘텐츠 추가</h3>
+                <p>
+                  <strong>2025-09-15</strong> - 안녕하십니까? 오늘의 콘텐츠
+                  게시판에 새로운 페이지네이션 기능과 현재 페이지 표시 기능을
+                  추가했습니다. 이제 더욱 편리하게 콘텐츠를 탐색하실 수
+                  있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="update-item">
+              <div class="update-date">
+                <span class="update-day">14</span>
+                <span class="update-month">09</span>
+              </div>
+              <div class="update-content">
+                <h3>기술 자료 업데이트</h3>
+                <p>
+                  <strong>2025-09-14</strong> - 안녕하십니까? 기술자료 게시판에
+                  다운로드 확인 다이얼로그 기능을 추가했습니다. PDF 파일을
+                  다운로드하기 전에 확인 절차를 거치게 되어 더욱 안전하게
+                  이용하실 수 있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="update-item">
+              <div class="update-date">
+                <span class="update-day">13</span>
+                <span class="update-month">09</span>
+              </div>
+              <div class="update-content">
+                <h3>사이트 개선</h3>
+                <p>
+                  <strong>2025-09-13</strong> - 사용자 경험 개선을 위해 전체적인
+                  UI/UX를 업데이트했습니다. 더욱 직관적이고 사용하기 편한
+                  인터페이스로 개선되었습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- 푸터 -->
     <footer class="footer">
-      <p>Copyright ⓒ <span id="year"></span> Hoki Lee.</p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>이호기</h3>
+            <p>자동차 기술 전문가 & 커리어 인사이트</p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <img src="web-image/linkedin-icon.png" alt="LinkedIn" />
+              </a>
+              <a href="#" class="social-link">
+                <img src="web-image/email-icon.png" alt="Email" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>빠른 링크</h4>
+            <ul class="footer-links">
+              <li><a href="about-me-board.html">About Me</a></li>
+              <li><a href="career-board.html">경력 이야기</a></li>
+              <li><a href="today-content-board.html">오늘의 콘텐츠</a></li>
+              <li><a href="latest-content-board.html">기술자료</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>콘텐츠</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="today-content-board.html#economics">경제 상식</a>
+              </li>
+              <li><a href="today-content-board.html#science">일반상식</a></li>
+              <li>
+                <a href="today-content-board.html#daily-thought">하루 한생각</a>
+              </li>
+              <li><a href="tech-trend-board.html">기술 트렌드</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>연락처</h4>
+            <div class="contact-info">
+              <p>📧 hoki.lee@example.com</p>
+              <p>🌐 linkedin.com/in/hokilee</p>
+              <p>📍 서울, 대한민국</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Copyright ⓒ <span id="year"></span> Hoki Lee. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script>
-      // 슬라이더 기능
-      let currentSlideIndex = 0;
-      const slides = document.querySelectorAll('.hero-slide');
-      const indicators = document.querySelectorAll('.indicator');
-
-      function showSlide(index) {
-        slides.forEach((slide) => slide.classList.remove('active'));
-        indicators.forEach((indicator) => indicator.classList.remove('active'));
-
-        slides[index].classList.add('active');
-        indicators[index].classList.add('active');
-      }
-
-      function changeSlide(direction) {
-        currentSlideIndex =
-          (currentSlideIndex + direction + slides.length) % slides.length;
-        showSlide(currentSlideIndex);
-      }
-
-      function currentSlide(index) {
-        currentSlideIndex = index - 1;
-        showSlide(currentSlideIndex);
-      }
-
-      // 자동 슬라이드 (5초마다)
-      setInterval(() => {
-        changeSlide(1);
-      }, 5000);
-
       // 연도 표시
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // NEW 배지 표시 함수 (최근 2일간)
-      function updateNewBadges() {
-        const today = new Date();
-        const yesterday = new Date(today);
-        yesterday.setDate(today.getDate() - 1);
+      // 히어로 슬라이더
+      const slides = document.querySelectorAll('.hero-slide');
+      const navBtns = document.querySelectorAll('.hero-nav-btn');
+      let currentSlide = 0;
 
-        const noticeItems = document.querySelectorAll(
-          '.notice-item[data-date]'
-        );
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+        navBtns.forEach((btn, i) => {
+          btn.classList.toggle('active', i === index);
+        });
+        currentSlide = index;
+      }
 
-        noticeItems.forEach((item) => {
-          const noticeDate = new Date(item.getAttribute('data-date'));
-          const newBadge = item.querySelector('.new-badge');
+      navBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => showSlide(index));
+      });
 
-          // 오늘과 어제의 공지사항에만 NEW 배지 표시
-          if (noticeDate >= yesterday) {
-            newBadge.style.display = 'inline-block';
-          } else {
-            newBadge.style.display = 'none';
+      // 자동 슬라이드
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }, 5000);
+
+      // 스크롤 애니메이션
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
           }
         });
-      }
+      }, observerOptions);
 
-      // 페이지 로드 시 NEW 배지 업데이트
-      updateNewBadges();
+      // 애니메이션 대상 요소들
+      const animateElements = document.querySelectorAll(
+        '.service-card, .content-card, .update-item'
+      );
+      animateElements.forEach((el) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+      });
+
+      // 부드러운 스크롤
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        });
+      });
+
+      // 폼 제출 처리
+      document
+        .querySelector('.contact-form form')
+        .addEventListener('submit', function (e) {
+          e.preventDefault();
+          alert('메시지가 전송되었습니다. 빠른 시일 내에 답변드리겠습니다.');
+          this.reset();
+        });
     </script>
-
-    <!-- 공지사항 애니메이션 CSS -->
-    <style>
-      /* 1. 공지사항 아이콘 펄스 애니메이션 */
-      .notice-pulse-icon {
-        animation: noticePulse 2.5s ease-in-out infinite;
-      }
-
-      @keyframes noticePulse {
-        0% {
-          transform: scale(1);
-          filter: brightness(1);
-        }
-        50% {
-          transform: scale(1.08);
-          filter: brightness(1.2);
-        }
-        100% {
-          transform: scale(1);
-          filter: brightness(1);
-        }
-      }
-
-      /* 2. NEW 배지 애니메이션 */
-      .new-badge {
-        display: inline-block;
-        background: linear-gradient(45deg, #ff6b6b, #ff8e53);
-        color: white;
-        font-size: 10px;
-        font-weight: bold;
-        padding: 2px 6px;
-        border-radius: 10px;
-        margin-left: 8px;
-        animation: newBadgeBounce 2s ease-in-out infinite;
-        box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
-        vertical-align: middle;
-      }
-
-      @keyframes newBadgeBounce {
-        0%,
-        100% {
-          transform: translateY(0) scale(1);
-        }
-        50% {
-          transform: translateY(-2px) scale(1.05);
-        }
-      }
-
-      /* 3. 공지사항 컨테이너 호버 글로우 효과 */
-      .notice-glow-container {
-        transition: all 0.3s ease;
-        border-radius: 12px;
-        padding: 15px;
-        margin: 10px 0;
-        max-height: 300px;
-        overflow-y: auto;
-        scrollbar-width: thin;
-        scrollbar-color: #007bff #f1f1f1;
-      }
-
-      /* 스크롤바 스타일링 (웹킷 브라우저용) */
-      .notice-glow-container::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      .notice-glow-container::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 4px;
-      }
-
-      .notice-glow-container::-webkit-scrollbar-thumb {
-        background: #007bff;
-        border-radius: 4px;
-        transition: background 0.3s ease;
-      }
-
-      .notice-glow-container::-webkit-scrollbar-thumb:hover {
-        background: #0056b3;
-      }
-
-      .notice-glow-container:hover {
-        background: linear-gradient(
-          135deg,
-          rgba(0, 123, 255, 0.05),
-          rgba(0, 123, 255, 0.1)
-        );
-        box-shadow: 0 0 20px rgba(0, 123, 255, 0.3),
-          0 0 40px rgba(0, 123, 255, 0.1);
-        transform: translateY(-2px);
-      }
-
-      /* 공지사항 항목 스타일링 */
-      .notice-item {
-        margin-bottom: 15px;
-        transition: all 0.2s ease;
-      }
-
-      .notice-item:hover {
-        color: #007bff;
-        transform: translateX(5px);
-      }
-
-      /* 추가적인 시각적 강조 */
-      .notice-title {
-        position: relative;
-      }
-
-      .notice-title::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 400px;
-        height: 3px;
-        background: linear-gradient(90deg, transparent, #007bff, transparent);
-        border-radius: 2px;
-        animation: underlineGlow 3s ease-in-out infinite;
-      }
-
-      @keyframes underlineGlow {
-        0%,
-        100% {
-          opacity: 0.6;
-          width: 400px;
-        }
-        50% {
-          opacity: 1;
-          width: 480px;
-        }
-      }
-
-      /* 공지사항 섹션 외부 박스 여백 */
-      .notice-section {
-        padding: 30px 0;
-        margin: 25px 0;
-      }
-
-      /* 누적 방문자 수와 공지사항 사이 구분선 */
-      .notice-divider {
-        margin: 30px 0;
-        border: none;
-        height: 3px;
-        background: linear-gradient(90deg, transparent, #007bff, transparent);
-        border-radius: 2px;
-        box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
-      }
-
-      /* 반응형 디자인 */
-      @media (max-width: 768px) {
-        .new-badge {
-          font-size: 9px;
-          padding: 1px 4px;
-        }
-
-        .notice-glow-container:hover {
-          transform: none;
-        }
-
-        .notice-section {
-          padding: 20px 0;
-          margin: 15px 0;
-        }
-      }
-    </style>
   </body>
 </html>
