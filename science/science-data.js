@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 22,
+    title: '인공지능(AI)과 머신러닝(Machine Learning)의 차이점',
+    link: 'science/science-detail-22.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-17',
+    views: 0,
+    summary: '인공지능(AI)과 머신러닝(Machine Learning)의 차이점에 대한 설명',
+  },
+  {
     id: 21,
     title: '자동차 엔진 오일 교체 주기는 어떻게 정할까?',
     link: 'science/science-detail-21.html',
