@@ -1,6 +1,16 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 80,
+    title: '아이스크림이 녹기 전에',
+    link: 'daily-thoughts/thought-detail-80.html',
+    category: '하루 한생각',
+    author: '이호기',
+    date: '09-18',
+    views: 0,
+    summary: '아이스크림이 녹기 전에 대한 생각',
+  },
+  {
     id: 76,
     title: '가을의 속삭임',
     link: 'daily-thoughts/thought-detail-76.html',

@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 79,
+    title: '펨토셀이란 무엇이고 왜 이슈가 될까?',
+    link: 'one-line-knowledge/trivia-detail-79.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '09-18',
+    views: 0,
+  },
+  {
     id: 78,
     title: 'ChatGPT와 Gemini의 기본 특징 비교',
     link: 'one-line-knowledge/trivia-detail-78.html',
