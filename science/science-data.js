@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 23,
+    title: '블록체인',
+    link: 'science/science-detail-23.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-19',
+    views: 0,
+    summary: '블록체인의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 22,
     title: '인공지능(AI)과 머신러닝(Machine Learning)의 차이점',
     link: 'science/science-detail-22.html',

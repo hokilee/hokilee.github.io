@@ -1,6 +1,17 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 66,
+    title: 'FOMC (Federal Open Market Committee)',
+    link: 'economics/economy-detail-66.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '09-19',
+    views: 0,
+    summary:
+      'FOMC (Federal Open Market Committee)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 65,
     title: 'TSMC (Taiwan Semiconductor Manufacturing Company)',
     link: 'economics/economy-detail-65.html',
