@@ -1,7 +1,7 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
-    id: 77,
+    id: 78,
     title: '아이스크림이 녹기 전에',
     link: 'daily-thoughts/thought-detail-80.html',
     category: '하루 한생각',
