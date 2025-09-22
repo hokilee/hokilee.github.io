@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 80,
+    title: '아이폰의 일체형 배터리 시대',
+    link: 'one-line-knowledge/trivia-detail-80.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '09-22',
+    views: 0,
+  },
+  {
     id: 79,
     title: '펨토셀이란 무엇이고 왜 이슈가 될까?',
     link: 'one-line-knowledge/trivia-detail-79.html',
