@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 67,
+    title: 'IMF 시대와 외환위기 - 1997년 아시아 금융위기의 교훈',
+    link: 'economics/economy-detail-67.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '09-23',
+    views: 0,
+    summary: 'IMF 시대와 외환위기 - 1997년 아시아 금융위기의 교훈',
+  },
+  {
     id: 66,
     title: 'FOMC (Federal Open Market Committee)',
     link: 'economics/economy-detail-66.html',

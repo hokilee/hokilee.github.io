@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 81,
+    title: '임신 중 타이레놀 복용과 자폐증 위험 - 과학적 진실은?',
+    link: 'one-line-knowledge/trivia-detail-81.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '09-23',
+    views: 0,
+  },
+  {
     id: 80,
     title: '아이폰의 일체형 배터리 시대',
     link: 'one-line-knowledge/trivia-detail-80.html',
