@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 24,
+    title: '임신 중 타이레놀 복용과 자폐증 위험 - 과학적 진실은?',
+    link: 'science/science-detail-24.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-23',
+    views: 0,
+    summary: '임신 중 타이레놀 복용과 자폐증 위험 - 과학적 진실은?',
+  },
+  {
     id: 23,
     title: '블록체인',
     link: 'science/science-detail-23.html',
