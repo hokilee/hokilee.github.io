@@ -1,7 +1,17 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
-    id: 78,
+    id: 79,
+    title: '알 수 없는 내일을 준비하며',
+    link: 'daily-thoughts/thought-detail-82.html',
+    category: '하루 한생각',
+    author: '이호기',
+    date: '09-24',
+    views: 0,
+    summary: '알 수 없는 내일을 준비하며 대한 생각',
+  },
+  {
+    id: 79,
     title: '겨울이 오기 전에',
     link: 'daily-thoughts/thought-detail-81.html',
     category: '하루 한생각',
