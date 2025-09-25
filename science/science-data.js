@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 25,
+    title: '텔넷(telnet)',
+    link: 'science/science-detail-25.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-25',
+    views: 0,
+    summary: '텔넷(telnet)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 24,
     title: '임신 중 타이레놀 복용과 자폐증 위험 - 과학적 진실은?',
     link: 'science/science-detail-24.html',

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일반상식 - 텔넷(telnet)</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="science-detail-style.css" />
+  </head>
+  <body>
+    <div class="detail-box">
+      <h1>텔넷(telnet)</h1>
+      <div class="date">2025-09-24</div>
+      <div class="content">
+        <p>
+          인터넷이 본격적으로 보급되기 시작한 1990년대, 컴퓨터를 원격으로
+          제어하는 혁신적인 기술이 등장했습니다. 그것이 바로
+          '텔넷(telnet)'입니다. 현재는 보안상의 이유로 잘 사용되지 않지만,
+          네트워크 기술의 기초가 된 중요한 프로토콜입니다.
+        </p>
+
+        <h3>1. 텔넷이란?</h3>
+        <p>
+          <strong>정의</strong>: 텔넷(Telnet)은 'Telecommunication Network'의
+          줄임말로, 네트워크를 통해 원격지의 컴퓨터에 접속하여 명령을 실행할 수
+          있게 해주는 네트워크 프로토콜입니다. 1969년 ARPANET(현재 인터넷의
+          전신)에서 개발되었습니다.
+        </p>
+        <p>
+          <strong>핵심 기능</strong>: 로컬 컴퓨터에서 원격지의 컴퓨터에 접속하여
+          마치 그 컴퓨터 앞에 앉아 있는 것처럼 명령을 실행할 수 있습니다. 파일
+          관리, 프로그램 실행, 시스템 관리 등이 가능합니다.
+        </p>
+
+        <h3>2. 텔넷의 특징</h3>
+        <p>
+          <strong>원격 접속</strong>: 네트워크를 통해 다른 컴퓨터에 접속하여 그
+          컴퓨터를 원격으로 제어할 수 있습니다. 마치 그 컴퓨터 앞에 앉아 있는
+          것처럼 명령을 입력하고 결과를 볼 수 있습니다.
+        </p>
+        <p>
+          <strong>터미널 에뮬레이션</strong>: 텔넷은 가상 터미널을 만들어
+          사용자의 키보드 입력을 원격 컴퓨터로 전송하고, 원격 컴퓨터의 출력을
+          사용자의 화면에 표시합니다.
+        </p>
+        <p>
+          <strong>다양한 서비스 접속</strong>: 웹서버, 메일서버, 게임서버 등
+          다양한 네트워크 서비스에 접속할 수 있습니다. 기본 포트는 23번이지만
+          다른 포트 번호도 사용 가능합니다.
+        </p>
+
+        <h3>3. 텔넷의 작동 원리</h3>
+        <p>
+          <strong>클라이언트-서버 구조</strong>: 텔넷은 두 개의 프로그램이
+          필요합니다. 하나는 사용자가 명령을 입력하는 '클라이언트' 프로그램이고,
+          다른 하나는 원격 컴퓨터에서 접속을 받는 '서버' 프로그램입니다.
+        </p>
+        <p><strong>통신 과정</strong>:</p>
+        <ol style="margin-left: 20px; padding-left: 10px">
+          <li style="margin-bottom: 8px">
+            사용자가 텔넷 클라이언트를 실행하고 서버 주소를 입력
+          </li>
+          <li style="margin-bottom: 8px">
+            클라이언트가 서버의 23번 포트로 연결 요청
+          </li>
+          <li style="margin-bottom: 8px">
+            서버가 접속을 허용하면 가상 터미널 세션 생성
+          </li>
+          <li style="margin-bottom: 8px">
+            사용자의 키보드 입력이 네트워크를 통해 서버로 전송
+          </li>
+          <li style="margin-bottom: 8px">
+            서버에서 명령을 실행하고 결과를 클라이언트로 전송
+          </li>
+          <li style="margin-bottom: 8px">클라이언트 화면에 결과가 표시됨</li>
+        </ol>
+        <p>
+          <strong>데이터 전송</strong>: 모든 데이터(키보드 입력, 화면 출력)가
+          암호화 없이 그대로 네트워크를 통해 전송됩니다. 이것이 보안 문제의
+          핵심입니다.
+        </p>
+
+        <h3>4. 텔넷과 SSH의 비교</h3>
+        <p>
+          <strong>SSH란?</strong>: SSH(Secure Shell)는 텔넷의 보안 문제를
+          해결하기 위해 개발된 암호화된 원격 접속 프로토콜입니다. 텔넷과 동일한
+          기능을 제공하지만 모든 데이터를 암호화하여 전송합니다.
+        </p>
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0">
+          <tr style="background-color: #f8f9fa">
+            <th style="border: 1px solid #ddd; padding: 8px">구분</th>
+            <th style="border: 1px solid #ddd; padding: 8px">텔넷</th>
+            <th style="border: 1px solid #ddd; padding: 8px">SSH</th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              <strong>보안</strong>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              암호화 없음 (취약)
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">강력한 암호화</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              <strong>인증</strong>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              기본적인 패스워드만
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              공개키 인증 지원
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              <strong>포트</strong>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">23번</td>
+            <td style="border: 1px solid #ddd; padding: 8px">22번</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              <strong>파일 전송</strong>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">불가능</td>
+            <td style="border: 1px solid #ddd; padding: 8px">SCP, SFTP 지원</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              <strong>현재 사용</strong>
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              제한적 (진단용)
+            </td>
+            <td style="border: 1px solid #ddd; padding: 8px">
+              광범위하게 사용
+            </td>
+          </tr>
+        </table>
+        <p>
+          <strong>왜 SSH가 더 안전한가?</strong>: SSH는 모든 데이터를 암호화하여
+          전송하기 때문에 네트워크에서 데이터를 가로채더라도 내용을 볼 수
+          없습니다. 또한 더 강력한 인증 방식을 지원하여 보안을 크게
+          향상시켰습니다.
+        </p>
+
+        <h3>5. 요약</h3>
+        <p>
+          텔넷은 1969년 개발된 원격 컴퓨터 접속 프로토콜로, 네트워크 기술의
+          기초가 되었습니다. 간단하고 직관적인 사용법으로 원격 컴퓨터를 마치
+          앞에 앉아 있는 것처럼 제어할 수 있게 해주었지만, 데이터가 암호화 없이
+          전송되어 보안에 취약합니다.
+        </p>
+        <p>
+          현재는 보안 문제로 인해 SSH(Secure Shell)가 텔넷을 대체하여 널리
+          사용되고 있습니다. SSH는 텔넷과 동일한 기능을 제공하면서도 모든
+          데이터를 암호화하여 전송하기 때문에 훨씬 안전합니다.
+        </p>
+        <p>
+          텔넷은 더 이상 직접적인 원격 접속에는 사용되지 않지만, 네트워크 진단
+          도구나 오래된 시스템 관리 등에서는 여전히 유용하게 사용되고 있으며,
+          네트워크 기술을 이해하는 데 중요한 개념입니다.
+        </p>
+      </div>
+
+      <div class="button-row">
+        <div class="button-center-group">
+          <a href="../today-content-board.html#science" class="back"
+            >← 목록으로 돌아가기</a
+          >
+        </div>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+    <script src="science-detail-script.js" defer></script>
+  </body>
+</html>
