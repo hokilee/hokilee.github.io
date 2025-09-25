@@ -11,6 +11,7 @@
     <title>기술 트렌드/뉴스 게시판 - 이호기</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
+    <script src="tech-trend/tech-trend-data.js"></script>
     <script src="scripts.js" defer></script>
     <style>
       /* Detail 페이지 스타일 */
@@ -317,27 +318,9 @@
       // 연도 표시
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // 게시판 데이터
-      const boardData = [
-        {
-          id: 2,
-          title: '2025년 9월 3주차 기술 트렌드/뉴스',
-          link: 'tech-trend/tech-trend-detail-2.html',
-          category: '기술 트렌드/뉴스',
-          author: '이호기',
-          date: '09-18',
-          views: 0,
-        },
-        {
-          id: 1,
-          title: '2025년 9월 2주차 기술 트렌드/뉴스',
-          link: 'tech-trend/tech-trend-detail-1.html',
-          category: '기술 트렌드/뉴스',
-          author: '이호기',
-          date: '09-11',
-          views: 0,
-        },
-      ];
+      // 게시판 데이터 - tech-trend-data.js에서 자동으로 로드됨
+      console.log('techTrendData:', techTrendData);
+      const boardData = techTrendData || [];
 
       // 페이지네이션 설정
       const itemsPerPage = 10;
