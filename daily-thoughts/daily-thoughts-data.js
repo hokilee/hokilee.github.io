@@ -1,6 +1,16 @@
 // 하루 한생각 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 83,
+    title: '59세 구직자가 겪는 현실과 극복 방법',
+    link: 'daily-thoughts/thought-detail-83.html',
+    category: '하루 한생각',
+    author: '이호기',
+    date: '09-26',
+    views: 0,
+    summary: '59세 구직자가 겪는 현실과 극복 방법',
+  },
+  {
     id: 79,
     title: '알 수 없는 내일을 준비하며',
     link: 'daily-thoughts/thought-detail-82.html',
