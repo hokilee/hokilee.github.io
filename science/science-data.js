@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 26,
+    title: '매슬로의 동기이론',
+    link: 'science/science-detail-26.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '09-29',
+    views: 0,
+    summary: '매슬로의 동기이론의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 25,
     title: '텔넷(telnet)',
     link: 'science/science-detail-25.html',

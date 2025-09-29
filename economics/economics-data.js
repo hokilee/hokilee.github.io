@@ -1,6 +1,17 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 69,
+    title: '네이버와 두나무의 합병: IT와 금융의 시너지 효과',
+    link: 'economics/economy-detail-69.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '09-29',
+    views: 0,
+    summary:
+      '네이버와 두나무의 합병 배경, 기업 특징, 합병 효과와 시장 전망에 대한 분석',
+  },
+  {
     id: 68,
     title: '앵커자산(Anchor Asset)',
     link: 'economics/economy-detail-68.html',
