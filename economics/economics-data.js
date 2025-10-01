@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 70,
+    title: '미국의 추가 관세 정책',
+    link: 'economics/economy-detail-70.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-01',
+    views: 0,
+    summary: '미국의 추가 관세 정책에 대한 분석',
+  },
+  {
     id: 69,
     title: '네이버와 두나무의 합병: IT와 금융의 시너지 효과',
     link: 'economics/economy-detail-69.html',

@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 27,
+    title: '스프롤 현상',
+    link: 'science/science-detail-27.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-01',
+    views: 0,
+    summary: '스프롤 현상의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 26,
     title: '매슬로의 동기이론',
     link: 'science/science-detail-26.html',
