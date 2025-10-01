@@ -739,8 +739,12 @@ body {
   }
 
   .nav-container {
-    gap: 15px;
-    padding: 0 20px;
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .nav-item {
+    padding: 8px 6px;
   }
 
   .nav-item span {
@@ -776,17 +780,21 @@ body {
   }
 
   .nav-container {
-    gap: 10px;
-    padding: 0 15px;
+    gap: 5px;
+    padding: 0 8px;
+  }
+
+  .nav-item {
+    padding: 6px 4px;
   }
 
   .nav-item span {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
 
   .nav-icon {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 
   /* 연락처 게시판 초소형 화면 최적화 */
