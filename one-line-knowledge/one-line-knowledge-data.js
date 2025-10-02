@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 84,
+    title: 'ChatGPT와 Claude, 구글 Gemini의 차이점은 무엇일까?',
+    link: 'one-line-knowledge/trivia-detail-84.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-02',
+    views: 0,
+  },
+  {
     id: 83,
     title: '카카오톡의 개편과 소비자 반응',
     link: 'one-line-knowledge/trivia-detail-83.html',
