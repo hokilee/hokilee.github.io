@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 71,
+    title: '미국 정부 셧다운(Government Shutdown)',
+    link: 'economics/economy-detail-71.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-03',
+    views: 0,
+    summary: '2025년 10월 미국 정부 셧다운 사태와 경제적 영향 분석',
+  },
+  {
     id: 70,
     title: '미국의 추가 관세 정책',
     link: 'economics/economy-detail-70.html',

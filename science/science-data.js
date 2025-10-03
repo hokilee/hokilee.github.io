@@ -1,6 +1,17 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 28,
+    title: '헤일로 효과(Halo Effect)',
+    link: 'science/science-detail-28.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-03',
+    views: 0,
+    summary:
+      '헤일로 효과의 개념, 특징, 일상생활에서의 적용과 극복 방법에 대한 설명',
+  },
+  {
     id: 27,
     title: '스프롤 현상',
     link: 'science/science-detail-27.html',
