@@ -1,6 +1,15 @@
 // 기술 자료 게시판 데이터
 const techBookData = [
   {
+    id: 9,
+    title: '하이브리드 자동차의 역사 및 원리',
+    link: 'tech-book/basic-hybrid-system.pdf',
+    category: '자동차',
+    author: '이호기',
+    date: '10-04',
+    views: 0,
+  },
+  {
     id: 8,
     title: 'Chassis 기술의 원리',
     link: 'tech-book/basic-chassis-system.pdf',
