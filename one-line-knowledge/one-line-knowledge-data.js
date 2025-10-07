@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 85,
+    title: '국방 강화 움직임과 군사 기술 혁신',
+    link: 'one-line-knowledge/trivia-detail-85.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-08',
+    views: 0,
+  },
+  {
     id: 84,
     title: 'ChatGPT와 Claude, 구글 Gemini의 차이점은 무엇일까?',
     link: 'one-line-knowledge/trivia-detail-84.html',
