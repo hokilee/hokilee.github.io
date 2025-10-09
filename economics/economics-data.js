@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 72,
+    title: '불확실성의 시대, 새로운 성장의 길을 묻다',
+    link: 'economics/economy-detail-72.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-09',
+    views: 0,
+    summary: '불확실성의 시대, 새로운 성장의 길을 묻다',
+  },
+  {
     id: 71,
     title: '미국 정부 셧다운(Government Shutdown)',
     link: 'economics/economy-detail-71.html',

@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 29,
+    title: '그릿(Grit)',
+    link: 'science/science-detail-29.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-09',
+    views: 0,
+    summary: '그릿(Grit)의 개념, 특징, 비교 분석에 대한 설명',
+  },
+  {
     id: 28,
     title: '헤일로 효과(Halo Effect)',
     link: 'science/science-detail-28.html',
