@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 86,
+    title: '중국의 희토류 수출 규제와 글로벌 공급망 충격',
+    link: 'one-line-knowledge/trivia-detail-86.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-10',
+    views: 0,
+  },
+  {
     id: 85,
     title: '국방 강화 움직임과 군사 기술 혁신',
     link: 'one-line-knowledge/trivia-detail-85.html',
