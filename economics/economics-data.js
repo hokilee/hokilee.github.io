@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 73,
+    title: '일본에서 뜨는 한국산 수산물, 무역의 흐름이 바뀐다',
+    link: 'economics/economy-detail-73.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-13',
+    views: 0,
+    summary: '일본에서 뜨는 한국산 수산물, 무역의 흐름이 바뀐다',
+  },
+  {
     id: 72,
     title: '불확실성의 시대, 새로운 성장의 길을 묻다',
     link: 'economics/economy-detail-72.html',
