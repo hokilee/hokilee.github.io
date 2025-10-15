@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 74,
+    title: '금값이 오르면 은값도 오른다, 귀금속 시장의 동반 상승 원리',
+    link: 'economics/economy-detail-74.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-15',
+    views: 0,
+    summary: '금값이 오르면 은값도 오른다, 귀금속 시장의 동반 상승 원리',
+  },
+  {
     id: 73,
     title: '일본에서 뜨는 한국산 수산물, 무역의 흐름이 바뀐다',
     link: 'economics/economy-detail-73.html',

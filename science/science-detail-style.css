@@ -70,12 +70,6 @@ body {
 .content strong {
   color: #1565c0;
   font-weight: 700;
-  font-size: 1.2rem;
-  display: block;
-  margin-bottom: 10px;
-  padding: 8px 0;
-  border-left: 4px solid #1565c0;
-  padding-left: 15px;
 }
 
 /* 정보 박스 */
