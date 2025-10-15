@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 88,
+    title: '한·미 관세협상, 세금이 아닌 힘의 균형을 논하다',
+    link: 'one-line-knowledge/trivia-detail-88.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-16',
+    views: 0,
+  },
+  {
     id: 87,
     title: '캄보디아에서 벌어지는 한국인 납치, 그 배경은 무엇인가',
     link: 'one-line-knowledge/trivia-detail-87.html',
