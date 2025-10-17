@@ -1,6 +1,15 @@
 // 기술 트렌드/뉴스 게시판 데이터
 const techTrendData = [
   {
+    id: 5,
+    title: '2025년 10월 2주차 기술 트렌드/뉴스',
+    link: 'tech-trend/tech-trend-detail-5.html',
+    category: '기술 트렌드/뉴스',
+    author: '이호기',
+    date: '10-17',
+    views: 0,
+  },
+  {
     id: 4,
     title: '2025년 9월 5주차 기술 트렌드/뉴스',
     link: 'tech-trend/tech-trend-detail-4.html',
