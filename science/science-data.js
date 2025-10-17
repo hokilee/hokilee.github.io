@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 32,
+    title: '공소증후군, 열정이 멈춘 자리에서 오는 허무',
+    link: 'science/science-detail-32.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-17',
+    views: 0,
+    summary: '공소증후군, 열정이 멈춘 자리에서 오는 허무',
+  },
+  {
     id: 31,
     title: '스프롤 현상',
     link: 'science/science-detail-31.html',

@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 75,
+    title: '바이낸스사의 한국 진출로 본 가상자산의 전환기',
+    link: 'economics/economy-detail-75.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-17',
+    views: 0,
+    summary: '바이낸스사의 한국 진출로 본 가상자산의 전환기',
+  },
+  {
     id: 74,
     title: '금값이 오르면 은값도 오른다, 귀금속 시장의 동반 상승 원리',
     link: 'economics/economy-detail-74.html',
