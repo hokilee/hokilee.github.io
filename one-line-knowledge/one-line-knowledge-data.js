@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 89,
+    title: '스타벅스는 은행인가, 커피 회사인가',
+    link: 'one-line-knowledge/trivia-detail-89.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-20',
+    views: 0,
+  },
+  {
     id: 88,
     title: '한·미 관세협상, 세금이 아닌 힘의 균형을 논하다',
     link: 'one-line-knowledge/trivia-detail-88.html',
