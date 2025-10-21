@@ -125,7 +125,7 @@ body {
 /* 히어로 배너 섹션 */
 .hero-banner {
   position: relative;
-  height: 350px;
+  height: 280px;
   overflow: hidden;
   background: linear-gradient(
     135deg,

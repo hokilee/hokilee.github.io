@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 33,
+    title: '낙관계수, 불확실성 속 의사결정의 수리적 판단',
+    link: 'science/science-detail-33.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-21',
+    views: 0,
+    summary: '낙관계수, 불확실성 속 의사결정의 수리적 판단',
+  },
+  {
     id: 32,
     title: '공소증후군, 열정이 멈춘 자리에서 오는 허무',
     link: 'science/science-detail-32.html',

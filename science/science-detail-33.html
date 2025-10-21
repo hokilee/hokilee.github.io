@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일반상식 - 낙관계수, 불확실성 속 의사결정의 수리적 판단</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="science-detail-style.css" />
+  </head>
+  <body>
+    <div class="detail-box">
+      <h1>낙관계수, 불확실성 속 의사결정의 수리적 판단</h1>
+      <div class="date">2025-10-21</div>
+
+      <div class="content">
+        <p>
+          <strong>낙관계수(Optimism Coefficient)</strong>는 불확실한 상황에서
+          의사결정자가 얼마나 낙관적인 관점을 가지고 판단하는지를 수치화한
+          지표다. 이는 <strong>후르비츠 기준(Hurwicz Criterion)</strong>이라고도
+          하며, <strong>의사결정론(Decision Theory)</strong>에서 불확실성 하의
+          선택 문제를 해결하기 위한 수리적 접근 방식으로 사용된다.
+        </p>
+
+        <h3>1. 낙관계수의 개념</h3>
+        <p>
+          낙관계수는 0과 1 사이의 값을 가지며,
+          <strong>0 ≤ α ≤ 1</strong>로 표현된다. 여기서 α는 낙관계수(Optimism
+          Index)이며, 의사결정자가 미래 결과를 얼마나 낙관적으로 보는지를
+          나타낸다.<br /><br />
+
+          • α = 1 → 완전 낙관적 (가장 큰 수익만 고려)<br />
+          • α = 0 → 완전 비관적 (가장 낮은 수익만 고려)<br /><br />
+
+          대부분의 경우 α는 0과 1 사이의 중간값(예: 0.3~0.7)으로 설정되어,
+          낙관과 비관의 균형을 반영한다.
+        </p>
+
+        <h3>2. 계산 방법</h3>
+        <p>낙관계수는 다음과 같은 수식으로 계산된다.</p>
+        <div class="formula">
+          H = α × (최대 예상 수익) + (1 − α) × (최소 예상 수익)
+        </div>
+        <p>
+          여기서 H는 각 대안의 가중 기대값을 의미하며, 모든 대안에 대해 H 값을
+          계산한 후
+          <strong>H가 가장 큰 대안</strong>을 최종 선택한다.<br /><br />
+
+          즉, 낙관적인 관점을 반영하되, 완전한 불확실성 속에서도
+          <strong>극단적 위험을 피하려는 합리적 타협점</strong>을 제시하는
+          방식이다.
+        </p>
+
+        <h3>3. 예시로 보는 낙관계수</h3>
+        <p>
+          예를 들어 두 가지 투자 대안이 있다고 가정하자.<br /><br />
+
+          • A안: 최소 수익 10, 최대 수익 100<br />
+          • B안: 최소 수익 40, 최대 수익 80<br /><br />
+
+          낙관계수 α = 0.6일 때,
+          <strong>A안:</strong> 0.6×100 + 0.4×10 = 64<br />
+          <strong>B안:</strong> 0.6×80 + 0.4×40 = 64<br /><br />
+
+          두 대안이 동일한 결과를 보이지만, α값을 조금만 바꿔도 선택은
+          달라진다.<br />
+          예를 들어 α = 0.8이면 A안이 유리하고, α = 0.3이면 B안이 유리하다.<br /><br />
+
+          즉, 낙관계수는
+          <strong>의사결정자의 성향을 반영하는 가중치</strong>이며, 불확실성
+          하의 전략적 판단에 직접적인 영향을 미친다.
+        </p>
+
+        <h3>4. 다른 의사결정 기준과의 비교</h3>
+        <p>
+          불확실한 상황에서 사용할 수 있는 주요 의사결정 기준은 다음과 같다.<br /><br />
+
+          • <strong>맥시맥스(Maximax):</strong> 최대 수익 중 최대값을 선택 (완전
+          낙관주의)<br />
+          • <strong>맥시민(Maximin):</strong> 최소 수익 중 최대값을 선택 (완전
+          비관주의)<br />
+          • <strong>라플라스(Laplace):</strong> 모든 결과에 동일 확률을 가정한
+          평균값 선택<br />
+          • <strong>후르비츠(Hurwicz):</strong> 낙관계수를 적용한 가중 평균
+          선택<br /><br />
+
+          낙관계수는 위 네 가지 기준 중
+          <strong>맥시맥스와 맥시민 사이의 절충형 모델</strong>로 평가된다.
+        </p>
+
+        <h3>5. 시사점</h3>
+        <p>
+          낙관계수는 단순한 수학적 수치가 아니라,
+          <strong>의사결정자의 심리와 태도를 수리적으로 표현한 도구</strong>다.
+          기업의 투자, 정부의 정책 선택, 개인의 재무 판단 등 모든 불확실성
+          상황에서 적용될 수 있다.<br /><br />
+
+          α값이 높을수록 공격적인 전략이, 낮을수록 안정적인 전략이 선택된다.
+          따라서 자신의 의사결정 스타일을 이해하는 것은
+          <strong>합리적 판단을 위한 첫걸음</strong>이라 할 수 있다.
+        </p>
+
+        <h3>6. 요약</h3>
+        <p>
+          <strong>낙관계수(α)</strong>는 불확실성 속에서 미래를 얼마나
+          낙관적으로 해석할 것인가를 결정하는 수리적 지표다.<br /><br />
+          α = 1 → 완전 낙관 / α = 0 → 완전 비관<br />
+          <strong>H = α × 최대수익 + (1 − α) × 최소수익</strong>
+          의 식으로 계산되며,
+          <strong>H가 가장 큰 대안이 최종 선택</strong>된다.<br /><br />
+          결국 낙관계수는 불확실한 세상 속에서 ‘감’이 아닌 ‘수리적 균형감’을
+          찾는 인간의 지혜라 할 수 있다.
+        </p>
+      </div>
+
+      <div class="button-row">
+        <div class="button-center-group">
+          <a href="../today-content-board.html#science" class="back"
+            >← 목록으로 돌아가기</a
+          >
+        </div>
+        <footer class="footer">
+          Copyright ⓒ <span id="year"></span> Hoki Lee.
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js" defer></script>
+    <script src="science-detail-script.js" defer></script>
+  </body>
+</html>

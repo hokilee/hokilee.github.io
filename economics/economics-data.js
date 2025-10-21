@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 76,
+    title: '대한항공·아시아나항공 결합, 하늘길 재편의 서막',
+    link: 'economics/economy-detail-76.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-21',
+    views: 0,
+    summary: '대한항공·아시아나항공 결합, 하늘길 재편의 서막',
+  },
+  {
     id: 75,
     title: '바이낸스사의 한국 진출로 본 가상자산의 전환기',
     link: 'economics/economy-detail-75.html',
