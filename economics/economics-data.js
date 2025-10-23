@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 77,
+    title: '한·미 관세협상, 제2라운드의 쟁점과 향후 전망',
+    link: 'economics/economy-detail-77.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-23',
+    views: 0,
+    summary: '한·미 관세협상, 제2라운드의 쟁점과 향후 전망',
+  },
+  {
     id: 76,
     title: '대한항공·아시아나항공 결합, 하늘길 재편의 서막',
     link: 'economics/economy-detail-76.html',

@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 34,
+    title: '노비즘, ‘나는 일하기 싫다’ 시대의 새로운 코드',
+    link: 'science/science-detail-34.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-23',
+    views: 0,
+    summary: '노비즘, ‘나는 일하기 싫다’ 시대의 새로운 코드',
+  },
+  {
     id: 33,
     title: '낙관계수, 불확실성 속 의사결정의 수리적 판단',
     link: 'science/science-detail-33.html',
