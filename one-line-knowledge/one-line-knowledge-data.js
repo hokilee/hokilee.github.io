@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 91,
+    title: 'Galaxy XR로 본 AR 글래스 시대의 문턱',
+    link: 'one-line-knowledge/trivia-detail-91.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-24',
+    views: 0,
+  },
+  {
     id: 90,
     title: '혈당 스파이크, 식사 후 급등이 몸에 주는 경고',
     link: 'one-line-knowledge/trivia-detail-90.html',
