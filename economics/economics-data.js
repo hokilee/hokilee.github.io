@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 78,
+    title: '경주 APEC이 여는 코스피 4000시대, 한국경제의 문턱인가?',
+    link: 'economics/economy-detail-78.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-24',
+    views: 0,
+    summary: '경주 APEC이 여는 코스피 4000시대, 한국경제의 문턱인가?',
+  },
+  {
     id: 77,
     title: '한·미 관세협상, 제2라운드의 쟁점과 향후 전망',
     link: 'economics/economy-detail-77.html',

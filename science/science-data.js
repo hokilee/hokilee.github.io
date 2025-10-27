@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 35,
+    title: '핌피 현상, 이익이 된다면 환영한다는 사회적 역설',
+    link: 'science/science-detail-35.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-27',
+    views: 0,
+    summary: '핌피 현상, 이익이 된다면 환영한다는 사회적 역설',
+  },
+  {
     id: 34,
     title: '노비즘, ‘나는 일하기 싫다’ 시대의 새로운 코드',
     link: 'science/science-detail-34.html',
