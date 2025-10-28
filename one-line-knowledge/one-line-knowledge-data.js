@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 92,
+    title: 'Z세대 스턴(Stare) 현상, 말 대신 ‘무표정 응시’가 전하는 시대정신',
+    link: 'one-line-knowledge/trivia-detail-92.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-28',
+    views: 0,
+  },
+  {
     id: 91,
     title: 'Galaxy XR로 본 AR 글래스 시대의 문턱',
     link: 'one-line-knowledge/trivia-detail-91.html',
