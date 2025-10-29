@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 36,
+    title: '루키즘, 외모가 능력이 되는 사회의 그림자',
+    link: 'science/science-detail-36.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-29',
+    views: 0,
+    summary: '루키즘, 외모가 능력이 되는 사회의 그림자',
+  },
+  {
     id: 35,
     title: '핌피 현상, 이익이 된다면 환영한다는 사회적 역설',
     link: 'science/science-detail-35.html',

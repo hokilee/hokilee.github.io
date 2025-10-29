@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 79,
+    title: '실적 반등의 신호탄, SK하이닉스가 여는 메모리 르네상스',
+    link: 'economics/economy-detail-79.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-29',
+    views: 0,
+    summary: '실적 반등의 신호탄, SK하이닉스가 여는 메모리 르네상스',
+  },
+  {
     id: 78,
     title: '경주 APEC이 여는 코스피 4000시대, 한국경제의 문턱인가?',
     link: 'economics/economy-detail-78.html',
