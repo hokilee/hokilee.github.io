@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 93,
+    title: '디지털 디톡스 열풍, 화면을 끄는 것이 새로운 휴식이 되다',
+    link: 'one-line-knowledge/trivia-detail-93.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '10-30',
+    views: 0,
+  },
+  {
     id: 92,
     title: 'Z세대 스턴(Stare) 현상, 말 대신 ‘무표정 응시’가 전하는 시대정신',
     link: 'one-line-knowledge/trivia-detail-92.html',
