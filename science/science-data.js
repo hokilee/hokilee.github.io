@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 37,
+    title: '바나나현상, 아무것도 짓지 말자는 시대의 역설',
+    link: 'science/science-detail-37.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '10-31',
+    views: 0,
+    summary: '바나나현상, 아무것도 짓지 말자는 시대의 역설',
+  },
+  {
     id: 36,
     title: '루키즘, 외모가 능력이 되는 사회의 그림자',
     link: 'science/science-detail-36.html',

@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 80,
+    title: '젠슨 황·이재용·정의선의 회동, AI 동맹이 여는 한국경제의 새 무대',
+    link: 'economics/economy-detail-90.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '10-31',
+    views: 0,
+    summary: '젠슨 황·이재용·정의선의 회동, AI 동맹이 여는 한국경제의 새 무대',
+  },
+  {
     id: 79,
     title: '실적 반등의 신호탄, SK하이닉스가 여는 메모리 르네상스',
     link: 'economics/economy-detail-79.html',
