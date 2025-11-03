@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 94,
+    title: '클린브리드족(Clean-Breed族), 미세먼지 대신 공기를 소비하는 세대',
+    link: 'one-line-knowledge/trivia-detail-94.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '11-03',
+    views: 0,
+  },
+  {
     id: 93,
     title: '디지털 디톡스 열풍, 화면을 끄는 것이 새로운 휴식이 되다',
     link: 'one-line-knowledge/trivia-detail-93.html',

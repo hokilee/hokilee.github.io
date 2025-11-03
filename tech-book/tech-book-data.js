@@ -1,6 +1,15 @@
 // 기술 자료 게시판 데이터
 const techBookData = [
   {
+    id: 10, // 새로운 id
+    title: '자동변속기 기본 원리',
+    link: 'tech-book/basic-auto-transmission.pdf',
+    category: '자동차',
+    author: '이호기',
+    date: '11-03', // 오늘 날짜로 변경
+    views: 0,
+  },
+  {
     id: 9,
     title: '하이브리드 자동차의 역사 및 원리',
     link: 'tech-book/basic-hybrid-system.pdf',
