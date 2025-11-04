@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 38,
+    title: '코쿠닝(Cocooning) 현상, 집 안에서 세상을 만나는 시대',
+    link: 'science/science-detail-38.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-04',
+    views: 0,
+    summary: '코쿠닝(Cocooning) 현상, 집 안에서 세상을 만나는 시대',
+  },
+  {
     id: 37,
     title: '바나나현상, 아무것도 짓지 말자는 시대의 역설',
     link: 'science/science-detail-37.html',

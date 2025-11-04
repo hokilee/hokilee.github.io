@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 81,
+    title: 'GPU 26만개 공급·인재 유출 병존, 한국 AI 전환의 길목',
+    link: 'economics/economy-detail-91.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-04',
+    views: 0,
+    summary: 'GPU 26만개 공급에 대한 한국의 이공계인력 유출 현실',
+  },
+  {
     id: 80,
     title: '젠슨 황·이재용·정의선의 회동, AI 동맹이 여는 한국경제의 새 무대',
     link: 'economics/economy-detail-90.html',
