@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 95,
+    title: '뇌 노화를 부르는 음식, 매일의 식습관이 치매를 결정한다',
+    link: 'one-line-knowledge/trivia-detail-95.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '11-05',
+    views: 0,
+  },
+  {
     id: 94,
     title: '클린브리드족(Clean-Breed族), 미세먼지 대신 공기를 소비하는 세대',
     link: 'one-line-knowledge/trivia-detail-94.html',
