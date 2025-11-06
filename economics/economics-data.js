@@ -1,6 +1,16 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 82,
+    title: '정년 65세 시대, 한국 경제는 준비되어 있는가?',
+    link: 'economics/economy-detail-92.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-06',
+    views: 0,
+    summary: '정년 65세 시대, 한국 경제는 준비되어 있는가?',
+  },
+  {
     id: 81,
     title: 'GPU 26만개 공급·인재 유출 병존, 한국 AI 전환의 길목',
     link: 'economics/economy-detail-91.html',

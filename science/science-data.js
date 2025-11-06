@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 39,
+    title: 'J턴(J-Turn) 현상, 지방으로 돌아가는 세대의 선택',
+    link: 'science/science-detail-39.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-06',
+    views: 0,
+    summary: 'J턴(J-Turn) 현상, 지방으로 돌아가는 세대의 선택',
+  },
+  {
     id: 38,
     title: '코쿠닝(Cocooning) 현상, 집 안에서 세상을 만나는 시대',
     link: 'science/science-detail-38.html',
