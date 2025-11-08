@@ -291,6 +291,63 @@ body {
   padding: 0 40px;
 }
 
+.language-toggle-wrapper {
+  max-width: 1200px;
+  margin: 18px auto 8px;
+  padding: 12px 40px;
+  background: #d9dce3;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+}
+
+.language-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  color: #2f2f2f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.language-toggle .lang-btn {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #2f2f2f;
+  padding: 6px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.language-toggle .lang-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.language-toggle .lang-btn.active {
+  background: #0d6efd;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.25);
+}
+
+.language-toggle .lang-btn[data-lang='en']:not(.active) {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.language-toggle .lang-separator {
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 1rem;
+}
+
 .nav-container {
   display: flex;
   justify-content: center;
@@ -354,11 +411,17 @@ body {
   letter-spacing: 0.5px;
 }
 
+html[lang='en'] .nav-item span {
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
 /* 메인 콘텐츠 */
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 16px 0 0;
 }
 
 .content-grid {
@@ -374,11 +437,9 @@ body {
 /* 공지사항 섹션 */
 .notice-section {
   background: white;
-  padding: 32px 42px;
+  padding: 26px 36px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  height: 540px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -402,9 +463,6 @@ body {
 .notice-list {
   list-style: none;
   margin-bottom: 30px;
-  flex: 1;
-  overflow-y: auto;
-  padding-right: 10px;
 }
 
 .notice-list li {
@@ -673,8 +731,8 @@ body {
   background: linear-gradient(135deg, #654321 0%, #8b4513 50%, #654321 100%);
   color: white;
   text-align: center;
-  padding: 30px 0;
-  margin-top: 8px;
+  padding: 20px 0;
+  margin-top: 0;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
