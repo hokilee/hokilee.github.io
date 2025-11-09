@@ -411,10 +411,12 @@ body {
   letter-spacing: 0.5px;
 }
 
-html[lang='en'] .nav-item span {
-  font-size: 1.1rem;
-  letter-spacing: 0.2px;
-  white-space: nowrap;
+@media (min-width: 769px) {
+  html[lang='en'] .nav-item span {
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+  }
 }
 
 /* 메인 콘텐츠 */
