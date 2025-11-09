@@ -11,12 +11,12 @@ const translations = {
     'hero.slide2.subtitle': '세계를 무대로 한 기술 협업과 커리어 성장',
     'hero.slide3.title': '팀워크와 리더십의 실천자',
     'hero.slide3.subtitle': 'BMW 한마음 축구대회 운영과 야구동호회 활동',
-    'nav.about': 'About Me',
-    'nav.career': '경력 이야기',
-    'nav.todayContent': '오늘의 콘텐츠',
-    'nav.techLibrary': '기술자료',
-    'nav.techTrend': '기술 트렌드/뉴스',
-    'nav.contact': '연락처',
+    'nav.about': 'About<br />Me',
+    'nav.career': '경력<br />이야기',
+    'nav.todayContent': '오늘의<br />콘텐츠',
+    'nav.techLibrary': '기술<br />자료',
+    'nav.techTrend': '기술<br />트렌드/뉴스',
+    'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'notice.updateContent': `<strong>2025-11-07</strong> - 안녕하십니까? 오늘의 콘텐츠 게시판에 <strong>한줄 지식/잡학</strong> 새로운 글을 추가했습니다.<br /><br />
 ✍️ <strong>한줄 지식/잡학:</strong> 「손글씨가 기억력을 높이는 이유」에서는 디지털 기기 중심의 시대에도 손으로 직접 쓰는 행위가 <strong>뇌의 전전두엽, 해마, 소뇌</strong>를 동시에 자극해 기억력을 높이고 학습 효과를 강화하는 과학적 원리를 다뤘습니다.<br /><br />
