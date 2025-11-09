@@ -261,6 +261,8 @@ body {
 
 .visitor-info {
   text-align: center;
+  font-size: 1rem;
+  color: #333;
 }
 
 .indicator {
