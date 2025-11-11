@@ -1,6 +1,16 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 40,
+    title: '코쿠닝 현상',
+    link: 'science/science-detail-40.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-11',
+    views: 0,
+    summary: '코쿠닝 현상',
+  },
+  {
     id: 39,
     title: 'J턴(J-Turn) 현상, 지방으로 돌아가는 세대의 선택',
     link: 'science/science-detail-39.html',

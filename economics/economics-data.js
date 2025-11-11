@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 83,
+    title: '한국형 IRA(미국 인플레이션 감축법 대응) 정책 변화',
+    link: 'economics/economy-detail-93.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-11',
+    views: 0,
+  },
+  {
     id: 82,
     title: '정년 65세 시대, 한국 경제는 준비되어 있는가?',
     link: 'economics/economy-detail-92.html',

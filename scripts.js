@@ -18,14 +18,13 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-07</strong> - 안녕하십니까? 오늘의 콘텐츠 게시판에 <strong>한줄 지식/잡학</strong> 새로운 글을 추가했습니다.<br /><br />
-✍️ <strong>한줄 지식/잡학:</strong> 「손글씨가 기억력을 높이는 이유」에서는 디지털 기기 중심의 시대에도 손으로 직접 쓰는 행위가 <strong>뇌의 전전두엽, 해마, 소뇌</strong>를 동시에 자극해 기억력을 높이고 학습 효과를 강화하는 과학적 원리를 다뤘습니다.<br /><br />
-프린스턴대·케임브리지대·노르웨이 NTNU의 최신 연구에 따르면 손필기 그룹은 타이핑 그룹보다 <strong>장기 기억 형성률이 최대 21% 높고, 재학습 시간이 30% 이상 단축</strong>된 것으로 나타났습니다.<br /><br />
-또한 손글씨는 단순 기록이 아닌 <strong>‘의미 기반 처리(semantic processing)’</strong>를 촉발해 핵심 개념을 더 오래, 더 깊이 기억하게 만듭니다.<br /><br />
-오늘의 콘텐츠는 “느린 기술(Slow Tech)”로서의 손글씨가 어떻게 우리의 집중력과 사고력을 회복시키는지를 보여줍니다. 많은 관심 부탁드립니다.`,
+    'notice.updateContent': `<strong>2025-11-11</strong> - 오늘의 콘텐츠 게시판에 <strong>경제상식</strong>과 <strong>일반상식</strong> 두 가지 새로운 글을 추가했습니다.<br /><br />
+💼 <strong>경제상식:</strong> 「한국형 IRA(미국 인플레이션 감축법 대응) 정책 변화」에서는 미국 IRA에 맞춰 국내 정책이 어떻게 바뀌고 있는지, <strong>배터리 핵심 광물 확보, 국내 투자 인센티브, 북미 현지화 지원</strong> 같은 핵심 포인트를 정리했습니다. 전기차·배터리 산업의 공급망 재편을 이해하는 데 도움이 됩니다.<br /><br />
+🏠 <strong>일반상식:</strong> 「코쿠닝 현상」은 불확실한 시대에 집 안에서 안전과 만족을 찾는 라이프스타일을 다룹니다. 홈퍼니싱, OTT·홈엔터테인먼트, 웰니스 등 <strong>집 기반 소비 트렌드</strong>가 어떻게 확장되는지 살펴볼 수 있습니다.<br /><br />
+새로운 콘텐츠에 많은 관심과 응원 부탁드립니다.`,
   },
   en: {
-    'hero.subtitleMain': 'Hoki Lee\'s Personal Homepage',
+    'hero.subtitleMain': "Hoki Lee's Personal Homepage",
     'hero.slide1.title': 'Automotive and Education Expert',
     'hero.slide1.subtitle':
       'Technical training experience with BMW Korea, Hyundai Motor, and Samsung Motors',
@@ -42,11 +41,10 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-07</strong> - Hello! We added a new post in the <strong>One-line Knowledge / Trivia</strong> section on the Today's Content board.<br /><br />
-✍️ <strong>One-line Knowledge / Trivia:</strong> "Why Handwriting Boosts Memory" explains how writing by hand continues to stimulate the <strong>prefrontal cortex, hippocampus, and cerebellum</strong>, strengthening recall and learning even in a digital-first era.<br /><br />
-Recent studies from Princeton, Cambridge, and Norway's NTNU show that handwritten note takers enjoy <strong>up to 21% higher long-term retention and shorten their review time by more than 30%</strong> compared with typing.<br /><br />
-Handwriting is more than simple transcription; it activates <strong>semantic processing</strong> so core ideas stay vivid for longer.<br /><br />
-This update highlights handwriting as a form of "slow technology" that restores focus and clear thinking in daily work. Thank you for reading!`,
+    'notice.updateContent': `<strong>2025-11-11</strong> – We’ve added two new posts to the <strong>Economics</strong> and <strong>General Knowledge</strong> sections on Today’s Content.<br /><br />
+💼 <strong>Economics:</strong> “Policy Changes in Korea’s Response to the U.S. Inflation Reduction Act (IRA)” explains how the Korean government is adapting to the U.S. IRA, highlighting key points such as <strong>securing core battery minerals, domestic investment incentives, and support for North American localization</strong>. It helps you understand how the EV and battery supply chain is being reshaped.<br /><br />
+🏠 <strong>General Knowledge:</strong> “The Cocooning Phenomenon” explores why people seek safety and satisfaction at home in uncertain times. It looks at how <strong>home-centered consumption trends</strong>—from home furnishing and OTT entertainment to wellness routines—continue to grow.<br /><br />
+Thank you for your continued interest and support!`,
   },
 };
 
@@ -66,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // 슬라이더 기능 - 슬라이드 요소가 존재하는 경우에만 실행
   const slides = document.querySelectorAll('.hero-slide');
   const indicators = document.querySelectorAll('.indicator');
-  
+
   if (slides.length > 0 && indicators.length > 0) {
     let currentSlideIndex = 0;
     let slideInterval;
@@ -82,35 +80,35 @@ document.addEventListener('DOMContentLoaded', function () {
       indicators[index].classList.add('active');
     }
 
-  // 슬라이드 변경 함수
-  function changeSlide(direction) {
-    currentSlideIndex =
-      (currentSlideIndex + direction + slides.length) % slides.length;
-    showSlide(currentSlideIndex);
-    resetSlideInterval();
-  }
+    // 슬라이드 변경 함수
+    function changeSlide(direction) {
+      currentSlideIndex =
+        (currentSlideIndex + direction + slides.length) % slides.length;
+      showSlide(currentSlideIndex);
+      resetSlideInterval();
+    }
 
-  // 특정 슬라이드로 이동
-  function currentSlide(index) {
-    currentSlideIndex = index - 1;
-    showSlide(currentSlideIndex);
-    resetSlideInterval();
-  }
+    // 특정 슬라이드로 이동
+    function currentSlide(index) {
+      currentSlideIndex = index - 1;
+      showSlide(currentSlideIndex);
+      resetSlideInterval();
+    }
 
-  // 자동 슬라이드 간격 재설정
-  function resetSlideInterval() {
-    clearInterval(slideInterval);
-    startAutoSlide();
-  }
+    // 자동 슬라이드 간격 재설정
+    function resetSlideInterval() {
+      clearInterval(slideInterval);
+      startAutoSlide();
+    }
 
-  // 자동 슬라이드 시작
-  function startAutoSlide() {
-    slideInterval = setInterval(() => {
-      changeSlide(1);
-    }, 5000);
-  }
+    // 자동 슬라이드 시작
+    function startAutoSlide() {
+      slideInterval = setInterval(() => {
+        changeSlide(1);
+      }, 5000);
+    }
 
-      // 자동 슬라이드 시작
+    // 자동 슬라이드 시작
     startAutoSlide();
 
     // 마우스 호버 시 자동 슬라이드 일시정지
@@ -388,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function changeSlide(direction) {
   const slides = document.querySelectorAll('.hero-slide');
   const indicators = document.querySelectorAll('.indicator');
-  
+
   if (slides.length > 0 && indicators.length > 0) {
     // 이벤트 위임을 위해 이벤트 객체를 전달
     const event = new Event('slideChange');
@@ -400,7 +398,7 @@ function changeSlide(direction) {
 function currentSlide(index) {
   const slides = document.querySelectorAll('.hero-slide');
   const indicators = document.querySelectorAll('.indicator');
-  
+
   if (slides.length > 0 && indicators.length > 0) {
     const event = new Event('slideChange');
     event.index = index;
@@ -412,7 +410,7 @@ function currentSlide(index) {
 document.addEventListener('slideChange', (e) => {
   const slides = document.querySelectorAll('.hero-slide');
   const indicators = document.querySelectorAll('.indicator');
-  
+
   if (slides.length > 0 && indicators.length > 0) {
     if (e.direction !== undefined) {
       // changeSlide 함수 호출

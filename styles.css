@@ -425,6 +425,10 @@ body {
 }
 
 @media (min-width: 769px) {
+  .nav-item span br {
+    display: none;
+  }
+
   html[lang='en'] .nav-item span {
     font-size: 1.1rem;
     letter-spacing: 0.2px;
