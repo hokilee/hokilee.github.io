@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>하루 한생각 게시판 - 이호기의 생각들</title>
+    <title>eBook Series 자료실 - 이호기</title>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="daily-thoughts-board-style.css" />
   </head>
@@ -12,8 +12,11 @@
       <a href="../index.html" class="back-to-main">← 메인으로 돌아가기</a>
 
       <div class="board-header">
-        <h1>하루 한생각</h1>
-        <p>일상에서 발견하는 깊이 있는 생각들과 인생의 교훈들</p>
+        <h1>eBook Series</h1>
+        <p>
+          영업, 마케팅, 성과 분석 등 실무에 바로 활용할 수 있는 PDF 자료를 제공합니다.
+          필요한 문서를 다운로드하여 업무에 활용해 보세요.
+        </p>
       </div>
 
       <div class="search-filter-section">
@@ -23,13 +26,13 @@
               type="text"
               id="search-input"
               class="search-input"
-              placeholder="제목이나 내용을 검색해보세요..."
+              placeholder="제목이나 요약으로 검색해보세요..."
             />
           </div>
           <div class="filter-group">
             <select id="category-filter" class="filter-select">
               <option value="">전체 카테고리</option>
-              <option value="하루 한생각">하루 한생각</option>
+              <option value="eBook Series">eBook Series</option>
             </select>
             <select id="author-filter" class="filter-select">
               <option value="">전체 작성자</option>
@@ -41,7 +44,7 @@
       </div>
 
       <div class="result-count">
-        총 <span id="result-count">0</span>개의 글이 있습니다.
+        총 <span id="result-count">0</span>개의 자료가 있습니다.
       </div>
 
       <div class="board-table">
@@ -52,960 +55,188 @@
               <th class="col-title">제목</th>
               <th class="col-category">카테고리</th>
               <th class="col-author">작성자</th>
-              <th class="col-date">작성일</th>
+              <th class="col-date">등록일</th>
               <th class="col-views">조회수</th>
+              <th class="col-download">다운로드</th>
             </tr>
           </thead>
-          <tbody id="board-tbody">
-            <!-- 데이터가 여기에 동적으로 로드됩니다 -->
-          </tbody>
+          <tbody id="board-tbody"></tbody>
         </table>
       </div>
 
-      <div id="pagination" class="pagination">
-        <!-- 페이지네이션이 여기에 동적으로 로드됩니다 -->
-      </div>
+      <div id="pagination" class="pagination"></div>
     </div>
 
+    <script src="daily-thoughts-data.js"></script>
     <script>
-      // 하루 한생각 게시판 데이터
-      const dailyThoughtsData = [
-        {
-          id: 70,
-          title: '빛바랜 사진 한장.',
-          link: 'thought-detail-70.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-26',
-          views: 0,
-          summary: '엄마를 잃고 새엄마와의 관계를 통해 성장하는 이야기',
-        },
-        {
-          id: 69,
-          title: '우리 모두의 이야기',
-          link: 'thought-detail-69.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-25',
-          views: 0,
-          summary: '일상에서 발견하는 공통된 경험과 감정들',
-        },
-        {
-          id: 68,
-          title: '시간의 의미',
-          link: 'thought-detail-68.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-24',
-          views: 0,
-          summary: '시간이 우리에게 주는 의미와 가치에 대한 생각',
-        },
-        {
-          id: 67,
-          title: '변화의 순간',
-          link: 'thought-detail-67.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-23',
-          views: 0,
-          summary: '인생의 전환점에서 느끼는 감정과 깨달음',
-        },
-        {
-          id: 66,
-          title: '작은 기적들',
-          link: 'thought-detail-66.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-22',
-          views: 0,
-          summary: '일상에서 발견하는 작지만 소중한 순간들',
-        },
-        {
-          id: 65,
-          title: '기억의 조각들',
-          link: 'thought-detail-65.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-21',
-          views: 0,
-          summary: '과거의 기억들이 현재에 미치는 영향',
-        },
-        {
-          id: 64,
-          title: '새로운 시작',
-          link: 'thought-detail-64.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-20',
-          views: 0,
-          summary: '변화와 새로운 시작에 대한 생각',
-        },
-        {
-          id: 63,
-          title: '감사함의 의미',
-          link: 'thought-detail-63.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-19',
-          views: 0,
-          summary: '일상에서 느끼는 감사함과 그 의미',
-        },
-        {
-          id: 62,
-          title: '꿈과 현실',
-          link: 'thought-detail-62.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-18',
-          views: 0,
-          summary: '꿈과 현실 사이의 균형에 대한 고민',
-        },
-        {
-          id: 61,
-          title: '인간관계의 소중함',
-          link: 'thought-detail-61.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-17',
-          views: 0,
-          summary: '우리 주변의 사람들과의 관계에 대한 생각',
-        },
-        {
-          id: 60,
-          title: '성장의 과정',
-          link: 'thought-detail-60.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-16',
-          views: 0,
-          summary: '개인적 성장과 발전에 대한 깨달음',
-        },
-        {
-          id: 59,
-          title: '행복의 정의',
-          link: 'thought-detail-59.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-15',
-          views: 0,
-          summary: '진정한 행복이란 무엇인가에 대한 탐구',
-        },
-        {
-          id: 58,
-          title: '자연의 교훈',
-          link: 'thought-detail-58.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-14',
-          views: 0,
-          summary: '자연에서 배우는 삶의 지혜',
-        },
-        {
-          id: 57,
-          title: '창작의 기쁨',
-          link: 'thought-detail-57.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-13',
-          views: 0,
-          summary: '무언가를 만들어내는 과정의 즐거움',
-        },
-        {
-          id: 56,
-          title: '여행의 의미',
-          link: 'thought-detail-56.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-12',
-          views: 0,
-          summary: '여행을 통해 얻는 새로운 시각과 경험',
-        },
-        {
-          id: 55,
-          title: '음악과 감정',
-          link: 'thought-detail-55.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-11',
-          views: 0,
-          summary: '음악이 우리 감정에 미치는 영향',
-        },
-        {
-          id: 54,
-          title: '독서의 즐거움',
-          link: 'thought-detail-54.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-10',
-          views: 0,
-          summary: '책을 읽으며 느끼는 깊이 있는 사고',
-        },
-        {
-          id: 53,
-          title: '요리의 철학',
-          link: 'thought-detail-53.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-09',
-          views: 0,
-          summary: '요리를 통해 배우는 인생의 교훈',
-        },
-        {
-          id: 52,
-          title: '운동의 가치',
-          link: 'thought-detail-52.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-08',
-          views: 0,
-          summary: '신체 활동이 정신에 미치는 긍정적 영향',
-        },
-        {
-          id: 51,
-          title: '예술의 힘',
-          link: 'thought-detail-51.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-07',
-          views: 0,
-          summary: '예술이 우리 삶에 주는 의미와 힘',
-        },
-        {
-          id: 50,
-          title: '친구의 소중함',
-          link: 'thought-detail-50.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-06',
-          views: 0,
-          summary: '진정한 친구와의 관계에 대한 생각',
-        },
-        {
-          id: 49,
-          title: '가족의 의미',
-          link: 'thought-detail-49.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-05',
-          views: 0,
-          summary: '가족이 우리 삶에서 차지하는 위치',
-        },
-        {
-          id: 48,
-          title: '사랑의 본질',
-          link: 'thought-detail-48.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-04',
-          views: 0,
-          summary: '사랑이란 무엇인가에 대한 깊은 생각',
-        },
-        {
-          id: 47,
-          title: '죽음에 대한 생각',
-          link: 'thought-detail-47.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-03',
-          views: 0,
-          summary: '삶의 끝에 대한 철학적 사고',
-        },
-        {
-          id: 46,
-          title: '자유의 의미',
-          link: 'thought-detail-46.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-02',
-          views: 0,
-          summary: '진정한 자유란 무엇인가에 대한 탐구',
-        },
-        {
-          id: 45,
-          title: '진실과 거짓',
-          link: 'thought-detail-45.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '08-01',
-          views: 0,
-          summary: '진실과 거짓의 경계에 대한 고민',
-        },
-        {
-          id: 44,
-          title: '용기의 정의',
-          link: 'thought-detail-44.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-31',
-          views: 0,
-          summary: '진정한 용기가 무엇인가에 대한 생각',
-        },
-        {
-          id: 43,
-          title: '희생의 가치',
-          link: 'thought-detail-43.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-30',
-          views: 0,
-          summary: '타인을 위한 희생의 의미와 가치',
-        },
-        {
-          id: 42,
-          title: '성공의 정의',
-          link: 'thought-detail-42.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-29',
-          views: 0,
-          summary: '진정한 성공이란 무엇인가에 대한 탐구',
-        },
-        {
-          id: 41,
-          title: '실패의 교훈',
-          link: 'thought-detail-41.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-28',
-          views: 0,
-          summary: '실패를 통해 배우는 귀중한 교훈들',
-        },
-        {
-          id: 40,
-          title: '인내의 미덕',
-          link: 'thought-detail-40.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-27',
-          views: 0,
-          summary: '인내가 우리에게 주는 선물',
-        },
-        {
-          id: 39,
-          title: '겸손의 아름다움',
-          link: 'thought-detail-39.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-26',
-          views: 0,
-          summary: '겸손한 마음가짐의 아름다움',
-        },
-        {
-          id: 38,
-          title: '지혜의 깊이',
-          link: 'thought-detail-38.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-25',
-          views: 0,
-          summary: '진정한 지혜의 의미와 깊이',
-        },
-        {
-          id: 37,
-          title: '학습의 즐거움',
-          link: 'thought-detail-37.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-24',
-          views: 0,
-          summary: '새로운 것을 배우는 과정의 즐거움',
-        },
-        {
-          id: 36,
-          title: '창의성의 원천',
-          link: 'thought-detail-36.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-23',
-          views: 0,
-          summary: '창의성이 생겨나는 원천과 과정',
-        },
-        {
-          id: 35,
-          title: '직관의 힘',
-          link: 'thought-detail-35.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-22',
-          views: 0,
-          summary: '직관이 우리 삶에서 발휘하는 힘',
-        },
-        {
-          id: 34,
-          title: '감정의 조절',
-          link: 'thought-detail-34.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-21',
-          views: 0,
-          summary: '감정을 조절하는 방법과 중요성',
-        },
-        {
-          id: 33,
-          title: '스트레스 관리',
-          link: 'thought-detail-33.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-20',
-          views: 0,
-          summary: '현대인의 스트레스와 관리 방법',
-        },
-        {
-          id: 32,
-          title: '건강의 소중함',
-          link: 'thought-detail-32.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-19',
-          views: 0,
-          summary: '건강한 삶의 소중함과 관리',
-        },
-        {
-          id: 31,
-          title: '수면의 중요성',
-          link: 'thought-detail-31.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-18',
-          views: 0,
-          summary: '충분한 수면이 우리에게 주는 혜택',
-        },
-        {
-          id: 30,
-          title: '영양의 균형',
-          link: 'thought-detail-30.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-17',
-          views: 0,
-          summary: '균형 잡힌 영양 섭취의 중요성',
-        },
-        {
-          id: 29,
-          title: '환경의 소중함',
-          link: 'thought-detail-29.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-16',
-          views: 0,
-          summary: '지구 환경 보호의 중요성',
-        },
-        {
-          id: 28,
-          title: '동물과의 공존',
-          link: 'thought-detail-28.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-15',
-          views: 0,
-          summary: '동물들과의 조화로운 공존',
-        },
-        {
-          id: 27,
-          title: '식물의 생명력',
-          link: 'thought-detail-27.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-14',
-          views: 0,
-          summary: '식물들이 보여주는 놀라운 생명력',
-        },
-        {
-          id: 26,
-          title: '계절의 변화',
-          link: 'thought-detail-26.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-13',
-          views: 0,
-          summary: '계절의 변화가 주는 아름다움',
-        },
-        {
-          id: 25,
-          title: '날씨와 기분',
-          link: 'thought-detail-25.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-12',
-          views: 0,
-          summary: '날씨가 우리 기분에 미치는 영향',
-        },
-        {
-          id: 24,
-          title: '도시의 매력',
-          link: 'thought-detail-24.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-11',
-          views: 0,
-          summary: '도시 생활이 주는 매력과 편의',
-        },
-        {
-          id: 23,
-          title: '시골의 평화',
-          link: 'thought-detail-23.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-10',
-          views: 0,
-          summary: '시골에서 느끼는 평화와 여유',
-        },
-        {
-          id: 22,
-          title: '바다의 신비',
-          link: 'thought-detail-22.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-09',
-          views: 0,
-          summary: '바다가 우리에게 주는 평화와 영감',
-        },
-        {
-          id: 21,
-          title: '산의 위엄',
-          link: 'thought-detail-21.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-08',
-          views: 0,
-          summary: '산이 우리에게 주는 교훈과 위엄',
-        },
-        {
-          id: 20,
-          title: '강의 흐름',
-          link: 'thought-detail-20.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-07',
-          views: 0,
-          summary: '강물의 흐름이 주는 인생의 교훈',
-        },
-        {
-          id: 19,
-          title: '숲의 생명력',
-          link: 'thought-detail-19.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-06',
-          views: 0,
-          summary: '숲이 우리에게 주는 생명의 에너지',
-        },
-        {
-          id: 18,
-          title: '꽃의 아름다움',
-          link: 'thought-detail-18.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-05',
-          views: 0,
-          summary: '꽃들이 보여주는 순간의 아름다움',
-        },
-        {
-          id: 17,
-          title: '나무의 지혜',
-          link: 'thought-detail-17.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-04',
-          views: 0,
-          summary: '나무들이 가르쳐주는 삶의 지혜',
-        },
-        {
-          id: 16,
-          title: '새의 자유',
-          link: 'thought-detail-16.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-03',
-          views: 0,
-          summary: '새들이 보여주는 자유의 의미',
-        },
-        {
-          id: 15,
-          title: '물고기의 평화',
-          link: 'thought-detail-15.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-02',
-          views: 0,
-          summary: '물속에서 느끼는 평화로운 순간',
-        },
-        {
-          id: 14,
-          title: '곤충의 세계',
-          link: 'thought-detail-14.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '07-01',
-          views: 0,
-          summary: '작은 곤충들이 보여주는 놀라운 세계',
-        },
-        {
-          id: 13,
-          title: '별들의 이야기',
-          link: 'thought-detail-13.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-30',
-          views: 0,
-          summary: '밤하늘의 별들이 들려주는 이야기',
-        },
-        {
-          id: 12,
-          title: '달의 신비',
-          link: 'thought-detail-12.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-29',
-          views: 0,
-          summary: '달이 우리에게 주는 신비로운 감동',
-        },
-        {
-          id: 11,
-          title: '태양의 힘',
-          link: 'thought-detail-11.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-28',
-          views: 0,
-          summary: '태양이 지구에 주는 생명의 힘',
-        },
-        {
-          id: 10,
-          title: '구름의 변화',
-          link: 'thought-detail-10.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-27',
-          views: 0,
-          summary: '구름의 변화가 주는 아름다움',
-        },
-        {
-          id: 9,
-          title: '바람의 속삭임',
-          link: 'thought-detail-9.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-26',
-          views: 0,
-          summary: '바람이 전해주는 자연의 메시지',
-        },
-        {
-          id: 8,
-          title: '비의 은총',
-          link: 'thought-detail-8.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-25',
-          views: 0,
-          summary: '비가 우리에게 주는 은총과 축복',
-        },
-        {
-          id: 7,
-          title: '눈의 순결',
-          link: 'thought-detail-7.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-24',
-          views: 0,
-          summary: '눈이 주는 순결하고 아름다운 감동',
-        },
-        {
-          id: 6,
-          title: '안개의 신비',
-          link: 'thought-detail-6.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-23',
-          views: 0,
-          summary: '안개가 만들어내는 신비로운 분위기',
-        },
-        {
-          id: 5,
-          title: '무지개의 희망',
-          link: 'thought-detail-5.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-22',
-          views: 0,
-          summary: '무지개가 주는 희망과 아름다움',
-        },
-        {
-          id: 4,
-          title: '번개의 위엄',
-          link: 'thought-detail-4.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-21',
-          views: 0,
-          summary: '번개가 보여주는 자연의 위엄',
-        },
-        {
-          id: 3,
-          title: '천둥의 울림',
-          link: 'thought-detail-3.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-20',
-          views: 0,
-          summary: '천둥소리가 주는 자연의 울림',
-        },
-        {
-          id: 2,
-          title: '지진의 경고',
-          link: 'thought-detail-2.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-19',
-          views: 0,
-          summary: '지진이 우리에게 주는 경고와 교훈',
-        },
-        {
-          id: 1,
-          title: '내가 바랐던 삶의 모양일까?',
-          link: 'thought-detail-1.html',
-          category: '하루 한생각',
-          author: '이호기',
-          date: '06-15',
-          views: 0,
-          summary: '어릴 적 꿈꿨던 삶과 현재의 나를 돌아보며',
-        },
-      ];
-
-      // 페이지네이션 설정
       const itemsPerPage = 10;
       let currentPage = 1;
-
-      // 검색 및 필터 변수
       let filteredData = [...dailyThoughtsData];
-      let searchTerm = '';
-      let selectedCategory = '';
-      let selectedAuthor = '';
 
-      // 페이지 로드 시 실행
-      document.addEventListener('DOMContentLoaded', function () {
-        renderBoardTable(currentPage);
-        renderPagination();
-        updateResultCount();
-        setupEventListeners();
-      });
+      const searchInput = document.getElementById('search-input');
+      const categoryFilter = document.getElementById('category-filter');
+      const authorFilter = document.getElementById('author-filter');
+      const resetBtn = document.getElementById('reset-filters');
 
-      // 이벤트 리스너 설정
-      function setupEventListeners() {
-        const searchInput = document.getElementById('search-input');
-        const categoryFilter = document.getElementById('category-filter');
-        const authorFilter = document.getElementById('author-filter');
-        const resetBtn = document.getElementById('reset-filters');
-
-        searchInput.addEventListener('input', handleSearchChange);
-        categoryFilter.addEventListener('change', handleCategoryFilter);
-        authorFilter.addEventListener('change', handleAuthorFilter);
-        resetBtn.addEventListener('click', resetFilters);
-      }
-
-      // 검색어 변경 처리
-      function handleSearchChange() {
-        searchTerm = document.getElementById('search-input').value;
-        filterBoardData();
-      }
-
-      // 카테고리 필터 변경 처리
-      function handleCategoryFilter() {
-        selectedCategory = document.getElementById('category-filter').value;
-        filterBoardData();
-      }
-
-      // 작성자 필터 변경 처리
-      function handleAuthorFilter() {
-        selectedAuthor = document.getElementById('author-filter').value;
-        filterBoardData();
-      }
-
-      // 필터 초기화
-      function resetFilters() {
-        document.getElementById('search-input').value = '';
-        document.getElementById('category-filter').value = '';
-        document.getElementById('author-filter').value = '';
-
-        searchTerm = '';
-        selectedCategory = '';
-        selectedAuthor = '';
-
-        filteredData = [...dailyThoughtsData];
-        currentPage = 1;
-        renderBoardTable(currentPage);
-        renderPagination();
-        updateResultCount();
-      }
-
-      // 게시판 데이터 필터링
-      function filterBoardData() {
-        filteredData = dailyThoughtsData.filter((item) => {
-          // 검색어 필터링
-          const matchesSearch =
-            searchTerm === '' ||
-            item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            (item.summary &&
-              item.summary.toLowerCase().includes(searchTerm.toLowerCase()));
-
-          // 카테고리 필터링
-          const matchesCategory =
-            selectedCategory === '' || item.category === selectedCategory;
-
-          // 작성자 필터링
-          const matchesAuthor =
-            selectedAuthor === '' || item.author === selectedAuthor;
-
-          return matchesSearch && matchesCategory && matchesAuthor;
-        });
-
-        // 필터링 후 첫 페이지로 이동
-        currentPage = 1;
-        renderBoardTable(currentPage);
-        renderPagination();
-        updateResultCount();
-      }
-
-      // 7일 이내 게시글인지 자동 판단하는 함수
-      function isNewPost(postDate) {
+      function isWithinDays(dateStr, days) {
+        const currentYear = new Date().getFullYear();
+        const targetDate = new Date(`${currentYear}-${dateStr}`);
         const today = new Date();
-        const currentYear = today.getFullYear();
-        const postDateObj = new Date(`${currentYear}-${postDate}`);
-
-        // 올해가 아닌 경우 작년으로 계산
-        if (postDateObj > today) {
-          postDateObj.setFullYear(currentYear - 1);
-        }
-
-        const diffTime = today - postDateObj;
-        const diffDays = diffTime / (1000 * 60 * 60 * 24);
-
-        return diffDays <= 7;
+        const diff = (today - targetDate) / (1000 * 60 * 60 * 24);
+        return diff <= days && diff >= 0;
       }
 
-      // 조회수 관리 함수들
-      function getViews(id) {
-        return (
-          parseInt(localStorage.getItem(`daily_thoughts_views_${id}`)) || 0
-        );
+      function downloadFile(link) {
+        if (!link) return;
+        const a = document.createElement('a');
+        a.href = link;
+        a.download = link.split('/').pop();
+        a.target = '_blank';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
       }
 
-      function increaseViews(id) {
-        const currentViews = getViews(id);
-        const newViews = currentViews + 1;
-        localStorage.setItem(`daily_thoughts_views_${id}`, newViews);
-        return newViews;
+      function incrementViewCount(id) {
+        const store = JSON.parse(localStorage.getItem('ebookSeriesViews') || '{}');
+        store[id] = (store[id] || 0) + 1;
+        localStorage.setItem('ebookSeriesViews', JSON.stringify(store));
+        return store[id];
       }
 
-      function updateViewsDisplay(id, viewsElement) {
-        const views = getViews(id);
-        if (viewsElement) {
-          viewsElement.textContent = views;
-        }
+      function getViewCount(id, fallback = 0) {
+        const store = JSON.parse(localStorage.getItem('ebookSeriesViews') || '{}');
+        return store[id] || fallback || 0;
       }
 
-      // 게시판 테이블 렌더링
-      function renderBoardTable(page) {
+      function updateViewDisplay(id, count) {
+        const rows = document.querySelectorAll('.board-row');
+        rows.forEach((row) => {
+          const idCell = row.querySelector('.col-number');
+          if (idCell && Number(idCell.textContent) === id) {
+            const viewCell = row.querySelector('.col-views');
+            if (viewCell) viewCell.textContent = count;
+          }
+        });
+      }
+
+      function renderTable(page = 1) {
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        const pageData = filteredData.slice(start, end);
         const tbody = document.getElementById('board-tbody');
-        const startIndex = (page - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-        const pageData = filteredData.slice(startIndex, endIndex);
-
         tbody.innerHTML = '';
 
         pageData.forEach((item) => {
           const row = document.createElement('tr');
+          row.className = 'board-row';
+
+          const isNew = isWithinDays(item.date, 7);
+          const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
+
           row.innerHTML = `
             <td class="col-number">${item.id}</td>
             <td class="col-title">
-              <a href="${item.link}" onclick="handleLinkClick(${item.id}, '${
-            item.link
-          }')">${item.title}</a>
-              ${
-                isNewPost(item.date) ? '<span class="new-badge">NEW</span>' : ''
-              }
+              <span class="title-text">${item.title}</span>
+              ${newBadge}
             </td>
-            <td class="col-category">
-              <span class="category-badge">${item.category}</span>
-            </td>
+            <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
-            <td class="col-views" id="views_${item.id}">0</td>
+            <td class="col-views">${getViewCount(item.id, item.views)}</td>
+            <td class="col-download">
+              <button class="download-btn" data-id="${item.id}" data-link="${item.link}">다운로드</button>
+            </td>
           `;
-          tbody.appendChild(row);
 
-          // 조회수 표시 업데이트
-          updateViewsDisplay(
-            item.id,
-            document.getElementById(`views_${item.id}`)
-          );
+          const downloadBtn = row.querySelector('.download-btn');
+          downloadBtn.addEventListener('click', () => {
+            const newCount = incrementViewCount(item.id);
+            updateViewDisplay(item.id, newCount);
+            downloadFile(item.link);
+          });
+
+          tbody.appendChild(row);
         });
+
+        document.getElementById('result-count').textContent = filteredData.length;
       }
 
-      // 페이지네이션 렌더링
       function renderPagination() {
         const pagination = document.getElementById('pagination');
-        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage) || 1;
+        pagination.innerHTML = '';
 
-        if (totalPages <= 1) {
-          pagination.innerHTML = '';
-          return;
-        }
-
-        let paginationHTML = '';
-
-        // 이전 페이지 버튼
         if (currentPage > 1) {
-          paginationHTML += `<button onclick="goToPage(${
-            currentPage - 1
-          })" class="page-btn">이전</button>`;
+          const prev = document.createElement('button');
+          prev.textContent = '◀';
+          prev.onclick = () => changePage(currentPage - 1);
+          pagination.appendChild(prev);
         }
 
-        // 페이지 번호들
         for (let i = 1; i <= totalPages; i++) {
-          if (
-            i === 1 ||
-            i === totalPages ||
-            (i >= currentPage - 2 && i <= currentPage + 2)
-          ) {
-            paginationHTML += `<button onclick="goToPage(${i})" class="page-btn ${
-              i === currentPage ? 'active' : ''
-            }">${i}</button>`;
-          } else if (i === currentPage - 3 || i === currentPage + 3) {
-            paginationHTML += '<span class="page-ellipsis">...</span>';
-          }
+          const btn = document.createElement('button');
+          btn.textContent = i;
+          if (i === currentPage) btn.classList.add('active');
+          btn.onclick = () => changePage(i);
+          pagination.appendChild(btn);
         }
 
-        // 다음 페이지 버튼
         if (currentPage < totalPages) {
-          paginationHTML += `<button onclick="goToPage(${
-            currentPage + 1
-          })" class="page-btn">다음</button>`;
+          const next = document.createElement('button');
+          next.textContent = '▶';
+          next.onclick = () => changePage(currentPage + 1);
+          pagination.appendChild(next);
         }
-
-        pagination.innerHTML = paginationHTML;
       }
 
-      // 페이지 이동
-      function goToPage(page) {
+      function changePage(page) {
         currentPage = page;
-        renderBoardTable(currentPage);
+        renderTable(page);
         renderPagination();
       }
 
-      // 결과 개수 업데이트
-      function updateResultCount() {
-        const resultCount = document.getElementById('result-count');
-        resultCount.textContent = filteredData.length;
+      function applyFilters() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        const category = categoryFilter.value;
+        const author = authorFilter.value;
+
+        filteredData = dailyThoughtsData.filter((item) => {
+          const matchesKeyword =
+            !keyword ||
+            item.title.toLowerCase().includes(keyword) ||
+            (item.summary && item.summary.toLowerCase().includes(keyword));
+          const matchesCategory = !category || item.category === category;
+          const matchesAuthor = !author || item.author === author;
+          return matchesKeyword && matchesCategory && matchesAuthor;
+        });
+
+        currentPage = 1;
+        renderTable();
+        renderPagination();
       }
 
-      // 링크 클릭 처리
-      function handleLinkClick(id, link) {
-        if (link !== '#') {
-          increaseViews(id);
-          updateViewsDisplay(id, document.getElementById(`views_${id}`));
+      searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          applyFilters();
         }
-      }
+      });
+
+      categoryFilter.addEventListener('change', applyFilters);
+      authorFilter.addEventListener('change', applyFilters);
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        categoryFilter.value = '';
+        authorFilter.value = '';
+        filteredData = [...dailyThoughtsData];
+        currentPage = 1;
+        renderTable();
+        renderPagination();
+      });
+
+      // 초기 렌더링
+      renderTable();
+      renderPagination();
     </script>
   </body>
 </html>
