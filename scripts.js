@@ -18,10 +18,9 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-11</strong> - 오늘의 콘텐츠 게시판에 <strong>경제상식</strong>과 <strong>일반상식</strong> 두 가지 새로운 글을 추가했습니다.<br /><br />
-💼 <strong>경제상식:</strong> 「한국형 IRA(미국 인플레이션 감축법 대응) 정책 변화」에서는 미국 IRA에 맞춰 국내 정책이 어떻게 바뀌고 있는지, <strong>배터리 핵심 광물 확보, 국내 투자 인센티브, 북미 현지화 지원</strong> 같은 핵심 포인트를 정리했습니다. 전기차·배터리 산업의 공급망 재편을 이해하는 데 도움이 됩니다.<br /><br />
-🏠 <strong>일반상식:</strong> 「코쿠닝 현상」은 불확실한 시대에 집 안에서 안전과 만족을 찾는 라이프스타일을 다룹니다. 홈퍼니싱, OTT·홈엔터테인먼트, 웰니스 등 <strong>집 기반 소비 트렌드</strong>가 어떻게 확장되는지 살펴볼 수 있습니다.<br /><br />
-새로운 콘텐츠에 많은 관심과 응원 부탁드립니다.`,
+    'notice.updateContent': `<strong>2025-11-12</strong> - 오늘의 콘텐츠 게시판에 <strong>한줄 지식/잡학</strong> 새로운 글을 추가했습니다.<br /><br />
+✨ <strong>한줄 지식/잡학:</strong> 「결혼 비용, 어떻게 스마트하게 줄일까?」에서는 요즘 예비부부들이 주목하는 <strong>스몰웨딩과 공공시설 대관</strong>, 그리고 <strong>신혼부부 주거 지원·혼인신고 기념 공공시설 할인·맞춤형 상담 프로그램</strong> 등 <strong>비용을 현명하게 줄일 수 있는 실전 팁</strong>을 정리했습니다.<br /><br />
+두 사람에게 맞는 방식과 예산을 찾고자 하는 예비부부들에게 실제로 도움이 되는 <strong>지원 제도와 절약 노하우</strong>가 담겨 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -41,10 +40,9 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-11</strong> – We’ve added two new posts to the <strong>Economics</strong> and <strong>General Knowledge</strong> sections on Today’s Content.<br /><br />
-💼 <strong>Economics:</strong> “Policy Changes in Korea’s Response to the U.S. Inflation Reduction Act (IRA)” explains how the Korean government is adapting to the U.S. IRA, highlighting key points such as <strong>securing core battery minerals, domestic investment incentives, and support for North American localization</strong>. It helps you understand how the EV and battery supply chain is being reshaped.<br /><br />
-🏠 <strong>General Knowledge:</strong> “The Cocooning Phenomenon” explores why people seek safety and satisfaction at home in uncertain times. It looks at how <strong>home-centered consumption trends</strong>—from home furnishing and OTT entertainment to wellness routines—continue to grow.<br /><br />
-Thank you for your continued interest and support!`,
+    'notice.updateContent': `<strong>2025-11-12</strong> – We’ve added a new post in the <strong>One-line Knowledge / Trivia</strong> section on Today’s Content.<br /><br />
+✨ <strong>One-line Knowledge / Trivia:</strong> “How to Cut Wedding Costs Smartly” summarizes how today’s couples are embracing <strong>small, customized weddings</strong>, using <strong>public venues</strong>, and taking advantage of <strong>government support programs</strong> such as newlywed housing aid, ceremony venue discounts after filing a marriage, and tailored counseling. It shares <strong>practical strategies to reduce costs</strong> without losing meaning.<br /><br />
+If you’re preparing for marriage and want a budget that truly fits, you’ll find <strong>useful tips on public support and smart savings</strong> here.`,
   },
 };
 

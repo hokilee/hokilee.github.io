@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 97,
+    title: '결혼 비용, 어떻게 스마트하게 줄일까?',
+    link: 'one-line-knowledge/trivia-detail-97.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '11-12',
+    views: 0,
+  },
+  {
     id: 96,
     title: '손글씨가 기억력을 높이는 이유',
     link: 'one-line-knowledge/trivia-detail-96.html',
