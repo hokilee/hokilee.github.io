@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 84,
+    title: '디지털 원화(CBDC) 도입, 현금 없는 사회가 오는가?',
+    link: 'economics/economy-detail-94.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-13',
+    views: 0,
+  },
+  {
     id: 83,
     title: '한국형 IRA(미국 인플레이션 감축법 대응) 정책 변화',
     link: 'economics/economy-detail-93.html',

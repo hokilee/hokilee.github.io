@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 41,
+    title: '스낵컬처',
+    link: 'science/science-detail-41.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-13',
+    views: 0,
+  },
+  {
     id: 40,
     title: '코쿠닝 현상',
     link: 'science/science-detail-40.html',
