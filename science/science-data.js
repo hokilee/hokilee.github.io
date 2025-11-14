@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 42,
+    title: '파량새 증후군',
+    link: 'science/science-detail-42.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-14',
+    views: 0,
+  },
+  {
     id: 41,
     title: '스낵컬처',
     link: 'science/science-detail-41.html',

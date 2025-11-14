@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 85,
+    title: '부동산 시장 전환점, 전세난과 주택 정책의 딜레마',
+    link: 'economics/economy-detail-95.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-14',
+    views: 0,
+  },
+  {
     id: 84,
     title: '디지털 원화(CBDC) 도입, 현금 없는 사회가 오는가?',
     link: 'economics/economy-detail-94.html',

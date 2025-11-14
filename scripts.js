@@ -18,10 +18,10 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-13</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
-✨ <strong>경제상식:</strong> 「디지털 원화(CBDC) 도입, 현금 없는 사회가 오는가?」에서는 <strong>중앙은행 디지털화폐(CBDC)</strong>의 개념과 도입 배경, 해외 사례(중국, 스웨덴, 일본 등)를 살펴보고, <strong>일상 생활에서의 변화</strong>와 <strong>프라이버시 보호</strong> 등 앞으로 주목할 포인트를 정리했습니다.<br /><br />
-📚 <strong>일반상식:</strong> 「스낵컬처」에서는 짧고 가벼운 콘텐츠를 빠르게 소비하는 현대 문화 현상을 다룹니다. 틱톡, 쇼츠, 릴스 등 <strong>짧은 영상 콘텐츠</strong>의 확산 배경과 <strong>소비 트렌드에 미치는 영향</strong>, 그리고 앞으로의 변화 전망을 살펴봅니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.1」이 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 첫 번째 자료입니다.<br /><br />
+    'notice.updateContent': `<strong>2025-11-14</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
+✨ <strong>경제상식:</strong> 「부동산 시장 전환점, 전세난과 주택 정책의 딜레마」에서는 최근 시행된 <strong>대출 규제 강화 정책</strong>으로 인해 실소유자가 많은 강북지역의 주택 판매가 급감하는 등 새로운 부동산 문제가 나타나고 있는 현상을 분석합니다. <strong>전세난의 심화</strong>, <strong>정부의 주택 공급 확대 정책</strong>, 그리고 <strong>주택 정책의 딜레마</strong>를 종합적으로 살펴봅니다.<br /><br />
+📚 <strong>일반상식:</strong> 「파량새 증후군」에서는 "파티에 가면 양새(양심)가 없어진다"는 의미의 신조어로, 평소에는 신중하고 조심스럽게 행동하던 사람이 파티나 모임에 가면 평소와 전혀 다른 모습으로 변하는 현대 사회의 문화적 현상을 다룹니다. <strong>SNS 문화의 영향</strong>과 <strong>일상의 스트레스 해소</strong> 등 파량새 증후군이 나타나는 원인과 양상을 살펴봅니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.2」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 두 번째 자료입니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -42,10 +42,10 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-13</strong> – We've added new posts to Today's Content board.<br /><br />
-✨ <strong>Economics:</strong> "Digital Won (CBDC) Introduction: Is a Cashless Society Coming?" explores the concept and background of <strong>Central Bank Digital Currency (CBDC)</strong>, examines international cases (China, Sweden, Japan, etc.), and discusses <strong>changes in daily life</strong> and <strong>privacy protection</strong> as key points to watch.<br /><br />
-📚 <strong>General Knowledge:</strong> "Snack Culture" covers the modern cultural phenomenon of quickly consuming short, light content. It examines the spread of <strong>short-form video content</strong> like TikTok, Shorts, and Reels, their <strong>impact on consumption trends</strong>, and future outlook.<br /><br />
-📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.1" has been updated. This is the first volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
+    'notice.updateContent': `<strong>2025-11-14</strong> – We've added new posts to Today's Content board.<br /><br />
+✨ <strong>Economics:</strong> "Real Estate Market Turning Point: The Dilemma of Jeonse Crisis and Housing Policy" analyzes new real estate issues emerging from recent <strong>loan regulation strengthening policies</strong>, including a sharp decline in housing sales in Gangbuk area where actual owners are concentrated. It comprehensively examines <strong>the deepening jeonse crisis</strong>, <strong>government's housing supply expansion policies</strong>, and <strong>the dilemmas of housing policies</strong>.<br /><br />
+📚 <strong>General Knowledge:</strong> "Party Conscience Syndrome" (파량새 증후군) is a neologism meaning "conscience disappears at parties," describing the phenomenon where people who are usually cautious and careful transform into completely different personas at parties or gatherings. It covers this modern cultural phenomenon, examining causes and manifestations including <strong>the influence of SNS culture</strong> and <strong>daily stress relief</strong>.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.2" has been updated. This is the second volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
