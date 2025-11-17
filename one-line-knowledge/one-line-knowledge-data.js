@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 98,
+    title: '팩트시트와 관세 협상, 협의서의 종류와 의미',
+    link: 'one-line-knowledge/trivia-detail-98.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '11-17',
+    views: 0,
+  },
+  {
     id: 97,
     title: '결혼 비용, 어떻게 스마트하게 줄일까?',
     link: 'one-line-knowledge/trivia-detail-97.html',

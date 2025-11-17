@@ -18,10 +18,9 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-14</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
-✨ <strong>경제상식:</strong> 「부동산 시장 전환점, 전세난과 주택 정책의 딜레마」에서는 최근 시행된 <strong>대출 규제 강화 정책</strong>으로 인해 실소유자가 많은 강북지역의 주택 판매가 급감하는 등 새로운 부동산 문제가 나타나고 있는 현상을 분석합니다. <strong>전세난의 심화</strong>, <strong>정부의 주택 공급 확대 정책</strong>, 그리고 <strong>주택 정책의 딜레마</strong>를 종합적으로 살펴봅니다.<br /><br />
-📚 <strong>일반상식:</strong> 「파량새 증후군」에서는 "파티에 가면 양새(양심)가 없어진다"는 의미의 신조어로, 평소에는 신중하고 조심스럽게 행동하던 사람이 파티나 모임에 가면 평소와 전혀 다른 모습으로 변하는 현대 사회의 문화적 현상을 다룹니다. <strong>SNS 문화의 영향</strong>과 <strong>일상의 스트레스 해소</strong> 등 파량새 증후군이 나타나는 원인과 양상을 살펴봅니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.2」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 두 번째 자료입니다.<br /><br />
+    'notice.updateContent': `<strong>2025-11-17</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
+💡 <strong>한줄 지식/잡학:</strong> 「팩트시트와 관세 협상, 협의서의 종류와 의미」에서는 최근 한국과 미국 간의 관세 협상 과정에서 자주 등장하는 <strong>팩트시트(Fact Sheet)</strong>의 정의와 역할을 설명합니다. 국제 협상에서 사용되는 <strong>MOU(양해각서)</strong>, <strong>MOA(협정각서)</strong>, <strong>협정서(Agreement)</strong>의 차이점과 법적 구속력을 살펴보고, 관세 수준이 최종적으로 정해지기까지의 6단계 과정을 상세히 다룹니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.3」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 세 번째 자료입니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -42,10 +41,9 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-14</strong> – We've added new posts to Today's Content board.<br /><br />
-✨ <strong>Economics:</strong> "Real Estate Market Turning Point: The Dilemma of Jeonse Crisis and Housing Policy" analyzes new real estate issues emerging from recent <strong>loan regulation strengthening policies</strong>, including a sharp decline in housing sales in Gangbuk area where actual owners are concentrated. It comprehensively examines <strong>the deepening jeonse crisis</strong>, <strong>government's housing supply expansion policies</strong>, and <strong>the dilemmas of housing policies</strong>.<br /><br />
-📚 <strong>General Knowledge:</strong> "Party Conscience Syndrome" (파량새 증후군) is a neologism meaning "conscience disappears at parties," describing the phenomenon where people who are usually cautious and careful transform into completely different personas at parties or gatherings. It covers this modern cultural phenomenon, examining causes and manifestations including <strong>the influence of SNS culture</strong> and <strong>daily stress relief</strong>.<br /><br />
-📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.2" has been updated. This is the second volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
+    'notice.updateContent': `<strong>2025-11-17</strong> – We've added new posts to Today's Content board.<br /><br />
+💡 <strong>One-line Knowledge/Trivia:</strong> "Fact Sheet and Tariff Negotiations: Types and Meanings of Agreements" explains the definition and role of <strong>Fact Sheet</strong>, which frequently appears in recent tariff negotiations between Korea and the United States. It examines the differences and legal binding force of <strong>MOU (Memorandum of Understanding)</strong>, <strong>MOA (Memorandum of Agreement)</strong>, and <strong>Agreement</strong> used in international negotiations, and details the 6-step process until tariff levels are finally determined.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.3" has been updated. This is the third volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
