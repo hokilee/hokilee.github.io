@@ -297,31 +297,81 @@
       // 연도 표시
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // NEW 배지 표시 함수 (최근 2일간)
-      function updateNewBadges() {
+      // NEW 배지 표시 함수 (최근 2일간) - 전역 함수로 선언
+      window.updateNewBadges = function () {
         const today = new Date();
+        // 오늘 날짜를 YYYY-MM-DD 형식으로 변환
+        const todayStr =
+          today.getFullYear() +
+          '-' +
+          String(today.getMonth() + 1).padStart(2, '0') +
+          '-' +
+          String(today.getDate()).padStart(2, '0');
+
+        // 어제 날짜 계산
         const yesterday = new Date(today);
         yesterday.setDate(today.getDate() - 1);
+        const yesterdayStr =
+          yesterday.getFullYear() +
+          '-' +
+          String(yesterday.getMonth() + 1).padStart(2, '0') +
+          '-' +
+          String(yesterday.getDate()).padStart(2, '0');
+
+        console.log('NEW 배지 체크 - 오늘:', todayStr, '어제:', yesterdayStr);
 
         const noticeItems = document.querySelectorAll(
           '.notice-item[data-date]'
         );
 
+        console.log('공지사항 항목 개수:', noticeItems.length);
+
         noticeItems.forEach((item) => {
-          const noticeDate = new Date(item.getAttribute('data-date'));
+          const noticeDateStr = item.getAttribute('data-date');
           const newBadge = item.querySelector('.new-badge');
 
-          // 오늘과 어제의 공지사항에만 NEW 배지 표시
-          if (noticeDate >= yesterday) {
+          console.log(
+            '공지사항 날짜:',
+            noticeDateStr,
+            'NEW 배지 존재:',
+            !!newBadge
+          );
+
+          if (!newBadge) {
+            console.warn('NEW badge element not found for notice item');
+            return;
+          }
+
+          // 날짜 문자열을 직접 비교 (오늘 또는 어제와 일치하면 NEW 배지 표시)
+          const shouldShow =
+            noticeDateStr === todayStr || noticeDateStr === yesterdayStr;
+          console.log(
+            '날짜 일치 여부:',
+            shouldShow,
+            '(오늘:',
+            noticeDateStr === todayStr,
+            ', 어제:',
+            noticeDateStr === yesterdayStr,
+            ')'
+          );
+
+          if (shouldShow) {
             newBadge.style.display = 'inline-block';
+            console.log('NEW 배지 표시됨');
           } else {
             newBadge.style.display = 'none';
+            console.log('NEW 배지 숨김');
           }
         });
-      }
+      };
 
-      // 페이지 로드 시 NEW 배지 업데이트
-      updateNewBadges();
+      // DOM이 완전히 로드된 후 NEW 배지 업데이트
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', updateNewBadges);
+      } else {
+        // DOM이 이미 로드된 경우 즉시 실행
+        updateNewBadges();
+      }
     </script>
 
     <!-- 공지사항 애니메이션 CSS -->

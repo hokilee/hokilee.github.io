@@ -256,9 +256,24 @@ document.addEventListener('DOMContentLoaded', function () {
       const translation =
         translations[lang]?.[key] ?? translations[DEFAULT_LANGUAGE]?.[key];
       if (translation !== undefined) {
-        el.innerHTML = translation;
+        // 공지사항인 경우 NEW 배지를 보존
+        if (el.classList.contains('notice-item')) {
+          const existingBadge = el.querySelector('.new-badge');
+          const badgeHtml = existingBadge
+            ? existingBadge.outerHTML
+            : '<span class="new-badge" style="display: none">NEW</span>';
+          el.innerHTML = badgeHtml + translation;
+        } else {
+          el.innerHTML = translation;
+        }
       }
     });
+    // 공지사항 내용이 변경된 후 NEW 배지 다시 업데이트
+    if (typeof window.updateNewBadges === 'function') {
+      setTimeout(() => {
+        window.updateNewBadges();
+      }, 100);
+    }
   }
 
   function updateVisitorCounterImage(lang) {
