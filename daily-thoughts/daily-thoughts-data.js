@@ -3,7 +3,7 @@ const dailyThoughtsData = [
   {
     id: 3,
     title: 'Hoki Lee eBook Series Vol.3',
-    link: 'eBook-data/Hoki Lee eBook serious vol3.pdf',
+    link: 'eBook-data/Hoki Lee eBook series vol3.pdf',
     category: 'eBook Series',
     author: '이호기',
     date: '11-17',
@@ -14,7 +14,7 @@ const dailyThoughtsData = [
   {
     id: 2,
     title: 'Hoki Lee eBook Series Vol.2',
-    link: 'eBook-data/Hoki Lee eBook serious vol2.pdf',
+    link: 'eBook-data/Hoki Lee eBook series vol2.pdf',
     category: 'eBook Series',
     author: '이호기',
     date: '11-14',
@@ -25,7 +25,7 @@ const dailyThoughtsData = [
   {
     id: 1,
     title: 'Hoki Lee eBook Series Vol.1',
-    link: 'eBook-data/Hoki Lee eBook serious vol1.pdf',
+    link: 'eBook-data/Hoki Lee eBook series vol1.pdf',
     category: 'eBook Series',
     author: '이호기',
     date: '11-13',
