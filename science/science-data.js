@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 43,
+    title: '다원적무지',
+    link: 'science/science-detail-43.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-18',
+    views: 0,
+  },
+  {
     id: 42,
     title: '파량새 증후군',
     link: 'science/science-detail-42.html',

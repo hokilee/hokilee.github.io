@@ -18,9 +18,10 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-17</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
-💡 <strong>한줄 지식/잡학:</strong> 「팩트시트와 관세 협상, 협의서의 종류와 의미」에서는 최근 한국과 미국 간의 관세 협상 과정에서 자주 등장하는 <strong>팩트시트(Fact Sheet)</strong>의 정의와 역할을 설명합니다. 국제 협상에서 사용되는 <strong>MOU(양해각서)</strong>, <strong>MOA(협정각서)</strong>, <strong>협정서(Agreement)</strong>의 차이점과 법적 구속력을 살펴보고, 관세 수준이 최종적으로 정해지기까지의 6단계 과정을 상세히 다룹니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.3」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 세 번째 자료입니다.<br /><br />
+    'notice.updateContent': `<strong>2025-11-18</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
+💰 <strong>경제상식:</strong> 「주택 구입 지수 상승, 부동산 시장 회복 신호인가?」에서는 최근 상승하고 있는 주택 구입 지수의 의미와 원인을 분석합니다. <strong>KB국민은행의 주택구입잠재력지수(KB-HOI)</strong>와 <strong>한국주택금융공사의 주택구입부담지수(K-HAI)</strong> 등 주택 구입 지수 산출 기관과 지표의 의미를 설명하고, 금리 인하 기대감, 주택 가격 하락, 대출 규제 완화 기대 등 지수 상승 원인을 살펴봅니다. 또한 주택 구입 증가가 한국 경제에 미치는 긍정적·부정적 영향을 종합적으로 다룹니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.4」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 네 번째 자료입니다.<br /><br />
+💡 <strong>일반상식:</strong> 「다원적무지」에서는 집단 내 다수의 구성원이 실제로는 동의하지 않지만, 다른 구성원들이 그 의견을 지지한다고 잘못 믿어 그에 따라 행동하는 현상을 설명합니다. 회의에서의 침묵, 대학생들의 음주 문화, 직장 내 침묵 문화 등 생활 속에서 나타나는 양상과 다원적무지의 긍정적·부정적 측면을 살펴보고, 이를 극복하는 방법을 제시합니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -41,9 +42,10 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'notice.updateContent': `<strong>2025-11-17</strong> – We've added new posts to Today's Content board.<br /><br />
-💡 <strong>One-line Knowledge/Trivia:</strong> "Fact Sheet and Tariff Negotiations: Types and Meanings of Agreements" explains the definition and role of <strong>Fact Sheet</strong>, which frequently appears in recent tariff negotiations between Korea and the United States. It examines the differences and legal binding force of <strong>MOU (Memorandum of Understanding)</strong>, <strong>MOA (Memorandum of Agreement)</strong>, and <strong>Agreement</strong> used in international negotiations, and details the 6-step process until tariff levels are finally determined.<br /><br />
-📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.3" has been updated. This is the third volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
+    'notice.updateContent': `<strong>2025-11-18</strong> – We've added new posts to Today's Content board.<br /><br />
+💰 <strong>Economics:</strong> "Rising Housing Purchase Index: A Sign of Real Estate Market Recovery?" analyzes the meaning and causes of the recently rising housing purchase index. It explains housing purchase index calculation institutions such as <strong>KB Bank's Housing Opportunity Index (KB-HOI)</strong> and <strong>Korea Housing Finance Corporation's Housing Affordability Index (K-HAI)</strong>, and examines the causes of the index rise, including expectations of interest rate cuts, housing price declines, and expectations of easing loan regulations. It also comprehensively covers the positive and negative impacts of increased housing purchases on the Korean economy.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.4" has been updated. This is the fourth volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
+💡 <strong>General Knowledge:</strong> "Pluralistic Ignorance" explains the phenomenon where most members of a group do not actually agree but mistakenly believe that other members support that opinion and act accordingly. It examines manifestations in daily life such as silence in meetings, college students' drinking culture, and workplace silence culture, explores the positive and negative aspects of pluralistic ignorance, and suggests ways to overcome it.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
