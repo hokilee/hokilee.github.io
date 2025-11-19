@@ -19,9 +19,8 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'notice.updateContent': `<strong>2025-11-18</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
-💰 <strong>경제상식:</strong> 「주택 구입 지수 상승, 부동산 시장 회복 신호인가?」에서는 최근 상승하고 있는 주택 구입 지수의 의미와 원인을 분석합니다. <strong>KB국민은행의 주택구입잠재력지수(KB-HOI)</strong>와 <strong>한국주택금융공사의 주택구입부담지수(K-HAI)</strong> 등 주택 구입 지수 산출 기관과 지표의 의미를 설명하고, 금리 인하 기대감, 주택 가격 하락, 대출 규제 완화 기대 등 지수 상승 원인을 살펴봅니다. 또한 주택 구입 증가가 한국 경제에 미치는 긍정적·부정적 영향을 종합적으로 다룹니다.<br /><br />
+💡 <strong>한줄 지식/잡학:</strong> 「소비자 물가지수와 생산자 물가지수, 경제 지표 읽는 법」에서는 경제 뉴스에서 자주 등장하는 소비자 물가지수(CPI)와 생산자 물가지수(PPI)의 의미와 차이를 설명합니다. CPI는 가계가 느끼는 물가 상승률을, PPI는 기업이 느끼는 비용 상승률을 나타내며, PPI는 CPI보다 먼저 변동하는 선행 지표로 활용됩니다. 물가 상승률을 읽는 방법, 실질 소득 계산, 투자 결정에 활용하는 방법, 경제 정책 예측 등 일상생활에서 경제 지표를 활용하는 실용적인 방법을 제시합니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.4」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 네 번째 자료입니다.<br /><br />
-💡 <strong>일반상식:</strong> 「다원적무지」에서는 집단 내 다수의 구성원이 실제로는 동의하지 않지만, 다른 구성원들이 그 의견을 지지한다고 잘못 믿어 그에 따라 행동하는 현상을 설명합니다. 회의에서의 침묵, 대학생들의 음주 문화, 직장 내 침묵 문화 등 생활 속에서 나타나는 양상과 다원적무지의 긍정적·부정적 측면을 살펴보고, 이를 극복하는 방법을 제시합니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -43,9 +42,8 @@ const translations = {
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
     'notice.updateContent': `<strong>2025-11-18</strong> – We've added new posts to Today's Content board.<br /><br />
-💰 <strong>Economics:</strong> "Rising Housing Purchase Index: A Sign of Real Estate Market Recovery?" analyzes the meaning and causes of the recently rising housing purchase index. It explains housing purchase index calculation institutions such as <strong>KB Bank's Housing Opportunity Index (KB-HOI)</strong> and <strong>Korea Housing Finance Corporation's Housing Affordability Index (K-HAI)</strong>, and examines the causes of the index rise, including expectations of interest rate cuts, housing price declines, and expectations of easing loan regulations. It also comprehensively covers the positive and negative impacts of increased housing purchases on the Korean economy.<br /><br />
+💡 <strong>One-line Knowledge/Trivia:</strong> "Consumer Price Index and Producer Price Index: How to Read Economic Indicators" explains the meaning and differences between the Consumer Price Index (CPI) and Producer Price Index (PPI), which frequently appear in economic news. CPI represents the inflation rate felt by households, while PPI represents the cost increase rate felt by businesses. PPI serves as a leading indicator that changes before CPI. It presents practical methods for using economic indicators in daily life, including how to read inflation rates, calculate real income, use them for investment decisions, and predict economic policies.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.4" has been updated. This is the fourth volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
-💡 <strong>General Knowledge:</strong> "Pluralistic Ignorance" explains the phenomenon where most members of a group do not actually agree but mistakenly believe that other members support that opinion and act accordingly. It examines manifestations in daily life such as silence in meetings, college students' drinking culture, and workplace silence culture, explores the positive and negative aspects of pluralistic ignorance, and suggests ways to overcome it.<br /><br />
 Please check each board for more detailed content.`,
   },
 };

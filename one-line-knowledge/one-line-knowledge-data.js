@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 99,
+    title: '소비자 물가지수와 생산자 물가지수, 경제 지표 읽는 법',
+    link: 'one-line-knowledge/trivia-detail-99.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '11-18',
+    views: 0,
+  },
+  {
     id: 98,
     title: '팩트시트와 관세 협상, 협의서의 종류와 의미',
     link: 'one-line-knowledge/trivia-detail-98.html',
