@@ -78,6 +78,11 @@ header {
   color: #444;
 }
 
+.image-card p i {
+  color: #8b4513;
+  font-style: italic;
+}
+
 /* .fullscreen {
   position: fixed;
   top: 0;

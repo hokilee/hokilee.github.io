@@ -18,6 +18,11 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
+    'notice.updateContent20251120': `<strong>2025-11-20</strong> - 경제상식 및 일반상식 게시판에 새로운 글을 추가하고, 경력이야기 항목에 영어 번역을 추가했습니다.<br /><br />
+💼 <strong>경제상식:</strong> 「한국 주식 시장 변동성, 불확실성의 원인과 대처 전략」에서는 최근 한국 주식 시장의 높은 변동성 원인을 분석합니다. 특히 국내 전문가들이 제기한 <strong>AI 거품론</strong>이 시장 변동성의 주요 원인 중 하나라는 평가를 포함하여, 변동성 시장에서의 투자 대처 전략을 제시합니다.<br /><br />
+📚 <strong>일반상식:</strong> 「브레튼우즈」에서는 1944년 브레튼우즈 회의에서 수립된 국제 금융 체제의 배경과 특징, 성공과 한계, 붕괴 과정을 설명합니다. 현재의 국제 금융 질서를 이해하는 데 중요한 역사적 교훈을 제공합니다.<br /><br />
+🎯 <strong>경력이야기:</strong> 경력이야기 항목의 8개 메뉴 설명에 영어 번역을 추가하여 한글과 영문을 함께 제공합니다. 영어 텍스트는 갈색 이탤릭체로 표시됩니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent': `<strong>2025-11-18</strong> - 오늘의 콘텐츠 게시판에 새로운 글들을 추가했습니다.<br /><br />
 💡 <strong>한줄 지식/잡학:</strong> 「소비자 물가지수와 생산자 물가지수, 경제 지표 읽는 법」에서는 경제 뉴스에서 자주 등장하는 소비자 물가지수(CPI)와 생산자 물가지수(PPI)의 의미와 차이를 설명합니다. CPI는 가계가 느끼는 물가 상승률을, PPI는 기업이 느끼는 비용 상승률을 나타내며, PPI는 CPI보다 먼저 변동하는 선행 지표로 활용됩니다. 물가 상승률을 읽는 방법, 실질 소득 계산, 투자 결정에 활용하는 방법, 경제 정책 예측 등 일상생활에서 경제 지표를 활용하는 실용적인 방법을 제시합니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.4」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 네 번째 자료입니다.<br /><br />
@@ -41,6 +46,11 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
+    'notice.updateContent20251120': `<strong>2025-11-20</strong> – We've added new posts to the Economics and General Knowledge boards, and added English translations to the Career Stories section.<br /><br />
+💼 <strong>Economics:</strong> "Korean Stock Market Volatility: Causes of Uncertainty and Coping Strategies" analyzes the causes of recent high volatility in the Korean stock market. It includes the assessment by domestic experts that the <strong>AI bubble theory</strong> is one of the main causes of market volatility, and presents investment coping strategies in volatile markets.<br /><br />
+📚 <strong>General Knowledge:</strong> "Bretton Woods" explains the background, characteristics, successes and limitations, and collapse process of the international financial system established at the Bretton Woods Conference in 1944. It provides important historical lessons for understanding the current international financial order.<br /><br />
+🎯 <strong>Career Stories:</strong> English translations have been added to the descriptions of 8 menu items in the Career Stories section, providing both Korean and English text. English text is displayed in brown italics.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent': `<strong>2025-11-18</strong> – We've added new posts to Today's Content board.<br /><br />
 💡 <strong>One-line Knowledge/Trivia:</strong> "Consumer Price Index and Producer Price Index: How to Read Economic Indicators" explains the meaning and differences between the Consumer Price Index (CPI) and Producer Price Index (PPI), which frequently appear in economic news. CPI represents the inflation rate felt by households, while PPI represents the cost increase rate felt by businesses. PPI serves as a leading indicator that changes before CPI. It presents practical methods for using economic indicators in daily life, including how to read inflation rates, calculate real income, use them for investment decisions, and predict economic policies.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.4" has been updated. This is the fourth volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />

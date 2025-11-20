@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 87,
+    title: '한국 주식 시장 변동성, 불확실성의 원인과 대처 전략',
+    link: 'economics/economy-detail-98.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-20',
+    views: 0,
+  },
+  {
     id: 86,
     title: '주택 구입 지수 상승, 부동산 시장 회복 신호인가?',
     link: 'economics/economy-detail-96.html',

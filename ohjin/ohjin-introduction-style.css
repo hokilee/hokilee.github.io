@@ -66,6 +66,11 @@ body {
   letter-spacing: 0.5px;
 }
 
+.coffee-photo-grid p i {
+  color: #8b4513;
+  font-style: italic;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -83,15 +88,25 @@ body {
 
 .main-title {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #1e40af;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
+.main-title i {
+  color: #8b4513;
+  font-style: italic;
+}
+
 .subtitle {
   font-size: 1.2rem;
-  color: #000000;
+  color: #1e40af;
   font-weight: 400;
+}
+
+.subtitle i {
+  color: #8b4513;
+  font-style: italic;
 }
 
 .navigation {
@@ -141,6 +156,11 @@ section:hover {
   padding-bottom: 10px;
   border-bottom: 3px solid #3498db;
   position: relative;
+}
+
+.section-title i {
+  color: #8b4513;
+  font-style: italic;
 }
 
 .section-title::after {
@@ -199,11 +219,25 @@ section:hover {
   font-weight: 600;
 }
 
+.overview-item h3 i,
+.experience-item h3 i,
+.significance-item h3 i {
+  color: #8b4513;
+  font-style: italic;
+}
+
 .overview-item p,
 .experience-item p,
 .significance-item p {
   color: #555;
   line-height: 1.7;
+}
+
+.overview-item p i,
+.experience-item p i,
+.significance-item p i {
+  color: #8b4513;
+  font-style: italic;
 }
 
 .legacy-content {
@@ -518,4 +552,15 @@ section:hover {
   margin-bottom: 10px;
   object-fit: contain;
   background: #fafbfc;
+}
+
+.ohjin-gallery-grid .image-card p i,
+.coffee-photo-grid figcaption i {
+  color: #8b4513;
+  font-style: italic;
+}
+
+p4 i {
+  color: #8b4513;
+  font-style: italic;
 }

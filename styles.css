@@ -779,6 +779,11 @@ body {
   line-height: 1.6;
 }
 
+.career-card p i {
+  color: #8b4513;
+  font-style: italic;
+}
+
 /* 푸터 */
 .footer {
   background: linear-gradient(135deg, #654321 0%, #8b4513 50%, #654321 100%);

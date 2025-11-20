@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 44,
+    title: '브레튼우즈',
+    link: 'science/science-detail-44.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-20',
+    views: 0,
+  },
+  {
     id: 43,
     title: '다원적무지',
     link: 'science/science-detail-43.html',

@@ -12,6 +12,11 @@ body {
   min-height: 100vh;
 }
 
+/* 밑줄 태그 스타일 */
+u {
+  text-decoration: underline;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,14 +34,14 @@ body {
 
 .main-title {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #1e40af;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #000000;
+  color: #8b4513;
   font-weight: 400;
 }
 
@@ -139,6 +144,41 @@ section:hover {
   line-height: 1.7;
 }
 
+.overview-item p i {
+  color: #8b4513;
+}
+
+/* 운영현황 세부 항목 스타일 */
+.tournament-details {
+  margin-top: 15px;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+}
+
+.detail-item h4 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.detail-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.experience-item h3 i,
+.experience-item h4 i,
+.experience-item p i,
+.detail-item h4 i,
+.detail-item p i {
+  color: #8b4513;
+}
+
 .legacy-content {
   background: rgba(231, 76, 60, 0.05);
   padding: 25px;
@@ -193,6 +233,10 @@ section:hover {
   font-size: 14px;
   color: #666;
   font-weight: 500;
+}
+
+.photo-grid figcaption i {
+  color: #8b4513;
 }
 
 /* 모달 스타일 */

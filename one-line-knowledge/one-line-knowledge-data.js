@@ -6,7 +6,7 @@ const oneLineKnowledgeData = [
     link: 'one-line-knowledge/trivia-detail-99.html',
     category: '한줄 지식/잡학',
     author: '이호기',
-    date: '11-18',
+    date: '11-19',
     views: 0,
   },
   {
