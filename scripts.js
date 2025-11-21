@@ -18,7 +18,7 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20251125': `<strong>2025-11-25</strong> - 한줄 지식/잡학 게시판, eBook Series 게시판, 기술 트렌드/뉴스 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+    'notice.updateContent20251125': `<strong>2025-11-21</strong> - 한줄 지식/잡학 게시판, eBook Series 게시판, 기술 트렌드/뉴스 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 💡 <strong>한줄 지식/잡학:</strong> 「연말정산과 소득공제, 절세의 기본 원리」에서는 연말정산의 기본 원리와 2025년 연말정산의 주요 변경사항을 설명합니다. 연금저축 및 IRP 세액공제 한도 상향(700만 원 → 900만 원), 자녀 세액공제 확대, 영유아 의료비 공제 한도 폐지, 문화비 소득공제 대상 확대(헬스장·수영장 포함) 등 올해 달라진 내용을 상세히 다루며, 소득 수준별·가족 구성별 실전 절세 전략을 제시합니다. 연말정산을 통해 합법적으로 세금을 절감하는 방법을 알아보세요.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.7」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 일곱 번째 자료입니다.<br /><br />
 🚗 <strong>기술 트렌드/뉴스:</strong> 「2025년 11월 2주차~3주차 기술 트렌드/뉴스」에서는 자동차 안전 규제 강화와 전기차 배터리 관리 시스템 개선을 다룹니다. 국토교통부의 페달 오조작 방지장치 의무화와 전기차 배터리 수명 표시장치 도입, AI 보안 위협의 진화(딥피싱), 스노우플레이크-엔비디아 협력을 통한 ML 워크플로우 가속화, NIA의 IT서비스혁신대상 수상 등 자동차와 IT 산업의 최신 동향을 정리했습니다.<br /><br />
@@ -51,7 +51,7 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20251125': `<strong>2025-11-25</strong> – We've added new content to the One-line Knowledge/Trivia board, eBook Series board, and Tech Trends/News board.<br /><br />
+    'notice.updateContent20251125': `<strong>2025-11-21</strong> – We've added new content to the One-line Knowledge/Trivia board, eBook Series board, and Tech Trends/News board.<br /><br />
 💡 <strong>One-line Knowledge/Trivia:</strong> "Year-end Tax Settlement and Income Deductions: Basic Principles of Tax Savings" explains the basic principles of year-end tax settlement and the major changes in 2025 year-end tax settlement. It covers this year's changes in detail, including the increase in pension savings and IRP tax credit limit (7 million won → 9 million won), expansion of child tax credits, removal of medical expense deduction limit for young children, and expansion of cultural expense deduction targets (including gyms and swimming pools). It also presents practical tax-saving strategies by income level and family composition. Learn how to legally reduce taxes through year-end tax settlement.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.7" has been updated. This is the seventh volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
 🚗 <strong>Tech Trends/News:</strong> "Tech Trends/News for November 2nd-3rd Week, 2025" covers automotive safety regulation strengthening and electric vehicle battery management system improvements. It includes the Ministry of Land, Infrastructure and Transport's mandatory installation of pedal misoperation prevention devices and EV battery lifespan display devices, the evolution of AI security threats (deep phishing), Snowflake-NVIDIA collaboration for ML workflow acceleration, and NIA's IT Service Innovation Award. The latest trends in the automotive and IT industries are summarized.<br /><br />
