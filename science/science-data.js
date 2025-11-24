@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 45,
+    title: '파레토 최적',
+    link: 'science/science-detail-45.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-24',
+    views: 0,
+  },
+  {
     id: 44,
     title: '브레튼우즈',
     link: 'science/science-detail-44.html',

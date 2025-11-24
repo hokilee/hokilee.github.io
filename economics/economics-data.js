@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 88,
+    title: '오픈뱅킹과 마이데이터, 금융 흐름의 패러다임 전환',
+    link: 'economics/economy-detail-99.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-24',
+    views: 0,
+  },
+  {
     id: 87,
     title: '한국 주식 시장 변동성, 불확실성의 원인과 대처 전략',
     link: 'economics/economy-detail-98.html',

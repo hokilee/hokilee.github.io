@@ -18,6 +18,10 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
+    'notice.updateContent20251124': `<strong>2025-11-24</strong> - 경제상식 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+💼 <strong>경제상식:</strong> 「오픈뱅킹과 마이데이터, 금융 흐름의 패러다임 전환」에서는 오픈뱅킹과 마이데이터가 한국 금융 산업에 가져온 변화를 다룹니다. 하나의 애플리케이션에서 여러 은행 계좌를 통합 관리할 수 있는 오픈뱅킹과 개인의 금융 정보를 한 곳에서 통합 조회할 수 있는 마이데이터 서비스의 확대 현황, 금융 서비스 접근성 향상과 금융사 간 경쟁 심화, 새로운 금융 서비스 모델의 등장, 데이터 보안과 개인정보 보호 이슈 등을 상세히 설명합니다. 디지털 금융 시대의 변화를 이해하는 데 도움이 됩니다.<br /><br />
+📚 <strong>일반상식:</strong> 「파레토 최적」에서는 이탈리아 경제학자 빌프레도 파레토가 제안한 자원 배분의 효율성을 평가하는 개념을 설명합니다. 파레토 최적 상태는 한 개인의 이익을 증가시키려면 반드시 다른 개인의 이익이 감소해야 하는 상태로, 더 이상의 파레토 개선이 불가능한 효율적인 상태를 의미합니다. 파레토 개선과 파레토 최적의 차이, 일상생활에서의 예시, 효율성과 공평성의 관계, 경제 정책과 경영 의사결정에서의 활용 등을 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20251125': `<strong>2025-11-21</strong> - 한줄 지식/잡학 게시판, eBook Series 게시판, 기술 트렌드/뉴스 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 💡 <strong>한줄 지식/잡학:</strong> 「연말정산과 소득공제, 절세의 기본 원리」에서는 연말정산의 기본 원리와 2025년 연말정산의 주요 변경사항을 설명합니다. 연금저축 및 IRP 세액공제 한도 상향(700만 원 → 900만 원), 자녀 세액공제 확대, 영유아 의료비 공제 한도 폐지, 문화비 소득공제 대상 확대(헬스장·수영장 포함) 등 올해 달라진 내용을 상세히 다루며, 소득 수준별·가족 구성별 실전 절세 전략을 제시합니다. 연말정산을 통해 합법적으로 세금을 절감하는 방법을 알아보세요.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.7」가 업데이트되었습니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 일곱 번째 자료입니다.<br /><br />
@@ -51,6 +55,10 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
+    'notice.updateContent20251124': `<strong>2025-11-24</strong> – We've added new content to the Economics and General Knowledge boards.<br /><br />
+💼 <strong>Economics:</strong> "Open Banking and MyData: Paradigm Shift in Financial Flow" covers the changes that open banking and MyData have brought to the Korean financial industry. It explains the expansion of open banking services that allow integrated management of multiple bank accounts in one application, and MyData services that enable integrated viewing of personal financial information in one place. It details the improvement in financial service accessibility, intensifying competition among financial institutions, the emergence of new financial service models, and data security and privacy protection issues. It helps understand the changes in the digital finance era.<br /><br />
+📚 <strong>General Knowledge:</strong> "Pareto Optimal" explains the concept proposed by Italian economist Vilfredo Pareto for evaluating the efficiency of resource allocation. Pareto optimal state means a state where increasing one individual's benefit necessarily requires decreasing another individual's benefit, representing an efficient state where no further Pareto improvement is possible. It covers the difference between Pareto improvement and Pareto optimal, examples in daily life, the relationship between efficiency and fairness, and applications in economic policy and management decision-making.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20251125': `<strong>2025-11-21</strong> – We've added new content to the One-line Knowledge/Trivia board, eBook Series board, and Tech Trends/News board.<br /><br />
 💡 <strong>One-line Knowledge/Trivia:</strong> "Year-end Tax Settlement and Income Deductions: Basic Principles of Tax Savings" explains the basic principles of year-end tax settlement and the major changes in 2025 year-end tax settlement. It covers this year's changes in detail, including the increase in pension savings and IRP tax credit limit (7 million won → 9 million won), expansion of child tax credits, removal of medical expense deduction limit for young children, and expansion of cultural expense deduction targets (including gyms and swimming pools). It also presents practical tax-saving strategies by income level and family composition. Learn how to legally reduce taxes through year-end tax settlement.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.7" has been updated. This is the seventh volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
