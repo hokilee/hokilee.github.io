@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 101,
+    title: '근육의 기억, 운동을 오래 쉬어도 다시 빨리 회복되는 이유',
+    link: 'one-line-knowledge/trivia-detail-101.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '11-25',
+    views: 0,
+  },
+  {
     id: 100,
     title: '연말정산과 소득공제, 절세의 기본 원리',
     link: 'one-line-knowledge/trivia-detail-100.html',
