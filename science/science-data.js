@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 46,
+    title: '리바운드 효과',
+    link: 'science/science-detail-46.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-26',
+    views: 0,
+  },
+  {
     id: 45,
     title: '파레토 최적',
     link: 'science/science-detail-45.html',

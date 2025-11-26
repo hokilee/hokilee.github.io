@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 89,
+    title: '원화 약세 지속과 환율 전망, 일반인들의 대처 방안',
+    link: 'economics/economy-detail-100.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-26',
+    views: 0,
+  },
+  {
     id: 88,
     title: '오픈뱅킹과 마이데이터, 금융 흐름의 패러다임 전환',
     link: 'economics/economy-detail-99.html',
