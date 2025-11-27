@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 102,
+    title: '선택의 역설, 옵션이 많을수록 만족도가 떨어지는 이유',
+    link: 'one-line-knowledge/trivia-detail-102.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '11-27',
+    views: 0,
+  },
+  {
     id: 101,
     title: '근육의 기억, 운동을 오래 쉬어도 다시 빨리 회복되는 이유',
     link: 'one-line-knowledge/trivia-detail-101.html',
