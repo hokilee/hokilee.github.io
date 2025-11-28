@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 90,
+    title: '가계부채와 경제 성장, 한국 경제의 숨겨진 리스크',
+    link: 'economics/economy-detail-101.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '11-28',
+    views: 0,
+  },
+  {
     id: 89,
     title: '원화 약세 지속과 환율 전망, 일반인들의 대처 방안',
     link: 'economics/economy-detail-100.html',

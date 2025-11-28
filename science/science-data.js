@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 47,
+    title: '잠재지(Tacit Knowledge) vs 형식지(Explicit Knowledge)',
+    link: 'science/science-detail-47.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '11-28',
+    views: 0,
+  },
+  {
     id: 46,
     title: '리바운드 효과',
     link: 'science/science-detail-46.html',
