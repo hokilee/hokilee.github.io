@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 103,
+    title: '노이즈 캔슬링의 원리, 소리를 없애는 기술',
+    link: 'one-line-knowledge/trivia-detail-103.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-01',
+    views: 0,
+  },
+  {
     id: 102,
     title: '선택의 역설, 옵션이 많을수록 만족도가 떨어지는 이유',
     link: 'one-line-knowledge/trivia-detail-102.html',
