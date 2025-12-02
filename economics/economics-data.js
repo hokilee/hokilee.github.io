@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 91,
+    title: '소비자 물가 상승과 생활비 부담, 가계 경제의 현실',
+    link: 'economics/economy-detail-102.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '12-02',
+    views: 0,
+  },
+  {
     id: 90,
     title: '가계부채와 경제 성장, 한국 경제의 숨겨진 리스크',
     link: 'economics/economy-detail-101.html',
