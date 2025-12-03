@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 104,
+    title: '온도와 수면의 관계, 잠들기 좋은 온도는 몇 도일까?',
+    link: 'one-line-knowledge/trivia-detail-104.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-03',
+    views: 0,
+  },
+  {
     id: 103,
     title: '노이즈 캔슬링의 원리, 소리를 없애는 기술',
     link: 'one-line-knowledge/trivia-detail-103.html',
