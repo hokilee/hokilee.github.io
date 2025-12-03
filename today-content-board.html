@@ -25,6 +25,12 @@
         font-weight: 600;
       }
     </style>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <!-- Firebase 설정 및 유틸리티 -->
+    <script src="firebase-config.js"></script>
+    <script src="firebase-views.js"></script>
     <!-- 외부 데이터 파일들 -->
     <script src="daily-thoughts/daily-thoughts-data.js"></script>
     <script src="one-line-knowledge/one-line-knowledge-data.js"></script>
@@ -316,6 +322,15 @@
         const tbody = document.getElementById('boardTableBody');
         tbody.innerHTML = '';
 
+        // 게시판 타입 결정 (카테고리 기반)
+        const getBoardType = (category) => {
+          if (category === '하루 한 생각') return 'daily-thoughts';
+          if (category === '한줄 지식/잡학') return 'one-line-knowledge';
+          if (category === '경제상식') return 'economics';
+          if (category === '일반상식') return 'science';
+          return 'today-content';
+        };
+
         pageData.forEach((item) => {
           const row = document.createElement('tr');
           row.className = 'board-row';
@@ -324,21 +339,32 @@
           const isNew = isWithinDays(item.date, 7);
           const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
 
+          const boardType = getBoardType(item.category);
+          const viewCellId = `views_${boardType}_${item.id}`;
+
           row.innerHTML = `
             <td class="col-number">${item.id}</td>
             <td class="col-title">
               <a href="javascript:void(0)" onclick="handleLinkClick(${
                 item.id
-              }, '${item.link}')">${item.title}</a>
+              }, '${item.link}', '${boardType}')">${item.title}</a>
               ${newBadge}
             </td>
             <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
-            <td class="col-views">${getViewCount(item.id, item.views)}</td>
+            <td class="col-views" id="${viewCellId}">0</td>
           `;
 
           tbody.appendChild(row);
+
+          // Firebase에서 조회수 가져오기
+          getViewCount(boardType, item.id, (count) => {
+            const viewCell = document.getElementById(viewCellId);
+            if (viewCell) {
+              viewCell.textContent = count;
+            }
+          }, item.views || 0);
         });
       }
 
@@ -351,6 +377,15 @@
         const tbody = document.getElementById('boardTableBody');
         tbody.innerHTML = '';
 
+        // 게시판 타입 결정 (카테고리 기반)
+        const getBoardType = (category) => {
+          if (category === '하루 한 생각') return 'daily-thoughts';
+          if (category === '한줄 지식/잡학') return 'one-line-knowledge';
+          if (category === '경제상식') return 'economics';
+          if (category === '일반상식') return 'science';
+          return 'today-content';
+        };
+
         pageData.forEach((item) => {
           const row = document.createElement('tr');
           row.className = 'board-row';
@@ -359,21 +394,32 @@
           const isNew = isWithinDays(item.date, 7);
           const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
 
+          const boardType = getBoardType(item.category);
+          const viewCellId = `views_${boardType}_${item.id}`;
+
           row.innerHTML = `
             <td class="col-number">${item.id}</td>
             <td class="col-title">
               <a href="javascript:void(0)" onclick="handleLinkClick(${
                 item.id
-              }, '${item.link}')">${item.title}</a>
+              }, '${item.link}', '${boardType}')">${item.title}</a>
               ${newBadge}
             </td>
             <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
-            <td class="col-views">${getViewCount(item.id, item.views)}</td>
+            <td class="col-views" id="${viewCellId}">0</td>
           `;
 
           tbody.appendChild(row);
+
+          // Firebase에서 조회수 가져오기
+          getViewCount(boardType, item.id, (count) => {
+            const viewCell = document.getElementById(viewCellId);
+            if (viewCell) {
+              viewCell.textContent = count;
+            }
+          }, item.views || 0);
         });
       }
 
@@ -685,48 +731,28 @@
       }
 
       // 링크 클릭 처리
-      function handleLinkClick(id, link) {
-        // 조회수 증가 (로컬 스토리지 사용)
-        incrementViewCount(id);
+      function handleLinkClick(id, link, boardType) {
+        // 조회수 증가 (Firebase 사용)
+        if (typeof firebase !== 'undefined') {
+          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
+          viewRef.transaction((current) => {
+            return (current || 0) + 1;
+          }, (error, committed, snapshot) => {
+            if (!error && committed) {
+              // 조회수 표시 업데이트
+              const viewCellId = `views_${boardType}_${id}`;
+              const viewCell = document.getElementById(viewCellId);
+              if (viewCell) {
+                viewCell.textContent = snapshot.val();
+              }
+            }
+          });
+        }
 
         // 새 탭에서 링크 열기
         if (link && link !== '#') {
           window.open(link, '_blank');
         }
-      }
-
-      // 조회수 증가
-      function incrementViewCount(id) {
-        const viewCounts = JSON.parse(
-          localStorage.getItem('viewCounts') || '{}'
-        );
-        viewCounts[id] = (viewCounts[id] || 0) + 1;
-        localStorage.setItem('viewCounts', JSON.stringify(viewCounts));
-
-        // 현재 표시된 테이블의 조회수 업데이트
-        updateViewCountDisplay(id, viewCounts[id]);
-      }
-
-      // 조회수 가져오기 (로컬 스토리지에서)
-      function getViewCount(itemId, defaultViews) {
-        const viewCounts = JSON.parse(
-          localStorage.getItem('viewCounts') || '{}'
-        );
-        return viewCounts[itemId] || defaultViews || 0;
-      }
-
-      // 조회수 표시 업데이트
-      function updateViewCountDisplay(id, count) {
-        const rows = document.querySelectorAll('.board-row');
-        rows.forEach((row) => {
-          const idCell = row.querySelector('.col-number');
-          if (idCell && parseInt(idCell.textContent) === id) {
-            const viewCell = row.querySelector('.col-views');
-            if (viewCell) {
-              viewCell.textContent = count;
-            }
-          }
-        });
       }
 
       // 초기화 및 이벤트 리스너 설정

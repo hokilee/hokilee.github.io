@@ -6,6 +6,12 @@
     <title>이력서 & 자기소개서 - 이호기</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <!-- Firebase 설정 및 유틸리티 -->
+    <script src="firebase-config.js"></script>
+    <script src="firebase-views.js"></script>
   </head>
   <body>
     <!-- 히어로 배너 -->
@@ -237,21 +243,49 @@
         return diffDays <= 7;
       }
 
-      // 조회수 관리 함수들
-      function getViews(id) {
-        return parseInt(localStorage.getItem(`about_views_${id}`)) || 0;
+      // 조회수 관리 함수들 (Firebase 사용)
+      const boardType = 'about-me'; // About Me 게시판 타입
+
+      function getViews(id, callback) {
+        if (typeof firebase !== 'undefined') {
+          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
+          viewRef.once('value', (snapshot) => {
+            const views = snapshot.val() || 0;
+            if (callback) callback(views);
+          }, (error) => {
+            console.error('조회수 가져오기 실패:', error);
+            if (callback) callback(0);
+          });
+        } else {
+          if (callback) callback(0);
+        }
       }
 
-      function increaseViews(id) {
-        const currentViews = getViews(id);
-        const newViews = currentViews + 1;
-        localStorage.setItem(`about_views_${id}`, newViews);
-        return newViews;
+      function increaseViews(id, callback) {
+        if (typeof firebase !== 'undefined') {
+          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
+          viewRef.transaction((current) => {
+            return (current || 0) + 1;
+          }, (error, committed, snapshot) => {
+            if (!error && committed) {
+              const newViews = snapshot.val();
+              if (callback) callback(newViews);
+            } else if (error) {
+              console.error('조회수 증가 실패:', error);
+              if (callback) callback(0);
+            }
+          });
+        } else {
+          if (callback) callback(0);
+        }
       }
 
       function updateViewsDisplay(id, viewsElement) {
-        const views = getViews(id);
-        viewsElement.textContent = views;
+        getViews(id, (views) => {
+          if (viewsElement) {
+            viewsElement.textContent = views;
+          }
+        });
       }
 
       // 검색 및 필터링 함수
@@ -371,14 +405,14 @@
       // 링크 클릭 처리 (조회수 증가)
       function handleLinkClick(id, link) {
         if (link !== '#') {
-          // 조회수 증가
-          const newViews = increaseViews(id);
-
-          // 화면에 즉시 반영
-          const viewsElement = document.getElementById(`views_${id}`);
-          if (viewsElement) {
-            viewsElement.textContent = newViews;
-          }
+          // 조회수 증가 (Firebase)
+          increaseViews(id, (newViews) => {
+            // 화면에 즉시 반영
+            const viewsElement = document.getElementById(`views_${id}`);
+            if (viewsElement) {
+              viewsElement.textContent = newViews;
+            }
+          });
 
           // 새 탭에서 링크 열기
           window.open(link, '_blank');

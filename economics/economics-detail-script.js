@@ -17,18 +17,27 @@ document.addEventListener('DOMContentLoaded', function() {
   incrementViewCount();
 });
 
-// 조회수 증가 함수
+// 조회수 증가 함수 (Firebase 사용)
 function incrementViewCount() {
-  const currentUrl = window.location.pathname;
-  const viewCounts = JSON.parse(localStorage.getItem('economicsViewCounts') || '{}');
-  
-  if (viewCounts[currentUrl]) {
-    viewCounts[currentUrl]++;
+  const currentPath = window.location.pathname;
+  const pageId = currentPath.split('-').pop().replace('.html', '');
+  const boardType = 'economics'; // 경제상식 게시판 타입
+
+  // Firebase를 사용한 조회수 증가
+  if (typeof firebase !== 'undefined') {
+    const viewRef = firebase.database().ref(`views/${boardType}/${pageId}`);
+    viewRef.transaction((current) => {
+      return (current || 0) + 1;
+    }, (error, committed, snapshot) => {
+      if (!error && committed) {
+        console.log(`경제상식 페이지 ${pageId} 조회수: ${snapshot.val()}`);
+      } else if (error) {
+        console.error('조회수 증가 실패:', error);
+      }
+    });
   } else {
-    viewCounts[currentUrl] = 1;
+    console.warn('Firebase가 로드되지 않았습니다. 조회수는 증가하지 않습니다.');
   }
-  
-  localStorage.setItem('economicsViewCounts', JSON.stringify(viewCounts));
 }
 
 // 페이지 제목 동적 설정

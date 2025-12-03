@@ -12,27 +12,28 @@ document.addEventListener('DOMContentLoaded', function () {
   incrementViewCount();
 });
 
-// 조회수 증가 함수
+// 조회수 증가 함수 (Firebase 사용)
 function incrementViewCount() {
   // 현재 페이지 URL에서 ID 추출
   const currentPath = window.location.pathname;
   const pageId = currentPath.split('-').pop().replace('.html', '');
+  const boardType = 'science'; // 일반상식 게시판 타입
 
-  // 로컬 스토리지에서 조회수 가져오기
-  const viewCounts = JSON.parse(
-    localStorage.getItem('scienceViewCounts') || '{}'
-  );
-
-  // 조회수 증가
-  if (!viewCounts[pageId]) {
-    viewCounts[pageId] = 0;
+  // Firebase를 사용한 조회수 증가
+  if (typeof firebase !== 'undefined') {
+    const viewRef = firebase.database().ref(`views/${boardType}/${pageId}`);
+    viewRef.transaction((current) => {
+      return (current || 0) + 1;
+    }, (error, committed, snapshot) => {
+      if (!error && committed) {
+        console.log(`과학적 상식 페이지 ${pageId} 조회수: ${snapshot.val()}`);
+      } else if (error) {
+        console.error('조회수 증가 실패:', error);
+      }
+    });
+  } else {
+    console.warn('Firebase가 로드되지 않았습니다. 조회수는 증가하지 않습니다.');
   }
-  viewCounts[pageId]++;
-
-  // 로컬 스토리지에 저장
-  localStorage.setItem('scienceViewCounts', JSON.stringify(viewCounts));
-
-  console.log(`과학적 상식 페이지 ${pageId} 조회수: ${viewCounts[pageId]}`);
 }
 
 // 좋아요 기능 (향후 확장용)
