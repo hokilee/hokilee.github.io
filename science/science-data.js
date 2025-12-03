@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 49,
+    title: '선택적 노출(Selective Exposure)',
+    link: 'science/science-detail-49.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '12-04',
+    views: 0,
+  },
+  {
     id: 48,
     title: '인지 부조화(Cognitive Dissonance)',
     link: 'science/science-detail-48.html',
