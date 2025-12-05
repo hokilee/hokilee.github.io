@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 105,
+    title: '지구의 중력은 균일하지 않다, 중력 이상 지역',
+    link: 'one-line-knowledge/trivia-detail-105.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-05',
+    views: 0,
+  },
+  {
     id: 104,
     title: '온도와 수면의 관계, 잠들기 좋은 온도는 몇 도일까?',
     link: 'one-line-knowledge/trivia-detail-104.html',
