@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 93,
+    title: '지구의 중력은 균일하지 않다, 중력 이상 지역',
+    link: 'economics/economy-detail-105.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '12-05',
+    views: 0,
+  },
+  {
     id: 92,
     title: 'ESG 투자와 지속가능 금융의 확산',
     link: 'economics/economy-detail-103.html',
