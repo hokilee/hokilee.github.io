@@ -1,10 +1,13 @@
 // 개인 서버를 사용한 조회수 관리 유틸리티 함수
 
-// API 서버 URL (api-config.js에서 설정)
-// api-config.js가 로드되지 않은 경우 기본값 사용
-const API_BASE_URL = (typeof window !== 'undefined' && window.API_BASE_URL) 
-  ? window.API_BASE_URL 
-  : 'https://your-project.up.railway.app'; // Railway 배포 후 실제 URL로 변경 필요
+// API 서버 URL 가져오기 함수 (api-config.js에서 설정된 값 사용)
+function getApiBaseUrl() {
+  if (typeof window !== 'undefined' && window.API_BASE_URL) {
+    return window.API_BASE_URL;
+  }
+  // 기본값 (Railway 배포 URL)
+  return 'https://hokileegithubio-production.up.railway.app';
+}
 
 /**
  * 조회수 증가 함수
@@ -12,6 +15,7 @@ const API_BASE_URL = (typeof window !== 'undefined' && window.API_BASE_URL)
  * @param {string|number} itemId - 항목 ID
  */
 function incrementViewCount(boardType, itemId) {
+  const API_BASE_URL = getApiBaseUrl();
   fetch(`${API_BASE_URL}/api/views/increment`, {
     method: 'POST',
     headers: {
@@ -38,6 +42,7 @@ function incrementViewCount(boardType, itemId) {
  * @param {number} defaultValue - 기본값 (서버 연결 실패 시 사용)
  */
 function getViewCount(boardType, itemId, callback, defaultValue = 0) {
+  const API_BASE_URL = getApiBaseUrl();
   fetch(`${API_BASE_URL}/api/views/${boardType}/${itemId}`)
     .then(response => response.json())
     .then(data => {
@@ -56,6 +61,7 @@ function getViewCount(boardType, itemId, callback, defaultValue = 0) {
  * @param {function} callback - 조회수 맵을 받을 콜백 함수 (viewCounts) => {} (viewCounts는 {itemId: count} 형식)
  */
 function getViewCountsBatch(boardType, itemIds, callback) {
+  const API_BASE_URL = getApiBaseUrl();
   fetch(`${API_BASE_URL}/api/views/batch`, {
     method: 'POST',
     headers: {
