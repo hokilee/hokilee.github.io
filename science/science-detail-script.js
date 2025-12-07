@@ -12,28 +12,35 @@ document.addEventListener('DOMContentLoaded', function () {
   incrementViewCount();
 });
 
-// 조회수 증가 함수 (Firebase 사용)
+// 조회수 증가 함수 (개인 서버 사용)
 function incrementViewCount() {
   // 현재 페이지 URL에서 ID 추출
   const currentPath = window.location.pathname;
   const pageId = currentPath.split('-').pop().replace('.html', '');
   const boardType = 'science'; // 일반상식 게시판 타입
 
-  // Firebase를 사용한 조회수 증가
-  if (typeof firebase !== 'undefined') {
-    const viewRef = firebase.database().ref(`views/${boardType}/${pageId}`);
-    viewRef.transaction((current) => {
-      return (current || 0) + 1;
-    }, (error, committed, snapshot) => {
-      if (!error && committed) {
-        console.log(`과학적 상식 페이지 ${pageId} 조회수: ${snapshot.val()}`);
-      } else if (error) {
-        console.error('조회수 증가 실패:', error);
-      }
-    });
-  } else {
-    console.warn('Firebase가 로드되지 않았습니다. 조회수는 증가하지 않습니다.');
-  }
+  // API URL 확인
+  const API_BASE_URL = (typeof window !== 'undefined' && window.API_BASE_URL) 
+    ? window.API_BASE_URL 
+    : 'https://hokileegithubio-production.up.railway.app';
+  
+  // 개인 서버를 사용한 조회수 증가
+  fetch(`${API_BASE_URL}/api/views/increment`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ boardType, itemId: pageId })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      console.log(`과학적 상식 페이지 ${pageId} 조회수: ${data.count}`);
+    }
+  })
+  .catch(error => {
+    console.error('조회수 증가 실패:', error);
+  });
 }
 
 // 좋아요 기능 (향후 확장용)
