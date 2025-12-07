@@ -814,9 +814,14 @@
   }
 
   .col-category,
-  .col-author,
-  .col-views {
+  .col-author {
     display: none;
+  }
+
+  .col-views {
+    display: table-cell;
+    width: 15%;
+    font-size: 0.85rem;
   }
 
   /* About Me 게시판 모바일 최적화 */
@@ -889,21 +894,26 @@
   }
 
   .about-me-content .col-category,
-  .about-me-content .col-author,
-  .about-me-content .col-views {
+  .about-me-content .col-author {
     display: none !important;
   }
 
+  .about-me-content .col-views {
+    display: table-cell !important;
+    width: 15% !important;
+    font-size: 0.85rem !important;
+  }
+
   .about-me-content .col-title {
-    width: 45% !important;
+    width: 40% !important;
   }
 
   .about-me-content .col-number {
-    width: 15% !important;
+    width: 12% !important;
   }
 
   .about-me-content .col-date {
-    width: 40% !important;
+    width: 33% !important;
   }
 
   .about-me-content .board-header h1 {
@@ -996,21 +1006,26 @@
   }
 
   .latest-content-board .col-category,
-  .latest-content-board .col-author,
-  .latest-content-board .col-views {
+  .latest-content-board .col-author {
     display: none !important;
   }
 
+  .latest-content-board .col-views {
+    display: table-cell !important;
+    width: 15% !important;
+    font-size: 0.85rem !important;
+  }
+
   .latest-content-board .col-title {
-    width: 45% !important;
+    width: 40% !important;
   }
 
   .latest-content-board .col-number {
-    width: 15% !important;
+    width: 12% !important;
   }
 
   .latest-content-board .col-date {
-    width: 40% !important;
+    width: 33% !important;
   }
 
   .latest-content-board .board-header h1 {
@@ -1103,21 +1118,26 @@
   }
 
   .today-content-board .col-category,
-  .today-content-board .col-author,
-  .today-content-board .col-views {
+  .today-content-board .col-author {
     display: none !important;
   }
 
+  .today-content-board .col-views {
+    display: table-cell !important;
+    width: 15% !important;
+    font-size: 0.85rem !important;
+  }
+
   .today-content-board .col-title {
-    width: 45% !important;
+    width: 40% !important;
   }
 
   .today-content-board .col-number {
-    width: 15% !important;
+    width: 12% !important;
   }
 
   .today-content-board .col-date {
-    width: 40% !important;
+    width: 33% !important;
   }
 
   .today-content-board .board-header h1 {
