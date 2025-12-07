@@ -10,10 +10,8 @@ const API_BASE_URL_PROD = 'https://hokileegithubio-production.up.railway.app';
 
 // 현재 사용할 API URL 선택
 // 배포 전에는 API_BASE_URL_DEV 사용, 배포 후에는 API_BASE_URL_PROD 사용
-const API_BASE_URL = API_BASE_URL_PROD;
-
 // 전역 변수로 설정 (server-views.js에서 사용)
 if (typeof window !== 'undefined') {
-  window.API_BASE_URL = API_BASE_URL;
+  window.API_BASE_URL = API_BASE_URL_PROD;
 }
 
