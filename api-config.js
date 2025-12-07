@@ -6,8 +6,7 @@
 const API_BASE_URL_DEV = 'http://localhost:3000';
 
 // 프로덕션 환경 (Railway 배포 후 실제 URL로 변경)
-// 예: 'https://your-project.up.railway.app'
-const API_BASE_URL_PROD = 'https://your-project.up.railway.app';
+const API_BASE_URL_PROD = 'https://hokileegithubio-production.up.railway.app';
 
 // 현재 사용할 API URL 선택
 // 배포 전에는 API_BASE_URL_DEV 사용, 배포 후에는 API_BASE_URL_PROD 사용
