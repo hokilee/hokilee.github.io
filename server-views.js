@@ -16,6 +16,8 @@ function getApiBaseUrl() {
  */
 function incrementViewCount(boardType, itemId) {
   const API_BASE_URL = getApiBaseUrl();
+  console.log('incrementViewCount 호출:', { API_BASE_URL, boardType, itemId });
+  
   fetch(`${API_BASE_URL}/api/views/increment`, {
     method: 'POST',
     headers: {
@@ -23,14 +25,23 @@ function incrementViewCount(boardType, itemId) {
     },
     body: JSON.stringify({ boardType, itemId })
   })
-  .then(response => response.json())
+  .then(response => {
+    console.log('조회수 증가 API 응답 상태:', response.status, response.statusText);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
   .then(data => {
+    console.log('조회수 증가 API 응답 데이터:', data);
     if (data.success) {
-      console.log(`조회수 증가: ${boardType}/${itemId} = ${data.count}`);
+      console.log(`✅ 조회수 증가 성공: ${boardType}/${itemId} = ${data.count}`);
+    } else {
+      console.warn('조회수 증가 실패 (success=false):', data);
     }
   })
   .catch(error => {
-    console.error('조회수 증가 실패:', error);
+    console.error('❌ 조회수 증가 실패:', error);
   });
 }
 
