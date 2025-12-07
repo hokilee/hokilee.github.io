@@ -44,9 +44,23 @@ function incrementViewCount(boardType, itemId) {
 function getViewCount(boardType, itemId, callback, defaultValue = 0) {
   const API_BASE_URL = getApiBaseUrl();
   fetch(`${API_BASE_URL}/api/views/${boardType}/${itemId}`)
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
     .then(data => {
-      if (callback) callback(data.count || defaultValue);
+      // data.count가 명시적으로 존재하는지 확인 (0도 유효한 값)
+      if (data && typeof data.count === 'number') {
+        if (callback) callback(data.count);
+      } else if (data && data.error) {
+        console.error('서버 에러:', data.error);
+        if (callback) callback(defaultValue);
+      } else {
+        console.warn('예상치 못한 응답 형식:', data);
+        if (callback) callback(defaultValue);
+      }
     })
     .catch(error => {
       console.error('조회수 가져오기 실패:', error);
