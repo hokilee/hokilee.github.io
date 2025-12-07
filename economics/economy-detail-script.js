@@ -1,5 +1,61 @@
 // 경제상식 상세 페이지 스크립트
 
+// api-config.js와 server-views.js 동적 로드 함수
+function loadRequiredScripts(callback) {
+  // 이미 로드되었는지 확인
+  if (typeof incrementViewCount === 'function' && window.API_BASE_URL) {
+    if (callback) callback();
+    return;
+  }
+  
+  // api-config.js 로드 (먼저 로드 필요)
+  function loadApiConfig() {
+    if (window.API_BASE_URL) {
+      loadServerViews();
+      return;
+    }
+    
+    const apiConfigScript = document.createElement('script');
+    apiConfigScript.src = '../api-config.js';
+    apiConfigScript.onload = () => {
+      loadServerViews();
+    };
+    apiConfigScript.onerror = () => {
+      console.error('api-config.js 로드 실패');
+      loadServerViews(); // 실패해도 계속 진행
+    };
+    document.head.appendChild(apiConfigScript);
+  }
+  
+  // server-views.js 로드
+  function loadServerViews() {
+    if (typeof incrementViewCount === 'function') {
+      if (callback) callback();
+      return;
+    }
+    
+    const existingScript = document.querySelector('script[src="../server-views.js"]');
+    if (existingScript) {
+      existingScript.addEventListener('load', () => {
+        if (callback) callback();
+      });
+    } else {
+      const serverViewsScript = document.createElement('script');
+      serverViewsScript.src = '../server-views.js';
+      serverViewsScript.onload = () => {
+        if (callback) callback();
+      };
+      serverViewsScript.onerror = () => {
+        console.error('server-views.js 로드 실패');
+        if (callback) callback(); // 실패해도 계속 진행
+      };
+      document.head.appendChild(serverViewsScript);
+    }
+  }
+  
+  loadApiConfig();
+}
+
 // 페이지 로드 시 실행
 document.addEventListener('DOMContentLoaded', function() {
   console.log('경제상식 상세 페이지가 로드되었습니다.');
@@ -10,8 +66,29 @@ document.addEventListener('DOMContentLoaded', function() {
   // 좋아요 버튼 이벤트
   setupLikeButton();
   
-  // 조회수 증가
-  incrementViewCount();
+  // 조회수 증가 (server-views.js의 전역 함수 사용)
+  // 중복 호출 방지를 위해 세션 스토리지 사용
+  const currentPath = window.location.pathname;
+  const pageId = currentPath.split('-').pop().replace('.html', '');
+  const boardType = 'economics'; // 경제상식 게시판 타입
+  const viewKey = `view_incremented_${boardType}_${pageId}`;
+  
+  // 이 세션에서 이미 조회수를 증가시켰는지 확인
+  if (sessionStorage.getItem(viewKey)) {
+    console.log('이 세션에서 이미 조회수를 증가시켰습니다.');
+    return;
+  }
+  
+  // 필요한 스크립트 로드 후 조회수 증가
+  loadRequiredScripts(() => {
+    if (typeof incrementViewCount === 'function') {
+      incrementViewCount(boardType, pageId);
+      // 세션 스토리지에 표시하여 중복 호출 방지
+      sessionStorage.setItem(viewKey, 'true');
+    } else {
+      console.warn('incrementViewCount 함수를 찾을 수 없습니다.');
+    }
+  });
 });
 
 // 현재 연도 설정
@@ -75,35 +152,7 @@ function likePost() {
   console.log('좋아요가 추가되었습니다!');
 }
 
-// 조회수 증가 함수 (개인 서버 사용)
-function incrementViewCount() {
-  const currentPath = window.location.pathname;
-  const pageId = currentPath.split('-').pop().replace('.html', '');
-  const boardType = 'economics'; // 경제상식 게시판 타입
-
-  // API URL 확인
-  const API_BASE_URL = (typeof window !== 'undefined' && window.API_BASE_URL) 
-    ? window.API_BASE_URL 
-    : 'https://hokileegithubio-production.up.railway.app';
-  
-  // 개인 서버를 사용한 조회수 증가
-  fetch(`${API_BASE_URL}/api/views/increment`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ boardType, itemId: pageId })
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
-      console.log(`경제상식 페이지 ${pageId} 조회수: ${data.count}`);
-    }
-  })
-  .catch(error => {
-    console.error('조회수 증가 실패:', error);
-  });
-}
+// 이 함수는 server-views.js의 전역 함수를 사용하므로 제거됨
 
 // 페이지 제목 동적 설정
 function setPageTitle(title) {

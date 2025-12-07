@@ -738,23 +738,7 @@
 
       // 링크 클릭 처리
       function handleLinkClick(id, link, boardType) {
-        // 조회수 증가 (개인 서버 사용)
-        if (typeof incrementViewCount === 'function') {
-          incrementViewCount(boardType, id);
-          // 조회수 표시 업데이트 (비동기로 가져오기)
-          setTimeout(() => {
-            if (typeof getViewCount === 'function') {
-              getViewCount(boardType, id, (count) => {
-                const viewCellId = `views_${boardType}_${id}`;
-                const viewCell = document.getElementById(viewCellId);
-                if (viewCell) {
-                  viewCell.textContent = count;
-                }
-              });
-            }
-          }, 500);
-        }
-
+        // 조회수는 detail 페이지가 로드될 때 증가하므로 여기서는 증가시키지 않음
         // 새 탭에서 링크 열기
         if (link && link !== '#') {
           window.open(link, '_blank');
