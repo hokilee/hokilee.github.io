@@ -25,12 +25,14 @@
         font-weight: 600;
       }
     </style>
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-    <!-- Firebase 설정 및 유틸리티 -->
-    <script src="firebase-config.js"></script>
-    <script src="firebase-views.js"></script>
+    <!-- 개인 서버 API 설정 및 유틸리티 -->
+    <script src="api-config.js"></script>
+    <script src="server-views.js"></script>
+    <!-- Firebase는 백업용으로 유지 (선택적 사용) -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script> -->
+    <!-- <script src="firebase-config.js"></script> -->
+    <!-- <script src="firebase-views.js"></script> -->
     <!-- 외부 데이터 파일들 -->
     <script src="daily-thoughts/daily-thoughts-data.js"></script>
     <script src="one-line-knowledge/one-line-knowledge-data.js"></script>
@@ -358,13 +360,15 @@
 
           tbody.appendChild(row);
 
-          // Firebase에서 조회수 가져오기
-          getViewCount(boardType, item.id, (count) => {
-            const viewCell = document.getElementById(viewCellId);
-            if (viewCell) {
-              viewCell.textContent = count;
-            }
-          }, item.views || 0);
+          // 개인 서버에서 조회수 가져오기
+          if (typeof getViewCount === 'function') {
+            getViewCount(boardType, item.id, (count) => {
+              const viewCell = document.getElementById(viewCellId);
+              if (viewCell) {
+                viewCell.textContent = count;
+              }
+            }, item.views || 0);
+          }
         });
       }
 
@@ -413,13 +417,15 @@
 
           tbody.appendChild(row);
 
-          // Firebase에서 조회수 가져오기
-          getViewCount(boardType, item.id, (count) => {
-            const viewCell = document.getElementById(viewCellId);
-            if (viewCell) {
-              viewCell.textContent = count;
-            }
-          }, item.views || 0);
+          // 개인 서버에서 조회수 가져오기
+          if (typeof getViewCount === 'function') {
+            getViewCount(boardType, item.id, (count) => {
+              const viewCell = document.getElementById(viewCellId);
+              if (viewCell) {
+                viewCell.textContent = count;
+              }
+            }, item.views || 0);
+          }
         });
       }
 
@@ -732,21 +738,21 @@
 
       // 링크 클릭 처리
       function handleLinkClick(id, link, boardType) {
-        // 조회수 증가 (Firebase 사용)
-        if (typeof firebase !== 'undefined') {
-          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
-          viewRef.transaction((current) => {
-            return (current || 0) + 1;
-          }, (error, committed, snapshot) => {
-            if (!error && committed) {
-              // 조회수 표시 업데이트
-              const viewCellId = `views_${boardType}_${id}`;
-              const viewCell = document.getElementById(viewCellId);
-              if (viewCell) {
-                viewCell.textContent = snapshot.val();
-              }
+        // 조회수 증가 (개인 서버 사용)
+        if (typeof incrementViewCount === 'function') {
+          incrementViewCount(boardType, id);
+          // 조회수 표시 업데이트 (비동기로 가져오기)
+          setTimeout(() => {
+            if (typeof getViewCount === 'function') {
+              getViewCount(boardType, id, (count) => {
+                const viewCellId = `views_${boardType}_${id}`;
+                const viewCell = document.getElementById(viewCellId);
+                if (viewCell) {
+                  viewCell.textContent = count;
+                }
+              });
             }
-          });
+          }, 500);
         }
 
         // 새 탭에서 링크 열기

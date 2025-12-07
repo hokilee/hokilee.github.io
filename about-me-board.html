@@ -6,12 +6,14 @@
     <title>이력서 & 자기소개서 - 이호기</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-    <!-- Firebase 설정 및 유틸리티 -->
-    <script src="firebase-config.js"></script>
-    <script src="firebase-views.js"></script>
+    <!-- 개인 서버 API 설정 및 유틸리티 -->
+    <script src="api-config.js"></script>
+    <script src="server-views.js"></script>
+    <!-- Firebase는 백업용으로 유지 (선택적 사용) -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script> -->
+    <!-- <script src="firebase-config.js"></script> -->
+    <!-- <script src="firebase-views.js"></script> -->
   </head>
   <body>
     <!-- 히어로 배너 -->
@@ -243,38 +245,30 @@
         return diffDays <= 7;
       }
 
-      // 조회수 관리 함수들 (Firebase 사용)
+      // 조회수 관리 함수들 (개인 서버 사용)
       const boardType = 'about-me'; // About Me 게시판 타입
 
       function getViews(id, callback) {
-        if (typeof firebase !== 'undefined') {
-          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
-          viewRef.once('value', (snapshot) => {
-            const views = snapshot.val() || 0;
-            if (callback) callback(views);
-          }, (error) => {
-            console.error('조회수 가져오기 실패:', error);
-            if (callback) callback(0);
-          });
+        if (typeof getViewCount === 'function') {
+          getViewCount(boardType, id, (count) => {
+            if (callback) callback(count);
+          }, 0);
         } else {
           if (callback) callback(0);
         }
       }
 
       function increaseViews(id, callback) {
-        if (typeof firebase !== 'undefined') {
-          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
-          viewRef.transaction((current) => {
-            return (current || 0) + 1;
-          }, (error, committed, snapshot) => {
-            if (!error && committed) {
-              const newViews = snapshot.val();
-              if (callback) callback(newViews);
-            } else if (error) {
-              console.error('조회수 증가 실패:', error);
-              if (callback) callback(0);
+        if (typeof incrementViewCount === 'function') {
+          incrementViewCount(boardType, id);
+          // 조회수 표시 업데이트 (비동기로 가져오기)
+          setTimeout(() => {
+            if (typeof getViewCount === 'function') {
+              getViewCount(boardType, id, (count) => {
+                if (callback) callback(count);
+              });
             }
-          });
+          }, 500);
         } else {
           if (callback) callback(0);
         }
