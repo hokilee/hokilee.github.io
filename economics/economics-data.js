@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 93,
+    title: '고환율 시대, 해외여행과 해외쇼핑의 경제학',
+    link: 'economics/economy-detail-104.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '12-08',
+    views: 0,
+  },
+  {
     id: 92,
     title: 'ESG 투자와 지속가능 금융의 확산',
     link: 'economics/economy-detail-103.html',

@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 50,
+    title: '확증편향(Confirmation Bias)',
+    link: 'science/science-detail-50.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '12-08',
+    views: 0,
+  },
+  {
     id: 49,
     title: '선택적 노출(Selective Exposure)',
     link: 'science/science-detail-49.html',
