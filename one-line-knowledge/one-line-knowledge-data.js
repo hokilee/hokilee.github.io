@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 106,
+    title: '계절성 우울증(SAD), 겨울철 우울감의 과학적 원인',
+    link: 'one-line-knowledge/trivia-detail-106.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-09',
+    views: 0,
+  },
+  {
     id: 105,
     title: '지구의 중력은 균일하지 않다, 중력 이상 지역',
     link: 'one-line-knowledge/trivia-detail-105.html',

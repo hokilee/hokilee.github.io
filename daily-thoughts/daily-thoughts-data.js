@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 19,
+    title: 'Hoki Lee eBook Series Vol.19',
+    link: 'eBook-data/Hoki Lee eBook series vol19.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-09',
+    views: 0,
+  },
+  {
     id: 18,
     title: 'Hoki Lee eBook Series Vol.18',
     link: 'eBook-data/Hoki Lee eBook series vol18.pdf',
