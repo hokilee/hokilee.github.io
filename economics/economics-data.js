@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 94,
+    title: '세대별 실업률 변화, 청년과 노년의 다른 고용 현실',
+    link: 'economics/economy-detail-105.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '12-10',
+    views: 0,
+  },
+  {
     id: 93,
     title: '고환율 시대, 해외여행과 해외쇼핑의 경제학',
     link: 'economics/economy-detail-104.html',
