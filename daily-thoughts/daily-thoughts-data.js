@@ -1,8 +1,17 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 21,
+    title: '제도가 문화를 완성한다 — 의지를 실행으로 바꾸는 조직의 시스템',
+    link: 'eBook-data/Hoki Lee eBook series vol21.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-11',
+    views: 0,
+  },
+  {
     id: 20,
-    title: 'Hoki Lee eBook Series Vol.20',
+    title: '조직의 적응력은 사람에서 시작된다 — 변화에 강한 팀의 조건',
     link: 'eBook-data/Hoki Lee eBook series vol20.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -11,7 +20,7 @@ const dailyThoughtsData = [
   },
   {
     id: 19,
-    title: 'Hoki Lee eBook Series Vol.19',
+    title: '개선의 힘 — 프로세스는 문제를 통해 성장한다',
     link: 'eBook-data/Hoki Lee eBook series vol19.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -20,7 +29,7 @@ const dailyThoughtsData = [
   },
   {
     id: 18,
-    title: 'Hoki Lee eBook Series Vol.18',
+    title: '성과를 읽는 조직 — 프로세스의 결과를 확인하고 정리하는 법',
     link: 'eBook-data/Hoki Lee eBook series vol18.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -29,7 +38,8 @@ const dailyThoughtsData = [
   },
   {
     id: 17,
-    title: 'Hoki Lee eBook Series Vol.17',
+    title:
+      '평가가 실행을 완성한다 — 역할을 명확히 하고 프로세스를 성장시키는 법',
     link: 'eBook-data/Hoki Lee eBook series vol17.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -38,7 +48,7 @@ const dailyThoughtsData = [
   },
   {
     id: 16,
-    title: 'Hoki Lee eBook Series Vol.16',
+    title: '실행이 문화를 완성한다 — 프로세스는 행동으로 증명된다',
     link: 'eBook-data/Hoki Lee eBook series vol16.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -47,7 +57,7 @@ const dailyThoughtsData = [
   },
   {
     id: 15,
-    title: 'Hoki Lee eBook Series Vol.15',
+    title: '조직을 움직이는 힘 — 효율적인 프로세스가 문화를 완성한다',
     link: 'eBook-data/Hoki Lee eBook series vol15.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -56,7 +66,8 @@ const dailyThoughtsData = [
   },
   {
     id: 14,
-    title: 'Hoki Lee eBook Series Vol.14',
+    title:
+      '좋은 조직문화는 어떻게 만들어지는가 — 현실 속에서 작동하는 문화의 조건',
     link: 'eBook-data/Hoki Lee eBook series vol14.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -65,7 +76,7 @@ const dailyThoughtsData = [
   },
   {
     id: 13,
-    title: 'Hoki Lee eBook Series Vol.13',
+    title: '동기부여의 힘 — 사람의 마음이 움직일 때 조직이 움직인다.',
     link: 'eBook-data/Hoki Lee eBook series vol13.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -74,7 +85,7 @@ const dailyThoughtsData = [
   },
   {
     id: 12,
-    title: 'Hoki Lee eBook Series Vol.12',
+    title: '스스로 움직이는 조직 — 자발성이 성과를 만든다',
     link: 'eBook-data/Hoki Lee eBook series vol12.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -83,7 +94,7 @@ const dailyThoughtsData = [
   },
   {
     id: 11,
-    title: 'Hoki Lee eBook Series Vol.11',
+    title: '책임이 경쟁력이 된다 — 지속 가능한 영향력의 시대',
     link: 'eBook-data/Hoki Lee eBook series vol11.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -92,7 +103,7 @@ const dailyThoughtsData = [
   },
   {
     id: 10,
-    title: 'Hoki Lee eBook Series Vol.10',
+    title: '문화가 전략을 이긴다 — 지속 가능한 조직의 마지막 조건',
     link: 'eBook-data/Hoki Lee eBook series vol10.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -101,7 +112,7 @@ const dailyThoughtsData = [
   },
   {
     id: 9,
-    title: 'Hoki Lee eBook Series Vol.9',
+    title: '미래를 설계하는 리더십 — 지속 가능한 조직의 조건',
     link: 'eBook-data/Hoki Lee eBook series vol9.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -112,7 +123,7 @@ const dailyThoughtsData = [
   },
   {
     id: 8,
-    title: 'Hoki Lee eBook Series Vol.8',
+    title: '변화에 강한 조직 — 위기 속에서도 흔들리지 않는 힘',
     link: 'eBook-data/Hoki Lee eBook series vol8.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -123,7 +134,7 @@ const dailyThoughtsData = [
   },
   {
     id: 7,
-    title: 'Hoki Lee eBook Series Vol.7',
+    title: '함께 성장하는 팀 — 신뢰와 자율이 만드는 성숙한 문화',
     link: 'eBook-data/Hoki Lee eBook series vol7.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -134,7 +145,7 @@ const dailyThoughtsData = [
   },
   {
     id: 6,
-    title: 'Hoki Lee eBook Series Vol.6',
+    title: '리더는 왜 성장해야 하는가 — 멈추지 않는 조직의 원동력',
     link: 'eBook-data/Hoki Lee eBook series vol6.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -145,7 +156,7 @@ const dailyThoughtsData = [
   },
   {
     id: 5,
-    title: 'Hoki Lee eBook Series Vol.5',
+    title: '사람 중심의 시스템, 시스템화된 사람—조직의 미래를 만드는 균형',
     link: 'eBook-data/Hoki Lee eBook series vol5.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -156,7 +167,7 @@ const dailyThoughtsData = [
   },
   {
     id: 4,
-    title: 'Hoki Lee eBook Series Vol.4',
+    title: '고객에게 “Yes”를 끌어내는 설득의 비밀',
     link: 'eBook-data/Hoki Lee eBook series vol4.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -167,7 +178,7 @@ const dailyThoughtsData = [
   },
   {
     id: 3,
-    title: 'Hoki Lee eBook Series Vol.3',
+    title: '신뢰는 어떻게 만들어지는가 — 관계가 품질이 되는 순간',
     link: 'eBook-data/Hoki Lee eBook series vol3.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -178,7 +189,7 @@ const dailyThoughtsData = [
   },
   {
     id: 2,
-    title: 'Hoki Lee eBook Series Vol.2',
+    title: '기술과 사람 사이 — 디지털 전환 시대의 서비스 품질',
     link: 'eBook-data/Hoki Lee eBook series vol2.pdf',
     category: 'eBook Series',
     author: '이호기',
@@ -189,7 +200,7 @@ const dailyThoughtsData = [
   },
   {
     id: 1,
-    title: 'Hoki Lee eBook Series Vol.1',
+    title: '소비자는 무엇으로 사는가 — 구매 심리와 가격 전략 이해',
     link: 'eBook-data/Hoki Lee eBook series vol1.pdf',
     category: 'eBook Series',
     author: '이호기',

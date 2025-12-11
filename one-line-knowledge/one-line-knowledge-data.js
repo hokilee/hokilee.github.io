@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 107,
+    title: '아침 커피가 더 효과적인 이유, 생체리듬과 카페인의 관계',
+    link: 'one-line-knowledge/trivia-detail-107.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-11',
+    views: 0,
+  },
+  {
     id: 106,
     title: '계절성 우울증(SAD), 겨울철 우울감의 과학적 원인',
     link: 'one-line-knowledge/trivia-detail-106.html',
