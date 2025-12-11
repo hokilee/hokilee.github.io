@@ -12,12 +12,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
     <!-- 개인 서버 API 설정 및 유틸리티 -->
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-    <!-- Firebase 설정 및 유틸리티 -->
-    <script src="firebase-config.js"></script>
-    <script src="firebase-views.js"></script>
     <script src="tech-trend/tech-trend-data.js"></script>
     <script src="scripts.js" defer></script>
     <style>
@@ -364,50 +358,7 @@
         return diffDays <= 7;
       }
 
-      // 조회수 관리 함수들 (Firebase 사용)
-      const boardType = 'tech-trend'; // 기술 트렌드 게시판 타입
 
-      function getViews(id, callback) {
-        if (typeof firebase !== 'undefined') {
-          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
-          viewRef.once('value', (snapshot) => {
-            const views = snapshot.val() || 0;
-            if (callback) callback(views);
-          }, (error) => {
-            console.error('조회수 가져오기 실패:', error);
-            if (callback) callback(0);
-          });
-        } else {
-          if (callback) callback(0);
-        }
-      }
-
-      function increaseViews(id, callback) {
-        if (typeof firebase !== 'undefined') {
-          const viewRef = firebase.database().ref(`views/${boardType}/${id}`);
-          viewRef.transaction((current) => {
-            return (current || 0) + 1;
-          }, (error, committed, snapshot) => {
-            if (!error && committed) {
-              const newViews = snapshot.val();
-              if (callback) callback(newViews);
-            } else if (error) {
-              console.error('조회수 증가 실패:', error);
-              if (callback) callback(0);
-            }
-          });
-        } else {
-          if (callback) callback(0);
-        }
-      }
-
-      function updateViewsDisplay(id, viewsElement) {
-        getViews(id, (views) => {
-          if (viewsElement) {
-            viewsElement.textContent = views;
-          }
-        });
-      }
 
       // 검색 및 필터링 함수
       function filterBoardData() {
@@ -505,11 +456,6 @@
           row.insertBefore(titleCell, row.children[1]);
           tbody.appendChild(row);
 
-          // 조회수 표시 업데이트
-          updateViewsDisplay(
-            item.id,
-            document.getElementById(`views_${item.id}`)
-          );
         });
       }
 
@@ -575,15 +521,6 @@
       // 링크 클릭 처리 (조회수 증가)
       function handleLinkClick(id, link) {
         if (link !== '#') {
-          // 조회수 증가 (Firebase)
-          increaseViews(id, (newViews) => {
-            // 화면에 즉시 반영
-            const viewsElement = document.getElementById(`views_${id}`);
-            if (viewsElement) {
-              viewsElement.textContent = newViews;
-            }
-          });
-
           // 새 탭에서 링크 열기
           window.open(link, '_blank');
         } else {
@@ -597,15 +534,7 @@
         const post = boardData.find((item) => item.id === id);
         if (!post) return;
 
-        // 조회수 증가 (Firebase)
-        increaseViews(id, (newViews) => {
-          // 화면의 조회수 업데이트
-          const viewsElement = document.getElementById(`views_${id}`);
-          if (viewsElement) {
-            viewsElement.textContent = newViews;
-          }
-
-          // Detail 페이지 HTML 생성
+        // Detail 페이지 HTML 생성
           const detailHTML = `
             <div class="detail-overlay" id="detailOverlay">
               <div class="detail-container">

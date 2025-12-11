@@ -25,12 +25,6 @@
         font-weight: 600;
       }
     </style>
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-    <!-- Firebase 설정 및 유틸리티 -->
-    <script src="firebase-config.js"></script>
-    <script src="firebase-views.js"></script>
     <!-- 외부 데이터 파일들 -->
     <script src="daily-thoughts/daily-thoughts-data.js"></script>
     <script src="one-line-knowledge/one-line-knowledge-data.js"></script>
@@ -223,7 +217,6 @@
                   <th class="col-category">카테고리</th>
                   <th class="col-author">작성자</th>
                   <th class="col-date">등록일</th>
-                  <th class="col-views">조회수</th>
                 </tr>
               </thead>
               <tbody id="boardTableBody">
@@ -340,7 +333,6 @@
           const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
 
           const boardType = getBoardType(item.category);
-          const viewCellId = `views_${boardType}_${item.id}`;
 
           row.innerHTML = `
             <td class="col-number">${item.id}</td>
@@ -353,20 +345,9 @@
             <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
-            <td class="col-views" id="${viewCellId}">0</td>
           `;
 
           tbody.appendChild(row);
-
-          // 개인 서버에서 조회수 가져오기
-          if (typeof getViewCount === 'function') {
-            getViewCount(boardType, item.id, (count) => {
-              const viewCell = document.getElementById(viewCellId);
-              if (viewCell) {
-                viewCell.textContent = count;
-              }
-            }, item.views || 0);
-          }
         });
       }
 
@@ -397,7 +378,6 @@
           const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
 
           const boardType = getBoardType(item.category);
-          const viewCellId = `views_${boardType}_${item.id}`;
 
           row.innerHTML = `
             <td class="col-number">${item.id}</td>
@@ -410,20 +390,9 @@
             <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
-            <td class="col-views" id="${viewCellId}">0</td>
           `;
 
           tbody.appendChild(row);
-
-          // 개인 서버에서 조회수 가져오기
-          if (typeof getViewCount === 'function') {
-            getViewCount(boardType, item.id, (count) => {
-              const viewCell = document.getElementById(viewCellId);
-              if (viewCell) {
-                viewCell.textContent = count;
-              }
-            }, item.views || 0);
-          }
         });
       }
 
@@ -736,7 +705,6 @@
 
       // 링크 클릭 처리
       function handleLinkClick(id, link, boardType) {
-        // 조회수는 detail 페이지가 로드될 때 증가하므로 여기서는 증가시키지 않음
         // 새 탭에서 링크 열기
         if (link && link !== '#') {
           window.open(link, '_blank');

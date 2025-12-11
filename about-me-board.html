@@ -6,13 +6,6 @@
     <title>이력서 & 자기소개서 - 이호기</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
-    <!-- 개인 서버 API 설정 및 유틸리티 -->
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-    <!-- Firebase 설정 및 유틸리티 -->
-    <script src="firebase-config.js"></script>
-    <script src="firebase-views.js"></script>
   </head>
   <body>
     <!-- 히어로 배너 -->
@@ -244,42 +237,6 @@
         return diffDays <= 7;
       }
 
-      // 조회수 관리 함수들 (개인 서버 사용)
-      const boardType = 'about-me'; // About Me 게시판 타입
-
-      function getViews(id, callback) {
-        if (typeof getViewCount === 'function') {
-          getViewCount(boardType, id, (count) => {
-            if (callback) callback(count);
-          }, 0);
-        } else {
-          if (callback) callback(0);
-        }
-      }
-
-      function increaseViews(id, callback) {
-        if (typeof incrementViewCount === 'function') {
-          incrementViewCount(boardType, id);
-          // 조회수 표시 업데이트 (비동기로 가져오기)
-          setTimeout(() => {
-            if (typeof getViewCount === 'function') {
-              getViewCount(boardType, id, (count) => {
-                if (callback) callback(count);
-              });
-            }
-          }, 500);
-        } else {
-          if (callback) callback(0);
-        }
-      }
-
-      function updateViewsDisplay(id, viewsElement) {
-        getViews(id, (views) => {
-          if (viewsElement) {
-            viewsElement.textContent = views;
-          }
-        });
-      }
 
       // 검색 및 필터링 함수
       function filterBoardData() {
@@ -345,11 +302,6 @@
           `;
           tbody.appendChild(row);
 
-          // 조회수 표시 업데이트
-          updateViewsDisplay(
-            item.id,
-            document.getElementById(`views_${item.id}`)
-          );
         });
       }
 
@@ -395,18 +347,9 @@
         renderPagination();
       }
 
-      // 링크 클릭 처리 (조회수 증가)
+      // 링크 클릭 처리
       function handleLinkClick(id, link) {
         if (link !== '#') {
-          // 조회수 증가 (Firebase)
-          increaseViews(id, (newViews) => {
-            // 화면에 즉시 반영
-            const viewsElement = document.getElementById(`views_${id}`);
-            if (viewsElement) {
-              viewsElement.textContent = newViews;
-            }
-          });
-
           // 새 탭에서 링크 열기
           window.open(link, '_blank');
         }

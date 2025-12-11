@@ -7,36 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
-
-  // 조회수 증가 (Firebase 사용)
-  // 중복 호출 방지를 위해 세션 스토리지 사용
-  const currentPath = window.location.pathname;
-  const pageId = currentPath.split('-').pop().replace('.html', '');
-  const boardType = 'science'; // 일반상식 게시판 타입
-  const viewKey = `view_incremented_${boardType}_${pageId}`;
-  
-  // 이 세션에서 이미 조회수를 증가시켰는지 확인
-  if (sessionStorage.getItem(viewKey)) {
-    return;
-  }
-  
-  // Firebase를 사용한 조회수 증가
-  if (typeof firebase !== 'undefined') {
-    const viewRef = firebase.database().ref(`views/${boardType}/${pageId}`);
-    viewRef.transaction((current) => {
-      return (current || 0) + 1;
-    }, (error, committed, snapshot) => {
-      if (error) {
-        console.error('조회수 증가 실패:', error);
-      } else if (committed) {
-        console.log(`조회수 증가: ${boardType}/${pageId} = ${snapshot.val()}`);
-        // 세션 스토리지에 표시하여 중복 호출 방지
-        sessionStorage.setItem(viewKey, 'true');
-      }
-    });
-  } else {
-    console.warn('Firebase가 로드되지 않았습니다. 조회수는 증가하지 않습니다.');
-  }
 });
 
 // 좋아요 기능 (향후 확장용)
