@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 52,
+    title: '핑거 스패닝(Finger Spanning) 효과',
+    link: 'science/science-detail-52.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '12-12',
+    views: 0,
+  },
+  {
     id: 51,
     title: '제노비스 증후군(Bystander Effect)',
     link: 'science/science-detail-51.html',

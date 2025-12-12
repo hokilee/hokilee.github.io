@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 22,
+    title: '핵심성과지표(KPI)의 본질 — 무엇을 측정해야 진짜 성과인가?',
+    link: 'eBook-data/Hoki Lee eBook series vol22.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-12',
+    views: 0,
+  },
+  {
     id: 21,
     title: '제도가 문화를 완성한다 — 의지를 실행으로 바꾸는 조직의 시스템',
     link: 'eBook-data/Hoki Lee eBook series vol21.pdf',

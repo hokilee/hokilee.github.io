@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 95,
+    title: '서브스크립션 경제와 소비 패턴 변화',
+    link: 'economics/economy-detail-106.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '12-12',
+    views: 0,
+  },
+  {
     id: 94,
     title: '세대별 실업률 변화, 청년과 노년의 다른 고용 현실',
     link: 'economics/economy-detail-105.html',
