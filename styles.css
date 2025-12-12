@@ -366,6 +366,12 @@ html[lang='en'] .main-navigation .nav-container {
   flex-wrap: nowrap;
 }
 
+@media (max-width: 768px) {
+  .nav-container {
+    flex-wrap: wrap;
+  }
+}
+
 .nav-item {
   display: flex;
   flex-direction: column;
@@ -867,21 +873,27 @@ html[lang='en'] .nav-item:not(:last-child)::after {
   }
 
   .nav-container {
-    gap: 8px;
-    padding: 0 10px;
+    gap: 4px;
+    padding: 0 8px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-item {
-    padding: 8px 6px;
+    padding: 6px 4px;
+    flex: 0 0 calc(12.5% - 4px);
+    min-width: 0;
   }
 
   .nav-item span {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    line-height: 1.1;
   }
 
   .nav-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-bottom: 4px;
   }
 
   .main-content {
@@ -918,12 +930,16 @@ html[lang='en'] .nav-item:not(:last-child)::after {
   }
 
   .nav-container {
-    gap: 5px;
-    padding: 0 8px;
+    gap: 3px;
+    padding: 0 5px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-item {
-    padding: 6px 4px;
+    padding: 5px 2px;
+    flex: 0 0 calc(12.5% - 3px);
+    min-width: 0;
   }
 
   .notice-container,
@@ -937,12 +953,14 @@ html[lang='en'] .nav-item:not(:last-child)::after {
   }
 
   .nav-item span {
-    font-size: 0.55rem;
+    font-size: 0.5rem;
+    line-height: 1.1;
   }
 
   .nav-icon {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 3px;
   }
 
   /* 연락처 게시판 초소형 화면 최적화 */
@@ -980,6 +998,18 @@ html[lang='en'] .nav-item:not(:last-child)::after {
   }
 
   .nav-item span {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    line-height: 1.1;
+  }
+
+  .nav-item {
+    flex: 0 0 calc(12.5% - 3px);
+    min-width: 0;
+  }
+
+  .nav-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: 3px;
   }
 }
