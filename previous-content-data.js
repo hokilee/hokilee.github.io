@@ -7,6 +7,5 @@ const previousContentData = [
     category: '이전 자료',
     author: '이호기',
     date: '11-27',
-    views: 0,
   },
 ];

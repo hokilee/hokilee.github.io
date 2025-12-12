@@ -11,282 +11,23 @@
     <title>기술자료 게시판 - 이호기</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="board-styles.css" />
-    <!-- 개인 서버 API 설정 및 유틸리티 -->
-    <script src="scripts.js" defer></script>
     <style>
-      /* Detail 페이지 스타일 */
-      .detail-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 1000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-
-      .detail-container {
-        background: white;
-        border-radius: 12px;
-        max-width: 800px;
-        width: 100%;
-        max-height: 90vh;
-        overflow-y: auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        animation: slideIn 0.3s ease-out;
-      }
-
-      @keyframes slideIn {
-        from {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .detail-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px 24px 16px 24px;
-        border-bottom: 1px solid #e0e0e0;
-      }
-
-      .detail-header h2 {
-        margin: 0;
-        color: #333;
-        font-size: 24px;
-        font-weight: 600;
-        flex: 1;
-        padding-right: 20px;
-      }
-
-      .detail-close {
-        background: none;
-        border: none;
-        font-size: 28px;
-        color: #666;
-        cursor: pointer;
-        padding: 0;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: background-color 0.2s;
-      }
-
-      .detail-close:hover {
-        background-color: #f0f0f0;
-      }
-
-      .detail-meta {
-        padding: 16px 24px;
-        background-color: #f8f9fa;
-        border-bottom: 1px solid #e0e0e0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
+      /* 현재 페이지 정보 스타일 */
+      .page-info {
+        text-align: center;
+        margin: 20px 0 10px 0;
         font-size: 14px;
         color: #666;
       }
 
-      .detail-meta span {
-        display: flex;
-        align-items: center;
-      }
-
-      .detail-category {
-        background-color: #007bff;
-        color: white;
-        padding: 4px 12px;
-        border-radius: 16px;
-        font-weight: 500;
-      }
-
-      .detail-content {
-        padding: 24px;
-        line-height: 1.6;
-        color: #333;
-        font-size: 16px;
-        min-height: 200px;
-        white-space: pre-wrap;
-      }
-
-      .detail-actions {
-        padding: 16px 24px 24px 24px;
-        border-top: 1px solid #e0e0e0;
-        text-align: center;
-      }
-
-      .btn-back {
-        background-color: #6c757d;
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 6px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-      }
-
-      .btn-back:hover {
-        background-color: #5a6268;
-      }
-
-      /* 모바일 반응형 */
-      @media (max-width: 768px) {
-        .detail-container {
-          margin: 10px;
-          max-height: 95vh;
-        }
-
-        .detail-header h2 {
-          font-size: 20px;
-        }
-
-        .detail-meta {
-          flex-direction: column;
-          gap: 8px;
-        }
-
-        .detail-content {
-          padding: 16px;
-          font-size: 14px;
-        }
-      }
-
-      /* 다운로드 확인 다이얼로그 스타일 추가 */
-      .download-confirm-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 1001;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-
-      .download-confirm-container {
-        background: white;
-        border-radius: 12px;
-        max-width: 500px;
-        width: 100%;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        animation: slideIn 0.3s ease-out;
-      }
-
-      .download-confirm-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 24px 16px 24px;
-        border-bottom: 1px solid #e0e0e0;
-      }
-
-      .download-confirm-header h3 {
-        margin: 0;
-        color: #333;
-        font-size: 20px;
+      .page-info strong {
+        color: #dc3545;
         font-weight: 600;
       }
-
-      .download-confirm-close {
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: #666;
-        cursor: pointer;
-        padding: 0;
-        width: 28px;
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: background-color 0.2s;
-      }
-
-      .download-confirm-close:hover {
-        background-color: #f0f0f0;
-      }
-
-      .download-confirm-content {
-        padding: 24px;
-      }
-
-      .download-confirm-content p {
-        margin: 0 0 24px 0;
-        font-size: 16px;
-        color: #333;
-        text-align: center;
-      }
-
-      .download-confirm-actions {
-        display: flex;
-        gap: 12px;
-        justify-content: center;
-      }
-
-      .btn-download-yes,
-      .btn-download-no {
-        padding: 12px 24px;
-        border: none;
-        border-radius: 6px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        min-width: 120px;
-      }
-
-      .btn-download-yes {
-        background-color: #007bff;
-        color: white;
-      }
-
-      .btn-download-yes:hover {
-        background-color: #0056b3;
-      }
-
-      .btn-download-no {
-        background-color: #6c757d;
-        color: white;
-      }
-
-      .btn-download-no:hover {
-        background-color: #545b62;
-      }
-
-      /* 모바일 반응형 */
-      @media (max-width: 768px) {
-        .download-confirm-container {
-          margin: 10px;
-        }
-
-        .download-confirm-actions {
-          flex-direction: column;
-        }
-
-        .btn-download-yes,
-        .btn-download-no {
-          width: 100%;
-        }
-      }
     </style>
+    <!-- 외부 데이터 파일 -->
+    <script src="tech-book/tech-book-data.js"></script>
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <!-- 히어로 배너 섹션 -->
@@ -398,15 +139,15 @@
             <div class="search-group">
               <input
                 type="text"
-                id="search-input"
-                placeholder="기술 자료 제목 또는 내용으로 검색..."
+                id="searchInput"
+                placeholder="기술 자료 제목으로 검색..."
                 class="search-input"
               />
-              <button class="search-btn">🔍</button>
+              <button id="searchBtn" class="search-btn">🔍</button>
             </div>
           </div>
           <div class="result-info">
-            <span id="result-count">총 4건</span>
+            <span id="result-count">총 0건</span>
           </div>
 
           <!-- 게시판 테이블 -->
@@ -419,195 +160,187 @@
                   <th class="col-category">카테고리</th>
                   <th class="col-author">작성자</th>
                   <th class="col-date">등록일</th>
-                  <th class="col-views">조회수</th>
                 </tr>
               </thead>
-              <tbody id="board-tbody">
-                <!-- 데이터는 JavaScript로 동적 생성됩니다 -->
+              <tbody id="boardTableBody">
+                <!-- 동적으로 생성되는 게시글 목록 -->
               </tbody>
             </table>
           </div>
 
+          <!-- 현재 페이지 정보 -->
+          <div class="page-info">
+            <span id="current-page-info"
+              >현재 페이지: <strong>1</strong> / 1 페이지</span
+            >
+          </div>
+
           <!-- 페이지네이션 -->
           <div class="pagination" id="pagination">
-            <!-- 페이지네이션은 JavaScript로 동적 생성됩니다 -->
+            <!-- 동적으로 생성되는 페이지네이션 -->
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <p>Copyright ⓒ <span id="year"></span> Hoki Lee.</p>
-    </footer>
-
-    <script src="tech-book/tech-book-data.js"></script>
     <script>
-      // 연도 표시
-      document.getElementById('year').textContent = new Date().getFullYear();
-
-      // 게시판 데이터 (외부 파일에서 로드)
-      const boardData = techBookData;
-
-      // 페이지네이션 설정
-      const itemsPerPage = 10;
+      // 전역 변수
       let currentPage = 1;
+      let itemsPerPage = 10;
+      let filteredData = [];
+      let currentFilter = '';
 
-      // 검색 및 필터 변수
-      let filteredData = [...boardData];
-      let searchTerm = '';
+      // 게시판 데이터
+      let boardData = [];
+      let totalPages = 0;
 
-      // 7일 이내 게시글인지 자동 판단하는 함수
-      function isNewPost(postDate) {
-        const today = new Date();
-        const currentYear = today.getFullYear();
-        const postDateObj = new Date(`${currentYear}-${postDate}`);
+      // 데이터 로드 함수
+      function loadBoardData() {
+        try {
+          console.log('loadBoardData 실행 중...');
+          console.log('techBookData:', typeof techBookData);
 
-        // 올해가 아닌 경우 작년으로 계산
-        if (postDateObj > today) {
-          postDateObj.setFullYear(currentYear - 1);
-        }
+          // 외부 데이터가 로드되었는지 확인
+          if (typeof techBookData !== 'undefined' && techBookData.length > 0) {
+            boardData = techBookData.map((item) => ({
+              id: item.id,
+              title: item.title,
+              link: item.link,
+              category: item.category,
+              author: item.author,
+              date: item.date,
+            }));
 
-        const diffTime = today - postDateObj;
-        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+            totalPages = Math.ceil(boardData.length / itemsPerPage);
+            console.log('데이터 로드 완료:', boardData.length);
+            console.log('boardData 샘플:', boardData.slice(0, 3));
 
-        return diffDays <= 7;
-      }
-
-
-
-      // 검색 및 필터링 함수
-      function filterBoardData() {
-        filteredData = boardData.filter((item) => {
-          // 검색어 필터링 (제목과 내용에서 검색)
-          const matchesSearch =
-            searchTerm === '' ||
-            item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            (item.content &&
-              item.content.toLowerCase().includes(searchTerm.toLowerCase()));
-
-          return matchesSearch;
-        });
-
-        // 필터링 후 첫 페이지로 이동
-        currentPage = 1;
-        renderBoardTable(currentPage);
-        renderPagination();
-        updateResultCount();
-      }
-
-      // 검색어 변경 처리
-      function handleSearchChange(event) {
-        searchTerm = event.target.value;
-        filterBoardData();
-      }
-
-      // 결과 개수 업데이트
-      function updateResultCount() {
-        const resultCount = document.getElementById('result-count');
-        if (resultCount) {
-          resultCount.textContent = `총 ${filteredData.length}건`;
+            // 초기화 실행
+            initializeBoard();
+          } else {
+            console.log('외부 데이터가 아직 로드되지 않음. 재시도...');
+            setTimeout(loadBoardData, 100);
+          }
+        } catch (error) {
+          console.error('데이터 로드 중 오류:', error);
+          setTimeout(loadBoardData, 100);
         }
       }
 
       // 게시판 테이블 렌더링
-      function renderBoardTable(page = 1) {
-        const tbody = document.getElementById('board-tbody');
+      function renderBoardTable(page) {
         const startIndex = (page - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
-        const pageData = filteredData.slice(startIndex, endIndex);
+        const pageData = boardData.slice(startIndex, endIndex);
 
+        const tbody = document.getElementById('boardTableBody');
         tbody.innerHTML = '';
 
         pageData.forEach((item) => {
           const row = document.createElement('tr');
+          row.className = 'board-row';
 
-          // 링크 생성
-          const linkElement = document.createElement('a');
-          linkElement.href = item.link;
-          if (item.link !== '#') {
-            linkElement.target = '_blank';
-          }
-          linkElement.textContent = item.title;
-          linkElement.addEventListener('click', function (e) {
-            e.preventDefault();
-            handleLinkClick(item.id, item.link);
-          });
+          // NEW 배지 표시 (7일 이내)
+          const isNew = isWithinDays(item.date, 7);
+          const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
 
-          // 제목 셀 생성
-          const titleCell = document.createElement('td');
-          titleCell.className = 'col-title';
-          titleCell.appendChild(linkElement);
-
-          // NEW 배지 추가
-          if (isNewPost(item.date)) {
-            const newBadge = document.createElement('span');
-            newBadge.className = 'new-badge';
-            newBadge.textContent = 'NEW';
-            titleCell.appendChild(newBadge);
-          }
-
-          // 행 생성
           row.innerHTML = `
             <td class="col-number">${item.id}</td>
+            <td class="col-title">
+              <a href="javascript:void(0)" onclick="handleLinkClick('${item.link}')">${item.title}</a>
+              ${newBadge}
+            </td>
             <td class="col-category">${item.category}</td>
             <td class="col-author">${item.author}</td>
             <td class="col-date">${item.date}</td>
-            <td class="col-views" id="views_${item.id}">0</td>
           `;
 
-          // 제목 셀을 두 번째 위치에 삽입
-          row.insertBefore(titleCell, row.children[1]);
           tbody.appendChild(row);
+        });
+      }
 
+      // 필터링된 게시판 테이블 렌더링
+      function renderFilteredBoardTable(page) {
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const pageData = filteredData.slice(startIndex, endIndex);
+
+        const tbody = document.getElementById('boardTableBody');
+        tbody.innerHTML = '';
+
+        pageData.forEach((item) => {
+          const row = document.createElement('tr');
+          row.className = 'board-row';
+
+          // NEW 배지 표시 (7일 이내)
+          const isNew = isWithinDays(item.date, 7);
+          const newBadge = isNew ? '<span class="new-badge">NEW</span>' : '';
+
+          row.innerHTML = `
+            <td class="col-number">${item.id}</td>
+            <td class="col-title">
+              <a href="javascript:void(0)" onclick="handleLinkClick('${item.link}')">${item.title}</a>
+              ${newBadge}
+            </td>
+            <td class="col-category">${item.category}</td>
+            <td class="col-author">${item.author}</td>
+            <td class="col-date">${item.date}</td>
+          `;
+
+          tbody.appendChild(row);
         });
       }
 
       // 페이지네이션 렌더링
       function renderPagination() {
         const pagination = document.getElementById('pagination');
-        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+        const dataLength = currentFilter
+          ? filteredData.length
+          : boardData.length;
+        const totalPages = Math.ceil(dataLength / itemsPerPage);
 
         pagination.innerHTML = '';
 
-        // 이전 버튼
+        // 이전 페이지 버튼
         if (currentPage > 1) {
-          const prevBtn = document.createElement('a');
-          prevBtn.href = '#';
-          prevBtn.className = 'page-btn prev';
-          prevBtn.textContent = '이전';
-          prevBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            changePage(currentPage - 1);
-          });
+          const prevBtn = document.createElement('button');
+          prevBtn.textContent = '◀';
+          prevBtn.onclick = () => changePage(currentPage - 1);
           pagination.appendChild(prevBtn);
         }
 
-        // 페이지 번호
-        for (let i = 1; i <= totalPages; i++) {
-          const pageBtn = document.createElement('a');
-          pageBtn.href = '#';
-          pageBtn.className = 'page-btn';
-          if (i === currentPage) {
-            pageBtn.classList.add('active');
+        // 페이지 번호 버튼들 - 5개 페이지를 기본으로 표시
+        let startPage, endPage;
+
+        if (totalPages <= 5) {
+          startPage = 1;
+          endPage = totalPages;
+        } else {
+          if (currentPage <= 3) {
+            startPage = 1;
+            endPage = 5;
+          } else if (currentPage >= totalPages - 2) {
+            startPage = totalPages - 4;
+            endPage = totalPages;
+          } else {
+            startPage = currentPage - 2;
+            endPage = currentPage + 2;
           }
+        }
+
+        for (let i = startPage; i <= endPage; i++) {
+          const pageBtn = document.createElement('button');
           pageBtn.textContent = i;
-          pageBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            changePage(i);
-          });
+          pageBtn.className = i === currentPage ? 'active' : '';
+          pageBtn.onclick = () => changePage(i);
           pagination.appendChild(pageBtn);
         }
 
-        // 다음 버튼
+        // 다음 페이지 버튼
         if (currentPage < totalPages) {
-          const nextBtn = document.createElement('a');
-          nextBtn.href = '#';
-          nextBtn.className = 'page-btn next';
-          nextBtn.textContent = '다음';
-          nextBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            changePage(currentPage + 1);
-          });
+          const nextBtn = document.createElement('button');
+          nextBtn.textContent = '▶';
+          nextBtn.onclick = () => changePage(currentPage + 1);
           pagination.appendChild(nextBtn);
         }
       }
@@ -615,170 +348,153 @@
       // 페이지 변경
       function changePage(page) {
         currentPage = page;
-        renderBoardTable(currentPage);
+        if (currentFilter) {
+          renderFilteredBoardTable(page);
+        } else {
+          renderBoardTable(page);
+        }
         renderPagination();
+        updateResultCount();
+        updateCurrentPageInfo();
+      }
+
+      // 검색 및 필터링 설정
+      function setupSearchAndFilter() {
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+
+        // 검색 버튼 클릭 이벤트
+        if (searchBtn) {
+          searchBtn.addEventListener('click', function () {
+            performSearch();
+          });
+        }
+
+        // 엔터 키 이벤트
+        if (searchInput) {
+          searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+              performSearch();
+            }
+          });
+        }
+      }
+
+      // 검색 실행
+      function performSearch() {
+        const searchTerm = document
+          .getElementById('searchInput')
+          .value.toLowerCase();
+
+        if (!boardData || boardData.length === 0) {
+          console.error('boardData가 로드되지 않았습니다.');
+          return;
+        }
+
+        if (searchTerm === '') {
+          // 검색어가 비어있으면 전체 데이터 표시
+          currentFilter = '';
+          currentPage = 1;
+          renderBoardTable(currentPage);
+          renderPagination();
+          updateResultCount();
+          updateCurrentPageInfo();
+          return;
+        }
+
+        filteredData = boardData.filter((item) => {
+          return item.title.toLowerCase().includes(searchTerm);
+        });
+
+        currentFilter = 'search';
+        currentPage = 1;
+        renderFilteredBoardTable(currentPage);
+        renderPagination();
+        updateResultCount();
+        updateCurrentPageInfo();
+      }
+
+      // 결과 개수 업데이트
+      function updateResultCount() {
+        const resultCount = document.getElementById('result-count');
+        const dataLength = currentFilter
+          ? filteredData.length
+          : boardData.length;
+
+        if (resultCount) {
+          resultCount.textContent = `총 ${dataLength}건`;
+        }
+      }
+
+      // 현재 페이지 정보 업데이트
+      function updateCurrentPageInfo() {
+        const currentPageInfo = document.getElementById('current-page-info');
+        const dataLength = currentFilter
+          ? filteredData.length
+          : boardData.length;
+        const totalPages = Math.ceil(dataLength / itemsPerPage);
+
+        if (currentPageInfo) {
+          currentPageInfo.innerHTML = `현재 페이지: <strong>${currentPage}</strong> / ${totalPages} 페이지`;
+        }
+      }
+
+      // 날짜가 지정된 일수 이내인지 확인
+      function isWithinDays(dateStr, days) {
+        const today = new Date();
+        const itemDate = parseDate(dateStr);
+        const diffTime = Math.abs(today - itemDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        return diffDays <= days;
+      }
+
+      // 날짜 문자열을 Date 객체로 변환
+      function parseDate(dateStr) {
+        const [month, day] = dateStr.split('-').map(Number);
+        const currentYear = new Date().getFullYear();
+        return new Date(currentYear, month - 1, day);
       }
 
       // 링크 클릭 처리
-      function handleLinkClick(id, link) {
-        if (link !== '#') {
-          // PDF 파일인 경우 다운로드 확인 다이얼로그 표시
+      function handleLinkClick(link) {
+        if (link && link !== '#') {
+          // PDF 파일인 경우 새 탭에서 열기
           if (link.toLowerCase().endsWith('.pdf')) {
-            showDownloadConfirmDialog(id, link);
+            window.open(link, '_blank');
           } else {
-            // 다른 파일 타입은 새 탭에서 열기
             window.open(link, '_blank');
           }
-        } else {
-          // 새로 작성된 글의 경우 detail 페이지로 이동
-          showDetailPage(id);
         }
       }
 
-      // Detail 페이지 표시
-      function showDetailPage(id) {
-        const post = boardData.find((item) => item.id === id);
-        if (!post) return;
+      // 초기화 및 이벤트 리스너 설정
+      function initializeBoard() {
+        console.log('게시판 초기화 시작');
+        console.log('boardData 확인:', boardData.length);
 
-        // Detail 페이지 HTML 생성
-          const detailHTML = `
-            <div class="detail-overlay" id="detailOverlay">
-              <div class="detail-container">
-                <div class="detail-header">
-                  <h2>${post.title}</h2>
-                  <button class="detail-close" onclick="closeDetailPage()">&times;</button>
-                </div>
-                <div class="detail-meta">
-                  <span class="detail-category">${post.category}</span>
-                  <span class="detail-author">작성자: ${post.author}</span>
-                  <span class="detail-date">등록일: ${post.date}</span>
-                </div>
-                <div class="detail-content">
-                  ${
-                    post.content
-                      ? post.content.replace(/\n/g, '<br>')
-                      : '내용이 없습니다.'
-                  }
-                </div>
-                <div class="detail-actions">
-                  <button class="btn-back" onclick="closeDetailPage()">목록으로 돌아가기</button>
-                </div>
-              </div>
-            </div>
-          `;
-
-          // 기존 detail 페이지가 있다면 제거
-          const existingDetail = document.getElementById('detailOverlay');
-          if (existingDetail) {
-            existingDetail.remove();
-          }
-
-          // Detail 페이지 추가
-          document.body.insertAdjacentHTML('beforeend', detailHTML);
-        });
-      }
-
-      // Detail 페이지 닫기
-      function closeDetailPage() {
-        const detailOverlay = document.getElementById('detailOverlay');
-        if (detailOverlay) {
-          detailOverlay.remove();
-        }
-      }
-
-      // ESC 키로 detail 페이지 닫기
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-          closeDetailPage();
-        }
-      });
-
-      // 초기 로드
-      document.addEventListener('DOMContentLoaded', function () {
-        console.log('DOM 로드됨');
-        console.log('게시판 데이터:', boardData);
-        console.log('필터링된 데이터:', filteredData);
-
-        renderBoardTable(currentPage);
+        // 초기 렌더링
+        renderBoardTable(1);
         renderPagination();
-        setupSearchAndFilter();
         updateResultCount();
+        updateCurrentPageInfo();
+        setupSearchAndFilter();
+      }
 
-        console.log('초기화 완료');
+      // 페이지 로드 시 초기화
+      document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM이 로드되었습니다. 데이터 로드를 시작합니다.');
+        loadBoardData();
       });
 
-      // 검색 및 필터 이벤트 리스너 설정
-      function setupSearchAndFilter() {
-        const searchInput = document.getElementById('search-input');
-
-        if (searchInput) {
-          searchInput.addEventListener('input', handleSearchChange);
-        }
-      }
-
-      // 현재 날짜 가져오기 (MM-DD 형식)
-      function getCurrentDate() {
-        const now = new Date();
-        const month = String(now.getMonth() + 1).padStart(2, '0');
-        const day = String(now.getDate()).padStart(2, '0');
-        return `${month}-${day}`;
-      }
-
-      // 다운로드 확인 다이얼로그 표시
-      function showDownloadConfirmDialog(id, link) {
-        const fileName = link.split('/').pop();
-
-        // 다운로드 확인 다이얼로그 HTML 생성
-        const confirmHTML = `
-          <div class="download-confirm-overlay" id="downloadConfirmOverlay">
-            <div class="download-confirm-container">
-              <div class="download-confirm-header">
-                <h3>파일 다운로드</h3>
-                <button class="download-confirm-close" onclick="closeDownloadConfirm()">&times;</button>
-              </div>
-              <div class="download-confirm-content">
-                <p><strong>"${fileName}"</strong> 파일을 다운로드하시겠습니까?</p>
-                <div class="download-confirm-actions">
-                  <button class="btn-download-yes" onclick="downloadFile('${link}'); closeDownloadConfirm();">예, 다운로드</button>
-                  <button class="btn-download-no" onclick="closeDownloadConfirm();">아니오, 목록으로</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        `;
-
-        // 기존 다이얼로그가 있다면 제거
-        const existingDialog = document.getElementById(
-          'downloadConfirmOverlay'
-        );
-        if (existingDialog) {
-          existingDialog.remove();
-        }
-
-        // 다이얼로그 추가
-        document.body.insertAdjacentHTML('beforeend', confirmHTML);
-      }
-
-      // 파일 다운로드 실행
-      function downloadFile(link) {
-        const downloadLink = document.createElement('a');
-        downloadLink.href = link;
-        downloadLink.download = link.split('/').pop();
-        downloadLink.style.display = 'none';
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-      }
-
-      // 다운로드 확인 다이얼로그 닫기
-      function closeDownloadConfirm() {
-        const confirmOverlay = document.getElementById(
-          'downloadConfirmOverlay'
-        );
-        if (confirmOverlay) {
-          confirmOverlay.remove();
-        }
+      // 연도 표시
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
       }
     </script>
+
+    <footer class="footer">
+      <p>Copyright ⓒ <span id="year"></span> Hoki Lee.</p>
+    </footer>
   </body>
 </html>
