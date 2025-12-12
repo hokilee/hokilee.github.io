@@ -297,11 +297,6 @@ body {
   padding: 0 20px;
 }
 
-html[lang='en'] .main-navigation .nav-container {
-  padding: 0 15px;
-  gap: 10px;
-}
-
 .language-toggle-wrapper {
   max-width: 1200px;
   margin: 18px auto 8px;
@@ -408,10 +403,6 @@ html[lang='en'] .main-navigation .nav-container {
   border-radius: 1px;
 }
 
-html[lang='en'] .nav-item:not(:last-child)::after {
-  right: -6px;
-}
-
 .nav-item:hover {
   transform: translateY(-3px);
   background: rgba(255, 255, 255, 0.15);
@@ -444,13 +435,6 @@ html[lang='en'] .nav-item:not(:last-child)::after {
 @media (min-width: 769px) {
   .nav-item span br {
     display: none;
-  }
-
-  html[lang='en'] .nav-item span {
-    font-size: 0.85rem;
-    letter-spacing: 0.1px;
-    white-space: normal;
-    line-height: 1.2;
   }
 }
 
