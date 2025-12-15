@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 23,
+    title: '성과의 흐름을 설계하라 — 목표, 실행, 측정의 연결 구조',
+    link: 'eBook-data/Hoki Lee eBook series vol23.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-15',
+    views: 0,
+  },
+  {
     id: 22,
     title: '핵심성과지표(KPI)의 본질 — 무엇을 측정해야 진짜 성과인가?',
     link: 'eBook-data/Hoki Lee eBook series vol22.pdf',

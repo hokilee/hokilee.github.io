@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 108,
+    title: '기억의 재구성, 기억이 왜곡되는 이유와 신뢰성',
+    link: 'one-line-knowledge/trivia-detail-108.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-15',
+    views: 0,
+  },
+  {
     id: 107,
     title: '아침 커피가 더 효과적인 이유, 생체리듬과 카페인의 관계',
     link: 'one-line-knowledge/trivia-detail-107.html',
