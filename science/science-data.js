@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 53,
+    title: "파킨슨의 법칙(Parkinson's Law)",
+    link: 'science/science-detail-53.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '12-16',
+    views: 0,
+  },
+  {
     id: 52,
     title: '핑거 스패닝(Finger Spanning) 효과',
     link: 'science/science-detail-52.html',

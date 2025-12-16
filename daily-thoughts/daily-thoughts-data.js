@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 24,
+    title: '지표로 소통하는 조직 — 숫자가 언어가 될 때',
+    link: 'eBook-data/Hoki Lee eBook series vol24.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-16',
+    views: 0,
+  },
+  {
     id: 23,
     title: '성과의 흐름을 설계하라 — 목표, 실행, 측정의 연결 구조',
     link: 'eBook-data/Hoki Lee eBook series vol23.pdf',

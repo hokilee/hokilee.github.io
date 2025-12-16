@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 96,
+    title: '소비 트렌드 변화, MZ세대의 소비 패턴과 경제 영향',
+    link: 'economics/economy-detail-107.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '12-16',
+    views: 0,
+  },
+  {
     id: 95,
     title: '서브스크립션 경제와 소비 패턴 변화',
     link: 'economics/economy-detail-106.html',
