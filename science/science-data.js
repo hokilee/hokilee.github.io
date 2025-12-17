@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 54,
+    title: '밴드왜건 효과(Bandwagon Effect)',
+    link: 'science/science-detail-54.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '12-18',
+    views: 0,
+  },
+  {
     id: 53,
     title: "파킨슨의 법칙(Parkinson's Law)",
     link: 'science/science-detail-53.html',

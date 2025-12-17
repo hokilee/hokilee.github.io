@@ -19,9 +19,9 @@ const translations = {
     'nav.previousContent': '이전<br />자료',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20251217': `<strong>2025-12-17</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+    'notice.updateContent20251218': `<strong>2025-12-18</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.25 — 데이터 기반 리더십 — 숫자 뒤의 행동을 읽는 힘」가 업데이트되었습니다. 데이터와 지표를 단순히 숫자로 보는 것이 아니라, 그 뒤에 숨겨진 사람의 행동과 동기를 읽어내는 리더십에 대한 내용을 담고 있습니다. 데이터를 통해 팀원의 실제 업무 패턴, 성과의 원인, 개선 포인트를 파악하고 효과적인 피드백과 코칭을 제공하는 방법을 다룹니다. <strong>영업, 자기관리, 마케팅, 성과 분석</strong> 등 실무 인사이트를 담은 eBook 시리즈 스물다섯 번째 자료입니다.<br /><br />
-💡 <strong>한줄 지식/잡학:</strong> 「후광 효과(Halo Effect), 첫인상이 모든 판단을 좌우하는 이유」에서는 우리가 사람을 만날 때 첫인상을 통해 그 사람에 대한 전반적인 판단을 내리는 현상을 설명합니다. 한 가지 긍정적인 특성을 보면 다른 특성도 긍정적으로 평가하고, 한 가지 부정적인 특성을 보면 다른 특성도 부정적으로 평가하는 경향이 있습니다. 이러한 현상을 후광 효과라고 합니다. 후광 효과는 1920년 심리학자 에드워드 손다이크가 처음 발견한 인지 편향으로, 우리의 일상적인 판단과 의사결정에 큰 영향을 미칩니다. 면접, 채용, 교육, 브랜드 마케팅 등 다양한 상황에서 나타나는 후광 효과의 개념, 발생 원인, 실생활 예시, 그리고 대응 방법을 상세히 다룹니다.<br /><br />
+📚 <strong>일반상식:</strong> 「밴드왜건 효과(Bandwagon Effect)」는 많은 사람들이 선택하거나 지지하는 것을 보고 자신도 그 선택을 따르는 경향을 말합니다. 유명한 제품을 구매하거나, 인기 있는 의견에 동조하거나, 많은 사람들이 하는 행동을 따라하는 현상입니다. 밴드왜건 효과는 사회심리학에서 중요한 개념으로, 우리의 일상적인 의사결정과 행동에 큰 영향을 미칩니다. 소비 행동, SNS와 미디어, 투자와 금융, 정치와 선거 등 다양한 상황에서 나타나는 밴드왜건 효과의 개념, 발생 원인, 실생활 예시, 그리고 대응 방법을 상세히 다룹니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -43,9 +43,9 @@ const translations = {
     'nav.previousContent': 'Previous<br />Materials',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20251217': `<strong>2025-12-17</strong> – We've added new content to the eBook Series board and One-line Knowledge/Trivia board.<br /><br />
+    'notice.updateContent20251218': `<strong>2025-12-18</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.25 — Data-Driven Leadership — The Power to Read Behavior Behind Numbers" has been updated. This volume covers leadership that goes beyond simply viewing data and metrics as numbers, but rather reading the human behavior and motivations hidden behind them. It explores how to understand team members' actual work patterns, causes of performance, and improvement points through data, and how to provide effective feedback and coaching. This is the twenty-fifth volume of the eBook series containing practical insights on <strong>sales, self-management, marketing, and performance analysis</strong>.<br /><br />
-💡 <strong>One-line Knowledge/Trivia:</strong> "Halo Effect: Why First Impressions Control All Judgments" explains the phenomenon where we make overall judgments about people based on first impressions when we meet them. There is a tendency to evaluate other characteristics positively when we see one positive characteristic, and to evaluate other characteristics negatively when we see one negative characteristic. This phenomenon is called the halo effect. The halo effect is a cognitive bias first discovered by psychologist Edward Thorndike in 1920, and it has a significant impact on our daily judgments and decision-making. It covers in detail the concept of the halo effect, its causes, real-life examples in various situations such as interviews, hiring, education, and brand marketing, and methods to address it.<br /><br />
+📚 <strong>General Knowledge:</strong> "Bandwagon Effect" refers to the tendency to follow choices or opinions that many people have selected or supported. It is the phenomenon of purchasing popular products, agreeing with popular opinions, or following behaviors that many people engage in. The bandwagon effect is an important concept in social psychology that significantly impacts our daily decision-making and behavior. It covers in detail the concept of the bandwagon effect, its causes, real-life examples in various situations such as consumer behavior, social media and media, investment and finance, and politics and elections, and methods to address it.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
