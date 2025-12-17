@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 109,
+    title: '후광 효과(Halo Effect), 첫인상이 모든 판단을 좌우하는 이유',
+    link: 'one-line-knowledge/trivia-detail-109.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-17',
+    views: 0,
+  },
+  {
     id: 108,
     title: '기억의 재구성, 기억이 왜곡되는 이유와 신뢰성',
     link: 'one-line-knowledge/trivia-detail-108.html',

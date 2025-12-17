@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 25,
+    title: '데이터 기반 리더십 — 숫자 뒤의 행동을 읽는 힘',
+    link: 'eBook-data/Hoki Lee eBook series vol25.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-17',
+    views: 0,
+  },
+  {
     id: 24,
     title: '지표로 소통하는 조직 — 숫자가 언어가 될 때',
     link: 'eBook-data/Hoki Lee eBook series vol24.pdf',
