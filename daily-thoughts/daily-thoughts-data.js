@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 26,
+    title: '성과관리의 진화 — KPI에서 BSC로, 균형 잡힌 조직의 조건',
+    link: 'eBook-data/Hoki Lee eBook series vol26.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-19',
+    views: 0,
+  },
+  {
     id: 25,
     title: '데이터 기반 리더십 — 숫자 뒤의 행동을 읽는 힘',
     link: 'eBook-data/Hoki Lee eBook series vol25.pdf',
