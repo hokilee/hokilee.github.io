@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 27,
+    title: 'BSC의 4대 관점 — 조직의 균형을 설계하는 방법',
+    link: 'eBook-data/Hoki Lee eBook series vol27.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-22',
+    views: 0,
+  },
+  {
     id: 26,
     title: '성과관리의 진화 — KPI에서 BSC로, 균형 잡힌 조직의 조건',
     link: 'eBook-data/Hoki Lee eBook series vol26.pdf',

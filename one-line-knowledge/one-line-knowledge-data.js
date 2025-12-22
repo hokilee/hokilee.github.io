@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 110,
+    title: '주의의 선택적 집중, 왜 중요한 것을 놓치는가',
+    link: 'one-line-knowledge/trivia-detail-110.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-22',
+    views: 0,
+  },
+  {
     id: 109,
     title: '후광 효과(Halo Effect), 첫인상이 모든 판단을 좌우하는 이유',
     link: 'one-line-knowledge/trivia-detail-109.html',
