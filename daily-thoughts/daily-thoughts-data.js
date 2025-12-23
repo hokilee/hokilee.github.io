@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 28,
+    title: '하이퍼포먼스 팀을 경영하기 위한 4대 혁신 방향',
+    link: 'eBook-data/Hoki Lee eBook series vol28.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-23',
+    views: 0,
+  },
+  {
     id: 27,
     title: 'BSC의 4대 관점 — 조직의 균형을 설계하는 방법',
     link: 'eBook-data/Hoki Lee eBook series vol27.pdf',
