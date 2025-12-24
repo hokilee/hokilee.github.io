@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 55,
+    title: '시그니처 모멘트(Signature Moment)',
+    link: 'science/science-detail-55.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '12-24',
+    views: 0,
+  },
+  {
     id: 54,
     title: '밴드왜건 효과(Bandwagon Effect)',
     link: 'science/science-detail-54.html',

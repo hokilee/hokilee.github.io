@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 29,
+    title: '역할 중심의 수평적 조직경영 — 스스로 움직이는 팀의 구조',
+    link: 'eBook-data/Hoki Lee eBook series vol29.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-24',
+    views: 0,
+  },
+  {
     id: 28,
     title: '하이퍼포먼스 팀을 경영하기 위한 4대 혁신 방향',
     link: 'eBook-data/Hoki Lee eBook series vol28.pdf',
