@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 111,
+    title: '소형 언어 모델(SLM)의 부상, AI 트렌드와 실용성',
+    link: 'one-line-knowledge/trivia-detail-111.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-26',
+    views: 0,
+  },
+  {
     id: 110,
     title: '주의의 선택적 집중, 왜 중요한 것을 놓치는가',
     link: 'one-line-knowledge/trivia-detail-110.html',

@@ -2,6 +2,15 @@
 const dailyThoughtsData = [
   {
     id: 29,
+    title: '성과목표 중심의 전략적 성과경영 — 실행력을 높이는',
+    link: 'eBook-data/Hoki Lee eBook series vol30.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-26',
+    views: 0,
+  },
+  {
+    id: 29,
     title: '역할 중심의 수평적 조직경영 — 스스로 움직이는 팀의 구조',
     link: 'eBook-data/Hoki Lee eBook series vol29.pdf',
     category: 'eBook Series',
