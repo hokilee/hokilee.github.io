@@ -2,7 +2,8 @@
 const dailyThoughtsData = [
   {
     id: 29,
-    title: '성과목표 중심의 전략적 성과경영 — 실행력을 높이는',
+    title:
+      '성과목표 중심의 전략적 성과경영 — 실행력을 높이는 3단계 성과 프로세스',
     link: 'eBook-data/Hoki Lee eBook series vol30.pdf',
     category: 'eBook Series',
     author: '이호기',
