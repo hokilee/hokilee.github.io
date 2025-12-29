@@ -1,7 +1,17 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
-    id: 29,
+    id: 31,
+    title:
+      '성과와 역량 중심의 인간적 사람경영 — 성과 뒤에 있는 사람을 이해하라',
+    link: 'eBook-data/Hoki Lee eBook series vol31.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-29',
+    views: 0,
+  },
+  {
+    id: 30,
     title:
       '성과목표 중심의 전략적 성과경영 — 실행력을 높이는 3단계 성과 프로세스',
     link: 'eBook-data/Hoki Lee eBook series vol30.pdf',

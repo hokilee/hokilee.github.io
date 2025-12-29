@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 99,
+    title: '일본 YCC 정책 종료와 글로벌 금융시장 파급효과',
+    link: 'economics/economy-detail-109.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '12-29',
+    views: 0,
+  },
+  {
     id: 98,
     title: '인플레이션과 실질 구매력, 왜 물가는 오르는데 체감은 다를까',
     link: 'economics/economy-detail-108.html',
