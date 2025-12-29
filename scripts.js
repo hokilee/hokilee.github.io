@@ -19,6 +19,7 @@ const translations = {
     'nav.previousContent': '이전<br />자료',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
+    'weeklyNews.heading': '오늘의 일정(자동차/IT)',
     'notice.updateContent20251229': `<strong>2025-12-29</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.31 — 성과와 역량 중심의 인간적 사람경영 — 성과 뒤에 있는 사람을 이해하라」가 업데이트되었습니다. 성과와 역량을 중심으로 하되, 그 뒤에 있는 사람을 이해하고 존중하는 인간적 사람경영의 핵심을 다룹니다. 단순히 성과만을 추구하는 것이 아니라, 각 구성원의 역량을 키우고 성장시켜 함께 발전하는 조직 문화를 만드는 것이 목표입니다. 성과 뒤에 있는 사람의 동기, 역량, 성장 욕구를 이해하고 이를 바탕으로 한 사람경영 전략을 제시합니다. <strong>인사관리, 조직문화, 리더십, 역량개발</strong> 등 실무 인사이트를 담은 eBook 시리즈 서른한 번째 자료입니다.<br /><br />
 💰 <strong>경제상식:</strong> 「일본 YCC 정책 종료와 글로벌 금융시장 파급효과」는 일본은행이 수익률곡선통제(YCC, Yield Curve Control) 정책을 종료하면서 글로벌 금융시장에 미치는 영향을 다룹니다. YCC 정책은 일본은행이 장기 국채 금리를 일정 수준으로 유지하기 위해 도입한 통화정책으로, 이 정책의 종료는 일본의 초완화 통화정책 시대의 종료를 의미합니다. 글로벌 자금 흐름, 금리 환경, 환율 시장에 변화가 예상되며, 특히 아시아 금융시장과 한국 경제에도 상당한 파급효과가 있을 것으로 전망됩니다. YCC 정책의 개념, 종료 배경, 글로벌 금융시장에 미치는 영향, 그리고 한국 경제에 대한 파급효과를 상세히 다룹니다.<br /><br />
@@ -43,6 +44,7 @@ const translations = {
     'nav.previousContent': 'Previous<br />Materials',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
+    'weeklyNews.heading': "Today's Schedule (Automotive/IT)",
     'notice.updateContent20251229': `<strong>2025-12-29</strong> – We've added new content to the eBook Series board and Economics Knowledge board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.31 — Human-Centered People Management Focused on Performance and Competency — Understand the People Behind Performance" has been updated. It covers the core of human-centered people management that focuses on performance and competency while understanding and respecting the people behind them. Rather than simply pursuing performance, the goal is to create an organizational culture where each member's competencies are developed and grown for mutual advancement. It presents people management strategies based on understanding the motivation, competencies, and growth aspirations of the people behind performance. This is the thirty-first volume of the eBook series containing practical insights on <strong>human resource management, organizational culture, leadership, and competency development</strong>.<br /><br />
 💰 <strong>Economics Knowledge:</strong> "The End of Japan's YCC Policy and Its Impact on Global Financial Markets" covers the impact on global financial markets as the Bank of Japan ends its Yield Curve Control (YCC) policy. YCC is a monetary policy introduced by the Bank of Japan to maintain long-term government bond yields at a certain level, and its termination signifies the end of Japan's ultra-loose monetary policy era. Changes are expected in global capital flows, interest rate environments, and foreign exchange markets, with significant spillover effects anticipated for Asian financial markets and the Korean economy. It covers in detail the concept of YCC policy, the background of its termination, its impact on global financial markets, and spillover effects on the Korean economy.<br /><br />
