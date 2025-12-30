@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 56,
+    title: '레드 셔츠 효과(Red-Shirt Effect)',
+    link: 'science/science-detail-56.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '12-30',
+    views: 0,
+  },
+  {
     id: 55,
     title: '시그니처 모멘트(Signature Moment)',
     link: 'science/science-detail-55.html',

@@ -1,6 +1,16 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 32,
+    title:
+      '비전과 코칭 중심의 동기부여적 팀장역량 — 팀장은 사람의 에너지를 움직이는 리더다',
+    link: 'eBook-data/Hoki Lee eBook series vol32.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-30',
+    views: 0,
+  },
+  {
     id: 31,
     title:
       '성과와 역량 중심의 인간적 사람경영 — 성과 뒤에 있는 사람을 이해하라',
