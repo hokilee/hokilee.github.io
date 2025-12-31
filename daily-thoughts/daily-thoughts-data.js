@@ -3,7 +3,7 @@ const dailyThoughtsData = [
   {
     id: 33,
     title:
-      '일반상식 게시판 오조직의 실행력을 지속시키는 피드백 문화 — 성과는 대화 속에서 완성된다픈',
+      '조직의 실행력을 지속시키는 피드백 문화 — 성과는 대화 속에서 완성된다',
     link: 'eBook-data/Hoki Lee eBook series vol33.pdf',
     category: 'eBook Series',
     author: '이호기',
