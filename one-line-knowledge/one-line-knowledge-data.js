@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 112,
+    title: '냉각기술의 한계, 데이터센터 전력 소비와 환경 문제',
+    link: 'one-line-knowledge/trivia-detail-112.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '12-31',
+    views: 0,
+  },
+  {
     id: 111,
     title: '소형 언어 모델(SLM)의 부상, AI 트렌드와 실용성',
     link: 'one-line-knowledge/trivia-detail-111.html',

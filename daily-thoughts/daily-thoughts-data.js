@@ -1,6 +1,16 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 33,
+    title:
+      '일반상식 게시판 오조직의 실행력을 지속시키는 피드백 문화 — 성과는 대화 속에서 완성된다픈',
+    link: 'eBook-data/Hoki Lee eBook series vol33.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '12-31',
+    views: 0,
+  },
+  {
     id: 32,
     title:
       '비전과 코칭 중심의 동기부여적 팀장역량 — 팀장은 사람의 에너지를 움직이는 리더다',

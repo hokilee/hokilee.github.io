@@ -19,27 +19,28 @@ const translations = {
     'nav.previousContent': '이전<br />자료',
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
-    'weeklyNews.heading': '오늘의 일정(자동차/IT)',
-    'schedule.item1.title':
-      '현대자동차, 차세대 전기차 아이오닉 7 공개 행사 개최',
+    'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
+    'schedule.item1.title': '기아자동차, 2026년 전기차 라인업 확대 전략 발표',
     'schedule.item1.content':
-      '현대자동차는 서울 강남구 현대자동차 본사에서 차세대 전기차 아이오닉 7의 공개 행사를 개최합니다. 800V 고속 충전 시스템과 700km 이상의 주행거리를 자랑하는 신형 전기차의 상세 스펙과 디자인을 공개하며, 현대자동차의 전기차 라인업 확장 전략을 발표할 예정입니다.',
-    'schedule.item2.title': '테슬라, FSD 베타 12.5 버전 한국 시연회 개최',
+      '기아자동차는 서울 강남구 기아자동차 본사에서 2026년 전기차 라인업 확대 전략을 발표합니다. EV3, EV4 등 신형 전기차 모델의 출시 일정과 글로벌 시장 진출 계획을 공개하며, 전기차 생산 능력 확대와 배터리 공급망 안정화 방안을 제시할 예정입니다.',
+    'schedule.item2.title': '엔비디아, 한국 AI 데이터센터 투자 계획 발표',
     'schedule.item2.content':
-      '테슬라는 서울 강남구 테슬라 서비스 센터에서 완전 자율주행(FSD) 베타 12.5 버전의 한국 시연회를 개최합니다. 최신 AI 기반 자율주행 기술의 도심 주행 성능을 직접 시연하며, 한국 시장 진출을 위한 기술 로드맵을 공유할 예정입니다.',
-    'schedule.item3.title': '삼성전자, HBM4 메모리 반도체 기술 세미나 개최',
+      '엔비디아는 서울 강남구 엔비디아 코리아 오피스에서 한국 AI 데이터센터 투자 계획을 발표합니다. 한국 기업들의 AI 인프라 구축을 지원하기 위한 데이터센터 건설 계획과 GPU 공급 전략을 공유하며, 한국 AI 생태계 발전을 위한 파트너십을 발표할 예정입니다.',
+    'schedule.item3.title':
+      'SK하이닉스, HBM4 양산 착수 및 2026년 생산 목표 발표',
     'schedule.item3.content':
-      '삼성전자는 경기도 화성시 삼성전자 반도체 사업장에서 차세대 HBM4 고대역폭 메모리 반도체 기술 세미나를 개최합니다. AI 반도체 시장을 겨냥한 최신 메모리 기술과 양산 계획을 발표하며, 엔비디아, AMD 등 글로벌 파트너사와의 협력 현황을 공유할 예정입니다.',
-    'schedule.item4.title': '구글, 제미나이 2.0 AI 모델 한국 런칭 이벤트 개최',
+      'SK하이닉스는 경기도 이천시 SK하이닉스 반도체 사업장에서 차세대 HBM4 메모리 반도체 양산 착수를 발표합니다. AI 반도체 수요 급증에 대응하기 위한 생산 능력 확대 계획과 2026년 생산 목표를 공개하며, 글로벌 AI 기업들과의 공급 계약 현황을 공유할 예정입니다.',
+    'schedule.item4.title':
+      '네이버, 하이퍼클로바X 2026 버전 출시 및 AI 서비스 확대 계획',
     'schedule.item4.content':
-      '구글은 서울 강남구 구글 코리아 오피스에서 차세대 AI 모델 제미나이 2.0의 한국 런칭 이벤트를 개최합니다. 멀티모달 AI 기능과 한국어 최적화 성능을 시연하며, 한국 기업 및 개발자들을 위한 AI 클라우드 서비스 전략을 발표할 예정입니다.',
+      '네이버는 경기도 성남시 판교 네이버 본사에서 하이퍼클로바X 2026 버전 출시와 AI 서비스 확대 계획을 발표합니다. 멀티모달 AI 기능 강화와 엔터프라이즈 AI 솔루션 출시 계획을 공개하며, 한국어 AI 생태계 확장을 위한 개발자 지원 프로그램을 발표할 예정입니다.',
     'schedule.item5.title':
-      '카카오모빌리티, 로보택시 상용화 로드맵 발표회 개최',
+      '현대모비스, 자율주행 센서 융합 기술 및 로보택시 플랫폼 공개',
     'schedule.item5.content':
-      '카카오모빌리티는 경기도 성남시 판교 카카오 본사에서 자율주행 로보택시 상용화 로드맵 발표회를 개최합니다. 현대모비스, 네이버와의 협업을 통한 자율주행 기술 개발 현황과 2026년 상반기 시범 서비스 계획을 공개하며, 모빌리티 플랫폼의 미래 비전을 제시할 예정입니다.',
-    'notice.updateContent20251230': `<strong>2025-12-30</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.32 — 비전과 코칭 중심의 동기부여적 팀장역량 — 팀장은 사람의 에너지를 움직이는 리더다」가 업데이트되었습니다. 팀장의 핵심 역할은 단순히 업무를 관리하는 것이 아니라, 팀원들의 에너지를 움직이고 동기를 부여하는 것입니다. 비전을 제시하고 코칭을 통해 팀원들의 역량을 개발하며, 동기부여를 통해 조직의 성과를 이끌어내는 것이 팀장의 중요한 역할입니다. 비전 설정, 코칭 기법, 동기부여 전략, 팀 역량 개발 등 실무 인사이트를 담은 eBook 시리즈 서른두 번째 자료입니다.<br /><br />
-📚 <strong>일반상식:</strong> 「레드 셔츠 효과(Red-Shirt Effect)」는 집단 내에서 신규 멤버나 경력이 적은 멤버가 위험한 상황에서 먼저 희생되거나 불리한 처지를 받는 현상을 말합니다. 스타트렉에서 빨간 셔츠를 입은 보안 요원들이 위험한 임무에서 먼저 죽는 장면에서 유래한 이 용어는 실제 사회에서도 관찰되는 심리학적 현상입니다. 직장 내 신입사원, 학교 내 신입생, 스포츠 팀의 신규 선수 등이 위험하거나 어려운 업무를 먼저 맡게 되는 현상을 설명하며, 이러한 현상의 부정적 영향과 완화 방법을 상세히 다룹니다.<br /><br />
+      '현대모비스는 경기도 용인시 현대모비스 본사에서 자율주행 센서 융합 기술과 로보택시 플랫폼을 공개합니다. 라이다, 레이더, 카메라 센서를 통합한 자율주행 시스템의 성능을 시연하며, 2026년 로보택시 상용화를 위한 기술 로드맵과 파트너십 전략을 발표할 예정입니다.',
+    'notice.updateContent20251231': `<strong>2025-12-31</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다. 또한 오늘의 일정도 업데이트되었습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.33 — 조직의 실행력을 지속시키는 피드백 문화 — 성과는 대화 속에서 완성된다」가 업데이트되었습니다. 조직의 지속 가능한 성과 창출을 위해서는 효과적인 피드백 문화가 필수적입니다. 피드백은 단순한 평가나 지적이 아니라, 조직 구성원들이 함께 성장하고 개선해나가는 대화의 과정입니다. 건설적인 피드백을 통해 실행력을 높이고, 지속적인 소통을 통해 성과를 완성해나가는 것이 핵심입니다. 피드백 문화 구축, 효과적인 피드백 기법, 대화를 통한 성과 관리, 조직 실행력 강화 등 실무 인사이트를 담은 eBook 시리즈 서른세 번째 자료입니다.<br /><br />
+📚 <strong>한줄 지식/잡학:</strong> 「냉각기술의 한계, 데이터센터 전력 소비와 환경 문제」가 등록되었습니다. AI 기술의 폭발적 성장과 함께 데이터센터의 전력 소비가 급증하고 있습니다. ChatGPT, Claude 같은 대규모 AI 모델의 학습과 추론에는 막대한 연산 자원이 필요하며, 이를 냉각하기 위한 전력 소비가 전체 전력의 상당 부분을 차지하고 있습니다. 데이터센터의 전력 소비 현황, 냉각 기술의 한계, 환경에 미치는 영향, 그리고 대응 방안을 상세히 다룹니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -61,30 +62,30 @@ const translations = {
     'nav.previousContent': 'Previous<br />Materials',
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
-    'weeklyNews.heading': "Today's Schedule (Automotive/IT)",
+    'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'Hyundai Motor to Hold Unveiling Event for Next-Gen IONIQ 7 Electric Vehicle',
+      'Kia Motors to Announce 2026 Electric Vehicle Lineup Expansion Strategy',
     'schedule.item1.content':
-      'Hyundai Motor will hold an unveiling event for its next-generation IONIQ 7 electric vehicle at its headquarters in Gangnam-gu, Seoul. The company will reveal detailed specifications and design of the new EV featuring an 800V fast-charging system and a driving range of over 700km, and announce its electric vehicle lineup expansion strategy.',
+      'Kia Motors will announce its 2026 electric vehicle lineup expansion strategy at its headquarters in Gangnam-gu, Seoul. The company will reveal launch schedules for new EV models such as EV3 and EV4, global market entry plans, and present strategies for expanding EV production capacity and stabilizing battery supply chains.',
     'schedule.item2.title':
-      'Tesla to Hold FSD Beta 12.5 Demonstration Event in Korea',
+      'NVIDIA to Announce AI Data Center Investment Plan in Korea',
     'schedule.item2.content':
-      'Tesla will hold a demonstration event for its Full Self-Driving (FSD) Beta 12.5 version at its service center in Gangnam-gu, Seoul. The company will showcase the urban driving performance of its latest AI-based autonomous driving technology and share its technology roadmap for entering the Korean market.',
+      "NVIDIA will announce its AI data center investment plan in Korea at NVIDIA Korea Office in Gangnam-gu, Seoul. The company will share its data center construction plan and GPU supply strategy to support Korean companies' AI infrastructure development, and announce partnerships for advancing Korea's AI ecosystem.",
     'schedule.item3.title':
-      'Samsung Electronics to Hold HBM4 Memory Semiconductor Technology Seminar',
+      'SK Hynix to Begin HBM4 Mass Production and Announce 2026 Production Targets',
     'schedule.item3.content':
-      'Samsung Electronics will hold a seminar on next-generation HBM4 high-bandwidth memory semiconductor technology at its semiconductor facility in Hwaseong, Gyeonggi-do. The company will announce the latest memory technology targeting the AI semiconductor market and mass production plans, and share collaboration status with global partners such as NVIDIA and AMD.',
+      'SK Hynix will announce the start of mass production of next-generation HBM4 memory semiconductors at its semiconductor facility in Icheon, Gyeonggi-do. The company will reveal production capacity expansion plans to meet surging AI semiconductor demand, announce 2026 production targets, and share supply contract status with global AI companies.',
     'schedule.item4.title':
-      'Google to Hold Gemini 2.0 AI Model Launch Event in Korea',
+      'Naver to Launch HyperClovaX 2026 Version and Expand AI Services',
     'schedule.item4.content':
-      'Google will hold a launch event for its next-generation Gemini 2.0 AI model at Google Korea Office in Gangnam-gu, Seoul. The company will demonstrate multimodal AI capabilities and Korean language optimization performance, and announce its AI cloud service strategy for Korean businesses and developers.',
+      'Naver will announce the launch of HyperClovaX 2026 version and AI service expansion plans at Naver headquarters in Pangyo, Seongnam, Gyeonggi-do. The company will reveal enhanced multimodal AI capabilities and enterprise AI solution launch plans, and announce developer support programs to expand the Korean AI ecosystem.',
     'schedule.item5.title':
-      'Kakao Mobility to Hold RoboTaxi Commercialization Roadmap Presentation',
+      'Hyundai Mobis to Unveil Autonomous Driving Sensor Fusion Technology and RoboTaxi Platform',
     'schedule.item5.content':
-      'Kakao Mobility will hold a presentation on its autonomous driving RoboTaxi commercialization roadmap at Kakao headquarters in Pangyo, Seongnam, Gyeonggi-do. The company will reveal the current status of autonomous driving technology development through collaboration with Hyundai Mobis and Naver, announce plans for pilot services in the first half of 2026, and present its future vision for the mobility platform.',
-    'notice.updateContent20251230': `<strong>2025-12-30</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
-📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.32 — Motivational Team Leader Competency Focused on Vision and Coaching — Team Leaders are Leaders Who Move People's Energy" has been updated. The core role of a team leader is not simply to manage tasks, but to move team members' energy and motivate them. Presenting a vision, developing team members' competencies through coaching, and driving organizational performance through motivation are important roles of a team leader. This is the thirty-second volume of the eBook series containing practical insights on <strong>vision setting, coaching techniques, motivation strategies, and team competency development</strong>.<br /><br />
-📚 <strong>General Knowledge:</strong> "Red-Shirt Effect" refers to the phenomenon where new members or members with less experience are the first to be sacrificed or placed in unfavorable positions in dangerous situations within a group. This term, derived from scenes in Star Trek where security officers wearing red shirts die first in dangerous missions, is a psychological phenomenon observed in real society. It explains the phenomenon where new employees in the workplace, new students in schools, and new players on sports teams are assigned dangerous or difficult tasks first, and covers in detail the negative impacts of this phenomenon and methods to mitigate it.<br /><br />
+      'Hyundai Mobis will unveil autonomous driving sensor fusion technology and RoboTaxi platform at its headquarters in Yongin, Gyeonggi-do. The company will demonstrate the performance of its autonomous driving system integrating LiDAR, radar, and camera sensors, and announce technology roadmap and partnership strategies for RoboTaxi commercialization in 2026.',
+    'notice.updateContent20251231': `<strong>2025-12-31</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board. Today's schedule has also been updated.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.33 — Feedback Culture That Sustains Organizational Execution — Performance is Completed Through Dialogue" has been updated. Effective feedback culture is essential for organizations to achieve sustainable performance. Feedback is not simply evaluation or criticism, but a process of dialogue through which organizational members grow and improve together. The key is to enhance execution through constructive feedback and complete performance through continuous communication. This is the thirty-third volume of the eBook series containing practical insights on <strong>building feedback culture, effective feedback techniques, performance management through dialogue, and strengthening organizational execution</strong>.<br /><br />
+📚 <strong>One-Line Knowledge/Trivia:</strong> "Limitations of Cooling Technology, Data Center Power Consumption and Environmental Issues" has been registered. As AI technology grows explosively, data center power consumption is surging. Training and inference of large-scale AI models like ChatGPT and Claude require massive computational resources, and the power consumption for cooling accounts for a significant portion of total power. This article covers in detail the current state of data center power consumption, limitations of cooling technology, environmental impacts, and response measures.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
