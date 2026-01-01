@@ -20,27 +20,27 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': '기아자동차, 2026년 전기차 라인업 확대 전략 발표',
+    'schedule.item1.title':
+      '현대자동차, 전기차 신모델 아이오닉 7 사전 예약 개시',
     'schedule.item1.content':
-      '기아자동차는 서울 강남구 기아자동차 본사에서 2026년 전기차 라인업 확대 전략을 발표합니다. EV3, EV4 등 신형 전기차 모델의 출시 일정과 글로벌 시장 진출 계획을 공개하며, 전기차 생산 능력 확대와 배터리 공급망 안정화 방안을 제시할 예정입니다.',
-    'schedule.item2.title': '엔비디아, 한국 AI 데이터센터 투자 계획 발표',
+      '현대자동차는 서울 강남구 현대자동차 본사에서 차세대 전기차 신모델 아이오닉 7의 사전 예약을 시작합니다. 800V 고속 충전 시스템과 700km 이상의 주행거리를 자랑하는 아이오닉 7의 상세 스펙과 가격 정보를 공개하며, 사전 예약 고객을 위한 특별 혜택과 출고 일정을 안내할 예정입니다.',
+    'schedule.item2.title':
+      '삼성전자, 갤럭시 S26 시리즈 공식 발표 및 사전 예약 시작',
     'schedule.item2.content':
-      '엔비디아는 서울 강남구 엔비디아 코리아 오피스에서 한국 AI 데이터센터 투자 계획을 발표합니다. 한국 기업들의 AI 인프라 구축을 지원하기 위한 데이터센터 건설 계획과 GPU 공급 전략을 공유하며, 한국 AI 생태계 발전을 위한 파트너십을 발표할 예정입니다.',
+      '삼성전자는 서울 강남구 삼성전자 본사에서 차세대 스마트폰 갤럭시 S26 시리즈의 공식 발표회를 개최합니다. 최신 AI 기능과 향상된 카메라 성능을 탑재한 갤럭시 S26, S26+, S26 울트라의 상세 스펙과 가격을 공개하며, 사전 예약 고객을 위한 특별 프로모션과 출시 일정을 발표할 예정입니다.',
     'schedule.item3.title':
-      'SK하이닉스, HBM4 양산 착수 및 2026년 생산 목표 발표',
+      '테슬라, 자율주행 소프트웨어 FSD 베타 13.0 버전 업데이트 발표',
     'schedule.item3.content':
-      'SK하이닉스는 경기도 이천시 SK하이닉스 반도체 사업장에서 차세대 HBM4 메모리 반도체 양산 착수를 발표합니다. AI 반도체 수요 급증에 대응하기 위한 생산 능력 확대 계획과 2026년 생산 목표를 공개하며, 글로벌 AI 기업들과의 공급 계약 현황을 공유할 예정입니다.',
-    'schedule.item4.title':
-      '네이버, 하이퍼클로바X 2026 버전 출시 및 AI 서비스 확대 계획',
+      '테슬라는 서울 강남구 테슬라 서비스 센터에서 완전 자율주행(FSD) 베타 13.0 버전 업데이트를 발표합니다. 최신 AI 기반 자율주행 알고리즘의 성능 개선 사항과 한국 도로 환경에 최적화된 기능을 공개하며, 한국 시장에서의 FSD 서비스 확대 계획과 정식 출시 로드맵을 공유할 예정입니다.',
+    'schedule.item4.title': '애플, iOS 20.2 버전 정식 배포 및 신기능 공개',
     'schedule.item4.content':
-      '네이버는 경기도 성남시 판교 네이버 본사에서 하이퍼클로바X 2026 버전 출시와 AI 서비스 확대 계획을 발표합니다. 멀티모달 AI 기능 강화와 엔터프라이즈 AI 솔루션 출시 계획을 공개하며, 한국어 AI 생태계 확장을 위한 개발자 지원 프로그램을 발표할 예정입니다.',
-    'schedule.item5.title':
-      '현대모비스, 자율주행 센서 융합 기술 및 로보택시 플랫폼 공개',
+      '애플은 iOS 20.2 버전의 정식 배포를 시작합니다. 향상된 AI 기능과 보안 강화, 새로운 위젯과 개인화 옵션 등 주요 업데이트 내용을 공개하며, iPhone 사용자들의 업데이트 방법과 호환 기기 목록을 안내합니다. iOS 20.2는 더욱 스마트하고 안전한 사용자 경험을 제공할 예정입니다.',
+    'schedule.item5.title': 'CES 2026 개막, 글로벌 IT 기업들의 신기술 발표',
     'schedule.item5.content':
-      '현대모비스는 경기도 용인시 현대모비스 본사에서 자율주행 센서 융합 기술과 로보택시 플랫폼을 공개합니다. 라이다, 레이더, 카메라 센서를 통합한 자율주행 시스템의 성능을 시연하며, 2026년 로보택시 상용화를 위한 기술 로드맵과 파트너십 전략을 발표할 예정입니다.',
-    'notice.updateContent20251231': `<strong>2025-12-31</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다. 또한 오늘의 일정도 업데이트되었습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.33 — 조직의 실행력을 지속시키는 피드백 문화 — 성과는 대화 속에서 완성된다」가 업데이트되었습니다. 조직의 지속 가능한 성과 창출을 위해서는 효과적인 피드백 문화가 필수적입니다. 피드백은 단순한 평가나 지적이 아니라, 조직 구성원들이 함께 성장하고 개선해나가는 대화의 과정입니다. 건설적인 피드백을 통해 실행력을 높이고, 지속적인 소통을 통해 성과를 완성해나가는 것이 핵심입니다. 피드백 문화 구축, 효과적인 피드백 기법, 대화를 통한 성과 관리, 조직 실행력 강화 등 실무 인사이트를 담은 eBook 시리즈 서른세 번째 자료입니다.<br /><br />
-📚 <strong>한줄 지식/잡학:</strong> 「냉각기술의 한계, 데이터센터 전력 소비와 환경 문제」가 등록되었습니다. AI 기술의 폭발적 성장과 함께 데이터센터의 전력 소비가 급증하고 있습니다. ChatGPT, Claude 같은 대규모 AI 모델의 학습과 추론에는 막대한 연산 자원이 필요하며, 이를 냉각하기 위한 전력 소비가 전체 전력의 상당 부분을 차지하고 있습니다. 데이터센터의 전력 소비 현황, 냉각 기술의 한계, 환경에 미치는 영향, 그리고 대응 방안을 상세히 다룹니다.<br /><br />
+      '세계 최대 전자제품 박람회인 CES 2026이 미국 라스베이거스에서 개막합니다. 삼성전자, LG전자, 소니, 구글, 마이크로소프트 등 글로벌 IT 기업들이 AI, 자율주행, 가상현실, 스마트홈 등 최신 기술과 신제품을 공개합니다. 한국 기업들의 혁신 기술과 제품이 주목받을 것으로 예상됩니다.',
+    'notice.updateContent20260102': `<strong>2026-01-02</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다. 또한 오늘의 일정도 업데이트되었습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.34 — 학습하는 조직 — 지속 성장의 DNA를 만드는 방법」이 업데이트되었습니다. 급변하는 환경에서 조직이 지속적으로 성장하고 경쟁력을 유지하기 위해서는 학습하는 조직(Learning Organization)이 되어야 합니다. 학습하는 조직은 단순히 교육을 받는 것이 아니라, 지식과 경험을 공유하고, 실험과 혁신을 통해 지속적으로 개선해나가는 조직입니다. 조직 학습 문화 구축, 지식 공유 시스템, 실험과 실패를 통한 학습, 지속적 개선 프로세스 등 실무 인사이트를 담은 eBook 시리즈 서른네 번째 자료입니다.<br /><br />
+💼 <strong>경제상식:</strong> 「리셀(Resale) 경제의 부상, 중고거래가 만드는 새로운 시장」이 등록되었습니다. 최근 중고거래 플랫폼의 급속한 성장과 함께 리셀 경제가 새로운 시장으로 부상하고 있습니다. 당근마켓, 번개장터, 중고나라 등 중고거래 플랫폼이 일상생활의 필수 도구가 되었고, 패션, 전자제품, 가구, 자동차 등 다양한 분야에서 중고거래가 활성화되고 있습니다. 리셀 경제의 개념, 성장 배경, 시장 영향, 그리고 경제적 의미를 상세히 다룹니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -64,28 +64,27 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'Kia Motors to Announce 2026 Electric Vehicle Lineup Expansion Strategy',
+      'Hyundai Motor to Begin Pre-Orders for New Electric Vehicle IONIQ 7',
     'schedule.item1.content':
-      'Kia Motors will announce its 2026 electric vehicle lineup expansion strategy at its headquarters in Gangnam-gu, Seoul. The company will reveal launch schedules for new EV models such as EV3 and EV4, global market entry plans, and present strategies for expanding EV production capacity and stabilizing battery supply chains.',
+      'Hyundai Motor will begin pre-orders for its new electric vehicle model IONIQ 7 at its headquarters in Gangnam-gu, Seoul. The company will reveal detailed specifications and pricing for the IONIQ 7 featuring an 800V fast-charging system and a driving range of over 700km, and announce special benefits for pre-order customers and delivery schedules.',
     'schedule.item2.title':
-      'NVIDIA to Announce AI Data Center Investment Plan in Korea',
+      'Samsung Electronics to Officially Announce Galaxy S26 Series and Begin Pre-Orders',
     'schedule.item2.content':
-      "NVIDIA will announce its AI data center investment plan in Korea at NVIDIA Korea Office in Gangnam-gu, Seoul. The company will share its data center construction plan and GPU supply strategy to support Korean companies' AI infrastructure development, and announce partnerships for advancing Korea's AI ecosystem.",
-    'schedule.item3.title':
-      'SK Hynix to Begin HBM4 Mass Production and Announce 2026 Production Targets',
+      'Samsung Electronics will hold an official announcement event for its next-generation smartphone Galaxy S26 series at Samsung Electronics headquarters in Gangnam-gu, Seoul. The company will reveal detailed specifications and pricing for the Galaxy S26, S26+, and S26 Ultra featuring latest AI capabilities and enhanced camera performance, and announce special promotions for pre-order customers and launch schedules.',
+    'schedule.item3.title': 'Tesla to Announce FSD Beta 13.0 Software Update',
     'schedule.item3.content':
-      'SK Hynix will announce the start of mass production of next-generation HBM4 memory semiconductors at its semiconductor facility in Icheon, Gyeonggi-do. The company will reveal production capacity expansion plans to meet surging AI semiconductor demand, announce 2026 production targets, and share supply contract status with global AI companies.',
+      'Tesla will announce its Full Self-Driving (FSD) Beta 13.0 software update at its service center in Gangnam-gu, Seoul. The company will reveal performance improvements of the latest AI-based autonomous driving algorithm and features optimized for Korean road conditions, and share plans for expanding FSD services in the Korean market and official launch roadmap.',
     'schedule.item4.title':
-      'Naver to Launch HyperClovaX 2026 Version and Expand AI Services',
+      'Apple to Release iOS 20.2 Version and Unveil New Features',
     'schedule.item4.content':
-      'Naver will announce the launch of HyperClovaX 2026 version and AI service expansion plans at Naver headquarters in Pangyo, Seongnam, Gyeonggi-do. The company will reveal enhanced multimodal AI capabilities and enterprise AI solution launch plans, and announce developer support programs to expand the Korean AI ecosystem.',
+      'Apple will begin official distribution of iOS 20.2 version. The company will reveal major update contents including enhanced AI features, security improvements, new widgets and personalization options, and guide iPhone users on update methods and compatible device lists. iOS 20.2 is expected to provide a smarter and safer user experience.',
     'schedule.item5.title':
-      'Hyundai Mobis to Unveil Autonomous Driving Sensor Fusion Technology and RoboTaxi Platform',
+      'CES 2026 Opens, Global IT Companies to Unveil New Technologies',
     'schedule.item5.content':
-      'Hyundai Mobis will unveil autonomous driving sensor fusion technology and RoboTaxi platform at its headquarters in Yongin, Gyeonggi-do. The company will demonstrate the performance of its autonomous driving system integrating LiDAR, radar, and camera sensors, and announce technology roadmap and partnership strategies for RoboTaxi commercialization in 2026.',
-    'notice.updateContent20251231': `<strong>2025-12-31</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board. Today's schedule has also been updated.<br /><br />
-📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.33 — Feedback Culture That Sustains Organizational Execution — Performance is Completed Through Dialogue" has been updated. Effective feedback culture is essential for organizations to achieve sustainable performance. Feedback is not simply evaluation or criticism, but a process of dialogue through which organizational members grow and improve together. The key is to enhance execution through constructive feedback and complete performance through continuous communication. This is the thirty-third volume of the eBook series containing practical insights on <strong>building feedback culture, effective feedback techniques, performance management through dialogue, and strengthening organizational execution</strong>.<br /><br />
-📚 <strong>One-Line Knowledge/Trivia:</strong> "Limitations of Cooling Technology, Data Center Power Consumption and Environmental Issues" has been registered. As AI technology grows explosively, data center power consumption is surging. Training and inference of large-scale AI models like ChatGPT and Claude require massive computational resources, and the power consumption for cooling accounts for a significant portion of total power. This article covers in detail the current state of data center power consumption, limitations of cooling technology, environmental impacts, and response measures.<br /><br />
+      "CES 2026, the world's largest consumer electronics show, opens in Las Vegas, USA. Global IT companies including Samsung Electronics, LG Electronics, Sony, Google, and Microsoft will unveil latest technologies and new products in AI, autonomous driving, virtual reality, and smart home sectors. Korean companies' innovative technologies and products are expected to draw attention.",
+    'notice.updateContent20260102': `<strong>2026-01-02</strong> – We've added new content to the eBook Series board and Economics board. Today's schedule has also been updated.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.34 — Learning Organization — Methods to Create the DNA of Sustainable Growth" has been updated. In a rapidly changing environment, organizations must become learning organizations to continuously grow and maintain competitiveness. A learning organization is not simply about receiving education, but about sharing knowledge and experiences, and continuously improving through experimentation and innovation. This is the thirty-fourth volume of the eBook series containing practical insights on <strong>building organizational learning culture, knowledge sharing systems, learning through experimentation and failure, and continuous improvement processes</strong>.<br /><br />
+💼 <strong>Economics:</strong> "The Rise of Resale Economy, New Markets Created by Second-Hand Trading" has been registered. With the rapid growth of second-hand trading platforms, the resale economy is emerging as a new market. Platforms like Karrot Market, Bunjang, and Joonggonara have become essential tools in daily life, and second-hand trading is active in various sectors including fashion, electronics, furniture, and automobiles. This article covers in detail the concept of resale economy, growth background, market impact, and economic significance.<br /><br />
 Please check each board for more detailed content.`,
   },
 };

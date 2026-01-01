@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 34,
+    title: '학습하는 조직 — 지속 성장의 DNA를 만드는 방법',
+    link: 'eBook-data/Hoki Lee eBook series vol34.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-02',
+    views: 0,
+  },
+  {
     id: 33,
     title:
       '조직의 실행력을 지속시키는 피드백 문화 — 성과는 대화 속에서 완성된다',

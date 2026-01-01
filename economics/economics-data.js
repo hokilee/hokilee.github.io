@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 100,
+    title: '리셀(Resale) 경제의 부상, 중고거래가 만드는 새로운 시장',
+    link: 'economics/economy-detail-110.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '01-02',
+    views: 0,
+  },
+  {
     id: 99,
     title: '일본 YCC 정책 종료와 글로벌 금융시장 파급효과',
     link: 'economics/economy-detail-109.html',
