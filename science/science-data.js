@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 57,
+    title: '플린 효과(Flynn Effect)',
+    link: 'science/science-detail-57.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '01-05',
+    views: 0,
+  },
+  {
     id: 56,
     title: '레드 셔츠 효과(Red-Shirt Effect)',
     link: 'science/science-detail-56.html',

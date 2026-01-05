@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 35,
+    title: '고객 중심의 경영 — 모든 전략의 시작은 고객이다',
+    link: 'eBook-data/Hoki Lee eBook series vol35.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-05',
+    views: 0,
+  },
+  {
     id: 34,
     title: '학습하는 조직 — 지속 성장의 DNA를 만드는 방법',
     link: 'eBook-data/Hoki Lee eBook series vol34.pdf',
