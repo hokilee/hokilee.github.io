@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 36,
+    title: '고객 경험의 구조화 — 고객 여정에서 가치 여정으로',
+    link: 'eBook-data/Hoki Lee eBook series vol36.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-06',
+    views: 0,
+  },
+  {
     id: 35,
     title: '고객 중심의 경영 — 모든 전략의 시작은 고객이다',
     link: 'eBook-data/Hoki Lee eBook series vol35.pdf',

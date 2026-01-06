@@ -21,26 +21,28 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      '월드 베스트 카 어워드 2026 발표, 올해의 최고 차량 선정',
+      'LG전자, CES 2026에서 올레드 TV 신기술 및 스마트홈 솔루션 발표',
     'schedule.item1.content':
-      '세계적인 자동차 전문 매체들이 선정한 월드 베스트 카 어워드 2026 수상 차량이 발표됩니다. 디자인, 성능, 혁신성, 안전성 등을 종합적으로 평가하여 최고의 차량을 선정하는 이 어워드는 글로벌 자동차 산업의 트렌드를 보여주는 중요한 지표입니다. 전기차, 하이브리드, 수소차 등 다양한 파워트레인을 가진 차량들이 수상 후보로 올랐으며, 한국 자동차 브랜드들의 수상 여부도 주목받고 있습니다.',
-    'schedule.item2.title': 'CES 2026 개막, 글로벌 IT 기업들의 신기술 대전',
+      'LG전자는 CES 2026에서 차세대 올레드 TV 기술과 스마트홈 솔루션을 발표합니다. AI 기반 화질 개선 기술과 에너지 효율 향상 기능을 탑재한 신형 올레드 TV의 상세 스펙을 공개하며, 스마트홈 생태계 구축을 위한 IoT 플랫폼 전략을 발표합니다. CES 현장에서 신제품을 직접 체험할 수 있는 기회가 제공되며, 한국 시장 출시 일정도 함께 공개할 예정입니다.',
+    'schedule.item2.title':
+      '현대자동차, CES 2026에서 수소전기차 및 모빌리티 플랫폼 전략 발표',
     'schedule.item2.content':
-      '세계 최대 전자제품 박람회인 CES 2026이 미국 라스베이거스에서 개막합니다. 삼성전자, LG전자, 소니, 구글, 마이크로소프트 등 글로벌 IT 기업들이 AI, 자율주행, 가상현실, 스마트홈 등 최신 기술과 신제품을 공개합니다. 특히 AI 기술의 실용화와 자율주행 기술의 발전이 주요 화두로 떠오르며, 한국 기업들의 혁신 기술과 제품이 전 세계의 주목을 받을 것으로 예상됩니다.',
+      '현대자동차는 CES 2026에서 수소전기차 기술과 모빌리티 플랫폼 전략을 발표합니다. 넥소(NEXO) 후속 모델과 수소 충전 인프라 확대 계획을 공개하며, 로보택시와 자율주행 기술의 상용화 로드맵을 제시합니다. 현대자동차의 수소 에너지 생태계 구축 전략과 글로벌 파트너십도 함께 발표할 예정입니다.',
     'schedule.item3.title':
-      '삼성전자, CES 2026에서 갤럭시 S26 시리즈 공식 공개',
+      '구글, CES 2026에서 제미나이 AI 및 안드로이드 오토 혁신 발표',
     'schedule.item3.content':
-      '삼성전자는 CES 2026에서 차세대 스마트폰 갤럭시 S26 시리즈를 공식 공개합니다. 새로운 디자인과 향상된 성능을 자랑하는 갤럭시 S26, S26+, S26 울트라의 상세 스펙과 가격을 공개하며, 최신 AI 기능과 카메라 성능 개선 사항을 시연합니다. CES 현장에서 직접 체험할 수 있는 기회가 제공되며, 글로벌 시장 출시 일정도 함께 발표할 예정입니다.',
-    'schedule.item4.title': '애플, AR 글래스 공식 발표 및 혼합현실 시대 개막',
+      '구글은 CES 2026에서 제미나이 AI의 최신 기능과 안드로이드 오토 혁신 기술을 발표합니다. 차량 내 AI 어시스턴트와 자율주행 지원 기능을 강화한 안드로이드 오토의 상세 기능을 공개하며, 자동차 제조사들과의 협력 현황을 공유합니다. 구글의 모빌리티 AI 생태계 확장 전략도 함께 발표할 예정입니다.',
+    'schedule.item4.title':
+      '기아자동차, CES 2026에서 전기차 플랫폼 및 배터리 기술 공개',
     'schedule.item4.content':
-      '애플은 캘리포니아 쿠퍼티노 본사에서 증강현실(AR) 글래스를 공식 발표합니다. 애플의 첫 AR 전용 기기로, 혼합현실(MR) 기능을 탑재하여 업계의 큰 관심을 받고 있습니다. AR 글래스는 일상생활과 업무 환경을 혁신할 것으로 예상되며, 가격, 출시 일정, 호환 기기 등 상세 정보가 공개됩니다. 애플의 AR 생태계 구축 전략과 개발자 지원 프로그램도 함께 발표할 예정입니다.',
+      '기아자동차는 CES 2026에서 차세대 전기차 플랫폼과 배터리 기술을 공개합니다. E-GMP 플랫폼의 발전형과 고속 충전 기술, 배터리 수명 연장 기술을 발표하며, 전기차 라인업 확대 계획을 공개합니다. 기아자동차의 전기차 생태계 구축 전략과 글로벌 시장 진출 계획도 함께 발표할 예정입니다.',
     'schedule.item5.title':
-      '테슬라, CES 2026에서 사이버트럭 한국 출시 계획 발표',
+      '마이크로소프트, CES 2026에서 AI 코파일럿 및 클라우드 서비스 확대 발표',
     'schedule.item5.content':
-      '테슬라는 CES 2026에서 사이버트럭의 한국 시장 진출 계획을 발표합니다. 전기 픽업트럭인 사이버트럭의 한국 출시 일정과 가격 정보를 공개하며, 한국 도로 환경에 맞춘 사양과 충전 인프라 구축 계획을 공유합니다. 테슬라는 한국 시장에서의 전기차 확대 전략과 함께 자율주행 기술의 한국 적용 방안도 함께 발표할 예정입니다.',
-    'notice.updateContent20260105': `<strong>2026-01-05</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다. 또한 오늘의 일정도 업데이트되었습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.35 — 고객 중심의 경영 — 모든 전략의 시작은 고객이다」가 업데이트되었습니다. 성공하는 기업의 공통점은 고객을 중심으로 경영한다는 것입니다. 고객 중심 경영은 단순히 고객 서비스를 잘하는 것이 아니라, 모든 전략과 의사결정의 출발점을 고객에게 두는 경영 철학입니다. 고객 가치 창출, 고객 경험 개선, 고객 피드백 활용, 고객과의 장기적 관계 구축 등 실무 인사이트를 담은 eBook 시리즈 서른다섯 번째 자료입니다.<br /><br />
-📚 <strong>일반상식:</strong> 「플린 효과(Flynn Effect)」가 등록되었습니다. 플린 효과는 지능 검사 점수가 시간이 지나면서 계속 상승하는 현상으로, 뉴질랜드의 정치학자 제임스 플린이 발견한 현상입니다. 부모 세대보다 자녀 세대가 평균적으로 더 높은 지능 검사 점수를 받는 이 현상은 전 세계적으로 관찰되며, 교육 수준 향상, 환경의 복잡성 증가, 영양 상태 개선 등이 주요 원인입니다. 플린 효과의 개념, 특징, 원인, 그리고 의미를 상세히 다룹니다.<br /><br />
+      '마이크로소프트는 CES 2026에서 AI 코파일럿의 최신 기능과 클라우드 서비스 확대 계획을 발표합니다. 엔터프라이즈 AI 솔루션과 개인용 AI 어시스턴트 기능을 강화한 코파일럿의 상세 기능을 공개하며, Azure 클라우드 서비스의 AI 인프라 확장 계획을 발표합니다. 마이크로소프트의 AI 생태계 전략도 함께 공개할 예정입니다.',
+    'notice.updateContent20260106': `<strong>2026-01-06</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.36 — 고객경험의 구조화 — 고객여정에서 가치여정으로」가 업데이트되었습니다. 현대 비즈니스 환경에서 고객 경험(CX)은 단순한 서비스 제공을 넘어서 고객과의 모든 접점에서 가치를 창출하는 핵심 요소입니다. 고객여정(Customer Journey)을 체계적으로 구조화하고, 이를 가치여정(Value Journey)으로 전환하는 것이 성공적인 고객 경험 관리의 핵심입니다. 고객여정 맵핑, 터치포인트 최적화, 고객 가치 창출 전략, 고객 경험 측정 및 개선 등 실무 인사이트를 담은 eBook 시리즈 서른여섯 번째 자료입니다.<br /><br />
+🧠 <strong>한줄 지식/잡학:</strong> 「소셜 미디어 피로감, 디지털 미니멀리즘의 부상」이 등록되었습니다. 최근 많은 사람들이 소셜 미디어 사용을 줄이거나 완전히 중단하는 현상이 증가하고 있습니다. 인스타그램, 페이스북, 트위터 등 소셜 미디어 플랫폼에서 벗어나려는 움직임이 확산되면서 디지털 미니멀리즘(Digital Minimalism)이 새로운 트렌드로 부상하고 있습니다. 소셜 미디어 피로감의 원인, 디지털 미니멀리즘의 개념, 그리고 디지털 라이프스타일의 변화를 상세히 다룹니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -64,28 +66,28 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'World Car Awards 2026 Announcement, Best Car of the Year Selected',
+      'LG Electronics to Announce OLED TV Technology and Smart Home Solutions at CES 2026',
     'schedule.item1.content':
-      'The World Car Awards 2026 winners selected by global automotive media will be announced. This award, which comprehensively evaluates design, performance, innovation, and safety to select the best vehicle, is an important indicator of global automotive industry trends. Vehicles with various powertrains including electric, hybrid, and hydrogen vehicles have been nominated, and whether Korean automotive brands will win awards is also drawing attention.',
+      'LG Electronics will announce next-generation OLED TV technology and smart home solutions at CES 2026. The company will reveal detailed specifications of new OLED TVs featuring AI-based picture quality improvement technology and energy efficiency enhancement features, and announce IoT platform strategy for building smart home ecosystem. Opportunities to experience new products directly at CES will be provided, and Korean market launch schedules will also be announced.',
     'schedule.item2.title':
-      'CES 2026 Opens, Global IT Companies Battle of New Technologies',
+      'Hyundai Motor to Announce Hydrogen Electric Vehicle and Mobility Platform Strategy at CES 2026',
     'schedule.item2.content':
-      "CES 2026, the world's largest consumer electronics show, opens in Las Vegas, USA. Global IT companies including Samsung Electronics, LG Electronics, Sony, Google, and Microsoft will unveil latest technologies and new products in AI, autonomous driving, virtual reality, and smart home sectors. The practical application of AI technology and advancement of autonomous driving technology are emerging as major topics, and Korean companies' innovative technologies and products are expected to draw global attention.",
+      "Hyundai Motor will announce hydrogen electric vehicle technology and mobility platform strategy at CES 2026. The company will reveal the successor model to NEXO and hydrogen charging infrastructure expansion plans, and present commercialization roadmap for RoboTaxi and autonomous driving technology. Hyundai Motor's hydrogen energy ecosystem strategy and global partnerships will also be announced.",
     'schedule.item3.title':
-      'Samsung Electronics to Officially Unveil Galaxy S26 Series at CES 2026',
+      'Google to Announce Gemini AI and Android Auto Innovation at CES 2026',
     'schedule.item3.content':
-      'Samsung Electronics will officially unveil its next-generation smartphone Galaxy S26 series at CES 2026. The company will reveal detailed specifications and pricing for the Galaxy S26, S26+, and S26 Ultra featuring new design and enhanced performance, and demonstrate latest AI features and camera performance improvements. Opportunities to experience the devices directly at CES will be provided, and global market launch schedules will also be announced.',
+      "Google will announce latest features of Gemini AI and Android Auto innovation technology at CES 2026. The company will reveal detailed features of Android Auto with enhanced in-vehicle AI assistant and autonomous driving support functions, and share collaboration status with automotive manufacturers. Google's mobility AI ecosystem expansion strategy will also be announced.",
     'schedule.item4.title':
-      'Apple to Officially Announce AR Glasses, Opening Mixed Reality Era',
+      'Kia Motors to Unveil Electric Vehicle Platform and Battery Technology at CES 2026',
     'schedule.item4.content':
-      "Apple will officially announce its augmented reality (AR) glasses at its headquarters in Cupertino, California. As Apple's first AR-dedicated device featuring mixed reality (MR) capabilities, it is drawing significant industry attention. The AR glasses are expected to revolutionize daily life and work environments, and detailed information including pricing, launch schedule, and compatible devices will be revealed. Apple's AR ecosystem strategy and developer support programs will also be announced.",
+      "Kia Motors will unveil next-generation electric vehicle platform and battery technology at CES 2026. The company will announce evolved E-GMP platform, fast charging technology, and battery lifespan extension technology, and reveal electric vehicle lineup expansion plans. Kia Motors' electric vehicle ecosystem strategy and global market entry plans will also be announced.",
     'schedule.item5.title':
-      'Tesla to Announce Cybertruck Korea Launch Plan at CES 2026',
+      'Microsoft to Announce AI Copilot and Cloud Service Expansion at CES 2026',
     'schedule.item5.content':
-      'Tesla will announce its plan to enter the Korean market with the Cybertruck at CES 2026. The company will reveal the Korean launch schedule and pricing information for the Cybertruck, an electric pickup truck, and share specifications tailored for Korean road conditions and charging infrastructure construction plans. Tesla will also announce its strategy for expanding electric vehicles in the Korean market and plans for applying autonomous driving technology in Korea.',
-    'notice.updateContent20260105': `<strong>2026-01-05</strong> – We've added new content to the eBook Series board and General Knowledge board. Today's schedule has also been updated.<br /><br />
-📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.35 — Customer-Centric Management — All Strategies Begin with the Customer" has been updated. The common characteristic of successful companies is that they manage with customers at the center. Customer-centric management is not simply about providing good customer service, but a management philosophy that places the starting point of all strategies and decisions with the customer. This is the thirty-fifth volume of the eBook series containing practical insights on <strong>customer value creation, customer experience improvement, utilizing customer feedback, and building long-term relationships with customers</strong>.<br /><br />
-📚 <strong>General Knowledge:</strong> "Flynn Effect" has been registered. The Flynn Effect is the phenomenon where intelligence test scores continue to rise over time, discovered by New Zealand political scientist James Flynn. This phenomenon, where children's generation receives higher average intelligence test scores than their parents' generation, is observed worldwide, with main causes including improved education levels, increased environmental complexity, and improved nutrition. This article covers in detail the concept, characteristics, causes, and significance of the Flynn Effect.<br /><br />
+      "Microsoft will announce latest features of AI Copilot and cloud service expansion plans at CES 2026. The company will reveal detailed features of Copilot with enhanced enterprise AI solutions and personal AI assistant functions, and announce Azure cloud service AI infrastructure expansion plans. Microsoft's AI ecosystem strategy will also be unveiled.",
+    'notice.updateContent20260106': `<strong>2026-01-06</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.36 — Structuring Customer Experience — From Customer Journey to Value Journey" has been updated. In the modern business environment, customer experience (CX) is a key element that creates value at all touchpoints with customers, beyond simply providing services. Systematically structuring the customer journey and transforming it into a value journey is the core of successful customer experience management. This is the thirty-sixth volume of the eBook series containing practical insights on <strong>customer journey mapping, touchpoint optimization, customer value creation strategies, customer experience measurement and improvement</strong>.<br /><br />
+🧠 <strong>One-Line Knowledge/Trivia:</strong> "Social Media Fatigue, The Rise of Digital Minimalism" has been registered. Recently, an increasing number of people are reducing or completely stopping their use of social media. As movements to escape from social media platforms such as Instagram, Facebook, and Twitter spread, digital minimalism is emerging as a new trend. This article covers in detail the causes of social media fatigue, the concept of digital minimalism, and changes in digital lifestyle.<br /><br />
 Please check each board for more detailed content.`,
   },
 };

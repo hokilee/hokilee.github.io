@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 113,
+    title: '소셜 미디어 피로감, 디지털 미니멀리즘의 부상',
+    link: 'one-line-knowledge/trivia-detail-113.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '01-06',
+    views: 0,
+  },
+  {
     id: 112,
     title: '냉각기술의 한계, 데이터센터 전력 소비와 환경 문제',
     link: 'one-line-knowledge/trivia-detail-112.html',
