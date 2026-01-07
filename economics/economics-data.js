@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 101,
+    title: '슈퍼 앱(Super App)의 부상, 하나의 앱이 만드는 경제 생태계',
+    link: 'economics/economy-detail-111.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '01-07',
+    views: 0,
+  },
+  {
     id: 100,
     title: '리셀(Resale) 경제의 부상, 중고거래가 만드는 새로운 시장',
     link: 'economics/economy-detail-110.html',

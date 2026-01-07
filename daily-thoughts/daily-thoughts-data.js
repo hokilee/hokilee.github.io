@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 37,
+    title: 'VOC의 힘 — 고객의 목소리를 데이터로 바꾸는 법',
+    link: 'eBook-data/Hoki Lee eBook series vol37.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-07',
+    views: 0,
+  },
+  {
     id: 36,
     title: '고객 경험의 구조화 — 고객 여정에서 가치 여정으로',
     link: 'eBook-data/Hoki Lee eBook series vol36.pdf',

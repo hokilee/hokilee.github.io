@@ -21,25 +21,28 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'LG전자, CES 2026에서 올레드 TV 신기술 및 스마트홈 솔루션 발표',
+      '퀄컴, CES 2026에서 스냅드래곤 디지털 섀시 및 에이전틱 AI 모빌리티 솔루션 발표',
     'schedule.item1.content':
-      'LG전자는 CES 2026에서 차세대 올레드 TV 기술과 스마트홈 솔루션을 발표합니다. AI 기반 화질 개선 기술과 에너지 효율 향상 기능을 탑재한 신형 올레드 TV의 상세 스펙을 공개하며, 스마트홈 생태계 구축을 위한 IoT 플랫폼 전략을 발표합니다. CES 현장에서 신제품을 직접 체험할 수 있는 기회가 제공되며, 한국 시장 출시 일정도 함께 공개할 예정입니다.',
+      '퀄컴은 CES 2026에서 구글과의 협력을 통해 스냅드래곤 디지털 섀시 솔루션과 구글 자동차용 소프트웨어를 결합한 차세대 AI 기능을 발표합니다. 에이전틱 AI(AI Agent) 기술을 활용한 자율주행 및 모빌리티 서비스를 선보이며, 차량 내 AI 어시스턴트와 연결성 솔루션의 통합 플랫폼을 공개합니다. 주요 자동차 제조사들과의 파트너십 현황과 상용화 일정도 함께 발표할 예정입니다.',
     'schedule.item2.title':
-      '현대자동차, CES 2026에서 수소전기차 및 모빌리티 플랫폼 전략 발표',
+      '현대자동차, 고환율 환경에서 수출 경쟁력 강화 및 미국 시장 공략 전략 발표',
     'schedule.item2.content':
-      '현대자동차는 CES 2026에서 수소전기차 기술과 모빌리티 플랫폼 전략을 발표합니다. 넥소(NEXO) 후속 모델과 수소 충전 인프라 확대 계획을 공개하며, 로보택시와 자율주행 기술의 상용화 로드맵을 제시합니다. 현대자동차의 수소 에너지 생태계 구축 전략과 글로벌 파트너십도 함께 발표할 예정입니다.',
+      '현대자동차는 달러·원 환율이 1400원 후반대에서 고공행진을 이어가는 가운데, 고환율을 단기 호재로 활용한 수출 경쟁력 강화 전략을 발표합니다. 미국 시장에서의 관세 영향 일부 상쇄 방안과 전기차 및 수소전기차 라인업 확대 계획을 공개하며, 글로벌 생산 거점 최적화 전략을 제시합니다. 현대자동차의 수출 목표 달성을 위한 가격 경쟁력 강화 방안도 함께 발표할 예정입니다.',
     'schedule.item3.title':
-      '구글, CES 2026에서 제미나이 AI 및 안드로이드 오토 혁신 발표',
+      '삼성전자, CES 2026에서 AI 반도체 및 스마트홈 생태계 통합 전략 발표',
     'schedule.item3.content':
-      '구글은 CES 2026에서 제미나이 AI의 최신 기능과 안드로이드 오토 혁신 기술을 발표합니다. 차량 내 AI 어시스턴트와 자율주행 지원 기능을 강화한 안드로이드 오토의 상세 기능을 공개하며, 자동차 제조사들과의 협력 현황을 공유합니다. 구글의 모빌리티 AI 생태계 확장 전략도 함께 발표할 예정입니다.',
+      '삼성전자는 CES 2026에서 차세대 AI 반도체 기술과 스마트홈 생태계 통합 전략을 발표합니다. 갤럭시 AI 기능을 강화한 스마트폰과 태블릿 신제품을 공개하며, 스마트홈 IoT 플랫폼과의 연동을 통한 통합 사용자 경험을 선보입니다. 삼성의 AI 반도체 생산 능력 확대 계획과 글로벌 파트너십 현황도 함께 발표할 예정입니다.',
     'schedule.item4.title':
-      '기아자동차, CES 2026에서 전기차 플랫폼 및 배터리 기술 공개',
+      '테슬라, 전기차 충전 인프라 확대 및 자율주행 기술 상용화 로드맵 발표',
     'schedule.item4.content':
-      '기아자동차는 CES 2026에서 차세대 전기차 플랫폼과 배터리 기술을 공개합니다. E-GMP 플랫폼의 발전형과 고속 충전 기술, 배터리 수명 연장 기술을 발표하며, 전기차 라인업 확대 계획을 공개합니다. 기아자동차의 전기차 생태계 구축 전략과 글로벌 시장 진출 계획도 함께 발표할 예정입니다.',
-    'schedule.item5.title':
-      '마이크로소프트, CES 2026에서 AI 코파일럿 및 클라우드 서비스 확대 발표',
+      '테슬라는 전기차 충전 네트워크 확대 계획과 자율주행 기술의 상용화 로드맵을 발표합니다. 슈퍼차저 네트워크의 글로벌 확장과 충전 속도 개선 기술을 공개하며, FSD(Full Self-Driving) 기술의 최신 발전 상황과 상용화 일정을 제시합니다. 테슬라의 차세대 배터리 기술과 전기차 라인업 확대 계획도 함께 발표할 예정입니다.',
+    'schedule.item5.title': '애플, 카플레이 진화 및 모빌리티 AI 전략 발표',
     'schedule.item5.content':
-      '마이크로소프트는 CES 2026에서 AI 코파일럿의 최신 기능과 클라우드 서비스 확대 계획을 발표합니다. 엔터프라이즈 AI 솔루션과 개인용 AI 어시스턴트 기능을 강화한 코파일럿의 상세 기능을 공개하며, Azure 클라우드 서비스의 AI 인프라 확장 계획을 발표합니다. 마이크로소프트의 AI 생태계 전략도 함께 공개할 예정입니다.',
+      '애플은 CES 2026에서 카플레이(CarPlay)의 최신 기능과 모빌리티 AI 전략을 발표합니다. 차량 내 통합 경험을 강화한 차세대 카플레이 인터페이스를 공개하며, 자동차 제조사들과의 협력 현황을 공유합니다. 애플의 전기차 프로젝트와 모빌리티 생태계 확장 전략도 함께 발표할 예정입니다.',
+    'notice.updateContent20260107': `<strong>2026-01-07</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.37 — VOC의 힘 — 고객의 목소리를 데이터로 바꾸는 법」이 업데이트되었습니다. 고객의 목소리(Voice of Customer, VOC)는 기업이 고객의 니즈와 불만을 파악하고 제품 및 서비스를 개선하는 핵심 데이터입니다. VOC를 체계적으로 수집하고 분석하여 데이터로 전환하는 것이 고객 만족도 향상과 비즈니스 성장의 핵심입니다. VOC 수집 방법, 데이터 분석 기법, 인사이트 도출, 개선 액션 수립까지 실무 인사이트를 담은 eBook 시리즈 서른일곱 번째 자료입니다.<br /><br />
+💼 <strong>경제상식:</strong> 「슈퍼 앱(Super App)의 부상, 하나의 앱이 만드는 경제 생태계」가 등록되었습니다. 최근 카카오, 네이버 등 국내 주요 플랫폼 기업들이 하나의 앱 안에 메신저, 쇼핑, 금융, 모빌리티, 결제 등 다양한 서비스를 통합하는 슈퍼 앱(Super App) 전략을 추진하고 있습니다. 중국의 위챗(WeChat), 알리페이(Alipay)를 모델로 한 슈퍼 앱은 사용자에게 편의성을 제공하는 동시에 플랫폼 기업의 시장 지배력을 강화하고 있습니다. 슈퍼 앱의 개념, 성장 배경, 경제적 영향, 그리고 시장 구조 변화를 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260106': `<strong>2026-01-06</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.36 — 고객경험의 구조화 — 고객여정에서 가치여정으로」가 업데이트되었습니다. 현대 비즈니스 환경에서 고객 경험(CX)은 단순한 서비스 제공을 넘어서 고객과의 모든 접점에서 가치를 창출하는 핵심 요소입니다. 고객여정(Customer Journey)을 체계적으로 구조화하고, 이를 가치여정(Value Journey)으로 전환하는 것이 성공적인 고객 경험 관리의 핵심입니다. 고객여정 맵핑, 터치포인트 최적화, 고객 가치 창출 전략, 고객 경험 측정 및 개선 등 실무 인사이트를 담은 eBook 시리즈 서른여섯 번째 자료입니다.<br /><br />
 🧠 <strong>한줄 지식/잡학:</strong> 「소셜 미디어 피로감, 디지털 미니멀리즘의 부상」이 등록되었습니다. 최근 많은 사람들이 소셜 미디어 사용을 줄이거나 완전히 중단하는 현상이 증가하고 있습니다. 인스타그램, 페이스북, 트위터 등 소셜 미디어 플랫폼에서 벗어나려는 움직임이 확산되면서 디지털 미니멀리즘(Digital Minimalism)이 새로운 트렌드로 부상하고 있습니다. 소셜 미디어 피로감의 원인, 디지털 미니멀리즘의 개념, 그리고 디지털 라이프스타일의 변화를 상세히 다룹니다.<br /><br />
@@ -66,25 +69,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'LG Electronics to Announce OLED TV Technology and Smart Home Solutions at CES 2026',
+      'Qualcomm to Announce Snapdragon Digital Chassis and Agentic AI Mobility Solutions at CES 2026',
     'schedule.item1.content':
-      'LG Electronics will announce next-generation OLED TV technology and smart home solutions at CES 2026. The company will reveal detailed specifications of new OLED TVs featuring AI-based picture quality improvement technology and energy efficiency enhancement features, and announce IoT platform strategy for building smart home ecosystem. Opportunities to experience new products directly at CES will be provided, and Korean market launch schedules will also be announced.',
+      'Qualcomm will announce next-generation AI features combining Snapdragon Digital Chassis solution with Google automotive software through collaboration at CES 2026. The company will showcase autonomous driving and mobility services utilizing Agentic AI technology, and unveil integrated platform for in-vehicle AI assistant and connectivity solutions. Partnership status with major automotive manufacturers and commercialization schedules will also be announced.',
     'schedule.item2.title':
-      'Hyundai Motor to Announce Hydrogen Electric Vehicle and Mobility Platform Strategy at CES 2026',
+      'Hyundai Motor Announces Export Competitiveness Enhancement and US Market Strategy Amid High Exchange Rate',
     'schedule.item2.content':
-      "Hyundai Motor will announce hydrogen electric vehicle technology and mobility platform strategy at CES 2026. The company will reveal the successor model to NEXO and hydrogen charging infrastructure expansion plans, and present commercialization roadmap for RoboTaxi and autonomous driving technology. Hyundai Motor's hydrogen energy ecosystem strategy and global partnerships will also be announced.",
+      "Hyundai Motor announces strategy to strengthen export competitiveness utilizing high exchange rate as short-term benefit, as dollar-won exchange rate continues to soar in the 1,400 won range. The company will reveal plans to partially offset tariff impact in US market and expand electric vehicle and hydrogen electric vehicle lineups, and present global production base optimization strategy. Hyundai Motor's price competitiveness enhancement plan to achieve export targets will also be announced.",
     'schedule.item3.title':
-      'Google to Announce Gemini AI and Android Auto Innovation at CES 2026',
+      'Samsung Electronics to Announce AI Semiconductor and Smart Home Ecosystem Integration Strategy at CES 2026',
     'schedule.item3.content':
-      "Google will announce latest features of Gemini AI and Android Auto innovation technology at CES 2026. The company will reveal detailed features of Android Auto with enhanced in-vehicle AI assistant and autonomous driving support functions, and share collaboration status with automotive manufacturers. Google's mobility AI ecosystem expansion strategy will also be announced.",
+      "Samsung Electronics will announce next-generation AI semiconductor technology and smart home ecosystem integration strategy at CES 2026. The company will unveil new smartphones and tablets with enhanced Galaxy AI features, and showcase integrated user experience through connectivity with smart home IoT platform. Samsung's AI semiconductor production capacity expansion plans and global partnership status will also be announced.",
     'schedule.item4.title':
-      'Kia Motors to Unveil Electric Vehicle Platform and Battery Technology at CES 2026',
+      'Tesla Announces EV Charging Infrastructure Expansion and Autonomous Driving Technology Commercialization Roadmap',
     'schedule.item4.content':
-      "Kia Motors will unveil next-generation electric vehicle platform and battery technology at CES 2026. The company will announce evolved E-GMP platform, fast charging technology, and battery lifespan extension technology, and reveal electric vehicle lineup expansion plans. Kia Motors' electric vehicle ecosystem strategy and global market entry plans will also be announced.",
+      "Tesla announces Supercharger network global expansion and autonomous driving technology commercialization roadmap. The company will reveal Supercharger network global expansion and charging speed improvement technology, and present latest developments and commercialization schedule for FSD (Full Self-Driving) technology. Tesla's next-generation battery technology and electric vehicle lineup expansion plans will also be announced.",
     'schedule.item5.title':
-      'Microsoft to Announce AI Copilot and Cloud Service Expansion at CES 2026',
+      'Apple Announces CarPlay Evolution and Mobility AI Strategy',
     'schedule.item5.content':
-      "Microsoft will announce latest features of AI Copilot and cloud service expansion plans at CES 2026. The company will reveal detailed features of Copilot with enhanced enterprise AI solutions and personal AI assistant functions, and announce Azure cloud service AI infrastructure expansion plans. Microsoft's AI ecosystem strategy will also be unveiled.",
+      "Apple will announce latest features of CarPlay and mobility AI strategy at CES 2026. The company will unveil next-generation CarPlay interface with enhanced in-vehicle integrated experience, and share collaboration status with automotive manufacturers. Apple's electric vehicle project and mobility ecosystem expansion strategy will also be announced.",
+    'notice.updateContent20260107': `<strong>2026-01-07</strong> – We've added new content to the eBook Series board and Economics board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.37 — The Power of VOC — Transforming Customer Voice into Data" has been updated. Voice of Customer (VOC) is key data that enables companies to understand customer needs and complaints and improve products and services. Systematically collecting and analyzing VOC to transform it into data is essential for improving customer satisfaction and business growth. This is the thirty-seventh volume of the eBook series containing practical insights on <strong>VOC collection methods, data analysis techniques, insight derivation, and improvement action planning</strong>.<br /><br />
+💼 <strong>Economics:</strong> "The Rise of Super Apps, The Economic Ecosystem Created by a Single App" has been registered. Recently, major Korean platform companies such as Kakao and Naver are pursuing Super App strategies that integrate various services including messaging, shopping, finance, mobility, and payments within a single app. Super Apps modeled after China's WeChat and Alipay provide convenience to users while strengthening platform companies' market dominance. This article covers in detail the concept of Super Apps, growth background, economic impact, and changes in market structure.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260106': `<strong>2026-01-06</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.36 — Structuring Customer Experience — From Customer Journey to Value Journey" has been updated. In the modern business environment, customer experience (CX) is a key element that creates value at all touchpoints with customers, beyond simply providing services. Systematically structuring the customer journey and transforming it into a value journey is the core of successful customer experience management. This is the thirty-sixth volume of the eBook series containing practical insights on <strong>customer journey mapping, touchpoint optimization, customer value creation strategies, customer experience measurement and improvement</strong>.<br /><br />
 🧠 <strong>One-Line Knowledge/Trivia:</strong> "Social Media Fatigue, The Rise of Digital Minimalism" has been registered. Recently, an increasing number of people are reducing or completely stopping their use of social media. As movements to escape from social media platforms such as Instagram, Facebook, and Twitter spread, digital minimalism is emerging as a new trend. This article covers in detail the causes of social media fatigue, the concept of digital minimalism, and changes in digital lifestyle.<br /><br />
