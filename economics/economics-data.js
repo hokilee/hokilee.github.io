@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 112,
+    title: 'CES에서 주목받는 AI와 자동차 융합 기술',
+    link: 'economics/economy-detail-112.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '01-08',
+    views: 0,
+  },
+  {
     id: 101,
     title: '슈퍼 앱(Super App)의 부상, 하나의 앱이 만드는 경제 생태계',
     link: 'economics/economy-detail-111.html',

@@ -21,24 +21,30 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      '퀄컴, CES 2026에서 스냅드래곤 디지털 섀시 및 에이전틱 AI 모빌리티 솔루션 발표',
+      '현대자동차그룹, 휴머노이드 로봇 아틀라스 제조 현장 도입 계획 발표',
     'schedule.item1.content':
-      '퀄컴은 CES 2026에서 구글과의 협력을 통해 스냅드래곤 디지털 섀시 솔루션과 구글 자동차용 소프트웨어를 결합한 차세대 AI 기능을 발표합니다. 에이전틱 AI(AI Agent) 기술을 활용한 자율주행 및 모빌리티 서비스를 선보이며, 차량 내 AI 어시스턴트와 연결성 솔루션의 통합 플랫폼을 공개합니다. 주요 자동차 제조사들과의 파트너십 현황과 상용화 일정도 함께 발표할 예정입니다.',
+      '현대자동차그룹은 CES 2026에서 보스턴다이내믹스의 휴머노이드 로봇 아틀라스를 제조 현장에 도입하는 로드맵을 공개했습니다. 제조업 자동화와 로봇 기술의 상용화를 추진하며, 로봇 구독 서비스도 계획하고 있습니다. 현대자동차그룹은 로봇 기술을 통해 제조 효율성을 향상시키고, 미래 모빌리티 생태계를 확장할 계획입니다.',
     'schedule.item2.title':
-      '현대자동차, 고환율 환경에서 수출 경쟁력 강화 및 미국 시장 공략 전략 발표',
+      '인벤티스·업스테이지, RPA 기반 AI 자동화 솔루션 공동 개발 발표',
     'schedule.item2.content':
-      '현대자동차는 달러·원 환율이 1400원 후반대에서 고공행진을 이어가는 가운데, 고환율을 단기 호재로 활용한 수출 경쟁력 강화 전략을 발표합니다. 미국 시장에서의 관세 영향 일부 상쇄 방안과 전기차 및 수소전기차 라인업 확대 계획을 공개하며, 글로벌 생산 거점 최적화 전략을 제시합니다. 현대자동차의 수출 목표 달성을 위한 가격 경쟁력 강화 방안도 함께 발표할 예정입니다.',
+      'IT 솔루션 기업 인벤티스는 업스테이지와 함께 로봇 프로세스 자동화(RPA) 기반의 인공지능(AI) 자동화 솔루션 분야에서 기술 협력 및 시장 확대를 위한 전략적 업무협약(MOU)을 체결했습니다. 자동차 산업의 디지털 전환과 AI 전환을 지원할 계획이며, RPA와 생성형 AI를 결합한 차세대 자동화 솔루션을 개발합니다.',
     'schedule.item3.title':
-      '삼성전자, CES 2026에서 AI 반도체 및 스마트홈 생태계 통합 전략 발표',
+      '인텔·마이크론, 한국 기술 인재 유치 강화 및 반도체 협력 확대',
     'schedule.item3.content':
-      '삼성전자는 CES 2026에서 차세대 AI 반도체 기술과 스마트홈 생태계 통합 전략을 발표합니다. 갤럭시 AI 기능을 강화한 스마트폰과 태블릿 신제품을 공개하며, 스마트홈 IoT 플랫폼과의 연동을 통한 통합 사용자 경험을 선보입니다. 삼성의 AI 반도체 생산 능력 확대 계획과 글로벌 파트너십 현황도 함께 발표할 예정입니다.',
+      '인공지능 등 첨단 기술 분야에서 글로벌 기업들의 한국 기술 인재 유치 경쟁이 심화되고 있습니다. 인텔과 마이크론 등 미국 기업들이 한국의 반도체, 자동차, 2차전지 분야의 인재를 적극적으로 채용하고 있으며, 한국 기업들과의 협력도 확대하고 있습니다. AI 반도체와 메모리 반도체 분야에서의 기술 협력이 강화될 전망입니다.',
     'schedule.item4.title':
-      '테슬라, 전기차 충전 인프라 확대 및 자율주행 기술 상용화 로드맵 발표',
+      '삼성전자, HBM 생산 확대 및 AI 반도체 시장 공략 강화',
     'schedule.item4.content':
-      '테슬라는 전기차 충전 네트워크 확대 계획과 자율주행 기술의 상용화 로드맵을 발표합니다. 슈퍼차저 네트워크의 글로벌 확장과 충전 속도 개선 기술을 공개하며, FSD(Full Self-Driving) 기술의 최신 발전 상황과 상용화 일정을 제시합니다. 테슬라의 차세대 배터리 기술과 전기차 라인업 확대 계획도 함께 발표할 예정입니다.',
-    'schedule.item5.title': '애플, 카플레이 진화 및 모빌리티 AI 전략 발표',
+      '삼성전자가 AI 서버용 고대역폭 메모리(HBM) 생산을 확대하며 AI 반도체 시장 공략을 강화하고 있습니다. 엔비디아의 AI GPU와 함께 사용되는 HBM3, HBM3E 등 고성능 메모리 수요가 급증하는 가운데, 삼성전자는 생산 능력을 확대하고 수율 개선에 집중하고 있습니다. HBM 시장에서의 경쟁력 강화를 통해 AI 반도체 생태계의 핵심 파트너로 자리매김할 계획입니다.',
+    'schedule.item5.title':
+      '구글, 차량 내 AI 기능 강화 및 안드로이드 오토 통합 확대',
     'schedule.item5.content':
-      '애플은 CES 2026에서 카플레이(CarPlay)의 최신 기능과 모빌리티 AI 전략을 발표합니다. 차량 내 통합 경험을 강화한 차세대 카플레이 인터페이스를 공개하며, 자동차 제조사들과의 협력 현황을 공유합니다. 애플의 전기차 프로젝트와 모빌리티 생태계 확장 전략도 함께 발표할 예정입니다.',
+      '구글이 차량 내 AI 기능을 강화한 안드로이드 오토 플랫폼을 확대하며, 자동차 제조사들과의 협력을 강화하고 있습니다. 대규모 언어 모델(LLM)을 활용한 차량 내 AI 어시스턴트가 운전자의 음성 명령을 더 정확하게 이해하고, 차량 기능을 제어할 수 있게 되었습니다. 구글은 자동차 제조사들과 협력하여 안드로이드 오토를 차량에 통합하며, 차량 내 인포테인먼트 시스템과 자율주행 기능을 연결하는 플랫폼을 구축하고 있습니다.',
+    'notice.updateContent20260108': `<strong>2026-01-08</strong> - eBook Series 게시판, 경제상식 게시판, 그리고 기술트렌드/뉴스 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.38 — 고객 감동의 경영 — 서비스 품질이 브랜드가 되는 순간」이 업데이트되었습니다. 현대 비즈니스 환경에서 서비스 품질은 단순한 고객 만족을 넘어 브랜드의 핵심 가치로 자리잡고 있습니다. 고객 감동을 통한 브랜드 구축은 서비스 품질 관리, 고객 경험 최적화, 그리고 지속적인 개선을 통해 실현됩니다. 서비스 품질 측정, 고객 감동 전략, 브랜드 가치 창출, 서비스 혁신 등 실무 인사이트를 담은 eBook 시리즈 서른여덟 번째 자료입니다.<br /><br />
+💼 <strong>경제상식:</strong> 「CES에서 주목받는 AI와 자동차 융합 기술」이 등록되었습니다. 매년 1월 라스베가스에서 열리는 CES(Consumer Electronics Show)는 전 세계 기술 트렌드의 방향을 제시하는 중요한 행사입니다. 최근 CES에서 가장 큰 화두는 AI(인공지능)와 자동차의 융합 기술입니다. 자동차 제조사와 IT 기업들이 협력하여 자율주행, 스마트 모빌리티, 차량 내 AI 어시스턴트 등 혁신적인 기술을 선보이고 있습니다. 이러한 AI와 자동차의 융합은 단순한 기술 발전을 넘어 새로운 산업 생태계를 만들고, 경제 구조에 큰 변화를 가져오고 있습니다.<br /><br />
+📰 <strong>기술트렌드/뉴스:</strong> 「2026년 1월 1주차 기술 트렌드/뉴스」가 등록되었습니다. 이번 기간 기술 트렌드는 CES 2026이 열리면서 AI와 자동차 융합 기술이 주요 화두로 부상했습니다. 특히 퀄컴의 스냅드래곤 디지털 섀시 솔루션과 에이전틱 AI 모빌리티 기술, 현대자동차그룹의 스마트 모빌리티 플랫폼 발표가 주목받았습니다. IT 분야에서는 생성형 AI의 실무 적용 확대와 엣지 AI 기술의 발전이 두드러졌으며, 반도체 산업에서는 AI 반도체 수요 증가와 자동차용 반도체 시장 성장이 주요 트렌드로 나타났습니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260107': `<strong>2026-01-07</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.37 — VOC의 힘 — 고객의 목소리를 데이터로 바꾸는 법」이 업데이트되었습니다. 고객의 목소리(Voice of Customer, VOC)는 기업이 고객의 니즈와 불만을 파악하고 제품 및 서비스를 개선하는 핵심 데이터입니다. VOC를 체계적으로 수집하고 분석하여 데이터로 전환하는 것이 고객 만족도 향상과 비즈니스 성장의 핵심입니다. VOC 수집 방법, 데이터 분석 기법, 인사이트 도출, 개선 액션 수립까지 실무 인사이트를 담은 eBook 시리즈 서른일곱 번째 자료입니다.<br /><br />
 💼 <strong>경제상식:</strong> 「슈퍼 앱(Super App)의 부상, 하나의 앱이 만드는 경제 생태계」가 등록되었습니다. 최근 카카오, 네이버 등 국내 주요 플랫폼 기업들이 하나의 앱 안에 메신저, 쇼핑, 금융, 모빌리티, 결제 등 다양한 서비스를 통합하는 슈퍼 앱(Super App) 전략을 추진하고 있습니다. 중국의 위챗(WeChat), 알리페이(Alipay)를 모델로 한 슈퍼 앱은 사용자에게 편의성을 제공하는 동시에 플랫폼 기업의 시장 지배력을 강화하고 있습니다. 슈퍼 앱의 개념, 성장 배경, 경제적 영향, 그리고 시장 구조 변화를 상세히 다룹니다.<br /><br />
@@ -69,25 +75,30 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'Qualcomm to Announce Snapdragon Digital Chassis and Agentic AI Mobility Solutions at CES 2026',
+      'Hyundai Motor Group Announces Atlas Humanoid Robot Deployment in Manufacturing',
     'schedule.item1.content':
-      'Qualcomm will announce next-generation AI features combining Snapdragon Digital Chassis solution with Google automotive software through collaboration at CES 2026. The company will showcase autonomous driving and mobility services utilizing Agentic AI technology, and unveil integrated platform for in-vehicle AI assistant and connectivity solutions. Partnership status with major automotive manufacturers and commercialization schedules will also be announced.',
+      'Hyundai Motor Group has unveiled a roadmap to deploy Boston Dynamics Atlas humanoid robots in manufacturing facilities at CES 2026. The company is pursuing manufacturing automation and commercialization of robotics technology, and also planning robot subscription services. Hyundai Motor Group plans to improve manufacturing efficiency through robotics technology and expand its future mobility ecosystem.',
     'schedule.item2.title':
-      'Hyundai Motor Announces Export Competitiveness Enhancement and US Market Strategy Amid High Exchange Rate',
+      'Inventis and Upstage Announce Joint Development of RPA-Based AI Automation Solutions',
     'schedule.item2.content':
-      "Hyundai Motor announces strategy to strengthen export competitiveness utilizing high exchange rate as short-term benefit, as dollar-won exchange rate continues to soar in the 1,400 won range. The company will reveal plans to partially offset tariff impact in US market and expand electric vehicle and hydrogen electric vehicle lineups, and present global production base optimization strategy. Hyundai Motor's price competitiveness enhancement plan to achieve export targets will also be announced.",
+      'IT solutions company Inventis has signed a strategic MOU with Upstage for technical cooperation and market expansion in the field of robot process automation (RPA)-based artificial intelligence (AI) automation solutions. The companies plan to support digital transformation and AI transformation in the automotive industry, and develop next-generation automation solutions combining RPA and generative AI.',
     'schedule.item3.title':
-      'Samsung Electronics to Announce AI Semiconductor and Smart Home Ecosystem Integration Strategy at CES 2026',
+      'Intel and Micron Strengthen Recruitment of Korean Tech Talent and Expand Semiconductor Cooperation',
     'schedule.item3.content':
-      "Samsung Electronics will announce next-generation AI semiconductor technology and smart home ecosystem integration strategy at CES 2026. The company will unveil new smartphones and tablets with enhanced Galaxy AI features, and showcase integrated user experience through connectivity with smart home IoT platform. Samsung's AI semiconductor production capacity expansion plans and global partnership status will also be announced.",
+      'Competition among global companies to recruit Korean tech talent in advanced technology fields such as artificial intelligence is intensifying. US companies such as Intel and Micron are actively recruiting talent from Korea in semiconductors, automotive, and secondary battery sectors, and are also expanding cooperation with Korean companies. Cooperation in AI semiconductors and memory semiconductors is expected to strengthen.',
     'schedule.item4.title':
-      'Tesla Announces EV Charging Infrastructure Expansion and Autonomous Driving Technology Commercialization Roadmap',
+      'Samsung Electronics Expands HBM Production and Strengthens AI Semiconductor Market Strategy',
     'schedule.item4.content':
-      "Tesla announces Supercharger network global expansion and autonomous driving technology commercialization roadmap. The company will reveal Supercharger network global expansion and charging speed improvement technology, and present latest developments and commercialization schedule for FSD (Full Self-Driving) technology. Tesla's next-generation battery technology and electric vehicle lineup expansion plans will also be announced.",
+      'Samsung Electronics is expanding production of high-bandwidth memory (HBM) for AI servers and strengthening its AI semiconductor market strategy. As demand for high-performance memory such as HBM3 and HBM3E used with NVIDIA AI GPUs surges, Samsung Electronics is expanding production capacity and focusing on yield improvement. The company plans to establish itself as a key partner in the AI semiconductor ecosystem by strengthening competitiveness in the HBM market.',
     'schedule.item5.title':
-      'Apple Announces CarPlay Evolution and Mobility AI Strategy',
+      'Google Enhances In-Vehicle AI Features and Expands Android Auto Integration',
     'schedule.item5.content':
-      "Apple will announce latest features of CarPlay and mobility AI strategy at CES 2026. The company will unveil next-generation CarPlay interface with enhanced in-vehicle integrated experience, and share collaboration status with automotive manufacturers. Apple's electric vehicle project and mobility ecosystem expansion strategy will also be announced.",
+      'Google is expanding its Android Auto platform with enhanced in-vehicle AI features and strengthening cooperation with automotive manufacturers. In-vehicle AI assistants utilizing large language models (LLM) can now more accurately understand driver voice commands and control vehicle functions. Google is collaborating with automotive manufacturers to integrate Android Auto into vehicles and build a platform connecting in-vehicle infotainment systems with autonomous driving features.',
+    'notice.updateContent20260108': `<strong>2026-01-08</strong> – We've added new content to the eBook Series board, Economics board, and Tech Trends/News board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.38 — Customer Delight Management — The Moment Service Quality Becomes a Brand" has been updated. In the modern business environment, service quality has become a core brand value beyond simple customer satisfaction. Building a brand through customer delight is realized through service quality management, customer experience optimization, and continuous improvement. This is the thirty-eighth volume of the eBook series containing practical insights on <strong>service quality measurement, customer delight strategies, brand value creation, and service innovation</strong>.<br /><br />
+💼 <strong>Economics:</strong> "AI and Automotive Convergence Technology Gaining Attention at CES" has been registered. CES (Consumer Electronics Show), held annually in Las Vegas in January, is an important event that sets the direction for global technology trends. The biggest topic at recent CES events has been the convergence of AI (Artificial Intelligence) and automotive technology. Automotive manufacturers and IT companies are collaborating to showcase innovative technologies such as autonomous driving, smart mobility, and in-vehicle AI assistants. This convergence of AI and automotive technology is creating new industrial ecosystems and bringing significant changes to economic structures, beyond simple technological advancement.<br /><br />
+📰 <strong>Tech Trends/News:</strong> "2026 January Week 1 Tech Trends/News" has been registered. During this period, AI and automotive convergence technology emerged as a major topic as CES 2026 opened. Particularly notable were Qualcomm's Snapdragon Digital Chassis solution and Agentic AI mobility technology, as well as Hyundai Motor Group's smart mobility platform announcement. In the IT sector, expansion of practical applications of generative AI and development of edge AI technology were prominent, while in the semiconductor industry, increased demand for AI semiconductors and growth in automotive semiconductor markets were major trends.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260107': `<strong>2026-01-07</strong> – We've added new content to the eBook Series board and Economics board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.37 — The Power of VOC — Transforming Customer Voice into Data" has been updated. Voice of Customer (VOC) is key data that enables companies to understand customer needs and complaints and improve products and services. Systematically collecting and analyzing VOC to transform it into data is essential for improving customer satisfaction and business growth. This is the thirty-seventh volume of the eBook series containing practical insights on <strong>VOC collection methods, data analysis techniques, insight derivation, and improvement action planning</strong>.<br /><br />
 💼 <strong>Economics:</strong> "The Rise of Super Apps, The Economic Ecosystem Created by a Single App" has been registered. Recently, major Korean platform companies such as Kakao and Naver are pursuing Super App strategies that integrate various services including messaging, shopping, finance, mobility, and payments within a single app. Super Apps modeled after China's WeChat and Alipay provide convenience to users while strengthening platform companies' market dominance. This article covers in detail the concept of Super Apps, growth background, economic impact, and changes in market structure.<br /><br />

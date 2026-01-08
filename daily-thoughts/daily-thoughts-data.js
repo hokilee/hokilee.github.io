@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 38,
+    title: '고객 감동의 경영 — 서비스 품질이 브랜드가 되는 순간',
+    link: 'eBook-data/Hoki Lee eBook series vol38.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-08',
+    views: 0,
+  },
+  {
     id: 37,
     title: 'VOC의 힘 — 고객의 목소리를 데이터로 바꾸는 법',
     link: 'eBook-data/Hoki Lee eBook series vol37.pdf',
