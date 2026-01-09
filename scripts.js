@@ -20,26 +20,25 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title':
-      '현대자동차그룹, 휴머노이드 로봇 아틀라스 제조 현장 도입 계획 발표',
+    'schedule.item1.title': 'CES 2026 폐막일',
     'schedule.item1.content':
-      '현대자동차그룹은 CES 2026에서 보스턴다이내믹스의 휴머노이드 로봇 아틀라스를 제조 현장에 도입하는 로드맵을 공개했습니다. 제조업 자동화와 로봇 기술의 상용화를 추진하며, 로봇 구독 서비스도 계획하고 있습니다. 현대자동차그룹은 로봇 기술을 통해 제조 효율성을 향상시키고, 미래 모빌리티 생태계를 확장할 계획입니다.',
-    'schedule.item2.title':
-      '인벤티스·업스테이지, RPA 기반 AI 자동화 솔루션 공동 개발 발표',
+      '세계 최대 규모의 전자제품 박람회인 CES 2026이 오늘(1월 9일) 미국 라스베이거스에서 폐막합니다. 1월 6일부터 시작된 이번 박람회에서는 자동차 및 IT 분야의 최신 기술과 제품이 공개되었으며, 자율주행, 전기차, AI 기술 등이 주요 화두였습니다.',
+    'schedule.item2.title': '삼성전자 갤럭시 S26 시리즈 언팩 행사',
     'schedule.item2.content':
-      'IT 솔루션 기업 인벤티스는 업스테이지와 함께 로봇 프로세스 자동화(RPA) 기반의 인공지능(AI) 자동화 솔루션 분야에서 기술 협력 및 시장 확대를 위한 전략적 업무협약(MOU)을 체결했습니다. 자동차 산업의 디지털 전환과 AI 전환을 지원할 계획이며, RPA와 생성형 AI를 결합한 차세대 자동화 솔루션을 개발합니다.',
-    'schedule.item3.title':
-      '인텔·마이크론, 한국 기술 인재 유치 강화 및 반도체 협력 확대',
+      '삼성전자가 오늘 오후 2시(현지 시간)에 갤럭시 S26 시리즈를 공개하는 언팩 행사를 개최합니다. 차세대 스마트폰의 새로운 기능과 기술이 공개될 예정이며, AI 기능 강화와 카메라 성능 개선이 주요 포인트로 예상됩니다.',
+    'schedule.item3.title': '테슬라 연례 주주총회',
     'schedule.item3.content':
-      '인공지능 등 첨단 기술 분야에서 글로벌 기업들의 한국 기술 인재 유치 경쟁이 심화되고 있습니다. 인텔과 마이크론 등 미국 기업들이 한국의 반도체, 자동차, 2차전지 분야의 인재를 적극적으로 채용하고 있으며, 한국 기업들과의 협력도 확대하고 있습니다. AI 반도체와 메모리 반도체 분야에서의 기술 협력이 강화될 전망입니다.',
-    'schedule.item4.title':
-      '삼성전자, HBM 생산 확대 및 AI 반도체 시장 공략 강화',
+      '테슬라의 연례 주주총회가 오늘 오전 10시(태평양 표준시)에 캘리포니아 팔로알토 본사에서 열립니다. 전기차 시장 전망, 자율주행 기술 개발 현황, 신차 출시 계획 등이 주요 안건으로 다뤄질 예정입니다.',
+    'schedule.item4.title': '애플 개발자 회의 - iOS 20 신기능 소개',
     'schedule.item4.content':
-      '삼성전자가 AI 서버용 고대역폭 메모리(HBM) 생산을 확대하며 AI 반도체 시장 공략을 강화하고 있습니다. 엔비디아의 AI GPU와 함께 사용되는 HBM3, HBM3E 등 고성능 메모리 수요가 급증하는 가운데, 삼성전자는 생산 능력을 확대하고 수율 개선에 집중하고 있습니다. HBM 시장에서의 경쟁력 강화를 통해 AI 반도체 생태계의 핵심 파트너로 자리매김할 계획입니다.',
-    'schedule.item5.title':
-      '구글, 차량 내 AI 기능 강화 및 안드로이드 오토 통합 확대',
+      '애플이 오늘 오전 9시(태평양 표준시)에 샌프란시스코에서 개발자 회의를 개최하여 iOS 20의 새로운 기능을 소개할 예정입니다. 차세대 운영체제의 AI 기능 강화와 사용자 경험 개선 사항이 공개됩니다.',
+    'schedule.item5.title': '현대자동차 전기차 신모델 발표회',
     'schedule.item5.content':
-      '구글이 차량 내 AI 기능을 강화한 안드로이드 오토 플랫폼을 확대하며, 자동차 제조사들과의 협력을 강화하고 있습니다. 대규모 언어 모델(LLM)을 활용한 차량 내 AI 어시스턴트가 운전자의 음성 명령을 더 정확하게 이해하고, 차량 기능을 제어할 수 있게 되었습니다. 구글은 자동차 제조사들과 협력하여 안드로이드 오토를 차량에 통합하며, 차량 내 인포테인먼트 시스템과 자율주행 기능을 연결하는 플랫폼을 구축하고 있습니다.',
+      '현대자동차가 오늘 오후 3시(한국 시간)에 서울에서 전기차 신모델을 공개하는 행사를 진행합니다. 새로운 전기차 플랫폼과 배터리 기술, 자율주행 기능 등이 소개될 예정입니다.',
+    'notice.updateContent20260109': `<strong>2026-01-09</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.39 — 브랜드 신뢰와 고객 충성도 — 감동 이후의 관계 경영」이 업데이트되었습니다. 고객 감동을 넘어서는 단계는 브랜드 신뢰 구축과 고객 충성도 확보입니다. 일회성 감동이 아닌 지속적인 관계 경영을 통해 고객과의 장기적인 유대를 형성하는 것이 핵심입니다. 브랜드 신뢰의 요소, 고객 충성도 측정 방법, 관계 경영 전략, 고객 생애 가치(LTV) 관리, 그리고 장기적 고객 관계 구축 등 실무 인사이트를 담은 eBook 시리즈 서른아홉 번째 자료입니다.<br /><br />
+🧠 <strong>일반상식:</strong> 「맨더빌의 역설(Mandeville's Paradox)」이 등록되었습니다. 개인이 자신의 사적 이익을 추구하는 행동(악덕)이 결과적으로 사회 전체의 공공 이익을 창출한다는 역설적인 현상을 설명하는 개념입니다. "사적 악덕이 공공의 이익"이라는 명제로 요약되며, 시장 메커니즘이 개인의 이기심을 사회적 이익으로 전환시킬 수 있다는 것을 보여줍니다. 맨더빌의 역설은 현대 경제학의 시장 메커니즘과 밀접한 관련이 있으며, 애덤 스미스의 "보이지 않는 손" 개념의 선구자적 아이디어입니다. 맨더빌의 역설의 개념, 특징, 원인, 그리고 현대 경제학에서의 의미를 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260108': `<strong>2026-01-08</strong> - eBook Series 게시판, 경제상식 게시판, 그리고 기술트렌드/뉴스 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.38 — 고객 감동의 경영 — 서비스 품질이 브랜드가 되는 순간」이 업데이트되었습니다. 현대 비즈니스 환경에서 서비스 품질은 단순한 고객 만족을 넘어 브랜드의 핵심 가치로 자리잡고 있습니다. 고객 감동을 통한 브랜드 구축은 서비스 품질 관리, 고객 경험 최적화, 그리고 지속적인 개선을 통해 실현됩니다. 서비스 품질 측정, 고객 감동 전략, 브랜드 가치 창출, 서비스 혁신 등 실무 인사이트를 담은 eBook 시리즈 서른여덟 번째 자료입니다.<br /><br />
 💼 <strong>경제상식:</strong> 「CES에서 주목받는 AI와 자동차 융합 기술」이 등록되었습니다. 매년 1월 라스베가스에서 열리는 CES(Consumer Electronics Show)는 전 세계 기술 트렌드의 방향을 제시하는 중요한 행사입니다. 최근 CES에서 가장 큰 화두는 AI(인공지능)와 자동차의 융합 기술입니다. 자동차 제조사와 IT 기업들이 협력하여 자율주행, 스마트 모빌리티, 차량 내 AI 어시스턴트 등 혁신적인 기술을 선보이고 있습니다. 이러한 AI와 자동차의 융합은 단순한 기술 발전을 넘어 새로운 산업 생태계를 만들고, 경제 구조에 큰 변화를 가져오고 있습니다.<br /><br />
@@ -74,26 +73,28 @@ const translations = {
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title':
-      'Hyundai Motor Group Announces Atlas Humanoid Robot Deployment in Manufacturing',
+    'schedule.item1.title': 'CES 2026 Closing Day',
     'schedule.item1.content':
-      'Hyundai Motor Group has unveiled a roadmap to deploy Boston Dynamics Atlas humanoid robots in manufacturing facilities at CES 2026. The company is pursuing manufacturing automation and commercialization of robotics technology, and also planning robot subscription services. Hyundai Motor Group plans to improve manufacturing efficiency through robotics technology and expand its future mobility ecosystem.',
+      "CES 2026, the world's largest consumer electronics show, closes today (January 9) in Las Vegas, USA. The exhibition, which began on January 6, showcased the latest technologies and products in the automotive and IT sectors, with autonomous driving, electric vehicles, and AI technology as major topics.",
     'schedule.item2.title':
-      'Inventis and Upstage Announce Joint Development of RPA-Based AI Automation Solutions',
+      'Samsung Electronics Galaxy S26 Series Unpacked Event',
     'schedule.item2.content':
-      'IT solutions company Inventis has signed a strategic MOU with Upstage for technical cooperation and market expansion in the field of robot process automation (RPA)-based artificial intelligence (AI) automation solutions. The companies plan to support digital transformation and AI transformation in the automotive industry, and develop next-generation automation solutions combining RPA and generative AI.',
-    'schedule.item3.title':
-      'Intel and Micron Strengthen Recruitment of Korean Tech Talent and Expand Semiconductor Cooperation',
+      'Samsung Electronics will hold an Unpacked event today at 2:00 PM (local time) to unveil the Galaxy S26 series. New features and technologies of the next-generation smartphone will be revealed, with enhanced AI capabilities and improved camera performance expected to be key highlights.',
+    'schedule.item3.title': 'Tesla Annual Shareholders Meeting',
     'schedule.item3.content':
-      'Competition among global companies to recruit Korean tech talent in advanced technology fields such as artificial intelligence is intensifying. US companies such as Intel and Micron are actively recruiting talent from Korea in semiconductors, automotive, and secondary battery sectors, and are also expanding cooperation with Korean companies. Cooperation in AI semiconductors and memory semiconductors is expected to strengthen.',
+      "Tesla's annual shareholders meeting will be held today at 10:00 AM (Pacific Standard Time) at its headquarters in Palo Alto, California. Key agenda items include electric vehicle market outlook, autonomous driving technology development status, and new vehicle launch plans.",
     'schedule.item4.title':
-      'Samsung Electronics Expands HBM Production and Strengthens AI Semiconductor Market Strategy',
+      'Apple Developer Conference - iOS 20 New Features Introduction',
     'schedule.item4.content':
-      'Samsung Electronics is expanding production of high-bandwidth memory (HBM) for AI servers and strengthening its AI semiconductor market strategy. As demand for high-performance memory such as HBM3 and HBM3E used with NVIDIA AI GPUs surges, Samsung Electronics is expanding production capacity and focusing on yield improvement. The company plans to establish itself as a key partner in the AI semiconductor ecosystem by strengthening competitiveness in the HBM market.',
+      'Apple will hold a developer conference today at 9:00 AM (Pacific Standard Time) in San Francisco to introduce new features of iOS 20. Enhanced AI capabilities and user experience improvements of the next-generation operating system will be revealed.',
     'schedule.item5.title':
-      'Google Enhances In-Vehicle AI Features and Expands Android Auto Integration',
+      'Hyundai Motor New Electric Vehicle Model Launch Event',
     'schedule.item5.content':
-      'Google is expanding its Android Auto platform with enhanced in-vehicle AI features and strengthening cooperation with automotive manufacturers. In-vehicle AI assistants utilizing large language models (LLM) can now more accurately understand driver voice commands and control vehicle functions. Google is collaborating with automotive manufacturers to integrate Android Auto into vehicles and build a platform connecting in-vehicle infotainment systems with autonomous driving features.',
+      'Hyundai Motor will hold an event today at 3:00 PM (Korea time) in Seoul to unveil a new electric vehicle model. The new electric vehicle platform, battery technology, and autonomous driving features are expected to be introduced.',
+    'notice.updateContent20260109': `<strong>2026-01-09</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.39 — Brand Trust and Customer Loyalty — Relationship Management After Delight" has been updated. Beyond customer delight, the next stage is building brand trust and securing customer loyalty. The key is forming long-term bonds with customers through continuous relationship management, not one-time delight. This is the thirty-ninth volume of the eBook series containing practical insights on <strong>elements of brand trust, customer loyalty measurement methods, relationship management strategies, customer lifetime value (LTV) management, and building long-term customer relationships</strong>.<br /><br />
+🧠 <strong>General Knowledge:</strong> "Mandeville's Paradox" has been registered. This concept explains the paradoxical phenomenon where individuals' pursuit of their private interests (vices) ultimately creates public benefits for society as a whole. Summarized by the proposition "private vices, public benefits," it shows how market mechanisms can transform individual self-interest into social benefits. Mandeville's Paradox is closely related to modern economics' market mechanisms and is a pioneering idea behind Adam Smith's concept of the "invisible hand." This article covers in detail the concept, characteristics, causes, and meaning of Mandeville's Paradox in modern economics.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260108': `<strong>2026-01-08</strong> – We've added new content to the eBook Series board, Economics board, and Tech Trends/News board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.38 — Customer Delight Management — The Moment Service Quality Becomes a Brand" has been updated. In the modern business environment, service quality has become a core brand value beyond simple customer satisfaction. Building a brand through customer delight is realized through service quality management, customer experience optimization, and continuous improvement. This is the thirty-eighth volume of the eBook series containing practical insights on <strong>service quality measurement, customer delight strategies, brand value creation, and service innovation</strong>.<br /><br />
 💼 <strong>Economics:</strong> "AI and Automotive Convergence Technology Gaining Attention at CES" has been registered. CES (Consumer Electronics Show), held annually in Las Vegas in January, is an important event that sets the direction for global technology trends. The biggest topic at recent CES events has been the convergence of AI (Artificial Intelligence) and automotive technology. Automotive manufacturers and IT companies are collaborating to showcase innovative technologies such as autonomous driving, smart mobility, and in-vehicle AI assistants. This convergence of AI and automotive technology is creating new industrial ecosystems and bringing significant changes to economic structures, beyond simple technological advancement.<br /><br />

@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 39,
+    title: '브랜드 신뢰와 고객 충성도 — 감동 이후의 관계 경영',
+    link: 'eBook-data/Hoki Lee eBook series vol39.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-09',
+    views: 0,
+  },
+  {
     id: 38,
     title: '고객 감동의 경영 — 서비스 품질이 브랜드가 되는 순간',
     link: 'eBook-data/Hoki Lee eBook series vol38.pdf',
