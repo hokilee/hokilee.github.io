@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 40,
+    title: '브랜드 아이덴티티의 구조 — 조직의 철학을 고객의 언어로 바꾸는 법',
+    link: 'eBook-data/Hoki Lee eBook series vol40.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-12',
+    views: 0,
+  },
+  {
     id: 39,
     title: '브랜드 신뢰와 고객 충성도 — 감동 이후의 관계 경영',
     link: 'eBook-data/Hoki Lee eBook series vol39.pdf',
