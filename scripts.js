@@ -20,25 +20,29 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': 'BMW 신형 전기차 기술 세미나',
+    'schedule.item1.title': '현대자동차 전기차 신모델 발표회',
     'schedule.item1.content':
-      'BMW가 오늘 오전 10시(한국 시간)에 서울 남대문 본사에서 신형 전기차 기술 세미나를 개최합니다. 차세대 배터리 기술, 고속 충전 시스템, 자율주행 기능 등이 소개될 예정이며, 주요 딜러와 파트너사가 참석합니다.',
-    'schedule.item2.title': '구글 AI 개발자 워크샵',
+      '현대자동차가 오늘 오전 10시(한국 시간)에 서울 코엑스 컨벤션 센터에서 새로운 전기차 모델 발표회를 개최합니다. 차세대 전기차 플랫폼과 배터리 기술, 자율주행 기능 등이 공개될 예정이며, 주요 딜러와 파트너사가 참석합니다.',
+    'schedule.item2.title': '삼성전자 AI 기술 컨퍼런스',
     'schedule.item2.content':
-      '구글이 오늘 오후 2시(태평양 표준시)에 실리콘밸리 본사에서 AI 개발자 워크샵을 개최합니다. 생성형 AI 모델의 최신 기능과 API 활용 방법, 실무 적용 사례 등이 다뤄질 예정입니다.',
-    'schedule.item3.title': '기아자동차 전기차 충전 인프라 포럼',
+      '삼성전자가 오늘 오후 2시(한국 시간)에 서울 서초사옥에서 AI 기술 컨퍼런스를 개최합니다. 생성형 AI의 최신 동향과 발전 방향, 반도체 기술과의 융합, 실무 적용 사례 등이 논의될 예정입니다.',
+    'schedule.item3.title': '애플 신제품 발표 이벤트',
     'schedule.item3.content':
-      '기아자동차가 오늘 오후 1시(한국 시간)에 서울에서 전기차 충전 인프라 확대를 위한 포럼을 개최합니다. 초고속 충전소 네트워크 구축 계획과 충전 표준화 방안이 논의됩니다.',
-    'schedule.item4.title': '마이크로소프트 클라우드 기술 컨퍼런스',
+      '애플이 오늘 오전 9시(태평양 표준시)에 미국 캘리포니아 쿠퍼티노 본사에서 새로운 제품 라인업을 소개하는 발표 이벤트를 개최합니다. AI 기능이 강화된 신제품과 소프트웨어 업데이트가 공개될 예정입니다.',
+    'schedule.item4.title': '테슬라 자율주행 기술 세미나',
     'schedule.item4.content':
-      '마이크로소프트가 오늘 오전 9시(태평양 표준시)에 시애틀 본사에서 클라우드 기술 컨퍼런스를 개최합니다. Azure AI 서비스 업데이트와 엔터프라이즈 클라우드 솔루션의 새로운 기능이 공개됩니다.',
-    'schedule.item5.title': 'LG전자 스마트홈 솔루션 발표회',
+      '테슬라가 오늘 오후 1시(태평양 표준시)에 캘리포니아 팰로알토 본사에서 자율주행 기술 세미나를 개최합니다. FSD(Full Self-Driving) 기술의 최신 업데이트와 로봇택시 서비스 계획이 발표될 예정입니다.',
+    'schedule.item5.title': '네이버 클라우드 플랫폼 컨퍼런스',
     'schedule.item5.content':
-      'LG전자가 오늘 오후 3시(한국 시간)에 서울 잠실에서 스마트홈 솔루션 신제품 발표회를 개최합니다. AI 기반 가전제품과 홈 IoT 플랫폼의 통합 솔루션이 공개될 예정입니다.',
+      '네이버가 오늘 오후 3시(한국 시간)에 서울 판교 본사에서 클라우드 플랫폼 컨퍼런스를 개최합니다. AI 기반 클라우드 서비스와 엔터프라이즈 솔루션의 새로운 기능, 그리고 개발자 도구 업데이트가 공개됩니다.',
+    'notice.updateContent20260114': `<strong>2026-01-14</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.41 — 브랜드 경험 관리(BX) — 고객이 기억하는 순간의 설계」가 업데이트되었습니다. 브랜드 경험 관리(Brand Experience, BX)는 고객이 브랜드와 상호작용하는 모든 순간을 설계하고 관리하는 전략입니다. 단순한 제품이나 서비스를 넘어서 고객이 기억하고 공유하고 싶어하는 경험을 만드는 것이 성공적인 브랜드 구축의 핵심입니다. 브랜드 경험의 설계 원칙, 고객 기억에 남는 순간의 창조, 감각적 경험과 감정적 연결, 브랜드 경험 측정 방법, 그리고 지속 가능한 브랜드 경험 관리 등 실무 인사이트를 담은 eBook 시리즈 마흔한 번째 자료입니다.<br /><br />
+💼 <strong>경제상식:</strong> 「중앙은행 디지털 화폐(CBDC)의 도입과 경제적 영향」이 등록되었습니다. 최근 전 세계 중앙은행들이 중앙은행 디지털 화폐(Central Bank Digital Currency, CBDC) 도입을 검토하고 있습니다. 한국은행을 비롯한 주요 중앙은행들이 CBDC 연구와 파일럿 테스트를 진행하고 있으며, 일부 국가에서는 이미 상용화 단계에 접어들었습니다. CBDC는 현금과 전자화폐의 장점을 결합한 새로운 형태의 화폐로, 통화정책의 효율성을 높이고, 금융 포용성을 강화하며, 결제 시스템을 혁신할 수 있는 잠재력을 가지고 있습니다. CBDC의 개념, 도입 배경, 경제적 영향, 그리고 미래 전망을 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260112': `<strong>2026-01-12</strong> - eBook Series 게시판, 한줄 지식/잡학 게시판, 그리고 오늘의 일정(자동차/IT)에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.40 — 브랜드 아이덴티티의 구조 — 조직의 철학을 고객의 언어로 바꾸는 법」이 업데이트되었습니다. 브랜드 아이덴티티는 단순한 로고나 디자인이 아니라 조직의 철학과 가치를 고객이 이해할 수 있는 언어로 전달하는 체계입니다. 조직 내부의 철학과 비전을 고객의 관점에서 재구성하고, 일관된 메시지로 전달하는 것이 성공적인 브랜드 아이덴티티 구축의 핵심입니다. 브랜드 아이덴티티의 구조, 조직 철학의 고객 언어 전환, 브랜드 메시징 전략, 아이덴티티 일관성 유지, 그리고 브랜드 스토리텔링 등 실무 인사이트를 담은 eBook 시리즈 마흔 번째 자료입니다.<br /><br />
 🧠 <strong>한줄 지식/잡학:</strong> 「AI 생성 콘텐츠의 저작권 딜레마 — 창작자와 AI의 경계」가 등록되었습니다. 최근 ChatGPT, Midjourney, DALL-E 등 인공지능 도구를 활용한 콘텐츠 생성이 급속히 확산되면서 저작권 문제가 새로운 화두로 떠오르고 있습니다. AI가 생성한 작품의 저작권은 누구에게 귀속되는가? AI 학습에 사용된 기존 작품들의 저작권은 어떻게 보호되는가? 이러한 질문들이 법률, 기술, 창작자 커뮤니티를 중심으로 뜨거운 논쟁을 불러일으키고 있습니다. AI 생성 콘텐츠의 저작권 귀속 문제, AI 학습 데이터와 저작권 침해, 상업적 이용과 수익 분배, 각국의 법적 대응, 그리고 창작자와 AI의 공존 방안을 상세히 다룹니다.<br /><br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> 오늘(1월 12일) 자동차 및 IT 분야의 주요 일정이 업데이트되었습니다. BMW 신형 전기차 기술 세미나(오전 10시, 서울 남대문 본사), 구글 AI 개발자 워크샵(오후 2시, 실리콘밸리 본사), 기아자동차 전기차 충전 인프라 포럼(오후 1시, 서울), 마이크로소프트 클라우드 기술 컨퍼런스(오전 9시, 시애틀 본사), LG전자 스마트홈 솔루션 발표회(오후 3시, 서울 잠실) 등이 예정되어 있습니다.<br /><br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> 오늘(1월 14일) 자동차 및 IT 분야의 주요 일정이 업데이트되었습니다. 현대자동차 전기차 신모델 발표회(오전 10시, 서울 코엑스), 삼성전자 AI 기술 컨퍼런스(오후 2시, 서울 서초사옥), 애플 신제품 발표 이벤트(오전 9시, 쿠퍼티노 본사), 테슬라 자율주행 기술 세미나(오후 1시, 팰로알토 본사), 네이버 클라우드 플랫폼 컨퍼런스(오후 3시, 서울 판교) 등이 예정되어 있습니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260109': `<strong>2026-01-09</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.39 — 브랜드 신뢰와 고객 충성도 — 감동 이후의 관계 경영」이 업데이트되었습니다. 고객 감동을 넘어서는 단계는 브랜드 신뢰 구축과 고객 충성도 확보입니다. 일회성 감동이 아닌 지속적인 관계 경영을 통해 고객과의 장기적인 유대를 형성하는 것이 핵심입니다. 브랜드 신뢰의 요소, 고객 충성도 측정 방법, 관계 경영 전략, 고객 생애 가치(LTV) 관리, 그리고 장기적 고객 관계 구축 등 실무 인사이트를 담은 eBook 시리즈 서른아홉 번째 자료입니다.<br /><br />
@@ -78,26 +82,30 @@ const translations = {
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title': 'BMW New Electric Vehicle Technology Seminar',
+    'schedule.item1.title':
+      'Hyundai Motor Company Electric Vehicle New Model Launch Event',
     'schedule.item1.content':
-      'BMW will hold a new electric vehicle technology seminar today at 10:00 AM (Korea time) at its headquarters in Namdaemun, Seoul. Next-generation battery technology, fast-charging systems, and autonomous driving features will be introduced, with major dealers and partners in attendance.',
-    'schedule.item2.title': 'Google AI Developer Workshop',
+      'Hyundai Motor Company will hold a new electric vehicle model launch event today at 10:00 AM (Korea time) at COEX Convention Center in Seoul. Next-generation electric vehicle platforms, battery technology, and autonomous driving features will be unveiled, with major dealers and partners in attendance.',
+    'schedule.item2.title': 'Samsung Electronics AI Technology Conference',
     'schedule.item2.content':
-      'Google will hold an AI developer workshop today at 2:00 PM (Pacific Standard Time) at its headquarters in Silicon Valley. The latest features of generative AI models, API usage methods, and practical application cases will be covered.',
-    'schedule.item3.title':
-      'Kia Motors Electric Vehicle Charging Infrastructure Forum',
+      'Samsung Electronics will hold an AI technology conference today at 2:00 PM (Korea time) at its Seocho headquarters in Seoul. The latest trends and developments in generative AI, integration with semiconductor technology, and practical application cases will be discussed.',
+    'schedule.item3.title': 'Apple New Product Launch Event',
     'schedule.item3.content':
-      'Kia Motors will hold a forum today at 1:00 PM (Korea time) in Seoul to expand electric vehicle charging infrastructure. Plans for building ultra-fast charging station networks and charging standardization measures will be discussed.',
-    'schedule.item4.title': 'Microsoft Cloud Technology Conference',
+      'Apple will hold a new product launch event today at 9:00 AM (Pacific Standard Time) at its headquarters in Cupertino, California, USA. New product lineups with enhanced AI features and software updates will be unveiled.',
+    'schedule.item4.title': 'Tesla Autonomous Driving Technology Seminar',
     'schedule.item4.content':
-      'Microsoft will hold a cloud technology conference today at 9:00 AM (Pacific Standard Time) at its headquarters in Seattle. Azure AI service updates and new features of enterprise cloud solutions will be revealed.',
-    'schedule.item5.title': 'LG Electronics Smart Home Solution Launch Event',
+      'Tesla will hold an autonomous driving technology seminar today at 1:00 PM (Pacific Standard Time) at its headquarters in Palo Alto, California. The latest updates on FSD (Full Self-Driving) technology and robotaxi service plans will be announced.',
+    'schedule.item5.title': 'Naver Cloud Platform Conference',
     'schedule.item5.content':
-      'LG Electronics will hold a new product launch event for smart home solutions today at 3:00 PM (Korea time) in Jamsil, Seoul. Integrated solutions for AI-based home appliances and home IoT platforms will be unveiled.',
+      'Naver will hold a cloud platform conference today at 3:00 PM (Korea time) at its headquarters in Pangyo, Seoul. New features of AI-based cloud services and enterprise solutions, as well as developer tool updates, will be unveiled.',
+    'notice.updateContent20260114': `<strong>2026-01-14</strong> – We've added new content to the eBook Series board and Economics Knowledge board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.41 — Brand Experience Management (BX) — Designing Moments Customers Remember" has been updated. Brand Experience Management (BX) is a strategy for designing and managing every moment of customer interaction with a brand. Beyond simply products or services, creating experiences that customers want to remember and share is the key to successful brand building. This is the forty-first volume of the eBook series containing practical insights on <strong>brand experience design principles, creating memorable moments for customers, sensory experiences and emotional connections, brand experience measurement methods, and sustainable brand experience management</strong>.<br /><br />
+💼 <strong>Economics Knowledge:</strong> "The Introduction of Central Bank Digital Currency (CBDC) and Its Economic Impact" has been registered. Recently, central banks around the world have been reviewing the introduction of Central Bank Digital Currency (CBDC). Major central banks, including the Bank of Korea, are conducting CBDC research and pilot tests, and some countries have already entered the commercialization stage. CBDC is a new form of currency that combines the advantages of cash and electronic money, with the potential to enhance the efficiency of monetary policy, strengthen financial inclusion, and revolutionize payment systems. This article covers in detail <strong>the concept of CBDC, introduction background, economic impact, and future prospects</strong>.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260112': `<strong>2026-01-12</strong> – We've added new content to the eBook Series board, One-Line Knowledge/Trivia board, and Today's Schedule (Automotive/IT).<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.40 — The Structure of Brand Identity — Transforming Organizational Philosophy into Customer Language" has been updated. Brand identity is not simply a logo or design, but a system that translates an organization's philosophy and values into language that customers can understand. The key to building a successful brand identity is reconstructing internal organizational philosophy and vision from the customer's perspective and communicating them through consistent messaging. This is the fortieth volume of the eBook series containing practical insights on <strong>the structure of brand identity, transforming organizational philosophy into customer language, brand messaging strategies, maintaining identity consistency, and brand storytelling</strong>.<br /><br />
 🧠 <strong>One-Line Knowledge/Trivia:</strong> "The Copyright Dilemma of AI-Generated Content — The Boundary Between Creators and AI" has been registered. Recently, as content generation using AI tools such as ChatGPT, Midjourney, and DALL-E has rapidly spread, copyright issues have emerged as a new topic of discussion. Who owns the copyright of works created by AI? How are the copyrights of existing works used for AI training protected? These questions are sparking heated debates in legal, technical, and creator communities. This article covers in detail <strong>copyright attribution issues of AI-generated content, AI training data and copyright infringement, commercial use and profit distribution, legal responses by various countries, and coexistence strategies between creators and AI</strong>.<br /><br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> Today's (January 12) major schedules in the automotive and IT sectors have been updated. Scheduled events include BMW New Electric Vehicle Technology Seminar (10:00 AM, Namdaemun headquarters, Seoul), Google AI Developer Workshop (2:00 PM, Silicon Valley headquarters), Kia Motors Electric Vehicle Charging Infrastructure Forum (1:00 PM, Seoul), Microsoft Cloud Technology Conference (9:00 AM, Seattle headquarters), and LG Electronics Smart Home Solution Launch Event (3:00 PM, Jamsil, Seoul).<br /><br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> Today's (January 14) major schedules in the automotive and IT sectors have been updated. Scheduled events include Hyundai Motor Company Electric Vehicle New Model Launch Event (10:00 AM, COEX, Seoul), Samsung Electronics AI Technology Conference (2:00 PM, Seocho headquarters, Seoul), Apple New Product Launch Event (9:00 AM, Cupertino headquarters), Tesla Autonomous Driving Technology Seminar (1:00 PM, Palo Alto headquarters), and Naver Cloud Platform Conference (3:00 PM, Pangyo, Seoul).<br /><br />
 Please check each board for more detailed content.`,
     'notice.updateContent20260109': `<strong>2026-01-09</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.39 — Brand Trust and Customer Loyalty — Relationship Management After Delight" has been updated. Beyond customer delight, the next stage is building brand trust and securing customer loyalty. The key is forming long-term bonds with customers through continuous relationship management, not one-time delight. This is the thirty-ninth volume of the eBook series containing practical insights on <strong>elements of brand trust, customer loyalty measurement methods, relationship management strategies, customer lifetime value (LTV) management, and building long-term customer relationships</strong>.<br /><br />

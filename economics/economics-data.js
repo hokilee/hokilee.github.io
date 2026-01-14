@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 113,
+    title: '중앙은행 디지털 화폐(CBDC) 도입, 현금 없는 사회가 오는가?',
+    link: 'economics/economy-detail-113.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '01-14',
+    views: 0,
+  },
+  {
     id: 112,
     title: 'CES에서 주목받는 AI와 자동차 융합 기술',
     link: 'economics/economy-detail-112.html',

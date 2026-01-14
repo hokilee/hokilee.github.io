@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 41,
+    title: '브랜드 경험 관리(BX) — 고객이 기억하는 순간의 설계',
+    link: 'eBook-data/Hoki Lee eBook series vol41.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-14',
+    views: 0,
+  },
+  {
     id: 40,
     title: '브랜드 아이덴티티의 구조 — 조직의 철학을 고객의 언어로 바꾸는 법',
     link: 'eBook-data/Hoki Lee eBook series vol40.pdf',
