@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 42,
+    title: '브랜드 리더십 — 조직이 아닌 사람이 브랜드가 되는 시대',
+    link: 'eBook-data/Hoki Lee eBook series vol42.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-16',
+    views: 0,
+  },
+  {
     id: 41,
     title: '브랜드 경험 관리(BX) — 고객이 기억하는 순간의 설계',
     link: 'eBook-data/Hoki Lee eBook series vol41.pdf',

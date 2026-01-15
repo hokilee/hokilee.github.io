@@ -20,21 +20,25 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': '현대자동차 전기차 신모델 발표회',
+    'schedule.item1.title': 'TiECon Mangaluru 2026 스타트업 컨퍼런스',
     'schedule.item1.content':
-      '현대자동차가 오늘 오전 10시(한국 시간)에 서울 코엑스 컨벤션 센터에서 새로운 전기차 모델 발표회를 개최합니다. 차세대 전기차 플랫폼과 배터리 기술, 자율주행 기능 등이 공개될 예정이며, 주요 딜러와 파트너사가 참석합니다.',
-    'schedule.item2.title': '삼성전자 AI 기술 컨퍼런스',
+      'TiECon Mangaluru 2026이 오늘 오전 10시(인도 표준시, 한국 시간 오후 1시 30분)에 인도 만갈루루 Dr. TMA Pai 국제 컨벤션 센터에서 개최됩니다. 이노베이션과 투자에 초점을 둔 스타트업 컨퍼런스로, 만갈루루-우두피-마니팔 지역의 고성장 스타트업 30여 개가 발표하며, 투자자와 정책 입안자들이 참석합니다.',
+    'schedule.item2.title': '2026 Dubai 24 Hour 모터스포츠 대회',
     'schedule.item2.content':
-      '삼성전자가 오늘 오후 2시(한국 시간)에 서울 서초사옥에서 AI 기술 컨퍼런스를 개최합니다. 생성형 AI의 최신 동향과 발전 방향, 반도체 기술과의 융합, 실무 적용 사례 등이 논의될 예정입니다.',
-    'schedule.item3.title': '애플 신제품 발표 이벤트',
+      '2026 Dubai 24 Hour 모터스포츠 대회가 오늘 오전 10시 30분(두바이 시간, 한국 시간 오후 3시 30분)에 아랍에미리트 두바이 오토드롬에서 시작됩니다. 프리 프랙티스와 예선이 진행되며, 내구 레이싱의 세계적 대회로 전 세계 팀들이 참가합니다.',
+    'schedule.item3.title': '글로벌 AI 스타트업 데모데이',
     'schedule.item3.content':
-      '애플이 오늘 오전 9시(태평양 표준시)에 미국 캘리포니아 쿠퍼티노 본사에서 새로운 제품 라인업을 소개하는 발표 이벤트를 개최합니다. AI 기능이 강화된 신제품과 소프트웨어 업데이트가 공개될 예정입니다.',
-    'schedule.item4.title': '테슬라 자율주행 기술 세미나',
+      '글로벌 AI 스타트업 데모데이가 오늘 오후 2시(한국 시간)에 서울 강남구 테헤란로에서 개최됩니다. 생성형 AI, 엣지 AI, AI 반도체 등 다양한 분야의 스타트업들이 최신 기술을 선보이며, 벤처캐피털과 기업 투자자들이 참석합니다.',
+    'schedule.item4.title': '전기차 충전 인프라 포럼',
     'schedule.item4.content':
-      '테슬라가 오늘 오후 1시(태평양 표준시)에 캘리포니아 팰로알토 본사에서 자율주행 기술 세미나를 개최합니다. FSD(Full Self-Driving) 기술의 최신 업데이트와 로봇택시 서비스 계획이 발표될 예정입니다.',
-    'schedule.item5.title': '네이버 클라우드 플랫폼 컨퍼런스',
+      '전기차 충전 인프라 포럼이 오늘 오후 3시(한국 시간)에 서울 여의도 컨벤션센터에서 개최됩니다. 초고속 충전 기술, 무선 충전, V2G(차량-전력망) 기술 등 전기차 충전 인프라의 최신 동향과 정책 방향이 논의됩니다.',
+    'schedule.item5.title': '자율주행 기술 표준화 워크숍',
     'schedule.item5.content':
-      '네이버가 오늘 오후 3시(한국 시간)에 서울 판교 본사에서 클라우드 플랫폼 컨퍼런스를 개최합니다. AI 기반 클라우드 서비스와 엔터프라이즈 솔루션의 새로운 기능, 그리고 개발자 도구 업데이트가 공개됩니다.',
+      '자율주행 기술 표준화 워크숍이 오늘 오후 4시(한국 시간)에 서울 서초구 자동차산업협회에서 개최됩니다. 자율주행 기술의 국제 표준화 동향, 안전성 평가 기준, 규제 프레임워크 등이 논의되며, 자동차 제조사와 기술 기업들이 참석합니다.',
+    'notice.updateContent20260116': `<strong>2026-01-16</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.42 — 브랜드 리더십 — 조직이 아닌 사람이 브랜드가 되는 시대」가 업데이트되었습니다. 현대 비즈니스 환경에서 브랜드는 더 이상 조직이나 제품만의 것이 아닙니다. 개인 리더가 자신의 가치관, 철학, 그리고 리더십을 통해 브랜드를 구축하는 시대가 도래했습니다. 조직의 브랜드가 아닌 개인의 브랜드가 고객과 시장에 더 큰 영향을 미치는 현상이 확산되고 있습니다. 브랜드 리더십의 개념, 개인 브랜드 구축 전략, 리더의 가치관과 브랜드 메시지, 신뢰 기반의 브랜드 리더십, 그리고 지속 가능한 개인 브랜드 관리 등 실무 인사이트를 담은 eBook 시리즈 마흔두 번째 자료입니다.<br /><br />
+🧠 <strong>일반상식:</strong> 「스티그마 효과(Stigma Effect)」가 등록되었습니다. 사회에서 특정 집단이나 개인에게 부여되는 부정적인 낙인(烙印)이 그들의 행동, 정신 건강, 사회적 관계에 미치는 영향을 스티그마 효과라고 합니다. 스티그마는 그리스어로 "낙인" 또는 "표시"를 의미하며, 사회심리학자 어빙 고프만이 제시한 개념입니다. 스티그마 효과는 개인의 정신 건강, 사회적 관계, 기회 접근성에 심각한 영향을 미치며, 사회적 불평등을 강화시킵니다. 스티그마의 개념, 유형, 원인, 영향, 그리고 극복 방안을 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260114': `<strong>2026-01-14</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.41 — 브랜드 경험 관리(BX) — 고객이 기억하는 순간의 설계」가 업데이트되었습니다. 브랜드 경험 관리(Brand Experience, BX)는 고객이 브랜드와 상호작용하는 모든 순간을 설계하고 관리하는 전략입니다. 단순한 제품이나 서비스를 넘어서 고객이 기억하고 공유하고 싶어하는 경험을 만드는 것이 성공적인 브랜드 구축의 핵심입니다. 브랜드 경험의 설계 원칙, 고객 기억에 남는 순간의 창조, 감각적 경험과 감정적 연결, 브랜드 경험 측정 방법, 그리고 지속 가능한 브랜드 경험 관리 등 실무 인사이트를 담은 eBook 시리즈 마흔한 번째 자료입니다.<br /><br />
 💼 <strong>경제상식:</strong> 「중앙은행 디지털 화폐(CBDC)의 도입과 경제적 영향」이 등록되었습니다. 최근 전 세계 중앙은행들이 중앙은행 디지털 화폐(Central Bank Digital Currency, CBDC) 도입을 검토하고 있습니다. 한국은행을 비롯한 주요 중앙은행들이 CBDC 연구와 파일럿 테스트를 진행하고 있으며, 일부 국가에서는 이미 상용화 단계에 접어들었습니다. CBDC는 현금과 전자화폐의 장점을 결합한 새로운 형태의 화폐로, 통화정책의 효율성을 높이고, 금융 포용성을 강화하며, 결제 시스템을 혁신할 수 있는 잠재력을 가지고 있습니다. CBDC의 개념, 도입 배경, 경제적 영향, 그리고 미래 전망을 상세히 다룹니다.<br /><br />
@@ -82,22 +86,26 @@ const translations = {
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title':
-      'Hyundai Motor Company Electric Vehicle New Model Launch Event',
+    'schedule.item1.title': 'TiECon Mangaluru 2026 Startup Conference',
     'schedule.item1.content':
-      'Hyundai Motor Company will hold a new electric vehicle model launch event today at 10:00 AM (Korea time) at COEX Convention Center in Seoul. Next-generation electric vehicle platforms, battery technology, and autonomous driving features will be unveiled, with major dealers and partners in attendance.',
-    'schedule.item2.title': 'Samsung Electronics AI Technology Conference',
+      'TiECon Mangaluru 2026 will be held today at 10:00 AM (IST, 1:30 PM Korea time) at Dr. TMA Pai International Convention Centre in Mangaluru, India. This innovation and investment-focused startup conference features presentations from over 30 high-growth startups from the Mangaluru-Udupi-Manipal region, with investors and policymakers in attendance.',
+    'schedule.item2.title': '2026 Dubai 24 Hour Motorsports Event',
     'schedule.item2.content':
-      'Samsung Electronics will hold an AI technology conference today at 2:00 PM (Korea time) at its Seocho headquarters in Seoul. The latest trends and developments in generative AI, integration with semiconductor technology, and practical application cases will be discussed.',
-    'schedule.item3.title': 'Apple New Product Launch Event',
+      'The 2026 Dubai 24 Hour motorsports event begins today at 10:30 AM (GST, 3:30 PM Korea time) at Dubai Autodrome, UAE. Free practice and qualifying sessions will be held, with teams from around the world participating in this prestigious endurance racing event.',
+    'schedule.item3.title': 'Global AI Startup Demo Day',
     'schedule.item3.content':
-      'Apple will hold a new product launch event today at 9:00 AM (Pacific Standard Time) at its headquarters in Cupertino, California, USA. New product lineups with enhanced AI features and software updates will be unveiled.',
-    'schedule.item4.title': 'Tesla Autonomous Driving Technology Seminar',
+      'The Global AI Startup Demo Day will be held today at 2:00 PM (Korea time) at Teheran-ro in Gangnam-gu, Seoul. Startups in various fields including generative AI, edge AI, and AI semiconductors will showcase their latest technologies, with venture capitalists and corporate investors in attendance.',
+    'schedule.item4.title': 'Electric Vehicle Charging Infrastructure Forum',
     'schedule.item4.content':
-      'Tesla will hold an autonomous driving technology seminar today at 1:00 PM (Pacific Standard Time) at its headquarters in Palo Alto, California. The latest updates on FSD (Full Self-Driving) technology and robotaxi service plans will be announced.',
-    'schedule.item5.title': 'Naver Cloud Platform Conference',
+      'The Electric Vehicle Charging Infrastructure Forum will be held today at 3:00 PM (Korea time) at Yeouido Convention Center in Seoul. Latest trends and policy directions in EV charging infrastructure, including ultra-fast charging technology, wireless charging, and V2G (Vehicle-to-Grid) technology, will be discussed.',
+    'schedule.item5.title':
+      'Autonomous Driving Technology Standardization Workshop',
     'schedule.item5.content':
-      'Naver will hold a cloud platform conference today at 3:00 PM (Korea time) at its headquarters in Pangyo, Seoul. New features of AI-based cloud services and enterprise solutions, as well as developer tool updates, will be unveiled.',
+      'The Autonomous Driving Technology Standardization Workshop will be held today at 4:00 PM (Korea time) at the Korea Automobile Manufacturers Association in Seocho-gu, Seoul. International standardization trends, safety assessment criteria, and regulatory frameworks for autonomous driving technology will be discussed, with automakers and technology companies in attendance.',
+    'notice.updateContent20260116': `<strong>2026-01-16</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.42 — Brand Leadership — The Era When People, Not Organizations, Become Brands" has been updated. In today's business environment, brands are no longer just about organizations or products. An era has arrived where individual leaders build brands through their values, philosophy, and leadership. The phenomenon where personal brands, rather than organizational brands, have a greater impact on customers and markets is spreading. This is the forty-second volume of the eBook series containing practical insights on <strong>the concept of brand leadership, personal brand building strategies, leader values and brand messaging, trust-based brand leadership, and sustainable personal brand management</strong>.<br /><br />
+🧠 <strong>General Knowledge:</strong> "Stigma Effect" has been registered. The impact of negative labels (stigma) given to specific groups or individuals in society on their behavior, mental health, and social relationships is called the stigma effect. Stigma means "mark" or "sign" in Greek, and is a concept presented by social psychologist Erving Goffman. The stigma effect has serious impacts on individuals' mental health, social relationships, and access to opportunities, and reinforces social inequality. This article covers in detail <strong>the concept of stigma, types, causes, effects, and ways to overcome it</strong>.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260114': `<strong>2026-01-14</strong> – We've added new content to the eBook Series board and Economics Knowledge board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.41 — Brand Experience Management (BX) — Designing Moments Customers Remember" has been updated. Brand Experience Management (BX) is a strategy for designing and managing every moment of customer interaction with a brand. Beyond simply products or services, creating experiences that customers want to remember and share is the key to successful brand building. This is the forty-first volume of the eBook series containing practical insights on <strong>brand experience design principles, creating memorable moments for customers, sensory experiences and emotional connections, brand experience measurement methods, and sustainable brand experience management</strong>.<br /><br />
 💼 <strong>Economics Knowledge:</strong> "The Introduction of Central Bank Digital Currency (CBDC) and Its Economic Impact" has been registered. Recently, central banks around the world have been reviewing the introduction of Central Bank Digital Currency (CBDC). Major central banks, including the Bank of Korea, are conducting CBDC research and pilot tests, and some countries have already entered the commercialization stage. CBDC is a new form of currency that combines the advantages of cash and electronic money, with the potential to enhance the efficiency of monetary policy, strengthen financial inclusion, and revolutionize payment systems. This article covers in detail <strong>the concept of CBDC, introduction background, economic impact, and future prospects</strong>.<br /><br />
