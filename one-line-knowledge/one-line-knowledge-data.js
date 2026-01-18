@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 115,
+    title: 'AI 의료진단의 한계와 윤리적 딜레마',
+    link: 'one-line-knowledge/trivia-detail-115.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '01-19',
+    views: 0,
+  },
+  {
     id: 114,
     title: 'AI 생성 콘텐츠의 저작권 딜레마, 창작자와 AI의 경계',
     link: 'one-line-knowledge/trivia-detail-114.html',

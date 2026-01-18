@@ -20,21 +20,26 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': 'TiECon Mangaluru 2026 스타트업 컨퍼런스',
+    'schedule.item1.title': '2026 디트로이트 오토쇼 공개일',
     'schedule.item1.content':
-      'TiECon Mangaluru 2026이 오늘 오전 10시(인도 표준시, 한국 시간 오후 1시 30분)에 인도 만갈루루 Dr. TMA Pai 국제 컨벤션 센터에서 개최됩니다. 이노베이션과 투자에 초점을 둔 스타트업 컨퍼런스로, 만갈루루-우두피-마니팔 지역의 고성장 스타트업 30여 개가 발표하며, 투자자와 정책 입안자들이 참석합니다.',
-    'schedule.item2.title': '2026 Dubai 24 Hour 모터스포츠 대회',
+      '2026 디트로이트 오토쇼(Detroit Auto Show)가 오늘 오전 10시부터 오후 6시까지(미국 미시간주 디트로이트 현지 시간, 한국 시간 자정~오전 8시) 미국 미시간주 디트로이트 Huntington Place에서 일반 관람객에게 공개됩니다. 40여 개 자동차 브랜드가 참가하며, 하이브리드·가솔린·전기차 시승 체험, Camp Jeep, Ford Bronco Built Wild 등 체험형 이벤트가 진행됩니다.',
+    'schedule.item2.title': 'Lenovo Tech World at CES 2026',
     'schedule.item2.content':
-      '2026 Dubai 24 Hour 모터스포츠 대회가 오늘 오전 10시 30분(두바이 시간, 한국 시간 오후 3시 30분)에 아랍에미리트 두바이 오토드롬에서 시작됩니다. 프리 프랙티스와 예선이 진행되며, 내구 레이싱의 세계적 대회로 전 세계 팀들이 참가합니다.',
-    'schedule.item3.title': '글로벌 AI 스타트업 데모데이',
+      'Lenovo Tech World at CES 2026이 오늘 오후 2시(한국 시간, 라스베이거스 현지 시간 오전) 미국 네바다주 라스베이거스 The Sphere에서 개최됩니다. "Smarter AI for All"을 테마로 Lenovo의 AI 기술 생태계가 발표되며, 클라우드 파트너십, 플랫폼 혁신, 크로스 디바이스 AI 어시스턴트, 엔터프라이즈 솔루션 등이 공개됩니다.',
+    'schedule.item3.title': 'ICNGAIT 2026 차세대 AI 기술 회의',
     'schedule.item3.content':
-      '글로벌 AI 스타트업 데모데이가 오늘 오후 2시(한국 시간)에 서울 강남구 테헤란로에서 개최됩니다. 생성형 AI, 엣지 AI, AI 반도체 등 다양한 분야의 스타트업들이 최신 기술을 선보이며, 벤처캐피털과 기업 투자자들이 참석합니다.',
-    'schedule.item4.title': '전기차 충전 인프라 포럼',
+      'ICNGAIT 2026(국제 차세대 AI 기술 회의)이 오늘 오전 9시부터 오후 2시까지(제주 현지 시간) 한국 제주도에서 개최됩니다. 이틀째 일정으로 포스터 발표, 가상 발표, 우수 논문 시상식, 폐회식 및 미래 AI 기술에 대한 주제 발표가 진행됩니다.',
+    'schedule.item4.title': 'Renault Filante 하이브리드 SUV 공개 행사',
     'schedule.item4.content':
-      '전기차 충전 인프라 포럼이 오늘 오후 3시(한국 시간)에 서울 여의도 컨벤션센터에서 개최됩니다. 초고속 충전 기술, 무선 충전, V2G(차량-전력망) 기술 등 전기차 충전 인프라의 최신 동향과 정책 방향이 논의됩니다.',
-    'schedule.item5.title': '자율주행 기술 표준화 워크숍',
+      'Renault Filante 하이브리드 SUV 공개 행사가 오늘 오전 11시(한국 시간)에 부산국제모터쇼 프레스 발표장에서 개최됩니다. 르노 코리아가 새로 개발한 중형 하이브리드 크로스오버 SUV "Filante"의 디자인, 실내 사양, 하이브리드 파워트레인 및 3단 전용 하이브리드 변속기 등 핵심 기능이 발표됩니다.',
+    'schedule.item5.title':
+      'MIT Korea Conference - Frontiers of Innovation 세션',
     'schedule.item5.content':
-      '자율주행 기술 표준화 워크숍이 오늘 오후 4시(한국 시간)에 서울 서초구 자동차산업협회에서 개최됩니다. 자율주행 기술의 국제 표준화 동향, 안전성 평가 기준, 규제 프레임워크 등이 논의되며, 자동차 제조사와 기술 기업들이 참석합니다.',
+      'MIT Korea Conference의 "Frontiers of Innovation" 세션이 오늘 오후 2시(한국 시간)에 서울 MIT Korea 컨퍼런스 센터에서 개최됩니다. 로봇공학, 실리콘 포토닉스, 자율시스템 등 최첨단 기술 주제를 다루며, MIT 교수진과 한국 산업계 전문가들이 참석합니다.',
+    'notice.updateContent20260119': `<strong>2026-01-19</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.43 — 마케팅의 출발점 — 시장을 읽고, 준비하는 법」이 업데이트되었습니다. 성공적인 마케팅은 제품이나 서비스를 만들기 전에 시장을 정확히 읽고 준비하는 것에서 시작됩니다. 시장을 이해하지 못한 채 무작정 마케팅을 시작하면 실패할 가능성이 높습니다. 시장 분석의 중요성, 시장 조사 방법, 경쟁 환경 파악, 타겟 고객 정의, 시장 기회 발굴, 그리고 마케팅 전략 수립을 위한 시장 준비 과정 등 실무 인사이트를 담은 eBook 시리즈 마흔세 번째 자료입니다.<br /><br />
+🧠 <strong>한줄 지식/잡학:</strong> 「AI 의료진단의 한계와 윤리적 딜레마」가 등록되었습니다. 최근 인공지능(AI) 기술이 의료 분야에 급속히 도입되면서 AI 의료진단 시스템이 암, 안과 질환, 피부 질환 등 다양한 질병의 진단에서 인간 의사 수준의 정확도를 보이고 있습니다. 그러나 AI 의료진단의 정확도와 효율성 뒤에는 편향성, 투명성 부족, 법적 책임 소재 등 심각한 윤리적 딜레마가 존재합니다. AI 의료진단의 개념, 장점과 한계, 윤리적 딜레마, 법적 규제, 그리고 AI와 의료진의 협력 모델을 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260116': `<strong>2026-01-16</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.42 — 브랜드 리더십 — 조직이 아닌 사람이 브랜드가 되는 시대」가 업데이트되었습니다. 현대 비즈니스 환경에서 브랜드는 더 이상 조직이나 제품만의 것이 아닙니다. 개인 리더가 자신의 가치관, 철학, 그리고 리더십을 통해 브랜드를 구축하는 시대가 도래했습니다. 조직의 브랜드가 아닌 개인의 브랜드가 고객과 시장에 더 큰 영향을 미치는 현상이 확산되고 있습니다. 브랜드 리더십의 개념, 개인 브랜드 구축 전략, 리더의 가치관과 브랜드 메시지, 신뢰 기반의 브랜드 리더십, 그리고 지속 가능한 개인 브랜드 관리 등 실무 인사이트를 담은 eBook 시리즈 마흔두 번째 자료입니다.<br /><br />
 🧠 <strong>일반상식:</strong> 「스티그마 효과(Stigma Effect)」가 등록되었습니다. 사회에서 특정 집단이나 개인에게 부여되는 부정적인 낙인(烙印)이 그들의 행동, 정신 건강, 사회적 관계에 미치는 영향을 스티그마 효과라고 합니다. 스티그마는 그리스어로 "낙인" 또는 "표시"를 의미하며, 사회심리학자 어빙 고프만이 제시한 개념입니다. 스티그마 효과는 개인의 정신 건강, 사회적 관계, 기회 접근성에 심각한 영향을 미치며, 사회적 불평등을 강화시킵니다. 스티그마의 개념, 유형, 원인, 영향, 그리고 극복 방안을 상세히 다룹니다.<br /><br />
@@ -86,22 +91,27 @@ const translations = {
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title': 'TiECon Mangaluru 2026 Startup Conference',
+    'schedule.item1.title': '2026 Detroit Auto Show Public Day',
     'schedule.item1.content':
-      'TiECon Mangaluru 2026 will be held today at 10:00 AM (IST, 1:30 PM Korea time) at Dr. TMA Pai International Convention Centre in Mangaluru, India. This innovation and investment-focused startup conference features presentations from over 30 high-growth startups from the Mangaluru-Udupi-Manipal region, with investors and policymakers in attendance.',
-    'schedule.item2.title': '2026 Dubai 24 Hour Motorsports Event',
+      'The 2026 Detroit Auto Show (Detroit Auto Show) opens to the public today from 10:00 AM to 6:00 PM (local time, Detroit, Michigan, USA; midnight to 8:00 AM Korea time) at Huntington Place in Detroit, Michigan, USA. Over 40 automotive brands will participate, featuring interactive experiences including test drives of hybrid, gasoline, and electric vehicles, Camp Jeep, and Ford Bronco Built Wild events.',
+    'schedule.item2.title': 'Lenovo Tech World at CES 2026',
     'schedule.item2.content':
-      'The 2026 Dubai 24 Hour motorsports event begins today at 10:30 AM (GST, 3:30 PM Korea time) at Dubai Autodrome, UAE. Free practice and qualifying sessions will be held, with teams from around the world participating in this prestigious endurance racing event.',
-    'schedule.item3.title': 'Global AI Startup Demo Day',
+      'Lenovo Tech World at CES 2026 will be held today at 2:00 PM (Korea time, morning Las Vegas local time) at The Sphere in Las Vegas, Nevada, USA. Under the theme "Smarter AI for All," Lenovo will unveil its AI technology ecosystem, including cloud partnerships, platform innovations, cross-device AI assistant, and enterprise solutions.',
+    'schedule.item3.title':
+      'ICNGAIT 2026 Next-Generation AI Technologies Conference',
     'schedule.item3.content':
-      'The Global AI Startup Demo Day will be held today at 2:00 PM (Korea time) at Teheran-ro in Gangnam-gu, Seoul. Startups in various fields including generative AI, edge AI, and AI semiconductors will showcase their latest technologies, with venture capitalists and corporate investors in attendance.',
-    'schedule.item4.title': 'Electric Vehicle Charging Infrastructure Forum',
+      'ICNGAIT 2026 (International Conference on Next-Generation AI Technologies) will be held today from 9:00 AM to 2:00 PM (Jeju local time) on Jeju Island, South Korea. The second day schedule includes poster sessions, virtual presentations, outstanding paper awards ceremony, closing ceremony, and thematic presentations on future AI technology.',
+    'schedule.item4.title': 'Renault Filante Hybrid SUV Reveal Event',
     'schedule.item4.content':
-      'The Electric Vehicle Charging Infrastructure Forum will be held today at 3:00 PM (Korea time) at Yeouido Convention Center in Seoul. Latest trends and policy directions in EV charging infrastructure, including ultra-fast charging technology, wireless charging, and V2G (Vehicle-to-Grid) technology, will be discussed.',
+      'The Renault Filante Hybrid SUV reveal event will be held today at 11:00 AM (Korea time) at the Press Hall of Busan International Motor Show. Renault Korea will unveil its newly developed mid-size hybrid crossover SUV "Filante," including design, interior specifications, hybrid powertrain, and 3-speed dedicated hybrid transmission.',
     'schedule.item5.title':
-      'Autonomous Driving Technology Standardization Workshop',
+      'MIT Korea Conference - Frontiers of Innovation Session',
     'schedule.item5.content':
-      'The Autonomous Driving Technology Standardization Workshop will be held today at 4:00 PM (Korea time) at the Korea Automobile Manufacturers Association in Seocho-gu, Seoul. International standardization trends, safety assessment criteria, and regulatory frameworks for autonomous driving technology will be discussed, with automakers and technology companies in attendance.',
+      'The "Frontiers of Innovation" session of the MIT Korea Conference will be held today at 2:00 PM (Korea time) at the MIT Korea Conference Center in Seoul. The session covers cutting-edge technology topics including robotics, silicon photonics, and autonomous systems, with MIT faculty and Korean industry experts in attendance.',
+    'notice.updateContent20260119': `<strong>2026-01-19</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.43 — The Starting Point of Marketing — How to Read and Prepare for the Market" has been updated. Successful marketing begins with accurately reading and preparing for the market before creating products or services. Starting marketing without understanding the market significantly increases the likelihood of failure. This is the forty-third volume of the eBook series containing practical insights on <strong>the importance of market analysis, market research methods, understanding competitive environments, defining target customers, discovering market opportunities, and market preparation processes for marketing strategy development</strong>.<br /><br />
+🧠 <strong>One-Line Knowledge/Trivia:</strong> "Limitations and Ethical Dilemmas of AI Medical Diagnosis" has been registered. Recently, as artificial intelligence (AI) technology has rapidly been introduced to the medical field, AI medical diagnosis systems are showing accuracy levels comparable to human doctors in diagnosing various diseases including cancer, eye diseases, and skin conditions. However, behind the accuracy and efficiency of AI medical diagnosis lie serious ethical dilemmas including bias, lack of transparency, and unclear legal liability. This article covers in detail <strong>the concept of AI medical diagnosis, advantages and limitations, ethical dilemmas, legal regulations, and collaboration models between AI and medical professionals</strong>.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260116': `<strong>2026-01-16</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.42 — Brand Leadership — The Era When People, Not Organizations, Become Brands" has been updated. In today's business environment, brands are no longer just about organizations or products. An era has arrived where individual leaders build brands through their values, philosophy, and leadership. The phenomenon where personal brands, rather than organizational brands, have a greater impact on customers and markets is spreading. This is the forty-second volume of the eBook series containing practical insights on <strong>the concept of brand leadership, personal brand building strategies, leader values and brand messaging, trust-based brand leadership, and sustainable personal brand management</strong>.<br /><br />
 🧠 <strong>General Knowledge:</strong> "Stigma Effect" has been registered. The impact of negative labels (stigma) given to specific groups or individuals in society on their behavior, mental health, and social relationships is called the stigma effect. Stigma means "mark" or "sign" in Greek, and is a concept presented by social psychologist Erving Goffman. The stigma effect has serious impacts on individuals' mental health, social relationships, and access to opportunities, and reinforces social inequality. This article covers in detail <strong>the concept of stigma, types, causes, effects, and ways to overcome it</strong>.<br /><br />
