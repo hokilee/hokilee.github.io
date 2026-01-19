@@ -20,22 +20,25 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': '2026 디트로이트 오토쇼 공개일',
+    'schedule.item1.title': '2026 디트로이트 오토쇼 Racing Day',
     'schedule.item1.content':
-      '2026 디트로이트 오토쇼(Detroit Auto Show)가 오늘 오전 10시부터 오후 6시까지(미국 미시간주 디트로이트 현지 시간, 한국 시간 자정~오전 8시) 미국 미시간주 디트로이트 Huntington Place에서 일반 관람객에게 공개됩니다. 40여 개 자동차 브랜드가 참가하며, 하이브리드·가솔린·전기차 시승 체험, Camp Jeep, Ford Bronco Built Wild 등 체험형 이벤트가 진행됩니다.',
-    'schedule.item2.title': 'Lenovo Tech World at CES 2026',
+      '2026 디트로이트 오토쇼의 Racing Day가 오늘 오전 10시부터 오후 6시까지(미국 미시간주 디트로이트 현지 시간, 한국 시간 자정~오전 8시) 미국 미시간주 디트로이트 Huntington Place에서 개최됩니다. 디트로이트 그랑프리가 주관하는 이 행사는 모터스포츠 스타와 경주용 차량 전시, 팬 상호작용 프로그램, 드라이버 Q&A 세션, 사인회, 프로덕션 차량 동승 체험 등이 포함됩니다.',
+    'schedule.item2.title': '국제정보기술 학술대회 (IT Conferences)',
     'schedule.item2.content':
-      'Lenovo Tech World at CES 2026이 오늘 오후 2시(한국 시간, 라스베이거스 현지 시간 오전) 미국 네바다주 라스베이거스 The Sphere에서 개최됩니다. "Smarter AI for All"을 테마로 Lenovo의 AI 기술 생태계가 발표되며, 클라우드 파트너십, 플랫폼 혁신, 크로스 디바이스 AI 어시스턴트, 엔터프라이즈 솔루션 등이 공개됩니다.',
-    'schedule.item3.title': 'ICNGAIT 2026 차세대 AI 기술 회의',
+      '국제정보기술 학술대회가 오늘 종일 행사로 미국 주요 도시들(뉴욕, 샌프란시스코, 워싱턴 D.C. 등)에서 개최됩니다. 데이터 윤리와 정보 정책, 인간-컴퓨터 상호작용, 언어와 정체성, 사회적 상호작용, 언어학과 담화 분석 등 최신 IT 이슈를 다루는 다양한 컨퍼런스가 열리며, 기조 연설, 패널 토론, 연구 발표 등이 진행됩니다.',
+    'schedule.item3.title': 'Visit Detroit Interactive Experience',
     'schedule.item3.content':
-      'ICNGAIT 2026(국제 차세대 AI 기술 회의)이 오늘 오전 9시부터 오후 2시까지(제주 현지 시간) 한국 제주도에서 개최됩니다. 이틀째 일정으로 포스터 발표, 가상 발표, 우수 논문 시상식, 폐회식 및 미래 AI 기술에 대한 주제 발표가 진행됩니다.',
-    'schedule.item4.title': 'Renault Filante 하이브리드 SUV 공개 행사',
+      'Visit Detroit Interactive Experience가 오늘 오전 10시부터 오후 6시까지(미국 미시간주 디트로이트 현지 시간) 디트로이트 Huntington Place 아트리움에서 개최됩니다. 어린이 및 가족 단위 방문객을 위한 STEM 체험, 레이싱 시뮬레이터, 인터랙티브 전시 등이 마련되어 디트로이트 오토쇼와 함께 즐길 수 있는 가족 친화형 프로그램입니다.',
+    'schedule.item4.title': '한국 AI 기술 정책 포럼 2026',
     'schedule.item4.content':
-      'Renault Filante 하이브리드 SUV 공개 행사가 오늘 오전 11시(한국 시간)에 부산국제모터쇼 프레스 발표장에서 개최됩니다. 르노 코리아가 새로 개발한 중형 하이브리드 크로스오버 SUV "Filante"의 디자인, 실내 사양, 하이브리드 파워트레인 및 3단 전용 하이브리드 변속기 등 핵심 기능이 발표됩니다.',
-    'schedule.item5.title':
-      'MIT Korea Conference - Frontiers of Innovation 세션',
+      '한국 AI 기술 정책 포럼 2026이 오늘 오전 9시부터 오후 5시까지 한국 서울 코엑스에서 개최됩니다. AI 기술 정책, 규제 환경, 산업 육성 방안, 글로벌 협력 등에 대한 기조 연설과 패널 토론이 진행되며, 정부 관계자, 산업계 전문가, 학계 연구자들이 참석합니다.',
+    'schedule.item5.title': '글로벌 전기차 충전 인프라 컨퍼런스',
     'schedule.item5.content':
-      'MIT Korea Conference의 "Frontiers of Innovation" 세션이 오늘 오후 2시(한국 시간)에 서울 MIT Korea 컨퍼런스 센터에서 개최됩니다. 로봇공학, 실리콘 포토닉스, 자율시스템 등 최첨단 기술 주제를 다루며, MIT 교수진과 한국 산업계 전문가들이 참석합니다.',
+      '글로벌 전기차 충전 인프라 컨퍼런스가 오늘 오후 1시부터 5시까지 한국 서울 그랜드힐스톤 호텔에서 개최됩니다. 전기차 충전 인프라 확대 전략, 초고속 충전 기술, 충전 네트워크 표준화, 스마트 그리드 연계 등에 대한 발표와 토론이 진행되며, 전 세계 전기차 및 충전 인프라 관련 기업과 기관이 참석합니다.',
+    'notice.updateContent20260120': `<strong>2026-01-20</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.44 — 콘텐츠 전략 — 사람의 마음을 움직이는 메시지를 설계하라」가 업데이트되었습니다. 성공적인 마케팅과 브랜드 구축의 핵심은 사람의 마음을 움직이는 메시지를 설계하는 것입니다. 단순한 정보 전달이 아닌 감정과 가치를 전달하는 콘텐츠 전략이 필요합니다. 콘텐츠 전략의 중요성, 타겟 오디언스 이해, 메시지 설계 원칙, 스토리텔링 기법, 감정적 연결 구축, 콘텐츠 배포 전략, 그리고 효과 측정 방법 등 실무 인사이트를 담은 eBook 시리즈 마흔네 번째 자료입니다.<br /><br />
+💼 <strong>경제상식:</strong> 「보호무역주의 확대와 국제 무역 환경 변화」가 등록되었습니다. 최근 전 세계적으로 보호무역주의가 확대되고 있으며, 주요 국가들이 무역장벽을 강화하는 추세가 뚜렷해지고 있습니다. 미국, 유럽연합, 중국 등 주요 경제국들이 관세 인상, 수입 제한, 보조금 확대 등 다양한 보호무역 정책을 시행하고 있으며, 이는 글로벌 무역 환경에 근본적인 변화를 가져오고 있습니다. 보호무역주의의 확대 배경, 주요 국가의 정책, 국제 무역 환경의 변화, 그리고 한국 경제에 미치는 영향과 대응 전략을 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260119': `<strong>2026-01-19</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.43 — 마케팅의 출발점 — 시장을 읽고, 준비하는 법」이 업데이트되었습니다. 성공적인 마케팅은 제품이나 서비스를 만들기 전에 시장을 정확히 읽고 준비하는 것에서 시작됩니다. 시장을 이해하지 못한 채 무작정 마케팅을 시작하면 실패할 가능성이 높습니다. 시장 분석의 중요성, 시장 조사 방법, 경쟁 환경 파악, 타겟 고객 정의, 시장 기회 발굴, 그리고 마케팅 전략 수립을 위한 시장 준비 과정 등 실무 인사이트를 담은 eBook 시리즈 마흔세 번째 자료입니다.<br /><br />
 🧠 <strong>한줄 지식/잡학:</strong> 「AI 의료진단의 한계와 윤리적 딜레마」가 등록되었습니다. 최근 인공지능(AI) 기술이 의료 분야에 급속히 도입되면서 AI 의료진단 시스템이 암, 안과 질환, 피부 질환 등 다양한 질병의 진단에서 인간 의사 수준의 정확도를 보이고 있습니다. 그러나 AI 의료진단의 정확도와 효율성 뒤에는 편향성, 투명성 부족, 법적 책임 소재 등 심각한 윤리적 딜레마가 존재합니다. AI 의료진단의 개념, 장점과 한계, 윤리적 딜레마, 법적 규제, 그리고 AI와 의료진의 협력 모델을 상세히 다룹니다.<br /><br />
@@ -91,23 +94,25 @@ const translations = {
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title': '2026 Detroit Auto Show Public Day',
+    'schedule.item1.title': '2026 Detroit Auto Show Racing Day',
     'schedule.item1.content':
-      'The 2026 Detroit Auto Show (Detroit Auto Show) opens to the public today from 10:00 AM to 6:00 PM (local time, Detroit, Michigan, USA; midnight to 8:00 AM Korea time) at Huntington Place in Detroit, Michigan, USA. Over 40 automotive brands will participate, featuring interactive experiences including test drives of hybrid, gasoline, and electric vehicles, Camp Jeep, and Ford Bronco Built Wild events.',
-    'schedule.item2.title': 'Lenovo Tech World at CES 2026',
+      'The 2026 Detroit Auto Show Racing Day will be held today from 10:00 AM to 6:00 PM (local time, Detroit, Michigan, USA; midnight to 8:00 AM Korea time) at Huntington Place in Detroit, Michigan, USA. Presented by the Detroit Grand Prix, this event features motorsports stars, race car displays, fan interaction programs, driver Q&A sessions, autograph sessions, and production vehicle ride-along experiences.',
+    'schedule.item2.title': 'International Information Technology Conferences',
     'schedule.item2.content':
-      'Lenovo Tech World at CES 2026 will be held today at 2:00 PM (Korea time, morning Las Vegas local time) at The Sphere in Las Vegas, Nevada, USA. Under the theme "Smarter AI for All," Lenovo will unveil its AI technology ecosystem, including cloud partnerships, platform innovations, cross-device AI assistant, and enterprise solutions.',
-    'schedule.item3.title':
-      'ICNGAIT 2026 Next-Generation AI Technologies Conference',
+      'International Information Technology Conferences will be held today as all-day events in major U.S. cities (New York, San Francisco, Washington D.C., etc.). Various conferences covering latest IT issues such as data ethics and information policy, human-computer interaction, language and identity, social interaction, linguistics and discourse analysis will be held, featuring keynote speeches, panel discussions, and research presentations.',
+    'schedule.item3.title': 'Visit Detroit Interactive Experience',
     'schedule.item3.content':
-      'ICNGAIT 2026 (International Conference on Next-Generation AI Technologies) will be held today from 9:00 AM to 2:00 PM (Jeju local time) on Jeju Island, South Korea. The second day schedule includes poster sessions, virtual presentations, outstanding paper awards ceremony, closing ceremony, and thematic presentations on future AI technology.',
-    'schedule.item4.title': 'Renault Filante Hybrid SUV Reveal Event',
+      'The Visit Detroit Interactive Experience will be held today from 10:00 AM to 6:00 PM (local time, Detroit, Michigan, USA) at the Huntington Place Atrium in Detroit. The event offers STEM experiences, racing simulators, and interactive exhibits for children and families, providing a family-friendly program to enjoy alongside the Detroit Auto Show.',
+    'schedule.item4.title': 'Korea AI Technology Policy Forum 2026',
     'schedule.item4.content':
-      'The Renault Filante Hybrid SUV reveal event will be held today at 11:00 AM (Korea time) at the Press Hall of Busan International Motor Show. Renault Korea will unveil its newly developed mid-size hybrid crossover SUV "Filante," including design, interior specifications, hybrid powertrain, and 3-speed dedicated hybrid transmission.',
-    'schedule.item5.title':
-      'MIT Korea Conference - Frontiers of Innovation Session',
+      'The Korea AI Technology Policy Forum 2026 will be held today from 9:00 AM to 5:00 PM at COEX in Seoul, South Korea. The forum features keynote speeches and panel discussions on AI technology policies, regulatory environments, industry development strategies, and global cooperation, with government officials, industry experts, and academic researchers in attendance.',
+    'schedule.item5.title': 'Global EV Charging Infrastructure Conference',
     'schedule.item5.content':
-      'The "Frontiers of Innovation" session of the MIT Korea Conference will be held today at 2:00 PM (Korea time) at the MIT Korea Conference Center in Seoul. The session covers cutting-edge technology topics including robotics, silicon photonics, and autonomous systems, with MIT faculty and Korean industry experts in attendance.',
+      'The Global EV Charging Infrastructure Conference will be held today from 1:00 PM to 5:00 PM at the Grand Hillstone Hotel in Seoul, South Korea. The conference features presentations and discussions on EV charging infrastructure expansion strategies, ultra-fast charging technology, charging network standardization, and smart grid integration, with global EV and charging infrastructure companies and institutions in attendance.',
+    'notice.updateContent20260120': `<strong>2026-01-20</strong> – We've added new content to the eBook Series board and Economics Knowledge board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.44 — Content Strategy — Designing Messages That Move People's Hearts" has been updated. The key to successful marketing and brand building is designing messages that move people's hearts. Content strategy needs to convey emotions and values, not just information. This is the forty-fourth volume of the eBook series containing practical insights on <strong>the importance of content strategy, understanding target audiences, message design principles, storytelling techniques, building emotional connections, content distribution strategies, and effectiveness measurement methods</strong>.<br /><br />
+💼 <strong>Economics Knowledge:</strong> "Expansion of Protectionism and Changes in International Trade Environment" has been registered. Recently, protectionism has been expanding globally, with major countries significantly strengthening trade barriers. Major economies including the United States, European Union, and China are implementing various protectionist policies such as tariff increases, import restrictions, and subsidy expansions, bringing fundamental changes to the global trade environment. This article covers in detail <strong>the background of protectionism expansion, policies of major countries, changes in international trade environment, and the impact on the Korean economy and response strategies</strong>.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260119': `<strong>2026-01-19</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.43 — The Starting Point of Marketing — How to Read and Prepare for the Market" has been updated. Successful marketing begins with accurately reading and preparing for the market before creating products or services. Starting marketing without understanding the market significantly increases the likelihood of failure. This is the forty-third volume of the eBook series containing practical insights on <strong>the importance of market analysis, market research methods, understanding competitive environments, defining target customers, discovering market opportunities, and market preparation processes for marketing strategy development</strong>.<br /><br />
 🧠 <strong>One-Line Knowledge/Trivia:</strong> "Limitations and Ethical Dilemmas of AI Medical Diagnosis" has been registered. Recently, as artificial intelligence (AI) technology has rapidly been introduced to the medical field, AI medical diagnosis systems are showing accuracy levels comparable to human doctors in diagnosing various diseases including cancer, eye diseases, and skin conditions. However, behind the accuracy and efficiency of AI medical diagnosis lie serious ethical dilemmas including bias, lack of transparency, and unclear legal liability. This article covers in detail <strong>the concept of AI medical diagnosis, advantages and limitations, ethical dilemmas, legal regulations, and collaboration models between AI and medical professionals</strong>.<br /><br />

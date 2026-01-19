@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 44,
+    title: '콘텐츠 전략 — 사람의 마음을 움직이는 메시지를 설계하라',
+    link: 'eBook-data/Hoki Lee eBook series vol44.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-20',
+    views: 0,
+  },
+  {
     id: 43,
     title: '마케팅의 출발점 — 시장을 읽고, 준비하는 법',
     link: 'eBook-data/Hoki Lee eBook series vol43.pdf',
