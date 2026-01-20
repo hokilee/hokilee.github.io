@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 45,
+    title: '채널 전략 — 어디서, 어떻게 알려야 효과가 있는가',
+    link: 'eBook-data/Hoki Lee eBook series vol45.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-21',
+    views: 0,
+  },
+  {
     id: 44,
     title: '콘텐츠 전략 — 사람의 마음을 움직이는 메시지를 설계하라',
     link: 'eBook-data/Hoki Lee eBook series vol44.pdf',

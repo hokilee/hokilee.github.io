@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 60,
+    title: '잠금효과(Lock-in Effect)',
+    link: 'science/science-detail-60.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '01-21',
+    views: 0,
+  },
+  {
     id: 59,
     title: '스티그마 효과(Stigma Effect)',
     link: 'science/science-detail-59.html',

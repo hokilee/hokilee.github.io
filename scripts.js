@@ -20,21 +20,25 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': '2026 디트로이트 오토쇼 Racing Day',
+    'schedule.item1.title': 'Automotive World Tokyo 2026 개막',
     'schedule.item1.content':
-      '2026 디트로이트 오토쇼의 Racing Day가 오늘 오전 10시부터 오후 6시까지(미국 미시간주 디트로이트 현지 시간, 한국 시간 자정~오전 8시) 미국 미시간주 디트로이트 Huntington Place에서 개최됩니다. 디트로이트 그랑프리가 주관하는 이 행사는 모터스포츠 스타와 경주용 차량 전시, 팬 상호작용 프로그램, 드라이버 Q&A 세션, 사인회, 프로덕션 차량 동승 체험 등이 포함됩니다.',
-    'schedule.item2.title': '국제정보기술 학술대회 (IT Conferences)',
+      'Automotive World Tokyo 2026이 오늘 오전 10시부터 오후 5시까지(일본 현지 시간, 한국 시간 오전 9시~오후 4시) 일본 도쿄 빅사이트에서 개막됩니다. 약 1,850개 업체가 참가하는 아시아 최대 규모의 자동차 기술 전시회로, EV/HV/FCV, 커넥티드카, 자율주행, 소프트웨어 정의 차량(SDV), 경량화 소재 등 첨단 기술이 전시됩니다. 특히 Tesla, Xiaomi, AION 등 최신 전기차의 분해 전시와 Pwn2Own Automotive 2026 보안 경진대회가 주목받습니다.',
+    'schedule.item2.title': 'Collision Industry Conference (CIC)',
     'schedule.item2.content':
-      '국제정보기술 학술대회가 오늘 종일 행사로 미국 주요 도시들(뉴욕, 샌프란시스코, 워싱턴 D.C. 등)에서 개최됩니다. 데이터 윤리와 정보 정책, 인간-컴퓨터 상호작용, 언어와 정체성, 사회적 상호작용, 언어학과 담화 분석 등 최신 IT 이슈를 다루는 다양한 컨퍼런스가 열리며, 기조 연설, 패널 토론, 연구 발표 등이 진행됩니다.',
-    'schedule.item3.title': 'Visit Detroit Interactive Experience',
+      'Collision Industry Conference (CIC)가 오늘 오전 8시부터 오후 5시까지(미국 캘리포니아 현지 시간, 한국 시간 자정~오전 9시) 미국 캘리포니아 팜스프링스 힐튼 리조트에서 개최됩니다. 자동차 충돌 수리업계 전반에 걸친 회의로, 보험사, 수리업체, 자동차 제조사, 장비 공급자 등이 모여 산업 현안을 토론합니다. 전기차 수리 기술, ADAS(고급 운전자 보조 시스템) 보정, 보험 정책 변화 등이 주요 논의 주제입니다.',
+    'schedule.item3.title': 'Collision Industry Conference (CIC)',
     'schedule.item3.content':
-      'Visit Detroit Interactive Experience가 오늘 오전 10시부터 오후 6시까지(미국 미시간주 디트로이트 현지 시간) 디트로이트 Huntington Place 아트리움에서 개최됩니다. 어린이 및 가족 단위 방문객을 위한 STEM 체험, 레이싱 시뮬레이터, 인터랙티브 전시 등이 마련되어 디트로이트 오토쇼와 함께 즐길 수 있는 가족 친화형 프로그램입니다.',
-    'schedule.item4.title': '한국 AI 기술 정책 포럼 2026',
+      'Collision Industry Conference (CIC)가 오늘 오전 8시부터 오후 5시까지(미국 캘리포니아 현지 시간, 한국 시간 자정~오전 9시) 미국 캘리포니아 팜스프링스 힐튼 리조트에서 개최됩니다. 자동차 충돌 수리업계 전반에 걸친 회의로, 보험사, 수리업체, 자동차 제조사, 장비 공급자 등이 모여 산업 현안을 토론합니다. 전기차 수리 기술, ADAS(고급 운전자 보조 시스템) 보정, 보험 정책 변화 등이 주요 논의 주제입니다.',
+    'schedule.item4.title': '2026 Michelin Pilot Challenge 시즌 개막전',
     'schedule.item4.content':
-      '한국 AI 기술 정책 포럼 2026이 오늘 오전 9시부터 오후 5시까지 한국 서울 코엑스에서 개최됩니다. AI 기술 정책, 규제 환경, 산업 육성 방안, 글로벌 협력 등에 대한 기조 연설과 패널 토론이 진행되며, 정부 관계자, 산업계 전문가, 학계 연구자들이 참석합니다.',
-    'schedule.item5.title': '글로벌 전기차 충전 인프라 컨퍼런스',
+      '2026 Michelin Pilot Challenge 시즌 개막전인 BMW M Endurance Challenge at Daytona가 오늘부터 1월 25일까지(미국 플로리다 현지 시간) 미국 플로리다 데이토나 인터내셔널 스피드웨이에서 개최됩니다. IMSA 산하 4시간 내구 레이스로, GS(Grand Sport)와 TCR(Touring Car) 클래스가 경쟁합니다. 시즌 첫 라운드로 피트 전략과 내구성이 중요한 레이스입니다.',
+    'schedule.item5.title': '글로벌 소프트웨어 정의 차량(SDV) 포럼',
     'schedule.item5.content':
-      '글로벌 전기차 충전 인프라 컨퍼런스가 오늘 오후 1시부터 5시까지 한국 서울 그랜드힐스톤 호텔에서 개최됩니다. 전기차 충전 인프라 확대 전략, 초고속 충전 기술, 충전 네트워크 표준화, 스마트 그리드 연계 등에 대한 발표와 토론이 진행되며, 전 세계 전기차 및 충전 인프라 관련 기업과 기관이 참석합니다.',
+      '글로벌 소프트웨어 정의 차량(SDV) 포럼이 오늘 오후 2시부터 6시까지(한국 시간) 서울 코엑스에서 개최됩니다. 차량의 하드웨어와 소프트웨어 분리, OTA(Over-The-Air) 업데이트, 차량 운영체제(OS), 차량 클라우드 플랫폼 등 SDV 기술의 최신 동향과 표준화 방안을 논의합니다. 자동차 제조사, 소프트웨어 기업, 반도체 기업 등이 참석합니다.',
+    'notice.updateContent20260121': `<strong>2026-01-21</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.45 — 채널 전략 — 어디서, 어떻게 알려야 효과가 있는가」가 업데이트되었습니다. 성공적인 마케팅은 올바른 채널을 선택하고 효과적으로 메시지를 전달하는 것에서 시작됩니다. 좋은 제품이나 서비스도 잘못된 채널을 선택하거나 효과적인 전달 방법을 사용하지 않으면 실패할 수 있습니다. 채널 전략의 중요성, 타겟 고객의 채널 선호도 분석, 온라인과 오프라인 채널의 특성, 멀티채널 전략, 채널 효과 측정 방법, 그리고 최적의 채널 믹스 구성 등 실무 인사이트를 담은 eBook 시리즈 마흔다섯 번째 자료입니다.<br /><br />
+🧠 <strong>일반상식:</strong> 「잠금효과(Lock-in Effect)」가 등록되었습니다. 고객이나 사용자가 특정 제품, 서비스, 플랫폼에 의존하게 되어 다른 대안으로 전환하기 어려워지는 현상을 잠금효과라고 합니다. 잠금효과는 기술적 의존성, 경제적 비용, 심리적 요인 등 다양한 원인으로 발생하며, 기업의 경쟁 전략과 소비자의 선택에 큰 영향을 미칩니다. 잠금효과의 개념, 유형, 원인, 영향, 그리고 극복 방안을 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260120': `<strong>2026-01-20</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.44 — 콘텐츠 전략 — 사람의 마음을 움직이는 메시지를 설계하라」가 업데이트되었습니다. 성공적인 마케팅과 브랜드 구축의 핵심은 사람의 마음을 움직이는 메시지를 설계하는 것입니다. 단순한 정보 전달이 아닌 감정과 가치를 전달하는 콘텐츠 전략이 필요합니다. 콘텐츠 전략의 중요성, 타겟 오디언스 이해, 메시지 설계 원칙, 스토리텔링 기법, 감정적 연결 구축, 콘텐츠 배포 전략, 그리고 효과 측정 방법 등 실무 인사이트를 담은 eBook 시리즈 마흔네 번째 자료입니다.<br /><br />
 💼 <strong>경제상식:</strong> 「보호무역주의 확대와 국제 무역 환경 변화」가 등록되었습니다. 최근 전 세계적으로 보호무역주의가 확대되고 있으며, 주요 국가들이 무역장벽을 강화하는 추세가 뚜렷해지고 있습니다. 미국, 유럽연합, 중국 등 주요 경제국들이 관세 인상, 수입 제한, 보조금 확대 등 다양한 보호무역 정책을 시행하고 있으며, 이는 글로벌 무역 환경에 근본적인 변화를 가져오고 있습니다. 보호무역주의의 확대 배경, 주요 국가의 정책, 국제 무역 환경의 변화, 그리고 한국 경제에 미치는 영향과 대응 전략을 상세히 다룹니다.<br /><br />
@@ -94,21 +98,25 @@ const translations = {
     'nav.contact': 'Contact',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title': '2026 Detroit Auto Show Racing Day',
+    'schedule.item1.title': 'Automotive World Tokyo 2026 Opening',
     'schedule.item1.content':
-      'The 2026 Detroit Auto Show Racing Day will be held today from 10:00 AM to 6:00 PM (local time, Detroit, Michigan, USA; midnight to 8:00 AM Korea time) at Huntington Place in Detroit, Michigan, USA. Presented by the Detroit Grand Prix, this event features motorsports stars, race car displays, fan interaction programs, driver Q&A sessions, autograph sessions, and production vehicle ride-along experiences.',
-    'schedule.item2.title': 'International Information Technology Conferences',
+      'Automotive World Tokyo 2026 opens today from 10:00 AM to 5:00 PM (Japan local time; 9:00 AM to 4:00 PM Korea time) at Tokyo Big Sight in Tokyo, Japan. This is Asia\'s largest automotive technology exhibition with approximately 1,850 participating companies, showcasing cutting-edge technologies including EV/HV/FCV, connected cars, autonomous driving, software-defined vehicles (SDV), and lightweight materials. Particularly notable are the disassembly showcases of latest EVs from Tesla, Xiaomi, and AION, as well as the Pwn2Own Automotive 2026 security competition.',
+    'schedule.item2.title': 'Collision Industry Conference (CIC)',
     'schedule.item2.content':
-      'International Information Technology Conferences will be held today as all-day events in major U.S. cities (New York, San Francisco, Washington D.C., etc.). Various conferences covering latest IT issues such as data ethics and information policy, human-computer interaction, language and identity, social interaction, linguistics and discourse analysis will be held, featuring keynote speeches, panel discussions, and research presentations.',
-    'schedule.item3.title': 'Visit Detroit Interactive Experience',
+      'The Collision Industry Conference (CIC) will be held today from 8:00 AM to 5:00 PM (California local time; midnight to 9:00 AM Korea time) at the Hilton Palm Springs Resort in California, USA. This conference covers the entire collision repair industry, bringing together insurers, repair shops, automakers, and equipment suppliers to discuss industry issues. Key topics include EV repair technology, ADAS (Advanced Driver Assistance Systems) calibration, and changes in insurance policies.',
+    'schedule.item3.title': 'Collision Industry Conference (CIC)',
     'schedule.item3.content':
-      'The Visit Detroit Interactive Experience will be held today from 10:00 AM to 6:00 PM (local time, Detroit, Michigan, USA) at the Huntington Place Atrium in Detroit. The event offers STEM experiences, racing simulators, and interactive exhibits for children and families, providing a family-friendly program to enjoy alongside the Detroit Auto Show.',
-    'schedule.item4.title': 'Korea AI Technology Policy Forum 2026',
+      'The Collision Industry Conference (CIC) will be held today from 8:00 AM to 5:00 PM (California local time; midnight to 9:00 AM Korea time) at the Hilton Palm Springs Resort in California, USA. This conference covers the entire collision repair industry, bringing together insurers, repair shops, automakers, and equipment suppliers to discuss industry issues. Key topics include EV repair technology, ADAS (Advanced Driver Assistance Systems) calibration, and changes in insurance policies.',
+    'schedule.item4.title': '2026 Michelin Pilot Challenge Season Opener',
     'schedule.item4.content':
-      'The Korea AI Technology Policy Forum 2026 will be held today from 9:00 AM to 5:00 PM at COEX in Seoul, South Korea. The forum features keynote speeches and panel discussions on AI technology policies, regulatory environments, industry development strategies, and global cooperation, with government officials, industry experts, and academic researchers in attendance.',
-    'schedule.item5.title': 'Global EV Charging Infrastructure Conference',
+      'The 2026 Michelin Pilot Challenge season opener, BMW M Endurance Challenge at Daytona, will be held today through January 25 (Florida local time) at Daytona International Speedway in Florida, USA. This IMSA-sanctioned 4-hour endurance race features GS (Grand Sport) and TCR (Touring Car) classes. As the season\'s first round, pit strategy and durability are crucial factors.',
+    'schedule.item5.title': 'Global Software-Defined Vehicle (SDV) Forum',
     'schedule.item5.content':
-      'The Global EV Charging Infrastructure Conference will be held today from 1:00 PM to 5:00 PM at the Grand Hillstone Hotel in Seoul, South Korea. The conference features presentations and discussions on EV charging infrastructure expansion strategies, ultra-fast charging technology, charging network standardization, and smart grid integration, with global EV and charging infrastructure companies and institutions in attendance.',
+      'The Global Software-Defined Vehicle (SDV) Forum will be held today from 2:00 PM to 6:00 PM (Korea time) at COEX in Seoul. The forum discusses the latest trends and standardization approaches for SDV technologies, including hardware-software separation in vehicles, OTA (Over-The-Air) updates, vehicle operating systems (OS), and vehicle cloud platforms. Automakers, software companies, and semiconductor companies are in attendance.',
+    'notice.updateContent20260121': `<strong>2026-01-21</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.45 — Channel Strategy — Where and How to Reach Your Audience Effectively" has been updated. Successful marketing begins with selecting the right channels and effectively delivering messages. Even good products or services can fail if the wrong channels are chosen or ineffective delivery methods are used. This is the forty-fifth volume of the eBook series containing practical insights on <strong>the importance of channel strategy, analyzing target customer channel preferences, characteristics of online and offline channels, multi-channel strategies, channel effectiveness measurement methods, and optimal channel mix composition</strong>.<br /><br />
+🧠 <strong>General Knowledge:</strong> "Lock-in Effect" has been registered. Lock-in effect refers to the phenomenon where customers or users become dependent on specific products, services, or platforms, making it difficult to switch to alternatives. Lock-in effects occur due to various causes including technical dependencies, economic costs, and psychological factors, significantly impacting corporate competitive strategies and consumer choices. This article covers in detail <strong>the concept, types, causes, impacts, and ways to overcome lock-in effects</strong>.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260120': `<strong>2026-01-20</strong> – We've added new content to the eBook Series board and Economics Knowledge board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.44 — Content Strategy — Designing Messages That Move People's Hearts" has been updated. The key to successful marketing and brand building is designing messages that move people's hearts. Content strategy needs to convey emotions and values, not just information. This is the forty-fourth volume of the eBook series containing practical insights on <strong>the importance of content strategy, understanding target audiences, message design principles, storytelling techniques, building emotional connections, content distribution strategies, and effectiveness measurement methods</strong>.<br /><br />
 💼 <strong>Economics Knowledge:</strong> "Expansion of Protectionism and Changes in International Trade Environment" has been registered. Recently, protectionism has been expanding globally, with major countries significantly strengthening trade barriers. Major economies including the United States, European Union, and China are implementing various protectionist policies such as tariff increases, import restrictions, and subsidy expansions, bringing fundamental changes to the global trade environment. This article covers in detail <strong>the background of protectionism expansion, policies of major countries, changes in international trade environment, and the impact on the Korean economy and response strategies</strong>.<br /><br />

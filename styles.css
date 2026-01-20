@@ -125,7 +125,7 @@ body {
 /* 히어로 배너 섹션 */
 .hero-banner {
   position: relative;
-  height: 280px;
+  height: 400px;
   overflow: hidden;
   background: linear-gradient(
     135deg,
@@ -284,13 +284,13 @@ body {
 
 /* 네비게이션 바 */
 .main-navigation {
-  background: linear-gradient(135deg, #654321 0%, #8b4513 50%, #654321 100%);
+  background: linear-gradient(135deg, #0056b3 0%, #007bff 50%, #0056b3 100%);
   padding: 20px 0;
-  box-shadow: 0 4px 12px rgba(101, 67, 33, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.5);
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 0 0 15px 15px;
-  border-top: 3px solid #8b4513;
+  border-top: 3px solid #007bff;
 }
 
 .main-navigation .nav-container {
@@ -788,7 +788,7 @@ body {
 
 /* 푸터 */
 .footer {
-  background: linear-gradient(135deg, #654321 0%, #8b4513 50%, #654321 100%);
+  background: linear-gradient(135deg, #0056b3 0%, #007bff 50%, #0056b3 100%);
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -797,7 +797,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 0 0 15px 15px;
-  box-shadow: 0 4px 12px rgba(101, 67, 33, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
 }
 
 .footer p {
