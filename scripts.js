@@ -18,23 +18,42 @@ const translations = {
     'nav.techTrend': '기술<br />트렌드/뉴스',
     'nav.previousContent': '이전<br />자료',
     'nav.contact': '연락<br />할곳',
+    'profile.heading': 'Brief Profile',
+    'profile.name': "Hoki Lee's Brief Profile",
+    'profile.title1': '자동차 및 교육의 전문가',
+    'profile.title2': '글로벌 자동차 산업의 경험자',
+    'profile.title3': '팀워크와 리더십의 실천자',
+    'profile.company1': '오진양행',
+    'profile.company2': 'BMW Dealerships',
+    'profile.company3': 'BMW Korea',
+    'profile.company4': '삼성자동차',
+    'profile.company5': '현대자동차',
+    'profile.position1': 'Executive Director, Head of Service Division',
+    'profile.position2': 'Director, Service Division',
+    'profile.position3': 'Training & Technical Support Team Leader',
+    'profile.position4': 'Technical Training & Service Manager',
+    'profile.position5': 'Global Technical Support & Training',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': 'Automotive World Tokyo 2026 개막',
+    'schedule.item1.title': '21회 연례 TFI 기술 컨퍼런스',
     'schedule.item1.content':
-      'Automotive World Tokyo 2026이 오늘 오전 10시부터 오후 5시까지(일본 현지 시간, 한국 시간 오전 9시~오후 4시) 일본 도쿄 빅사이트에서 개막됩니다. 약 1,850개 업체가 참가하는 아시아 최대 규모의 자동차 기술 전시회로, EV/HV/FCV, 커넥티드카, 자율주행, 소프트웨어 정의 차량(SDV), 경량화 소재 등 첨단 기술이 전시됩니다. 특히 Tesla, Xiaomi, AION 등 최신 전기차의 분해 전시와 Pwn2Own Automotive 2026 보안 경진대회가 주목받습니다.',
-    'schedule.item2.title': 'Collision Industry Conference (CIC)',
+      '21회 연례 TFI 기술 컨퍼런스가 오늘 오전 9시부터 오후 5시 30분까지(미국 텍사스 현지 시간 CST, 한국 시간 자정~오전 9시 30분) 미국 텍사스 오스틴 Hyatt Place Austin Downtown에서 개최됩니다. 온라인 참석도 가능한 하이브리드 형식으로 진행되며, 무선 통신, 브로드밴드 및 비디오 기술 동향, 6G 및 저궤도 위성 통신(LEO) 기술, 데이터 센터 평가와 인공지능(AI)의 영향 등이 주요 논의 주제입니다.',
+    'schedule.item2.title': 'SAE Government/Industry Meeting',
     'schedule.item2.content':
-      'Collision Industry Conference (CIC)가 오늘 오전 8시부터 오후 5시까지(미국 캘리포니아 현지 시간, 한국 시간 자정~오전 9시) 미국 캘리포니아 팜스프링스 힐튼 리조트에서 개최됩니다. 자동차 충돌 수리업계 전반에 걸친 회의로, 보험사, 수리업체, 자동차 제조사, 장비 공급자 등이 모여 산업 현안을 토론합니다. 전기차 수리 기술, ADAS(고급 운전자 보조 시스템) 보정, 보험 정책 변화 등이 주요 논의 주제입니다.',
-    'schedule.item3.title': 'Collision Industry Conference (CIC)',
+      'SAE Government/Industry Meeting이 오늘까지(1월 20일~22일) 미국 워싱턴 D.C. George Washington University, Walter E. Washington Convention Center에서 개최됩니다. 자동차 업계와 정부 간의 기술 및 규제 협력의 장으로, 데이터 기록 장치(EDR; Event Data Recorders)의 데이터 캡처 최종 규제 변경에 대한 NHTSA 응답 등 자동차 규제와 정책 변화가 주요 논의 주제입니다.',
+    'schedule.item3.title': '국제 계산 지능 및 컴퓨팅 기술 & AI 회의',
     'schedule.item3.content':
-      'Collision Industry Conference (CIC)가 오늘 오전 8시부터 오후 5시까지(미국 캘리포니아 현지 시간, 한국 시간 자정~오전 9시) 미국 캘리포니아 팜스프링스 힐튼 리조트에서 개최됩니다. 자동차 충돌 수리업계 전반에 걸친 회의로, 보험사, 수리업체, 자동차 제조사, 장비 공급자 등이 모여 산업 현안을 토론합니다. 전기차 수리 기술, ADAS(고급 운전자 보조 시스템) 보정, 보험 정책 변화 등이 주요 논의 주제입니다.',
-    'schedule.item4.title': '2026 Michelin Pilot Challenge 시즌 개막전',
+      '국제 계산 지능 및 컴퓨팅 기술 & AI 회의가 오늘 하루 일정으로 인도 뉴델리에서 개최됩니다. 계산 지능(Computational Intelligence)과 인공지능 기술의 최신 연구 및 응용 동향을 다루며, 머신러닝, 딥러닝, 신경망, 퍼지 시스템 등 다양한 AI 기술의 발전과 실무 적용 사례를 논의합니다.',
+    'schedule.item4.title': '글로벌 자동차 전기화 포럼 2026',
     'schedule.item4.content':
-      '2026 Michelin Pilot Challenge 시즌 개막전인 BMW M Endurance Challenge at Daytona가 오늘부터 1월 25일까지(미국 플로리다 현지 시간) 미국 플로리다 데이토나 인터내셔널 스피드웨이에서 개최됩니다. IMSA 산하 4시간 내구 레이스로, GS(Grand Sport)와 TCR(Touring Car) 클래스가 경쟁합니다. 시즌 첫 라운드로 피트 전략과 내구성이 중요한 레이스입니다.',
-    'schedule.item5.title': '글로벌 소프트웨어 정의 차량(SDV) 포럼',
+      '글로벌 자동차 전기화 포럼 2026이 오늘 오전 10시부터 오후 6시까지(한국 시간) 서울 코엑스에서 개최됩니다. 전기차 배터리 기술, 충전 인프라, 전기차 시장 동향, 정부 정책 및 규제 등 전기차 산업 전반의 최신 동향을 논의합니다. 자동차 제조사, 배터리 기업, 충전 인프라 기업 등이 참석합니다.',
+    'schedule.item5.title': 'AI 기반 자율주행 기술 세미나',
     'schedule.item5.content':
-      '글로벌 소프트웨어 정의 차량(SDV) 포럼이 오늘 오후 2시부터 6시까지(한국 시간) 서울 코엑스에서 개최됩니다. 차량의 하드웨어와 소프트웨어 분리, OTA(Over-The-Air) 업데이트, 차량 운영체제(OS), 차량 클라우드 플랫폼 등 SDV 기술의 최신 동향과 표준화 방안을 논의합니다. 자동차 제조사, 소프트웨어 기업, 반도체 기업 등이 참석합니다.',
+      'AI 기반 자율주행 기술 세미나가 오늘 오후 2시부터 5시까지(한국 시간) 서울 강남구 테헤란로에서 개최됩니다. 인공지능을 활용한 자율주행 알고리즘, 센서 융합 기술, 실시간 의사결정 시스템, 자율주행 차량의 안전성 및 신뢰성 향상 방안 등이 주요 논의 주제입니다. 자동차 제조사, AI 기업, 반도체 기업, 연구기관 등이 참석합니다.',
+    'notice.updateContent20260123': `<strong>2026-01-23</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.46 — 캠페인 실행 — 시장 반응을 만드는 실행의 기술」가 업데이트되었습니다. 성공적인 마케팅 캠페인은 전략적 기획뿐만 아니라 탁월한 실행력에서 비롯됩니다. 좋은 아이디어와 전략도 제대로 실행하지 못하면 시장에서 아무런 반응을 얻지 못합니다. 캠페인 실행의 중요성, 실행 계획 수립, 리소스 관리, 타임라인 관리, 실행 과정 모니터링, 실시간 대응 전략, 그리고 캠페인 성과 측정 등 실무 인사이트를 담은 eBook 시리즈 마흔여섯 번째 자료입니다.<br /><br />
+🧠 <strong>한줄 지식/잡학:</strong> 「장 속 세균이 자체 제작 알코올을 만드는 증후군」이 등록되었습니다. 최근 의학계에서 흥미로운 증후군이 주목받고 있습니다. 술을 전혀 마시지 않았는데도 취한 것 같은 증상이 나타나는 '자체 제작 알코올 증후군(Auto-brewery Syndrome)'입니다. 이 증후군은 장내 미생물이 섭취한 탄수화물을 발효시켜 알코올을 생성하고, 이것이 혈류로 흡수되어 혈중 알코올 농도가 올라가는 매우 드문 질환입니다. 자체 제작 알코올 증후군의 개념, 원인, 증상, 진단, 치료, 그리고 사회적 영향을 상세히 다룹니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
     'notice.updateContent20260121': `<strong>2026-01-21</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
 📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.45 — 채널 전략 — 어디서, 어떻게 알려야 효과가 있는가」가 업데이트되었습니다. 성공적인 마케팅은 올바른 채널을 선택하고 효과적으로 메시지를 전달하는 것에서 시작됩니다. 좋은 제품이나 서비스도 잘못된 채널을 선택하거나 효과적인 전달 방법을 사용하지 않으면 실패할 수 있습니다. 채널 전략의 중요성, 타겟 고객의 채널 선호도 분석, 온라인과 오프라인 채널의 특성, 멀티채널 전략, 채널 효과 측정 방법, 그리고 최적의 채널 믹스 구성 등 실무 인사이트를 담은 eBook 시리즈 마흔다섯 번째 자료입니다.<br /><br />
 🧠 <strong>일반상식:</strong> 「잠금효과(Lock-in Effect)」가 등록되었습니다. 고객이나 사용자가 특정 제품, 서비스, 플랫폼에 의존하게 되어 다른 대안으로 전환하기 어려워지는 현상을 잠금효과라고 합니다. 잠금효과는 기술적 의존성, 경제적 비용, 심리적 요인 등 다양한 원인으로 발생하며, 기업의 경쟁 전략과 소비자의 선택에 큰 영향을 미칩니다. 잠금효과의 개념, 유형, 원인, 영향, 그리고 극복 방안을 상세히 다룹니다.<br /><br />
@@ -96,23 +115,42 @@ const translations = {
     'nav.techTrend': 'Tech Trends & News',
     'nav.previousContent': 'Previous<br />Materials',
     'nav.contact': 'Contact',
+    'profile.heading': 'Brief Profile',
+    'profile.name': "Hoki Lee's Brief Profile",
+    'profile.title1': 'Expert in Automotive and Education',
+    'profile.title2': 'Experienced in Global Automotive Industry',
+    'profile.title3': 'Practitioner of Teamwork and Leadership',
+    'profile.company1': 'Ohjin Corporation',
+    'profile.company2': 'BMW Dealerships',
+    'profile.company3': 'BMW Korea',
+    'profile.company4': 'Samsung Motors',
+    'profile.company5': 'Hyundai Motor Company',
+    'profile.position1': 'Executive Director, Head of Service Division',
+    'profile.position2': 'Director, Service Division',
+    'profile.position3': 'Training & Technical Support Team Leader',
+    'profile.position4': 'Technical Training & Service Manager',
+    'profile.position5': 'Global Technical Support & Training',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title': 'Automotive World Tokyo 2026 Opening',
+    'schedule.item1.title': '21st Annual TFI Technology Conference',
     'schedule.item1.content':
-      'Automotive World Tokyo 2026 opens today from 10:00 AM to 5:00 PM (Japan local time; 9:00 AM to 4:00 PM Korea time) at Tokyo Big Sight in Tokyo, Japan. This is Asia\'s largest automotive technology exhibition with approximately 1,850 participating companies, showcasing cutting-edge technologies including EV/HV/FCV, connected cars, autonomous driving, software-defined vehicles (SDV), and lightweight materials. Particularly notable are the disassembly showcases of latest EVs from Tesla, Xiaomi, and AION, as well as the Pwn2Own Automotive 2026 security competition.',
-    'schedule.item2.title': 'Collision Industry Conference (CIC)',
+      'The 21st Annual TFI Technology Conference will be held today from 9:00 AM to 5:30 PM (CST, Texas local time; midnight to 9:30 AM Korea time) at Hyatt Place Austin Downtown in Austin, Texas, USA. The conference is held in a hybrid format with online participation available. Key topics include trends in wireless communications, broadband and video technologies, 6G and Low Earth Orbit (LEO) satellite communications technology, and data center valuation and AI impact.',
+    'schedule.item2.title': 'SAE Government/Industry Meeting',
     'schedule.item2.content':
-      'The Collision Industry Conference (CIC) will be held today from 8:00 AM to 5:00 PM (California local time; midnight to 9:00 AM Korea time) at the Hilton Palm Springs Resort in California, USA. This conference covers the entire collision repair industry, bringing together insurers, repair shops, automakers, and equipment suppliers to discuss industry issues. Key topics include EV repair technology, ADAS (Advanced Driver Assistance Systems) calibration, and changes in insurance policies.',
-    'schedule.item3.title': 'Collision Industry Conference (CIC)',
+      'The SAE Government/Industry Meeting continues today (January 20-22) at George Washington University, Walter E. Washington Convention Center in Washington D.C., USA. This meeting serves as a platform for collaboration between the automotive industry and government on technology and regulations. Key topics include automotive regulations and policy changes, including NHTSA responses to final rule changes regarding Event Data Recorder (EDR) data capture.',
+    'schedule.item3.title': 'International Conference on Computational Intelligence and Computing Technologies & AI',
     'schedule.item3.content':
-      'The Collision Industry Conference (CIC) will be held today from 8:00 AM to 5:00 PM (California local time; midnight to 9:00 AM Korea time) at the Hilton Palm Springs Resort in California, USA. This conference covers the entire collision repair industry, bringing together insurers, repair shops, automakers, and equipment suppliers to discuss industry issues. Key topics include EV repair technology, ADAS (Advanced Driver Assistance Systems) calibration, and changes in insurance policies.',
-    'schedule.item4.title': '2026 Michelin Pilot Challenge Season Opener',
+      'The International Conference on Computational Intelligence and Computing Technologies & AI will be held today as a one-day event in New Delhi, India. The conference covers the latest research and application trends in computational intelligence and AI technologies, discussing developments and practical applications of various AI technologies including machine learning, deep learning, neural networks, and fuzzy systems.',
+    'schedule.item4.title': 'Global Automotive Electrification Forum 2026',
     'schedule.item4.content':
-      'The 2026 Michelin Pilot Challenge season opener, BMW M Endurance Challenge at Daytona, will be held today through January 25 (Florida local time) at Daytona International Speedway in Florida, USA. This IMSA-sanctioned 4-hour endurance race features GS (Grand Sport) and TCR (Touring Car) classes. As the season\'s first round, pit strategy and durability are crucial factors.',
-    'schedule.item5.title': 'Global Software-Defined Vehicle (SDV) Forum',
+      'The Global Automotive Electrification Forum 2026 will be held today from 10:00 AM to 6:00 PM (Korea time) at COEX in Seoul. The forum discusses the latest trends across the electric vehicle industry, including EV battery technology, charging infrastructure, EV market trends, and government policies and regulations. Automakers, battery companies, and charging infrastructure companies are in attendance.',
+    'schedule.item5.title': 'AI-Based Autonomous Driving Technology Seminar',
     'schedule.item5.content':
-      'The Global Software-Defined Vehicle (SDV) Forum will be held today from 2:00 PM to 6:00 PM (Korea time) at COEX in Seoul. The forum discusses the latest trends and standardization approaches for SDV technologies, including hardware-software separation in vehicles, OTA (Over-The-Air) updates, vehicle operating systems (OS), and vehicle cloud platforms. Automakers, software companies, and semiconductor companies are in attendance.',
+      'The AI-Based Autonomous Driving Technology Seminar will be held today from 2:00 PM to 5:00 PM (Korea time) at Teheran-ro in Gangnam-gu, Seoul. Key topics include AI-based autonomous driving algorithms, sensor fusion technology, real-time decision-making systems, and methods to improve the safety and reliability of autonomous vehicles. Automakers, AI companies, semiconductor companies, and research institutions are in attendance.',
+    'notice.updateContent20260123': `<strong>2026-01-23</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board.<br /><br />
+📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.46 — Campaign Execution — The Art of Execution That Creates Market Response" has been updated. Successful marketing campaigns stem not only from strategic planning but also from excellent execution. Even good ideas and strategies will fail to generate any market response if not properly executed. This is the forty-sixth volume of the eBook series containing practical insights on <strong>the importance of campaign execution, execution planning, resource management, timeline management, execution process monitoring, real-time response strategies, and campaign performance measurement</strong>.<br /><br />
+🧠 <strong>One-Line Knowledge/Trivia:</strong> "Auto-brewery Syndrome: When Gut Bacteria Produce Alcohol" has been registered. Recently, an interesting syndrome has been gaining attention in the medical field. 'Auto-brewery Syndrome' is a condition where symptoms similar to intoxication appear even though no alcohol has been consumed. This syndrome is a very rare disorder where gut microorganisms ferment consumed carbohydrates to produce alcohol, which is then absorbed into the bloodstream, raising blood alcohol levels. This article covers in detail <strong>the concept, causes, symptoms, diagnosis, treatment, and social impact of auto-brewery syndrome</strong>.<br /><br />
+Please check each board for more detailed content.`,
     'notice.updateContent20260121': `<strong>2026-01-21</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
 📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.45 — Channel Strategy — Where and How to Reach Your Audience Effectively" has been updated. Successful marketing begins with selecting the right channels and effectively delivering messages. Even good products or services can fail if the wrong channels are chosen or ineffective delivery methods are used. This is the forty-fifth volume of the eBook series containing practical insights on <strong>the importance of channel strategy, analyzing target customer channel preferences, characteristics of online and offline channels, multi-channel strategies, channel effectiveness measurement methods, and optimal channel mix composition</strong>.<br /><br />
 🧠 <strong>General Knowledge:</strong> "Lock-in Effect" has been registered. Lock-in effect refers to the phenomenon where customers or users become dependent on specific products, services, or platforms, making it difficult to switch to alternatives. Lock-in effects occur due to various causes including technical dependencies, economic costs, and psychological factors, significantly impacting corporate competitive strategies and consumer choices. This article covers in detail <strong>the concept, types, causes, impacts, and ways to overcome lock-in effects</strong>.<br /><br />
@@ -351,11 +389,22 @@ document.addEventListener('DOMContentLoaded', function () {
   function setActiveLanguageButton(toggleElement, lang) {
     if (!toggleElement) return;
     const langButtons = toggleElement.querySelectorAll('.lang-btn');
+    const koButton = toggleElement.querySelector('.lang-btn[data-lang="ko"]');
+    
     langButtons.forEach((btn) => {
       const isActive = btn.dataset.lang === lang;
       btn.classList.toggle('active', isActive);
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
+    
+    // English 버튼이 active일 때 한국어 버튼 배경색을 흰색으로 설정
+    if (lang === 'en' && koButton) {
+      koButton.style.background = '#ffffff';
+      koButton.style.borderColor = 'rgba(0, 0, 0, 0.1)';
+    } else if (lang === 'ko' && koButton) {
+      koButton.style.background = '';
+      koButton.style.borderColor = '';
+    }
   }
 
   function applyTranslations(lang) {

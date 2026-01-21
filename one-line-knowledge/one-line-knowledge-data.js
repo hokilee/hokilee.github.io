@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 116,
+    title: '장 속 세균이 자체 제작 알코올을 만드는 증후군',
+    link: 'one-line-knowledge/trivia-detail-116.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '01-22',
+    views: 0,
+  },
+  {
     id: 115,
     title: 'AI 의료진단의 한계와 윤리적 딜레마',
     link: 'one-line-knowledge/trivia-detail-115.html',

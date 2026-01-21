@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 46,
+    title: '캠페인 실행 — 시장 반응을 만드는 실행의 기술',
+    link: 'eBook-data/Hoki Lee eBook series vol46.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-22',
+    views: 0,
+  },
+  {
     id: 45,
     title: '채널 전략 — 어디서, 어떻게 알려야 효과가 있는가',
     link: 'eBook-data/Hoki Lee eBook series vol45.pdf',
