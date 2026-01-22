@@ -20,6 +20,7 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'profile.heading': 'Brief Profile',
     'profile.name': "Hoki Lee's Brief Profile",
+    'profile.instruction': '아래 회사를 클릭할 경우 간단한 핵심 역할, 주요 성과, 경험의 의미에 대한 내용을 확인할 수 있습니다',
     'profile.title1': '자동차 및 교육의 전문가',
     'profile.title2': '글로벌 자동차 산업의 경험자',
     'profile.title3': '팀워크와 리더십의 실천자',
@@ -33,6 +34,9 @@ const translations = {
     'profile.position3': 'Training & Technical Support Team Leader',
     'profile.position4': 'Technical Training & Service Manager',
     'profile.position5': 'Global Technical Support & Training',
+    'modal.coreRole': '핵심 역할',
+    'modal.keyAchievements': '주요 성과',
+    'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title': '21회 연례 TFI 기술 컨퍼런스',
@@ -117,6 +121,7 @@ const translations = {
     'nav.contact': 'Contact',
     'profile.heading': 'Brief Profile',
     'profile.name': "Hoki Lee's Brief Profile",
+    'profile.instruction': 'Click on the companies below to view details about core roles, key achievements, and the meaning of each experience',
     'profile.title1': 'Expert in Automotive and Education',
     'profile.title2': 'Experienced in Global Automotive Industry',
     'profile.title3': 'Practitioner of Teamwork and Leadership',
@@ -130,6 +135,9 @@ const translations = {
     'profile.position3': 'Training & Technical Support Team Leader',
     'profile.position4': 'Technical Training & Service Manager',
     'profile.position5': 'Global Technical Support & Training',
+    'modal.coreRole': 'Core Role',
+    'modal.keyAchievements': 'Key Achievements',
+    'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title': '21st Annual TFI Technology Conference',
@@ -206,6 +214,24 @@ const visitorCounterConfig = {
     alt: 'Visitor Count (Today / Total)',
   },
 };
+
+// 현재 언어 가져오기 함수
+function getCurrentLanguage() {
+  return (
+    localStorage.getItem(LANGUAGE_STORAGE_KEY) ||
+    navigator.language.startsWith('ko') ? 'ko' : 'en' ||
+    DEFAULT_LANGUAGE
+  );
+}
+
+// 현재 언어 가져오기 함수
+function getCurrentLanguage() {
+  return (
+    localStorage.getItem(LANGUAGE_STORAGE_KEY) ||
+    (navigator.language.startsWith('ko') ? 'ko' : 'en') ||
+    DEFAULT_LANGUAGE
+  );
+}
 
 // DOM이 로드된 후 실행
 document.addEventListener('DOMContentLoaded', function () {
@@ -624,3 +650,272 @@ function showSlide(index) {
     indicators[index].classList.add('active');
   }
 }
+
+// 회사 상세 정보 데이터
+const companyDetails = {
+  ko: {
+    ohjin: {
+      companyName: '오진양행 (Ohjin Corporation)',
+      position: 'Executive Director · Head of Service Division',
+      period: 'Feb. 2000 – Oct. 2025',
+      coreRole: [
+        '서비스본부 총괄 책임자로서 조직 운영, 손익 구조, 품질, 인력, 교육 체계 전반을 관리',
+        '브랜드 판매·렌탈 사업부와 연계된 서비스 운영 구조 재설계',
+        '해외 제조사 및 파트너사와의 기술·품질·교육 협업 주도',
+      ],
+      achievements: [
+        '서비스 조직 구조 개편 및 KPI 체계 정립',
+        '스타벅스, 네스프레소, 엘로치오, 비로보틱스 등 신규 서비스 계약 유치',
+        '서비스 매출 배정·관리 앱 기획 및 도입 → 운영 효율성 향상',
+        '8개 지방 사무소 근무 환경 표준화 및 운영 품질 개선',
+        'Thermoplan, Welbilt 등 글로벌 제조사와 직접 품질 이슈 해결 및 교육 운영',
+      ],
+      meaning: '"현장 중심 서비스 조직을 수익과 구조로 연결하는 경험을 완성한 단계"',
+    },
+    'bmw-dealerships': {
+      companyName: 'BMW Dealerships (Deutsch Motors / Bavarian Motors 등)',
+      position: 'Director · Service Division',
+      period: 'Feb. 2016 – Jan. 2022',
+      coreRole: [
+        'BMW 공식 딜러사 서비스 조직 총괄',
+        '서비스 운영, 기술 지원, 교육, 품질 대응, 인력 평가 전반 책임',
+        'BMW Korea 및 글로벌 본사와의 기술 커뮤니케이션 창구 역할',
+      ],
+      achievements: [
+        'Master Lab 운영 및 고난도 기술 이슈(Field Fix) 현장 해결',
+        '서비스 인력 채용·평가·교육 체계 개선',
+        '고객 CS 및 품질 이슈 대응 프로세스 정비',
+        '현장 중심 기술 교육(Field Fix Training) 강화로 재수리율 감소',
+      ],
+      meaning: '"프리미엄 브랜드 서비스 품질을 현장에서 지켜낸 운영 리더십"',
+    },
+    'bmw-korea': {
+      companyName: 'BMW Korea',
+      position: 'Training & Technical Support Team Leader',
+      period: 'Jan. 2000 – Jan. 2016',
+      coreRole: [
+        'BMW Korea 기술 교육 및 기술 지원 조직 리딩',
+        '신차 기술 교육, 현장 기술 지원, 글로벌 협업 담당',
+        '국내외 딜러 기술 수준 표준화 및 교육 체계 구축',
+      ],
+      achievements: [
+        'New Model Training / Field Fix Training 기획 및 운영',
+        'Master Trainer 자격 취득',
+        '기술 레벨 테스트 및 기능올림픽 운영',
+        '현장 품질 이슈 분석 및 본사 보고 체계 구축',
+        'Apprentic 기획 및 운영',
+      ],
+      meaning: '"기술을 사람과 조직의 역량으로 전환한 커리어의 기반"',
+    },
+    samsung: {
+      companyName: '삼성자동차 (Renault Samsung Motors)',
+      position: 'Technical Training & Service Manager',
+      period: 'Apr. 1997 – Dec. 1999',
+      coreRole: [
+        '서비스 기술 교육 및 정비 인력 역량 강화 담당',
+        '초기 서비스 품질 안정화 및 교육 체계 구축',
+      ],
+      achievements: [
+        '정비사 대상 기술 교육 프로그램 개발',
+        '서비스 품질 기준 수립 및 현장 적용',
+        '초기 브랜드 서비스 신뢰도 확보에 기여',
+      ],
+      meaning: '"서비스 품질의 시작이 교육과 표준임을 체득한 시기"',
+    },
+    hyundai: {
+      companyName: '현대자동차 (Hyundai Motor Company)',
+      position: 'Global Technical Support & Training',
+      period: 'Sep. 1991 – Feb. 1997',
+      coreRole: [
+        '해외 딜러 대상 기술 지원 및 교육',
+        '수출 차량 품질 이슈 대응 및 기술 보고',
+      ],
+      achievements: [
+        '해외 현장 Field Fix Training 수행',
+        '수출 차량 품질 이슈 본사 피드백 및 개선 지원',
+        '글로벌 기술 커뮤니케이션 경험 축적',
+      ],
+      meaning: '"글로벌 현장에서 기술과 커뮤니케이션의 중요성을 배운 출발점"',
+    },
+  },
+  en: {
+    ohjin: {
+      companyName: 'Ohjin Corporation',
+      position: 'Executive Director · Head of Service Division',
+      period: 'Feb. 2000 – Oct. 2025',
+      coreRole: [
+        'Managed overall service division operations including organizational management, profit structure, quality, personnel, and training systems',
+        'Redesigned service operations structure integrated with brand sales and rental business units',
+        'Led technical, quality, and training collaboration with overseas manufacturers and partners',
+      ],
+      achievements: [
+        'Restructured service organization and established KPI system',
+        'Secured new service contracts with Starbucks, Nespresso, Elo Touch, Birobotics, etc.',
+        'Planned and implemented service revenue allocation and management app → Improved operational efficiency',
+        'Standardized working environments and improved operational quality at 8 regional offices',
+        'Directly resolved quality issues and operated training programs with global manufacturers such as Thermoplan and Welbilt',
+      ],
+      meaning: '"A stage where I completed the experience of connecting field-centered service organizations with profits and structure"',
+    },
+    'bmw-dealerships': {
+      companyName: 'BMW Dealerships (Deutsch Motors / Bavarian Motors, etc.)',
+      position: 'Director · Service Division',
+      period: 'Feb. 2016 – Jan. 2022',
+      coreRole: [
+        'Managed overall service organization of BMW official dealerships',
+        'Responsible for service operations, technical support, training, quality response, and personnel evaluation',
+        'Served as a communication channel for technical matters with BMW Korea and global headquarters',
+      ],
+      achievements: [
+        'Operated Master Lab and resolved high-difficulty technical issues (Field Fix) on-site',
+        'Improved service personnel recruitment, evaluation, and training systems',
+        'Established customer CS and quality issue response processes',
+        'Reduced rework rate by strengthening field-centered technical training (Field Fix Training)',
+      ],
+      meaning: '"Operational leadership that maintained premium brand service quality in the field"',
+    },
+    'bmw-korea': {
+      companyName: 'BMW Korea',
+      position: 'Training & Technical Support Team Leader',
+      period: 'Jan. 2000 – Jan. 2016',
+      coreRole: [
+        'Led BMW Korea technical training and technical support organization',
+        'Responsible for new vehicle technical training, field technical support, and global collaboration',
+        'Standardized domestic and international dealer technical levels and established training systems',
+      ],
+      achievements: [
+        'Planned and operated New Model Training / Field Fix Training',
+        'Obtained Master Trainer certification',
+        'Operated technical level tests and Skills Olympics',
+        'Established field quality issue analysis and headquarters reporting system',
+        'Planned and operated Apprentic',
+      ],
+      meaning: '"The foundation of a career that transformed technology into human and organizational capabilities"',
+    },
+    samsung: {
+      companyName: 'Samsung Motors (Renault Samsung Motors)',
+      position: 'Technical Training & Service Manager',
+      period: 'Apr. 1997 – Dec. 1999',
+      coreRole: [
+        'Responsible for service technical training and enhancing maintenance personnel capabilities',
+        'Stabilized initial service quality and established training systems',
+      ],
+      achievements: [
+        'Developed technical training programs for technicians',
+        'Established service quality standards and applied them in the field',
+        'Contributed to securing initial brand service reliability',
+      ],
+      meaning: '"A period when I learned that the foundation of service quality lies in education and standards"',
+    },
+    hyundai: {
+      companyName: 'Hyundai Motor Company',
+      position: 'Global Technical Support & Training',
+      period: 'Sep. 1991 – Feb. 1997',
+      coreRole: [
+        'Technical support and training for overseas dealers',
+        'Response to export vehicle quality issues and technical reporting',
+      ],
+      achievements: [
+        'Conducted Field Fix Training at overseas sites',
+        'Provided headquarters feedback and improvement support for export vehicle quality issues',
+        'Accumulated global technical communication experience',
+      ],
+      meaning: '"The starting point where I learned the importance of technology and communication in the global field"',
+    },
+  },
+};
+
+// 현재 열려있는 모달의 회사 키 저장
+let currentModalCompanyKey = null;
+
+// 모달 열기 함수
+function openCompanyModal(companyKey) {
+  const currentLang = getCurrentLanguage();
+  const companyData = companyDetails[currentLang][companyKey];
+
+  if (!companyData) return;
+
+  currentModalCompanyKey = companyKey;
+
+  const modal = document.getElementById('companyModal');
+  document.getElementById('modalCompanyName').textContent =
+    companyData.companyName;
+  document.getElementById('modalPosition').textContent = companyData.position;
+  document.getElementById('modalPeriod').textContent = companyData.period;
+
+  // 핵심 역할
+  const coreRoleList = document.getElementById('modalCoreRole');
+  coreRoleList.innerHTML = '';
+  companyData.coreRole.forEach((role) => {
+    const li = document.createElement('li');
+    li.textContent = role;
+    coreRoleList.appendChild(li);
+  });
+
+  // 주요 성과
+  const achievementsList = document.getElementById('modalAchievements');
+  achievementsList.innerHTML = '';
+  companyData.achievements.forEach((achievement) => {
+    const li = document.createElement('li');
+    li.textContent = achievement;
+    achievementsList.appendChild(li);
+  });
+
+  // 이 경험의 의미
+  document.getElementById('modalMeaning').textContent = companyData.meaning;
+
+  modal.style.display = 'block';
+}
+
+// 모달 닫기 함수
+function closeCompanyModal() {
+  const modal = document.getElementById('companyModal');
+  modal.style.display = 'none';
+  currentModalCompanyKey = null;
+}
+
+// 모달 이벤트 리스너 설정
+document.addEventListener('DOMContentLoaded', function () {
+  // 박스 전체 클릭 이벤트
+  document.querySelectorAll('.career-item').forEach((item) => {
+    const companyKey = item.getAttribute('data-company');
+    if (companyKey) {
+      item.addEventListener('click', () => {
+        openCompanyModal(companyKey);
+      });
+    }
+  });
+
+  // 모달 닫기 버튼
+  const closeBtn = document.querySelector('.modal-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeCompanyModal);
+  }
+
+  // 모달 배경 클릭 시 닫기
+  const modal = document.getElementById('companyModal');
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeCompanyModal();
+      }
+    });
+  }
+
+  // ESC 키로 모달 닫기
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeCompanyModal();
+    }
+  });
+});
+
+// 언어 변경 시 모달 내용 업데이트
+const originalApplyTranslations = applyTranslations;
+applyTranslations = function (lang) {
+  originalApplyTranslations(lang);
+  // 현재 열려있는 모달이 있다면 내용 업데이트
+  if (currentModalCompanyKey) {
+    openCompanyModal(currentModalCompanyKey);
+  }
+};

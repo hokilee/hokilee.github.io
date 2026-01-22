@@ -1059,6 +1059,14 @@ body {
   margin-bottom: 8px;
 }
 
+.profile-instruction {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
 .profile-subtitles {
   display: flex;
   gap: 0;
@@ -1097,6 +1105,7 @@ body {
   border-radius: 8px;
   border-left: 4px solid #007bff;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .career-item:hover {
@@ -1109,6 +1118,7 @@ body {
   color: #007bff;
   min-width: 150px;
   font-size: 1.1rem;
+  pointer-events: none;
 }
 
 .career-period {
@@ -1121,6 +1131,191 @@ body {
   color: #333;
   font-size: 0.95rem;
   flex: 1;
+}
+
+.career-company {
+  transition: color 0.3s ease;
+}
+
+.career-company:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.3s;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 15px 20px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #000;
+}
+
+.modal-header {
+  padding: 30px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-company-name {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.modal-position {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.modal-period {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.modal-section {
+  margin-bottom: 30px;
+}
+
+.modal-section h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-list li {
+  padding: 12px 0;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.modal-list li:last-child {
+  border-bottom: none;
+}
+
+.modal-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.modal-meaning {
+  font-style: italic;
+  color: #555;
+  line-height: 1.8;
+  padding: 15px;
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+  margin: 0;
+}
+
+/* 모바일 모달 스타일 */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+    max-height: 80vh;
+  }
+
+  .modal-header {
+    padding: 20px;
+  }
+
+  .modal-company-name {
+    font-size: 1.5rem;
+  }
+
+  .modal-position {
+    font-size: 1rem;
+  }
+
+  .modal-period {
+    font-size: 0.9rem;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-section h3 {
+    font-size: 1.2rem;
+  }
 }
 
 /* 프로필 섹션 반응형 디자인 */
@@ -1138,6 +1333,15 @@ body {
     width: 100%;
     margin-bottom: 0;
     text-align: center;
+  }
+
+  .profile-instruction {
+    font-size: 0.85rem;
+    order: -1;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0 10px;
   }
 
   .profile-image-wrapper {

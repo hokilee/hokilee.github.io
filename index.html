@@ -219,29 +219,30 @@
     <section class="profile-section">
       <div class="profile-container">
         <h2 class="profile-name" data-i18n="profile.name">Hoki Lee's Brief Profile</h2>
+        <p class="profile-instruction" data-i18n="profile.instruction">아래 회사를 클릭할 경우 간단한 핵심 역할, 주요 성과, 경험의 의미에 대한 내용을 확인할 수 있습니다</p>
         <div class="profile-content">
           <div class="career-timeline">
-            <div class="career-item">
+            <div class="career-item" data-company="ohjin">
               <span class="career-company" data-i18n="profile.company1">오진양행</span>
               <span class="career-period">Feb. 2000 - Oct. 2025</span>
               <span class="career-position" data-i18n="profile.position1">Executive Director, Head of Service Division</span>
             </div>
-            <div class="career-item">
+            <div class="career-item" data-company="bmw-dealerships">
               <span class="career-company" data-i18n="profile.company2">BMW Dealerships</span>
               <span class="career-period">Feb. 2016 - Jan. 2022</span>
               <span class="career-position" data-i18n="profile.position2">Director, Service Division</span>
             </div>
-            <div class="career-item">
+            <div class="career-item" data-company="bmw-korea">
               <span class="career-company" data-i18n="profile.company3">BMW Korea</span>
               <span class="career-period">Jan. 2000 - Jan. 2016</span>
               <span class="career-position" data-i18n="profile.position3">Training & Technical Support Team Leader</span>
             </div>
-            <div class="career-item">
+            <div class="career-item" data-company="samsung">
               <span class="career-company" data-i18n="profile.company4">삼성자동차</span>
               <span class="career-period">Apr. 1997 - Dec. 1999</span>
               <span class="career-position" data-i18n="profile.position4">Technical Training & Service Manager</span>
             </div>
-            <div class="career-item">
+            <div class="career-item" data-company="hyundai">
               <span class="career-company" data-i18n="profile.company5">현대자동차</span>
               <span class="career-period">Sep. 1991 - Feb. 1997</span>
               <span class="career-position" data-i18n="profile.position5">Global Technical Support & Training</span>
@@ -257,6 +258,32 @@
         </div>
       </div>
     </section>
+
+    <!-- 회사 상세 정보 모달 -->
+    <div id="companyModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-header">
+          <h2 class="modal-company-name" id="modalCompanyName"></h2>
+          <p class="modal-position" id="modalPosition"></p>
+          <p class="modal-period" id="modalPeriod"></p>
+        </div>
+        <div class="modal-body">
+          <div class="modal-section">
+            <h3 data-i18n="modal.coreRole">핵심 역할</h3>
+            <ul id="modalCoreRole" class="modal-list"></ul>
+          </div>
+          <div class="modal-section">
+            <h3 data-i18n="modal.keyAchievements">주요 성과</h3>
+            <ul id="modalAchievements" class="modal-list"></ul>
+          </div>
+          <div class="modal-section">
+            <h3 data-i18n="modal.meaning">이 경험의 의미</h3>
+            <p id="modalMeaning" class="modal-meaning"></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- 구분선 -->
     <hr class="section-divider" />
