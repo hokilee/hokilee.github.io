@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 115,
+    title: '환율 변동과 수출입 기업의 환위험 관리',
+    link: 'economics/economy-detail-115.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '01-23',
+    views: 0,
+  },
+  {
     id: 114,
     title: '보호무역주의 확대와 국제 무역 환경 변화',
     link: 'economics/economy-detail-114.html',

@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 47,
+    title: '성과 측정과 개선 — 데이터로 마케팅을 관리하라',
+    link: 'eBook-data/Hoki Lee eBook series vol47.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-23',
+    views: 0,
+  },
+  {
     id: 46,
     title: '캠페인 실행 — 시장 반응을 만드는 실행의 기술',
     link: 'eBook-data/Hoki Lee eBook series vol46.pdf',
