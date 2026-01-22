@@ -1019,18 +1019,25 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.profile-name {
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .profile-image-wrapper {
   flex-shrink: 0;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-radius: 8px;
   overflow: hidden;
-  border: 4px solid #007bff;
+  border: none;
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
   align-self: flex-start;
-  margin-top: 100px;
+  margin-top: 5px;
+  order: 2;
 }
 
 .profile-image {
@@ -1041,6 +1048,8 @@ body {
 
 .profile-content {
   flex: 1;
+  max-width: calc(100% - 430px);
+  order: 1;
 }
 
 .profile-name {
@@ -1120,21 +1129,44 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .profile-image-wrapper {
-    width: 180px;
-    height: 180px;
+    padding: 20px 15px;
   }
 
   .profile-name {
     font-size: 1.5rem;
+    order: -1;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .profile-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-top: 0;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .profile-content {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .career-timeline {
+    width: 100%;
   }
 
   .career-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    width: 100%;
   }
 
   .career-company,
