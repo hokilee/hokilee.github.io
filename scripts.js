@@ -482,11 +482,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (scrollTop > 100) {
       navigation.style.background =
-        'linear-gradient(135deg, rgba(101, 67, 33, 0.95) 0%, rgba(139, 69, 19, 0.95) 50%, rgba(101, 67, 33, 0.95) 100%)';
+        'linear-gradient(135deg, rgba(0, 86, 179, 0.95) 0%, rgba(0, 123, 255, 0.95) 50%, rgba(0, 86, 179, 0.95) 100%)';
       navigation.style.backdropFilter = 'blur(10px)';
     } else {
       navigation.style.background =
-        'linear-gradient(135deg, #654321 0%, #8b4513 50%, #654321 100%)';
+        'linear-gradient(135deg, #0056b3 0%, #007bff 50%, #0056b3 100%)';
       navigation.style.backdropFilter = 'none';
     }
 
