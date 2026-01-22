@@ -874,8 +874,30 @@ function closeCompanyModal() {
   currentModalCompanyKey = null;
 }
 
+// 이미지 모달 열기 함수
+function openImageModal(imageSrc) {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  modalImg.src = imageSrc;
+  modal.style.display = 'block';
+}
+
+// 이미지 모달 닫기 함수
+function closeImageModal() {
+  const modal = document.getElementById('imageModal');
+  modal.style.display = 'none';
+}
+
 // 모달 이벤트 리스너 설정
 document.addEventListener('DOMContentLoaded', function () {
+  // 프로필 이미지 클릭 이벤트
+  const profileImage = document.querySelector('.profile-image');
+  if (profileImage) {
+    profileImage.addEventListener('click', () => {
+      openImageModal(profileImage.src);
+    });
+  }
+
   // 박스 전체 클릭 이벤트
   document.querySelectorAll('.career-item').forEach((item) => {
     const companyKey = item.getAttribute('data-company');
@@ -902,10 +924,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // 이미지 모달 닫기 버튼
+  const imageModalClose = document.querySelector('.image-modal-close');
+  if (imageModalClose) {
+    imageModalClose.addEventListener('click', closeImageModal);
+  }
+
+  // 이미지 모달 배경 클릭 시 닫기
+  const imageModal = document.getElementById('imageModal');
+  if (imageModal) {
+    imageModal.addEventListener('click', (e) => {
+      if (e.target === imageModal) {
+        closeImageModal();
+      }
+    });
+  }
+
   // ESC 키로 모달 닫기
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeCompanyModal();
+      closeImageModal();
     }
   });
 });
