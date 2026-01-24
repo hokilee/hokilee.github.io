@@ -3,7 +3,7 @@ const dailyThoughtsData = [
   {
     id: 48,
     title: '사람을 남게 만드는 구조-제1장',
-    link: 'eBook-data/사람을 남게 만드는 구조_제1장.pdf',
+    link: '../eBook-data/사람을 남게 만드는 구조_제1장.pdf',
     category: 'eBook Series',
     author: '이호기',
     date: '01-24',
@@ -12,7 +12,7 @@ const dailyThoughtsData = [
   {
     id: 47,
     title: '성과 측정과 개선 — 데이터로 마케팅을 관리하라',
-    link: 'eBook-data/Hoki Lee eBook series vol47.pdf',
+    link: '../eBook-data/Hoki Lee eBook series vol47.pdf',
     category: 'eBook Series',
     author: '이호기',
     date: '01-23',
