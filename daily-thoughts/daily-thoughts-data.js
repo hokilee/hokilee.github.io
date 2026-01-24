@@ -3,7 +3,7 @@ const dailyThoughtsData = [
   {
     id: 48,
     title: '사람을 남게 만드는 구조-제1장',
-    link: 'eBook-data/사람을 남게 만드는 구조_제1장.pdf',
+    link: 'eBook-data/onboarding Vol1.pdf',
     category: 'eBook Series',
     author: '이호기',
     date: '01-24',
