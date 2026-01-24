@@ -54,10 +54,9 @@ const translations = {
     'schedule.item5.title': '스마트 모빌리티 플랫폼 혁신 포럼',
     'schedule.item5.content':
       '스마트 모빌리티 플랫폼 혁신 포럼이 오늘 오전 11시부터 오후 4시까지(한국 시간) 서울 여의도 콘래드 서울에서 개최됩니다. 모빌리티 서비스 플랫폼, 공유 모빌리티, MaaS(Mobility as a Service), 자동차와 스마트시티 연계, 모빌리티 빅데이터 활용 등이 주요 논의 주제입니다. 현대자동차, 카카오모빌리티, 쏘카, 우버 등 모빌리티 기업과 IT 플랫폼 기업, 도시 계획 전문가가 참석하여 미래 모빌리티 생태계를 논의합니다.',
-    'notice.updateContent20260123': `<strong>2026-01-23</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「Hoki Lee eBook Series Vol.47 — 성과 측정과 개선 — 데이터로 마케팅을 관리하라」가 업데이트되었습니다. 성공적인 마케팅은 단순히 캠페인을 실행하는 것에서 끝나지 않습니다. 마케팅 성과를 정확히 측정하고, 데이터를 기반으로 지속적으로 개선하는 것이 핵심입니다. 마케팅 성과 측정의 중요성, 핵심 지표(KPI) 설정, 데이터 수집 및 분석 방법, 성과 평가 기준, 개선 전략 수립, A/B 테스트와 실험 설계, 그리고 데이터 기반 의사결정 등 실무 인사이트를 담은 eBook 시리즈 마흔일곱 번째 자료입니다.<br /><br />
-💼 <strong>경제상식:</strong> 「환율 변동과 수출입 기업의 환위험 관리」가 등록되었습니다. 환율은 국가 간 경제 활동의 핵심 지표로, 수출입 기업의 수익성과 경쟁력을 직접적으로 좌우합니다. 최근 글로벌 금리 정책의 차이, 지정학적 리스크, 경제 불확실성 등으로 인해 환율 변동성이 크게 증가하고 있으며, 이는 수출입 기업들에게 심각한 환위험을 초래하고 있습니다. 환율 변동의 원인, 환위험의 종류, 그리고 수출입 기업들이 사용하는 환위험 관리 방법을 알아보고, 한국 기업들의 대응 사례와 전략을 상세히 다룹니다.<br /><br />
-각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
+    'notice.updateContent20260123': `<strong>2026-01-23</strong> - eBook Series 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「사람이 남게 만드는 구조_제1장」이 업데이트되었습니다. 자동차 서비스 조직에서 근무하는 동안 조기퇴사로 인해 많은 문제를 경험했습니다. 이 eBook 시리즈는 그 경험을 바탕으로 조기퇴사의 원인, 조기퇴사가 서비스 조직에 미치는 영향, 그리고 실질적인 해결책을 정리한 내용입니다. 서비스 조직의 안정성과 지속 가능한 성장을 위해 인력 유지와 조직 구조 개선에 대한 실무 인사이트를 담고 있습니다. 제1장에서는 조기퇴사의 주요 원인과 서비스 조직에 미치는 영향에 대해 다룹니다.<br /><br />
+eBook Series 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -113,10 +112,9 @@ const translations = {
     'schedule.item5.title': 'Smart Mobility Platform Innovation Forum',
     'schedule.item5.content':
       'The Smart Mobility Platform Innovation Forum will be held today from 11:00 AM to 4:00 PM (Korea time) at Conrad Seoul in Yeouido, Seoul. Key topics include mobility service platforms, shared mobility, MaaS (Mobility as a Service), integration of vehicles and smart cities, and utilization of mobility big data. Mobility companies such as Hyundai Motor, Kakao Mobility, Socar, and Uber, along with IT platform companies and urban planning experts, will attend to discuss the future mobility ecosystem.',
-    'notice.updateContent20260123': `<strong>2026-01-23</strong> – We've added new content to the eBook Series board and Economics Knowledge board.<br /><br />
-📖 <strong>eBook Series:</strong> "Hoki Lee eBook Series Vol.47 — Performance Measurement and Improvement — Managing Marketing with Data" has been updated. Successful marketing does not end with simply executing campaigns. The key is accurately measuring marketing performance and continuously improving based on data. This is the forty-seventh volume of the eBook series containing practical insights on <strong>the importance of marketing performance measurement, setting key performance indicators (KPIs), data collection and analysis methods, performance evaluation criteria, improvement strategy development, A/B testing and experimental design, and data-driven decision making</strong>.<br /><br />
-💼 <strong>Economics Knowledge:</strong> "Exchange Rate Fluctuations and Foreign Exchange Risk Management for Import/Export Companies" has been registered. Exchange rates are a key indicator of economic activity between countries, directly affecting the profitability and competitiveness of import/export companies. Recently, exchange rate volatility has increased significantly due to differences in global interest rate policies, geopolitical risks, and economic uncertainty, causing serious foreign exchange risks for import/export companies. This article covers in detail <strong>the causes of exchange rate fluctuations, types of foreign exchange risks, foreign exchange risk management methods used by import/export companies, and response cases and strategies of Korean companies</strong>.<br /><br />
-Please check each board for more detailed content.`,
+    'notice.updateContent20260123': `<strong>2026-01-23</strong> – We've added new content to the eBook Series board.<br /><br />
+📖 <strong>eBook Series:</strong> "Creating a Structure That Keeps People — Chapter 1" has been updated. During my time working in automotive service organizations, I experienced many problems caused by early employee turnover. This eBook series organizes the causes of early turnover, its impact on service organizations, and practical solutions based on those experiences. It contains practical insights on workforce retention and organizational structure improvement for the stability and sustainable growth of service organizations. Chapter 1 covers the main causes of early turnover and its impact on service organizations.<br /><br />
+Please check the eBook Series board for more detailed content.`,
   },
 };
 
