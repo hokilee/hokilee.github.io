@@ -88,9 +88,18 @@
 
       function downloadFile(link) {
         if (!link) return;
+        // 경로를 디렉토리와 파일명으로 분리
+        const lastSlashIndex = link.lastIndexOf('/');
+        const directory = lastSlashIndex >= 0 ? link.substring(0, lastSlashIndex + 1) : '';
+        const filename = lastSlashIndex >= 0 ? link.substring(lastSlashIndex + 1) : link;
+        
+        // 파일명을 URL 인코딩 (한글 파일명 처리)
+        const encodedFilename = encodeURIComponent(filename);
+        const encodedLink = directory + encodedFilename;
+        
         const a = document.createElement('a');
-        a.href = link;
-        a.download = link.split('/').pop();
+        a.href = encodedLink;
+        a.download = filename; // 다운로드 파일명은 원본 유지
         a.target = '_blank';
         document.body.appendChild(a);
         a.click();
