@@ -88,22 +88,19 @@
 
       function downloadFile(link) {
         if (!link) return;
-        // 경로를 디렉토리와 파일명으로 분리
+        // 한글 파일명 처리를 위해 경로를 분리하고 파일명만 인코딩
         const lastSlashIndex = link.lastIndexOf('/');
-        const directory = lastSlashIndex >= 0 ? link.substring(0, lastSlashIndex + 1) : '';
-        const filename = lastSlashIndex >= 0 ? link.substring(lastSlashIndex + 1) : link;
-        
-        // 파일명을 URL 인코딩 (한글 파일명 처리)
-        const encodedFilename = encodeURIComponent(filename);
-        const encodedLink = directory + encodedFilename;
-        
-        const a = document.createElement('a');
-        a.href = encodedLink;
-        a.download = filename; // 다운로드 파일명은 원본 유지
-        a.target = '_blank';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        if (lastSlashIndex >= 0) {
+          const directory = link.substring(0, lastSlashIndex + 1);
+          const filename = link.substring(lastSlashIndex + 1);
+          // 파일명에 한글이나 특수문자가 있는 경우만 인코딩
+          const needsEncoding = /[^\x00-\x7F]/.test(filename) || filename.includes(' ');
+          const encodedFilename = needsEncoding ? encodeURIComponent(filename) : filename;
+          const encodedLink = directory + encodedFilename;
+          window.open(encodedLink, '_blank');
+        } else {
+          window.open(link, '_blank');
+        }
       }
 
       function incrementViewCount(id) {
