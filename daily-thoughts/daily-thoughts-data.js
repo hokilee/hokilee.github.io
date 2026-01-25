@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 49,
+    title: '신입이 100% 효율에 도달하는 시간-제2장',
+    link: 'eBook-data/onboarding Vol2.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-26',
+    views: 0,
+  },
+  {
     id: 48,
     title: '사람을 남게 만드는 구조-제1장',
     link: 'eBook-data/onboarding Vol1.pdf',

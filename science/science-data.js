@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 61,
+    title: "히크의 법칙(Hick's Law)",
+    link: 'science/science-detail-61.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '01-26',
+    views: 0,
+  },
+  {
     id: 60,
     title: '잠금효과(Lock-in Effect)',
     link: 'science/science-detail-60.html',

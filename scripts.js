@@ -39,24 +39,25 @@ const translations = {
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': 'CES 2026 후속 기술 심포지엄',
+    'schedule.item1.title': 'HCI Korea 2026 컨퍼런스',
     'schedule.item1.content':
-      'CES 2026 후속 기술 심포지엄이 오늘 오전 9시부터 오후 6시까지(한국 시간) 서울 삼성동 코엑스 컨벤션센터에서 개최됩니다. 올해 CES에서 주목받은 AI와 자동차 융합 기술, 스마트 모빌리티, 전기차 배터리 기술 등 주요 트렌드를 심층 논의합니다. 국내외 자동차 제조사, IT 기업, 반도체 기업, 연구기관 등이 참석하여 CES에서 발표된 기술의 실무 적용 방안과 향후 발전 방향을 탐색합니다.',
-    'schedule.item2.title': '글로벌 전기차 배터리 기술 포럼 2026',
+      'HCI Korea 2026 컨퍼런스가 오늘 오전 10시부터 오후 6시까지(한국 시간) 서울 그랜드 인터컨티넨탈 서울 파르나스에서 개최됩니다. 모빌리티 UX, AI 사용자경험, SDV(Software Defined Vehicle) 시대 차량 인포테인먼트 UX/UI 개발 사례 등 자동차 IT 관련 세션이 진행됩니다. 오후 1시 30분부터는 로봇 관련 Featured Session과 사례발표가 진행되며, 오후 3시부터는 네이버 검색플랫폼 담당 전무의 "생성형AI를 통한 검색서비스의 진화" 키노트가 예정되어 있습니다. 자동차 제조사, IT 기업, UX/UI 전문가들이 참석합니다.',
+    'schedule.item2.title': '전기차 충전 인프라 기술 세미나 2026',
     'schedule.item2.content':
-      '글로벌 전기차 배터리 기술 포럼 2026이 오늘 오전 10시부터 오후 5시까지(한국 시간) 서울 강남구 테헤란로 그랜드 인터컨티넨탈 서울 파르나스에서 개최됩니다. 차세대 배터리 기술(고체전지, 리튬-황 배터리 등), 배터리 성능 향상 기술, 배터리 재활용 및 순환경제, 글로벌 배터리 공급망 전략 등이 주요 논의 주제입니다. LG에너지솔루션, SK온, 삼성SDI 등 국내 배터리 기업과 글로벌 자동차 제조사가 참석합니다.',
-    'schedule.item3.title': '자율주행 차량 안전성 국제 컨퍼런스',
+      '전기차 충전 인프라 기술 세미나 2026이 오늘 오전 9시부터 오후 5시까지(한국 시간) 서울 강남구 테헤란로 그랜드 인터컨티넨탈 서울 파르나스에서 개최됩니다. 초고속 충전 기술, V2G(Vehicle-to-Grid) 기술, 충전소 네트워크 구축 전략, 충전 인프라 표준화, 스마트 충전 솔루션 등이 주요 논의 주제입니다. 현대자동차, 기아, LG에너지솔루션, SK에너지, 전력공사 등 전기차 및 충전 인프라 관련 기업과 정부 기관이 참석하여 전기차 보급 확대를 위한 충전 인프라 구축 방안을 논의합니다.',
+    'schedule.item3.title': '자동차 CX/UX 디자인 컨퍼런스 2026',
     'schedule.item3.content':
-      '자율주행 차량 안전성 국제 컨퍼런스가 오늘 오전 9시부터 오후 5시까지(미국 서부 시간 PST, 한국 시간 새벽 1시~오전 9시) 미국 캘리포니아 산호세 컨벤션센터에서 개최됩니다. 자율주행 차량의 안전성 검증 방법, 센서 융합 기술, 실시간 위험 감지 및 회피 시스템, 자율주행 차량의 윤리적 의사결정, 규제 및 표준화 등이 주요 논의 주제입니다. 테슬라, 웨이모, 크루즈 등 자율주행 기술 기업과 자동차 제조사, 규제 기관이 참석합니다.',
-    'schedule.item4.title': 'AI 반도체 기술 세미나 2026',
+      '자동차 CX/UX 디자인 컨퍼런스 2026이 오늘 오전 10시부터 오후 6시까지(한국 시간) 서울 여의도 콘래드 서울에서 개최됩니다. 차량 내 사용자 경험 설계, 디지털 콕핏 인터페이스, 음성 인식 및 제스처 제어, 개인화된 인포테인먼트 시스템, 자율주행 차량의 승객 경험 설계 등이 주요 논의 주제입니다. 현대자동차, 기아, BMW 코리아, 메르세데스-벤츠 코리아 등 자동차 제조사와 UX 디자인 전문가, IT 기업이 참석하여 미래 자동차 사용자 경험의 방향을 논의합니다.',
+    'schedule.item4.title': 'AI 자동차 융합 기술 포럼 2026',
     'schedule.item4.content':
-      'AI 반도체 기술 세미나 2026이 오늘 오후 2시부터 6시까지(한국 시간) 서울 판교 테크노밸리에서 개최됩니다. AI 반도체의 최신 기술 동향, 엣지 AI 반도체, 자동차용 AI 반도체, 반도체 설계 자동화, AI 칩의 전력 효율 개선 등이 주요 논의 주제입니다. 삼성전자, SK하이닉스, 엔비디아, 퀄컴 등 반도체 기업과 AI 스타트업, 연구기관이 참석하여 AI 반도체의 미래를 논의합니다.',
-    'schedule.item5.title': '스마트 모빌리티 플랫폼 혁신 포럼',
+      'AI 자동차 융합 기술 포럼 2026이 오늘 오후 2시부터 6시까지(한국 시간) 서울 판교 테크노밸리에서 개최됩니다. 자동차용 AI 칩 기술, 자율주행 AI 알고리즘, 차량 내 AI 어시스턴트, AI 기반 예측 정비 시스템, AI를 활용한 차량 보안 기술 등이 주요 논의 주제입니다. 현대자동차, 기아, 삼성전자, SK하이닉스, 엔비디아, 퀄컴 등 자동차 제조사와 반도체 기업, AI 스타트업이 참석하여 AI와 자동차의 융합 기술 동향을 논의합니다.',
+    'schedule.item5.title': '스마트 모빌리티 플랫폼 혁신 세미나',
     'schedule.item5.content':
-      '스마트 모빌리티 플랫폼 혁신 포럼이 오늘 오전 11시부터 오후 4시까지(한국 시간) 서울 여의도 콘래드 서울에서 개최됩니다. 모빌리티 서비스 플랫폼, 공유 모빌리티, MaaS(Mobility as a Service), 자동차와 스마트시티 연계, 모빌리티 빅데이터 활용 등이 주요 논의 주제입니다. 현대자동차, 카카오모빌리티, 쏘카, 우버 등 모빌리티 기업과 IT 플랫폼 기업, 도시 계획 전문가가 참석하여 미래 모빌리티 생태계를 논의합니다.',
-    'notice.updateContent20260123': `<strong>2026-01-24</strong> - eBook Series 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「사람이 남게 만드는 구조_제1장」이 업데이트되었습니다. 자동차 서비스 조직에서 근무하는 동안 조기퇴사로 인해 많은 문제를 경험했습니다. 이 eBook 시리즈는 그 경험을 바탕으로 조기퇴사의 원인, 조기퇴사가 서비스 조직에 미치는 영향, 그리고 실질적인 해결책을 정리한 내용입니다. 서비스 조직의 안정성과 지속 가능한 성장을 위해 인력 유지와 조직 구조 개선에 대한 실무 인사이트를 담고 있습니다. 제1장에서는 조기퇴사의 주요 원인과 서비스 조직에 미치는 영향에 대해 다룹니다.<br /><br />
-eBook Series 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
+      '스마트 모빌리티 플랫폼 혁신 세미나가 오늘 오전 11시부터 오후 4시까지(한국 시간) 서울 강남구 코엑스 컨벤션센터에서 개최됩니다. 모빌리티 서비스 플랫폼, 공유 모빌리티, MaaS(Mobility as a Service), 자동차와 스마트시티 연계, 모빌리티 빅데이터 활용, 모빌리티 결제 시스템 등이 주요 논의 주제입니다. 현대자동차, 카카오모빌리티, 쏘카, 우버, 그랩 등 모빌리티 기업과 IT 플랫폼 기업, 도시 계획 전문가가 참석하여 미래 모빌리티 생태계와 플랫폼 혁신 방안을 논의합니다.',
+    'notice.updateContent20260126': `<strong>2026-01-26</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「신입이 100% 효율에 도달하는 시간_제2장」이 업데이트되었습니다. 이 장에서는 신입 직원이 조직에서 완전한 효율성을 달성하기까지 소요되는 시간과 그 과정에서 발생하는 다양한 요인들을 다룹니다. 신입 직원의 성장 곡선, 적응 기간, 교육 및 멘토링의 중요성, 그리고 조직이 신입 직원의 빠른 성장을 지원하기 위한 실무 전략에 대해 상세히 설명합니다. 서비스 조직에서 신입 직원의 조기 전력화를 위한 체계적인 접근 방법을 제시합니다.<br /><br />
+📚 <strong>일반상식:</strong> 「히크의 법칙(Hick's Law)」이 추가되었습니다. 히크의 법칙은 선택지가 많을수록 결정하는 데 시간이 더 걸린다는 심리학 법칙으로, 웹사이트 디자인, 모바일 앱 인터페이스, 소프트웨어 UI 등 다양한 분야에서 활용되는 중요한 원칙입니다. 선택지의 수와 반응 시간의 관계, 인지 부하, 그리고 실무 활용 방안에 대해 자세히 알아볼 수 있습니다.<br /><br />
+각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -97,24 +98,25 @@ eBook Series 게시판에서 더 자세한 내용을 확인하실 수 있으니 
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title': 'CES 2026 Follow-up Technology Symposium',
+    'schedule.item1.title': 'HCI Korea 2026 Conference',
     'schedule.item1.content':
-      'The CES 2026 Follow-up Technology Symposium will be held today from 9:00 AM to 6:00 PM (Korea time) at COEX Convention Center in Samsung-dong, Seoul. The symposium will provide in-depth discussions on major trends from this year\'s CES, including AI and automotive convergence technology, smart mobility, and EV battery technology. Domestic and international automakers, IT companies, semiconductor companies, and research institutions will attend to explore practical applications of technologies announced at CES and future development directions.',
-    'schedule.item2.title': 'Global Electric Vehicle Battery Technology Forum 2026',
+      'The HCI Korea 2026 Conference will be held today from 10:00 AM to 6:00 PM (Korea time) at Grand InterContinental Seoul Parnas in Seoul. The conference will feature automotive IT sessions including mobility UX, AI user experience, and UX/UI development cases for in-vehicle infotainment systems in the SDV (Software Defined Vehicle) era. Featured sessions on robotics and case presentations will begin at 1:30 PM, followed by a keynote at 3:00 PM on "Evolution of Search Services through Generative AI" by Naver\'s Search Platform Executive Director. Automakers, IT companies, and UX/UI experts will attend.',
+    'schedule.item2.title': 'EV Charging Infrastructure Technology Seminar 2026',
     'schedule.item2.content':
-      'The Global Electric Vehicle Battery Technology Forum 2026 will be held today from 10:00 AM to 5:00 PM (Korea time) at Grand InterContinental Seoul Parnas in Teheran-ro, Gangnam-gu, Seoul. Key topics include next-generation battery technologies (solid-state batteries, lithium-sulfur batteries, etc.), battery performance improvement technologies, battery recycling and circular economy, and global battery supply chain strategies. Domestic battery companies such as LG Energy Solution, SK On, and Samsung SDI, along with global automakers, will attend.',
-    'schedule.item3.title': 'International Conference on Autonomous Vehicle Safety',
+      'The EV Charging Infrastructure Technology Seminar 2026 will be held today from 9:00 AM to 5:00 PM (Korea time) at Grand InterContinental Seoul Parnas in Teheran-ro, Gangnam-gu, Seoul. Key topics include ultra-fast charging technology, V2G (Vehicle-to-Grid) technology, charging station network construction strategies, charging infrastructure standardization, and smart charging solutions. Hyundai Motor, Kia, LG Energy Solution, SK Energy, Korea Electric Power Corporation, and other EV and charging infrastructure companies along with government agencies will attend to discuss charging infrastructure development strategies for EV adoption expansion.',
+    'schedule.item3.title': 'Automotive CX/UX Design Conference 2026',
     'schedule.item3.content':
-      'The International Conference on Autonomous Vehicle Safety will be held today from 9:00 AM to 5:00 PM (PST, US West Coast time; 1:00 AM to 9:00 AM Korea time) at the San Jose Convention Center in California, USA. Key topics include autonomous vehicle safety verification methods, sensor fusion technology, real-time hazard detection and avoidance systems, ethical decision-making in autonomous vehicles, and regulations and standardization. Autonomous driving technology companies such as Tesla, Waymo, and Cruise, along with automakers and regulatory agencies, will attend.',
-    'schedule.item4.title': 'AI Semiconductor Technology Seminar 2026',
+      'The Automotive CX/UX Design Conference 2026 will be held today from 10:00 AM to 6:00 PM (Korea time) at Conrad Seoul in Yeouido, Seoul. Key topics include in-vehicle user experience design, digital cockpit interfaces, voice recognition and gesture control, personalized infotainment systems, and passenger experience design for autonomous vehicles. Automakers such as Hyundai Motor, Kia, BMW Korea, Mercedes-Benz Korea, along with UX design experts and IT companies, will attend to discuss the future direction of automotive user experience.',
+    'schedule.item4.title': 'AI Automotive Convergence Technology Forum 2026',
     'schedule.item4.content':
-      'The AI Semiconductor Technology Seminar 2026 will be held today from 2:00 PM to 6:00 PM (Korea time) in Pangyo Techno Valley, Seoul. Key topics include the latest trends in AI semiconductor technology, edge AI semiconductors, automotive AI semiconductors, semiconductor design automation, and improving power efficiency of AI chips. Semiconductor companies such as Samsung Electronics, SK Hynix, NVIDIA, and Qualcomm, along with AI startups and research institutions, will attend to discuss the future of AI semiconductors.',
-    'schedule.item5.title': 'Smart Mobility Platform Innovation Forum',
+      'The AI Automotive Convergence Technology Forum 2026 will be held today from 2:00 PM to 6:00 PM (Korea time) in Pangyo Techno Valley, Seoul. Key topics include automotive AI chip technology, autonomous driving AI algorithms, in-vehicle AI assistants, AI-based predictive maintenance systems, and AI-powered vehicle security technology. Automakers such as Hyundai Motor and Kia, semiconductor companies including Samsung Electronics, SK Hynix, NVIDIA, and Qualcomm, along with AI startups, will attend to discuss trends in AI and automotive convergence technology.',
+    'schedule.item5.title': 'Smart Mobility Platform Innovation Seminar',
     'schedule.item5.content':
-      'The Smart Mobility Platform Innovation Forum will be held today from 11:00 AM to 4:00 PM (Korea time) at Conrad Seoul in Yeouido, Seoul. Key topics include mobility service platforms, shared mobility, MaaS (Mobility as a Service), integration of vehicles and smart cities, and utilization of mobility big data. Mobility companies such as Hyundai Motor, Kakao Mobility, Socar, and Uber, along with IT platform companies and urban planning experts, will attend to discuss the future mobility ecosystem.',
-    'notice.updateContent20260123': `<strong>2026-01-23</strong> – We've added new content to the eBook Series board.<br /><br />
-📖 <strong>eBook Series:</strong> "Creating a Structure That Keeps People — Chapter 1" has been updated. During my time working in automotive service organizations, I experienced many problems caused by early employee turnover. This eBook series organizes the causes of early turnover, its impact on service organizations, and practical solutions based on those experiences. It contains practical insights on workforce retention and organizational structure improvement for the stability and sustainable growth of service organizations. Chapter 1 covers the main causes of early turnover and its impact on service organizations.<br /><br />
-Please check the eBook Series board for more detailed content.`,
+      'The Smart Mobility Platform Innovation Seminar will be held today from 11:00 AM to 4:00 PM (Korea time) at COEX Convention Center in Gangnam-gu, Seoul. Key topics include mobility service platforms, shared mobility, MaaS (Mobility as a Service), integration of vehicles and smart cities, utilization of mobility big data, and mobility payment systems. Mobility companies such as Hyundai Motor, Kakao Mobility, Socar, Uber, and Grab, along with IT platform companies and urban planning experts, will attend to discuss the future mobility ecosystem and platform innovation strategies.',
+    'notice.updateContent20260126': `<strong>2026-01-26</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
+📖 <strong>eBook Series:</strong> "Time for New Employees to Reach 100% Efficiency — Chapter 2" has been updated. This chapter covers the time it takes for new employees to achieve full efficiency in an organization and the various factors that occur during this process. It provides detailed explanations on the growth curve of new employees, adaptation periods, the importance of training and mentoring, and practical strategies for organizations to support the rapid growth of new employees. It presents a systematic approach for early empowerment of new employees in service organizations.<br /><br />
+📚 <strong>General Knowledge:</strong> "Hick's Law" has been added. Hick's Law is a psychological principle stating that the more choices available, the longer it takes to make a decision. This important principle is utilized in various fields including website design, mobile app interfaces, and software UI. You can learn in detail about the relationship between the number of choices and reaction time, cognitive load, and practical application methods.<br /><br />
+Please check each board for more detailed content.`,
   },
 };
 
