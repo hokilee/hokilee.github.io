@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 117,
+    title: '엣지 AI의 부상, 클라우드 없이 동작하는 AI의 미래',
+    link: 'one-line-knowledge/trivia-detail-117.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '01-27',
+    views: 0,
+  },
+  {
     id: 116,
     title: '장 속 세균이 자체 제작 알코올을 만드는 증후군',
     link: 'one-line-knowledge/trivia-detail-116.html',
