@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 52,
+    title: '관리자의 접촉 빈도가 이직률을 결정한다-제5장',
+    link: 'eBook-data/onboarding Vol5.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-29',
+    views: 0,
+  },
+  {
     id: 51,
     title: '멘토·멘티 제도가 형식으로 끝나는 이유-제4장',
     link: 'eBook-data/onboarding Vol4.pdf',

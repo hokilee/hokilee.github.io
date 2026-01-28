@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 62,
+    title: '시스템 1 & 2 사고(System 1 & System 2)',
+    link: 'science/science-detail-62.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '01-29',
+    views: 0,
+  },
+  {
     id: 61,
     title: "히크의 법칙(Hick's Law)",
     link: 'science/science-detail-61.html',
