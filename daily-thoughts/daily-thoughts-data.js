@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 53,
+    title: '18개월 성장 로드맵 설계-제6장',
+    link: 'eBook-data/onboarding Vol6.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '01-30',
+    views: 0,
+  },
+  {
     id: 52,
     title: '관리자의 접촉 빈도가 이직률을 결정한다-제5장',
     link: 'eBook-data/onboarding Vol5.pdf',

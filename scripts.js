@@ -20,7 +20,8 @@ const translations = {
     'nav.contact': '연락<br />할곳',
     'profile.heading': 'Brief Profile',
     'profile.name': "Hoki Lee's Brief Profile",
-    'profile.instruction': '아래 회사를 클릭할 경우 간단한 핵심 역할, 주요 성과, 경험의 의미에 대한 내용을 확인할 수 있습니다',
+    'profile.instruction':
+      '아래 회사를 클릭할 경우 간단한 핵심 역할, 주요 성과, 경험의 의미에 대한 내용을 확인할 수 있습니다',
     'profile.title1': '자동차 및 교육의 전문가',
     'profile.title2': '글로벌 자동차 산업의 경험자',
     'profile.title3': '팀워크와 리더십의 실천자',
@@ -41,24 +42,24 @@ const translations = {
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': 'World Automobile Day 글로벌 서밋 2026',
+    'schedule.item1.title': 'SIAT 2026 국제 자동차 기술 심포지엄 최종일',
     'schedule.item1.content':
-      'World Automobile Day 글로벌 서밋 2026이 오늘(두바이 시간 기준) 아랍에미리트 두바이에서 개최됩니다. 1886년 1월 29일 칼 벤츠(Karl Benz)가 최초의 실용적인 자동차 특허를 받은 날을 기념하는 140주년 World Automobile Day를 축하하는 이 서밋은 자동차 산업의 혁신, 지속 가능성, 미래 모빌리티를 다룹니다. 전기차, 자율주행, 연결성, 지속 가능한 모빌리티 솔루션 등이 주요 논의 주제이며, 글로벌 자동차 제조사, 기술 기업, 모빌리티 스타트업, 산업 전문가들이 참석하여 자동차 산업의 미래와 혁신을 논의합니다.',
-    'schedule.item2.title': 'CX & UX in Automotive 2026 컨퍼런스 최종일',
+      'SIAT 2026(Symposium of International Automotive Technology 2026)이 오늘(인도 시간 기준) 인도 푸네 PIECC에서 마지막 날을 맞이합니다. 이번 최종일에는 시뮬레이션 및 모델링, 자동차 테스트 및 평가, 소재 및 제조, 전기 모빌리티, 수소 연료전지 기술 등 다양한 병렬 기술 세션이 오전 9시부터 11시까지 진행됩니다. ADAS 시스템 설계, 전기차 시뮬레이션, AI 기반 소프트웨어 테스트, 전기차 열 관리 등이 주요 논의 주제입니다. 14개국 전문가들의 기술 논문 발표와 패널 토론이 진행되며, ARAI, SAE International, SAE India가 공동 주최합니다. 글로벌 자동차 제조사와 기술 기업들이 참석하여 자동차 기술의 미래를 논의합니다.',
+    'schedule.item2.title': 'WCO 기술 컨퍼런스 2026 최종일',
     'schedule.item2.content':
-      'CX & UX in Automotive 2026 컨퍼런스가 오늘(독일 시간 기준) 독일 뮌헨에서 마지막 날을 맞이합니다. 이번 최종일에는 차량 내 경험 최적화, 고객 여정 설계, 데이터 기반 개인화, AI 기반 UX 혁신 등이 주요 논의 주제입니다. 자동차 제조사들의 실제 사례 연구, 사용자 경험 디자인 전략, 차량 내 인포테인먼트 시스템의 미래, 음성 인터페이스와 제스처 제어 등이 다뤄집니다. 글로벌 자동차 제조사, UX/UI 전문가, 기술 기업들이 참석하여 자동차 산업의 고객 경험과 사용자 경험의 미래를 논의합니다.',
-    'schedule.item3.title': '디지털 무역 기술 컨퍼런스 2026',
+      'WCO(World Customs Organization) 기술 컨퍼런스 2026이 오늘 오전 8시부터 오후 5시까지 최종일을 맞이합니다. "미래 관세를 위한 혁신"을 주제로 한 이번 최종일에는 오전 8시 10분부터 8시 50분까지 Tech Talks 17-24가 진행되며, 오전 9시부터 9시 50분까지 "데이터 격차 해소: 국경 간 전자상거래에 대한 공공-민간 대화 강화" 세션이 열립니다. 오전 10시 10분부터 10시 40분까지는 "실행 중인 아이디어: 해커톤 쇼케이스 및 시상식"이 진행되며, 오전 11시 30분부터 12시 30분까지는 "다음 지평선: 복잡한 세계에서 회복력 있고 민첩한 관세 구축" 세션이 열립니다. 디지털 무역 촉진, 공급망 혁신, 자동차 산업의 글로벌 공급망 디지털화 등이 다뤄집니다.',
+    'schedule.item3.title': '자율주행 차량 AI 시뮬레이션 기술 워크샵 2026',
     'schedule.item3.content':
-      '디지털 무역 기술 컨퍼런스 2026이 오늘 오전 7시 30분부터 오후 5시 25분까지 개최됩니다. 디지털 무역 촉진, 공급망 지속가능성, 국경에서의 IoT, 상호 운용성, AI 자동화, 사이버 보안 무역 회랑 등이 주요 논의 주제입니다. 오전에는 Tech Talks 1-8이 진행되고, 점심 시간에는 Tech Talks 9-16이 진행되며, 플래티넘 스폰서의 키노트 연설과 병렬 세션이 포함됩니다. 디지털 무역 솔루션, 공급망 혁신, 자동차 산업의 글로벌 공급망 디지털화 등이 다뤄지며, 글로벌 기술 기업과 자동차 제조사가 참석합니다.',
-    'schedule.item4.title': '스마트 모빌리티 플랫폼 혁신 포럼 2026',
+      '자율주행 차량 AI 시뮬레이션 기술 워크샵 2026이 오늘 오전 9시부터 오후 5시까지(한국 시간) 서울 강남구 테헤란로에서 개최됩니다. 디지털 트윈 기술을 활용한 가상 도로 환경, 수백만 킬로미터 시뮬레이션 테스트, 다양한 시나리오 및 예외 상황 테스트, 자율주행 AI 모델 검증, 시뮬레이션 기반 안전성 검증 등이 주요 논의 주제입니다. 실제 도로 테스트를 대체하는 시뮬레이션 기술의 발전, 개발 시간 단축 및 비용 절감, 안전성 검증 방법론 등도 다뤄집니다. 현대자동차, 기아, 네이버, 카카오모빌리티, AI 스타트업, 대학 연구진이 참석합니다.',
+    'schedule.item4.title': '전기차 배터리 관리 시스템(BMS) 기술 세미나 2026',
     'schedule.item4.content':
-      '스마트 모빌리티 플랫폼 혁신 포럼 2026이 오늘 오전 10시부터 오후 5시까지(한국 시간) 서울 강남구 삼성동 코엑스에서 개최됩니다. 모빌리티 서비스 플랫폼, 공유 모빌리티, MaaS(Mobility as a Service), 모빌리티 데이터 플랫폼, 모빌리티 앱 통합, 실시간 모빌리티 서비스 등이 주요 논의 주제입니다. 자율주행 로봇택시, 전기 스쿠터 및 킥보드 공유 서비스, 통합 모빌리티 결제 시스템, 모빌리티 빅데이터 분석 등도 다뤄집니다. 현대자동차, 기아, 카카오모빌리티, 쏘카, 그린카, 모빌리티 스타트업, IT 기업이 참석합니다.',
-    'schedule.item5.title': '자동차 클라우드 및 데이터 플랫폼 세미나 2026',
+      '전기차 배터리 관리 시스템(BMS) 기술 세미나 2026이 오늘 오전 10시부터 오후 4시까지(한국 시간) 서울 여의도에서 개최됩니다. 배터리 상태 모니터링, 충방전 제어, 열 관리, 배터리 수명 예측, 배터리 안전 관리, 배터리 재활용 및 순환 경제 등이 주요 논의 주제입니다. AI 기반 배터리 상태 예측, 실시간 배터리 모니터링 시스템, 배터리 성능 최적화 알고리즘, 배터리 보호 회로 설계 등도 다뤄집니다. 현대자동차, 기아, LG에너지솔루션, SK온, 삼성SDI, 배터리 관리 시스템 전문 기업이 참석합니다.',
+    'schedule.item5.title': '차량 네트워크 보안 및 사이버보안 표준 세미나 2026',
     'schedule.item5.content':
-      '자동차 클라우드 및 데이터 플랫폼 세미나 2026이 오늘 오후 2시부터 6시까지(한국 시간) 서울 판교 테크노밸리에서 개최됩니다. 차량 클라우드 인프라, 차량 데이터 수집 및 분석, 실시간 차량 모니터링, 예측 정비를 위한 데이터 활용, 차량 소프트웨어 OTA 업데이트, 차량 데이터 보안 및 프라이버시 등이 주요 논의 주제입니다. 클라우드 기반 차량 서비스, 엣지-클라우드 하이브리드 아키텍처, 차량 데이터의 상업적 활용, GDPR 및 데이터 보호 규정 준수 등도 다뤄집니다. 현대자동차, 기아, 아마존 웹 서비스(AWS), 마이크로소프트 애저, 구글 클라우드, 클라우드 기업이 참석합니다.',
-    'notice.updateContent20260129': `<strong>2026-01-29</strong> - eBook Series 게시판과 일반상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「관리자의 접촉 빈도가 이직률을 결정한다_제5장」이 업데이트되었습니다. 이 장에서는 관리자와 직원 간의 접촉 빈도가 이직률에 미치는 영향과 그 중요성을 심층적으로 분석합니다. 관리자의 접촉 빈도가 낮을 때 직원들이 경험하는 소외감과 불안감, 역할과 기대치의 불명확성, 피드백 부족으로 인한 성장 기회 상실, 그리고 이러한 요인들이 이직으로 이어지는 과정을 상세히 설명합니다. 관리자의 적절한 접촉 빈도를 유지하고 효과적인 소통을 통해 이직률을 낮추기 위한 실무 전략과 사례를 제시합니다.<br /><br />
-📚 <strong>일반상식:</strong> 「시스템 1 & 2 사고(System 1 & System 2)」가 추가되었습니다. 인간의 사고 과정을 두 가지 시스템으로 구분한 이론으로, 빠르고 자동적인 시스템 1과 느리고 통제적인 시스템 2로 구성됩니다. 시스템 1은 직관적이고 즉각적인 반응을 담당하며, 시스템 2는 논리적이고 신중한 사고를 담당합니다. 이 이론은 행동경제학, 심리학, 마케팅, 의사결정 등 다양한 분야에서 활용되며, 인간의 인지 편향과 의사결정 과정을 이해하는 데 중요한 개념입니다. 시스템 1 & 2 사고의 개념, 특징, 차이점, 그리고 실생활 적용 방안에 대해 자세히 알아볼 수 있습니다.<br /><br />
+      '차량 네트워크 보안 및 사이버보안 표준 세미나 2026이 오늘 오후 1시부터 6시까지(한국 시간) 서울 판교 테크노밸리에서 개최됩니다. ISO/SAE 21434 자동차 사이버보안 표준, 차량 네트워크 보안 아키텍처, 보안 게이트웨이 및 암호화 기술, 실시간 위협 탐지 시스템, OTA 업데이트 보안, 차량 데이터 프라이버시 보호 등이 주요 논의 주제입니다. 자동차 제조사들의 보안 설계 프로세스, 사이버보안 사고 대응 전략, 보안 테스트 및 인증 방법론 등도 다뤄집니다. 현대자동차, 기아, 보안 기업, 규제 기관, 사이버보안 전문가가 참석합니다.',
+    'notice.updateContent20260130': `<strong>2026-01-30</strong> - eBook Series 게시판과 기술 트렌드/뉴스 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「18개월 성장 로드맵 설계_제6장」이 업데이트되었습니다. 이 장에서는 신입 직원이 조직에 성공적으로 통합되고 지속적으로 성장할 수 있도록 18개월 성장 로드맵을 설계하는 방법을 상세히 다룹니다. 신입 직원의 성장 단계별 목표 설정, 역량 개발 계획, 멘토링 및 피드백 체계, 성과 평가 기준, 그리고 장기적인 경력 개발 경로 등이 포함됩니다. 18개월 성장 로드맵을 통해 신입 직원이 단계적으로 성장하며 조직에 기여할 수 있도록 하는 실무 전략과 사례를 제시합니다.<br /><br />
+📰 <strong>기술 트렌드/뉴스:</strong> 「2026년 1월 2-4주차 기술 트렌드/뉴스」가 추가되었습니다. CES 2026 이후 자동차 산업의 AI 통합이 본격화되면서 주요 자동차 제조사들이 AI 어시스턴트와 자율주행 기술을 실제 차량에 적용하기 시작했습니다. 특히 포드의 AI 어시스턴트 발표와 레벨 3 자율주행 계획, NVIDIA의 Alpamayo AI 모델 공개, NXP의 통합 프로세서 발표가 주목받았습니다. 소프트웨어 정의 차량(SDV) 아키텍처 전환과 차량 내 고성능 컴퓨팅 확대, 자동차용 통합 프로세서와 AI 반도체 발전, 전기차 시장 성장과 충전 인프라 확대, 자동차 사이버보안 강화 등이 주요 트렌드로 나타났습니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -81,7 +82,8 @@ const translations = {
     'nav.contact': 'Contact',
     'profile.heading': 'Brief Profile',
     'profile.name': "Hoki Lee's Brief Profile",
-    'profile.instruction': 'Click on the companies below to view details about core roles, key achievements, and the meaning of each experience',
+    'profile.instruction':
+      'Click on the companies below to view details about core roles, key achievements, and the meaning of each experience',
     'profile.title1': 'Expert in Automotive and Education',
     'profile.title2': 'Experienced in Global Automotive Industry',
     'profile.title3': 'Practitioner of Teamwork and Leadership',
@@ -102,24 +104,28 @@ const translations = {
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title': 'World Automobile Day Global Summit 2026',
+    'schedule.item1.title':
+      'SIAT 2026 International Automotive Technology Symposium Final Day',
     'schedule.item1.content':
-      'The World Automobile Day Global Summit 2026 will be held today (Dubai time) in Dubai, UAE. This summit celebrates the 140th anniversary of World Automobile Day, commemorating January 29, 1886, when Karl Benz patented the first practical automobile. The event covers automotive industry innovation, sustainability, and future mobility. Key topics include electric vehicles, autonomous driving, connectivity, and sustainable mobility solutions. Global automakers, technology companies, mobility startups, and industry experts will attend to discuss the future and innovation of the automotive industry.',
-    'schedule.item2.title': 'CX & UX in Automotive 2026 Conference Final Day',
+      'SIAT 2026 (Symposium of International Automotive Technology 2026) concludes today (India time) at PIECC in Pune, India. The final day features multiple parallel technical sessions from 9:00 AM to 11:00 AM covering simulation & modeling, automotive testing & evaluation, materials & manufacturing, e-mobility, and hydrogen fuel cell technologies. Key topics include ADAS system design, electric vehicle simulation, AI-driven software testing, and thermal management for EVs. Technical paper presentations and panel discussions from experts in 14 countries will be held. Co-hosted by ARAI, SAE International, and SAE India, global automakers and technology companies will attend to discuss the future of automotive technology.',
+    'schedule.item2.title': 'WCO Technology Conference 2026 Final Day',
     'schedule.item2.content':
-      'The CX & UX in Automotive 2026 Conference concludes today (Germany time) in Munich, Germany. The final day focuses on in-vehicle experience optimization, customer journey design, data-driven personalization, and AI-based UX innovation. Key topics include real-world case studies from automakers, user experience design strategies, the future of in-vehicle infotainment systems, and voice interfaces and gesture control. Global automakers, UX/UI experts, and technology companies will attend to discuss the future of customer experience and user experience in the automotive industry.',
-    'schedule.item3.title': 'Digital Trade Technology Conference 2026',
+      'The WCO (World Customs Organization) Technology Conference 2026 concludes today from 8:00 AM to 5:00 PM. With the theme "Innovating for the Future of Customs", the final day features Tech Talks 17-24 from 8:10 AM to 8:50 AM, followed by Session 8 on "Bridging the Data Gap: Strengthening Public–Private Dialogue on Cross-Border E-Commerce" from 9:00 AM to 9:50 AM. Session 9 "Ideas in Action: Hackathon Showcase & Honors" runs from 10:10 AM to 10:40 AM, and Session 10 "The Next Horizon: Building Resilient and Agile Customs in a Complex World" from 11:30 AM to 12:30 PM. The conference covers digital trade facilitation, supply chain innovation, and digitalization of global supply chains in the automotive industry.',
+    'schedule.item3.title':
+      'Autonomous Vehicle AI Simulation Technology Workshop 2026',
     'schedule.item3.content':
-      'The Digital Trade Technology Conference 2026 will be held today from 7:30 AM to 5:25 PM. Key topics include digital trade facilitation, supply chain sustainability, IoT at borders, interoperability, AI automation, and cyber-secure trade corridors. The morning features Tech Talks 1-8, followed by Tech Talks 9-16 during lunch, along with keynote speeches by platinum sponsors and parallel sessions. The conference covers digital trade solutions, supply chain innovation, and digitalization of global supply chains in the automotive industry. Global technology companies and automakers will attend.',
-    'schedule.item4.title': 'Smart Mobility Platform Innovation Forum 2026',
+      'The Autonomous Vehicle AI Simulation Technology Workshop 2026 will be held today from 9:00 AM to 5:00 PM (Korea time) on Teheran-ro in Gangnam-gu, Seoul. Key topics include virtual road environments using digital twin technology, millions of kilometers of simulation testing, testing various scenarios and edge cases, autonomous vehicle AI model validation, and simulation-based safety verification. The workshop also covers advances in simulation technology that replace real-world testing, development time reduction and cost savings, and safety verification methodologies. Hyundai Motor, Kia, Naver, Kakao Mobility, AI startups, and university researchers will attend.',
+    'schedule.item4.title':
+      'EV Battery Management System (BMS) Technology Seminar 2026',
     'schedule.item4.content':
-      'The Smart Mobility Platform Innovation Forum 2026 will be held today from 10:00 AM to 5:00 PM (Korea time) at COEX in Samseong-dong, Gangnam-gu, Seoul. Key topics include mobility service platforms, shared mobility, MaaS (Mobility as a Service), mobility data platforms, mobility app integration, and real-time mobility services. The forum also covers autonomous robotaxis, electric scooter and kickboard sharing services, integrated mobility payment systems, and mobility big data analysis. Hyundai Motor, Kia, Kakao Mobility, Socar, Greencar, mobility startups, and IT companies will attend.',
-    'schedule.item5.title': 'Automotive Cloud & Data Platform Seminar 2026',
+      'The EV Battery Management System (BMS) Technology Seminar 2026 will be held today from 10:00 AM to 4:00 PM (Korea time) in Yeouido, Seoul. Key topics include battery state monitoring, charge-discharge control, thermal management, battery lifespan prediction, battery safety management, and battery recycling and circular economy. The seminar also covers AI-based battery state prediction, real-time battery monitoring systems, battery performance optimization algorithms, and battery protection circuit design. Hyundai Motor, Kia, LG Energy Solution, SK On, Samsung SDI, and battery management system companies will attend.',
+    'schedule.item5.title':
+      'Vehicle Network Security & Cybersecurity Standards Seminar 2026',
     'schedule.item5.content':
-      'The Automotive Cloud & Data Platform Seminar 2026 will be held today from 2:00 PM to 6:00 PM (Korea time) in Pangyo Techno Valley, Seoul. Key topics include vehicle cloud infrastructure, vehicle data collection and analysis, real-time vehicle monitoring, data utilization for predictive maintenance, vehicle software OTA updates, and vehicle data security and privacy. The seminar also covers cloud-based vehicle services, edge-cloud hybrid architecture, commercial use of vehicle data, and compliance with GDPR and data protection regulations. Hyundai Motor, Kia, Amazon Web Services (AWS), Microsoft Azure, Google Cloud, and cloud companies will attend.',
-    'notice.updateContent20260129': `<strong>2026-01-29</strong> – We've added new content to the eBook Series board and General Knowledge board.<br /><br />
-📖 <strong>eBook Series:</strong> "Manager Contact Frequency Determines Turnover Rate — Chapter 5" has been updated. This chapter provides an in-depth analysis of how the frequency of contact between managers and employees affects turnover rates and its importance. It covers the feelings of isolation and anxiety employees experience when manager contact frequency is low, unclear roles and expectations, loss of growth opportunities due to lack of feedback, and how these factors lead to turnover. It presents practical strategies and cases for maintaining appropriate manager contact frequency and effective communication to reduce turnover rates.<br /><br />
-📚 <strong>General Knowledge:</strong> "System 1 & 2 Thinking (System 1 & System 2)" has been added. This theory divides human thought processes into two systems: fast and automatic System 1 and slow and controlled System 2. System 1 handles intuitive and immediate responses, while System 2 handles logical and deliberate thinking. This theory is used in various fields such as behavioral economics, psychology, marketing, and decision-making, and is an important concept for understanding human cognitive biases and decision-making processes. You can learn in detail about the concepts, characteristics, differences, and practical applications of System 1 & 2 thinking.<br /><br />
+      "The Vehicle Network Security & Cybersecurity Standards Seminar 2026 will be held today from 1:00 PM to 6:00 PM (Korea time) in Pangyo Techno Valley, Seoul. Key topics include ISO/SAE 21434 automotive cybersecurity standards, vehicle network security architecture, security gateways and encryption technology, real-time threat detection systems, OTA update security, and vehicle data privacy protection. The seminar also covers automakers' security design processes, cybersecurity incident response strategies, and security testing and certification methodologies. Hyundai Motor, Kia, security companies, regulatory agencies, and cybersecurity experts will attend.",
+    'notice.updateContent20260130': `<strong>2026-01-30</strong> – We've added new content to the eBook Series board and Tech Trends/News board.<br /><br />
+📖 <strong>eBook Series:</strong> "18-Month Growth Roadmap Design — Chapter 6" has been updated. This chapter provides detailed guidance on designing an 18-month growth roadmap to help new employees successfully integrate into the organization and continue to grow. It covers goal setting by growth stage, competency development plans, mentoring and feedback systems, performance evaluation criteria, and long-term career development paths. It presents practical strategies and cases for enabling new employees to grow step by step and contribute to the organization through an 18-month growth roadmap.<br /><br />
+📰 <strong>Tech Trends/News:</strong> "2026 January Weeks 2-4 Tech Trends/News" has been added. Following CES 2026, AI integration in the automotive industry has accelerated, with major automakers beginning to apply AI assistants and autonomous driving technology to actual vehicles. Particularly noteworthy were Ford's AI assistant announcement and Level 3 autonomous driving plans, NVIDIA's Alpamayo AI model release, and NXP's integrated processor announcement. Key trends include the transition to software-defined vehicle (SDV) architecture and expansion of in-vehicle high-performance computing, development of automotive integrated processors and AI semiconductors, growth of the electric vehicle market and expansion of charging infrastructure, and strengthening of automotive cybersecurity.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
@@ -137,11 +143,10 @@ const visitorCounterConfig = {
 
 // 현재 언어 가져오기 함수
 function getCurrentLanguage() {
-  return (
-    localStorage.getItem(LANGUAGE_STORAGE_KEY) ||
-    navigator.language.startsWith('ko') ? 'ko' : 'en' ||
-    DEFAULT_LANGUAGE
-  );
+  return localStorage.getItem(LANGUAGE_STORAGE_KEY) ||
+    navigator.language.startsWith('ko')
+    ? 'ko'
+    : 'en' || DEFAULT_LANGUAGE;
 }
 
 // 현재 언어 가져오기 함수
@@ -336,13 +341,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!toggleElement) return;
     const langButtons = toggleElement.querySelectorAll('.lang-btn');
     const koButton = toggleElement.querySelector('.lang-btn[data-lang="ko"]');
-    
+
     langButtons.forEach((btn) => {
       const isActive = btn.dataset.lang === lang;
       btn.classList.toggle('active', isActive);
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
-    
+
     // English 버튼이 active일 때 한국어 버튼 배경색을 흰색으로 설정
     if (lang === 'en' && koButton) {
       koButton.style.background = '#ffffff';
@@ -465,11 +470,14 @@ document.addEventListener('DOMContentLoaded', function () {
       card.style.opacity = '0';
       card.style.transform = 'translateY(30px)';
 
-      setTimeout(() => {
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0)';
-      }, 500 + index * 100);
+      setTimeout(
+        () => {
+          card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        },
+        500 + index * 100,
+      );
     });
   });
 
@@ -491,7 +499,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 관찰할 요소들
     const observeElements = document.querySelectorAll(
-      '.content-card, .career-card, .notice-section, .news-section'
+      '.content-card, .career-card, .notice-section, .news-section',
     );
     observeElements.forEach((el) => {
       el.style.opacity = '0';
@@ -590,7 +598,8 @@ const companyDetails = {
         '8개 지방 사무소 근무 환경 표준화 및 운영 품질 개선',
         'Thermoplan, Welbilt 등 글로벌 제조사와 직접 품질 이슈 해결 및 교육 운영',
       ],
-      meaning: '"현장 중심 서비스 조직을 수익과 구조로 연결하는 경험을 완성한 단계"',
+      meaning:
+        '"현장 중심 서비스 조직을 수익과 구조로 연결하는 경험을 완성한 단계"',
     },
     'bmw-deutsch-motors': {
       companyName: 'BMW Deutsch Motors',
@@ -608,7 +617,8 @@ const companyDetails = {
         '반복 고장 및 품질 클레임 감소',
         '테크니션 역량 평가 및 육성 체계 정착으로 인력 안정성 강화',
       ],
-      meaning: '"교육은 교실이 아니라 현장에서 완성된다"는 확신을 갖게 된 시기. 기술, 교육, 품질, 인력 운영을 하나의 시스템으로 연결하는 경험. 이후 서비스 조직을 설계할 때 현장 실행력 중심 사고의 기반이 됨',
+      meaning:
+        '"교육은 교실이 아니라 현장에서 완성된다"는 확신을 갖게 된 시기. 기술, 교육, 품질, 인력 운영을 하나의 시스템으로 연결하는 경험. 이후 서비스 조직을 설계할 때 현장 실행력 중심 사고의 기반이 됨',
     },
     'bmw-bavarian-motors': {
       companyName: 'BMW Bavarian Motors',
@@ -625,7 +635,8 @@ const companyDetails = {
         '기술 교육과 CS 교육을 병행하여 고객 불만 감소',
         '서비스 프로세스 안정화에 기여',
       ],
-      meaning: '"서비스 현장의 현실적인 제약과 한계를 깊이 이해한 시기. 기술 역량뿐 아니라 프로세스와 사람 관리의 중요성을 체득. 이후 \'기술 중심 관리자\'에서 \'조직을 운영하는 리더\'로 사고가 확장됨"',
+      meaning:
+        "\"서비스 현장의 현실적인 제약과 한계를 깊이 이해한 시기. 기술 역량뿐 아니라 프로세스와 사람 관리의 중요성을 체득. 이후 '기술 중심 관리자'에서 '조직을 운영하는 리더'로 사고가 확장됨\"",
     },
     'bmw-korea': {
       companyName: 'BMW Korea',
@@ -693,7 +704,8 @@ const companyDetails = {
         'Standardized working environments and improved operational quality at 8 regional offices',
         'Directly resolved quality issues and operated training programs with global manufacturers such as Thermoplan and Welbilt',
       ],
-      meaning: '"A stage where I completed the experience of connecting field-centered service organizations with profits and structure"',
+      meaning:
+        '"A stage where I completed the experience of connecting field-centered service organizations with profits and structure"',
     },
     'bmw-deutsch-motors': {
       companyName: 'BMW Deutsch Motors',
@@ -711,7 +723,8 @@ const companyDetails = {
         'Reduced recurring failures and quality claims',
         'Strengthened workforce stability through establishment of technician competency evaluation and development systems',
       ],
-      meaning: '"A period when I gained the conviction that \'education is completed in the field, not in the classroom\'. Experience of connecting technology, education, quality, and workforce management as one system. Became the foundation for field-execution-centered thinking when designing service organizations thereafter"',
+      meaning:
+        '"A period when I gained the conviction that \'education is completed in the field, not in the classroom\'. Experience of connecting technology, education, quality, and workforce management as one system. Became the foundation for field-execution-centered thinking when designing service organizations thereafter"',
     },
     'bmw-bavarian-motors': {
       companyName: 'BMW Bavarian Motors',
@@ -728,7 +741,8 @@ const companyDetails = {
         'Reduced customer complaints by combining technical training with CS training',
         'Contributed to service process stabilization',
       ],
-      meaning: '"A period of deep understanding of realistic constraints and limitations in service field. Learned the importance of process and people management beyond technical capabilities. Expanded thinking from \'technology-centered manager\' to \'leader who operates organizations\'"',
+      meaning:
+        "\"A period of deep understanding of realistic constraints and limitations in service field. Learned the importance of process and people management beyond technical capabilities. Expanded thinking from 'technology-centered manager' to 'leader who operates organizations'\"",
     },
     'bmw-korea': {
       companyName: 'BMW Korea',
@@ -746,7 +760,8 @@ const companyDetails = {
         'Established field quality issue analysis and headquarters reporting system',
         'Planned and operated Apprentic',
       ],
-      meaning: '"The foundation of a career that transformed technology into human and organizational capabilities"',
+      meaning:
+        '"The foundation of a career that transformed technology into human and organizational capabilities"',
     },
     samsung: {
       companyName: 'Samsung Motors (Renault Samsung Motors)',
@@ -761,7 +776,8 @@ const companyDetails = {
         'Established service quality standards and applied them in the field',
         'Contributed to securing initial brand service reliability',
       ],
-      meaning: '"A period when I learned that the foundation of service quality lies in education and standards"',
+      meaning:
+        '"A period when I learned that the foundation of service quality lies in education and standards"',
     },
     hyundai: {
       companyName: 'Hyundai Motor Company',
@@ -776,7 +792,8 @@ const companyDetails = {
         'Provided headquarters feedback and improvement support for export vehicle quality issues',
         'Accumulated global technical communication experience',
       ],
-      meaning: '"The starting point where I learned the importance of technology and communication in the global field"',
+      meaning:
+        '"The starting point where I learned the importance of technology and communication in the global field"',
     },
   },
 };
