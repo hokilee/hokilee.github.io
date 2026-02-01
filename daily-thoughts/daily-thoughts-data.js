@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 54,
+    title: '실패하지 않는 온보딩·멘토링 운영 가이드',
+    link: 'eBook-data/onboarding Vol7.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-02',
+    views: 0,
+  },
+  {
     id: 53,
     title: '18개월 성장 로드맵 설계-제6장',
     link: 'eBook-data/onboarding Vol6.pdf',
