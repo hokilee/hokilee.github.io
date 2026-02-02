@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 118,
+    title: 'AI 생물학 모델의 혁명',
+    link: 'one-line-knowledge/trivia-detail-118.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '02-03',
+    views: 0,
+  },
+  {
     id: 117,
     title: '엣지 AI의 부상, 클라우드 없이 동작하는 AI의 미래',
     link: 'one-line-knowledge/trivia-detail-117.html',

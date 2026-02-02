@@ -1,8 +1,17 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 55,
+    title: '왜 우리 조직에는 문화가 없는가-제1장',
+    link: 'eBook-data/organizational_culture vol1.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-03',
+    views: 0,
+  },
+  {
     id: 54,
-    title: '실패하지 않는 온보딩·멘토링 운영 가이드',
+    title: '실패하지 않는 온보딩·멘토링 운영 가이드-제7장',
     link: 'eBook-data/onboarding Vol7.pdf',
     category: 'eBook Series',
     author: '이호기',
