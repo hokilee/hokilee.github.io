@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 117,
+    title: '무역 정책 불확실성이 기업 투자에 미치는 영향',
+    link: 'economics/economy-detail-117.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '02-04',
+    views: 0,
+  },
+  {
     id: 116,
     title: '기술 투자(특히 AI)가 글로벌 성장 동력이 되는 이유',
     link: 'economics/economy-detail-116.html',

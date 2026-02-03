@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 56,
+    title: '조직문화의 본질 — 말이 아니라 행동이다-제2장',
+    link: 'eBook-data/organizational_culture vol2.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-04',
+    views: 0,
+  },
+  {
     id: 55,
     title: '왜 우리 조직에는 문화가 없는가-제1장',
     link: 'eBook-data/organizational_culture vol1.pdf',

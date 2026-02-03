@@ -42,24 +42,29 @@ const translations = {
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title': 'NADA Show 2026 개막일 - AI와 딜러십 운영의 미래',
+    'schedule.item1.title':
+      'NADA Show 2026 둘째 날 - 엑스포 오픈 및 프랜차이즈 미팅',
     'schedule.item1.content':
-      'NADA Show 2026이 오늘부터 5일까지(미국 동부 시간 기준) 개최됩니다. 오늘 개막일에는 오전 8시 30분부터 11시 45분까지 "여성이 주도하는 자동차 리테일" 세션이 진행되며, 오전 10시 30분부터 11시 30분까지 NADA Show 오리엔테이션이 열립니다. 정오부터 오후 1시 30분까지는 "AI 혁신인가, AI 이점인가? 딜러십 운영의 미래" 슈퍼 세션이 진행되며, 오후 1시 15분부터 2시까지는 동시 워크샵과 스포트라이트 시리즈가 진행됩니다. 딜러십 운영의 디지털 전환, AI 기반 고객 서비스, 소프트웨어 정의 차량 판매 전략, 전기차 딜러십 운영 등이 주요 논의 주제입니다. 자동차 제조사, 딜러십, 기술 기업, IT 솔루션 제공업체가 참석합니다.',
-    'schedule.item2.title': 'DTECH 2026 차량-전력망 통합 세션',
+      'NADA Show 2026이 오늘부터 6일까지(미국 서부 시간 기준) 미국 라스베이거스에서 개최됩니다. 오늘 둘째 날에는 오전 8시 30분에 문이 열리며, 오전 8시 45분부터 10시까지 메인 스테이지에서 전임 회장 연설이 진행됩니다. 오전 9시부터 9시 45분까지는 Exchange 세션이 열리며, 오전 10시부터 오후 5시까지는 엑스포가 오픈됩니다. 오후 12시 30분부터 1시 15분까지는 워크샵, 스포트라이트 시리즈, Exchange 세션이 동시에 진행되며, 오후 3시부터 4시 15분까지는 프랜차이즈 미팅이 열립니다(Cadillac, Ford, INFINITI, Mercedes-Benz, Stellantis, Volkswagen). 오후 3시 30분부터 4시 15분까지는 추가 워크샵과 스포트라이트 시리즈가 진행됩니다. 딜러십 운영, 디지털 마케팅, 고객 경험 개선, 전기차 판매 전략 등이 주요 논의 주제입니다. 자동차 제조사, 딜러십, 기술 기업, IT 솔루션 제공업체가 참석합니다.',
+    'schedule.item2.title':
+      'NADA Show 2026 딜러십 운영 워크샵 및 Exchange 세션',
     'schedule.item2.content':
-      'DTECH 2026(Distributech 2026)이 오늘부터 5일까지(미국 서부 시간 기준) 미국 캘리포니아 샌디에이고 컨벤션 센터에서 개최됩니다. 오늘은 차량-전력망 통합(Vehicle-Grid Integration) 세션이 진행되며, 전기차와 전력망의 상호작용, V2G(Vehicle-to-Grid) 기술, 전기차 충전소의 전력망 부하 관리, 전기차를 활용한 에너지 저장 시스템 등이 주요 논의 주제입니다. 전기차 충전 인프라, 스마트 그리드 기술, 재생 에너지 통합, 전기차 충전 요금제 및 고객 경험 등도 다뤄집니다. 전력 회사, 전기차 제조사, 충전 인프라 기업, 에너지 기술 기업이 참석합니다.',
-    'schedule.item3.title': '자율주행 차량 상용화 전략 포럼 2026',
+      'NADA Show 2026이 오늘부터 6일까지(미국 서부 시간 기준) 미국 라스베이거스에서 개최됩니다. 오늘 오전 9시부터 9시 45분까지는 Exchange 세션이 진행되며, 딜러십 운영의 모범 사례, 고객 서비스 개선, 디지털 마케팅 전략, 재고 관리, 수익성 향상 등이 주요 논의 주제입니다. 오후 12시 30분부터 1시 15분까지는 워크샵과 스포트라이트 시리즈가 동시에 진행되며, 딜러십 운영의 디지털 전환, AI 기반 고객 서비스, 소프트웨어 정의 차량 판매 전략, 전기차 딜러십 운영 등이 다뤄집니다. 오후 3시 30분부터 4시 15분까지는 추가 워크샵과 스포트라이트 시리즈가 진행됩니다. 자동차 딜러십, 기술 기업, 컨설팅 회사가 참석합니다.',
+    'schedule.item3.title':
+      'NADA Show 2026 프랜차이즈 미팅 - 주요 브랜드별 전략',
     'schedule.item3.content':
-      '자율주행 차량 상용화 전략 포럼 2026이 오늘 오전 9시부터 오후 5시까지(한국 시간) 서울 강남구 코엑스에서 개최됩니다. 레벨 3-4 자율주행 차량의 상용화 전략, 자율주행 차량의 보험 및 책임 소재, 자율주행 차량의 법적 프레임워크, 자율주행 로봇택시 서비스 운영 전략, 자율주행 차량의 안전성 검증 등이 주요 논의 주제입니다. 자율주행 차량의 도로 주행 허가 절차, 자율주행 차량의 표준화, 자율주행 차량의 고객 수용성 등도 다뤄집니다. 현대자동차, 기아, 테슬라 코리아, 자율주행 기술 기업, 보험사, 규제 기관이 참석합니다.',
-    'schedule.item4.title': '차량 내 AI 어시스턴트 기술 세미나 2026',
+      'NADA Show 2026이 오늘부터 6일까지(미국 서부 시간 기준) 미국 라스베이거스에서 개최됩니다. 오늘 오후 3시부터 4시 15분까지는 프랜차이즈 미팅이 진행되며, Cadillac, Ford, INFINITI, Mercedes-Benz, Stellantis, Volkswagen 등 주요 브랜드별로 별도의 미팅이 열립니다. 각 브랜드별 신차 라인업 소개, 딜러십 운영 전략, 판매 목표 및 인센티브 프로그램, 서비스 및 부품 정책, 디지털 마케팅 지원, 전기차 판매 전략 등이 주요 논의 주제입니다. 브랜드별 딜러십 네트워크 전략, 고객 경험 개선 방안, 기술 지원 프로그램 등도 다뤄집니다. 자동차 제조사 관계자, 딜러십 대표, 지역 관리자, 마케팅 및 서비스 담당자가 참석합니다.',
+    'schedule.item4.title':
+      'NADA Show 2026 엑스포 - 자동차 딜러십 기술 및 솔루션',
     'schedule.item4.content':
-      '차량 내 AI 어시스턴트 기술 세미나 2026이 오늘 오전 10시부터 오후 4시까지(한국 시간) 서울 여의도에서 개최됩니다. 차량 내 음성 AI 어시스턴트, 자연어 처리 기술, 맥락 이해 기능, 차량 기능 제어 AI, 차량 내 개인화 서비스 등이 주요 논의 주제입니다. 대규모 언어 모델(LLM)을 활용한 차량 내 AI, 멀티모달 AI(음성, 제스처, 시선 추적), 차량 내 AI의 프라이버시 보호, 차량 내 AI의 안전성 등도 다뤄집니다. 현대자동차, 기아, 포드 코리아, 구글, 애플, AI 기술 기업이 참석합니다.',
-    'schedule.item5.title': '전기차 배터리 2차 사용 및 재활용 포럼 2026',
+      'NADA Show 2026 엑스포가 오늘 오전 10시부터 오후 5시까지(미국 서부 시간 기준) 미국 라스베이거스에서 개최됩니다. 엑스포에서는 자동차 딜러십 운영을 위한 최신 기술과 솔루션이 전시됩니다. 딜러십 관리 시스템(DMS), 고객 관계 관리(CRM) 솔루션, 디지털 마케팅 플랫폼, 재고 관리 시스템, 서비스 예약 및 관리 시스템, 전기차 충전 인프라, AI 기반 고객 서비스 솔루션, 소프트웨어 정의 차량 판매 도구 등이 주요 전시 내용입니다. 딜러십 운영 효율화, 고객 경험 개선, 수익성 향상을 위한 기술 솔루션들이 소개됩니다. 자동차 제조사, 딜러십 기술 기업, IT 솔루션 제공업체, 마케팅 회사, 서비스 제공업체가 참석합니다.',
+    'schedule.item5.title':
+      'NADA Show 2026 NADA Academy Alumni 및 NextGen 리셉션',
     'schedule.item5.content':
-      '전기차 배터리 2차 사용 및 재활용 포럼 2026이 오늘 오후 1시부터 6시까지(한국 시간) 서울 판교 테크노밸리에서 개최됩니다. 전기차 배터리의 2차 사용(에너지 저장 시스템 등), 배터리 재활용 기술, 배터리 재활용 경제성, 배터리 재활용 공급망, 배터리 재활용 규제 등이 주요 논의 주제입니다. 배터리 재활용을 통한 순환 경제 구축, 배터리 재활용 기술의 혁신, 배터리 재활용 시장 전망 등도 다뤄집니다. 현대자동차, 기아, LG에너지솔루션, SK온, 삼성SDI, 배터리 재활용 기업이 참석합니다.',
-    'notice.updateContent20260203': `<strong>2026-02-03</strong> - eBook Series 게시판과 한줄 지식/잡학 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 새로운 시리즈 「조직문화는 설계된다」의 제1장 「왜 우리 조직에는 문화가 없는가」가 연재를 시작했습니다. 자동차 서비스 회사들은 대부분 뚜렷한 조직문화를 가지고 있지 않아 근무하는 직원들의 자부심과 긍지가 부족하며, 이러한 원인으로 많은 직원들이 회사를 떠나는 현실을 다룹니다. 이 장에서는 조직문화가 없는 이유, 조직문화 부재가 직원 이직에 미치는 영향, 조직문화의 중요성 등을 심층적으로 분석합니다. 건전하고 긍정적인 조직 문화를 만들기 위한 첫걸음으로, 조직문화가 없는 근본 원인을 파악하고 조직문화 설계의 필요성을 제시합니다.<br /><br />
-📚 <strong>한줄 지식/잡학:</strong> 「AI 생물학 모델의 혁명」이 추가되었습니다. 최근 인공지능(AI) 기술이 생물학 분야에 혁명을 일으키고 있으며, 특히 AI 생물학 모델이 DNA를 주문대로 작성할 수 있게 되면서 완전히 새로운 게놈을 설계하는 것이 가능해졌습니다. 과학자들이 발표한 최대 규모의 AI 생물학 모델은 유전자 서열을 예측하고, 새로운 DNA 서열을 생성하며, 생물학적 기능을 가진 완전히 새로운 유전자를 만들어낼 수 있습니다. 이는 생명공학, 의학, 신약 개발 등 다양한 분야에 큰 영향을 미치며, 맞춤형 치료, 합성 생물학, 바이오 연료 생산 등 새로운 가능성을 열고 있습니다.<br /><br />
+      'NADA Show 2026이 오늘부터 6일까지(미국 서부 시간 기준) 미국 라스베이거스에서 개최됩니다. 오늘 오후 6시 30분부터 8시 30분까지는 NADA Academy Alumni 및 NextGen 리셉션이 개최됩니다(초대 전용). 이 행사는 자동차 딜러십 산업의 차세대 리더들과 NADA Academy 졸업생들을 위한 네트워킹 이벤트입니다. 딜러십 산업의 미래, 차세대 딜러십 운영자 양성, 딜러십 리더십 개발, 산업 트렌드 및 기회 등이 주요 논의 주제입니다. 젊은 딜러십 경영자들과 경험 많은 딜러십 리더들 간의 멘토링 및 네트워킹 기회가 제공됩니다. NADA Academy 졸업생, 차세대 딜러십 경영자, 딜러십 리더, 산업 전문가가 참석합니다.',
+    'notice.updateContent20260204': `<strong>2026-02-04</strong> - eBook Series 게시판과 경제상식 게시판에 새로운 콘텐츠를 추가했습니다.<br /><br />
+📖 <strong>eBook Series:</strong> 「조직문화는 설계된다」 시리즈의 제2장 「조직문화의 본질 — 말이 아니라 행동이다」가 연재되었습니다. 많은 조직들이 조직문화를 구호나 슬로건으로만 생각하지만, 진정한 조직문화는 말이 아니라 행동으로 나타납니다. 이 장에서는 조직문화의 본질이 무엇인지, 조직문화가 어떻게 형성되고 전달되는지, 조직문화와 행동의 관계, 조직문화가 조직 성과에 미치는 영향 등을 심층적으로 분석합니다. 조직문화는 리더의 말이 아니라 리더와 구성원들의 실제 행동으로 만들어지며, 이러한 행동이 반복되면서 조직의 DNA가 형성됩니다. 진정한 조직문화를 만들기 위해서는 말보다 행동이 중요하며, 일관된 행동이 조직문화의 핵심입니다.<br /><br />
+💰 <strong>경제상식:</strong> 「무역 정책 불확실성이 기업 투자에 미치는 영향」이 추가되었습니다. 최근 글로벌 경제는 보호무역주의 확산과 무역 정책의 불확실성에도 불구하고 지속적인 성장을 보이고 있습니다. 그러나 무역 정책의 불확실성은 여전히 기업의 투자 결정에 큰 영향을 미치고 있으며, 공급망 재구성, 투자 지연, 시장 다각화 등 다양한 방식으로 기업 행동을 변화시키고 있습니다. 이 글에서는 무역 정책 불확실성이 기업 투자에 미치는 영향, 민간 부문의 적응력과 정책 리스크 상쇄 메커니즘, 기업의 대응 전략, 그리고 정책적 시사점을 다룹니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -105,25 +110,28 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'NADA Show 2026 Opening Day - AI and the Future of Dealership Operations',
+      'NADA Show 2026 Day 2 - Expo Opening & Franchise Meetings',
     'schedule.item1.content':
-      'NADA Show 2026 will be held from today through February 5 (US Eastern Time). Today\'s opening day features "Women Driving Vehicle Retail" session from 8:30 AM to 11:45 AM, followed by NADA Show Orientation from 10:30 AM to 11:30 AM. The Super Session "AI Disruption or AI Advantage? The Future of Dealership Ops" runs from Noon to 1:30 PM, with concurrent workshops and spotlight series from 1:15 PM to 2:00 PM. Key topics include digital transformation of dealership operations, AI-based customer service, software-defined vehicle sales strategies, and EV dealership operations. Automakers, dealerships, technology companies, and IT solution providers will attend.',
-    'schedule.item2.title': 'DTECH 2026 Vehicle-Grid Integration Session',
+      "NADA Show 2026 will be held from today through February 6 (US Pacific Time) in Las Vegas, USA. Today's second day begins with doors opening at 8:30 AM, followed by the Main Stage featuring the outgoing Chairman's address from 8:45 AM to 10:00 AM. Exchange Sessions run from 9:00 AM to 9:45 AM, and the Expo opens from 10:00 AM to 5:00 PM. Workshops, Spotlight Series, and Exchange Sessions are held concurrently from 12:30 PM to 1:15 PM, and Franchise Meetings take place from 3:00 PM to 4:15 PM (Cadillac, Ford, INFINITI, Mercedes-Benz, Stellantis, and Volkswagen). Additional workshops and Spotlight Series run from 3:30 PM to 4:15 PM. Key topics include dealership operations, digital marketing, customer experience improvement, and EV sales strategies. Automakers, dealerships, technology companies, and IT solution providers will attend.",
+    'schedule.item2.title':
+      'NADA Show 2026 Dealership Operations Workshops & Exchange Sessions',
     'schedule.item2.content':
-      "DTECH 2026 (Distributech 2026) will be held from today through February 5 (US Pacific Time) at the San Diego Convention Center in San Diego, California, USA. Today's session focuses on vehicle-grid integration (VGI), covering interactions between electric vehicles and the power grid, V2G (Vehicle-to-Grid) technology, power grid load management for EV charging stations, and energy storage systems utilizing electric vehicles. The session also covers EV charging infrastructure, smart grid technology, renewable energy integration, and EV charging rates and customer experience. Power companies, EV manufacturers, charging infrastructure companies, and energy technology companies will attend.",
+      "NADA Show 2026 will be held from today through February 6 (US Pacific Time) in Las Vegas, USA. Today's Exchange Sessions run from 9:00 AM to 9:45 AM, covering best practices in dealership operations, customer service improvement, digital marketing strategies, inventory management, and profitability enhancement. Workshops and Spotlight Series are held concurrently from 12:30 PM to 1:15 PM, addressing digital transformation of dealership operations, AI-based customer service, software-defined vehicle sales strategies, and EV dealership operations. Additional workshops and Spotlight Series run from 3:30 PM to 4:15 PM. Automotive dealerships, technology companies, and consulting firms will attend.",
     'schedule.item3.title':
-      'Autonomous Vehicle Commercialization Strategy Forum 2026',
+      'NADA Show 2026 Franchise Meetings - Brand-Specific Strategies',
     'schedule.item3.content':
-      'The Autonomous Vehicle Commercialization Strategy Forum 2026 will be held today from 9:00 AM to 5:00 PM (Korea time) at COEX in Gangnam-gu, Seoul. Key topics include Level 3-4 autonomous vehicle commercialization strategies, autonomous vehicle insurance and liability, legal frameworks for autonomous vehicles, autonomous robotaxi service operation strategies, and autonomous vehicle safety verification. The forum also covers road approval procedures for autonomous vehicles, autonomous vehicle standardization, and customer acceptance of autonomous vehicles. Hyundai Motor, Kia, Tesla Korea, autonomous driving technology companies, insurance companies, and regulatory agencies will attend.',
-    'schedule.item4.title': 'In-Vehicle AI Assistant Technology Seminar 2026',
+      "NADA Show 2026 will be held from today through February 6 (US Pacific Time) in Las Vegas, USA. Today's Franchise Meetings run from 3:00 PM to 4:15 PM, with separate meetings for Cadillac, Ford, INFINITI, Mercedes-Benz, Stellantis, and Volkswagen. Key topics include brand-specific new vehicle lineups, dealership operation strategies, sales targets and incentive programs, service and parts policies, digital marketing support, and EV sales strategies. Brand-specific dealership network strategies, customer experience improvement measures, and technical support programs are also discussed. Automaker representatives, dealership executives, regional managers, and marketing and service personnel will attend.",
+    'schedule.item4.title':
+      'NADA Show 2026 Expo - Automotive Dealership Technology & Solutions',
     'schedule.item4.content':
-      'The In-Vehicle AI Assistant Technology Seminar 2026 will be held today from 10:00 AM to 4:00 PM (Korea time) in Yeouido, Seoul. Key topics include in-vehicle voice AI assistants, natural language processing technology, context understanding capabilities, vehicle function control AI, and in-vehicle personalization services. The seminar also covers in-vehicle AI using large language models (LLM), multimodal AI (voice, gesture, eye tracking), privacy protection for in-vehicle AI, and safety of in-vehicle AI. Hyundai Motor, Kia, Ford Korea, Google, Apple, and AI technology companies will attend.',
-    'schedule.item5.title': 'EV Battery Second-Life Use & Recycling Forum 2026',
+      'NADA Show 2026 Expo will be held today from 10:00 AM to 5:00 PM (US Pacific Time) in Las Vegas, USA. The Expo showcases the latest technologies and solutions for automotive dealership operations. Key exhibits include dealership management systems (DMS), customer relationship management (CRM) solutions, digital marketing platforms, inventory management systems, service appointment and management systems, EV charging infrastructure, AI-based customer service solutions, and software-defined vehicle sales tools. Technology solutions for dealership operation efficiency, customer experience improvement, and profitability enhancement are introduced. Automakers, dealership technology companies, IT solution providers, marketing companies, and service providers will attend.',
+    'schedule.item5.title':
+      'NADA Show 2026 NADA Academy Alumni & NextGen Reception',
     'schedule.item5.content':
-      'The EV Battery Second-Life Use & Recycling Forum 2026 will be held today from 1:00 PM to 6:00 PM (Korea time) in Pangyo Techno Valley, Seoul. Key topics include second-life use of EV batteries (energy storage systems, etc.), battery recycling technology, battery recycling economics, battery recycling supply chains, and battery recycling regulations. The forum also covers building a circular economy through battery recycling, innovation in battery recycling technology, and battery recycling market prospects. Hyundai Motor, Kia, LG Energy Solution, SK On, Samsung SDI, and battery recycling companies will attend.',
-    'notice.updateContent20260203': `<strong>2026-02-03</strong> – We've added new content to the eBook Series board and One-Line Knowledge/Trivia board.<br /><br />
-📖 <strong>eBook Series:</strong> A new series "Organizational Culture is Designed" has begun serialization with Chapter 1 "Why Our Organization Lacks Culture". Most automotive service companies do not have a distinct organizational culture, resulting in a lack of pride and self-esteem among employees, which causes many employees to leave the company. This chapter provides an in-depth analysis of why organizations lack culture, the impact of the absence of organizational culture on employee turnover, and the importance of organizational culture. As the first step toward creating a healthy and positive organizational culture, it identifies the root causes of the lack of organizational culture and presents the need for organizational culture design.<br /><br />
-📚 <strong>One-Line Knowledge/Trivia:</strong> "The Revolution of AI Biology Models" has been added. Recently, artificial intelligence (AI) technology has revolutionized the field of biology, and particularly, AI biology models can now write DNA on demand, making it possible to design completely new genomes. The largest AI biology model announced by scientists can predict gene sequences, generate new DNA sequences, and create completely new genes with biological functions. This has a significant impact on various fields such as biotechnology, medicine, and drug development, opening new possibilities for personalized treatment, synthetic biology, and biofuel production.<br /><br />
+      "NADA Show 2026 will be held from today through February 6 (US Pacific Time) in Las Vegas, USA. Today's NADA Academy Alumni and NextGen Reception will be held from 6:30 PM to 8:30 PM (by invitation only). This event is a networking opportunity for next-generation leaders in the automotive dealership industry and NADA Academy graduates. Key topics include the future of the dealership industry, training next-generation dealership operators, dealership leadership development, and industry trends and opportunities. Mentoring and networking opportunities are provided between young dealership managers and experienced dealership leaders. NADA Academy graduates, next-generation dealership executives, dealership leaders, and industry experts will attend.",
+    'notice.updateContent20260204': `<strong>2026-02-04</strong> – We've added new content to the eBook Series board and Economics Knowledge board.<br /><br />
+📖 <strong>eBook Series:</strong> Chapter 2 "The Essence of Organizational Culture — Actions, Not Words" of the series "Organizational Culture is Designed" has been serialized. Many organizations think of organizational culture as just slogans or mottos, but true organizational culture is manifested through actions, not words. This chapter provides an in-depth analysis of what the essence of organizational culture is, how organizational culture is formed and transmitted, the relationship between organizational culture and behavior, and the impact of organizational culture on organizational performance. Organizational culture is created not by leaders' words but by the actual actions of leaders and members, and these repeated actions form the organization's DNA. To create a true organizational culture, actions matter more than words, and consistent actions are the core of organizational culture.<br /><br />
+💰 <strong>Economics Knowledge:</strong> "The Impact of Trade Policy Uncertainty on Corporate Investment" has been added. Recently, the global economy has shown continued growth despite the spread of protectionism and uncertainty in trade policy. However, trade policy uncertainty still significantly affects corporate investment decisions, changing corporate behavior in various ways such as supply chain restructuring, investment delays, and market diversification. This article covers the impact of trade policy uncertainty on corporate investment, the private sector's adaptability and mechanisms to offset policy risks, corporate response strategies, and policy implications.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
@@ -468,14 +476,11 @@ document.addEventListener('DOMContentLoaded', function () {
       card.style.opacity = '0';
       card.style.transform = 'translateY(30px)';
 
-      setTimeout(
-        () => {
-          card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-          card.style.opacity = '1';
-          card.style.transform = 'translateY(0)';
-        },
-        500 + index * 100,
-      );
+      setTimeout(() => {
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, 500 + index * 100);
     });
   });
 
