@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 63,
+    title: '메타인지(Metacognition)',
+    link: 'science/science-detail-63.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '02-05',
+    views: 0,
+  },
+  {
     id: 62,
     title: '시스템 1 & 2 사고(System 1 & System 2)',
     link: 'science/science-detail-62.html',

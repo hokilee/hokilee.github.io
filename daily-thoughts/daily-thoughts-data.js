@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 57,
+    title: '문화는 관리자의 선택에서 만들어진다-제3장',
+    link: 'eBook-data/organizational_culture vol3.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-05',
+    views: 0,
+  },
+  {
     id: 56,
     title: '조직문화의 본질 — 말이 아니라 행동이다-제2장',
     link: 'eBook-data/organizational_culture vol2.pdf',
