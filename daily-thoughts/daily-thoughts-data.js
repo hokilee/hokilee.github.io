@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 58,
+    title: '신입을 대하는 방식이 조직의 철학이다-제4장',
+    link: 'eBook-data/organizational_culture vol4.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-06',
+    views: 0,
+  },
+  {
     id: 57,
     title: '문화는 관리자의 선택에서 만들어진다-제3장',
     link: 'eBook-data/organizational_culture vol3.pdf',
