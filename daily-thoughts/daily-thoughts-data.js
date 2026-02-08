@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 59,
+    title: '조직문화는 운영되지 않으면 사라진다-제5장',
+    link: 'eBook-data/organizational_culture vol5.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-09',
+    views: 0,
+  },
+  {
     id: 58,
     title: '신입을 대하는 방식이 조직의 철학이다-제4장',
     link: 'eBook-data/organizational_culture vol4.pdf',
