@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 60,
+    title: '내부 기준은 어떻게 외부 브랜드가 되는가-제6장',
+    link: 'eBook-data/organizational_culture vol6.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-10',
+    views: 0,
+  },
+  {
     id: 59,
     title: '조직문화는 운영되지 않으면 사라진다-제5장',
     link: 'eBook-data/organizational_culture vol5.pdf',
