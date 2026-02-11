@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 61,
+    title: '조직문화를 설계하는 프레임-제7장',
+    link: 'eBook-data/organizational_culture vol7.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '02-11',
+    views: 0,
+  },
+  {
     id: 60,
     title: '내부 기준은 어떻게 외부 브랜드가 되는가-제6장',
     link: 'eBook-data/organizational_culture vol6.pdf',
