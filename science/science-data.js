@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 64,
+    title: '샐리의 상자 테스트(Sally–Anne Test)',
+    link: 'science/science-detail-64.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '02-13',
+    views: 0,
+  },
+  {
     id: 63,
     title: '메타인지(Metacognition)',
     link: 'science/science-detail-63.html',
