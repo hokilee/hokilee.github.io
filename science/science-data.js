@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 65,
+    title: '후광 효과(Halo Effect)',
+    link: 'science/science-detail-65.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '02-23',
+    views: 0,
+  },
+  {
     id: 64,
     title: '샐리의 상자 테스트(Sally–Anne Test)',
     link: 'science/science-detail-64.html',
