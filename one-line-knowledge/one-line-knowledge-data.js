@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 120,
+    title: '세계 4대 문명',
+    link: 'one-line-knowledge/trivia-detail-120.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '02-26',
+    views: 0,
+  },
+  {
     id: 119,
     title: 'AI가 발견한 허블 우주 망원경의 800개 우주 이상 현상',
     link: 'one-line-knowledge/trivia-detail-119.html',

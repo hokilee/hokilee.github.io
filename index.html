@@ -351,8 +351,8 @@
             <ul class="notice-list">
               <p
                 class="notice-item"
-                data-date="2026-02-23"
-                data-i18n="notice.updateContent20260223"
+                data-date="2026-02-26"
+                data-i18n="notice.updateContent20260226"
               >
                 <span class="new-badge" style="display: none">NEW</span>
               </p>
@@ -392,7 +392,9 @@
                       font-weight: 600;
                     "
                     data-i18n="schedule.item1.title"
-                  ></h5>
+                  >
+                    <span class="schedule-new-badge" style="display: none">New</span>
+                  </h5>
                   <p
                     style="
                       color: #666;
@@ -404,8 +406,9 @@
                   ></p>
                   <span
                     class="news-date"
+                    data-date="2026-02-26"
                     style="color: #999; font-size: 0.85rem"
-                    >2026-02-23</span
+                    >2026-02-26</span
                   >
                 </div>
               </div>
@@ -419,7 +422,9 @@
                       font-weight: 600;
                     "
                     data-i18n="schedule.item2.title"
-                  ></h5>
+                  >
+                    <span class="schedule-new-badge" style="display: none">New</span>
+                  </h5>
                   <p
                     style="
                       color: #666;
@@ -431,8 +436,9 @@
                   ></p>
                   <span
                     class="news-date"
+                    data-date="2026-02-26"
                     style="color: #999; font-size: 0.85rem"
-                    >2026-02-23</span
+                    >2026-02-26</span
                   >
                 </div>
               </div>
@@ -446,7 +452,9 @@
                       font-weight: 600;
                     "
                     data-i18n="schedule.item3.title"
-                  ></h5>
+                  >
+                    <span class="schedule-new-badge" style="display: none">New</span>
+                  </h5>
                   <p
                     style="
                       color: #666;
@@ -458,8 +466,9 @@
                   ></p>
                   <span
                     class="news-date"
+                    data-date="2026-02-26"
                     style="color: #999; font-size: 0.85rem"
-                    >2026-02-23</span
+                    >2026-02-26</span
                   >
                 </div>
               </div>
@@ -473,7 +482,9 @@
                       font-weight: 600;
                     "
                     data-i18n="schedule.item4.title"
-                  ></h5>
+                  >
+                    <span class="schedule-new-badge" style="display: none">New</span>
+                  </h5>
                   <p
                     style="
                       color: #666;
@@ -485,8 +496,9 @@
                   ></p>
                   <span
                     class="news-date"
+                    data-date="2026-02-26"
                     style="color: #999; font-size: 0.85rem"
-                    >2026-02-23</span
+                    >2026-02-26</span
                   >
                 </div>
               </div>
@@ -500,7 +512,9 @@
                       font-weight: 600;
                     "
                     data-i18n="schedule.item5.title"
-                  ></h5>
+                  >
+                    <span class="schedule-new-badge" style="display: none">New</span>
+                  </h5>
                   <p
                     style="
                       color: #666;
@@ -512,8 +526,9 @@
                   ></p>
                   <span
                     class="news-date"
+                    data-date="2026-02-26"
                     style="color: #999; font-size: 0.85rem"
-                    >2026-02-23</span
+                    >2026-02-26</span
                   >
                 </div>
               </div>
@@ -583,6 +598,7 @@
 
         console.log('NEW 배지 체크 - 오늘:', todayStr, '어제:', yesterdayStr);
 
+        // 공지사항 NEW 배지 업데이트
         const noticeItems = document.querySelectorAll(
           '.notice-item[data-date]',
         );
@@ -626,6 +642,51 @@
             console.log('NEW 배지 숨김');
           }
         });
+
+        // 일정 섹션 NEW 배지 업데이트 (오늘 날짜만)
+        const scheduleItems = document.querySelectorAll(
+          '.news-date[data-date]',
+        );
+
+        console.log('일정 항목 개수:', scheduleItems.length);
+
+        scheduleItems.forEach((dateSpan) => {
+          const scheduleDateStr = dateSpan.getAttribute('data-date');
+          const newsItem = dateSpan.closest('.news-item');
+          const newBadge = newsItem
+            ? newsItem.querySelector('.schedule-new-badge')
+            : null;
+
+          console.log(
+            '일정 날짜:',
+            scheduleDateStr,
+            'New 배지 존재:',
+            !!newBadge,
+          );
+
+          if (!newBadge) {
+            console.warn('New badge element not found for schedule item');
+            return;
+          }
+
+          // 오늘 날짜와 일치하면 New 배지 표시
+          const shouldShow = scheduleDateStr === todayStr;
+          console.log(
+            '일정 날짜 일치 여부:',
+            shouldShow,
+            '(오늘:',
+            scheduleDateStr === todayStr,
+            ')',
+          );
+
+          if (shouldShow) {
+            newBadge.style.display = 'inline-block';
+            console.log('일정 New 배지 표시됨');
+          } else {
+            newBadge.style.display = 'none';
+            console.log('일정 New 배지 숨김');
+          }
+        });
       };
 
       // DOM이 완전히 로드된 후 NEW 배지 업데이트
@@ -661,6 +722,21 @@
 
       /* 2. NEW 배지 애니메이션 */
       .new-badge {
+        display: inline-block;
+        background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 2px 6px;
+        border-radius: 10px;
+        margin-left: 8px;
+        animation: newBadgeBounce 2s ease-in-out infinite;
+        box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+        vertical-align: middle;
+      }
+
+      /* 일정 섹션 New 배지 스타일 */
+      .schedule-new-badge {
         display: inline-block;
         background: linear-gradient(45deg, #ff6b6b, #ff8e53);
         color: white;
@@ -945,6 +1021,12 @@
         .new-badge {
           font-size: 9px;
           padding: 1px 4px;
+        }
+
+        .schedule-new-badge {
+          font-size: 9px;
+          padding: 1px 4px;
+          margin-left: 6px;
         }
 
         .notice-glow-container:hover {
