@@ -31,40 +31,42 @@ const translations = {
     'profile.company3': 'BMW Korea',
     'profile.company4': '삼성자동차',
     'profile.company5': '현대자동차',
+    'profile.company6': 'The Junjin',
     'profile.position1': 'Executive Director, Head of Service Division',
     'profile.position2': 'Director, Service Division',
     'profile.position2a': 'Master Lab Manager',
     'profile.position3': 'Training & Technical Support Team Leader',
     'profile.position4': 'Technical Training & Service Manager',
     'profile.position5': 'Global Technical Support & Training',
+    'profile.position6': 'Service Operations Manager',
     'modal.coreRole': '핵심 역할',
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'Physical AI와 자동차 산업 세미나 2026 - CES2026 기술 트렌드 및 자동차 적용 방안',
+      'AW 2026 스마트공장·자동화산업전 개막 - AI자율제조혁신포럼 및 스마트팩토리 기술',
     'schedule.item1.content':
-      'Physical AI와 자동차 산업 세미나 2026이 오늘 오전 9시부터 오후 5시까지(한국 시간) 서울 서초구에서 개최됩니다. 한국자동차산업협동조합과 자동차 제조사, IT 기업이 참여하며, CES2026에서 주목받은 Physical AI(물리적 AI) 기술이 자동차 산업에 미치는 영향, 로봇과 자동차의 융합 기술, 자율주행 로봇택시의 물리적 AI 적용 사례, 자동차 제조 공정의 로봇 자동화, 물리적 AI 기반 차량 유지보수 시스템 등이 주요 논의 주제입니다. Physical AI가 "몸"을 갖게 된 순간의 의미와 자동차 산업의 변화, 로봇과 자동차의 융합으로 인한 새로운 비즈니스 모델, 물리적 AI 기술의 자동차 안전성 향상 방안, 물리적 AI 기반 자동차 서비스 혁신 등도 다뤄집니다. 자동차 제조사, 부품 기업, 로봇 기업, IT 기업, 연구기관이 참석합니다.',
+      'AW 2026 스마트공장·자동화산업전이 오늘 오전 10시부터 오후 5시까지(한국 시간) 코엑스 전관에서 개막됩니다. 약 500개 업체, 2,200부스 규모로 진행되며, 스마트팩토리엑스포(SF), 국제공장자동화전(aimex), 한국머신비전산업전(KVS), AI 팩토리특별관 등으로 구성됩니다. AI자율제조혁신포럼이 개최되며, 자동차 제조 공정의 AI 기반 자율화 기술, 스마트팩토리 솔루션, 로봇 자동화 시스템, 디지털 트윈 기반 제조 최적화, AI 기반 품질 관리 시스템 등이 주요 논의 주제입니다. 자동차 제조사, 부품 기업, 로봇 기업, IT 기업, 스마트팩토리 솔루션 기업, 연구기관이 참석합니다.',
     'schedule.item2.title':
-      '한국 자동차 부품 산업 기술 포럼 2026 - 첨단소재부품 및 스마트 부품 기술',
+      '자동차 제조 스마트팩토리 기술 세미나 2026 - 디지털 트윈 및 AI 기반 제조 혁신',
     'schedule.item2.content':
-      '한국 자동차 부품 산업 기술 포럼 2026이 오늘 오전 10시부터 오후 4시까지(한국 시간) 서울 강남구에서 개최됩니다. 한국자동차부품협회(KAPA)와 부품 기업, 자동차 제조사가 참여하며, 국제첨단소재부품산업전(PARTS SHOW 2026) 연계 기술 포럼으로, 첨단소재 부품 기술, 스마트 부품 기술, 경량화 부품 기술, 친환경 부품 기술 등이 주요 논의 주제입니다. 자동차 부품의 디지털 트윈 기술, 부품의 예측 정비 기술, 부품의 원격 모니터링 기술, 부품의 수명 연장 기술, 부품의 재활용 기술 등도 다뤄집니다. 자동차 제조사, 부품 기업, 소재 기업, 연구기관이 참석합니다.',
+      '자동차 제조 스마트팩토리 기술 세미나 2026이 오늘 오전 9시부터 오후 4시까지(한국 시간) 코엑스에서 개최됩니다. 한국자동차제조협회와 자동차 제조사, 스마트팩토리 솔루션 기업이 참여하며, 자동차 제조 공정의 디지털 트윈 구축, AI 기반 생산 계획 최적화, 로봇 자동화 시스템 통합, 실시간 생산 모니터링 및 예측 정비, 스마트팩토리의 에너지 효율성 향상 등이 주요 논의 주제입니다. 디지털 트윈 기반 제조 시뮬레이션, AI 기반 불량 예측 및 방지, 스마트팩토리의 데이터 통합 플랫폼, 자동차 제조 공정의 유연성 향상, 스마트팩토리의 인력 역량 강화 등도 다뤄집니다. 자동차 제조사, 부품 기업, 스마트팩토리 솔루션 기업, 연구기관이 참석합니다.',
     'schedule.item3.title':
-      'IT-자동차 융합 기술 세미나 2026 - 클라우드·엣지 AI 및 데이터 플랫폼',
+      '로봇 자동화 및 머신비전 기술 포럼 2026 - 자동차 제조 공정 자동화',
     'schedule.item3.content':
-      'IT-자동차 융합 기술 세미나 2026이 오늘 오전 9시부터 오후 4시까지(한국 시간) 서울 여의도에서 개최됩니다. 국내 IT 기업과 자동차 제조사가 참여하며, 클라우드 AI와 엣지 AI의 자동차 적용, 자동차 데이터 플랫폼 구축, 차량-클라우드 연동 기술, 실시간 차량 데이터 분석, 자동차 빅데이터 활용 등이 주요 논의 주제입니다. 클라우드 기반 자율주행 시뮬레이션, 엣지 AI 기반 차량 내 실시간 의사결정, 자동차 데이터의 프라이버시 보호, 자동차 데이터의 보안 강화, 자동차 데이터의 상업적 활용 방안 등도 다뤄집니다. 자동차 제조사, IT 기업, 클라우드 서비스 기업, 데이터 분석 기업, 연구기관이 참석합니다.',
+      '로봇 자동화 및 머신비전 기술 포럼 2026이 오늘 오전 10시부터 오후 4시까지(한국 시간) 코엑스에서 개최됩니다. 한국로봇산업협회와 자동차 제조사, 로봇 기업, 머신비전 기업이 참여하며, 자동차 제조 공정의 로봇 자동화, 머신비전 기반 품질 검사, 협동로봇(Cobot)의 자동차 제조 적용, 로봇-인간 협업 시스템, 머신비전 기반 부품 인식 및 조립 등이 주요 논의 주제입니다. 로봇 자동화의 유연성 향상, 머신비전의 AI 통합, 로봇 자동화의 안전성 강화, 로봇 자동화의 ROI 분석, 머신비전의 실시간 처리 기술 등도 다뤄집니다. 자동차 제조사, 부품 기업, 로봇 기업, 머신비전 기업, 연구기관이 참석합니다.',
     'schedule.item4.title':
-      '전기차 충전 인프라 기술 워크샵 2026 - 초고속 충전 및 무선 충전 기술',
+      '스마트물류 및 공급망 관리 세미나 2026 - 자동차 부품 물류 자동화',
     'schedule.item4.content':
-      '전기차 충전 인프라 기술 워크샵 2026이 오늘 오후 1시부터 5시까지(한국 시간) 서울 강남구에서 개최됩니다. 한국전기자동차협회와 충전 인프라 기업, 전기차 제조사가 참여하며, 초고속 충전 기술(350kW 이상), 무선 충전 기술, 충전 인프라의 스마트 그리드 연동, 충전 인프라의 배터리 스왑 기술, 충전 인프라의 V2G(Vehicle-to-Grid) 기술 등이 주요 논의 주제입니다. 충전 인프라의 표준화, 충전 인프라의 보안 강화, 충전 인프라의 사용자 편의성 향상, 충전 인프라의 수익 모델, 충전 인프라의 확장 전략 등도 다뤄집니다. 전기차 제조사, 충전 인프라 기업, 전력 기업, 연구기관이 참석합니다.',
+      '스마트물류 및 공급망 관리 세미나 2026이 오늘 오후 1시부터 5시까지(한국 시간) 코엑스에서 개최됩니다. 한국물류협회와 자동차 제조사, 물류 기업이 참여하며, 자동차 부품 물류의 자동화, 스마트 창고 관리 시스템, 물류 로봇의 자동차 부품 물류 적용, 실시간 물류 추적 시스템, 공급망의 디지털 트윈 구축 등이 주요 논의 주제입니다. 스마트물류의 AI 기반 최적화, 물류 자동화의 효율성 향상, 공급망의 투명성 강화, 물류 비용 절감 전략, 공급망의 리스크 관리 등도 다뤄집니다. 자동차 제조사, 부품 기업, 물류 기업, 연구기관이 참석합니다.',
     'schedule.item5.title':
-      '자동차 사이버보안 세미나 2026 - 차량 해킹 방지 및 보안 강화 전략',
+      '산업지능화 컨퍼런스 2026 - AI 기반 제조 혁신 및 미래 전망',
     'schedule.item5.content':
-      '자동차 사이버보안 세미나 2026이 오늘 오전 10시부터 오후 3시까지(한국 시간) 서울 여의도에서 개최됩니다. 한국자동차산업협회와 자동차 제조사, 사이버보안 기업이 참여하며, 차량 해킹 방지 기술, 자동차 네트워크 보안, OTA 업데이트 보안, 자율주행 시스템 보안, 차량-인프라 통신 보안 등이 주요 논의 주제입니다. 자동차 사이버보안 표준(ISO 21434), 자동차 사이버보안 인증, 자동차 사이버보안 사고 대응, 자동차 사이버보안 교육, 자동차 사이버보안 규제 대응 등도 다뤄집니다. 자동차 제조사, 부품 기업, 사이버보안 기업, 연구기관, 규제 기관이 참석합니다.',
-    'notice.updateContent20260226': `<strong>2026-02-26</strong> - 한줄 지식/잡학 게시판과 오늘의 일정(자동차/IT)을 업데이트했습니다.<br /><br />
-📚 <strong>한줄 지식/잡학:</strong> 「세계 4대 문명」이 추가되었습니다. 세계 4대 문명은 인류 문명의 기원이 된 네 개의 고대 문명을 의미합니다. 이들은 모두 큰 강을 중심으로 발달했으며, 농업, 도시, 문자, 법률, 종교 등 문명의 핵심 요소들을 발전시켰습니다. 세계 4대 문명은 메소포타미아 문명(티그리스·유프라테스 강), 이집트 문명(나일 강), 인더스 문명(인더스 강), 황하 문명(황하 강)을 포함합니다. 이 문명들은 기원전 3000년경부터 시작되어 인류 역사의 기초를 마련했으며, 오늘날까지 영향을 미치고 있습니다. 각 문명의 특징, 발전 과정, 공통점과 차이점, 쇠퇴와 영향, 현대적 의미, 연구의 현대적 발전 등을 상세히 다룹니다. 세계 4대 문명을 이해하는 것은 인류 문명의 역사를 이해하는 것이며, 문화 다양성, 문명의 교류, 지속 가능성 등에 대한 중요한 교훈을 제공합니다.<br /><br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> 2월 26일 한국 자동차 및 IT 부문 일정이 업데이트되었습니다. Physical AI와 자동차 산업 세미나 2026(CES2026 기술 트렌드 및 자동차 적용 방안), 한국 자동차 부품 산업 기술 포럼 2026(첨단소재부품 및 스마트 부품 기술), IT-자동차 융합 기술 세미나 2026(클라우드·엣지 AI 및 데이터 플랫폼), 전기차 충전 인프라 기술 워크샵 2026(초고속 충전 및 무선 충전 기술), 자동차 사이버보안 세미나 2026(차량 해킹 방지 및 보안 강화 전략) 등이 개최됩니다. CES2026에서 주목받은 Physical AI(물리적 AI) 기술이 자동차 산업에 미치는 영향, 로봇과 자동차의 융합 기술, IT-자동차 융합 기술, 전기차 충전 인프라, 자동차 사이버보안 등이 주요 논의 주제입니다.<br /><br />
+      '산업지능화 컨퍼런스 2026이 오늘 오전 9시부터 오후 5시까지(한국 시간) 코엑스에서 개최됩니다. 한국산업통상자원부와 자동차 제조사, IT 기업, 연구기관이 참여하며, AI 기반 제조 혁신, 산업지능화의 미래 전망, 제조업의 디지털 전환 전략, AI 기반 제조의 경쟁력 강화, 산업지능화의 정책 방향 등이 주요 논의 주제입니다. AI 기반 제조의 성공 사례, 산업지능화의 기술 트렌드, 제조업의 인력 재교육 전략, 산업지능화의 투자 전략, 산업지능화의 글로벌 경쟁력 등도 다뤄집니다. 자동차 제조사, 부품 기업, IT 기업, 정부 기관, 연구기관이 참석합니다.',
+    'notice.updateContent20260304': `<strong>2026-03-04</strong> - Hoki Lee's Brief Profile과 오늘의 일정(자동차/IT)을 업데이트했습니다.<br /><br />
+👤 <strong>Hoki Lee's Brief Profile:</strong> 새로운 회사 정보가 추가되었습니다. 「The Junjin」(Service Operations Manager, Mar. 2026 - 현재)이 프로필에 추가되었습니다. 주요 핵심 역할로는 서비스 조직의 운영 체계 수립 및 구조 재정비, 기존 필터 설치·유지보수 인력의 역할 재정의 및 수익 구조 전환 설계, 신규 서비스 사업 기획 및 실행 로드맵 구축, 기술 교육 및 Certification 제도 도입 설계, 서비스 품질 기준 및 KPI 체계 구축, 제조사 및 거래처와의 기술 협업 체계 강화, 중장기 서비스 비즈니스 모델 전략 수립 등이 포함됩니다. 프로필 섹션에서 더 자세한 내용을 확인하실 수 있습니다.<br /><br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> 3월 4일 한국 자동차 및 IT 부문 일정이 업데이트되었습니다. AW 2026 스마트공장·자동화산업전이 코엑스에서 개막되며, AI자율제조혁신포럼이 개최됩니다. 자동차 제조 스마트팩토리 기술 세미나 2026(디지털 트윈 및 AI 기반 제조 혁신), 로봇 자동화 및 머신비전 기술 포럼 2026(자동차 제조 공정 자동화), 스마트물류 및 공급망 관리 세미나 2026(자동차 부품 물류 자동화), 산업지능화 컨퍼런스 2026(AI 기반 제조 혁신 및 미래 전망) 등이 개최됩니다. 자동차 제조 공정의 AI 기반 자율화 기술, 스마트팩토리 솔루션, 로봇 자동화 시스템, 디지털 트윈 기반 제조 최적화, 머신비전 기반 품질 검사, 스마트물류 자동화, AI 기반 제조 혁신 등이 주요 논의 주제입니다. 자동차 제조사, 부품 기업, 로봇 기업, IT 기업, 스마트팩토리 솔루션 기업, 연구기관이 참석합니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
   },
   en: {
@@ -98,40 +100,42 @@ const translations = {
     'profile.company3': 'BMW Korea',
     'profile.company4': 'Samsung Motors',
     'profile.company5': 'Hyundai Motor Company',
+    'profile.company6': 'The Junjin',
     'profile.position1': 'Executive Director, Head of Service Division',
     'profile.position2': 'Director, Service Division',
     'profile.position2a': 'Master Lab Manager',
     'profile.position3': 'Training & Technical Support Team Leader',
     'profile.position4': 'Technical Training & Service Manager',
     'profile.position5': 'Global Technical Support & Training',
+    'profile.position6': 'Service Operations Manager',
     'modal.coreRole': 'Core Role',
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'Physical AI and Automotive Industry Seminar 2026 - CES2026 Technology Trends & Automotive Applications',
+      'AW 2026 Smart Factory & Automation Industry Exhibition Opening - AI Autonomous Manufacturing Innovation Forum & Smart Factory Technology',
     'schedule.item1.content':
-      'Physical AI and Automotive Industry Seminar 2026 will be held today from 9:00 AM to 5:00 PM (Korea time) in Seocho-gu, Seoul. The Korea Automotive Industry Cooperative Association, automakers, and IT companies will participate. Key topics include the impact of Physical AI technology that gained attention at CES2026 on the automotive industry, convergence technology between robots and automobiles, application cases of Physical AI in autonomous robotaxis, robot automation in automotive manufacturing processes, and Physical AI-based vehicle maintenance systems. The meaning of the moment when Physical AI gained a "body" and changes in the automotive industry, new business models from the convergence of robots and automobiles, ways to improve automotive safety through Physical AI technology, and Physical AI-based automotive service innovation are also discussed. Automakers, parts companies, robot companies, IT companies, and research institutions will attend.',
+      'AW 2026 Smart Factory & Automation Industry Exhibition opens today from 10:00 AM to 5:00 PM (Korea time) at COEX Convention Center. The exhibition features approximately 500 companies and 2,200 booths, including Smart Factory Expo (SF), International Factory Automation Exhibition (aimex), Korea Machine Vision Industry Exhibition (KVS), and AI Factory Special Pavilion. The AI Autonomous Manufacturing Innovation Forum will be held, with key topics including AI-based autonomous manufacturing technology for automotive manufacturing processes, smart factory solutions, robot automation systems, digital twin-based manufacturing optimization, and AI-based quality management systems. Automakers, parts companies, robot companies, IT companies, smart factory solution companies, and research institutions will attend.',
     'schedule.item2.title':
-      'Korea Automotive Parts Industry Technology Forum 2026 - Advanced Materials Parts & Smart Parts Technology',
+      'Automotive Manufacturing Smart Factory Technology Seminar 2026 - Digital Twin & AI-Based Manufacturing Innovation',
     'schedule.item2.content':
-      'Korea Automotive Parts Industry Technology Forum 2026 will be held today from 10:00 AM to 4:00 PM (Korea time) in Gangnam-gu, Seoul. The Korea Auto Parts Association (KAPA), parts companies, and automakers will participate. This forum is linked to the International Advanced Materials Parts Industry Exhibition (PARTS SHOW 2026), with key topics including advanced materials parts technology, smart parts technology, lightweight parts technology, and eco-friendly parts technology. Digital twin technology for automotive parts, predictive maintenance technology for parts, remote monitoring technology for parts, parts lifespan extension technology, and parts recycling technology are also discussed. Automakers, parts companies, materials companies, and research institutions will attend.',
+      'Automotive Manufacturing Smart Factory Technology Seminar 2026 will be held today from 9:00 AM to 4:00 PM (Korea time) at COEX. The Korea Automobile Manufacturers Association, automakers, and smart factory solution companies will participate. Key topics include digital twin construction for automotive manufacturing processes, AI-based production planning optimization, robot automation system integration, real-time production monitoring and predictive maintenance, and energy efficiency improvement in smart factories. Digital twin-based manufacturing simulation, AI-based defect prediction and prevention, data integration platforms for smart factories, flexibility enhancement in automotive manufacturing processes, and workforce capability strengthening in smart factories are also discussed. Automakers, parts companies, smart factory solution companies, and research institutions will attend.',
     'schedule.item3.title':
-      'IT-Automotive Convergence Technology Seminar 2026 - Cloud·Edge AI & Data Platform',
+      'Robot Automation & Machine Vision Technology Forum 2026 - Automotive Manufacturing Process Automation',
     'schedule.item3.content':
-      'IT-Automotive Convergence Technology Seminar 2026 will be held today from 9:00 AM to 4:00 PM (Korea time) in Yeouido, Seoul. Korean IT companies and automakers will participate. Key topics include automotive applications of cloud AI and edge AI, automotive data platform construction, vehicle-cloud connectivity technology, real-time vehicle data analysis, and utilization of automotive big data. Cloud-based autonomous driving simulation, edge AI-based real-time in-vehicle decision-making, privacy protection for automotive data, enhanced security for automotive data, and commercial utilization strategies for automotive data are also discussed. Automakers, IT companies, cloud service companies, data analytics companies, and research institutions will attend.',
+      'Robot Automation & Machine Vision Technology Forum 2026 will be held today from 10:00 AM to 4:00 PM (Korea time) at COEX. The Korea Robot Industry Association, automakers, robot companies, and machine vision companies will participate. Key topics include robot automation in automotive manufacturing processes, machine vision-based quality inspection, application of collaborative robots (Cobots) in automotive manufacturing, robot-human collaboration systems, and machine vision-based parts recognition and assembly. Flexibility enhancement in robot automation, AI integration in machine vision, safety enhancement in robot automation, ROI analysis of robot automation, and real-time processing technology in machine vision are also discussed. Automakers, parts companies, robot companies, machine vision companies, and research institutions will attend.',
     'schedule.item4.title':
-      'EV Charging Infrastructure Technology Workshop 2026 - Ultra-Fast Charging & Wireless Charging Technology',
+      'Smart Logistics & Supply Chain Management Seminar 2026 - Automotive Parts Logistics Automation',
     'schedule.item4.content':
-      'EV Charging Infrastructure Technology Workshop 2026 will be held today from 1:00 PM to 5:00 PM (Korea time) in Gangnam-gu, Seoul. The Korea Electric Vehicle Association, charging infrastructure companies, and EV manufacturers will participate. Key topics include ultra-fast charging technology (350kW and above), wireless charging technology, smart grid integration of charging infrastructure, battery swap technology for charging infrastructure, and V2G (Vehicle-to-Grid) technology for charging infrastructure. Standardization of charging infrastructure, enhanced security for charging infrastructure, improved user convenience for charging infrastructure, revenue models for charging infrastructure, and expansion strategies for charging infrastructure are also discussed. EV manufacturers, charging infrastructure companies, power companies, and research institutions will attend.',
+      'Smart Logistics & Supply Chain Management Seminar 2026 will be held today from 1:00 PM to 5:00 PM (Korea time) at COEX. The Korea Logistics Association, automakers, and logistics companies will participate. Key topics include automation of automotive parts logistics, smart warehouse management systems, application of logistics robots in automotive parts logistics, real-time logistics tracking systems, and digital twin construction for supply chains. AI-based optimization of smart logistics, efficiency improvement in logistics automation, transparency enhancement in supply chains, logistics cost reduction strategies, and risk management in supply chains are also discussed. Automakers, parts companies, logistics companies, and research institutions will attend.',
     'schedule.item5.title':
-      'Automotive Cybersecurity Seminar 2026 - Vehicle Hacking Prevention & Security Enhancement Strategy',
+      'Industrial Intelligence Conference 2026 - AI-Based Manufacturing Innovation & Future Prospects',
     'schedule.item5.content':
-      'Automotive Cybersecurity Seminar 2026 will be held today from 10:00 AM to 3:00 PM (Korea time) in Yeouido, Seoul. The Korea Automobile Manufacturers Association, automakers, and cybersecurity companies will participate. Key topics include vehicle hacking prevention technology, automotive network security, OTA update security, autonomous driving system security, and vehicle-infrastructure communication security. Automotive cybersecurity standards (ISO 21434), automotive cybersecurity certification, automotive cybersecurity incident response, automotive cybersecurity education, and automotive cybersecurity regulatory compliance are also discussed. Automakers, parts companies, cybersecurity companies, research institutions, and regulatory agencies will attend.',
-    'notice.updateContent20260226': `<strong>2026-02-26</strong> – We've updated the One-Line Knowledge/Trivia board and Today's Schedule (Automotive/IT).<br /><br />
-📚 <strong>One-Line Knowledge/Trivia:</strong> "The Four Great Ancient Civilizations" has been added. The Four Great Ancient Civilizations refer to the four ancient civilizations that were the origins of human civilization. They all developed around major rivers and developed core elements of civilization including agriculture, cities, writing, law, and religion. The Four Great Ancient Civilizations include Mesopotamian Civilization (Tigris and Euphrates Rivers), Egyptian Civilization (Nile River), Indus Civilization (Indus River), and Yellow River Civilization (Yellow River). These civilizations began around 3000 BCE and laid the foundation for human history, continuing to influence us today. It covers in detail the characteristics, development processes, commonalities and differences, decline and influence, modern significance, and contemporary research developments of each civilization. Understanding the Four Great Ancient Civilizations is understanding the history of human civilization and provides important lessons about cultural diversity, exchange between civilizations, and sustainability.<br /><br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> February 26 Korean automotive and IT sector schedules have been updated. Events include Physical AI and Automotive Industry Seminar 2026 (CES2026 Technology Trends & Automotive Applications), Korea Automotive Parts Industry Technology Forum 2026 (Advanced Materials Parts & Smart Parts Technology), IT-Automotive Convergence Technology Seminar 2026 (Cloud·Edge AI & Data Platform), EV Charging Infrastructure Technology Workshop 2026 (Ultra-Fast Charging & Wireless Charging Technology), and Automotive Cybersecurity Seminar 2026 (Vehicle Hacking Prevention & Security Enhancement Strategy). Key discussion topics include the impact of Physical AI technology that gained attention at CES2026 on the automotive industry, convergence technology between robots and automobiles, IT-automotive convergence technology, EV charging infrastructure, and automotive cybersecurity.<br /><br />
+      'Industrial Intelligence Conference 2026 will be held today from 9:00 AM to 5:00 PM (Korea time) at COEX. The Ministry of Trade, Industry and Energy, automakers, IT companies, and research institutions will participate. Key topics include AI-based manufacturing innovation, future prospects of industrial intelligence, digital transformation strategies for manufacturing, competitiveness enhancement through AI-based manufacturing, and policy directions for industrial intelligence. Success cases of AI-based manufacturing, technology trends in industrial intelligence, workforce retraining strategies for manufacturing, investment strategies for industrial intelligence, and global competitiveness in industrial intelligence are also discussed. Automakers, parts companies, IT companies, government agencies, and research institutions will attend.',
+    'notice.updateContent20260304': `<strong>2026-03-04</strong> – We've updated Hoki Lee's Brief Profile and Today's Schedule (Automotive/IT).<br /><br />
+👤 <strong>Hoki Lee's Brief Profile:</strong> New company information has been added. "The Junjin" (Service Operations Manager, Mar. 2026 - Present) has been added to the profile. Key core roles include establishment of service organization operational systems and structural reorganization, redefinition of roles for existing filter installation and maintenance personnel and design of revenue structure transformation, planning and execution roadmap for new service businesses, design of technical training and certification system introduction, establishment of service quality standards and KPI systems, strengthening technical collaboration systems with manufacturers and business partners, and strategic planning for mid-to-long-term service business models. Please check the Profile section for more detailed information.<br /><br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> March 4 Korean automotive and IT sector schedules have been updated. AW 2026 Smart Factory & Automation Industry Exhibition opens at COEX, and the AI Autonomous Manufacturing Innovation Forum will be held. Events include Automotive Manufacturing Smart Factory Technology Seminar 2026 (Digital Twin & AI-Based Manufacturing Innovation), Robot Automation & Machine Vision Technology Forum 2026 (Automotive Manufacturing Process Automation), Smart Logistics & Supply Chain Management Seminar 2026 (Automotive Parts Logistics Automation), and Industrial Intelligence Conference 2026 (AI-Based Manufacturing Innovation & Future Prospects). Key discussion topics include AI-based autonomous manufacturing technology for automotive manufacturing processes, smart factory solutions, robot automation systems, digital twin-based manufacturing optimization, machine vision-based quality inspection, smart logistics automation, and AI-based manufacturing innovation. Automakers, parts companies, robot companies, IT companies, smart factory solution companies, and research institutions will attend.<br /><br />
 Please check each board for more detailed content.`,
   },
 };
@@ -592,6 +596,22 @@ function showSlide(index) {
 // 회사 상세 정보 데이터
 const companyDetails = {
   ko: {
+    'the-junjin': {
+      companyName: 'The Junjin',
+      position: 'Service Operations Manager',
+      period: 'Mar. 2026 - 현재',
+      coreRole: [
+        '서비스 조직의 운영 체계 수립 및 구조 재정비',
+        '기존 필터 설치·유지보수 인력의 역할 재정의 및 수익 구조 전환 설계',
+        '신규 서비스 사업 기획 및 실행 로드맵 구축',
+        '기술 교육 및 Certification 제도 도입 설계',
+        '서비스 품질 기준 및 KPI 체계 구축',
+        '제조사 및 거래처와의 기술 협업 체계 강화',
+        '중장기 서비스 비즈니스 모델 전략 수립',
+      ],
+      achievements: [],
+      meaning: '',
+    },
     ohjin: {
       companyName: '오진양행 (Ohjin Corporation)',
       position: 'Executive Director · Head of Service Division',
@@ -698,6 +718,22 @@ const companyDetails = {
     },
   },
   en: {
+    'the-junjin': {
+      companyName: 'The Junjin',
+      position: 'Service Operations Manager',
+      period: 'Mar. 2026 - Present',
+      coreRole: [
+        'Establishment of service organization operational systems and structural reorganization',
+        'Redefinition of roles for existing filter installation and maintenance personnel and design of revenue structure transformation',
+        'Planning and execution roadmap for new service businesses',
+        'Design of technical training and certification system introduction',
+        'Establishment of service quality standards and KPI systems',
+        'Strengthening technical collaboration systems with manufacturers and business partners',
+        'Strategic planning for mid-to-long-term service business models',
+      ],
+      achievements: [],
+      meaning: '',
+    },
     ohjin: {
       companyName: 'Ohjin Corporation',
       position: 'Executive Director · Head of Service Division',
