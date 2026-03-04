@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 66,
+    title: '역후광 효과(Horn Effect)',
+    link: 'science/science-detail-66.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '03-04',
+    views: 0,
+  },
+  {
     id: 65,
     title: '후광 효과(Halo Effect)',
     link: 'science/science-detail-65.html',
