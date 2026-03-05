@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 121,
+    title: '실크로드(Silk Road) - 동서 문명을 연결한 고대 무역로',
+    link: 'one-line-knowledge/trivia-detail-121.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '03-05',
+    views: 0,
+  },
+  {
     id: 120,
     title: '세계 4대 문명',
     link: 'one-line-knowledge/trivia-detail-120.html',
