@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 67,
+    title: '에펠탑 효과(Eiffel Tower Effect)',
+    link: 'science/science-detail-67.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '03-06',
+    views: 0,
+  },
+  {
     id: 66,
     title: '역후광 효과(Horn Effect)',
     link: 'science/science-detail-66.html',
