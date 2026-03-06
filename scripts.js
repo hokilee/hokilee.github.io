@@ -64,7 +64,7 @@ const translations = {
       '자동차 데이터 플랫폼 및 빅데이터 세미나 2026 - 차량 데이터 활용 및 프라이버시 보호',
     'schedule.item5.content':
       '자동차 데이터 플랫폼 및 빅데이터 세미나 2026이 오늘 오전 9시부터 오후 5시까지(한국 시간) 서울 여의도에서 개최됩니다. 한국자동차산업협회와 자동차 제조사, IT 기업, 데이터 분석 기업이 참여하며, 자동차 데이터 플랫폼 구축, 차량 데이터의 수집 및 분석, 자동차 빅데이터 활용, 차량 데이터의 프라이버시 보호, 차량 데이터의 보안 강화 등이 주요 논의 주제입니다. 실시간 차량 데이터 분석, 자동차 데이터의 상업적 활용 방안, 차량 데이터의 개인정보 보호, 자동차 데이터의 AI 기반 분석, 자동차 데이터의 클라우드 연동 등도 다뤄집니다. 자동차 제조사, 부품 기업, IT 기업, 데이터 분석 기업, 연구기관이 참석합니다.',
-    'notice.updateContent20260307': `<strong>2026-03-07</strong> - 일반상식 게시판과 오늘의 일정(자동차/IT)을 업데이트했습니다.<br /><br />
+    'notice.updateContent20260307': `<strong>2026-03-06</strong> - 일반상식 게시판과 오늘의 일정(자동차/IT)을 업데이트했습니다.<br /><br />
 📚 <strong>일반상식:</strong> 「에펠탑 효과(Eiffel Tower Effect)」가 추가되었습니다. 에펠탑 효과는 어떤 대상이나 장소가 처음에는 부정적으로 평가되다가 시간이 지나면서 긍정적으로 평가되거나 상징적 가치를 갖게 되는 현상을 말합니다. 이 용어는 프랑스 파리의 에펠탑이 처음 건설되었을 때 많은 파리 시민들이 반대했지만, 현재는 파리의 상징이 되고 세계적인 관광 명소가 된 것에서 유래했습니다. 에펠탑 효과는 심리학, 마케팅, 건축, 도시 계획, 문화 연구 등 다양한 분야에서 관찰됩니다. 이 효과는 사람들의 인식이 시간에 따라 변화할 수 있으며, 초기의 부정적 평가가 반드시 최종적인 평가를 결정하지 않는다는 것을 보여줍니다. 에펠탑 효과의 원인, 심리적 메커니즘, 실제 사례, 마케팅과 브랜딩에서의 활용, 건축과 도시 계획에서의 의미, 문화적 상징의 변화, 시간의 역할, 긍정적 변화의 조건, 에펠탑 효과의 한계와 주의사항, 현대 사회에서의 의미 등을 상세히 다룹니다. 에펠탑 효과를 이해하는 것은 변화와 적응의 중요성을 배우는 것이며, 초기 반응에 좌우되지 않고 장기적인 관점을 가지는 것이 중요하다는 것을 알려줍니다.<br /><br />
 📅 <strong>오늘의 일정(자동차/IT):</strong> 3월 7일 한국 자동차 및 IT 부문 일정이 업데이트되었습니다. 미래 자동차 전자파 국제표준화 회의 2026이 계속 진행되며(전기차 및 자율주행차 전자파 호환성 표준, 서울), 자동차 부품 테스트 및 검증 기술 세미나 2026(ADAS 및 전기차 파워트레인 테스트, 서울 강남구), 자동차 소프트웨어 및 사이버보안 기술 포럼 2026(SDV 보안 및 OTA 업데이트, 서울 여의도), 전기차 배터리 및 충전 기술 워크샵 2026(배터리 성능 향상 및 초고속 충전, 서울 강남구), 자동차 데이터 플랫폼 및 빅데이터 세미나 2026(차량 데이터 활용 및 프라이버시 보호, 서울 여의도) 등이 개최됩니다. 전기차 및 자율주행 차량의 전자파 호환성(EMC) 국제 표준 제정 및 개정, ADAS 및 자율주행차 테스트 기술, 소프트웨어 정의 차량(SDV)의 보안 강화, 전기차 배터리의 성능 향상 기술, 자동차 데이터 플랫폼 구축 등이 주요 논의 주제입니다. 자동차 제조사, 부품 기업, IT 기업, 사이버보안 기업, 배터리 기업, 충전 인프라 기업, 데이터 분석 기업, 연구기관이 참석합니다.<br /><br />
 각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
@@ -116,7 +116,7 @@ const translations = {
     'schedule.item1.title':
       'Future Automotive EMC International Standardization Meeting 2026 - EMC Standards for EVs & Autonomous Vehicles',
     'schedule.item1.content':
-      'Future Automotive EMC International Standardization Meeting 2026 continues today from 9:00 AM to 5:00 PM (Korea time) in Seoul. Organized by the National Radio Research Agency and Korea Information and Communication Technology Association, the meeting brings together 70 experts from 12 countries including the United States, Japan, and China, along with 17 Korean industry-academia-research experts. Key topics include international standard development and revision for electromagnetic compatibility (EMC) of electric and autonomous vehicles, electromagnetic interference prevention technology, EMC safety standards, and EMC testing and certification systems. EMC impact during EV charging, electromagnetic interference prevention for autonomous driving sensors, EMC of V2X communications, integration of international EMC standards, and strengthening Korea\'s EMC technology competitiveness are also discussed. Automakers, parts companies, EMC-related companies, international standard organizations, and research institutions will attend.',
+      "Future Automotive EMC International Standardization Meeting 2026 continues today from 9:00 AM to 5:00 PM (Korea time) in Seoul. Organized by the National Radio Research Agency and Korea Information and Communication Technology Association, the meeting brings together 70 experts from 12 countries including the United States, Japan, and China, along with 17 Korean industry-academia-research experts. Key topics include international standard development and revision for electromagnetic compatibility (EMC) of electric and autonomous vehicles, electromagnetic interference prevention technology, EMC safety standards, and EMC testing and certification systems. EMC impact during EV charging, electromagnetic interference prevention for autonomous driving sensors, EMC of V2X communications, integration of international EMC standards, and strengthening Korea's EMC technology competitiveness are also discussed. Automakers, parts companies, EMC-related companies, international standard organizations, and research institutions will attend.",
     'schedule.item2.title':
       'Automotive Parts Testing & Verification Technology Seminar 2026 - ADAS & EV Powertrain Testing',
     'schedule.item2.content':
@@ -133,7 +133,7 @@ const translations = {
       'Automotive Data Platform & Big Data Seminar 2026 - Vehicle Data Utilization & Privacy Protection',
     'schedule.item5.content':
       'Automotive Data Platform & Big Data Seminar 2026 will be held today from 9:00 AM to 5:00 PM (Korea time) in Yeouido, Seoul. The Korea Automobile Manufacturers Association, automakers, IT companies, and data analytics companies will participate. Key topics include automotive data platform construction, vehicle data collection and analysis, utilization of automotive big data, privacy protection for vehicle data, and security enhancement for vehicle data. Real-time vehicle data analysis, commercial utilization strategies for automotive data, personal information protection for vehicle data, AI-based analysis of automotive data, and cloud integration of automotive data are also discussed. Automakers, parts companies, IT companies, data analytics companies, and research institutions will attend.',
-    'notice.updateContent20260307': `<strong>2026-03-07</strong> – We've updated the General Knowledge board and Today's Schedule (Automotive/IT).<br /><br />
+    'notice.updateContent20260307': `<strong>2026-03-06</strong> – We've updated the General Knowledge board and Today's Schedule (Automotive/IT).<br /><br />
 📚 <strong>General Knowledge:</strong> "Eiffel Tower Effect" has been added. The Eiffel Tower Effect refers to the phenomenon where something or someplace is initially evaluated negatively but over time comes to be evaluated positively or acquires symbolic value. This term originates from the fact that when the Eiffel Tower was first constructed in Paris, France, many Parisians opposed it, but it has now become a symbol of Paris and a world-famous tourist attraction. The Eiffel Tower Effect is observed in various fields including psychology, marketing, architecture, urban planning, and cultural studies. This effect shows that people's perceptions can change over time and that initial negative evaluations do not necessarily determine final evaluations. It covers in detail the causes of the Eiffel Tower Effect, psychological mechanisms, real-world examples, applications in marketing and branding, significance in architecture and urban planning, changes in cultural symbols, the role of time, conditions for positive change, limitations and cautions of the Eiffel Tower Effect, and its meaning in modern society. Understanding the Eiffel Tower Effect is learning the importance of change and adaptation and recognizing that it is important to maintain a long-term perspective without being swayed by initial reactions.<br /><br />
 📅 <strong>Today's Schedule (Automotive/IT):</strong> March 7 Korean automotive and IT sector schedules have been updated. The Future Automotive EMC International Standardization Meeting 2026 continues (EMC Standards for EVs & Autonomous Vehicles, Seoul), and events include Automotive Parts Testing & Verification Technology Seminar 2026 (ADAS & EV Powertrain Testing, Gangnam-gu, Seoul), Automotive Software & Cybersecurity Technology Forum 2026 (SDV Security & OTA Updates, Yeouido, Seoul), EV Battery & Charging Technology Workshop 2026 (Battery Performance Improvement & Ultra-Fast Charging, Gangnam-gu, Seoul), and Automotive Data Platform & Big Data Seminar 2026 (Vehicle Data Utilization & Privacy Protection, Yeouido, Seoul). Key discussion topics include international standard development and revision for electromagnetic compatibility (EMC) of electric and autonomous vehicles, ADAS and autonomous vehicle testing technology, security enhancement for Software-Defined Vehicles (SDV), battery performance improvement technology, and automotive data platform construction. Automakers, parts companies, IT companies, cybersecurity companies, battery companies, charging infrastructure companies, data analytics companies, and research institutions will attend.<br /><br />
 Please check each board for more detailed content.`,
@@ -487,11 +487,14 @@ document.addEventListener('DOMContentLoaded', function () {
       card.style.opacity = '0';
       card.style.transform = 'translateY(30px)';
 
-      setTimeout(() => {
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0)';
-      }, 500 + index * 100);
+      setTimeout(
+        () => {
+          card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        },
+        500 + index * 100,
+      );
     });
   });
 
