@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 119,
+    title: '트레이드오프',
+    link: 'economics/economy-detail-119.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '03-09',
+    views: 0,
+  },
+  {
     id: 118,
     title: '기회비용',
     link: 'economics/economy-detail-118.html',
