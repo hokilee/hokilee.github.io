@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 62,
+    title: '카페에서 사용하는 실전 영어-Vol.1',
+    link: 'eBook-data/english_conversation_vol1.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '03-12',
+    views: 0,
+  },
+  {
     id: 61,
     title: '조직문화를 설계하는 프레임-제7장',
     link: 'eBook-data/organizational_culture vol7.pdf',

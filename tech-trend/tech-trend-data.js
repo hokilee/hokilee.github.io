@@ -1,6 +1,15 @@
 // 기술 트렌드/뉴스 게시판 데이터
 const techTrendData = [
   {
+    id: 14,
+    title: '2026년 3월 1일~3월 11일 기술 트렌드/뉴스',
+    link: 'tech-trend/tech-trend-detail-14.html',
+    category: '기술 트렌드/뉴스',
+    author: '이호기',
+    date: '03-11',
+    views: 0,
+  },
+  {
     id: 13,
     title: '2026년 2월 7일~2월 18일 기술 트렌드/뉴스',
     link: 'tech-trend/tech-trend-detail-13.html',

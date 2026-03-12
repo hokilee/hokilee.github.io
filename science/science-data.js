@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 68,
+    title: '프레이밍 효과(Framing Effect)',
+    link: 'science/science-detail-68.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '03-12',
+    views: 0,
+  },
+  {
     id: 67,
     title: '에펠탑 효과(Eiffel Tower Effect)',
     link: 'science/science-detail-67.html',
