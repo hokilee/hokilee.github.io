@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 64,
+    title: '길을 물어볼 때 사용하는 실전 영어-Vol.3',
+    link: 'eBook-data/english_conversation_vol3.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '03-16',
+    views: 0,
+  },
+  {
     id: 63,
     title: '식당에서 사용하는 실전 영어-Vol.2',
     link: 'eBook-data/english_conversation_vol2.pdf',
