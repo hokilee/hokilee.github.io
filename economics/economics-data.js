@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 120,
+    title: '침몰비용(Sunk Cost)',
+    link: 'economics/economy-detail-120.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '03-20',
+    views: 0,
+  },
+  {
     id: 119,
     title: '트레이드오프',
     link: 'economics/economy-detail-119.html',

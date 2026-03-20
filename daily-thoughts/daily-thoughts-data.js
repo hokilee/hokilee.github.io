@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 66,
+    title: '택시에서 사용하는 실전 영어-Vol.5',
+    link: 'eBook-data/english_conversation_vol5.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '03-20',
+    views: 0,
+  },
+  {
     id: 65,
     title: '택시에서 사용하는 실전 영어-Vol.4',
     link: 'eBook-data/english_conversation_vol4.pdf',
