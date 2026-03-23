@@ -45,30 +45,28 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'Beyond Motion 2026 - 싱가포르 최초 몰입형 전기차·모빌리티 체험전',
+      'Automated and Connected Vehicles Digital Summit 2026 - 연결·자율차 디지털 서밋',
     'schedule.item1.content':
-      'Beyond Motion 2026이 오늘부터 3월 22일까지 싱가포르 선텍 컨벤션 센터(Suntec Convention Centre) Hall 403-404에서 개최됩니다. Sgcarmart가 주최하는 싱가포르 최초의 몰입형 모빌리티 체험전으로, 오전 9시부터 오후 9시까지 진행됩니다. 8개 이상 EV 브랜드의 최신 전기차·하이브리드 모델 전시, EV 소유·충전 인프라·배터리 혁신·지속가능성을 다루는 교육 허브, 정책 입안자·OEM·모빌리티 혁신 기업의 기조연설 및 패널 토론이 열립니다. 싱가포르 전기차화 로드맵, 인프라 개발, 기술 변화가 주요 논의 주제이며, 인터랙티브 체험·스탬프 랠리·경품 행사도 진행됩니다. 무료 입장(사전 등록 필요)이며, 전기차 구매 예정자·자동차 애호가·산업 전문가가 참석합니다.',
+      'Automated and Connected Vehicles Digital Summit 2026이 오늘부터 2일간 SAE International 주최로 온라인(무료) 개최됩니다. 미국 동부시간 오전 10시(한국 시간 밤 11시) 시작입니다. Siemens·Qualcomm·Applied Intuition·Cognizant·뮌헨공대(TUM)·Serve Robotics 등이 연사로 참가합니다. 연결차·자율주행 차량의 사이버보안·데이터 프라이버시, 스마트 인프라·도시 통합, 5G·엣지 컴퓨팅 기반 실시간 차량 통신, 자율차 배치 전략, 실용적 AI 구현, 인포테인먼트 시스템 등이 주요 논의 주제입니다. 모빌리티 전문가·엔지니어·정책 담당자가 참석하며, RingCentral Events 플랫폼으로 생방송되며 녹화 replay도 무료 제공됩니다.',
     'schedule.item2.title':
-      'International Battery Seminar & Exhibit 2026 - 사전 등록 및 개막 준비',
+      'US Automotive Computing Conference 2026 - 미국 자동차 컴퓨팅 컨퍼런스',
     'schedule.item2.content':
-      'International Battery Seminar & Exhibit 2026이 3월 23일 미국 플로리다주 올랜도 개막을 앞두고, 오늘(3월 21일)에는 온라인 사전 등록 마감 및 현지 도착·네트워킹이 진행됩니다. 1983년 설립 이래 세계 최장수 배터리 산업 행사로, Apple·BMW·Ford·GM·Tesla·Toyota·LG에너지솔루션·삼성SDI 등 65개 이상 OEM·배터리 개발사가 참가합니다. 차세대 배터리 연구, AI 에너지 저장, 리튬이온 개발·상용화, 배터리 재활용, 자동차 배터리 응용 등이 주요 프로그램입니다. 2,000명 이상 배터리 기술 전문가, 150개 이상 스폰서·전시사가 참가하며, Jeff Dahn(달하우지대)·GM·LG에너지솔루션·파나소닉 에너지 등 플레너리 키노트가 예정되어 있습니다.',
+      'US Automotive Computing Conference 2026이 오늘부터 3월 25일까지 미국 미시간주 디어본 The Henry Hotel에서 개최됩니다. 소프트웨어 정의 차량(SDV), AI 통합, 가상화, 차세대 컴퓨팅 아키텍처가 주요 주제입니다. 고성능 컴퓨팅, 실리콘 트렌드, 차량 기능 AI 통합, 칩렛 아키텍처, 가상화 컴퓨팅 플랫폼, 표준화 소프트웨어 프레임워크 등이 다뤄집니다. Rivian·BMW·Stellantis·Ford·imec 등 OEM·Tier 1·반도체 기업 연사가 발표합니다. 시니어 엔지니어·플랫폼 아키텍트·의사결정권자가 참석하며, 키노트·패널·네트워킹·전시가 진행됩니다.',
     'schedule.item3.title':
-      'Car IT Symposium 2026 - AI가 자동차를 재발명하다 (개막 5일 앞)',
+      '제13회 국제e모빌리티엑스포(IEVE 2026) - 제주 개막',
     'schedule.item3.content':
-      'Car IT Symposium 2026이 3월 26-27일 독일 잉골슈타트 Maritim Hotel 개막을 5일 앞두고, 오늘(3월 21일)에는 행사 준비 및 사전 네트워킹이 진행됩니다. 2026년 테마는 "From Buzzword to Imperative: AI Reinvents Automotive"입니다. CARIAD·메르세데스-벤츠·BMW·보쉬·르노 등 주요 연사가 AI가 연구·엔지니어링·제조·고객 경험 전반에서 자동차 산업을 어떻게 변화시키는지 논의합니다. AI 기반 자동차 혁신, 소프트웨어 정의 차량, 모빌리티 생태계가 주요 주제이며, 전문가·기업·청년 전문가를 연결하는 네트워킹 포럼입니다.',
+      '제13회 국제e모빌리티엑스포(IEVE 2026)가 오늘 제주 신화월드·신화역사공원에서 개막하여 3월 27일까지 진행됩니다. 2026년 테마는 "AI를 통한 에너지 전환과 디지털 전환 시대 e모빌리티의 미래"입니다. 오늘(24일)에는 IEVE 이노베이션 어워즈 시상식, IEVE 피치 데크(기술혁신상 수상 기업 발표), 제11차 세계e-모빌리티협의회(GEAN) 총회, 글로벌 e-모빌리티 비즈니스 포럼, 비즈니스 네트워킹 환영 만찬이 열립니다. 전기차·배터리·자율주행·AI·UAM·전기선박 등 미래 모빌리티와 친환경 에너지 기술이 다뤄집니다. B2B 상담회도 매일 운영됩니다.',
     'schedule.item4.title':
-      'US Automotive Computing Conference 2026 - 개막 3일 앞 디트로이트',
+      'International Battery Seminar & Exhibit 2026 - 2일차 올랜도',
     'schedule.item4.content':
-      'US Automotive Computing Conference 2026이 3월 24-25일 미국 미시간주 디어본 The Henry Hotel 개막을 3일 앞두고, 오늘(3월 21일)에는 참가 등록 및 행사 준비가 진행됩니다. 소프트웨어 정의 차량(SDV), AI 통합, 가상화, 차세대 컴퓨팅 아키텍처가 주요 주제입니다. 고성능 컴퓨팅, 실리콘 트렌드, 차량 기능 AI 통합, 칩렛 아키텍처, 가상화 컴퓨팅 플랫폼, 표준화 소프트웨어 프레임워크 등이 다뤄집니다. Rivian·BMW·Stellantis·Ford·imec 등 연사가 참가하며, OEM·Tier 1·기술 기업의 시니어 엔지니어·플랫폼 아키텍트·의사결정권자가 참석합니다.',
+      'International Battery Seminar & Exhibit 2026이 오늘(2일차) 미국 플로리다주 올랜도에서 진행됩니다. 3월 23-26일 일정으로 1983년 설립 이래 세계 최장수 배터리 산업 행사입니다. Apple·BMW·Ford·GM·Tesla·Toyota·LG에너지솔루션·삼성SDI 등 65개 이상 OEM·배터리 개발사가 참가합니다. 차세대 배터리 연구, AI 에너지 저장, 리튬이온 개발·상용화, 배터리 재활용, 자동차 배터리 응용·고성능 배터리 제조 등이 2일차 프로그램입니다. 2,000명 이상 배터리 기술 전문가, 150개 이상 스폰서·전시사가 참가하며, 150개 이상의 발표와 전시가 진행됩니다.',
     'schedule.item5.title':
-      '제13회 국제e모빌리티엑스포(IEVE 2026) - 개막 3일 앞 제주',
+      'Car IT Symposium 2026 - AI가 자동차를 재발명하다 (개막 2일 앞)',
     'schedule.item5.content':
-      '제13회 국제e모빌리티엑스포(IEVE 2026)가 3월 24-27일 제주 신화월드·신화역사공원 개막을 3일 앞두고, 오늘(3월 21일)에는 행사 준비 및 사전 브리핑이 진행됩니다. 2026년 테마는 "AI를 통한 에너지 전환과 디지털 전환 시대 e모빌리티의 미래"입니다. 전기차·배터리·자율주행·AI·도심항공교통(UAM)·전기선박 등 미래 모빌리티와 친환경 에너지 산업 핵심기술이 다뤄집니다. IEVE 이노베이션 어워즈, 글로벌 e-모빌리티 서밋, 월드 ESG 포럼, 글로벌 UAM 비즈니스 포럼 등이 예정되어 있습니다. 자동차·에너지·모빌리티 기업, 연구기관, 정책 담당자가 참석합니다.',
-    'notice.updateContent20260321': `<strong>2026-03-21</strong> - eBook Series 게시판, 경제상식 게시판, 오늘의 일정(자동차/IT)을 업데이트했습니다.<br /><br />
-📖 <strong>eBook Series:</strong> 「호텔 체크인 시 사용하는 실전 영어」 Vol.5가 추가되었습니다. 해외 여행이나 출장 시 호텔 체크인할 때 필요한 실용적인 영어 표현과 대화 패턴을 중심으로 구성되어 있으며, 예약 확인, 체크인 절차, 객실 요청, 추가 서비스 문의, 체크아웃 관련 대화 등 다양한 상황의 영어 표현을 쉽게 학습할 수 있도록 정리했습니다. 호텔 체크인 시 사용하는 영어는 해외 숙박 시 필수적인 실무 영어이므로, 실용적인 영어 학습 자료로 활용할 수 있습니다. 앞으로 계속해서 다양한 주제의 실용적인 영어 학습 자료를 제공할 예정입니다.<br /><br />
-📚 <strong>경제상식:</strong> 「침몰비용(Sunk Cost)」가 추가되었습니다. 침몰비용은 이미 지출되었고 회수할 수 없는 비용을 의미하며, 합리적 의사결정에서 무시해야 하는 비용입니다. 침몰비용 편향은 "이미 이만큼 투자했으니"라는 생각으로 비합리적인 결정을 내리는 현상으로, 개인·기업·정부 모두에서 흔히 발생합니다. 기회비용·트레이드오프와 밀접한 관련이 있으며, 침몰비용을 무시하고 "앞으로의 이익과 비용"만 고려하는 것이 합리적 의사결정의 원칙입니다. 침몰비용의 개념, 종류, 실제 적용 사례, 극복 방법 등을 상세히 다룹니다.<br /><br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> 3월 21일 글로벌 자동차 및 IT 부문 일정이 업데이트되었습니다. Beyond Motion 2026(싱가포르 최초 몰입형 전기차·모빌리티 체험전, 선텍 컨벤션 센터), International Battery Seminar & Exhibit 2026(사전 등록·개막 준비, 3/23 올랜도 개막), Car IT Symposium 2026(AI가 자동차를 재발명하다, 3/26 잉골슈타트 개막 5일 앞), US Automotive Computing Conference 2026(3/24 디트로이트 개막 3일 앞), 제13회 국제e모빌리티엑스포 IEVE 2026(3/24 제주 개막 3일 앞) 등이 진행됩니다. 전기차·배터리·소프트웨어 정의 차량·AI 자동차 등이 주요 주제입니다.<br /><br />
-각 게시판에서 더 자세한 내용을 확인하실 수 있으니 많은 관심 부탁드립니다.`,
+      'Car IT Symposium 2026이 3월 26-27일 독일 잉골슈타트 Maritim Hotel 개막을 2일 앞두고, 오늘(24일)에는 최종 행사 준비 및 사전 네트워킹이 진행됩니다. 2026년 테마는 "From Buzzword to Imperative: AI Reinvents Automotive"입니다. CARIAD·메르세데스-벤츠·BMW·보쉬·르노 등이 AI가 연구·엔지니어링·제조·고객 경험 전반에서 자동차 산업을 어떻게 변화시키는지 논의할 예정입니다. AI 기반 자동차 혁신, 소프트웨어 정의 차량, 모빌리티 생태계가 주요 주제이며, 전문가·기업·청년 전문가가 참가합니다.',
+    'notice.updateContent20260324': `<strong>2026-03-24</strong> - eBook Series, 오늘의 일정(자동차/IT) 업데이트<br /><br />
+📖 <strong>eBook Series:</strong> 「공항에서 체크인과 탑승 시 사용하는 실전 영어」 Vol.6 추가. 공항 체크인·탑승 시 필요한 영어 표현과 대화 패턴 정리.<br /><br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> 3월 24일 - SAE 연결·자율차 디지털 서밋(온라인), US 자동차 컴퓨팅 컨퍼런스(디트로이트), IEVE 2026(제주 개막), International Battery Seminar(올랜도), Car IT Symposium(잉골슈타트 D-2).`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -115,30 +113,28 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'Beyond Motion 2026 - Singapore\'s First Immersive EV & Mobility Experience',
+      'Automated and Connected Vehicles Digital Summit 2026 - Connected & AV Digital Summit',
     'schedule.item1.content':
-      'Beyond Motion 2026 will be held today through March 22 at Suntec Convention Centre, Halls 403-404, Singapore. Organized by Sgcarmart, it is Singapore\'s first immersive mobility experience, running from 9:00 AM to 9:00 PM daily. The event features 8+ EV brands showcasing latest electric and hybrid models, education hubs on EV ownership, charging infrastructure, battery innovation, and sustainability, and keynote sessions and panel discussions with policymakers, OEMs, and mobility innovators. Singapore\'s electrification roadmap, infrastructure development, and technology shifts are key discussion topics. Interactive experiences, stamp rally, and prize opportunities are also offered. Free admission with registration. Prospective EV buyers, car enthusiasts, and industry professionals will attend.',
+      'The Automated and Connected Vehicles Digital Summit 2026 begins today for two days, hosted by SAE International online (free). Starting 10:00 AM U.S. EDT (11:00 PM Korea time). Speakers include Siemens, Qualcomm, Applied Intuition, Cognizant, TUM (Technical University of Munich), and Serve Robotics. Key topics include cybersecurity and data privacy in connected mobility, smart infrastructure and urban integration, 5G and edge computing for real-time vehicle communication, autonomous vehicle deployment strategies, practical AI implementation, and infotainment systems. Mobility professionals, engineers, and policymakers will attend. Sessions are livestreamed via RingCentral Events with free replay available after the event.',
     'schedule.item2.title':
-      'International Battery Seminar & Exhibit 2026 - Pre-Registration & Opening Prep',
+      'US Automotive Computing Conference 2026 - Detroit Day 1',
     'schedule.item2.content':
-      'With the International Battery Seminar & Exhibit 2026 opening March 23 in Orlando, Florida, today (March 21) marks the final day for online pre-registration and attendee arrival and networking. Founded in 1983, it is the world\'s longest-running annual battery industry event. Over 65 OEMs and battery developers including Apple, BMW, Ford, GM, Tesla, Toyota, LG Energy Solution, and Samsung SDI will participate. Programs cover next-generation battery research, AI for energy storage, lithium-ion development and commercialization, battery recycling, and advances in automotive battery applications. 2,000+ battery technologists, 150+ sponsors and exhibitors will attend. Plenary keynotes from Jeff Dahn (Dalhousie), GM, LG Energy Solution, and Panasonic Energy are scheduled.',
+      'The US Automotive Computing Conference 2026 runs today through March 25 at The Henry Hotel in Dearborn, Michigan. Software-defined vehicles (SDVs), AI integration, virtualization, and next-generation computing architectures are key topics. The program covers high-performance computing, silicon trends, AI in vehicle functions, chiplet architectures, virtualized compute platforms, and standardized software frameworks. Speakers from Rivian, BMW, Stellantis, Ford, and imec will present. Senior engineers, platform architects, and decision-makers from OEMs, Tier 1 suppliers, and technology providers will attend. Keynotes, panels, networking, and trade exhibition are scheduled.',
     'schedule.item3.title':
-      'Car IT Symposium 2026 - AI Reinvents Automotive (5 Days to Opening)',
+      '13th International e-Mobility Expo (IEVE 2026) - Jeju Opening Day',
     'schedule.item3.content':
-      'With Car IT Symposium 2026 opening March 26-27 at Maritim Hotel, Ingolstadt, Germany, today (March 21) marks event preparation and pre-conference networking. The 2026 theme is "From Buzzword to Imperative: AI Reinvents Automotive." Speakers from CARIAD, Mercedes-Benz, BMW, Bosch, and Renault will discuss how AI is transforming the automotive industry across research, engineering, manufacturing, and customer experience. AI-driven automotive innovation, software-defined vehicles, and mobility ecosystems are key topics. The symposium connects experts, companies, and young professionals in the mobility sector.',
+      'The 13th International e-Mobility Expo (IEVE 2026) opens today at Jeju Shinhwa World and Shinhwa History Park, running through March 27. The 2026 theme is "The Future of e-Mobility in the Era of Energy and Digital Transformation through AI." Today\'s (24th) program includes IEVE Innovation Awards ceremony, IEVE Pitch Deck (innovative tech company presentations), 11th Global e-Mobility Advisory Network (GEAN) General Assembly, Global e-Mobility Business Forum, and Business Networking Welcome Dinner. Topics cover electric vehicles, batteries, autonomous driving, AI, UAM, and electric vessels. B2B consultation sessions run daily.',
     'schedule.item4.title':
-      'US Automotive Computing Conference 2026 - 3 Days to Detroit Opening',
+      'International Battery Seminar & Exhibit 2026 - Orlando Day 2',
     'schedule.item4.content':
-      'With the US Automotive Computing Conference 2026 opening March 24-25 at The Henry Hotel in Dearborn, Michigan, today (March 21) marks registration and event preparation. Software-defined vehicles (SDVs), AI integration, virtualization, and next-generation computing architectures are key topics. The conference covers high-performance computing, silicon trends, AI in vehicle functions, chiplet architectures, virtualized compute platforms, and standardized software frameworks. Speakers from Rivian, BMW, Stellantis, Ford, and imec will present. Senior engineers, platform architects, and decision-makers from OEMs, Tier 1 suppliers, and technology providers will attend.',
+      'The International Battery Seminar & Exhibit 2026 continues today (Day 2) in Orlando, Florida. Running March 23-26, it is the world\'s longest-running annual battery industry event since 1983. Over 65 OEMs and battery developers including Apple, BMW, Ford, GM, Tesla, Toyota, LG Energy Solution, and Samsung SDI participate. Day 2 programs cover next-generation battery research, AI for energy storage, lithium-ion development and commercialization, battery recycling, and advances in automotive battery applications. 2,000+ battery technologists and 150+ sponsors and exhibitors attend. Over 150 presentations and exhibits are featured.',
     'schedule.item5.title':
-      '13th International e-Mobility Expo (IEVE 2026) - 3 Days to Jeju Opening',
+      'Car IT Symposium 2026 - AI Reinvents Automotive (2 Days to Opening)',
     'schedule.item5.content':
-      'With the 13th International e-Mobility Expo (IEVE 2026) opening March 24-27 at Jeju Shinhwa World and Shinhwa History Park, today (March 21) marks event preparation and pre-event briefings. The 2026 theme is "The Future of e-Mobility in the Era of Energy and Digital Transformation through AI." Topics include electric vehicles, batteries, autonomous driving, AI, urban air mobility (UAM), and electric vessels. IEVE Innovation Awards, Global e-Mobility Summit, World ESG Forum, and Global UAM Business Forum are scheduled. Automotive, energy, and mobility companies, research institutions, and policymakers will attend.',
-    'notice.updateContent20260321': `<strong>2026-03-21</strong> – We've updated the eBook Series board, Economics board, and Today's Schedule (Automotive/IT).<br /><br />
-📖 <strong>eBook Series:</strong> "Practical English for Hotel Check-in" Vol.5 has been added. It focuses on practical English expressions and conversation patterns needed when checking in at hotels during overseas travel or business trips, organized to make learning English easy and practical. It covers various situations such as reservation confirmation, check-in procedures, room requests, additional service inquiries, and check-out related conversations. English for hotel check-in is essential for international accommodation, making this a practical English learning resource. We plan to continue providing practical English learning materials on various topics in the future.<br /><br />
-📚 <strong>Economics:</strong> "Sunk Cost" has been added. Sunk cost refers to costs that have already been incurred and cannot be recovered, and should be ignored in rational decision-making. The sunk cost fallacy is the phenomenon of making irrational decisions based on the thought "I've already invested this much," which commonly occurs among individuals, businesses, and governments. It is closely related to opportunity cost and trade-offs, and the principle of rational decision-making is to ignore sunk costs and consider only "future benefits and costs." The article covers the concept, types, real-world applications, and strategies to overcome the sunk cost fallacy in detail.<br /><br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> March 21 global automotive and IT sector schedules have been updated. Events include Beyond Motion 2026 (Singapore's first immersive EV & mobility experience, Suntec Convention Centre), International Battery Seminar & Exhibit 2026 (pre-registration and opening prep, opens Mar 23 in Orlando), Car IT Symposium 2026 (AI Reinvents Automotive, 5 days to Mar 26 Ingolstadt opening), US Automotive Computing Conference 2026 (3 days to Mar 24 Detroit opening), and 13th International e-Mobility Expo IEVE 2026 (3 days to Mar 24 Jeju opening). Key topics include electric vehicles, batteries, software-defined vehicles, and AI in automotive.<br /><br />
-Please check each board for more detailed content.`,
+      'With Car IT Symposium 2026 opening March 26-27 at Maritim Hotel, Ingolstadt, Germany, today (24th) marks final event preparation and pre-conference networking. The 2026 theme is "From Buzzword to Imperative: AI Reinvents Automotive." Speakers from CARIAD, Mercedes-Benz, BMW, Bosch, and Renault will discuss how AI is transforming the automotive industry across research, engineering, manufacturing, and customer experience. AI-driven automotive innovation, software-defined vehicles, and mobility ecosystems are key topics. Experts, companies, and young professionals from the mobility sector will attend.',
+    'notice.updateContent20260324': `<strong>2026-03-24</strong> – eBook Series, Today's Schedule (Automotive/IT) updated<br /><br />
+📖 <strong>eBook Series:</strong> "Practical English for Airport Check-in and Boarding" Vol.6 added. Covers English expressions and conversation patterns for airport check-in and boarding.<br /><br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> March 24 – SAE Connected & AV Digital Summit (online), US Automotive Computing Conference (Detroit), IEVE 2026 (Jeju opening), International Battery Seminar (Orlando), Car IT Symposium (Ingolstadt D-2).`,
   },
 };
 

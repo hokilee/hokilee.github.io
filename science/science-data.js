@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 70,
+    title: '가용성 휴리스틱(Availability Heuristic)',
+    link: 'science/science-detail-70.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '03-23',
+    views: 0,
+  },
+  {
     id: 69,
     title: '앵커링 효과(Anchoring Bias)',
     link: 'science/science-detail-69.html',
