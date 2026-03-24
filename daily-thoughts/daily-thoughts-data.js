@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 68,
+    title: '비행기 안에서 사용하는 실전 영어-Vol.7',
+    link: 'eBook-data/english_conversation_vol7.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '03-24',
+    views: 0,
+  },
+  {
     id: 67,
     title: '공항에서 체크인과 탑승 시 사용하는 실전 영어-Vol.6',
     link: 'eBook-data/english_conversation_vol6.pdf',
