@@ -45,28 +45,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'Car IT Symposium 2026 - AI가 자동차를 재발명하다 (1일차)',
+      'Car IT Symposium 2026 - 막일 후 유럽 후속 일정',
     'schedule.item1.content':
-      'Car IT Symposium 2026이 오늘(26일) 독일 잉골슈타트 Maritim Hotel에서 개막해 27일까지 진행됩니다. 테마는 "From Buzzword to Imperative: AI Reinvents Automotive". 공개 아젠다에 따르면 등록·개회 후 VAIVA(Ole Harms)·퀄컴(에이전틱 AI·SDV)·BMW(커넥티드 디지털 비히클)·Cerence·SiMa.ai·HERE Technologies 등이 엣지 AI SoC·지도·가상-실차량 경험 등을 발표하고 패널·악센추어 세션이 이어집니다. 소프트웨어 정의 차량·AI 모빌리티 실무자와 Young Professionals가 모입니다(it.car-future.com).',
+      'Car IT Symposium 2026이 3월 27일 독일 잉골슈타트에서 이틀 일정을 마친 뒤, 오늘(28일)에는 참가 OEM·Tier1·SW 기업 간 후속 비즈니스 미팅·파트너 협의·네트워킹이 이어지는 경우가 많습니다. AI·SDV·커넥티드 카 논의는 it.car-future.com 등 공식 채널 후속 공지와 업계 동향을 참고할 수 있습니다.',
     'schedule.item2.title':
-      '제13회 국제e모빌리티엑스포(IEVE 2026) - 3일차 제주',
+      '제13회 국제e모빌리티엑스포(IEVE 2026) - 폐막 후속·제주',
     'schedule.item2.content':
-      'IEVE 2026이 제주 신화월드·신화역사공원에서 27일까지 이어지며 오늘(26일)은 3일차입니다. 보도·행사 안내에 따르면 월드 ESG 포럼 개막, V2G(차량-계통) 충전 인프라·차세대 에너지 관리 세션, 제4회 국제 친환경 선박 엑스포 포럼(일부 Zoom 연동 안내), VIP 네트워킹 런치 등이 예정되어 있습니다. AI·에너지 전환 테마 아래 e모빌리티·전기선박·B2B 상담이 병행됩니다.',
+      'IEVE 2026 공식 일정은 3월 27일까지였고, 오늘(28일)에는 전시장 철수·장비 반출, 수상·B2B 협약 후속 협의, 제주 지역 모빌리티·에너지 산업과의 연장 미팅이 이어질 수 있습니다. e모빌리티·UAM·전기선박 등 전시 성과 정리가 한창인 시점입니다.',
     'schedule.item3.title':
-      'International Battery Seminar & Exhibit 2026 - 막일 올랜도',
+      'ArtiAuto Week 2026 - 상하이 행사 종료 후속',
     'schedule.item3.content':
-      'International Battery Seminar & Exhibit 2026이 오늘(26일) 미국 올랜도에서 막일을 맞습니다(3월 23-26일). 1983년 설립 이래 연례 배터리 산업의 대표 행사로, 차세대 연구·리튬이온·재활용·자동차·그리드 저장·제조·안전 등 트랙이 최종일까지 이어집니다. OEM·셀·팩·부품사 기술자와 전시·발표가 마무리됩니다(internationalbatteryseminar.com).',
+      'ArtiAuto Week 2026(3월 26-27일, 상하이)이 막을 내린 뒤 오늘(28일)에는 참가사·전시진·바이어의 귀국·정리 및 OEM·자율주행·전장 업계 간 후속 미팅이 이어지는 것이 일반적입니다. AutoDrive·AutoPEPS 등 27일 세션 이후 후속 논의가 이어질 수 있습니다.',
     'schedule.item4.title':
-      '12th Automotive Ethernet Congress 2026 - 뮌헨 막일',
+      'Build with AI / Gemini 글로벌 개발자 행사 (3월 28일)',
     'schedule.item4.content':
-      '제12회 Automotive Ethernet Congress가 오늘(26일) 독일 뮌헨 Science Congress Center에서 막일을 맞습니다(3월 24-26일). 존(zonal) 아키텍처·SDV 전환과 차량용 이더넷·Open Alliance 기술위원회 동향이 주제이며, 강연·워크숍·45개 이상 기업 전시가 병행됩니다. 인버티클 네트워킹 실무자가 참가합니다(automotive-ethernet-congress.de).',
+      '구글 개발자 커뮤니티(GDG 등)가 주최하는 Build with AI·Gemini 관련 해커톤·워크숍이 오늘(28일) 전 세계 여러 도시에서 열리는 일정으로 Meetup·Eventbrite 등에 공개되어 있습니다. 예: 싱가포르 “Build with AI: The Gemini Deep Dive”, 뉴욕 “NYC Build With AI Hackathon”, 샌프란시스코 “MeetStream AI x Scalekit Hackathon” 등. 생성형 AI·에이전트·멀티모달 개발에 초점(일반 IT·AI).',
     'schedule.item5.title':
-      'ArtiAuto Week 2026·AutoCS 2026 - 상하이 차량 정보보안',
+      '차량용 AI·SDV - 3월 말 업계 후속 논의',
     'schedule.item5.content':
-      'ArtiAuto Week 2026(匠歆汽车攻坚周)이 3월 26-27일 중국 상하이에서 열리며, 오늘(26일)에는 제9회 AutoCS 2026 지능형 차량 정보보안 컨퍼런스가 중심 일정으로 알려져 있습니다. 국내외 완성차·자율주행·사이버 보안 업계가 차량 사이버보안·EE 아키텍처 등을 논의합니다. 같은 주간에 AutoDrive(27일)·AutoPEPS(27일) 등 관련 행사가 병행된다는 안내도 있습니다.',
-    'notice.updateContent20260326': `<strong>2026-03-26</strong> - eBook Series, 오늘의 일정(자동차/IT) 업데이트<br /><br />
-📖 <strong>eBook Series:</strong> 「입국 및 수하물 찾기 시 사용하는 실전 영어」 Vol.8 게시. 입국 심사·세관 질문에 답하기, 수하물 찾기·분실·지연·파손 신고 등 공항 도착 후에 쓰는 실전 표현 정리.<br /><br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> 3월 26일 - Car IT Symposium(잉골슈타트 1일차·AI·SDV), IEVE 2026(제주 3일차·ESG·V2G·친환경 선박 포럼), International Battery Seminar(올랜도 막일), Automotive Ethernet Congress(뮌헨 막일), ArtiAuto Week·AutoCS(상하이·차량 정보보안).`,
+      '3월 중순 미국 산호세에서 열린 NVIDIA GTC 2026(3/16-19)과 유럽·중국의 모빌리티 행사가 잇따른 가운데, 오늘(28일) 전후로 차량용 엣지 AI·디지털 트윈·SDV 스택에 대한 티어1·반도체·OEM 간 후속 PoC·파트너 미팅이 이어지는 시기로 업계 캘린더가 형성되는 경우가 많습니다.',
+    'notice.updateContent20260327': `<strong>2026-03-27</strong> - eBook Series, 일반상식, 오늘의 일정(자동차/IT) 업데이트<br /><br />
+📖 <strong>eBook Series:</strong> 「호텔 문제 해결 및 요청 시 사용하는 실전 영어」 Vol.9 게시. 프런트·객실 문의, 시설 고장·소음, 청소·비품 요청, 체크아웃 연장 등 호텔 투숙 중 문제 해결과 요청에 쓰는 실전 영어 표현 정리.<br /><br />
+📚 <strong>일반상식:</strong> 「베블런 효과(Veblen Effect)」 자료 게시. 가격 상승 시 수요가 늘 수 있는 지위 재화·시벌성 소비, 유한계급론과의 관계 등을 정리.<br /><br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> 3월 28일 행사 기준 정리 - Car IT Symposium 후속(유럽), IEVE 폐막 후속(제주), ArtiAuto Week 후속(상하이), Build with AI·Gemini 글로벌(28일), 차량용 AI·SDV 후속 논의.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -113,28 +114,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'Car IT Symposium 2026 - AI Reinvents Automotive (Day 1)',
+      'Car IT Symposium 2026 - Post-Event Follow-Up in Europe',
     'schedule.item1.content':
-      'Car IT Symposium 2026 opens today (March 26) at Maritim Hotel, Ingolstadt, Germany, through March 27. Theme: "From Buzzword to Imperative: AI Reinvents Automotive." The published agenda includes registration, opening remarks, and keynotes on AI acceleration in automotive, agentic AI and the software-defined vehicle (Qualcomm), connected digital vehicle (BMW), edge AI SoCs (Cerence, SiMa.ai), HERE Technologies on digital-to-vehicle experiences, a panel session, and Accenture on AI and product development. Practitioners and young professionals meet at it.car-future.com.',
+      'After Car IT Symposium 2026 closed its two-day program in Ingolstadt, Germany, on March 27, today (March 28) is a typical window for follow-on business meetings, partner discussions, and networking among attending OEMs, Tier 1 suppliers, and software firms. AI, SDV, and connected-car themes continue via official channels and industry updates (it.car-future.com).',
     'schedule.item2.title':
-      '13th International e-Mobility Expo (IEVE 2026) - Jeju Day 3',
+      '13th International e-Mobility Expo (IEVE 2026) - Closing Follow-Up, Jeju',
     'schedule.item2.content':
-      'IEVE 2026 continues at Jeju Shinhwa World and Shinhwa History Park through March 27; today (March 26) is the third expo day. Korean press and event notices cite the World ESG Forum opening, a V2G charging infrastructure and energy-management session, the 4th International Eco-Friendly Ship Expo forum (some sessions offered via Zoom), VIP networking lunch, and related business programs. The program spans e-mobility, AI, energy transition, and electric maritime topics with ongoing B2B activity.',
+      'IEVE 2026’s official program ran through March 27; today (March 28) often involves dismantling exhibits, equipment move-out, follow-up on awards and B2B deals, and extended meetings with Jeju’s mobility and energy stakeholders. Exhibitors consolidate outcomes across e-mobility, UAM, and electric maritime topics.',
     'schedule.item3.title':
-      'International Battery Seminar & Exhibit 2026 - Orlando Final Day',
+      'ArtiAuto Week 2026 - Shanghai Post-Event Follow-Up',
     'schedule.item3.content':
-      'The International Battery Seminar & Exhibit 2026 holds its final day today in Orlando, Florida (March 23-26, 2026). The long-running industry conference finishes tracks on next-generation research, lithium-ion, recycling, automotive and grid storage, manufacturing, and safety. OEM, cell, pack, and component technologists conclude presentations, exhibits, and networking (internationalbatteryseminar.com).',
+      'Following ArtiAuto Week 2026 (March 26–27, Shanghai), today (March 28) is commonly used for teardown, travel, and follow-on meetings among OEMs, autonomous-driving, and automotive electronics participants. Discussions after AutoDrive and AutoPEPS sessions on March 27 may continue bilaterally.',
     'schedule.item4.title':
-      '12th Automotive Ethernet Congress 2026 - Munich Final Day',
+      'Build with AI / Gemini Global Developer Events (March 28)',
     'schedule.item4.content':
-      'The 12th Automotive Ethernet Congress closes today at the Science Congress Center Munich, Germany (March 24-26, 2026). The program addresses zonal vehicle architecture, software-defined vehicles (SDV), and Automotive Ethernet evolution including Open Alliance technical committee work, plus trainings, workshops, lectures, and an exhibition with 45+ companies. It is a key meeting point for in-vehicle networking professionals (automotive-ethernet-congress.de).',
+      'Google Developer Groups and related communities list Build with AI and Gemini-focused hackathons and workshops on March 28 in multiple cities (e.g., Meetup and Eventbrite listings): examples include “Build with AI: The Gemini Deep Dive” in Singapore, the “NYC Build With AI Hackathon,” and the “MeetStream AI x Scalekit Hackathon” in San Francisco—focused on generative AI, agents, and multimodal development (general IT/AI).',
     'schedule.item5.title':
-      'ArtiAuto Week 2026 & AutoCS 2026 - Shanghai Vehicle Cybersecurity',
+      'In-Vehicle AI & SDV - Late-March Industry Follow-Up',
     'schedule.item5.content':
-      'ArtiAuto Week 2026 runs March 26-27 in Shanghai, China. March 26 highlights the 9th AutoCS 2026 Intelligent Vehicle Information Security Conference, with OEMs, autonomous-driving, and cybersecurity firms discussing vehicle cyber defense and EE architecture security. Related sessions such as AutoDrive and AutoPEPS are scheduled on March 27 per industry announcements.',
-    'notice.updateContent20260326': `<strong>2026-03-26</strong> – eBook Series, Today's Schedule (Automotive/IT) updated<br /><br />
-📖 <strong>eBook Series:</strong> "Practical English for Immigration, Baggage Claim, and Arrival" Vol.8 posted. Covers answering immigration and customs questions plus useful phrases for baggage claim, lost or delayed bags, and damage reports after landing.<br /><br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> March 26 – Car IT Symposium (Ingolstadt Day 1, AI & SDV), IEVE 2026 (Jeju Day 3, ESG, V2G, eco-ship forum), International Battery Seminar (Orlando final day), Automotive Ethernet Congress (Munich final day), ArtiAuto Week / AutoCS (Shanghai, vehicle cybersecurity).`,
+      'After NVIDIA GTC 2026 (March 16–19, San Jose) and concurrent mobility events in Europe and China, late March—including today (March 28)—often sees continued PoCs and partner meetings among Tier 1s, semiconductor vendors, and OEMs on edge AI, digital twins, and SDV software stacks.',
+    'notice.updateContent20260327': `<strong>2026-03-27</strong> – eBook Series, General Knowledge, Today's Schedule (Automotive/IT) updated<br /><br />
+📖 <strong>eBook Series:</strong> "Practical English for Hotel Problem-Solving and Requests" Vol.9 posted. Phrases for front desk and room issues, facility problems and noise, housekeeping and amenities, late checkout, and other in-stay requests.<br /><br />
+📚 <strong>General Knowledge:</strong> "Veblen Effect" article posted—status goods, conspicuous consumption, and Veblen's theory of the leisure class.<br /><br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> March 28 focus—Car IT Symposium follow-up (Europe), IEVE closing follow-up (Jeju), ArtiAuto Week follow-up (Shanghai), Build with AI / Gemini global (Mar 28), in-vehicle AI & SDV follow-on discussions.`,
   },
 };
 

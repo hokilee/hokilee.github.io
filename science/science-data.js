@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 71,
+    title: '베블런 효과(Veblen Effect)',
+    link: 'science/science-detail-71.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '03-27',
+    views: 0,
+  },
+  {
     id: 70,
     title: '가용성 휴리스틱(Availability Heuristic)',
     link: 'science/science-detail-70.html',

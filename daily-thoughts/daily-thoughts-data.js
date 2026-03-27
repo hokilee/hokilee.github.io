@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 70,
+    title: '입국 및 수하물 찾기 시 사용하는 실전 영어-Vol.9',
+    link: 'eBook-data/english_conversation_vol9.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '03-27',
+    views: 0,
+  },
+  {
     id: 69,
     title: '입국 및 수하물 찾기 시 사용하는 실전 영어-Vol.8',
     link: 'eBook-data/english_conversation_vol8.pdf',
