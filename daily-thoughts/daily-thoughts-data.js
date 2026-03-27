@@ -2,7 +2,7 @@
 const dailyThoughtsData = [
   {
     id: 70,
-    title: '입국 및 수하물 찾기 시 사용하는 실전 영어-Vol.9',
+    title: '호텔 문제 해결 및 요청 시 사용하는 실전 영어-Vol.9',
     link: 'eBook-data/english_conversation_vol9.pdf',
     category: 'eBook Series',
     author: '이호기',
