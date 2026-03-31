@@ -64,7 +64,7 @@ const translations = {
       '일본 신회계연도(4/1) — 완성차·부품 산업 경영 일정',
     'schedule.item5.content':
       '일본은 4월 1일을 신회계연도 시작일로 삼아, 완성차·부품사의 예산·조달·채용·신입 배치 등 경영 일정이 전환되는 시기입니다. 단일 컨퍼런스는 아니지만, 글로벌 공급망·기술 협력 일정을 잡을 때 자주 겹치는 산업 캘린더 포인트입니다.',
-    'notice.updateContent20260401': `<strong>2026-04-01</strong> - 콘텐츠 업데이트 안내<br /><br />
+    'notice.updateContent20260330': `<strong>2026-03-30</strong> - 콘텐츠 업데이트 안내<br /><br />
 📚 <strong>eBook Series:</strong> Vol.10 「쇼핑 시 상담·비교·구매·교환까지 사용하는 실전 영어」 자료 게시<br />
 📊 <strong>경제 상식:</strong> 「가격탄력성(Price Elasticity)」 신규 게시<br />
 📅 <strong>오늘의 일정(자동차/IT):</strong> IAPS 2026(상하이·파워트레인·2일차), lAPS 2026(상하이·헤비듀티·2일차), AWS Summit Paris(클라우드·AI), OpenEnv AI Hackathon(인도·Meta/Hugging Face/PyTorch), 일본 신회계연도에 맞춘 자동차·부품 업계 경영 일정`,
@@ -133,7 +133,7 @@ const translations = {
       'Japan New Fiscal Year (Apr 1) - Automotive Industry Cycle',
     'schedule.item5.content':
       'Japan’s fiscal year begins April 1. Automakers and suppliers typically align budgets, procurement, hiring, and onboarding on this date—a recurring industry milestone for global supply-chain and technology planning, even though it is not a single conference.',
-    'notice.updateContent20260401': `<strong>2026-04-01</strong> – Content update notice<br /><br />
+    'notice.updateContent20260330': `<strong>2026-03-30</strong> – Content update notice<br /><br />
 📚 <strong>eBook Series:</strong> Vol.10 “Practical English for shopping—consultation, comparison, purchase, and exchanges” is now available<br />
 📊 <strong>Economics basics:</strong> New article on “Price Elasticity”<br />
 📅 <strong>Today's Schedule (Automotive/IT):</strong> IAPS 2026 (Shanghai, powertrain, day 2), lAPS 2026 (Shanghai, heavy-duty, day 2), AWS Summit Paris (cloud & AI), OpenEnv AI Hackathon (India, Meta / Hugging Face / PyTorch), Japan fiscal-year start for automotive industry planning`,
