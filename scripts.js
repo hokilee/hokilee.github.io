@@ -45,29 +45,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'Car IT Symposium 2026 - 막일 후 유럽 후속 일정',
+      'IAPS 2026 - 제14회 중국국제자동차동력시스템(파워트레인) 정상회의',
     'schedule.item1.content':
-      'Car IT Symposium 2026이 3월 27일 독일 잉골슈타트에서 이틀 일정을 마친 뒤, 오늘(28일)에는 참가 OEM·Tier1·SW 기업 간 후속 비즈니스 미팅·파트너 협의·네트워킹이 이어지는 경우가 많습니다. AI·SDV·커넥티드 카 논의는 it.car-future.com 등 공식 채널 후속 공지와 업계 동향을 참고할 수 있습니다.',
+      'IAPS 2026(제14회 중국국제자동차동력시스템 정상회의)가 중국 상하이에서 3월 31일~4월 1일 이틀간 열리며, 오늘(1일)은 둘째 날입니다. 주제는 "제탄소 동력 혁명: 기술 돌파에서 시스템 재구성까지"로, 하이브리드·전기 구동·수소·AI 에너지 관리·800V·SiC 등이 논의됩니다. BYD·지리·장안·CATL·화웨이 디지털 에너지 등 국내외 OEM·부품사가 참가한다고 안내됩니다(bimi-auto.com/IAPS2026).',
     'schedule.item2.title':
-      '제13회 국제e모빌리티엑스포(IEVE 2026) - 폐막 후속·제주',
+      'lAPS 2026 - 국제 중·대형 동력시스템(헤비듀티) 정상회의',
     'schedule.item2.content':
-      'IEVE 2026 공식 일정은 3월 27일까지였고, 오늘(28일)에는 전시장 철수·장비 반출, 수상·B2B 협약 후속 협의, 제주 지역 모빌리티·에너지 산업과의 연장 미팅이 이어질 수 있습니다. e모빌리티·UAM·전기선박 등 전시 성과 정리가 한창인 시점입니다.',
+      'lAPS 2026 국제 중·대형(헤비듀티) 동력시스템 관련 정상회의가 상하이에서 3월 31일~4월 1일로 개최된다는 업계 안내가 있습니다. 상용·산업용 파워트레인·제로탄소 동력 전환을 다루며, IAPS와 같은 기간·지역에서 병행되는 행사로 소개되는 경우가 많습니다(일정은 주최 측 공지 확인).',
     'schedule.item3.title':
-      'ArtiAuto Week 2026 - 상하이 행사 종료 후속',
+      'AWS Summit Paris 2026 - 클라우드·AI(파리)',
     'schedule.item3.content':
-      'ArtiAuto Week 2026(3월 26-27일, 상하이)이 막을 내린 뒤 오늘(28일)에는 참가사·전시진·바이어의 귀국·정리 및 OEM·자율주행·전장 업계 간 후속 미팅이 이어지는 것이 일반적입니다. AutoDrive·AutoPEPS 등 27일 세션 이후 후속 논의가 이어질 수 있습니다.',
+      'AWS Summit Paris 2026이 오늘(4월 1일) 프랑스 파리 Palais des Congrès에서 열립니다(무료 등록). 키노트·150여 세션으로 에이전틱 AI·서버리스·클라우드 마이그레이션·디지털 전환 등이 다뤄지며, AWS Village·워크숍·네트워킹이 병행됩니다(aws.amazon.com/events/summits/paris).',
     'schedule.item4.title':
-      'Build with AI / Gemini 글로벌 개발자 행사 (3월 28일)',
+      'OpenEnv AI Hackathon - Meta·Hugging Face·PyTorch (인도)',
     'schedule.item4.content':
-      '구글 개발자 커뮤니티(GDG 등)가 주최하는 Build with AI·Gemini 관련 해커톤·워크숍이 오늘(28일) 전 세계 여러 도시에서 열리는 일정으로 Meetup·Eventbrite 등에 공개되어 있습니다. 예: 싱가포르 “Build with AI: The Gemini Deep Dive”, 뉴욕 “NYC Build With AI Hackathon”, 샌프란시스코 “MeetStream AI x Scalekit Hackathon” 등. 생성형 AI·에이전트·멀티모달 개발에 초점(일반 IT·AI).',
+      'PyTorch 공식 이벤트 캘린더에 따르면, Meta·Hugging Face·PyTorch가 협력하는 OpenEnv AI Hackathon이 오늘(4월 1일) 인도에서 진행되는 일정으로 등록되어 있습니다. 개발자가 AI 애플리케이션을 구축하는 해커톤 성격으로, 일반 IT·AI 분야에 해당합니다(pytorch.org/event-calendar).',
     'schedule.item5.title':
-      '차량용 AI·SDV - 3월 말 업계 후속 논의',
+      '일본 신회계연도(4/1) — 완성차·부품 산업 경영 일정',
     'schedule.item5.content':
-      '3월 중순 미국 산호세에서 열린 NVIDIA GTC 2026(3/16-19)과 유럽·중국의 모빌리티 행사가 잇따른 가운데, 오늘(28일) 전후로 차량용 엣지 AI·디지털 트윈·SDV 스택에 대한 티어1·반도체·OEM 간 후속 PoC·파트너 미팅이 이어지는 시기로 업계 캘린더가 형성되는 경우가 많습니다.',
-    'notice.updateContent20260327': `<strong>2026-03-27</strong> - eBook Series, 일반상식, 오늘의 일정(자동차/IT) 업데이트<br /><br />
-📖 <strong>eBook Series:</strong> 「호텔 문제 해결 및 요청 시 사용하는 실전 영어」 Vol.9 게시. 프런트·객실 문의, 시설 고장·소음, 청소·비품 요청, 체크아웃 연장 등 호텔 투숙 중 문제 해결과 요청에 쓰는 실전 영어 표현 정리.<br /><br />
-📚 <strong>일반상식:</strong> 「베블런 효과(Veblen Effect)」 자료 게시. 가격 상승 시 수요가 늘 수 있는 지위 재화·시벌성 소비, 유한계급론과의 관계 등을 정리.<br /><br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> 3월 28일 행사 기준 정리 - Car IT Symposium 후속(유럽), IEVE 폐막 후속(제주), ArtiAuto Week 후속(상하이), Build with AI·Gemini 글로벌(28일), 차량용 AI·SDV 후속 논의.`,
+      '일본은 4월 1일을 신회계연도 시작일로 삼아, 완성차·부품사의 예산·조달·채용·신입 배치 등 경영 일정이 전환되는 시기입니다. 단일 컨퍼런스는 아니지만, 글로벌 공급망·기술 협력 일정을 잡을 때 자주 겹치는 산업 캘린더 포인트입니다.',
+    'notice.updateContent20260401': `<strong>2026-04-01</strong> - 콘텐츠 업데이트 안내<br /><br />
+📚 <strong>eBook Series:</strong> Vol.10 「쇼핑 시 상담·비교·구매·교환까지 사용하는 실전 영어」 자료 게시<br />
+📊 <strong>경제 상식:</strong> 「가격탄력성(Price Elasticity)」 신규 게시<br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> IAPS 2026(상하이·파워트레인·2일차), lAPS 2026(상하이·헤비듀티·2일차), AWS Summit Paris(클라우드·AI), OpenEnv AI Hackathon(인도·Meta/Hugging Face/PyTorch), 일본 신회계연도에 맞춘 자동차·부품 업계 경영 일정`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -114,29 +114,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'Car IT Symposium 2026 - Post-Event Follow-Up in Europe',
+      'IAPS 2026 - 14th China International Automotive Powertrain Summit',
     'schedule.item1.content':
-      'After Car IT Symposium 2026 closed its two-day program in Ingolstadt, Germany, on March 27, today (March 28) is a typical window for follow-on business meetings, partner discussions, and networking among attending OEMs, Tier 1 suppliers, and software firms. AI, SDV, and connected-car themes continue via official channels and industry updates (it.car-future.com).',
+      'IAPS 2026 (14th China International Automotive Powertrain Summit) runs March 31–April 1 in Shanghai; today (April 1) is day two. The theme centers on zero-carbon propulsion—from tech breakthroughs to system redesign—with sessions on hybrid and electric drives, hydrogen, AI energy management, 800V platforms, SiC, and more. Organizers cite participation from major Chinese and global OEMs and suppliers (bimi-auto.com/IAPS2026).',
     'schedule.item2.title':
-      '13th International e-Mobility Expo (IEVE 2026) - Closing Follow-Up, Jeju',
+      'lAPS 2026 - International Heavy-Duty Powertrain Summit',
     'schedule.item2.content':
-      'IEVE 2026’s official program ran through March 27; today (March 28) often involves dismantling exhibits, equipment move-out, follow-up on awards and B2B deals, and extended meetings with Jeju’s mobility and energy stakeholders. Exhibitors consolidate outcomes across e-mobility, UAM, and electric maritime topics.',
+      'lAPS 2026, focused on commercial and heavy-duty powertrains and zero-carbon transition, is listed for March 31–April 1 in Shanghai alongside IAPS. Today (April 1) continues the second day of programming; confirm tracks and venue on the organizer’s site (industry listings often pair it with IAPS week).',
     'schedule.item3.title':
-      'ArtiAuto Week 2026 - Shanghai Post-Event Follow-Up',
+      'AWS Summit Paris 2026 - Cloud & AI',
     'schedule.item3.content':
-      'Following ArtiAuto Week 2026 (March 26–27, Shanghai), today (March 28) is commonly used for teardown, travel, and follow-on meetings among OEMs, autonomous-driving, and automotive electronics participants. Discussions after AutoDrive and AutoPEPS sessions on March 27 may continue bilaterally.',
+      'AWS Summit Paris 2026 takes place today (April 1) at Palais des Congrès, Paris (complimentary registration). The agenda includes a keynote and 150+ sessions on agentic AI, serverless, cloud migration, and digital transformation, plus workshops, the AWS Village, and networking (aws.amazon.com/events/summits/paris).',
     'schedule.item4.title':
-      'Build with AI / Gemini Global Developer Events (March 28)',
+      'OpenEnv AI Hackathon - Meta, Hugging Face & PyTorch (India)',
     'schedule.item4.content':
-      'Google Developer Groups and related communities list Build with AI and Gemini-focused hackathons and workshops on March 28 in multiple cities (e.g., Meetup and Eventbrite listings): examples include “Build with AI: The Gemini Deep Dive” in Singapore, the “NYC Build With AI Hackathon,” and the “MeetStream AI x Scalekit Hackathon” in San Francisco—focused on generative AI, agents, and multimodal development (general IT/AI).',
+      'Per the PyTorch events calendar, the OpenEnv AI Hackathon—hosted by Meta with Hugging Face and PyTorch—is scheduled for today (April 1) in India, bringing developers together to build AI applications (pytorch.org/event-calendar).',
     'schedule.item5.title':
-      'In-Vehicle AI & SDV - Late-March Industry Follow-Up',
+      'Japan New Fiscal Year (Apr 1) - Automotive Industry Cycle',
     'schedule.item5.content':
-      'After NVIDIA GTC 2026 (March 16–19, San Jose) and concurrent mobility events in Europe and China, late March—including today (March 28)—often sees continued PoCs and partner meetings among Tier 1s, semiconductor vendors, and OEMs on edge AI, digital twins, and SDV software stacks.',
-    'notice.updateContent20260327': `<strong>2026-03-27</strong> – eBook Series, General Knowledge, Today's Schedule (Automotive/IT) updated<br /><br />
-📖 <strong>eBook Series:</strong> "Practical English for Hotel Problem-Solving and Requests" Vol.9 posted. Phrases for front desk and room issues, facility problems and noise, housekeeping and amenities, late checkout, and other in-stay requests.<br /><br />
-📚 <strong>General Knowledge:</strong> "Veblen Effect" article posted—status goods, conspicuous consumption, and Veblen's theory of the leisure class.<br /><br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> March 28 focus—Car IT Symposium follow-up (Europe), IEVE closing follow-up (Jeju), ArtiAuto Week follow-up (Shanghai), Build with AI / Gemini global (Mar 28), in-vehicle AI & SDV follow-on discussions.`,
+      'Japan’s fiscal year begins April 1. Automakers and suppliers typically align budgets, procurement, hiring, and onboarding on this date—a recurring industry milestone for global supply-chain and technology planning, even though it is not a single conference.',
+    'notice.updateContent20260401': `<strong>2026-04-01</strong> – Content update notice<br /><br />
+📚 <strong>eBook Series:</strong> Vol.10 “Practical English for shopping—consultation, comparison, purchase, and exchanges” is now available<br />
+📊 <strong>Economics basics:</strong> New article on “Price Elasticity”<br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> IAPS 2026 (Shanghai, powertrain, day 2), lAPS 2026 (Shanghai, heavy-duty, day 2), AWS Summit Paris (cloud & AI), OpenEnv AI Hackathon (India, Meta / Hugging Face / PyTorch), Japan fiscal-year start for automotive industry planning`,
   },
 };
 

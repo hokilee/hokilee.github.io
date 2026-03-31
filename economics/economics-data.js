@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 122,
+    title: '가격탄력성(Price Elasticity)',
+    link: 'economics/economy-detail-122.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '03-31',
+    views: 0,
+  },
+  {
     id: 121,
     title: '모럴 해저드(Moral Hazard)',
     link: 'economics/economy-detail-121.html',

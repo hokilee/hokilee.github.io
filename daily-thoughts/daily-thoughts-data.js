@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 71,
+    title: '쇼핑 시 상담·비교·구매·교환까지 사용하는 실전 영어-Vol.10',
+    link: 'eBook-data/english_conversation_vol10.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '03-31',
+    views: 0,
+  },
+  {
     id: 70,
     title: '호텔 문제 해결 및 요청 시 사용하는 실전 영어-Vol.9',
     link: 'eBook-data/english_conversation_vol9.pdf',
