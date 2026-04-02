@@ -45,29 +45,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'IAPS 2026 - 제14회 중국국제자동차동력시스템(파워트레인) 정상회의',
+      '2026 뉴욕 국제오토쇼(NYIAS) - 북미 최대급 모터쇼 개막',
     'schedule.item1.content':
-      'IAPS 2026(제14회 중국국제자동차동력시스템 정상회의)가 중국 상하이에서 3월 31일~4월 1일 이틀간 열리며, 오늘(1일)은 둘째 날입니다. 주제는 "제탄소 동력 혁명: 기술 돌파에서 시스템 재구성까지"로, 하이브리드·전기 구동·수소·AI 에너지 관리·800V·SiC 등이 논의됩니다. BYD·지리·장안·CATL·화웨이 디지털 에너지 등 국내외 OEM·부품사가 참가한다고 안내됩니다(bimi-auto.com/IAPS2026).',
+      '공식 사이트(autoshowny.com)에 따르면 2026 뉴욕 국제오토쇼(New York International Auto Show)가 4월 3일~12일 미국 뉴욕 Jacob K. Javits 컨벤션 센터에서 열리며, 오늘(3일)은 공개 일정의 첫날입니다. 700대 이상 전시·신차·컨셉 공개 등으로 글로벌 완성차·전동화·프리미엄 라인업이 한자리에 모입니다. 얼리 액세스·티켓 안내는 주최 공지를 참고하세요.',
     'schedule.item2.title':
-      'lAPS 2026 - 국제 중·대형 동력시스템(헤비듀티) 정상회의',
+      'Georgia Tech Auto Show - 모빌리티 세미나(애틀랜타)',
     'schedule.item2.content':
-      'lAPS 2026 국제 중·대형(헤비듀티) 동력시스템 관련 정상회의가 상하이에서 3월 31일~4월 1일로 개최된다는 업계 안내가 있습니다. 상용·산업용 파워트레인·제로탄소 동력 전환을 다루며, IAPS와 같은 기간·지역에서 병행되는 행사로 소개되는 경우가 많습니다(일정은 주최 측 공지 확인).',
+      '조지아공대(Georgia Tech)가 2026년 자동차 쇼를 이틀 일정으로 확대하면서, 4월 3일(금) Clough 학습공동체에서 모빌리티 세미나를 개최한다고 게이트크 뉴스 등에서 안내했습니다. 대체 에너지·지속가능 모빌리티 디자인, 리비안 디자인 프로세스, Cox Automotive의 AI 시대 인력 등이 다뤄지며 본격 전시는 4일에 이어집니다(autoshow.gatech.edu 등).',
     'schedule.item3.title':
-      'AWS Summit Paris 2026 - 클라우드·AI(파리)',
+      'MCP Dev Summit North America 2026 - 뉴욕(MCP·AI 개발)',
     'schedule.item3.content':
-      'AWS Summit Paris 2026이 오늘(4월 1일) 프랑스 파리 Palais des Congrès에서 열립니다(무료 등록). 키노트·150여 세션으로 에이전틱 AI·서버리스·클라우드 마이그레이션·디지털 전환 등이 다뤄지며, AWS Village·워크숍·네트워킹이 병행됩니다(aws.amazon.com/events/summits/paris).',
+      'Model Context Protocol(MCP) 중심의 MCP Dev Summit North America가 2026년 4월 2~3일 뉴욕에서 열리며, 오늘(3일)은 둘째 날입니다. OpenAI·Docker 등이 키노트에 참여하는 일정으로 공개되어 있어 에이전트·AI 개발 인프라·MCP 모범 사례 등 일반 IT·AI 분야 행사로 분류됩니다(mcpdevsummitna26.sched.com 등).',
     'schedule.item4.title':
-      'OpenEnv AI Hackathon - Meta·Hugging Face·PyTorch (인도)',
+      'Technology & National Security Conference 2026 - 보스턴·케임브리지',
     'schedule.item4.content':
-      'PyTorch 공식 이벤트 캘린더에 따르면, Meta·Hugging Face·PyTorch가 협력하는 OpenEnv AI Hackathon이 오늘(4월 1일) 인도에서 진행되는 일정으로 등록되어 있습니다. 개발자가 AI 애플리케이션을 구축하는 해커톤 성격으로, 일반 IT·AI 분야에 해당합니다(pytorch.org/event-calendar).',
+      'MIT 슬론·하버드 경영대학원 학생 주도의 Technology & National Security Conference 2026이 4월 3일 저녁부터 4일까지 매사추세츠 케임브리지 일대(Kresge Auditorium 등)에서 진행됩니다. 기술·국가안보·정책을 잇는 패널·네트워킹으로, 사이버·첨단 기술 전략에 관심 있는 IT·방산·학계 인사가 모이는 행사로 소개됩니다(technatsec.com).',
     'schedule.item5.title':
-      '일본 신회계연도(4/1) — 완성차·부품 산업 경영 일정',
+      'Stanford SERI 심포지엄 2026 - 신흥기술·존재적 위험(AI 등)',
     'schedule.item5.content':
-      '일본은 4월 1일을 신회계연도 시작일로 삼아, 완성차·부품사의 예산·조달·채용·신입 배치 등 경영 일정이 전환되는 시기입니다. 단일 컨퍼런스는 아니지만, 글로벌 공급망·기술 협력 일정을 잡을 때 자주 겹치는 산업 캘린더 포인트입니다.',
-    'notice.updateContent20260330': `<strong>2026-03-30</strong> - 콘텐츠 업데이트 안내<br /><br />
-📚 <strong>eBook Series:</strong> Vol.10 「쇼핑 시 상담·비교·구매·교환까지 사용하는 실전 영어」 자료 게시<br />
-📊 <strong>경제 상식:</strong> 「가격탄력성(Price Elasticity)」 신규 게시<br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> IAPS 2026(상하이·파워트레인·2일차), lAPS 2026(상하이·헤비듀티·2일차), AWS Summit Paris(클라우드·AI), OpenEnv AI Hackathon(인도·Meta/Hugging Face/PyTorch), 일본 신회계연도에 맞춘 자동차·부품 업계 경영 일정`,
+      '스탠퍼드 존재위험 이니셔티브(SERI) 심포지엄 “Emerging Technologies and Existential Risk”가 2026년 4월 3일(금) 태평양 표준시 9:00~18:00 스탠퍼드 Bechtel 컨퍼런스 센터에서 열립니다. 인공지능·기후·생보안·핵 등 거시적 리스크와 거버넌스를 논의하는 학제간 행사로, IT·AI 거버넌스 관점에서도 참고할 만한 일정입니다(cisac.fsi.stanford.edu 이벤트 안내).',
+    'notice.updateContent20260402': `<strong>2026-04-02</strong> - 콘텐츠 업데이트 안내<br /><br />
+📚 <strong>eBook Series:</strong> Vol.11 「전화로 예약·문의·응대하는 실전 영어」 자료 게시<br />
+📖 <strong>일반상식:</strong> 「스놉 효과(Snob Effect)」 신규 게시<br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> NYIAS 개막(뉴욕), Georgia Tech 모빌리티 세미나(애틀랜타), MCP Dev Summit North America 2일차(뉴욕), TechNatSec 2026(케임브리지), Stanford SERI 심포지엄(스탠퍼드·AI·신흥기술 리스크)`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -114,29 +114,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'IAPS 2026 - 14th China International Automotive Powertrain Summit',
+      '2026 New York International Auto Show (NYIAS) - Opening Day',
     'schedule.item1.content':
-      'IAPS 2026 (14th China International Automotive Powertrain Summit) runs March 31–April 1 in Shanghai; today (April 1) is day two. The theme centers on zero-carbon propulsion—from tech breakthroughs to system redesign—with sessions on hybrid and electric drives, hydrogen, AI energy management, 800V platforms, SiC, and more. Organizers cite participation from major Chinese and global OEMs and suppliers (bimi-auto.com/IAPS2026).',
+      'Per the official New York International Auto Show site (autoshowny.com), the 2026 show runs April 3–12 at the Jacob K. Javits Convention Center in New York City; today (April 3) is the first public day of the run. The event showcases 700+ vehicles, debuts, and experiences spanning mainstream and luxury brands—one of North America’s largest auto shows.',
     'schedule.item2.title':
-      'lAPS 2026 - International Heavy-Duty Powertrain Summit',
+      'Georgia Tech Auto Show - Mobility Seminar (Atlanta)',
     'schedule.item2.content':
-      'lAPS 2026, focused on commercial and heavy-duty powertrains and zero-carbon transition, is listed for March 31–April 1 in Shanghai alongside IAPS. Today (April 1) continues the second day of programming; confirm tracks and venue on the organizer’s site (industry listings often pair it with IAPS week).',
+      'Georgia Tech is holding a Mobility Seminar on Friday, April 3, 2026 (Clough Commons) as part of an expanded two-day Auto Show program, with sessions on sustainable mobility, Rivian’s design process, and AI-era workforce topics at Cox Automotive, per Georgia Tech news; the main campus show continues April 4 (autoshow.gatech.edu).',
     'schedule.item3.title':
-      'AWS Summit Paris 2026 - Cloud & AI',
+      'MCP Dev Summit North America 2026 - New York (MCP & AI)',
     'schedule.item3.content':
-      'AWS Summit Paris 2026 takes place today (April 1) at Palais des Congrès, Paris (complimentary registration). The agenda includes a keynote and 150+ sessions on agentic AI, serverless, cloud migration, and digital transformation, plus workshops, the AWS Village, and networking (aws.amazon.com/events/summits/paris).',
+      'MCP Dev Summit North America runs April 2–3, 2026 in New York; April 3 is day two. Published schedules feature keynotes on the Model Context Protocol, agent infrastructure, and AI tooling with speakers from OpenAI, Docker, and others—positioned as a developer-focused IT/AI event (mcpdevsummitna26.sched.com).',
     'schedule.item4.title':
-      'OpenEnv AI Hackathon - Meta, Hugging Face & PyTorch (India)',
+      'Technology & National Security Conference 2026 - Cambridge, MA',
     'schedule.item4.content':
-      'Per the PyTorch events calendar, the OpenEnv AI Hackathon—hosted by Meta with Hugging Face and PyTorch—is scheduled for today (April 1) in India, bringing developers together to build AI applications (pytorch.org/event-calendar).',
+      'The student-led Technology & National Security Conference 2026 spans Friday evening, April 3, through Saturday, April 4, around MIT’s Kresge Auditorium and related venues in Cambridge, Massachusetts. It brings together 1,200+ attendees on tech, security, and policy with panels and networking (technatsec.com).',
     'schedule.item5.title':
-      'Japan New Fiscal Year (Apr 1) - Automotive Industry Cycle',
+      'Stanford SERI Symposium 2026 - Emerging Tech & Existential Risk (AI)',
     'schedule.item5.content':
-      'Japan’s fiscal year begins April 1. Automakers and suppliers typically align budgets, procurement, hiring, and onboarding on this date—a recurring industry milestone for global supply-chain and technology planning, even though it is not a single conference.',
-    'notice.updateContent20260330': `<strong>2026-03-30</strong> – Content update notice<br /><br />
-📚 <strong>eBook Series:</strong> Vol.10 “Practical English for shopping—consultation, comparison, purchase, and exchanges” is now available<br />
-📊 <strong>Economics basics:</strong> New article on “Price Elasticity”<br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> IAPS 2026 (Shanghai, powertrain, day 2), lAPS 2026 (Shanghai, heavy-duty, day 2), AWS Summit Paris (cloud & AI), OpenEnv AI Hackathon (India, Meta / Hugging Face / PyTorch), Japan fiscal-year start for automotive industry planning`,
+      'The Stanford Existential Risks Initiative (SERI) symposium “Emerging Technologies and Existential Risk” is set for Friday, April 3, 2026, 9:00 AM–6:00 PM Pacific at Stanford’s Bechtel Conference Center. Discussions cover AI, climate, biosecurity, and nuclear risk—relevant for IT and AI governance audiences (Stanford CISAC event listings).',
+    'notice.updateContent20260402': `<strong>2026-04-02</strong> – Content update notice<br /><br />
+📚 <strong>eBook Series:</strong> Vol.11 “Practical English for phone reservations, inquiries, and responses” is now available<br />
+📖 <strong>General knowledge:</strong> New article on the “Snob Effect”<br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> NYIAS opens (NYC), Georgia Tech Mobility Seminar (Atlanta), MCP Dev Summit North America day 2 (NYC), TechNatSec 2026 (Cambridge, MA), Stanford SERI symposium (Stanford, AI & emerging-tech risk)`,
   },
 };
 

@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 72,
+    title: '전화로 예약·문의·응대하는 실전 영어-Vol.11',
+    link: 'eBook-data/english_conversation_vol11.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '04-02',
+    views: 0,
+  },
+  {
     id: 71,
     title: '쇼핑 시 상담·비교·구매·교환까지 사용하는 실전 영어-Vol.10',
     link: 'eBook-data/english_conversation_vol10.pdf',
