@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 73,
+    title: '피그말리온 효과(Pygmalion Effect)',
+    link: 'science/science-detail-73.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '04-10',
+    views: 0,
+  },
+  {
     id: 72,
     title: '스놉 효과(Snob Effect)',
     link: 'science/science-detail-72.html',

@@ -45,29 +45,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      '2026 뉴욕 국제오토쇼(NYIAS) - 북미 최대급 모터쇼 개막',
+      'NYIAS Mobility Grid Summit 2026 - 자율주행·전동화·공급망(뉴욕)',
     'schedule.item1.content':
-      '공식 사이트(autoshowny.com)에 따르면 2026 뉴욕 국제오토쇼(New York International Auto Show)가 4월 3일~12일 미국 뉴욕 Jacob K. Javits 컨벤션 센터에서 열리며, 오늘(3일)은 공개 일정의 첫날입니다. 700대 이상 전시·신차·컨셉 공개 등으로 글로벌 완성차·전동화·프리미엄 라인업이 한자리에 모입니다. 얼리 액세스·티켓 안내는 주최 공지를 참고하세요.',
+      '뉴욕 국제오토쇼(NYIAS)와 연계된 산업 행사인 Mobility Grid Summit이 2026년 4월 10일(금)~11일(토) 미국 뉴욕 Javits Center에서 열리는 일정으로 등록되어 있습니다(Eventbrite·Happening Next 등). AI·자율주행(L4/5) 규제·안전, BESS·V2G를 통한 EV 에너지 모델, 전동화 차량용 핵심 광물·반도체 공급망 회복력 등을 다루는 B2B 성격의 모빌리티 서밋으로, 완성차·부품·에너지 업계와 맞닿는 주제입니다.',
     'schedule.item2.title':
-      'Georgia Tech Auto Show - 모빌리티 세미나(애틀랜타)',
+      '2026 뉴욕 국제오토쇼(NYIAS) - 개최 중(자비츠)',
     'schedule.item2.content':
-      '조지아공대(Georgia Tech)가 2026년 자동차 쇼를 이틀 일정으로 확대하면서, 4월 3일(금) Clough 학습공동체에서 모빌리티 세미나를 개최한다고 게이트크 뉴스 등에서 안내했습니다. 대체 에너지·지속가능 모빌리티 디자인, 리비안 디자인 프로세스, Cox Automotive의 AI 시대 인력 등이 다뤄지며 본격 전시는 4일에 이어집니다(autoshow.gatech.edu 등).',
+      '공식 일정(autoshowny.com)상 2026 NYIAS는 4월 3일~12일 동일 장소에서 진행되며, 오늘(10일)은 그중간 일정입니다. 글로벌 브랜드 전시·시승·EV 트랙 등 대규모 모터쇼로, 자동차 산업 일반 동향을 한눈에 보기에 적합한 날입니다. 티켓·시간대는 주최 안내를 확인하세요.',
     'schedule.item3.title':
-      'MCP Dev Summit North America 2026 - 뉴욕(MCP·AI 개발)',
+      'Enterprise AI Summit 2026 - 엔터프라이즈 AI·에이전틱 SW',
     'schedule.item3.content':
-      'Model Context Protocol(MCP) 중심의 MCP Dev Summit North America가 2026년 4월 2~3일 뉴욕에서 열리며, 오늘(3일)은 둘째 날입니다. OpenAI·Docker 등이 키노트에 참여하는 일정으로 공개되어 있어 에이전트·AI 개발 인프라·MCP 모범 사례 등 일반 IT·AI 분야 행사로 분류됩니다(mcpdevsummitna26.sched.com 등).',
+      'IT Revolution이 주최하는 Enterprise AI Summit이 2026년 4월 9~10일(태평양시간) 온라인 중심으로 열리며, 오늘(10일)은 둘째 날입니다. AI 네이티브 조직, 토큰 효율, 엔터프라이즈 에이전트 운영 등 소프트웨어·IT 조직이 관심 갖는 주제가 sched에 공개되어 있습니다(itrevolution.com, enterpriseaisummit2026.sched.com).',
     'schedule.item4.title':
-      'Technology & National Security Conference 2026 - 보스턴·케임브리지',
+      'AWS Community Day 2026 Security Edition - 베이 에리어',
     'schedule.item4.content':
-      'MIT 슬론·하버드 경영대학원 학생 주도의 Technology & National Security Conference 2026이 4월 3일 저녁부터 4일까지 매사추세츠 케임브리지 일대(Kresge Auditorium 등)에서 진행됩니다. 기술·국가안보·정책을 잇는 패널·네트워킹으로, 사이버·첨단 기술 전략에 관심 있는 IT·방산·학계 인사가 모이는 행사로 소개됩니다(technatsec.com).',
+      'Amazon Web Services(AWS) 커뮤니티 행사인 AWS Community Day “Security Edition”이 2026년 4월 10일 미국 캘리포니아 마운틴뷰 Computer History Museum에서 개최됩니다(aws-cscd.com). 생성형·에이전틱 AI 워크로드 보안, Amazon Bedrock·보안 에이전트, MCP 보안 등 클라우드·AI 보안 실무가 초점이며 AWS 및 파트너·커뮤니티 연사가 참여합니다.',
     'schedule.item5.title':
-      'Stanford SERI 심포지엄 2026 - 신흥기술·존재적 위험(AI 등)',
+      'Bangalore Tech Symposium 2026 - Dell·AMD(벵갈루루)',
     'schedule.item5.content':
-      '스탠퍼드 존재위험 이니셔티브(SERI) 심포지엄 “Emerging Technologies and Existential Risk”가 2026년 4월 3일(금) 태평양 표준시 9:00~18:00 스탠퍼드 Bechtel 컨퍼런스 센터에서 열립니다. 인공지능·기후·생보안·핵 등 거시적 리스크와 거버넌스를 논의하는 학제간 행사로, IT·AI 거버넌스 관점에서도 참고할 만한 일정입니다(cisac.fsi.stanford.edu 이벤트 안내).',
-    'notice.updateContent20260402': `<strong>2026-04-02</strong> - 콘텐츠 업데이트 안내<br /><br />
-📚 <strong>eBook Series:</strong> Vol.11 「전화로 예약·문의·응대하는 실전 영어」 자료 게시<br />
-📖 <strong>일반상식:</strong> 「스놉 효과(Snob Effect)」 신규 게시<br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> NYIAS 개막(뉴욕), Georgia Tech 모빌리티 세미나(애틀랜타), MCP Dev Summit North America 2일차(뉴욕), TechNatSec 2026(케임브리지), Stanford SERI 심포지엄(스탠퍼드·AI·신흥기술 리스크)`,
+      '인도 벵갈루루에서 2026년 4월 10일 저녁 시간대(현지)로 예정된 Bangalore Tech Symposium은 The Builders Club 주최로 Dell·AMD가 함께하는 일정으로 소개됩니다(Happening Next 등). AI와 미래 업무환경, AI 퍼스트 워크플레이스 인프라, GCC(글로벌 역량 센터) 관점의 AI 등 IT 기업·엔지니어링 리더 대상 주제로 알려져 있습니다.',
+    'notice.updateContent20260410': `<strong>2026-04-10</strong> - 콘텐츠 업데이트 안내<br /><br />
+📚 <strong>eBook Series:</strong> Vol.12 「자연스럽게 대화를 이어가는 실전 영어」 자료 게시<br />
+📖 <strong>일반상식:</strong> 「피그말리온 효과(Pygmalion Effect)」 신규 게시<br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> NYIAS Mobility Grid Summit(뉴욕·자율주행·전동화), NYIAS 전시 진행 중(뉴욕), Enterprise AI Summit 2일차(IT·에이전틱 AI), AWS Community Day Security(마운틴뷰·AWS), Bangalore Tech Symposium(벵갈루루·Dell/AMD)`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -114,29 +114,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      '2026 New York International Auto Show (NYIAS) - Opening Day',
+      'NYIAS Mobility Grid Summit 2026 - AV, Electrification & Supply Chain (NYC)',
     'schedule.item1.content':
-      'Per the official New York International Auto Show site (autoshowny.com), the 2026 show runs April 3–12 at the Jacob K. Javits Convention Center in New York City; today (April 3) is the first public day of the run. The event showcases 700+ vehicles, debuts, and experiences spanning mainstream and luxury brands—one of North America’s largest auto shows.',
+      'The Mobility Grid Summit tied to the New York International Auto Show is listed for April 10–11, 2026 at the Javits Center in New York (Eventbrite, Happening Next, etc.). Programming highlights include AI and autonomous driving (L4/L5) regulation and safety, battery energy storage and V2G economics, and supply-chain resilience for critical minerals and semiconductors—an industry-facing mobility summit aligned with OEM and energy stakeholders.',
     'schedule.item2.title':
-      'Georgia Tech Auto Show - Mobility Seminar (Atlanta)',
+      '2026 New York International Auto Show (NYIAS) - In Progress',
     'schedule.item2.content':
-      'Georgia Tech is holding a Mobility Seminar on Friday, April 3, 2026 (Clough Commons) as part of an expanded two-day Auto Show program, with sessions on sustainable mobility, Rivian’s design process, and AI-era workforce topics at Cox Automotive, per Georgia Tech news; the main campus show continues April 4 (autoshow.gatech.edu).',
+      'Per autoshowny.com, the 2026 NYIAS runs April 3–12 at the Javits Center; today (April 10) falls during the public show. Expect large-scale brand displays, ride experiences, and EV-focused attractions—useful for tracking mainstream automotive news from global manufacturers.',
     'schedule.item3.title':
-      'MCP Dev Summit North America 2026 - New York (MCP & AI)',
+      'Enterprise AI Summit 2026 - Enterprise AI & Agentic Software',
     'schedule.item3.content':
-      'MCP Dev Summit North America runs April 2–3, 2026 in New York; April 3 is day two. Published schedules feature keynotes on the Model Context Protocol, agent infrastructure, and AI tooling with speakers from OpenAI, Docker, and others—positioned as a developer-focused IT/AI event (mcpdevsummitna26.sched.com).',
+      'IT Revolution’s Enterprise AI Summit is scheduled April 9–10, 2026 (Pacific); April 10 is the second day. Published agendas cover AI-native engineering organizations, token efficiency, and enterprise agent adoption (itrevolution.com, enterpriseaisummit2026.sched.com)—aimed at software and IT leadership.',
     'schedule.item4.title':
-      'Technology & National Security Conference 2026 - Cambridge, MA',
+      'AWS Community Day 2026 Security Edition - Bay Area',
     'schedule.item4.content':
-      'The student-led Technology & National Security Conference 2026 spans Friday evening, April 3, through Saturday, April 4, around MIT’s Kresge Auditorium and related venues in Cambridge, Massachusetts. It brings together 1,200+ attendees on tech, security, and policy with panels and networking (technatsec.com).',
+      'AWS Community Day “Security Edition” is set for April 10, 2026 at the Computer History Museum in Mountain View, California (aws-cscd.com). Sessions focus on securing generative and agentic AI on AWS (e.g., Amazon Bedrock, security agents, MCP threat models) with keynotes and workshops led by AWS and community experts.',
     'schedule.item5.title':
-      'Stanford SERI Symposium 2026 - Emerging Tech & Existential Risk (AI)',
+      'Bangalore Tech Symposium 2026 - Dell & AMD (Bengaluru)',
     'schedule.item5.content':
-      'The Stanford Existential Risks Initiative (SERI) symposium “Emerging Technologies and Existential Risk” is set for Friday, April 3, 2026, 9:00 AM–6:00 PM Pacific at Stanford’s Bechtel Conference Center. Discussions cover AI, climate, biosecurity, and nuclear risk—relevant for IT and AI governance audiences (Stanford CISAC event listings).',
-    'notice.updateContent20260402': `<strong>2026-04-02</strong> – Content update notice<br /><br />
-📚 <strong>eBook Series:</strong> Vol.11 “Practical English for phone reservations, inquiries, and responses” is now available<br />
-📖 <strong>General knowledge:</strong> New article on the “Snob Effect”<br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> NYIAS opens (NYC), Georgia Tech Mobility Seminar (Atlanta), MCP Dev Summit North America day 2 (NYC), TechNatSec 2026 (Cambridge, MA), Stanford SERI symposium (Stanford, AI & emerging-tech risk)`,
+      'The Bangalore Tech Symposium on April 10, 2026 in Bengaluru, India is promoted as an evening program with Dell and AMD (Happening Next, etc.), covering AI’s impact on the future of work, AI-first workplace infrastructure, and GCC-oriented AI strategy—targeting CTOs, engineering leaders, and founders.',
+    'notice.updateContent20260410': `<strong>2026-04-10</strong> – Content update notice<br /><br />
+📚 <strong>eBook Series:</strong> Vol.12 “Practical English for keeping the conversation going naturally” is now available<br />
+📖 <strong>General knowledge:</strong> New article on the “Pygmalion Effect”<br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> NYIAS Mobility Grid Summit (NYC, AV & electrification), NYIAS show in progress (NYC), Enterprise AI Summit day 2 (enterprise AI), AWS Community Day Security (Mountain View, AWS), Bangalore Tech Symposium (Bengaluru, Dell / AMD)`,
   },
 };
 

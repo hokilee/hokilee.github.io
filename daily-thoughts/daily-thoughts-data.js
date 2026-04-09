@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 73,
+    title: '자연스럽게 대화를 이어가는 실전 영어-Vol.12',
+    link: 'eBook-data/english_conversation_vol12.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '04-09',
+    views: 0,
+  },
+  {
     id: 72,
     title: '전화로 예약·문의·응대하는 실전 영어-Vol.11',
     link: 'eBook-data/english_conversation_vol11.pdf',
