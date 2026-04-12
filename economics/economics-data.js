@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 123,
+    title: '슬링크플레이션(Shrinkflation)',
+    link: 'economics/economy-detail-123.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '04-13',
+    views: 0,
+  },
+  {
     id: 122,
     title: '가격탄력성(Price Elasticity)',
     link: 'economics/economy-detail-122.html',

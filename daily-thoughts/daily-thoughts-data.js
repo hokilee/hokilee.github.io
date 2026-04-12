@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 74,
+    title: '업무 상황에서 사용하는 실무 영어 (보고·요청·협업)-Vol.13',
+    link: 'eBook-data/english_conversation_vol13.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '04-013',
+    views: 0,
+  },
+  {
     id: 73,
     title: '자연스럽게 대화를 이어가는 실전 영어-Vol.12',
     link: 'eBook-data/english_conversation_vol12.pdf',

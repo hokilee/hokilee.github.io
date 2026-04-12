@@ -45,29 +45,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'NYIAS Mobility Grid Summit 2026 - 자율주행·전동화·공급망(뉴욕)',
+      'EcoCAR Innovation Challenge Launch Workshop - 3일차(디트로이트·GM·스텔란티스)',
     'schedule.item1.content':
-      '뉴욕 국제오토쇼(NYIAS)와 연계된 산업 행사인 Mobility Grid Summit이 2026년 4월 10일(금)~11일(토) 미국 뉴욕 Javits Center에서 열리는 일정으로 등록되어 있습니다(Eventbrite·Happening Next 등). AI·자율주행(L4/5) 규제·안전, BESS·V2G를 통한 EV 에너지 모델, 전동화 차량용 핵심 광물·반도체 공급망 회복력 등을 다루는 B2B 성격의 모빌리티 서밋으로, 완성차·부품·에너지 업계와 맞닿는 주제입니다.',
+      '미국 에너지부·GM 등이 후원하는 대학 대상 AVTC 시리즈의 일환인 EcoCAR Innovation Challenge Launch Workshop이 2026년 4월 11일(토)~13일(월)로 예정되어 있으며, 13일(월)은 마지막 날입니다. 공개 일정표(Sched, eiclw.sched.com)에 따르면 미시간주 디트로이트 일대(MotorCity Casino Hotel·컨퍼런스 센터·The Yard at Corktown 등)에서 등록·시설 안내, 스폰서 프리뷰, 미디어 이벤트, 팀 사진, 점심 후 <strong>General Motors·Stellantis 차량 개요(Vehicle Overview)</strong> 세션이 잡혀 있습니다. 대학 팀·스폰서·언론이 함께하는 자동차·전동화 경진대회 준비 행사 성격입니다.',
     'schedule.item2.title':
-      '2026 뉴욕 국제오토쇼(NYIAS) - 개최 중(자비츠)',
+      '로터스 테크놀로지(Lotus Technology, LOT) - 분기 실적 발표(미 증시 일정)',
     'schedule.item2.content':
-      '공식 일정(autoshowny.com)상 2026 NYIAS는 4월 3일~12일 동일 장소에서 진행되며, 오늘(10일)은 그중간 일정입니다. 글로벌 브랜드 전시·시승·EV 트랙 등 대규모 모터쇼로, 자동차 산업 일반 동향을 한눈에 보기에 적합한 날입니다. 티켓·시간대는 주최 안내를 확인하세요.',
+      '전기차·스마트 모빌리티에 주력하는 로터스 테크놀로지가 <strong>2025년 4분기(Q4 2025)</strong> 실적을 <strong>2026년 4월 13일(현지 월요일) 장 시작 전</strong>에 공시한다고 여러 <strong>증권 실적 캘린더</strong>(예: MarketBeat 등)에 등재되어 있습니다. 컨센서스 추정치·매출 규모는 캘린더마다 다를 수 있으니, IR 공지와 정정 공시를 함께 확인하는 것이 좋습니다. 글로벌 EV·프리미엄 브랜드 실적 흐름을 보는 참고 일정입니다.',
     'schedule.item3.title':
-      'Enterprise AI Summit 2026 - 엔터프라이즈 AI·에이전틱 SW',
+      'Sify Technologies(SIFY) - FY 2025-26 실적·컨퍼런스 콜(인도 IT·디지털 인프라)',
     'schedule.item3.content':
-      'IT Revolution이 주최하는 Enterprise AI Summit이 2026년 4월 9~10일(태평양시간) 온라인 중심으로 열리며, 오늘(10일)은 둘째 날입니다. AI 네이티브 조직, 토큰 효율, 엔터프라이즈 에이전트 운영 등 소프트웨어·IT 조직이 관심 갖는 주제가 sched에 공개되어 있습니다(itrevolution.com, enterpriseaisummit2026.sched.com).',
+      '인도의 디지털 ICT·데이터센터·네트워크 서비스 기업 Sify Technologies가 <strong>2026년 3월 31일로 종료된 회계연도 FY 2025-26</strong>의 비감사 IFRS 재무제표를 <strong>2026년 4월 13일(월) 미국 장 개시 전</strong>에 발표한다고 GlobeNewswire·IT News Online 등이 보도했습니다. 이어 <strong>미 동부 8:30</strong>에 Raju Vegesna 의장, M P Vijay Kumar 그룹 CFO 등이 참여하는 <strong>실적 설명 컨퍼런스 콜</strong>이 예정되어 있으며, 다이얼인·웹캐스트는 회사 IR 페이지 안내를 따릅니다.',
     'schedule.item4.title':
-      'AWS Community Day 2026 Security Edition - 베이 에리어',
+      'AstroNova(ALOT) - 4분기·FY2026 실적 공시(산업용 라벨·프린팅 기술)',
     'schedule.item4.content':
-      'Amazon Web Services(AWS) 커뮤니티 행사인 AWS Community Day “Security Edition”이 2026년 4월 10일 미국 캘리포니아 마운틴뷰 Computer History Museum에서 개최됩니다(aws-cscd.com). 생성형·에이전틱 AI 워크로드 보안, Amazon Bedrock·보안 에이전트, MCP 보안 등 클라우드·AI 보안 실무가 초점이며 AWS 및 파트너·커뮤니티 연사가 참여합니다.',
+      '항공우주·포장·제품 식별용 하드웨어·소프트웨어를 다루는 AstroNova가 <strong>2026 회계연도 4분기 및 전체 연간</strong> 실적을 <strong>2026년 4월 13일(월) 미국 장 마감 후</strong>에 공개한다고 BusinessWire·Nasdaq 등이 전했습니다. 이어진 실적 설명은 <strong>4월 14일(화) 미 동부 8:30</strong> 웹캐스트·전화로 진행됩니다. 제조·유통 라인의 라벨·인쇄 자동화와 맞닿는 B2B IT·장비 이슈로 볼 수 있습니다.',
     'schedule.item5.title':
-      'Bangalore Tech Symposium 2026 - Dell·AMD(벵갈루루)',
+      'Fastenal(FAST) - 2026년 1분기 실적·컨퍼런스 콜(산업 MRO·제조 공급망)',
     'schedule.item5.content':
-      '인도 벵갈루루에서 2026년 4월 10일 저녁 시간대(현지)로 예정된 Bangalore Tech Symposium은 The Builders Club 주최로 Dell·AMD가 함께하는 일정으로 소개됩니다(Happening Next 등). AI와 미래 업무환경, AI 퍼스트 워크플레이스 인프라, GCC(글로벌 역량 센터) 관점의 AI 등 IT 기업·엔지니어링 리더 대상 주제로 알려져 있습니다.',
-    'notice.updateContent20260410': `<strong>2026-04-10</strong> - 콘텐츠 업데이트 안내<br /><br />
-📚 <strong>eBook Series:</strong> Vol.12 「자연스럽게 대화를 이어가는 실전 영어」 자료 게시<br />
-📖 <strong>일반상식:</strong> 「피그말리온 효과(Pygmalion Effect)」 신규 게시<br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> NYIAS Mobility Grid Summit(뉴욕·자율주행·전동화), NYIAS 전시 진행 중(뉴욕), Enterprise AI Summit 2일차(IT·에이전틱 AI), AWS Community Day Security(마운틴뷰·AWS), Bangalore Tech Symposium(벵갈루루·Dell/AMD)`,
+      '볼트·안전장비부터 공장 소모품까지 취급하는 산업용 유통 기업 Fastenal이 <strong>2026년 1분기</strong> 실적을 다루는 <strong>컨퍼런스 콜을 2026년 4월 13일(월) 미 중부 9:00</strong>에 연다고 Stock Titan 등이 정리했으며, 당일 <strong>미 중부 6:00</strong>에 프레젠테이션 자료가 공개된다는 안내도 있습니다. 완성차·부품사 공장의 MRO(간접자재) 수요와 맞닿아 <strong>자동차 제조 공급망</strong> 뉴스와 함께 읽히는 일정입니다.',
+    'notice.updateContent20260414': `<strong>2026-04-14</strong> - 콘텐츠 업데이트 안내<br /><br />
+📚 <strong>eBook Series:</strong> Vol.13 「업무 상황에서 사용하는 실무 영어 (보고·요청·협업)」 자료 게시<br />
+📖 <strong>경제 상식:</strong> 게시판 최신 글로 갱신(예: 슬링크플레이션)<br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> 2026년 4월 13일 기준 자동차·IT 뉴스·실적 일정으로 본문 갱신`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -114,29 +114,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'NYIAS Mobility Grid Summit 2026 - AV, Electrification & Supply Chain (NYC)',
+      'EcoCAR Innovation Challenge Launch Workshop - Day 3 (Detroit, GM & Stellantis)',
     'schedule.item1.content':
-      'The Mobility Grid Summit tied to the New York International Auto Show is listed for April 10–11, 2026 at the Javits Center in New York (Eventbrite, Happening Next, etc.). Programming highlights include AI and autonomous driving (L4/L5) regulation and safety, battery energy storage and V2G economics, and supply-chain resilience for critical minerals and semiconductors—an industry-facing mobility summit aligned with OEM and energy stakeholders.',
+      'The EcoCAR Innovation Challenge Launch Workshop, part of the U.S. DOE– and GM-backed AVTC collegiate series, runs April 11–13, 2026; <strong>Monday, April 13 is the final day</strong>. The published agenda (Sched, eiclw.sched.com) lists sessions in the Detroit area (MotorCity Casino Hotel, conference center, The Yard at Corktown, etc.): check-in, safety and facility briefings, sponsor previews, a media event, team photos, lunch, then <strong>Vehicle Overview sessions for General Motors and Stellantis</strong>. It is a kickoff-style workshop for university teams, sponsors, and press ahead of the competition cycle.',
     'schedule.item2.title':
-      '2026 New York International Auto Show (NYIAS) - In Progress',
+      'Lotus Technology (LOT) - Quarterly earnings (U.S. listing calendar)',
     'schedule.item2.content':
-      'Per autoshowny.com, the 2026 NYIAS runs April 3–12 at the Javits Center; today (April 10) falls during the public show. Expect large-scale brand displays, ride experiences, and EV-focused attractions—useful for tracking mainstream automotive news from global manufacturers.',
+      'Lotus Technology, focused on EVs and smart mobility, is listed on several <strong>U.S. earnings calendars</strong> (e.g., MarketBeat) for <strong>Q4 2025</strong> results on <strong>Monday, April 13, 2026, before the market open</strong>. Consensus EPS/revenue lines differ by data vendor, so cross-check the company’s IR page and any amended notices. Useful as a reference point for global premium EV earnings flow.',
     'schedule.item3.title':
-      'Enterprise AI Summit 2026 - Enterprise AI & Agentic Software',
+      'Sify Technologies (SIFY) - FY 2025-26 results & call (India IT / digital infra)',
     'schedule.item3.content':
-      'IT Revolution’s Enterprise AI Summit is scheduled April 9–10, 2026 (Pacific); April 10 is the second day. Published agendas cover AI-native engineering organizations, token efficiency, and enterprise agent adoption (itrevolution.com, enterpriseaisummit2026.sched.com)—aimed at software and IT leadership.',
+      'Sify Technologies, an Indian digital ICT, data-center, and network services provider, will publish <strong>unaudited IFRS results for the fiscal year ended March 31, 2026</strong> on <strong>Monday, April 13, 2026, before the U.S. market open</strong>, per GlobeNewswire and IT News Online. A <strong>conference call at 8:30 a.m. ET</strong> is scheduled with Chairman Raju Vegesna and Group CFO M P Vijay Kumar; dial-in and webcast details are on the investor relations site.',
     'schedule.item4.title':
-      'AWS Community Day 2026 Security Edition - Bay Area',
+      'AstroNova (ALOT) - Q4 & FY2026 results (industrial labeling & printing tech)',
     'schedule.item4.content':
-      'AWS Community Day “Security Edition” is set for April 10, 2026 at the Computer History Museum in Mountain View, California (aws-cscd.com). Sessions focus on securing generative and agentic AI on AWS (e.g., Amazon Bedrock, security agents, MCP threat models) with keynotes and workshops led by AWS and community experts.',
+      'AstroNova, which supplies hardware and software for aerospace, packaging, and product identification, will release <strong>fourth quarter and full fiscal year 2026</strong> results <strong>after the U.S. market close on Monday, April 13, 2026</strong>, according to BusinessWire and Nasdaq. A follow-up <strong>earnings call is set for Tuesday, April 14, 2026, at 8:30 a.m. ET</strong> (webcast/phone as announced). Relevant as B2B tech for manufacturing and supply-chain labeling automation.',
     'schedule.item5.title':
-      'Bangalore Tech Symposium 2026 - Dell & AMD (Bengaluru)',
+      'Fastenal (FAST) - Q1 2026 earnings call (industrial MRO & manufacturing supply)',
     'schedule.item5.content':
-      'The Bangalore Tech Symposium on April 10, 2026 in Bengaluru, India is promoted as an evening program with Dell and AMD (Happening Next, etc.), covering AI’s impact on the future of work, AI-first workplace infrastructure, and GCC-oriented AI strategy—targeting CTOs, engineering leaders, and founders.',
-    'notice.updateContent20260410': `<strong>2026-04-10</strong> – Content update notice<br /><br />
-📚 <strong>eBook Series:</strong> Vol.12 “Practical English for keeping the conversation going naturally” is now available<br />
-📖 <strong>General knowledge:</strong> New article on the “Pygmalion Effect”<br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> NYIAS Mobility Grid Summit (NYC, AV & electrification), NYIAS show in progress (NYC), Enterprise AI Summit day 2 (enterprise AI), AWS Community Day Security (Mountain View, AWS), Bangalore Tech Symposium (Bengaluru, Dell / AMD)`,
+      'Fastenal, a major industrial distributor (fasteners, safety, plant supplies), is scheduled to hold its <strong>Q1 2026 conference call on Monday, April 13, 2026, at 9:00 a.m. CT</strong>, with a same-day <strong>6:00 a.m. CT</strong> presentation posting, per summaries on Stock Titan and similar outlets. Demand for factory MRO ties closely to <strong>automotive and tier-plant supply chains</strong>, so the call is often read alongside industrial production news.',
+    'notice.updateContent20260414': `<strong>2026-04-14</strong> – Content update notice<br /><br />
+📚 <strong>eBook Series:</strong> Vol.13 “Workplace English for reporting, requests & collaboration” is now available<br />
+📖 <strong>Economics:</strong> Board refreshed with the latest article (e.g., shrinkflation)<br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> Updated for April 13, 2026 with current automotive and IT items`,
   },
 };
 
