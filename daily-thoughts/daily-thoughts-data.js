@@ -2,11 +2,20 @@
 const dailyThoughtsData = [
   {
     id: 74,
+    title: '회의 및 협상 상황에서 사용하는 실무 영어 (의견·조율·설득)-Vol.14',
+    link: 'eBook-data/english_conversation_vol14.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '04-15',
+    views: 0,
+  },
+  {
+    id: 74,
     title: '업무 상황에서 사용하는 실무 영어 (보고·요청·협업)-Vol.13',
     link: 'eBook-data/english_conversation_vol13.pdf',
     category: 'eBook Series',
     author: '이호기',
-    date: '04-013',
+    date: '04-13',
     views: 0,
   },
   {

@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 74,
+    title: '고슴도치 딜레마(Hedgehog Dilemma)',
+    link: 'science/science-detail-74.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '04-15',
+    views: 0,
+  },
+  {
     id: 73,
     title: '피그말리온 효과(Pygmalion Effect)',
     link: 'science/science-detail-73.html',

@@ -45,29 +45,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
     'schedule.item1.title':
-      'EcoCAR Innovation Challenge Launch Workshop - 3일차(디트로이트·GM·스텔란티스)',
+      'Arrive AI(ARAI) - Q4·연간 실적 발표 및 컨퍼런스 콜(자율배송·AI 물류)',
     'schedule.item1.content':
-      '미국 에너지부·GM 등이 후원하는 대학 대상 AVTC 시리즈의 일환인 EcoCAR Innovation Challenge Launch Workshop이 2026년 4월 11일(토)~13일(월)로 예정되어 있으며, 13일(월)은 마지막 날입니다. 공개 일정표(Sched, eiclw.sched.com)에 따르면 미시간주 디트로이트 일대(MotorCity Casino Hotel·컨퍼런스 센터·The Yard at Corktown 등)에서 등록·시설 안내, 스폰서 프리뷰, 미디어 이벤트, 팀 사진, 점심 후 <strong>General Motors·Stellantis 차량 개요(Vehicle Overview)</strong> 세션이 잡혀 있습니다. 대학 팀·스폰서·언론이 함께하는 자동차·전동화 경진대회 준비 행사 성격입니다.',
+      'Arrive AI(나스닥: ARAI)는 <strong>2026년 4월 15일(수) 장 시작 전</strong> 2025년 4분기 및 연간 실적을 발표하고, 같은 날 <strong>미 동부 8:30</strong>에 컨퍼런스 콜·웹캐스트를 진행한다고 공시했습니다. 자율배송 네트워크·스마트 물류(드론/로봇 연계) 영역의 AI 활용 사례를 함께 설명할 예정이라고 밝혔습니다(출처: Nasdaq 게재 ACCESS Newswire).',
     'schedule.item2.title':
-      '로터스 테크놀로지(Lotus Technology, LOT) - 분기 실적 발표(미 증시 일정)',
+      'J.B. Hunt(JBHT) - Q1 실적 발표·IR 콜(미국 물류 네트워크)',
     'schedule.item2.content':
-      '전기차·스마트 모빌리티에 주력하는 로터스 테크놀로지가 <strong>2025년 4분기(Q4 2025)</strong> 실적을 <strong>2026년 4월 13일(현지 월요일) 장 시작 전</strong>에 공시한다고 여러 <strong>증권 실적 캘린더</strong>(예: MarketBeat 등)에 등재되어 있습니다. 컨센서스 추정치·매출 규모는 캘린더마다 다를 수 있으니, IR 공지와 정정 공시를 함께 확인하는 것이 좋습니다. 글로벌 EV·프리미엄 브랜드 실적 흐름을 보는 참고 일정입니다.',
+      'J.B. Hunt는 <strong>2026년 4월 15일(수) 장 마감 후</strong> 1분기 실적을 발표하고, 같은 날 <strong>미 중부 16:00~17:00</strong> 컨퍼런스 콜을 연다고 공지했습니다. 북미 운송·디지털 화물 플랫폼 데이터는 완성차·부품 공급망의 물동량 체감 지표로도 참고되는 일정입니다(출처: J.B. Hunt Investor News, Business Wire 원문 링크 포함).',
     'schedule.item3.title':
-      'Sify Technologies(SIFY) - FY 2025-26 실적·컨퍼런스 콜(인도 IT·디지털 인프라)',
+      'ASML - Q1 2026 실적 공개·인베스터 콜(반도체 장비)',
     'schedule.item3.content':
-      '인도의 디지털 ICT·데이터센터·네트워크 서비스 기업 Sify Technologies가 <strong>2026년 3월 31일로 종료된 회계연도 FY 2025-26</strong>의 비감사 IFRS 재무제표를 <strong>2026년 4월 13일(월) 미국 장 개시 전</strong>에 발표한다고 GlobeNewswire·IT News Online 등이 보도했습니다. 이어 <strong>미 동부 8:30</strong>에 Raju Vegesna 의장, M P Vijay Kumar 그룹 CFO 등이 참여하는 <strong>실적 설명 컨퍼런스 콜</strong>이 예정되어 있으며, 다이얼인·웹캐스트는 회사 IR 페이지 안내를 따릅니다.',
+      'ASML은 <strong>2026년 4월 15일(수) 07:00 CET</strong>에 1분기 실적 보도자료를 배포하고, 같은 날 <strong>15:00 CET</strong>에 CEO·CFO가 참여하는 인베스터 콜(웹캐스트)을 진행한다고 안내했습니다. 반도체 장비 투자 사이클과 AI 인프라 수요를 가늠하는 핵심 IT 일정으로 주목됩니다(출처: ASML Investor Relations).',
     'schedule.item4.title':
-      'AstroNova(ALOT) - 4분기·FY2026 실적 공시(산업용 라벨·프린팅 기술)',
+      'MIND Technology(MIND) - FY2026 Q4/연간 실적 공시(해양·보안 기술)',
     'schedule.item4.content':
-      '항공우주·포장·제품 식별용 하드웨어·소프트웨어를 다루는 AstroNova가 <strong>2026 회계연도 4분기 및 전체 연간</strong> 실적을 <strong>2026년 4월 13일(월) 미국 장 마감 후</strong>에 공개한다고 BusinessWire·Nasdaq 등이 전했습니다. 이어진 실적 설명은 <strong>4월 14일(화) 미 동부 8:30</strong> 웹캐스트·전화로 진행됩니다. 제조·유통 라인의 라벨·인쇄 자동화와 맞닿는 B2B IT·장비 이슈로 볼 수 있습니다.',
+      'MIND Technology는 <strong>2026년 4월 15일(수) 미국 장 마감 후</strong> FY2026 4분기 및 연간 실적을 발표한다고 밝혔습니다. 컨퍼런스 콜은 4월 16일 오전으로 예고됐으며, 해양탐사·방위·보안 기술 장비 수요를 점검할 수 있는 B2B 기술 일정입니다(출처: Nasdaq 게재 PRNewswire).',
     'schedule.item5.title':
-      'Fastenal(FAST) - 2026년 1분기 실적·컨퍼런스 콜(산업 MRO·제조 공급망)',
+      'XCharge(XCH) - WTR Insights Conference 발표(전기차 충전·에너지 솔루션)',
     'schedule.item5.content':
-      '볼트·안전장비부터 공장 소모품까지 취급하는 산업용 유통 기업 Fastenal이 <strong>2026년 1분기</strong> 실적을 다루는 <strong>컨퍼런스 콜을 2026년 4월 13일(월) 미 중부 9:00</strong>에 연다고 Stock Titan 등이 정리했으며, 당일 <strong>미 중부 6:00</strong>에 프레젠테이션 자료가 공개된다는 안내도 있습니다. 완성차·부품사 공장의 MRO(간접자재) 수요와 맞닿아 <strong>자동차 제조 공급망</strong> 뉴스와 함께 읽히는 일정입니다.',
-    'notice.updateContent20260414': `<strong>2026-04-14</strong> - 콘텐츠 업데이트 안내<br /><br />
-📚 <strong>eBook Series:</strong> Vol.13 「업무 상황에서 사용하는 실무 영어 (보고·요청·협업)」 자료 게시<br />
-📖 <strong>경제 상식:</strong> 게시판 최신 글로 갱신(예: 슬링크플레이션)<br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> 2026년 4월 13일 기준 자동차·IT 뉴스·실적 일정으로 본문 갱신`,
+      'EV 충전·에너지 솔루션 기업 XCharge(나스닥: XCH)는 Water Tower Research Insights Conference에서 <strong>2026년 4월 15일(수) 미 동부 9:50</strong> 가상 발표를 진행한다고 공지했습니다. 모빌리티·산업기술 트랙의 세션으로, 충전 인프라/에너지저장 연계 전략을 확인할 수 있는 일정입니다(출처: Newsfile 배포 공지).',
+    'notice.updateContent20260415': `<strong>2026-04-15</strong> - 콘텐츠 업데이트 안내<br /><br />
+📚 <strong>eBook Series:</strong> Vol.14 「회의 및 협상 상황에서 사용하는 실무 영어 (의견·조율·설득)」 자료 게시<br />
+📖 <strong>일반상식:</strong> 게시판에 새로운 자료 업데이트<br />
+📅 <strong>오늘의 일정(자동차/IT):</strong> 2026년 4월 15일 시행 일정으로 본문 갱신`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -114,29 +114,29 @@ const translations = {
     'notice.heading': 'Update Contents',
     'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
     'schedule.item1.title':
-      'EcoCAR Innovation Challenge Launch Workshop - Day 3 (Detroit, GM & Stellantis)',
+      'Arrive AI (ARAI) - Q4/full-year results and call (autonomous delivery & AI logistics)',
     'schedule.item1.content':
-      'The EcoCAR Innovation Challenge Launch Workshop, part of the U.S. DOE– and GM-backed AVTC collegiate series, runs April 11–13, 2026; <strong>Monday, April 13 is the final day</strong>. The published agenda (Sched, eiclw.sched.com) lists sessions in the Detroit area (MotorCity Casino Hotel, conference center, The Yard at Corktown, etc.): check-in, safety and facility briefings, sponsor previews, a media event, team photos, lunch, then <strong>Vehicle Overview sessions for General Motors and Stellantis</strong>. It is a kickoff-style workshop for university teams, sponsors, and press ahead of the competition cycle.',
+      'Arrive AI (NASDAQ: ARAI) said it will release Q4 and full-year 2025 results <strong>before market open on Wednesday, April 15, 2026</strong>, followed by a <strong>conference call/webcast at 8:30 a.m. ET</strong>. The company positions the update around autonomous delivery network operations and AI-enabled logistics capabilities (source: ACCESS Newswire release carried on Nasdaq).',
     'schedule.item2.title':
-      'Lotus Technology (LOT) - Quarterly earnings (U.S. listing calendar)',
+      'J.B. Hunt (JBHT) - Q1 earnings release and IR call (U.S. freight network)',
     'schedule.item2.content':
-      'Lotus Technology, focused on EVs and smart mobility, is listed on several <strong>U.S. earnings calendars</strong> (e.g., MarketBeat) for <strong>Q4 2025</strong> results on <strong>Monday, April 13, 2026, before the market open</strong>. Consensus EPS/revenue lines differ by data vendor, so cross-check the company’s IR page and any amended notices. Useful as a reference point for global premium EV earnings flow.',
+      'J.B. Hunt announced it expects to issue Q1 2026 earnings <strong>at market close on Wednesday, April 15, 2026</strong>, with a same-day <strong>4:00–5:00 p.m. CDT</strong> conference call. Its transportation and digital freight indicators are commonly tracked alongside North American automotive and industrial supply-chain activity (source: J.B. Hunt investor news, with Business Wire source link).',
     'schedule.item3.title':
-      'Sify Technologies (SIFY) - FY 2025-26 results & call (India IT / digital infra)',
+      'ASML - Q1 2026 results and investor call (semiconductor equipment)',
     'schedule.item3.content':
-      'Sify Technologies, an Indian digital ICT, data-center, and network services provider, will publish <strong>unaudited IFRS results for the fiscal year ended March 31, 2026</strong> on <strong>Monday, April 13, 2026, before the U.S. market open</strong>, per GlobeNewswire and IT News Online. A <strong>conference call at 8:30 a.m. ET</strong> is scheduled with Chairman Raju Vegesna and Group CFO M P Vijay Kumar; dial-in and webcast details are on the investor relations site.',
+      'ASML states it will publish Q1 2026 results at <strong>07:00 CET on Wednesday, April 15, 2026</strong>, and host an <strong>investor call at 15:00 CET</strong> led by the CEO and CFO. The update is a key checkpoint for semiconductor-capex and AI infrastructure demand signals (source: ASML investor relations page).',
     'schedule.item4.title':
-      'AstroNova (ALOT) - Q4 & FY2026 results (industrial labeling & printing tech)',
+      'MIND Technology (MIND) - FY2026 Q4/year-end release (ocean/defense tech)',
     'schedule.item4.content':
-      'AstroNova, which supplies hardware and software for aerospace, packaging, and product identification, will release <strong>fourth quarter and full fiscal year 2026</strong> results <strong>after the U.S. market close on Monday, April 13, 2026</strong>, according to BusinessWire and Nasdaq. A follow-up <strong>earnings call is set for Tuesday, April 14, 2026, at 8:30 a.m. ET</strong> (webcast/phone as announced). Relevant as B2B tech for manufacturing and supply-chain labeling automation.',
+      'MIND Technology announced it will release fiscal 2026 fourth-quarter and full-year results <strong>after market close on Wednesday, April 15, 2026</strong>. The earnings call is scheduled for April 16 morning ET/CT, making April 15 the key release date for this marine, hydrographic, defense, and security technology supplier (source: PRNewswire release carried on Nasdaq).',
     'schedule.item5.title':
-      'Fastenal (FAST) - Q1 2026 earnings call (industrial MRO & manufacturing supply)',
+      'XCharge (XCH) - WTR Insights Conference presentation (EV charging & energy solutions)',
     'schedule.item5.content':
-      'Fastenal, a major industrial distributor (fasteners, safety, plant supplies), is scheduled to hold its <strong>Q1 2026 conference call on Monday, April 13, 2026, at 9:00 a.m. CT</strong>, with a same-day <strong>6:00 a.m. CT</strong> presentation posting, per summaries on Stock Titan and similar outlets. Demand for factory MRO ties closely to <strong>automotive and tier-plant supply chains</strong>, so the call is often read alongside industrial production news.',
-    'notice.updateContent20260414': `<strong>2026-04-14</strong> – Content update notice<br /><br />
-📚 <strong>eBook Series:</strong> Vol.13 “Workplace English for reporting, requests & collaboration” is now available<br />
-📖 <strong>Economics:</strong> Board refreshed with the latest article (e.g., shrinkflation)<br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> Updated for April 13, 2026 with current automotive and IT items`,
+      'XCharge (NASDAQ: XCH), an EV charging and energy-solutions company, announced a virtual presentation at the Water Tower Research Insights Conference on <strong>Wednesday, April 15, 2026, at 9:50 a.m. ET</strong>. The session sits in the mobility/industrial-tech track and is relevant for EV charging infrastructure and storage-linked deployment strategy (source: Newsfile-distributed event release).',
+    'notice.updateContent20260415': `<strong>2026-04-15</strong> – Content update notice<br /><br />
+📚 <strong>eBook Series:</strong> Vol.14 “Practical English for Meetings and Negotiations (opinions, alignment, persuasion)” is now available<br />
+📖 <strong>General Knowledge:</strong> New material has been updated on the board<br />
+📅 <strong>Today's Schedule (Automotive/IT):</strong> Updated with the schedule effective April 15, 2026`,
   },
 };
 
