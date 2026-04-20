@@ -43,31 +43,9 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'weeklyNews.heading': '오늘의 일정 (자동차/IT)',
-    'schedule.item1.title':
-      'Arrive AI(ARAI) - Q4·연간 실적 발표 및 컨퍼런스 콜(자율배송·AI 물류)',
-    'schedule.item1.content':
-      'Arrive AI(나스닥: ARAI)는 <strong>2026년 4월 15일(수) 장 시작 전</strong> 2025년 4분기 및 연간 실적을 발표하고, 같은 날 <strong>미 동부 8:30</strong>에 컨퍼런스 콜·웹캐스트를 진행한다고 공시했습니다. 자율배송 네트워크·스마트 물류(드론/로봇 연계) 영역의 AI 활용 사례를 함께 설명할 예정이라고 밝혔습니다(출처: Nasdaq 게재 ACCESS Newswire).',
-    'schedule.item2.title':
-      'J.B. Hunt(JBHT) - Q1 실적 발표·IR 콜(미국 물류 네트워크)',
-    'schedule.item2.content':
-      'J.B. Hunt는 <strong>2026년 4월 15일(수) 장 마감 후</strong> 1분기 실적을 발표하고, 같은 날 <strong>미 중부 16:00~17:00</strong> 컨퍼런스 콜을 연다고 공지했습니다. 북미 운송·디지털 화물 플랫폼 데이터는 완성차·부품 공급망의 물동량 체감 지표로도 참고되는 일정입니다(출처: J.B. Hunt Investor News, Business Wire 원문 링크 포함).',
-    'schedule.item3.title':
-      'ASML - Q1 2026 실적 공개·인베스터 콜(반도체 장비)',
-    'schedule.item3.content':
-      'ASML은 <strong>2026년 4월 15일(수) 07:00 CET</strong>에 1분기 실적 보도자료를 배포하고, 같은 날 <strong>15:00 CET</strong>에 CEO·CFO가 참여하는 인베스터 콜(웹캐스트)을 진행한다고 안내했습니다. 반도체 장비 투자 사이클과 AI 인프라 수요를 가늠하는 핵심 IT 일정으로 주목됩니다(출처: ASML Investor Relations).',
-    'schedule.item4.title':
-      'MIND Technology(MIND) - FY2026 Q4/연간 실적 공시(해양·보안 기술)',
-    'schedule.item4.content':
-      'MIND Technology는 <strong>2026년 4월 15일(수) 미국 장 마감 후</strong> FY2026 4분기 및 연간 실적을 발표한다고 밝혔습니다. 컨퍼런스 콜은 4월 16일 오전으로 예고됐으며, 해양탐사·방위·보안 기술 장비 수요를 점검할 수 있는 B2B 기술 일정입니다(출처: Nasdaq 게재 PRNewswire).',
-    'schedule.item5.title':
-      'XCharge(XCH) - WTR Insights Conference 발표(전기차 충전·에너지 솔루션)',
-    'schedule.item5.content':
-      'EV 충전·에너지 솔루션 기업 XCharge(나스닥: XCH)는 Water Tower Research Insights Conference에서 <strong>2026년 4월 15일(수) 미 동부 9:50</strong> 가상 발표를 진행한다고 공지했습니다. 모빌리티·산업기술 트랙의 세션으로, 충전 인프라/에너지저장 연계 전략을 확인할 수 있는 일정입니다(출처: Newsfile 배포 공지).',
-    'notice.updateContent20260415': `<strong>2026-04-15</strong> - 콘텐츠 업데이트 안내<br /><br />
-📚 <strong>eBook Series:</strong> Vol.14 「회의 및 협상 상황에서 사용하는 실무 영어 (의견·조율·설득)」 자료 게시<br />
-📖 <strong>일반상식:</strong> 게시판에 새로운 자료 업데이트<br />
-📅 <strong>오늘의 일정(자동차/IT):</strong> 2026년 4월 15일 시행 일정으로 본문 갱신`,
+    'notice.updateContent20260420': `<strong>2026-04-20</strong> - 콘텐츠 업데이트 안내<br /><br />
+📚 <strong>eBook Series:</strong> Vol.15 「협상 및 설득 상황에서 사용하는 고급 실무 영어」 자료 게시<br />
+📖 <strong>경제상식:</strong> 「스킴플레이션(Skimpflation)」 자료 신규 등록`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -112,31 +90,9 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'weeklyNews.heading': "Today's Schedule (Automotive / IT)",
-    'schedule.item1.title':
-      'Arrive AI (ARAI) - Q4/full-year results and call (autonomous delivery & AI logistics)',
-    'schedule.item1.content':
-      'Arrive AI (NASDAQ: ARAI) said it will release Q4 and full-year 2025 results <strong>before market open on Wednesday, April 15, 2026</strong>, followed by a <strong>conference call/webcast at 8:30 a.m. ET</strong>. The company positions the update around autonomous delivery network operations and AI-enabled logistics capabilities (source: ACCESS Newswire release carried on Nasdaq).',
-    'schedule.item2.title':
-      'J.B. Hunt (JBHT) - Q1 earnings release and IR call (U.S. freight network)',
-    'schedule.item2.content':
-      'J.B. Hunt announced it expects to issue Q1 2026 earnings <strong>at market close on Wednesday, April 15, 2026</strong>, with a same-day <strong>4:00–5:00 p.m. CDT</strong> conference call. Its transportation and digital freight indicators are commonly tracked alongside North American automotive and industrial supply-chain activity (source: J.B. Hunt investor news, with Business Wire source link).',
-    'schedule.item3.title':
-      'ASML - Q1 2026 results and investor call (semiconductor equipment)',
-    'schedule.item3.content':
-      'ASML states it will publish Q1 2026 results at <strong>07:00 CET on Wednesday, April 15, 2026</strong>, and host an <strong>investor call at 15:00 CET</strong> led by the CEO and CFO. The update is a key checkpoint for semiconductor-capex and AI infrastructure demand signals (source: ASML investor relations page).',
-    'schedule.item4.title':
-      'MIND Technology (MIND) - FY2026 Q4/year-end release (ocean/defense tech)',
-    'schedule.item4.content':
-      'MIND Technology announced it will release fiscal 2026 fourth-quarter and full-year results <strong>after market close on Wednesday, April 15, 2026</strong>. The earnings call is scheduled for April 16 morning ET/CT, making April 15 the key release date for this marine, hydrographic, defense, and security technology supplier (source: PRNewswire release carried on Nasdaq).',
-    'schedule.item5.title':
-      'XCharge (XCH) - WTR Insights Conference presentation (EV charging & energy solutions)',
-    'schedule.item5.content':
-      'XCharge (NASDAQ: XCH), an EV charging and energy-solutions company, announced a virtual presentation at the Water Tower Research Insights Conference on <strong>Wednesday, April 15, 2026, at 9:50 a.m. ET</strong>. The session sits in the mobility/industrial-tech track and is relevant for EV charging infrastructure and storage-linked deployment strategy (source: Newsfile-distributed event release).',
-    'notice.updateContent20260415': `<strong>2026-04-15</strong> – Content update notice<br /><br />
-📚 <strong>eBook Series:</strong> Vol.14 “Practical English for Meetings and Negotiations (opinions, alignment, persuasion)” is now available<br />
-📖 <strong>General Knowledge:</strong> New material has been updated on the board<br />
-📅 <strong>Today's Schedule (Automotive/IT):</strong> Updated with the schedule effective April 15, 2026`,
+    'notice.updateContent20260420': `<strong>2026-04-20</strong> – Content update notice<br /><br />
+📚 <strong>eBook Series:</strong> Vol.15 “Advanced Practical English for Negotiation and Persuasion Situations” is now available<br />
+📖 <strong>Economics Knowledge:</strong> “Skimpflation” has been newly published`,
   },
 };
 

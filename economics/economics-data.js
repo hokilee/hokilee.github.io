@@ -1,6 +1,15 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 124,
+    title: '스킴플레이션(Skimpflation)',
+    link: 'economics/economy-detail-124.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '04-20',
+    views: 0,
+  },
+  {
     id: 123,
     title: '슬링크플레이션(Shrinkflation)',
     link: 'economics/economy-detail-123.html',

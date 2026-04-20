@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 75,
+    title: '협상 및 설득 상황에서 사용하는 고급 실무 영어-Vol.15',
+    link: 'eBook-data/english_conversation_vol15.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '04-20',
+    views: 0,
+  },
+  {
     id: 74,
     title: '회의 및 협상 상황에서 사용하는 실무 영어 (의견·조율·설득)-Vol.14',
     link: 'eBook-data/english_conversation_vol14.pdf',
