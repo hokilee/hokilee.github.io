@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 75,
+    title: '카니발라이제이션(Cannibalization)',
+    link: 'science/science-detail-75.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '04-24',
+    views: 0,
+  },
+  {
     id: 74,
     title: '고슴도치 딜레마(Hedgehog Dilemma)',
     link: 'science/science-detail-74.html',

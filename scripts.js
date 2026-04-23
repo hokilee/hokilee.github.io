@@ -43,9 +43,9 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260420': `<strong>2026-04-20</strong> - 콘텐츠 업데이트 안내<br /><br />
-📚 <strong>eBook Series:</strong> Vol.15 「협상 및 설득 상황에서 사용하는 고급 실무 영어」 자료 게시<br />
-📖 <strong>경제상식:</strong> 「스킴플레이션(Skimpflation)」 자료 신규 등록`,
+    'notice.updateContent20260420': `<strong>2026-04-24</strong> - 콘텐츠 업데이트 안내<br /><br />
+📚 <strong>eBook Series:</strong> Vol.16 「발표 및 보고 상황에서 사용하는 실무 영어 (설명·구조·설득)」 자료 게시<br />
+📖 <strong>일반상식:</strong> 「카니발라이제이션(Cannibalization)」 자료 신규 등록`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -90,9 +90,9 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260420': `<strong>2026-04-20</strong> – Content update notice<br /><br />
-📚 <strong>eBook Series:</strong> Vol.15 “Advanced Practical English for Negotiation and Persuasion Situations” is now available<br />
-📖 <strong>Economics Knowledge:</strong> “Skimpflation” has been newly published`,
+    'notice.updateContent20260420': `<strong>2026-04-24</strong> – Content update notice<br /><br />
+📚 <strong>eBook Series:</strong> Vol.16 “Practical English for Presentations and Reporting (Explanation, Structure, Persuasion)” is now available<br />
+📖 <strong>General Knowledge:</strong> “Cannibalization” has been newly published`,
   },
 };
 

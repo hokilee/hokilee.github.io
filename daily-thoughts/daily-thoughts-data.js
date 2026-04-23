@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 76,
+    title: '발표 및 보고 상황에서 사용하는 실무 영어 (설명·구조·설득)-Vol.16',
+    link: 'eBook-data/english_conversation_vol16.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '04-24',
+    views: 0,
+  },
+  {
     id: 75,
     title: '협상 및 설득 상황에서 사용하는 고급 실무 영어-Vol.15',
     link: 'eBook-data/english_conversation_vol15.pdf',
