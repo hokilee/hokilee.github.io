@@ -564,7 +564,7 @@ const companyDetails = {
     'the-junjin': {
       companyName: 'The Junjin',
       position: 'Service Operations Manager',
-      period: 'Mar. 2026 - 현재',
+      period: 'Mar. 2026 - 2026-04-30',
       coreRole: [
         '서비스 조직의 운영 체계 수립 및 구조 재정비',
         '기존 필터 설치·유지보수 인력의 역할 재정의 및 수익 구조 전환 설계',
@@ -686,7 +686,7 @@ const companyDetails = {
     'the-junjin': {
       companyName: 'The Junjin',
       position: 'Service Operations Manager',
-      period: 'Mar. 2026 - Present',
+      period: 'Mar. 2026 - 2026-04-30',
       coreRole: [
         'Establishment of service organization operational systems and structural reorganization',
         'Redefinition of roles for existing filter installation and maintenance personnel and design of revenue structure transformation',
