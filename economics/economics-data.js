@@ -1,6 +1,28 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 126,
+    title: '[이번주 경제이슈] 환율 상승과 생활물가, 내 지출에는 어떻게 반영될까?',
+    link: 'economics/economy-detail-126.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '05-02',
+    views: 0,
+    summary:
+      '환율 상승이 식료품, 해외결제, 여행비에 미치는 영향을 생활 관점에서 정리합니다.',
+  },
+  {
+    id: 125,
+    title: '[경제용어 1분] 실질금리(Real Interest Rate), 왜 체감 경기와 다를까?',
+    link: 'economics/economy-detail-125.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '04-30',
+    views: 0,
+    summary:
+      '명목금리와 물가를 함께 봐야 하는 이유를 실질금리 개념으로 쉽게 설명합니다.',
+  },
+  {
     id: 124,
     title: '스킴플레이션(Skimpflation)',
     link: 'economics/economy-detail-124.html',

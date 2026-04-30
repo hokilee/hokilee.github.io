@@ -1,6 +1,16 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 77,
+    title:
+      '문제 해결 및 의사결정 상황에서 사용하는 실무 영어 (분석·대안·결론)-Vol.17',
+    link: 'eBook-data/english_conversation_vol17.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '04-30',
+    views: 0,
+  },
+  {
     id: 76,
     title: '발표 및 보고 상황에서 사용하는 실무 영어 (설명·구조·설득)-Vol.16',
     link: 'eBook-data/english_conversation_vol16.pdf',

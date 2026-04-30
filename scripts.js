@@ -43,9 +43,12 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260420': `<strong>2026-04-24</strong> - 콘텐츠 업데이트 안내<br /><br />
-📚 <strong>eBook Series:</strong> Vol.16 「발표 및 보고 상황에서 사용하는 실무 영어 (설명·구조·설득)」 자료 게시<br />
-📖 <strong>일반상식:</strong> 「카니발라이제이션(Cannibalization)」 자료 신규 등록`,
+    'notice.updateContent20260430': `<strong>2026-04-30</strong> - 오늘의 주요 업데이트 안내<br /><br />
+📘 <strong>eBook Series:</strong> Vol.17 「문제 해결 및 의사결정 상황에서 사용하는 실무 영어 (분석·대안·결론)」 게시<br />
+📈 <strong>경제 상식:</strong> 신규 2건 업데이트<br />
+1) [경제용어 1분] 실질금리(Real Interest Rate), 왜 체감 경기와 다를까?<br />
+2) [이번주 경제이슈] 환율 상승과 생활물가, 내 지출에는 어떻게 반영될까?<br /><br />
+👉 상단 메뉴 <strong>오늘의 콘텐츠 → eBook Series / 경제 상식</strong>에서 바로 확인할 수 있습니다.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -90,9 +93,12 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260420': `<strong>2026-04-24</strong> – Content update notice<br /><br />
-📚 <strong>eBook Series:</strong> Vol.16 “Practical English for Presentations and Reporting (Explanation, Structure, Persuasion)” is now available<br />
-📖 <strong>General Knowledge:</strong> “Cannibalization” has been newly published`,
+    'notice.updateContent20260430': `<strong>2026-04-30</strong> – Today's content update<br /><br />
+📘 <strong>eBook Series:</strong> Vol.17 “Practical English for Problem Solving and Decision-Making (Analysis, Alternatives, Conclusion)” is now available<br />
+📈 <strong>Economics:</strong> 2 new posts added<br />
+1) [Economics in 1 Minute] Real Interest Rate: Why does it feel different from the economy?<br />
+2) [Weekly Economics Issue] Rising exchange rates and living costs: How does it affect your spending?<br /><br />
+👉 Go to <strong>Today's Content → eBook Series / Economics</strong> from the top menu.`,
   },
 };
 
