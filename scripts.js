@@ -43,18 +43,15 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260506': `<strong>2026-05-06</strong> - 오늘의 주요 업데이트 안내<br /><br />
-📘 <strong>eBook Series:</strong> 기본적인 영화를 습득하기 위해 필요한 영어 회화와 관련한 자료로, Vol.18 「지시·피드백·동기부여·조직 커뮤니케이션을 위한 리더 영어」가 등록되었습니다.<br /><br />
-📈 <strong>경제 상식:</strong> 아래 자료가 등록되어 있습니다.<br />
+    'notice.updateContent20260507': `<strong>2026-05-07</strong> - 오늘의 콘텐츠 업데이트<br /><br />
+오늘의 콘텐츠에 아래 자료가 등록되었습니다.<br /><br />
+📈 <strong>경제 상식:</strong> 두 가지 카테고리에 각각 자료가 등록되었습니다.<br />
 • <strong>[경제용어 1분]</strong> 중립금리(r*, Natural rate of interest)<br />
 • <strong>[이번주 경제이슈]</strong> 추경·재정과 물가·금리<br /><br />
-👉 상단 메뉴 <strong>오늘의 콘텐츠 → eBook Series / 경제 상식</strong>에서 바로 확인할 수 있습니다.`,
-    'notice.updateContent20260430': `<strong>2026-04-30</strong> - 오늘의 주요 업데이트 안내<br /><br />
-📘 <strong>eBook Series:</strong> Vol.17 「문제 해결 및 의사결정 상황에서 사용하는 실무 영어 (분석·대안·결론)」 게시<br />
-📈 <strong>경제 상식:</strong> 신규 2건 업데이트<br />
-1) [경제용어 1분] 실질금리(Real Interest Rate), 왜 체감 경기와 다를까?<br />
-2) [이번주 경제이슈] 환율 상승과 생활물가, 내 지출에는 어떻게 반영될까?<br /><br />
-👉 상단 메뉴 <strong>오늘의 콘텐츠 → eBook Series / 경제 상식</strong>에서 바로 확인할 수 있습니다.`,
+📘 <strong>eBook Series:</strong> Vol.18 영어 회화 자료 「지시·피드백·동기부여·조직 커뮤니케이션을 위한 리더 영어」가 등록되었습니다.<br /><br />
+📚 <strong>일반상식:</strong> 신규 1건이 등록되었습니다.<br />
+• 슬리퍼 효과(Sleeper Effect)<br /><br />
+👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 경제 상식 · eBook Series · 일반상식 게시판을 확인하세요.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -99,18 +96,15 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260506': `<strong>2026-05-06</strong> – Today's content update<br /><br />
-📘 <strong>eBook Series:</strong> New material is available as Vol.18, focused on English conversation for building a foundational understanding of film, titled <em>Leader English for Directives, Feedback, Motivation, and Organizational Communication</em>.<br /><br />
-📈 <strong>Economics:</strong> The following posts are now available:<br />
+    'notice.updateContent20260507': `<strong>2026-05-07</strong> – Today's content update<br /><br />
+The following materials are now available under <strong>Today's Content</strong>.<br /><br />
+📈 <strong>Economics:</strong> Two categories each have a new post:<br />
 • <strong>[Economics in 1 Minute]</strong> Neutral rate of interest (r*)<br />
 • <strong>[Weekly Economics Issue]</strong> Supplementary budgets, fiscal policy, inflation, and interest rates<br /><br />
-👉 Go to <strong>Today's Content → eBook Series / Economics</strong> from the top menu.`,
-    'notice.updateContent20260430': `<strong>2026-04-30</strong> – Today's content update<br /><br />
-📘 <strong>eBook Series:</strong> Vol.17 “Practical English for Problem Solving and Decision-Making (Analysis, Alternatives, Conclusion)” is now available<br />
-📈 <strong>Economics:</strong> 2 new posts added<br />
-1) [Economics in 1 Minute] Real Interest Rate: Why does it feel different from the economy?<br />
-2) [Weekly Economics Issue] Rising exchange rates and living costs: How does it affect your spending?<br /><br />
-👉 Go to <strong>Today's Content → eBook Series / Economics</strong> from the top menu.`,
+📘 <strong>eBook Series:</strong> Vol.18 English conversation — <em>Leader English for Directives, Feedback, Motivation, and Organizational Communication</em>.<br /><br />
+📚 <strong>General knowledge:</strong> One new article:<br />
+• Sleeper Effect<br /><br />
+👉 Use the top menu <strong>Today's Content</strong> to open the Economics, eBook Series, and General Knowledge boards.`,
   },
 };
 
