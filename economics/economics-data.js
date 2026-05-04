@@ -1,6 +1,28 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 128,
+    title: '[이번주 경제이슈] 추경·재정과 물가·금리',
+    link: 'economics/economy-detail-128.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '05-05',
+    views: 0,
+    summary:
+      '추가경정예산이 수요·국채·금리·물가 논쟁으로 이어지는 경로를 정리합니다.',
+  },
+  {
+    id: 127,
+    title: '[경제용어 1분] 중립금리(r*, Natural rate of interest)',
+    link: 'economics/economy-detail-127.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '05-04',
+    views: 0,
+    summary:
+      '물가를 부추리지 않는 균형 실질금리로서의 r* 개념과 정책금리 해석에의 활용을 설명합니다.',
+  },
+  {
     id: 126,
     title: '[이번주 경제이슈] 환율 상승과 생활물가, 내 지출에는 어떻게 반영될까?',
     link: 'economics/economy-detail-126.html',

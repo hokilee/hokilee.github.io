@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 76,
+    title: '슬리퍼 효과(Sleeper Effect)',
+    link: 'science/science-detail-76.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '05-04',
+    views: 0,
+  },
+  {
     id: 75,
     title: '카니발라이제이션(Cannibalization)',
     link: 'science/science-detail-75.html',

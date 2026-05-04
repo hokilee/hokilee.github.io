@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 78,
+    title: '지시·피드백·동기부여·조직 커뮤니케이션을 위한 리더 영어-Vol.18',
+    link: 'eBook-data/english_conversation_vol18.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '05-04',
+    views: 0,
+  },
+  {
     id: 77,
     title:
       '문제 해결 및 의사결정 상황에서 사용하는 실무 영어 (분석·대안·결론)-Vol.17',
