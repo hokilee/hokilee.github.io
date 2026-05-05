@@ -43,15 +43,15 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260507': `<strong>2026-05-07</strong> - 오늘의 콘텐츠 업데이트<br /><br />
+    'notice.updateContent20260507': `<strong>2026-05-06</strong> - 오늘의 콘텐츠 업데이트<br /><br />
 오늘의 콘텐츠에 아래 자료가 등록되었습니다.<br /><br />
-📈 <strong>경제 상식:</strong> 두 가지 카테고리에 각각 자료가 등록되었습니다.<br />
-• <strong>[경제용어 1분]</strong> 중립금리(r*, Natural rate of interest)<br />
-• <strong>[이번주 경제이슈]</strong> 추경·재정과 물가·금리<br /><br />
-📘 <strong>eBook Series:</strong> Vol.18 영어 회화 자료 「지시·피드백·동기부여·조직 커뮤니케이션을 위한 리더 영어」가 등록되었습니다.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.19 영어 회화 자료 「목적지(건물·매장)를 찾아가는 실전 영어」가 등록되었습니다.<br /><br />
+📈 <strong>경제 상식:</strong> 두 가지 카테고리에 신규 자료가 등록되었습니다.<br />
+• <strong>[이번주 경제이슈]</strong> 국제유가 변동, 물가와 생활비에 어떻게 번질까?<br />
+• <strong>[경제용어 1분]</strong> PPI(생산자물가지수), 소비자물가보다 먼저 움직이는 신호<br /><br />
 📚 <strong>일반상식:</strong> 신규 1건이 등록되었습니다.<br />
-• 슬리퍼 효과(Sleeper Effect)<br /><br />
-👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 경제 상식 · eBook Series · 일반상식 게시판을 확인하세요.`,
+• 침묵의 나선(Spiral of Silence)<br /><br />
+👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series · 경제 상식 · 일반상식 게시판을 확인하세요.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -96,15 +96,15 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260507': `<strong>2026-05-07</strong> – Today's content update<br /><br />
+    'notice.updateContent20260507': `<strong>2026-05-06</strong> – Today's content update<br /><br />
 The following materials are now available under <strong>Today's Content</strong>.<br /><br />
-📈 <strong>Economics:</strong> Two categories each have a new post:<br />
-• <strong>[Economics in 1 Minute]</strong> Neutral rate of interest (r*)<br />
-• <strong>[Weekly Economics Issue]</strong> Supplementary budgets, fiscal policy, inflation, and interest rates<br /><br />
-📘 <strong>eBook Series:</strong> Vol.18 English conversation — <em>Leader English for Directives, Feedback, Motivation, and Organizational Communication</em>.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.19 English conversation — <em>Practical English for Finding Destinations (Buildings and Stores)</em>.<br /><br />
+📈 <strong>Economics:</strong> New posts have been added in two categories:<br />
+• <strong>[Weekly Economics Issue]</strong> Crude oil price fluctuations: how they spread to inflation and living costs<br />
+• <strong>[Economics in 1 Minute]</strong> PPI (Producer Price Index): a signal that often moves ahead of CPI<br /><br />
 📚 <strong>General knowledge:</strong> One new article:<br />
-• Sleeper Effect<br /><br />
-👉 Use the top menu <strong>Today's Content</strong> to open the Economics, eBook Series, and General Knowledge boards.`,
+• Spiral of Silence<br /><br />
+👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series, Economics, and General Knowledge boards.`,
   },
 };
 
