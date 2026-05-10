@@ -1,6 +1,24 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 80,
+    title: '목미용실에서 발생하는 실전 영어-1 Vol.20',
+    link: 'eBook-data/english_conversation_vol20.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '05-11',
+    views: 0,
+  },
+  {
+    id: 79,
+    title: '목적지(건물·매장)를 찾아가는 실전 영어 Vol.19',
+    link: 'eBook-data/english_conversation_vol19.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '05-06',
+    views: 0,
+  },
+  {
     id: 78,
     title: '지시·피드백·동기부여·조직 커뮤니케이션을 위한 리더 영어-Vol.18',
     link: 'eBook-data/english_conversation_vol18.pdf',

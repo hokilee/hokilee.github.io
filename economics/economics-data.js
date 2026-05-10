@@ -1,6 +1,28 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 130,
+    title: '[이번주 경제이슈] 국제유가 변동, 물가와 생활비에 어떻게 번질까?',
+    link: 'economics/economy-detail-130.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '05-06',
+    views: 0,
+    summary:
+      '국제유가 변동이 주유비·물류비·생활물가로 전이되는 과정을 핵심 지표와 함께 정리합니다.',
+  },
+  {
+    id: 129,
+    title: '[경제용어 1분] PPI(생산자물가지수), 소비자물가보다 먼저 움직이는 신호',
+    link: 'economics/economy-detail-129.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '05-06',
+    views: 0,
+    summary:
+      '기업의 출고 단계 가격을 보여주는 PPI의 의미와 CPI와의 차이를 쉽게 설명합니다.',
+  },
+  {
     id: 128,
     title: '[이번주 경제이슈] 추경·재정과 물가·금리',
     link: 'economics/economy-detail-128.html',

@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 77,
+    title: '침묵의 나선(Spiral of Silence)',
+    link: 'science/science-detail-77.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '04-06',
+    views: 0,
+  },
+  {
     id: 76,
     title: '슬리퍼 효과(Sleeper Effect)',
     link: 'science/science-detail-76.html',
