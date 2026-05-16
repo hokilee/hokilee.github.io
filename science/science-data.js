@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 78,
+    title: '레인지 효과(Range Effect)',
+    link: 'science/science-detail-78.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '05-17',
+    views: 0,
+  },
+  {
     id: 77,
     title: '침묵의 나선(Spiral of Silence)',
     link: 'science/science-detail-77.html',

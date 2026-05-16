@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 81,
+    title: '미용실에서 발생하는 실전 영어 - 2 Vol.21',
+    link: 'eBook-data/english_conversation_vol21.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '05-17',
+    views: 0,
+  },
+  {
     id: 80,
     title: '목미용실에서 발생하는 실전 영어-1 Vol.20',
     link: 'eBook-data/english_conversation_vol20.pdf',
