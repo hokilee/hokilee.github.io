@@ -1,6 +1,16 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 82,
+    title:
+      '미용실 방문 후 실제 서비스 진행 영어 (샴푸·가격·시스템 이해) - 3 Vol.22',
+    link: 'eBook-data/english_conversation_vol22.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '05-24',
+    views: 0,
+  },
+  {
     id: 81,
     title: '미용실에서 발생하는 실전 영어 - 2 Vol.21',
     link: 'eBook-data/english_conversation_vol21.pdf',

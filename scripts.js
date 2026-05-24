@@ -32,6 +32,7 @@ const translations = {
     'profile.company4': '삼성자동차',
     'profile.company5': '현대자동차',
     'profile.company6': 'The Junjin',
+    'profile.company6a': 'Pickup & Delivery',
     'profile.position1': 'Executive Director, Head of Service Division',
     'profile.position2': 'Director, Service Division',
     'profile.position2a': 'Master Lab Manager',
@@ -39,16 +40,16 @@ const translations = {
     'profile.position4': 'Technical Training & Service Manager',
     'profile.position5': 'Global Technical Support & Training',
     'profile.position6': 'Service Operations Manager',
+    'profile.position6a': 'Pickup & Delivery',
     'modal.coreRole': '핵심 역할',
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260517': `<strong>2026-05-17</strong> - 오늘의 콘텐츠 업데이트<br /><br />
-오늘의 콘텐츠에 아래 자료가 등록되었습니다.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.21 영어 회화 자료 「미용실에서 발생하는 실전 영어 - 2」가 등록되었습니다.<br /><br />
-📚 <strong>일반상식:</strong> 신규 1건이 등록되었습니다.<br />
-• 레인지 효과(Range Effect)<br /><br />
-👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series · 일반상식 게시판을 확인하세요.`,
+    'notice.updateContent20260524': `<strong>2026-05-24</strong> - 홈페이지 업데이트<br /><br />
+👤 <strong>Brief Profile:</strong> 5월부터 <strong>Pickup & Delivery</strong> 업무를 시작했습니다. 초기 화면 프로필에 현재 역할을 반영했습니다.<br /><br />
+현재 차량 딜리버리 및 픽업 업무를 수행하며, 자동차 서비스 현장의 고객 접점, 차량 이동 프로세스, 현장 운영 흐름을 직접 경험하고 있습니다. 과거 BMW 및 서비스 운영 경력을 바탕으로, 현장에서 발생하는 실제 고객 경험과 운영 개선 포인트를 지속적으로 관찰하고 있습니다.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.22 영어 회화 자료 「미용실 방문 후 실제 서비스 진행 영어 (샴푸·가격·시스템 이해)」가 등록되었습니다.<br /><br />
+👉 프로필은 초기 화면 <strong>Brief Profile</strong>에서, eBook 자료는 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 확인하세요.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -82,6 +83,7 @@ const translations = {
     'profile.company4': 'Samsung Motors',
     'profile.company5': 'Hyundai Motor Company',
     'profile.company6': 'The Junjin',
+    'profile.company6a': 'Pickup & Delivery',
     'profile.position1': 'Executive Director, Head of Service Division',
     'profile.position2': 'Director, Service Division',
     'profile.position2a': 'Master Lab Manager',
@@ -89,16 +91,16 @@ const translations = {
     'profile.position4': 'Technical Training & Service Manager',
     'profile.position5': 'Global Technical Support & Training',
     'profile.position6': 'Service Operations Manager',
+    'profile.position6a': 'Pickup & Delivery',
     'modal.coreRole': 'Core Role',
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260517': `<strong>2026-05-17</strong> – Today's content update<br /><br />
-The following materials are now available under <strong>Today's Content</strong>.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.21 English conversation — <em>Practical English at the Hair Salon - 2</em>.<br /><br />
-📚 <strong>General knowledge:</strong> One new article:<br />
-• Range Effect<br /><br />
-👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series and General Knowledge boards.`,
+    'notice.updateContent20260524': `<strong>2026-05-24</strong> – Homepage update<br /><br />
+👤 <strong>Brief Profile:</strong> Since May, I have started working in <strong>Pickup & Delivery</strong>. My current role is now reflected on the homepage profile.<br /><br />
+I am currently performing vehicle delivery and pickup operations, directly experiencing customer touchpoints, vehicle movement processes, and on-site operational flow in automotive service environments. Drawing on my past BMW and service operations experience, I continue to observe real customer experiences and operational improvement opportunities in the field.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.22 English conversation — <em>Practical English for In-Salon Service (Shampoo, Pricing, and Understanding the System)</em> — is now available.<br /><br />
+👉 View my profile under <strong>Brief Profile</strong> on the homepage, and find the eBook under <strong>Today's Content</strong> in the top menu.`,
   },
 };
 
@@ -564,7 +566,7 @@ const companyDetails = {
     'the-junjin': {
       companyName: 'The Junjin',
       position: 'Service Operations Manager',
-      period: 'Mar. 2026 - 2026-04-30',
+      period: 'Mar. 2026 - Apr. 2026',
       coreRole: [
         '서비스 조직의 운영 체계 수립 및 구조 재정비',
         '기존 필터 설치·유지보수 인력의 역할 재정의 및 수익 구조 전환 설계',
@@ -576,6 +578,19 @@ const companyDetails = {
       ],
       achievements: [],
       meaning: '',
+    },
+    'pickup-delivery': {
+      companyName: 'Pickup & Delivery',
+      position: 'Pickup & Delivery',
+      period: 'May. 2026 - Present',
+      coreRole: [
+        '현재 차량 딜리버리 및 픽업 업무를 수행하며, 자동차 서비스 현장의 고객 접점, 차량 이동 프로세스, 현장 운영 흐름을 직접 경험',
+        '과거 BMW 및 서비스 운영 경력을 바탕으로, 현장에서 발생하는 실제 고객 경험과 운영 개선 포인트를 지속적으로 관찰',
+        '서비스 조직 운영 관점과 일선 현장 경험을 연결하며, 고객 여정과 차량 이동 프로세스의 실제 흐름을 파악',
+      ],
+      achievements: [],
+      meaning:
+        '"관리자의 시각에서 보던 서비스 운영을 현장 일선 경험으로 되돌아가 확인하는 단계. 고객 접점과 운영 현실을 직접 경험하며, 향후 서비스 개선과 운영 설계에 반영할 인사이트를 축적하고 있음"',
     },
     ohjin: {
       companyName: '오진양행 (Ohjin Corporation)',
@@ -686,7 +701,7 @@ const companyDetails = {
     'the-junjin': {
       companyName: 'The Junjin',
       position: 'Service Operations Manager',
-      period: 'Mar. 2026 - 2026-04-30',
+      period: 'Mar. 2026 - Apr. 2026',
       coreRole: [
         'Establishment of service organization operational systems and structural reorganization',
         'Redefinition of roles for existing filter installation and maintenance personnel and design of revenue structure transformation',
@@ -698,6 +713,19 @@ const companyDetails = {
       ],
       achievements: [],
       meaning: '',
+    },
+    'pickup-delivery': {
+      companyName: 'Pickup & Delivery',
+      position: 'Pickup & Delivery',
+      period: 'May. 2026 - Present',
+      coreRole: [
+        'Currently performing vehicle delivery and pickup operations, directly experiencing customer touchpoints, vehicle movement processes, and on-site operational flow in automotive service environments',
+        'Based on prior BMW and service operations experience, continuously observing real customer experiences and operational improvement opportunities in the field',
+        'Connecting service organization management perspective with frontline field experience to understand the actual flow of the customer journey and vehicle movement process',
+      ],
+      achievements: [],
+      meaning:
+        '"A stage of returning to frontline experience to validate service operations once viewed from a management perspective. Directly experiencing customer touchpoints and operational reality while building insights to apply to future service improvement and operational design"',
     },
     ohjin: {
       companyName: 'Ohjin Corporation',
