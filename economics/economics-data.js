@@ -1,6 +1,17 @@
 // 경제상식 게시판 데이터
 const economicsData = [
   {
+    id: 131,
+    title: '[경제용어 1분] 2배 레버리지 ETF, 오르면 두 배·내리면 두 배?',
+    link: 'economics/economy-detail-131.html',
+    category: '경제 상식',
+    author: '이호기',
+    date: '05-31',
+    views: 0,
+    summary:
+      '2배 레버리지 ETF의 일일 2배 구조, 장기 보유 시 괴리, 인버스·리스크를 쉽게 정리합니다.',
+  },
+  {
     id: 130,
     title: '[이번주 경제이슈] 국제유가 변동, 물가와 생활비에 어떻게 번질까?',
     link: 'economics/economy-detail-130.html',
@@ -13,7 +24,8 @@ const economicsData = [
   },
   {
     id: 129,
-    title: '[경제용어 1분] PPI(생산자물가지수), 소비자물가보다 먼저 움직이는 신호',
+    title:
+      '[경제용어 1분] PPI(생산자물가지수), 소비자물가보다 먼저 움직이는 신호',
     link: 'economics/economy-detail-129.html',
     category: '경제 상식',
     author: '이호기',
@@ -46,7 +58,8 @@ const economicsData = [
   },
   {
     id: 126,
-    title: '[이번주 경제이슈] 환율 상승과 생활물가, 내 지출에는 어떻게 반영될까?',
+    title:
+      '[이번주 경제이슈] 환율 상승과 생활물가, 내 지출에는 어떻게 반영될까?',
     link: 'economics/economy-detail-126.html',
     category: '경제 상식',
     author: '이호기',
@@ -57,7 +70,8 @@ const economicsData = [
   },
   {
     id: 125,
-    title: '[경제용어 1분] 실질금리(Real Interest Rate), 왜 체감 경기와 다를까?',
+    title:
+      '[경제용어 1분] 실질금리(Real Interest Rate), 왜 체감 경기와 다를까?',
     link: 'economics/economy-detail-125.html',
     category: '경제 상식',
     author: '이호기',

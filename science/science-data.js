@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 79,
+    title: '선택의 역설(Paradox of Choice)',
+    link: 'science/science-detail-79.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '05-31',
+    views: 0,
+  },
+  {
     id: 78,
     title: '레인지 효과(Range Effect)',
     link: 'science/science-detail-78.html',

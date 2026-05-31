@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 83,
+    title: '다이너 방문 전, 분위기와 문화 이해 영어 - 1 Vol.23',
+    link: 'eBook-data/english_conversation_vol23.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '05-31',
+    views: 0,
+  },
+  {
     id: 82,
     title:
       '미용실 방문 후 실제 서비스 진행 영어 (샴푸·가격·시스템 이해) - 3 Vol.22',

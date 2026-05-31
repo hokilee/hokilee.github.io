@@ -45,11 +45,14 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260524': `<strong>2026-05-24</strong> - 홈페이지 업데이트<br /><br />
-👤 <strong>Brief Profile:</strong> 5월부터 <strong>Pickup & Delivery</strong> 업무를 시작했습니다. 초기 화면 프로필에 현재 역할을 반영했습니다.<br /><br />
-현재 차량 딜리버리 및 픽업 업무를 수행하며, 자동차 서비스 현장의 고객 접점, 차량 이동 프로세스, 현장 운영 흐름을 직접 경험하고 있습니다. 과거 BMW 및 서비스 운영 경력을 바탕으로, 현장에서 발생하는 실제 고객 경험과 운영 개선 포인트를 지속적으로 관찰하고 있습니다.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.22 영어 회화 자료 「미용실 방문 후 실제 서비스 진행 영어 (샴푸·가격·시스템 이해)」가 등록되었습니다.<br /><br />
-👉 프로필은 초기 화면 <strong>Brief Profile</strong>에서, eBook 자료는 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 확인하세요.`,
+    'notice.updateContent20260608': `<strong>2026-05-31</strong> - 오늘의 콘텐츠 업데이트<br /><br />
+오늘의 콘텐츠에 아래 자료가 등록되었습니다.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.23 영어 회화 자료 「다이너 방문 전, 분위기와 문화 이해 영어」가 등록되었습니다.<br /><br />
+📈 <strong>경제 상식:</strong> 신규 1건이 등록되었습니다.<br />
+• 2배 레버리지 ETF, 오르면 두 배·내리면 두 배?<br /><br />
+📚 <strong>일반상식:</strong> 신규 1건이 등록되었습니다.<br />
+• 선택의 역설(Paradox of Choice)<br /><br />
+👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series · 경제 상식 · 일반상식 게시판을 확인하세요.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -96,11 +99,14 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260524': `<strong>2026-05-24</strong> – Homepage update<br /><br />
-👤 <strong>Brief Profile:</strong> Since May, I have started working in <strong>Pickup & Delivery</strong>. My current role is now reflected on the homepage profile.<br /><br />
-I am currently performing vehicle delivery and pickup operations, directly experiencing customer touchpoints, vehicle movement processes, and on-site operational flow in automotive service environments. Drawing on my past BMW and service operations experience, I continue to observe real customer experiences and operational improvement opportunities in the field.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.22 English conversation — <em>Practical English for In-Salon Service (Shampoo, Pricing, and Understanding the System)</em> — is now available.<br /><br />
-👉 View my profile under <strong>Brief Profile</strong> on the homepage, and find the eBook under <strong>Today's Content</strong> in the top menu.`,
+    'notice.updateContent20260608': `<strong>2026-05-31</strong> – Today's content update<br /><br />
+The following materials are now available under <strong>Today's Content</strong>.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.23 English conversation — <em>English Before Visiting a Diner: Understanding Atmosphere and Culture</em>.<br /><br />
+📈 <strong>Economics:</strong> One new article:<br />
+• 2x Leveraged ETF: Do Gains and Losses Really Double?<br /><br />
+📚 <strong>General knowledge:</strong> One new article:<br />
+• Paradox of Choice<br /><br />
+👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series, Economics, and General Knowledge boards.`,
   },
 };
 
