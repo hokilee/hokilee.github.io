@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 84,
+    title: '다이너 메뉴 이해 및 음식 선택 영어 - 2 Vol.24',
+    link: 'eBook-data/english_conversation_vol24.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '06-07',
+    views: 0,
+  },
+  {
     id: 83,
     title: '다이너 방문 전, 분위기와 문화 이해 영어 - 1 Vol.23',
     link: 'eBook-data/english_conversation_vol23.pdf',

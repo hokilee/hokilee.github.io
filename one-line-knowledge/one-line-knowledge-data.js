@@ -1,6 +1,15 @@
 // 한줄 지식/잡학 게시판 데이터
 const oneLineKnowledgeData = [
   {
+    id: 123,
+    title: '꿀은 거의 상하지 않는다',
+    link: 'one-line-knowledge/trivia-detail-123.html',
+    category: '한줄 지식/잡학',
+    author: '이호기',
+    date: '06-07',
+    views: 0,
+  },
+  {
     id: 122,
     title: '향신료 무역로(Spice Route)',
     link: 'one-line-knowledge/trivia-detail-122.html',

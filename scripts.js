@@ -45,14 +45,14 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260608': `<strong>2026-05-31</strong> - 오늘의 콘텐츠 업데이트<br /><br />
+    'notice.updateContent20260607': `<strong>2026-06-07</strong> - 오늘의 콘텐츠 업데이트<br /><br />
 오늘의 콘텐츠에 아래 자료가 등록되었습니다.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.23 영어 회화 자료 「다이너 방문 전, 분위기와 문화 이해 영어」가 등록되었습니다.<br /><br />
-📈 <strong>경제 상식:</strong> 신규 1건이 등록되었습니다.<br />
-• 2배 레버리지 ETF, 오르면 두 배·내리면 두 배?<br /><br />
+📘 <strong>eBook Series:</strong> Vol.24 영어 회화 자료 「다이너 메뉴 이해 및 음식 선택 영어」가 등록되었습니다.<br /><br />
+💡 <strong>한줄 지식/잡학:</strong> 신규 1건이 등록되었습니다.<br />
+• 꿀은 거의 상하지 않는다<br /><br />
 📚 <strong>일반상식:</strong> 신규 1건이 등록되었습니다.<br />
-• 선택의 역설(Paradox of Choice)<br /><br />
-👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series · 경제 상식 · 일반상식 게시판을 확인하세요.`,
+• 내적 동기 vs 외적 동기(Intrinsic vs Extrinsic Motivation)<br /><br />
+👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series · 한줄 지식/잡학 · 일반상식 게시판을 확인하세요.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -99,14 +99,14 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260608': `<strong>2026-05-31</strong> – Today's content update<br /><br />
+    'notice.updateContent20260607': `<strong>2026-06-07</strong> – Today's content update<br /><br />
 The following materials are now available under <strong>Today's Content</strong>.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.23 English conversation — <em>English Before Visiting a Diner: Understanding Atmosphere and Culture</em>.<br /><br />
-📈 <strong>Economics:</strong> One new article:<br />
-• 2x Leveraged ETF: Do Gains and Losses Really Double?<br /><br />
+📘 <strong>eBook Series:</strong> Vol.24 English conversation — <em>Understanding Diner Menus and Choosing Food in English</em>.<br /><br />
+💡 <strong>One-line knowledge:</strong> One new article:<br />
+• Honey Almost Never Spoils<br /><br />
 📚 <strong>General knowledge:</strong> One new article:<br />
-• Paradox of Choice<br /><br />
-👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series, Economics, and General Knowledge boards.`,
+• Intrinsic vs Extrinsic Motivation<br /><br />
+👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series, One-line Knowledge, and General Knowledge boards.`,
   },
 };
 

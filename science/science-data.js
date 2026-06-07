@@ -1,6 +1,15 @@
 // 과학적 상식 게시판 데이터
 const scienceData = [
   {
+    id: 80,
+    title: '내적 동기 vs 외적 동기(Intrinsic vs Extrinsic Motivation)',
+    link: 'science/science-detail-80.html',
+    category: '일반상식',
+    author: '이호기',
+    date: '06-07',
+    views: 0,
+  },
+  {
     id: 79,
     title: '선택의 역설(Paradox of Choice)',
     link: 'science/science-detail-79.html',
