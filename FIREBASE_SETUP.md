@@ -73,7 +73,6 @@ views/
   │   ├── economics/        (경제상식)
   │   └── science/          (일반상식)
   ├── tech-library/         (기술자료)
-  ├── tech-trend/           (기술 트렌드/뉴스)
   ├── about-me/             (About Me)
   └── previous-materials/   (이전 자료)
 ```
