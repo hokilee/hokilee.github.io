@@ -44,14 +44,10 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260607': `<strong>2026-06-07</strong> - 오늘의 콘텐츠 업데이트<br /><br />
+    'notice.updateContent20260705': `<strong>2026-07-05</strong> - 오늘의 콘텐츠 업데이트<br /><br />
 오늘의 콘텐츠에 아래 자료가 등록되었습니다.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.24 영어 회화 자료 「다이너 메뉴 이해 및 음식 선택 영어」가 등록되었습니다.<br /><br />
-💡 <strong>한줄 지식/잡학:</strong> 신규 1건이 등록되었습니다.<br />
-• 꿀은 거의 상하지 않는다<br /><br />
-📚 <strong>일반상식:</strong> 신규 1건이 등록되었습니다.<br />
-• 내적 동기 vs 외적 동기(Intrinsic vs Extrinsic Motivation)<br /><br />
-👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series · 한줄 지식/잡학 · 일반상식 게시판을 확인하세요.`,
+📘 <strong>eBook Series:</strong> Vol.25 영어 회화 자료 「다이너 메뉴 이해 및 음식 선택 영어」 3번째 시리즈가 등록되었습니다.<br /><br />
+👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series 게시판을 확인하세요.`,
   },
   en: {
     'hero.subtitleMain': "Hoki Lee's Personal Homepage",
@@ -97,14 +93,10 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260607': `<strong>2026-06-07</strong> – Today's content update<br /><br />
-The following materials are now available under <strong>Today's Content</strong>.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.24 English conversation — <em>Understanding Diner Menus and Choosing Food in English</em>.<br /><br />
-💡 <strong>One-line knowledge:</strong> One new article:<br />
-• Honey Almost Never Spoils<br /><br />
-📚 <strong>General knowledge:</strong> One new article:<br />
-• Intrinsic vs Extrinsic Motivation<br /><br />
-👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series, One-line Knowledge, and General Knowledge boards.`,
+    'notice.updateContent20260705': `<strong>2026-07-05</strong> – Today's content update<br /><br />
+The following material is now available under <strong>Today's Content</strong>.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.25 English conversation — <em>Understanding Diner Menus and Choosing Food in English</em>, 3rd series.<br /><br />
+👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series board.`,
   },
 };
 
