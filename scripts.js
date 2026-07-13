@@ -44,9 +44,9 @@ const translations = {
     'modal.keyAchievements': '주요 성과',
     'modal.meaning': '이 경험의 의미',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260705': `<strong>2026-07-05</strong> - 오늘의 콘텐츠 업데이트<br /><br />
+    'notice.updateContent20260713': `<strong>2026-07-13</strong> - 오늘의 콘텐츠 업데이트<br /><br />
 오늘의 콘텐츠에 아래 자료가 등록되었습니다.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.25 영어 회화 자료 「다이너 메뉴 이해 및 음식 선택 영어」 3번째 시리즈가 등록되었습니다.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.26 영어 회화 자료 「Airplane Conversation 1」이 등록되었습니다. 비행기 탑승 후 좌석·기내 안내·난기류·기내 서비스 영어를 정리하였습니다.<br /><br />
 👉 상단 메뉴 <strong>오늘의 콘텐츠</strong>에서 eBook Series 게시판을 확인하세요.`,
   },
   en: {
@@ -93,9 +93,9 @@ const translations = {
     'modal.keyAchievements': 'Key Achievements',
     'modal.meaning': 'The Meaning of This Experience',
     'notice.heading': 'Update Contents',
-    'notice.updateContent20260705': `<strong>2026-07-05</strong> – Today's content update<br /><br />
+    'notice.updateContent20260713': `<strong>2026-07-13</strong> – Today's content update<br /><br />
 The following material is now available under <strong>Today's Content</strong>.<br /><br />
-📘 <strong>eBook Series:</strong> Vol.25 English conversation — <em>Understanding Diner Menus and Choosing Food in English</em>, 3rd series.<br /><br />
+📘 <strong>eBook Series:</strong> Vol.26 English conversation — <em>Airplane Conversation 1</em>. Covers English for after boarding: seat guidance, in-cabin announcements, turbulence, and in-flight services.<br /><br />
 👉 Use the top menu <strong>Today's Content</strong> to open the eBook Series board.`,
   },
 };

@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 86,
+    title: '비행기 탑승 후 좌석·기내 안내·난기류·기내 서비스 영어 - 1 Vol.26',
+    link: 'eBook-data/english_conversation_vol26.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '07-13',
+    views: 0,
+  },
+  {
     id: 85,
     title: '다이너 메뉴 이해 및 음식 선택 영어 - 3 Vol.25',
     link: 'eBook-data/english_conversation_vol25.pdf',
