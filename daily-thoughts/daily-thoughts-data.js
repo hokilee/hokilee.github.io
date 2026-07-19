@@ -1,6 +1,15 @@
 // eBook Series 게시판 데이터
 const dailyThoughtsData = [
   {
+    id: 87,
+    title: '비행 중 요청·문제 상황·승무원 응대 영어 - 2 Vol.27',
+    link: 'eBook-data/english_conversation_vol27.pdf',
+    category: 'eBook Series',
+    author: '이호기',
+    date: '07-20',
+    views: 0,
+  },
+  {
     id: 86,
     title: '비행기 탑승 후 좌석·기내 안내·난기류·기내 서비스 영어 - 1 Vol.26',
     link: 'eBook-data/english_conversation_vol26.pdf',
